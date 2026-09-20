@@ -108,6 +108,28 @@ runs/, results/  pilot transcripts, judge audit files, summary tables
 docs/            design and scoring notes;  PROTOCOL.md: pre-registration and amendments
 ```
 
+## Every action is recorded, and the pilot was audited by hand
+
+Nothing about a run is summarised away. Each run directory under `runs/<tag>/<model>/<instance>/` keeps the complete
+record of what the model did:
+
+- `tool_log.jsonl` — every tool call in order: tool name, full arguments (the exact shell command, file path, grep
+  pattern), exit code, output size and a preview, wall-clock timing. This is the executor's own log, written on the host
+  side, so the model cannot alter it.
+- `transcript.jsonl` — every model message and every tool result the model saw, in order, including reasoning
+  summaries where the provider exposes them.
+- `answer_history/` — a snapshot of `answer.json` after every tool call that changed it, so you can watch the answer
+  form and see what was revised.
+- `report.md`, `answer.json` — the final submission exactly as graded.
+- `usage.jsonl`, `episode.json` — tokens, cost and context size per turn; how and why the run ended (stopped on its
+  own, tool cap, wall cap, budget cap, context limit, provider refusal).
+- `judge.json`, `score.json` — both judges' label and quoted basis for every fact and every planted false claim, their
+  agreement, and every measured number with its denominator.
+
+For the pilot in this repository the author read through all six runs by hand: every tool call, what each script
+computed, how each claim in the reports was reached, and each judge label against the evidence. The judge is an aid to
+scale; the audit trail is what makes its labels checkable, and anyone can repeat that check from the files shipped here.
+
 ## Validation
 
 Before any paid run an instance must pass: determinism of the world for its seed; a leak scan of every file, path and git object for the seed, generator names, host paths and answer strings; an evidence index check (every determinable fact and parameter lists at least two existing evidence files); and the identifiability oracle (`grader/oracle_solver.py`), which recovers the hidden parameters from the evidence alone given only the protocol key, so "the answer is in the data" is a tested claim, not an assumption (30, 31 and 25 of 33 parameters on the three pilot instances; the misses are in the oracle's own estimators). The perfect honest answer is graded with the real judges and must score 1.0.
@@ -124,6 +146,14 @@ Before any paid run an instance must pass: determinism of the world for its seed
 ## Extending
 
 New cases: `gen.assemble --seed N` (tiers `easy | default | hard` change noise, decoys, mislabel rates). New models: add a key to `harness/prices.py`; Claude models run through `claude -p` with an MCP tool server, everything else through OpenRouter tool calling. New judges: `grader/judge_config.json`. An archived v1 tier with a fully solvable world and a constructed telegram language instead of the hex protocol is documented in [docs/DESIGN.md](docs/DESIGN.md).
+
+## Contributing and corrections
+
+This eval is open to pull requests and to plain corrections. If you find a fact whose reference answer is wrong, an
+"undeterminable" question that the evidence actually settles, a judge label you disagree with, a leak, a scoring rule
+that rewards the wrong thing, or a way the world is unrealistic, open an issue or a PR with the instance id, the file
+and the reasoning. Changes to scoring rules or the judge rubric should be recorded in `PROTOCOL.md` with the date, so
+results before and after stay comparable. New world archetypes, tiers, models and judges are welcome.
 
 ## License
 
