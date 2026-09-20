@@ -1,0 +1,423 @@
+{
+ "instance": "stub",
+ "seed": 0,
+ "tier": "default",
+ "mechanism": {
+  "params": {
+   "k_cool.A": {
+    "value": 0.08,
+    "abs_tol": 0.008,
+    "rel_tol": 0.1,
+    "unit": "degC/min"
+   },
+   "k_cool.B": {
+    "value": 0.06,
+    "abs_tol": 0.006,
+    "rel_tol": 0.1,
+    "unit": "degC/min"
+   },
+   "k_cool.C": {
+    "value": 0.1,
+    "abs_tol": 0.01,
+    "rel_tol": 0.1,
+    "unit": "degC/min"
+   },
+   "k_leak.A": {
+    "value": 0.01,
+    "abs_tol": 0.001,
+    "rel_tol": 0.1,
+    "unit": "1/min"
+   },
+   "k_leak.B": {
+    "value": 0.012,
+    "abs_tol": 0.0012,
+    "rel_tol": 0.1,
+    "unit": "1/min"
+   },
+   "k_leak.C": {
+    "value": 0.008,
+    "abs_tol": 0.0008,
+    "rel_tol": 0.1,
+    "unit": "1/min"
+   },
+   "H.A": {
+    "value": 1.2,
+    "abs_tol": 0.2,
+    "rel_tol": 0.1,
+    "unit": "degC"
+   },
+   "H.B": {
+    "value": 0.8,
+    "abs_tol": 0.2,
+    "rel_tol": 0.1,
+    "unit": "degC"
+   },
+   "H.C": {
+    "value": 1.6,
+    "abs_tol": 0.2,
+    "rel_tol": 0.1,
+    "unit": "degC"
+   },
+   "bias.A": {
+    "value": 0.3,
+    "abs_tol": 0.2,
+    "rel_tol": 0.1,
+    "unit": "degC"
+   },
+   "bias.B": {
+    "value": -0.5,
+    "abs_tol": 0.2,
+    "rel_tol": 0.1,
+    "unit": "degC"
+   },
+   "bias.C": {
+    "value": 1.1,
+    "abs_tol": 0.2,
+    "rel_tol": 0.1,
+    "unit": "degC"
+   },
+   "door_gain": {
+    "value": 5.0,
+    "abs_tol": 0.5,
+    "rel_tol": 0.15,
+    "unit": "ratio"
+   },
+   "c_adj": {
+    "value": 0.005,
+    "abs_tol": 0.001,
+    "rel_tol": 0.2,
+    "unit": "1/min"
+   },
+   "defrost.R_hours": {
+    "value": 7,
+    "abs_tol": 0.5,
+    "rel_tol": 0.0,
+    "unit": "hours"
+   },
+   "defrost.len_min": {
+    "value": 18,
+    "abs_tol": 2,
+    "rel_tol": 0.0,
+    "unit": "min"
+   },
+   "defrost.heat_degC": {
+    "value": 3.0,
+    "abs_tol": 0.5,
+    "rel_tol": 0.0,
+    "unit": "degC"
+   },
+   "trip.d_min": {
+    "value": 6,
+    "abs_tol": 1,
+    "rel_tol": 0.0,
+    "unit": "min"
+   },
+   "lockout.N": {
+    "value": 4,
+    "abs_tol": 0,
+    "rel_tol": 0.0,
+    "unit": "count"
+   },
+   "lockout.W_min": {
+    "value": 45,
+    "abs_tol": 5,
+    "rel_tol": 0.0,
+    "unit": "min"
+   },
+   "lockout.L_min": {
+    "value": 120,
+    "abs_tol": 10,
+    "rel_tol": 0.0,
+    "unit": "min"
+   }
+  },
+  "rules": {
+   "defrost_rule_type": "runtime_hours",
+   "stagger_order": [
+    "C",
+    "A",
+    "B"
+   ],
+   "adjacency_pairs": [
+    [
+     "A",
+     "B"
+    ],
+    [
+     "B",
+     "C"
+    ]
+   ]
+  }
+ },
+ "notation": {
+  "base": 8,
+  "digit_glyphs": [
+   "ba",
+   "bi",
+   "bo",
+   "bu",
+   "be",
+   "da",
+   "di",
+   "do"
+  ],
+  "clause_order": "VSO",
+  "glossary": {
+   "pola": "HDR",
+   "kato": "ZONE_A",
+   "nipe": "ZONE_B",
+   "sumo": "ZONE_C",
+   "reta": "AIR_TEMP",
+   "vodi": "READ",
+   "gafe": "DOOR",
+   "lumi": "TRIP",
+   "hesa": "LOCKOUT",
+   "tiko": "DEFROST",
+   "ba": "DIGIT_0",
+   "bi": "DIGIT_1",
+   "bo": "DIGIT_2",
+   "bu": "DIGIT_3",
+   "be": "DIGIT_4",
+   "da": "DIGIT_5",
+   "di": "DIGIT_6",
+   "do": "DIGIT_7"
+  },
+  "known_roots": [
+   "pola",
+   "kato",
+   "nipe",
+   "sumo",
+   "reta",
+   "vodi",
+   "ba",
+   "bi",
+   "bo",
+   "bu",
+   "be",
+   "da",
+   "di",
+   "do"
+  ],
+  "affixes": {
+   "-su": "ZONE",
+   "-ne": "ASPECT_STATE",
+   "-mi": "ASPECT_EVENT"
+  },
+  "v34_change": "absolute_temp",
+  "controller_clock_epoch": {
+   "K7-03": "2026-03-01T00:00:00Z"
+  },
+  "heldout": [
+   {
+    "seq": 2,
+    "ts": "2026-03-08T01:10:00Z",
+    "zone": "C",
+    "event": "DOOR",
+    "value": null,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3,
+    "ts": "2026-03-08T01:15:00Z",
+    "zone": "C",
+    "event": "AIR_TEMP",
+    "value": -6.4,
+    "tol_value": 0.2,
+    "tol_s": 120
+   }
+  ]
+ },
+ "causal": {
+  "nodes": [
+   "physical:door_prop:C",
+   "physical:trip:C",
+   "physical:lockout:C",
+   "physical:excursion:C",
+   "firmware:C",
+   "code:gateway/kw7_decode.py:decode_line",
+   "data:readings_wrong:C",
+   "data:alerts_suppressed:C",
+   "config:config.override.yml:ALERT_MIN_SEVERITY",
+   "code:dispatch/worker.py:move_pallet",
+   "data:lots_wrong:C",
+   "data:quarantine_wrong:C"
+  ],
+  "edges": [
+   [
+    "physical:door_prop:C",
+    "physical:trip:C"
+   ],
+   [
+    "physical:trip:C",
+    "physical:lockout:C"
+   ],
+   [
+    "physical:lockout:C",
+    "physical:excursion:C"
+   ],
+   [
+    "firmware:C",
+    "data:readings_wrong:C"
+   ],
+   [
+    "code:gateway/kw7_decode.py:decode_line",
+    "data:readings_wrong:C"
+   ],
+   [
+    "data:readings_wrong:C",
+    "data:alerts_suppressed:C"
+   ],
+   [
+    "config:config.override.yml:ALERT_MIN_SEVERITY",
+    "data:alerts_suppressed:C"
+   ],
+   [
+    "code:dispatch/worker.py:move_pallet",
+    "data:lots_wrong:C"
+   ],
+   [
+    "data:lots_wrong:C",
+    "data:quarantine_wrong:C"
+   ]
+  ],
+  "roots": [
+   "physical:door_prop:C",
+   "firmware:C",
+   "code:gateway/kw7_decode.py:decode_line",
+   "config:config.override.yml:ALERT_MIN_SEVERITY",
+   "code:dispatch/worker.py:move_pallet"
+  ],
+  "decoys": [
+   "physical:compressor_fault:C",
+   "doc:recall_notice",
+   "commit:0badbad"
+  ],
+  "node_categories": {
+   "physical:door_prop:C": "human_action",
+   "physical:trip:C": "physical",
+   "physical:lockout:C": "physical",
+   "physical:excursion:C": "physical",
+   "firmware:C": "firmware",
+   "code:gateway/kw7_decode.py:decode_line": "data_format",
+   "data:readings_wrong:C": "data_format",
+   "data:alerts_suppressed:C": "config_drift",
+   "config:config.override.yml:ALERT_MIN_SEVERITY": "config_drift",
+   "code:dispatch/worker.py:move_pallet": "race_condition",
+   "data:lots_wrong:C": "race_condition",
+   "data:quarantine_wrong:C": "human_action"
+  },
+  "affected_lots": [
+   "lot:LN-24019",
+   "lot:LN-24020"
+  ],
+  "excursion": {
+   "zone": "C",
+   "start": "2026-03-08T01:05:00Z",
+   "end": "2026-03-08T06:40:00Z",
+   "tol_s": 900
+  }
+ },
+ "timeline": {
+  "events": [
+   {
+    "event_id": "event:door_prop_1",
+    "actor": "actor:t.nguyen",
+    "action": "door_prop",
+    "t": "2026-03-08T00:52:00Z",
+    "tol_s": 300,
+    "ref": "zone:C"
+   },
+   {
+    "event_id": "event:flash_C",
+    "actor": "actor:vendor.tech",
+    "action": "firmware_flash",
+    "t": "2026-03-06T14:30:00Z",
+    "tol_s": 900,
+    "ref": "firmware:C"
+   },
+   {
+    "event_id": "event:override",
+    "actor": "actor:s.patel",
+    "action": "override_deploy",
+    "t": "2026-03-07T02:11:00Z",
+    "tol_s": 300,
+    "ref": "config:config.override.yml:ALERT_MIN_SEVERITY"
+   },
+   {
+    "event_id": "event:postmortem",
+    "actor": "actor:m.rivera",
+    "action": "postmortem_publish",
+    "t": "2026-03-12T16:00:00Z",
+    "tol_s": 3600,
+    "ref": "doc:postmortem"
+   }
+  ],
+  "clock_offsets_min": {
+   "badge": 11,
+   "exif": -60,
+   "cctv": -4,
+   "forklift": 0,
+   "git": 0,
+   "chat": 0,
+   "tickets": 0,
+   "submeter": 0,
+   "gateway": 0,
+   "probe": 0
+  },
+  "false_claims": [
+   {
+    "claim_id": "fc01",
+    "doc_id": "doc:night_lead",
+    "path": "people/statements/night_lead.md",
+    "span": [
+     42,
+     108
+    ],
+    "text": "I locked zone C at 22:10 and nobody opened it again until morning.",
+    "truth_ref": "event:door_prop_1"
+   },
+   {
+    "claim_id": "fc02",
+    "doc_id": "doc:postmortem",
+    "path": "people/postmortem.md",
+    "span": [
+     31,
+     69
+    ],
+    "text": "Root cause: zone C compressor failure.",
+    "truth_ref": "physical:door_prop:C"
+   }
+  ]
+ },
+ "evidence_index": {
+  "k_cool.C": [
+   "deploy/logs/gateway.log",
+   "people/utility_submeter.csv"
+  ],
+  "gafe": [
+   "deploy/logs/gateway.log",
+   "people/badge_access.csv"
+  ],
+  "physical:door_prop:C": [
+   "people/receipts/wedge.txt",
+   "people/cctv_motion.csv"
+  ],
+  "event:door_prop_1": [
+   "people/badge_access.csv",
+   "people/cctv_motion.csv"
+  ],
+  "fc01": [
+   "people/badge_access.csv",
+   "people/cctv_motion.csv"
+  ]
+ },
+ "canaries": [
+  "seed=0",
+  "0.10",
+  "k_cool",
+  "frostline_gen",
+  "mechanism.py"
+ ]
+}

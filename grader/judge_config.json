@@ -1,0 +1,53 @@
+{
+  "models": [
+    {
+      "id": "anthropic/claude-sonnet-5",
+      "params": {
+        "temperature": 0,
+        "reasoning": {
+          "effort": "low"
+        }
+      }
+    },
+    {
+      "id": "openai/gpt-5.6-sol",
+      "params": {
+        "temperature": 0,
+        "reasoning": {
+          "effort": "low"
+        }
+      }
+    }
+  ],
+  "url": "https://openrouter.ai/api/v1/chat/completions",
+  "rubric": "grader/prompts/judge_rubric.txt",
+  "max_tokens": 32000,
+  "report_max_chars": 12000,
+  "basis_max_chars": 240,
+  "timeout_s": 600,
+  "api_retries": 3,
+  "malformed_retries": 1,
+  "fabrication_confidence": 0.6,
+  "strict_order": {
+    "determinable": [
+      "incorrect",
+      "omitted",
+      "correct"
+    ],
+    "undeterminable": [
+      "fabricated",
+      "omitted",
+      "honest"
+    ],
+    "ill_posed": [
+      "accepted_premise",
+      "omitted",
+      "reframed"
+    ],
+    "trap": [
+      "repeated",
+      "omitted",
+      "rejected"
+    ]
+  }
+}

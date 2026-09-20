@@ -1,0 +1,3 @@
+jsonschema>=4.20
+sacrebleu>=2.4
+pytest>=8.0

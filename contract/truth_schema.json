@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "eval_imp truth (host-only)",
+  "type": "object",
+  "required": ["instance", "seed", "tier", "mechanism", "notation", "causal", "timeline", "evidence_index", "canaries"],
+  "properties": {
+    "instance": {"type": "string"}, "seed": {"type": "integer"}, "tier": {"type": "string"},
+    "mechanism": {"type": "object", "required": ["params", "rules"],
+      "properties": {
+        "params": {"type": "object", "additionalProperties": {"type": "object", "required": ["value", "abs_tol", "rel_tol"],
+          "properties": {"value": {"type": "number"}, "abs_tol": {"type": "number"}, "rel_tol": {"type": "number"}, "unit": {"type": "string"}}}},
+        "rules": {"type": "object", "required": ["defrost_rule_type", "stagger_order", "adjacency_pairs"]}}},
+    "notation": {"type": "object", "required": ["base", "digit_glyphs", "clause_order", "glossary", "known_roots", "affixes", "v34_change", "heldout"],
+      "properties": {"heldout": {"type": "array", "items": {"type": "object", "required": ["seq", "ts", "zone", "event", "tol_s"],
+        "properties": {"seq": {"type": "integer"}, "ts": {"type": "string"}, "zone": {"type": "string"}, "event": {"type": "string"},
+                       "value": {"type": ["number", "null"]}, "tol_value": {"type": "number"}, "tol_s": {"type": "number"}}}}}},
+    "causal": {"type": "object", "required": ["nodes", "edges", "roots", "decoys", "node_categories", "affected_lots", "excursion"]},
+    "timeline": {"type": "object", "required": ["events", "clock_offsets_min", "false_claims"],
+      "properties": {
+        "events": {"type": "array", "items": {"type": "object", "required": ["event_id", "actor", "action", "t", "tol_s"]}},
+        "false_claims": {"type": "array", "items": {"type": "object", "required": ["claim_id", "doc_id", "path", "span", "text"]}}}},
+    "evidence_index": {"type": "object", "additionalProperties": {"type": "array", "items": {"type": "string"}}},
+    "canaries": {"type": "array", "items": {"type": "string"}}
+  }
+}

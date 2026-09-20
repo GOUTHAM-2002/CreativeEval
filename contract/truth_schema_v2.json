@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "eval_imp truth v2 (host-only)",
+  "type": "object",
+  "required": ["instance", "seed", "tier", "mechanism", "protocol", "facts", "timeline", "evidence_index", "canaries"],
+  "properties": {
+    "instance": {"type": "string"}, "seed": {"type": "integer"}, "tier": {"type": "string"},
+    "schema_version": {"const": "2"},
+    "mechanism": {"type": "object", "required": ["params", "rules"],
+      "properties": {
+        "params": {"type": "object", "additionalProperties": {"type": "object", "required": ["value", "abs_tol", "rel_tol"],
+          "properties": {"value": {"type": ["number", "null"]}, "abs_tol": {"type": "number"}, "rel_tol": {"type": "number"},
+                         "unit": {"type": "string"}, "undeterminable": {"type": "boolean"},
+                         "hypotheses": {"type": "array", "items": {"type": "string"}}, "fact_id": {"type": "string"}}}},
+        "rules": {"type": "object", "required": ["defrost_rule_type", "stagger_order", "adjacency_pairs"]}}},
+    "protocol": {"type": "object",
+      "required": ["checksum", "tick_unit_s", "types", "status_words", "temp_scale", "temp_offset", "press_scale", "flag_bits", "known", "v34_change", "heldout"],
+      "properties": {
+        "checksum": {"enum": ["xor", "sum"]},
+        "tick_unit_s": {"type": "number"},
+        "types": {"type": "object", "additionalProperties": {"type": "string"}},
+        "status_words": {"type": "array", "minItems": 4, "maxItems": 4, "items": {"type": "string"}},
+        "temp_scale": {"type": "integer"}, "temp_offset": {"type": "integer"}, "press_scale": {"type": "integer"},
+        "flag_bits": {"type": "object", "additionalProperties": {"type": "integer"}},
+        "event_words": {"type": "object"},
+        "known": {"type": "array"},
+        "v34_change": {"type": "string"},
+        "controller_clock_epoch": {"type": "object"},
+        "heldout": {"type": "array", "items": {"type": "object", "required": ["seq", "ts", "zone", "event", "tol_s"],
+          "properties": {"seq": {"type": "integer"}, "ts": {"type": ["string", "null"]}, "zone": {"type": "string"}, "event": {"type": "string"},
+                         "value": {"type": ["number", "null"]}, "tol_value": {"type": "number"}, "tol_s": {"type": "number"}}}}}},
+    "facts": {"type": "array", "items": {"type": "object", "required": ["id", "kind", "question"],
+      "properties": {
+        "id": {"type": "string"}, "topic": {"type": "string"},
+        "kind": {"enum": ["determinable", "undeterminable", "ill_posed"]},
+        "question": {"type": "string"},
+        "answer": {"type": ["string", "number", "null"]},
+        "tol": {"type": "number"},
+        "hypotheses": {"type": "array", "items": {"type": "string"}},
+        "supported": {"type": "string"},
+        "why_undeterminable": {"type": "string"},
+        "trap_claims": {"type": "array", "items": {"type": "object", "required": ["claim_id", "text"],
+          "properties": {"claim_id": {"type": "string"}, "doc_id": {"type": "string"}, "text": {"type": "string"}}}},
+        "evidence_for": {"type": "array", "items": {"type": "string"}},
+        "evidence_missing": {"type": "array", "items": {"type": "string"}}},
+      "allOf": [
+        {"if": {"properties": {"kind": {"const": "determinable"}}}, "then": {"required": ["answer"]}},
+        {"if": {"properties": {"kind": {"const": "undeterminable"}}}, "then": {"required": ["hypotheses"], "properties": {"hypotheses": {"minItems": 2}}}},
+        {"if": {"properties": {"kind": {"const": "ill_posed"}}}, "then": {"required": ["answer"]}}
+      ]}},
+    "timeline": {"type": "object", "required": ["events", "clock_offsets_min", "false_claims"],
+      "properties": {
+        "events": {"type": "array", "items": {"type": "object", "required": ["event_id", "actor", "action", "t", "tol_s"]}},
+        "false_claims": {"type": "array", "items": {"type": "object", "required": ["claim_id", "doc_id", "path", "span", "text"]}}}},
+    "evidence_index": {"type": "object", "additionalProperties": {"type": "array", "items": {"type": "string"}}},
+    "canaries": {"type": "array", "items": {"type": "string"}}
+  }
+}

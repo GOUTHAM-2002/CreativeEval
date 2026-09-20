@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "investigation answer",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "mechanism", "notation", "causal_chain", "timeline", "confidence"],
+  "$defs": {
+    "iso": {"type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}(:[0-9]{2})?(Z|[+-][0-9]{2}:[0-9]{2})?$"},
+    "id": {"type": "string", "pattern": "^[a-z_]+:[A-Za-z0-9_.@/:-]+$"},
+    "zone": {"type": "string", "pattern": "^[A-Z]$"},
+    "conf": {"type": "number", "minimum": 0, "maximum": 1},
+    "PHYSICAL_TYPES": {"enum": ["door_prop", "door_open", "trip", "lockout", "defrost", "excursion", "compressor_fault", "sensor_fault", "power_loss", "frame_burst"]},
+    "DATA_TYPES": {"enum": ["readings_wrong", "lots_wrong", "alerts_suppressed", "frames_dropped", "quarantine_wrong"]},
+    "ACTIONS": {"enum": ["door_prop", "door_open", "door_close", "pallet_move", "firmware_flash", "config_edit", "commit", "override_deploy", "archive_channel", "probe_check", "ticket_open", "ticket_close", "alert_ack", "statement", "quarantine", "shift_start", "shift_end", "purchase", "photo", "postmortem_publish"]},
+    "DEFROST_RULE_TYPES": {"enum": ["runtime_hours", "wall_clock", "temperature"]},
+    "V34_CHANGE": {"enum": ["absolute_temp", "delta_temp", "unit_change", "scale_change", "none"]},
+    "AFFIX_ROLES": {"enum": ["ZONE", "ASPECT_EVENT", "ASPECT_STATE", "NEGATION", "PLURAL"]},
+    "NOTATION_LABELS": {"enum": ["HDR", "ZONE_A", "ZONE_B", "ZONE_C", "ZONE_D", "ZONE_E", "ZONE_F", "ZONE_G", "ZONE_H", "RUN", "IDLE", "DEFROST", "RECOVERY", "LOCKOUT", "TRIP", "AIR_TEMP", "COIL_TEMP", "DISCH_PRESSURE", "DOOR", "HEATER", "SETPOINT", "COMPRESSOR", "FIRMWARE", "QUEUE", "READ", "ENTER", "EXIT", "SET", "FAULT", "CLEAR", "BOOT", "OPEN", "CLOSED", "ON", "OFF", "HIGH", "LOW", "STALE", "ABS", "OVERFLOW", "DIGIT_0", "DIGIT_1", "DIGIT_2", "DIGIT_3", "DIGIT_4", "DIGIT_5", "DIGIT_6", "DIGIT_7", "DIGIT_8", "DIGIT_9", "DIGIT_10", "DIGIT_11"]},
+    "CHANNELS": {"enum": ["badge", "exif", "cctv", "forklift", "chat", "tickets", "git", "submeter", "gateway", "probe"]}
+  },
+  "properties": {
+    "schema_version": {"const": "1"},
+    "mechanism": {
+      "type": "object", "additionalProperties": false,
+      "properties": {
+        "parameters": {"type": "object", "additionalProperties": {"type": "number"}},
+        "rules": {
+          "type": "object", "additionalProperties": false,
+          "properties": {
+            "defrost_rule_type": {"$ref": "#/$defs/DEFROST_RULE_TYPES"},
+            "stagger_order": {"type": "array", "items": {"$ref": "#/$defs/zone"}},
+            "adjacency_pairs": {"type": "array", "items": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"$ref": "#/$defs/zone"}}}
+          }
+        }
+      }
+    },
+    "notation": {
+      "type": "object", "additionalProperties": false,
+      "properties": {
+        "glossary": {"type": "object", "additionalProperties": {"$ref": "#/$defs/NOTATION_LABELS"}},
+        "affixes": {"type": "object", "additionalProperties": {"$ref": "#/$defs/AFFIX_ROLES"}},
+        "v34_change": {"$ref": "#/$defs/V34_CHANGE"},
+        "heldout": {"type": "array", "items": {
+          "type": "object", "additionalProperties": false,
+          "required": ["seq", "event", "zone"],
+          "properties": {
+            "seq": {"type": "integer"},
+            "ts": {"$ref": "#/$defs/iso"},
+            "zone": {"$ref": "#/$defs/zone"},
+            "event": {"$ref": "#/$defs/NOTATION_LABELS"},
+            "value": {"type": ["number", "null"]}
+          }}}
+      }
+    },
+    "causal_chain": {
+      "type": "object", "additionalProperties": false,
+      "properties": {
+        "roots": {"type": "array", "items": {"$ref": "#/$defs/id"}},
+        "nodes": {"type": "array", "items": {"$ref": "#/$defs/id"}},
+        "edges": {"type": "array", "items": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"$ref": "#/$defs/id"}}},
+        "decoys_rejected": {"type": "array", "items": {"$ref": "#/$defs/id"}},
+        "affected_lots": {"type": "array", "items": {"$ref": "#/$defs/id"}},
+        "excursion": {"type": "object", "additionalProperties": false,
+          "properties": {"zone": {"$ref": "#/$defs/zone"}, "start": {"$ref": "#/$defs/iso"}, "end": {"$ref": "#/$defs/iso"}}}
+      }
+    },
+    "timeline": {
+      "type": "object", "additionalProperties": false,
+      "properties": {
+        "events": {"type": "array", "items": {
+          "type": "object", "additionalProperties": false,
+          "required": ["actor", "action", "t"],
+          "properties": {
+            "actor": {"$ref": "#/$defs/id"},
+            "action": {"$ref": "#/$defs/ACTIONS"},
+            "t": {"$ref": "#/$defs/iso"},
+            "ref": {"type": "string"}
+          }}},
+        "clock_offsets_min": {"type": "object", "propertyNames": {"$ref": "#/$defs/CHANNELS"}, "additionalProperties": {"type": "number"}},
+        "false_claims": {"type": "array", "items": {
+          "type": "object", "additionalProperties": false,
+          "required": ["doc_id", "quote"],
+          "properties": {"doc_id": {"$ref": "#/$defs/id"}, "quote": {"type": "string", "minLength": 8}}}}
+      }
+    },
+    "confidence": {
+      "type": "object", "additionalProperties": false,
+      "properties": {"mechanism": {"$ref": "#/$defs/conf"}, "notation": {"$ref": "#/$defs/conf"},
+                     "causal_chain": {"$ref": "#/$defs/conf"}, "timeline": {"$ref": "#/$defs/conf"}}
+    }
+  }
+}

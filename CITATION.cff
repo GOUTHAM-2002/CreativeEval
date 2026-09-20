@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+title: "CreativeEval: Frostline, a no-feedback forensic investigation benchmark with unknowable facts"
+message: "If you use this benchmark, please cite it."
+authors:
+  - family-names: "Goutham"
+    given-names: ""
+repository-code: "https://github.com/GOUTHAM-2002/CreativeEval"
+date-released: 2026-09-20
+license: MIT

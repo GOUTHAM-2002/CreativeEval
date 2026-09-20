@@ -1,0 +1,2 @@
+2026-03-08T01:00:00Z INFO recv=2026-03-08T01:00:00Z ctrl=K7-03 raw="pola kimu ba | vodi reta-su-ne ba" decoded={"zone":"C","air_temp":-20.1} unk=[]
+2026-03-08T01:05:00Z INFO recv=2026-03-08T01:05:00Z ctrl=K7-03 raw="pola kimu bi | vodi gafe-su-ne" decoded={"zone":"C"} unk=["gafe"]

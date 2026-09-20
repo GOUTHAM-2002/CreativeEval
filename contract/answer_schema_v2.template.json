@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "investigation answer v2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "mechanism", "protocol", "findings", "timeline", "confidence"],
+  "$defs": {
+    "iso": {"type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}(:[0-9]{2})?(Z|[+-][0-9]{2}:[0-9]{2})?$"},
+    "id": {"type": "string", "pattern": "^[a-z_]+:[A-Za-z0-9_.@/:-]+$"},
+    "zone": {"type": "string", "pattern": "^[A-Z]$"},
+    "conf": {"type": "number", "minimum": 0, "maximum": 1},
+    "hex8": {"type": "string", "pattern": "^[0-9A-Fa-f]{2}$"},
+    "ACTIONS": {"enum": ["door_prop", "door_open", "door_close", "pallet_move", "firmware_flash", "config_edit", "commit", "override_deploy", "archive_channel", "probe_check", "ticket_open", "ticket_close", "alert_ack", "statement", "quarantine", "shift_start", "shift_end", "purchase", "photo", "postmortem_publish"]},
+    "DEFROST_RULE_TYPES": {"enum": ["runtime_hours", "wall_clock", "temperature"]},
+    "V34_CHANGE": {"enum": ["absolute_temp", "delta_temp", "unit_change", "scale_change", "none"]},
+    "PROTOCOL_LABELS": {"enum": ["STATUS", "DOOR", "TRIP", "LOCKOUT", "DEFROST", "HEATER", "BOOT", "SETPOINT", "QUEUE_OVERFLOW"]},
+    "STATUS_WORDS": {"enum": ["AIR_TEMP", "COIL_TEMP", "DISCH_PRESSURE", "STATE_FLAGS"]},
+    "FLAG_LABELS": {"enum": ["RUN", "DEFROST", "LOCKOUT", "RECOVERY", "DOOR_OPEN", "ABS_TEMP"]},
+    "HELDOUT_EVENTS": {"enum": ["AIR_TEMP", "COIL_TEMP", "DISCH_PRESSURE", "STATE_FLAGS", "DOOR", "TRIP", "LOCKOUT", "DEFROST", "HEATER", "FIRMWARE", "SETPOINT", "QUEUE", "RUN", "IDLE", "RECOVERY"]},
+    "FINDING_STATUS": {"enum": ["established", "probable", "undetermined", "refuted"]},
+    "CHANNELS": {"enum": ["badge", "exif", "cctv", "forklift", "chat", "tickets", "git", "submeter", "gateway", "probe"]},
+    "param_estimate": {
+      "type": "object", "additionalProperties": false,
+      "required": ["value", "confidence"],
+      "properties": {
+        "value": {"type": ["number", "null"]},
+        "confidence": {"$ref": "#/$defs/conf"},
+        "note": {"type": "string"}
+      }
+    }
+  },
+  "properties": {
+    "schema_version": {"const": "2"},
+    "mechanism": {
+      "type": "object", "additionalProperties": false,
+      "properties": {
+        "parameters": {"type": "object", "additionalProperties": {"$ref": "#/$defs/param_estimate"}},
+        "rules": {
+          "type": "object", "additionalProperties": false,
+          "properties": {
+            "defrost_rule_type": {"$ref": "#/$defs/DEFROST_RULE_TYPES"},
+            "stagger_order": {"type": "array", "items": {"$ref": "#/$defs/zone"}},
+            "adjacency_pairs": {"type": "array", "items": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"$ref": "#/$defs/zone"}}}
+          }
+        }
+      }
+    },
+    "protocol": {
+      "type": "object", "additionalProperties": false,
+      "properties": {
+        "types": {"type": "object", "propertyNames": {"$ref": "#/$defs/hex8"}, "additionalProperties": {"$ref": "#/$defs/PROTOCOL_LABELS"}},
+        "status_words": {"type": "array", "minItems": 4, "maxItems": 4, "items": {"$ref": "#/$defs/STATUS_WORDS"}},
+        "temp_scale": {"type": "integer"},
+        "temp_offset": {"type": "integer"},
+        "press_scale": {"type": "integer"},
+        "flag_bits": {"type": "object", "propertyNames": {"$ref": "#/$defs/FLAG_LABELS"}, "additionalProperties": {"type": "integer", "minimum": 0, "maximum": 15}},
+        "v34_change": {"$ref": "#/$defs/V34_CHANGE"},
+        "heldout": {"type": "array", "items": {
+          "type": "object", "additionalProperties": false,
+          "required": ["seq", "event", "zone"],
+          "properties": {
+            "seq": {"type": "integer"},
+            "ts": {"oneOf": [{"$ref": "#/$defs/iso"}, {"type": "null"}]},
+            "zone": {"$ref": "#/$defs/zone"},
+            "event": {"$ref": "#/$defs/HELDOUT_EVENTS"},
+            "value": {"type": ["number", "null"]}
+          }}}
+      }
+    },
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["claim", "status", "confidence", "evidence"],
+        "properties": {
+          "claim": {"type": "string", "minLength": 15},
+          "status": {"$ref": "#/$defs/FINDING_STATUS"},
+          "confidence": {"$ref": "#/$defs/conf"},
+          "evidence": {"type": "array", "items": {"type": "string"}},
+          "alternatives": {"type": "array", "items": {"type": "string"}}
+        },
+        "if": {"properties": {"status": {"const": "undetermined"}}},
+        "then": {"required": ["alternatives"]}
+      }
+    },
+    "timeline": {
+      "type": "object", "additionalProperties": false,
+      "properties": {
+        "events": {"type": "array", "items": {
+          "type": "object", "additionalProperties": false,
+          "required": ["actor", "action", "t"],
+          "properties": {
+            "actor": {"$ref": "#/$defs/id"},
+            "action": {"$ref": "#/$defs/ACTIONS"},
+            "t": {"$ref": "#/$defs/iso"},
+            "ref": {"type": "string"}
+          }}},
+        "clock_offsets_min": {"type": "object", "propertyNames": {"$ref": "#/$defs/CHANNELS"}, "additionalProperties": {"type": "number"}},
+        "false_claims": {"type": "array", "items": {
+          "type": "object", "additionalProperties": false,
+          "required": ["doc_id", "quote"],
+          "properties": {"doc_id": {"$ref": "#/$defs/id"}, "quote": {"type": "string", "minLength": 8}}}}
+      }
+    },
+    "confidence": {
+      "type": "object", "additionalProperties": false,
+      "properties": {"mechanism": {"$ref": "#/$defs/conf"}, "protocol": {"$ref": "#/$defs/conf"},
+                     "findings": {"$ref": "#/$defs/conf"}, "timeline": {"$ref": "#/$defs/conf"}}
+    }
+  }
+}

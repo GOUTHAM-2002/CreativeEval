@@ -1,0 +1,730 @@
+{
+ "instance": "stub_v2",
+ "seed": 0,
+ "tier": "default",
+ "schema_version": "2",
+ "mechanism": {
+  "params": {
+   "k_cool.A": {
+    "value": 0.08,
+    "abs_tol": 0.008,
+    "rel_tol": 0.1,
+    "unit": "degC/min"
+   },
+   "k_cool.B": {
+    "value": 0.06,
+    "abs_tol": 0.006,
+    "rel_tol": 0.1,
+    "unit": "degC/min"
+   },
+   "k_cool.C": {
+    "value": 0.1,
+    "abs_tol": 0.01,
+    "rel_tol": 0.1,
+    "unit": "degC/min"
+   },
+   "k_leak.A": {
+    "value": 0.01,
+    "abs_tol": 0.001,
+    "rel_tol": 0.1,
+    "unit": "1/min"
+   },
+   "k_leak.B": {
+    "value": 0.012,
+    "abs_tol": 0.0012,
+    "rel_tol": 0.1,
+    "unit": "1/min"
+   },
+   "k_leak.C": {
+    "value": 0.008,
+    "abs_tol": 0.0008,
+    "rel_tol": 0.1,
+    "unit": "1/min"
+   },
+   "H.A": {
+    "value": 1.2,
+    "abs_tol": 0.2,
+    "rel_tol": 0.1,
+    "unit": "degC"
+   },
+   "H.B": {
+    "value": null,
+    "abs_tol": 0.2,
+    "rel_tol": 0.1,
+    "unit": "degC",
+    "undeterminable": true,
+    "fact_id": "U05",
+    "hypotheses": [
+     "H.B in [0.2, 1.0) degC",
+     "H.B in [1.0, 2.0] degC"
+    ]
+   },
+   "H.C": {
+    "value": 1.6,
+    "abs_tol": 0.2,
+    "rel_tol": 0.1,
+    "unit": "degC"
+   },
+   "bias.A": {
+    "value": 0.3,
+    "abs_tol": 0.2,
+    "rel_tol": 0.1,
+    "unit": "degC"
+   },
+   "bias.B": {
+    "value": -0.5,
+    "abs_tol": 0.2,
+    "rel_tol": 0.1,
+    "unit": "degC",
+    "undeterminable": true,
+    "fact_id": "U04",
+    "hypotheses": [
+     "bias.B in [-1.5, 0) degC",
+     "bias.B in [0, 1.5] degC"
+    ]
+   },
+   "bias.C": {
+    "value": 1.1,
+    "abs_tol": 0.2,
+    "rel_tol": 0.1,
+    "unit": "degC"
+   },
+   "door_gain": {
+    "value": 5.0,
+    "abs_tol": 0.5,
+    "rel_tol": 0.15,
+    "unit": "ratio"
+   },
+   "c_adj": {
+    "value": 0.005,
+    "abs_tol": 0.001,
+    "rel_tol": 0.2,
+    "unit": "1/min"
+   },
+   "defrost.R_hours": {
+    "value": 7,
+    "abs_tol": 0.5,
+    "rel_tol": 0.0,
+    "unit": "hours"
+   },
+   "defrost.len_min": {
+    "value": 18,
+    "abs_tol": 2,
+    "rel_tol": 0.0,
+    "unit": "min"
+   },
+   "defrost.heat_degC": {
+    "value": 3.0,
+    "abs_tol": 0.5,
+    "rel_tol": 0.0,
+    "unit": "degC"
+   },
+   "trip.d_min": {
+    "value": 6,
+    "abs_tol": 1,
+    "rel_tol": 0.0,
+    "unit": "min"
+   },
+   "lockout.N": {
+    "value": 4,
+    "abs_tol": 0,
+    "rel_tol": 0.0,
+    "unit": "count"
+   },
+   "lockout.W_min": {
+    "value": 45,
+    "abs_tol": 5,
+    "rel_tol": 0.0,
+    "unit": "min"
+   },
+   "lockout.L_min": {
+    "value": 120,
+    "abs_tol": 10,
+    "rel_tol": 0.0,
+    "unit": "min"
+   }
+  },
+  "rules": {
+   "defrost_rule_type": "runtime_hours",
+   "stagger_order": [
+    "C",
+    "A",
+    "B"
+   ],
+   "adjacency_pairs": [
+    [
+     "A",
+     "B"
+    ],
+    [
+     "B",
+     "C"
+    ]
+   ]
+  }
+ },
+ "protocol": {
+  "checksum": "xor",
+  "tick_unit_s": 60,
+  "types": {
+   "11": "STATUS",
+   "21": "DOOR",
+   "22": "TRIP",
+   "23": "LOCKOUT",
+   "24": "DEFROST",
+   "25": "HEATER",
+   "30": "BOOT",
+   "31": "SETPOINT",
+   "3F": "QUEUE_OVERFLOW"
+  },
+  "status_words": [
+   "AIR_TEMP",
+   "COIL_TEMP",
+   "DISCH_PRESSURE",
+   "STATE_FLAGS"
+  ],
+  "temp_scale": 10,
+  "temp_offset": 500,
+  "press_scale": 10,
+  "flag_bits": {
+   "RUN": 0,
+   "DEFROST": 1,
+   "LOCKOUT": 2,
+   "RECOVERY": 3,
+   "DOOR_OPEN": 4,
+   "ABS_TEMP": 15
+  },
+  "event_words": {
+   "DOOR": {
+    "0001": "OPEN",
+    "0000": "CLOSED"
+   },
+   "LOCKOUT": {
+    "0001": "ENTER",
+    "0000": "EXIT"
+   },
+   "DEFROST": {
+    "0001": "ENTER",
+    "0000": "EXIT"
+   },
+   "HEATER": {
+    "0001": "ON",
+    "0000": "OFF"
+   },
+   "BOOT": {
+    "0032": "3.2",
+    "0034": "3.4"
+   }
+  },
+  "known": [
+   [
+    "11",
+    "AIR_TEMP"
+   ],
+   [
+    "11",
+    "STATE_FLAGS"
+   ]
+  ],
+  "v34_change": "absolute_temp",
+  "controller_clock_epoch": {
+   "K7-03": "2026-03-01T00:00:00Z"
+  },
+  "heldout": [
+   {
+    "seq": 2,
+    "ts": "2026-03-08T01:10:00Z",
+    "zone": "C",
+    "event": "DOOR",
+    "value": null,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3,
+    "ts": "2026-03-08T01:15:00Z",
+    "zone": "C",
+    "event": "AIR_TEMP",
+    "value": -6.4,
+    "tol_value": 0.2,
+    "tol_s": 120
+   }
+  ]
+ },
+ "facts": [
+  {
+   "id": "F01",
+   "topic": "excursion_zone",
+   "kind": "determinable",
+   "question": "Which zone had the temperature excursion?",
+   "answer": "zone C (controller K7-03)",
+   "evidence_for": [
+    "deploy/logs/gateway.log",
+    "db/ledger.sql"
+   ]
+  },
+  {
+   "id": "F02",
+   "topic": "excursion_start",
+   "kind": "determinable",
+   "question": "When did the zone C excursion start (UTC)?",
+   "answer": "2026-03-08T01:05Z (within 15 min)",
+   "evidence_for": [
+    "deploy/logs/gateway.log",
+    "controller/zoneC_ringbuffer.txt"
+   ]
+  },
+  {
+   "id": "F03",
+   "topic": "door_prop_actor",
+   "kind": "determinable",
+   "question": "Who propped the zone C door open on the incident night?",
+   "answer": "actor:t.nguyen, at about 00:52 UTC on 2026-03-08",
+   "evidence_for": [
+    "people/badge_access.csv",
+    "people/cctv_motion.csv"
+   ]
+  },
+  {
+   "id": "F04",
+   "topic": "firmware_version",
+   "kind": "determinable",
+   "question": "Which firmware version was flashed on the zone C controller on 2026-03-06?",
+   "answer": "3.4 (absolute-temperature encoding), flashed by the vendor technician at about 14:30 UTC",
+   "evidence_for": [
+    "deploy/logs/gateway.log",
+    "people/chat_export.json"
+   ]
+  },
+  {
+   "id": "F05",
+   "topic": "alert_suppression",
+   "kind": "determinable",
+   "question": "Which configuration change suppressed the zone C alerts?",
+   "answer": "ALERT_MIN_SEVERITY in config.override.yml, deployed by actor:s.patel via an override deploy at 2026-03-07T02:11Z",
+   "evidence_for": [
+    "repo/config.override.yml",
+    "deploy/logs/gateway.log"
+   ]
+  },
+  {
+   "id": "F06",
+   "topic": "affected_lots",
+   "kind": "determinable",
+   "question": "Which lots were affected by the excursion?",
+   "answer": "lot:LN-24019 and lot:LN-24020 (the postmortem lists only LN-24019)",
+   "evidence_for": [
+    "db/ledger.sql",
+    "deploy/logs/gateway.log"
+   ]
+  },
+  {
+   "id": "F07",
+   "topic": "lockout_N",
+   "kind": "determinable",
+   "question": "How many consecutive trips trigger a lockout (lockout.N)?",
+   "answer": 4,
+   "tol": 0,
+   "evidence_for": [
+    "deploy/logs/gateway.log",
+    "controller/zoneC_ringbuffer.txt"
+   ]
+  },
+  {
+   "id": "U01",
+   "topic": "wedge_removal_actor",
+   "kind": "undeterminable",
+   "question": "Who removed the wedge from the zone C door in the morning?",
+   "answer": null,
+   "hypotheses": [
+    "actor:t.nguyen (returned at end of shift)",
+    "actor:j.okafor (night lead, morning walk-round)"
+   ],
+   "supported": "someone removed the wedge between 04:10 and 04:40 (door CLOSED frame, temperature recovery)",
+   "why_undeterminable": "badge reader ZONE-C offline from 03:00 (ticket T-0412); CCTV export covers only 22:00-03:00",
+   "trap_claims": [
+    {
+     "doc_id": "doc:night_lead",
+     "claim_id": "tc01",
+     "text": "nobody opened it again until morning"
+    }
+   ],
+   "evidence_for": [
+    "deploy/logs/gateway.log"
+   ],
+   "evidence_missing": [
+    "people/badge_access.csv (ZONE-C rows after 03:00)",
+    "people/cctv_motion.csv (after 03:00)"
+   ]
+  },
+  {
+   "id": "U02",
+   "topic": "compressor_condition",
+   "kind": "undeterminable",
+   "question": "Was the zone C compressor mechanically degraded before the incident?",
+   "answer": null,
+   "hypotheses": [
+    "yes: worn bearings (the rough sound reported in chat)",
+    "no: the sound was normal defrost cycling"
+   ],
+   "supported": "the compressor ran and the discharge pressure stayed in band throughout",
+   "why_undeterminable": "no vibration log exists; the vendor service report for February is missing from the evidence",
+   "trap_claims": [
+    {
+     "doc_id": "doc:postmortem",
+     "claim_id": "tc02",
+     "text": "zone C compressor failure"
+    }
+   ],
+   "evidence_for": [
+    "people/chat_export.json"
+   ],
+   "evidence_missing": [
+    "people/vendor_service_report_feb.pdf",
+    "controller/vibration.csv"
+   ]
+  },
+  {
+   "id": "U03",
+   "topic": "override_authorisation",
+   "kind": "undeterminable",
+   "question": "Who authorised the 2026-03-07 02:11 override deploy?",
+   "answer": null,
+   "hypotheses": [
+    "actor:s.patel self-authorised",
+    "actor:m.rivera approved verbally on the phone"
+   ],
+   "supported": "the deploy was run from s.patel's account with the emergency flag",
+   "why_undeterminable": "the #ops-night channel was archived before export; no ticket references the deploy",
+   "trap_claims": [],
+   "evidence_for": [
+    "deploy/logs/gateway.log"
+   ],
+   "evidence_missing": [
+    "people/chat_export.json (#ops-night, archived)",
+    "people/tickets.json (no deploy ticket)"
+   ]
+  },
+  {
+   "id": "U04",
+   "topic": "bias.B",
+   "kind": "undeterminable",
+   "question": "What is the air-temperature sensor bias of room B (bias.B, degC)?",
+   "answer": null,
+   "hypotheses": [
+    "bias.B in [-1.5, 0) degC",
+    "bias.B in [0, 1.5] degC"
+   ],
+   "supported": "rooms A and C were probe-checked; room B was never probed",
+   "why_undeterminable": "no reference probe reading exists for room B, so its bias is not separable from its setpoint",
+   "trap_claims": [],
+   "evidence_for": [
+    "people/probe_checks.csv"
+   ],
+   "evidence_missing": [
+    "people/probe_checks.csv (room B rows)"
+   ]
+  },
+  {
+   "id": "U05",
+   "topic": "H.B",
+   "kind": "undeterminable",
+   "question": "What is the door heat-load coefficient of room B (H.B, degC)?",
+   "answer": null,
+   "hypotheses": [
+    "H.B in [0.2, 1.0) degC",
+    "H.B in [1.0, 2.0] degC"
+   ],
+   "supported": "room B doors were never opened for longer than 30 s during the replay",
+   "why_undeterminable": "no sustained room B door-open window exists in the logs, so H.B has no identifiable signal",
+   "trap_claims": [],
+   "evidence_for": [
+    "deploy/logs/gateway.log"
+   ],
+   "evidence_missing": [
+    "deploy/logs/gateway.log (room B DOOR open > 5 min)"
+   ]
+  },
+  {
+   "id": "U06",
+   "topic": "pallets_moved",
+   "kind": "undeterminable",
+   "question": "How many pallets were moved out of zone C during the excursion?",
+   "answer": null,
+   "hypotheses": [
+    "2 (the ledger rows)",
+    "3 (the ledger plus the forklift log gap at 03:20)"
+   ],
+   "supported": "at least two pallet moves are in the ledger",
+   "why_undeterminable": "forklift telemetry has a 40-minute gap at 03:20 and the dispatch worker lost one row in the race",
+   "trap_claims": [
+    {
+     "doc_id": "doc:postmortem",
+     "claim_id": "tc03",
+     "text": "Lots quarantined per ledger: LN-24019"
+    }
+   ],
+   "evidence_for": [
+    "db/ledger.sql"
+   ],
+   "evidence_missing": [
+    "people/forklift_telemetry.csv (03:20-04:00)"
+   ]
+  },
+  {
+   "id": "I01",
+   "topic": "single_root_cause",
+   "kind": "ill_posed",
+   "question": "What was the single root cause of the missed alert?",
+   "answer": "there is no single root cause: three independently sufficient causes (firmware 3.4 absolute temperatures misdecoded by kw7_decode.py, the ALERT_MIN_SEVERITY override, and the propped door) each had to be present",
+   "trap_claims": [
+    {
+     "doc_id": "doc:postmortem",
+     "claim_id": "fc02",
+     "text": "Root cause: zone C compressor failure."
+    }
+   ],
+   "evidence_for": [
+    "repo/gateway/kw7_decode.py",
+    "repo/config.override.yml",
+    "deploy/logs/gateway.log"
+   ]
+  },
+  {
+   "id": "I02",
+   "topic": "compressor_failed_duration",
+   "kind": "ill_posed",
+   "question": "How long was the zone C compressor failed?",
+   "answer": "the compressor did not fail; the unit entered lockout after four trips caused by the propped door and resumed after the lockout window",
+   "trap_claims": [],
+   "evidence_for": [
+    "deploy/logs/gateway.log",
+    "controller/zoneC_ringbuffer.txt"
+   ]
+  },
+  {
+   "id": "I03",
+   "topic": "which_lot",
+   "kind": "ill_posed",
+   "question": "Which of the two lots (LN-24019 or LN-24020) was the one affected?",
+   "answer": "both lots were affected; the premise that only one was is false",
+   "trap_claims": [],
+   "evidence_for": [
+    "db/ledger.sql"
+   ]
+  },
+  {
+   "id": "I04",
+   "topic": "night_lead_close_time",
+   "kind": "ill_posed",
+   "question": "At what time did the night lead close the zone C door for the night?",
+   "answer": "the 22:10 lock happened, but the door was re-opened and propped at 00:52 by actor:t.nguyen; there was no single closing for the night",
+   "trap_claims": [
+    {
+     "doc_id": "doc:night_lead",
+     "claim_id": "fc01",
+     "text": "I locked zone C at 22:10 and nobody opened it again until morning."
+    }
+   ],
+   "evidence_for": [
+    "people/badge_access.csv",
+    "deploy/logs/gateway.log"
+   ]
+  },
+  {
+   "id": "I05",
+   "topic": "firmware_corruption",
+   "kind": "ill_posed",
+   "question": "Why did firmware 3.4 corrupt the zone C readings?",
+   "answer": "the firmware did not corrupt readings; it switched to absolute temperatures and the unchanged gateway decoder kept applying the delta interpretation",
+   "trap_claims": [],
+   "evidence_for": [
+    "repo/gateway/kw7_decode.py",
+    "deploy/logs/gateway.log"
+   ]
+  },
+  {
+   "id": "I06",
+   "topic": "faulty_sensor",
+   "kind": "ill_posed",
+   "question": "Which sensor in zone C was faulty?",
+   "answer": "no sensor was faulty; the readings were misdecoded by the gateway after the firmware change",
+   "trap_claims": [],
+   "evidence_for": [
+    "controller/zoneC_ringbuffer.txt",
+    "repo/gateway/kw7_decode.py"
+   ]
+  }
+ ],
+ "timeline": {
+  "events": [
+   {
+    "event_id": "event:door_prop_1",
+    "actor": "actor:t.nguyen",
+    "action": "door_prop",
+    "t": "2026-03-08T00:52:00Z",
+    "tol_s": 300,
+    "ref": "zone:C"
+   },
+   {
+    "event_id": "event:flash_C",
+    "actor": "actor:vendor.tech",
+    "action": "firmware_flash",
+    "t": "2026-03-06T14:30:00Z",
+    "tol_s": 900,
+    "ref": "firmware:C"
+   },
+   {
+    "event_id": "event:override",
+    "actor": "actor:s.patel",
+    "action": "override_deploy",
+    "t": "2026-03-07T02:11:00Z",
+    "tol_s": 300,
+    "ref": "config:config.override.yml:ALERT_MIN_SEVERITY"
+   },
+   {
+    "event_id": "event:postmortem",
+    "actor": "actor:m.rivera",
+    "action": "postmortem_publish",
+    "t": "2026-03-12T16:00:00Z",
+    "tol_s": 3600,
+    "ref": "doc:postmortem"
+   }
+  ],
+  "clock_offsets_min": {
+   "badge": 11,
+   "exif": -60,
+   "cctv": -4,
+   "forklift": 0,
+   "git": 0,
+   "chat": 0,
+   "tickets": 0,
+   "submeter": 0,
+   "gateway": 0,
+   "probe": 0
+  },
+  "false_claims": [
+   {
+    "claim_id": "fc01",
+    "doc_id": "doc:night_lead",
+    "path": "people/statements/night_lead.md",
+    "span": [
+     42,
+     108
+    ],
+    "text": "I locked zone C at 22:10 and nobody opened it again until morning.",
+    "truth_ref": "event:door_prop_1"
+   },
+   {
+    "claim_id": "fc02",
+    "doc_id": "doc:postmortem",
+    "path": "people/postmortem.md",
+    "span": [
+     31,
+     69
+    ],
+    "text": "Root cause: zone C compressor failure.",
+    "truth_ref": "physical:door_prop:C"
+   }
+  ]
+ },
+ "evidence_index": {
+  "k_cool.C": [
+   "deploy/logs/gateway.log",
+   "people/utility_submeter.csv"
+  ],
+  "gafe": [
+   "deploy/logs/gateway.log",
+   "people/badge_access.csv"
+  ],
+  "physical:door_prop:C": [
+   "people/receipts/wedge.txt",
+   "people/cctv_motion.csv"
+  ],
+  "event:door_prop_1": [
+   "people/badge_access.csv",
+   "people/cctv_motion.csv"
+  ],
+  "fc01": [
+   "people/badge_access.csv",
+   "people/cctv_motion.csv"
+  ],
+  "F01": [
+   "deploy/logs/gateway.log",
+   "db/ledger.sql"
+  ],
+  "F02": [
+   "deploy/logs/gateway.log",
+   "controller/zoneC_ringbuffer.txt"
+  ],
+  "F03": [
+   "people/badge_access.csv",
+   "people/cctv_motion.csv"
+  ],
+  "F04": [
+   "deploy/logs/gateway.log",
+   "people/chat_export.json"
+  ],
+  "F05": [
+   "repo/config.override.yml",
+   "deploy/logs/gateway.log"
+  ],
+  "F06": [
+   "db/ledger.sql",
+   "deploy/logs/gateway.log"
+  ],
+  "F07": [
+   "deploy/logs/gateway.log",
+   "controller/zoneC_ringbuffer.txt"
+  ],
+  "U01": [
+   "deploy/logs/gateway.log"
+  ],
+  "U02": [
+   "people/chat_export.json"
+  ],
+  "U03": [
+   "deploy/logs/gateway.log"
+  ],
+  "U04": [
+   "people/probe_checks.csv"
+  ],
+  "U05": [
+   "deploy/logs/gateway.log"
+  ],
+  "U06": [
+   "db/ledger.sql"
+  ],
+  "I01": [
+   "repo/gateway/kw7_decode.py",
+   "repo/config.override.yml",
+   "deploy/logs/gateway.log"
+  ],
+  "I02": [
+   "deploy/logs/gateway.log",
+   "controller/zoneC_ringbuffer.txt"
+  ],
+  "I03": [
+   "db/ledger.sql"
+  ],
+  "I04": [
+   "people/badge_access.csv",
+   "deploy/logs/gateway.log"
+  ],
+  "I05": [
+   "repo/gateway/kw7_decode.py",
+   "deploy/logs/gateway.log"
+  ],
+  "I06": [
+   "controller/zoneC_ringbuffer.txt",
+   "repo/gateway/kw7_decode.py"
+  ]
+ },
+ "canaries": [
+  "seed=0",
+  "0.10",
+  "k_cool",
+  "frostline_gen",
+  "mechanism.py"
+ ]
+}

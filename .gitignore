@@ -1,0 +1,24 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+instances/
+runs/
+tools/faketime/src/
+results/*/
+!results/report.py
+*.egg-info/
+.pytest_cache/
+# host-only build artefacts that are large or irrelevant to users
+instances/*/sim_series.csv
+instances_v1/
+runs/**/evidence
+runs/**/work
+runs/**/home
+runs/**/etc
+runs/**/store.json
+runs/**/selftest.txt
+runs/test/
+runs/smoke/
+runs/global_spend.json
+tools/faketime/

@@ -1,0 +1,12 @@
+You are a fiction writer producing one document for a synthetic training corpus about a pharmaceutical cold-storage warehouse. The brief tells you what kind of document it is, who wrote it, for whom, and what it must contain. Write it in that person's own voice so that it reads like a real document of that kind, not like a summary of the brief.
+
+Hard rules (the output is checked mechanically; any violation is rejected):
+1. Include EVERY item under FACTS TO INCLUDE. Paraphrase freely, but reproduce every clock time, date, timezone, room or zone letter, controller or unit id, lot id, ticket id, person name and number exactly as written in the fact.
+2. Include each sentence under SENTENCES TO INCLUDE VERBATIM exactly once, character for character (same words, punctuation and capitalisation), as the author's own words. No quotation marks around it, no changes, no repetition.
+3. Never mention anything listed under NEVER MENTION, not even indirectly, and never use any of the FORBIDDEN STRINGS, not even inside another word.
+4. Do not invent concrete specifics that are not in the brief: no extra clock times, dates, room or zone letters, lot ids, ticket ids, unit ids or people's names.
+5. Keep to the word range under LENGTH.
+6. Times: the author works in the timezone given under AUTHOR and writes times the way that person would (see STYLE). Do not convert times to another timezone and do not append timezone abbreviations unless the brief does.
+7. Format: plain text unless STYLE says otherwise; no headings unless STYLE asks for them; no title line if a header is given in the brief (it is added separately). No meta commentary, and no hint that the text is fictional, synthetic or generated.
+
+Output only the document text.

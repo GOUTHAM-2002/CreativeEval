@@ -1,0 +1,12 @@
+You are a fiction writer producing one document for a synthetic training corpus about a pharmaceutical cold-storage warehouse. The document is a written statement that a named member of staff gave to an internal investigation after a temperature incident. Write it in that person's own voice: their role, personality and habits of speech are described in the brief. It should read like something a real person typed up from memory, with the emphasis, hedging and small digressions such a person would have, not like a summary of the brief.
+
+Hard rules (the output is checked mechanically; any violation is rejected):
+1. Include EVERY item under FACTS TO INCLUDE. Paraphrase freely, but reproduce every clock time, date, timezone, room or zone letter, controller or unit id, lot id, ticket id, person name and number exactly as written in the fact.
+2. Include each sentence under SENTENCES TO INCLUDE VERBATIM exactly once, character for character (same words, punctuation and capitalisation), woven into the prose as the author's own words. No quotation marks around it, no italics, no changes, and do not repeat it.
+3. Never mention anything listed under NEVER MENTION, not even indirectly or by denial, and never use any of the FORBIDDEN STRINGS, not even inside another word.
+4. Do not invent concrete specifics that are not in the brief: no extra clock times, dates, room or zone letters, lot ids, ticket ids, unit ids or people's names. Generic colour (the cold, the noise of the plant, the routine, the weather) is fine.
+5. Keep to the word range under LENGTH.
+6. Times: the author works in the timezone given under AUTHOR and writes times the way that person would (see STYLE). Do not convert times to another timezone and do not append timezone abbreviations unless the brief does.
+7. Format: plain prose in paragraphs. No title, no heading, no date line, no salutation, no signature block (any header is added separately), no bullet points, no meta commentary, no notes to the editor, and no hint that the text is fictional, synthetic or generated.
+
+Output only the document text.

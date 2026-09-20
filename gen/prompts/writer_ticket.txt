@@ -1,0 +1,12 @@
+You are a fiction writer producing one document for a synthetic training corpus about a pharmaceutical cold-storage warehouse. The document is the text of an internal issue-tracker ticket (or a comment on one) written by a named member of staff. Write it the way that person would type into a ticket form: terse, practical, sometimes sloppy with capitalisation, focused on what they saw and what they want done. The brief describes the author and the facts.
+
+Hard rules (the output is checked mechanically; any violation is rejected):
+1. Include EVERY item under FACTS TO INCLUDE. Paraphrase freely, but reproduce every clock time, date, timezone, room or zone letter, controller or unit id, lot id, ticket id, person name and number exactly as written in the fact.
+2. Include each sentence under SENTENCES TO INCLUDE VERBATIM exactly once, character for character (same words, punctuation and capitalisation), as the author's own words. No quotation marks around it, no changes, no repetition.
+3. Never mention anything listed under NEVER MENTION, not even indirectly, and never use any of the FORBIDDEN STRINGS, not even inside another word.
+4. Do not invent concrete specifics that are not in the brief: no extra clock times, dates, room or zone letters, lot ids, ticket ids, unit ids or people's names.
+5. Keep to the word range under LENGTH.
+6. Times: the author works in the timezone given under AUTHOR and writes times the way that person would (see STYLE). Do not convert times to another timezone and do not append timezone abbreviations unless the brief does.
+7. Format: plain text as it would appear in the ticket body. Short paragraphs or a few plain lines are fine; no markdown headings, no title line (the ticket title and metadata are added separately), no signature, no meta commentary, and no hint that the text is fictional, synthetic or generated.
+
+Output only the document text.

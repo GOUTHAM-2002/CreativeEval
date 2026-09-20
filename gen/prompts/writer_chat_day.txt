@@ -1,0 +1,13 @@
+You are a fiction writer producing one day of a workplace chat export (Slack-style) for a synthetic training corpus about a pharmaceutical cold-storage warehouse. Staff post short, informal messages in a few channels; an alerting bot posts automatic alerts. Your job is to turn the day's EVENTS into realistic messages from the right people and to surround them with plausible everyday chatter from the same people, so that the important messages do not stand out.
+
+Hard rules (the output is checked mechanically; any violation is rejected):
+1. For every item under EVENTS write a message from the given user, in the given channel, timestamped within 20 minutes of the given time, that conveys the gist in that person's own words. If the event has REQUIRED TEXT, that message's text must contain the required text exactly, character for character, once; you may add words before or after it but must not change it or repeat it in another message.
+2. Reproduce every item under BOT POSTS exactly as given: same ts, same channel, same user, same text, unchanged. People may react to them or ignore them.
+3. Use only the users listed under PARTICIPANTS (plus the bot user for bot posts) and only the channels listed under CHANNELS. Write each person in their own persona; keep the persona notes in mind for tone, not as content to state.
+4. The total number of messages (including bot posts) must be within the range under MESSAGE COUNT. Fill with short, natural chatter: shift starts, handovers, quick questions, one-line replies, small talk. Most messages under 25 words. Not every message needs a reply.
+5. Timestamps: ISO 8601 in exactly the same format as the examples in the brief (same date, same "Z" suffix), in chronological order, realistic spacing (people reply after seconds to minutes, not at round times only).
+6. Never mention anything listed under NEVER MENTION, not even indirectly, and never use any of the FORBIDDEN STRINGS. Do not invent concrete specifics that are not in the brief: no extra clock times inside message text, no additional room or zone letters, lot ids, ticket ids or people's names.
+7. No meta commentary, and no hint that the export is fictional, synthetic or generated.
+
+Output format: a JSON array only, no code fence, no text before or after it. Each element has exactly the keys ts, channel, user, text:
+[{"ts": "2026-05-23T21:52:00Z", "channel": "#ops-floor", "user": "l.okafor", "text": "night shift on, all quiet"}, ...]

@@ -1,0 +1,24 @@
+CREATE TABLE IF NOT EXISTS lots (
+  lot_id TEXT PRIMARY KEY, product TEXT NOT NULL, pallet_id TEXT NOT NULL,
+  zone TEXT NOT NULL, qty INTEGER NOT NULL, updated_at TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS zone_config (
+  zone TEXT PRIMARY KEY, ctrl_id TEXT NOT NULL, setpoint REAL NOT NULL, panel TEXT NOT NULL, kind TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS readings (
+  id INTEGER PRIMARY KEY AUTOINCREMENT, ctrl_id TEXT NOT NULL, seq INTEGER NOT NULL, recv TEXT NOT NULL,
+  zone TEXT, air_temp REAL, comp_state TEXT, setpoint REAL, unknown_tokens TEXT, raw TEXT NOT NULL);
+CREATE INDEX IF NOT EXISTS readings_zone_recv ON readings(zone, recv);
+CREATE TABLE IF NOT EXISTS moves (
+  id INTEGER PRIMARY KEY AUTOINCREMENT, job_id TEXT, lot_id TEXT NOT NULL, from_zone TEXT, to_zone TEXT NOT NULL,
+  operator TEXT, applied_at TEXT NOT NULL, note TEXT);
+CREATE TABLE IF NOT EXISTS probe_checks (
+  id INTEGER PRIMARY KEY AUTOINCREMENT, zone TEXT NOT NULL, handheld TEXT NOT NULL, operator TEXT NOT NULL,
+  reading REAL NOT NULL, taken_at TEXT NOT NULL, entered_at TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS events (
+  id INTEGER PRIMARY KEY AUTOINCREMENT, kind TEXT NOT NULL, ctrl_id TEXT, zone TEXT, t TEXT NOT NULL, detail TEXT);
+CREATE TABLE IF NOT EXISTS alerts (
+  id INTEGER PRIMARY KEY AUTOINCREMENT, alert_id TEXT NOT NULL, zone TEXT, rule TEXT NOT NULL, severity TEXT NOT NULL,
+  value REAL, channel TEXT, state TEXT NOT NULL, raised_at TEXT NOT NULL, cleared_at TEXT);
+CREATE TABLE IF NOT EXISTS audit (
+  id INTEGER PRIMARY KEY AUTOINCREMENT, at TEXT NOT NULL, actor TEXT NOT NULL, action TEXT NOT NULL, detail TEXT);
+CREATE TABLE IF NOT EXISTS latest_readings (
+  zone TEXT PRIMARY KEY, recv TEXT NOT NULL, air_temp REAL, comp_state TEXT, seq INTEGER, ctrl_id TEXT);
