@@ -22,6 +22,8 @@ def test_instance_has_no_leaks(inst):
     for fact, files in truth["evidence_index"].items():
         assert len(files) >= 2, (fact, files)
         for f in files:
+            if f == "repo/.git" and (ev / "repo.git.bundle").exists():
+                continue
             assert (ev / f).exists(), (fact, f)
 
 

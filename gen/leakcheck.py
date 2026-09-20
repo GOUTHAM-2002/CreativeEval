@@ -31,11 +31,20 @@ def scan(ev: Path, truth: dict) -> list[str]:
     if len(mtimes) > 1:
         problems.append(f"non-uniform mtimes: {sorted(mtimes)[:3]}...")
     repo = ev / "repo"
+    import tempfile, shutil as _sh
+    tmpd = None
+    if not (repo / ".git").exists() and (ev / "repo.git.bundle").exists():
+        from gen.gitbundle import restore_repo
+        tmpd = Path(tempfile.mkdtemp(prefix="leakcheck_"))
+        _sh.copytree(repo, tmpd / "repo"); _sh.copy(ev / "repo.git.bundle", tmpd / "repo.git.bundle")
+        restore_repo(tmpd); repo = tmpd / "repo"
     if (repo / ".git").exists():
         r = subprocess.run(["git", "-C", str(repo), "log", "--all", "-p"], capture_output=True, text=True)
         for c in canaries:
             if c in r.stdout:
                 problems.append(f"canary {c!r} in git history")
+    if tmpd:
+        _sh.rmtree(tmpd, ignore_errors=True)
     for name in ("truth.json", "world.json", "answer.json"):
         if list(ev.rglob(name)):
             problems.append(f"forbidden file {name} inside evidence")

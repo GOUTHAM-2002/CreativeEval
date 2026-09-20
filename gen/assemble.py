@@ -259,6 +259,8 @@ def finish_instance(seed, tmp, world, sim, nt, info, report, ev, out_root, log, 
     if problems:
         log(f"LEAKCHECK FAILED: {problems[:10]}")
         raise RuntimeError("leakcheck failed")
+    from gen.gitbundle import bundle_repo
+    bundle_repo(ev)
     h = hashlib.sha256()
     for p in sorted(ev.rglob("*")):
         if p.is_file():

@@ -83,6 +83,14 @@ def prepare_run_dir(run_dir, evidence_src, store_root_dir=None) -> Path:
     store = root / secrets.token_hex(8)
     store.mkdir(mode=0o700)
     mode = _copy_tree(evidence_src, store / "evidence")
+    try:
+        import sys as _sys
+        if str(HERE.parent) not in _sys.path:
+            _sys.path.insert(0, str(HERE.parent))
+        from gen.gitbundle import restore_repo
+        restore_repo(store / "evidence")
+    except Exception as e:  # noqa: BLE001
+        raise RuntimeError(f"could not restore the evidence repo from its bundle: {e}")
     for d in ("work", "home"):
         (store / d).mkdir()
     etc = store / "etc"
