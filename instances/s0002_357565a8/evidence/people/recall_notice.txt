@@ -1,0 +1,6 @@
+PRODUCT SAFETY NOTICE  —  Compressor recall
+Manufacturer: Nordkälte Kompressoren GmbH        Notice date: 2026-05-10
+Affected models: NK-450S and NK-450SX scroll compressors, serial range 7A0001–7A9999, manufactured 2024.
+Issue: internal thermal protector may fail closed, allowing the compressor to overheat and stop without alarm.
+Action: units in the affected range must be inspected; contact your service partner.
+Site note (Priya Novak): our rooms use VX-5 controllers on NK-380 compressors (serials 5B…), which are NOT in the range; filed for reference.

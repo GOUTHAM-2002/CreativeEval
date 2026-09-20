@@ -1,0 +1,8 @@
+{
+  "schema_version":"1",
+  "mechanism":{"parameters":{},"rules":{"defrost_rule_type":"runtime_hours","stagger_order":[],"adjacency_pairs":[]}},
+  "notation":{"glossary":{},"affixes":{},"v34_change":"none","heldout":[]},
+  "causal_chain":{"roots":[],"nodes":[],"edges":[],"decoys_rejected":[],"affected_lots":[],"excursion":{}},
+  "timeline":{"events":[],"clock_offsets_min":{},"false_claims":[]},
+  "confidence":{"mechanism":0,"notation":0,"causal_chain":0,"timeline":0}
+}

@@ -1,0 +1,1352 @@
+{
+  "schema_version": "1",
+  "mechanism": {
+    "parameters": {
+      "k_cool.A": 0.03,
+      "k_leak.A": 0.00194,
+      "H.A": 2.2,
+      "bias.A": 0.21,
+      "k_cool.B": 0.042,
+      "k_leak.B": 0.00138,
+      "H.B": 1.6,
+      "bias.B": -1.44,
+      "k_cool.C": 0.109,
+      "k_leak.C": 0.00127,
+      "H.C": 2.4,
+      "bias.C": -0.74,
+      "k_cool.D": 0.109,
+      "k_leak.D": 0.0012,
+      "H.D": 2.2,
+      "bias.D": 1.06,
+      "k_cool.E": 0.125,
+      "k_leak.E": 0.00091,
+      "H.E": 1.5,
+      "bias.E": 0.12,
+      "k_cool.F": 0.098,
+      "k_leak.F": 0.00113,
+      "H.F": 1.3,
+      "bias.F": 1.04,
+      "door_gain": 7.4,
+      "c_adj": 0.0003,
+      "defrost.R_hours": 7,
+      "defrost.len_min": 21,
+      "defrost.heat_degC": 3.73,
+      "trip.d_min": 9,
+      "lockout.N": 3,
+      "lockout.W_min": 45,
+      "lockout.L_min": 240
+    },
+    "rules": {
+      "defrost_rule_type": "runtime_hours",
+      "adjacency_pairs": [
+        [
+          "A",
+          "B"
+        ],
+        [
+          "A",
+          "C"
+        ],
+        [
+          "A",
+          "D"
+        ],
+        [
+          "B",
+          "F"
+        ],
+        [
+          "C",
+          "E"
+        ],
+        [
+          "D",
+          "F"
+        ],
+        [
+          "D",
+          "E"
+        ]
+      ],
+      "stagger_order": [
+        "C",
+        "B",
+        "F",
+        "E",
+        "D",
+        "A"
+      ]
+    }
+  },
+  "notation": {
+    "glossary": {
+      "laki": "COIL_TEMP",
+      "lino": "DISCH_PRESSURE",
+      "dika": "OPEN",
+      "rote": "DOOR",
+      "nizi": "CLOSED",
+      "lari": "FAULT",
+      "tati": "TRIP",
+      "lita": "ENTER",
+      "nare": "DEFROST",
+      "nido": "ON",
+      "rete": "HEATER",
+      "roto": "EXIT",
+      "tere": "OFF",
+      "tari": "RECOVERY",
+      "sedo": "LOCKOUT",
+      "tina": "BOOT",
+      "nera": "FIRMWARE",
+      "neke": "ABS",
+      "zodo": "OVERFLOW",
+      "kano": "QUEUE"
+    },
+    "affixes": {
+      "to": "ZONE",
+      "na": "ZONE",
+      "si": "ZONE",
+      "zi": "ZONE",
+      "de": "ZONE",
+      "ro": "ZONE",
+      "ba": "ASPECT_EVENT",
+      "be": "ASPECT_STATE"
+    },
+    "v34_change": "absolute_temp",
+    "heldout": [
+      {
+        "seq": 746,
+        "ts": "2026-03-05T23:35:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -22.3
+      },
+      {
+        "seq": 747,
+        "ts": "2026-03-05T23:40:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -22.9
+      },
+      {
+        "seq": 748,
+        "ts": "2026-03-05T23:45:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -22.7
+      },
+      {
+        "seq": 749,
+        "ts": "2026-03-05T23:50:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -23.1
+      },
+      {
+        "seq": 750,
+        "ts": "2026-03-05T23:55:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -21.8
+      },
+      {
+        "seq": 751,
+        "ts": "2026-03-06T00:00:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -22.0
+      },
+      {
+        "seq": 752,
+        "ts": "2026-03-06T00:05:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -21.9
+      },
+      {
+        "seq": 753,
+        "ts": "2026-03-06T00:10:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -21.1
+      },
+      {
+        "seq": 754,
+        "ts": "2026-03-06T00:15:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -21.4
+      },
+      {
+        "seq": 755,
+        "ts": "2026-03-06T00:20:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -20.7
+      },
+      {
+        "seq": 756,
+        "ts": "2026-03-06T00:25:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -20.6
+      },
+      {
+        "seq": 757,
+        "ts": "2026-03-06T00:30:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -21.7
+      },
+      {
+        "seq": 758,
+        "ts": "2026-03-06T00:35:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -22.0
+      },
+      {
+        "seq": 759,
+        "ts": "2026-03-06T00:40:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -22.3
+      },
+      {
+        "seq": 760,
+        "ts": "2026-03-06T00:45:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -22.0
+      },
+      {
+        "seq": 761,
+        "ts": "2026-03-06T00:50:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -22.0
+      },
+      {
+        "seq": 762,
+        "ts": "2026-03-06T00:55:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -22.4
+      },
+      {
+        "seq": 763,
+        "ts": "2026-03-06T01:00:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -23.1
+      },
+      {
+        "seq": 764,
+        "ts": "2026-03-06T01:05:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -23.1
+      },
+      {
+        "seq": 765,
+        "ts": "2026-03-06T01:07:00Z",
+        "zone": "D",
+        "event": "DOOR",
+        "value": null
+      },
+      {
+        "seq": 766,
+        "ts": "2026-03-06T01:10:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -22.0
+      },
+      {
+        "seq": 767,
+        "ts": "2026-03-06T01:15:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -20.6
+      },
+      {
+        "seq": 768,
+        "ts": "2026-03-06T01:20:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -19.0
+      },
+      {
+        "seq": 769,
+        "ts": "2026-03-06T01:21:00Z",
+        "zone": "D",
+        "event": "TRIP",
+        "value": null
+      },
+      {
+        "seq": 770,
+        "ts": "2026-03-06T01:25:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -17.7
+      },
+      {
+        "seq": 771,
+        "ts": "2026-03-06T01:30:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -17.0
+      },
+      {
+        "seq": 772,
+        "ts": "2026-03-06T01:34:00Z",
+        "zone": "D",
+        "event": "TRIP",
+        "value": null
+      },
+      {
+        "seq": 773,
+        "ts": "2026-03-06T01:35:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -16.1
+      },
+      {
+        "seq": 774,
+        "ts": "2026-03-06T01:40:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -14.7
+      },
+      {
+        "seq": 775,
+        "ts": "2026-03-06T01:42:00Z",
+        "zone": "D",
+        "event": "DEFROST",
+        "value": null
+      },
+      {
+        "seq": 776,
+        "ts": "2026-03-06T01:45:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -13.1
+      },
+      {
+        "seq": 777,
+        "ts": "2026-03-06T01:50:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -11.1
+      },
+      {
+        "seq": 778,
+        "ts": "2026-03-06T01:55:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -8.5
+      },
+      {
+        "seq": 779,
+        "ts": "2026-03-06T02:00:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -5.9
+      },
+      {
+        "seq": 780,
+        "ts": "2026-03-06T02:03:00Z",
+        "zone": "D",
+        "event": "DEFROST",
+        "value": null
+      },
+      {
+        "seq": 781,
+        "ts": "2026-03-06T02:05:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -5.2
+      },
+      {
+        "seq": 782,
+        "ts": "2026-03-06T02:10:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -5.2
+      },
+      {
+        "seq": 783,
+        "ts": "2026-03-06T02:11:00Z",
+        "zone": "D",
+        "event": "TRIP",
+        "value": null
+      },
+      {
+        "seq": 784,
+        "ts": "2026-03-06T02:15:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -4.5
+      },
+      {
+        "seq": 785,
+        "ts": "2026-03-06T02:20:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -4.2
+      },
+      {
+        "seq": 786,
+        "ts": "2026-03-06T02:24:00Z",
+        "zone": "D",
+        "event": "TRIP",
+        "value": null
+      },
+      {
+        "seq": 787,
+        "ts": "2026-03-06T02:25:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -4.1
+      },
+      {
+        "seq": 788,
+        "ts": "2026-03-06T02:30:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -2.7
+      },
+      {
+        "seq": 789,
+        "ts": "2026-03-06T02:35:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -2.5
+      },
+      {
+        "seq": 791,
+        "ts": "2026-03-06T02:37:00Z",
+        "zone": "D",
+        "event": "LOCKOUT",
+        "value": null
+      }
+    ]
+  },
+  "causal_chain": {
+    "affected_lots": [
+      "lot:LN-20092",
+      "lot:LN-22068",
+      "lot:LN-22726",
+      "lot:LN-23894",
+      "lot:LN-24907",
+      "lot:LN-25048",
+      "lot:LN-25120",
+      "lot:LN-25225",
+      "lot:LN-25312",
+      "lot:LN-27029",
+      "lot:LN-27586",
+      "lot:LN-27727",
+      "lot:LN-28029",
+      "lot:LN-28263",
+      "lot:LN-28691",
+      "lot:LN-28819",
+      "lot:LN-29237",
+      "lot:LN-29938"
+    ],
+    "excursion": {
+      "zone": "D",
+      "start": "2026-03-06T01:42:00Z",
+      "end": "2026-03-06T11:17:00Z"
+    },
+    "edges": [
+      [
+        "actor:i.adeyemi",
+        "physical:door_prop:D"
+      ],
+      [
+        "physical:door_prop:D",
+        "physical:door_open:D"
+      ],
+      [
+        "physical:door_open:D",
+        "physical:trip:D"
+      ],
+      [
+        "physical:door_open:D",
+        "physical:excursion:D"
+      ],
+      [
+        "physical:door_open:D",
+        "data:frames_dropped:D"
+      ],
+      [
+        "physical:trip:D",
+        "physical:lockout:D"
+      ],
+      [
+        "physical:lockout:D",
+        "physical:excursion:D"
+      ],
+      [
+        "physical:defrost:D",
+        "physical:excursion:D"
+      ],
+      [
+        "ticket:T-0423",
+        "data:frames_dropped:D"
+      ],
+      [
+        "actor:o.moreau",
+        "firmware:D"
+      ],
+      [
+        "actor:o.moreau",
+        "firmware:F"
+      ],
+      [
+        "firmware:D",
+        "data:readings_wrong:D"
+      ],
+      [
+        "firmware:F",
+        "data:readings_wrong:F"
+      ],
+      [
+        "commit:9e8768b",
+        "code:gateway/kw7_decode.py:decode_line"
+      ],
+      [
+        "code:gateway/kw7_decode.py:decode_line",
+        "data:readings_wrong:D"
+      ],
+      [
+        "code:gateway/kw7_decode.py:decode_line",
+        "data:readings_wrong:F"
+      ],
+      [
+        "data:readings_wrong:D",
+        "ticket:T-0427"
+      ],
+      [
+        "data:readings_wrong:D",
+        "data:alerts_suppressed:D"
+      ],
+      [
+        "data:readings_wrong:F",
+        "ticket:T-0427"
+      ],
+      [
+        "data:readings_wrong:F",
+        "data:alerts_suppressed:F"
+      ],
+      [
+        "ticket:T-0427",
+        "commit:b2e50f9"
+      ],
+      [
+        "actor:m.okafor",
+        "commit:b2e50f9"
+      ],
+      [
+        "commit:b2e50f9",
+        "config:alerting/routes.json:zones.D.channel"
+      ],
+      [
+        "commit:b2e50f9",
+        "config:alerting/routes.json:zones.F.channel"
+      ],
+      [
+        "config:alerting/routes.json:zones.D.channel",
+        "data:alerts_suppressed:D"
+      ],
+      [
+        "config:alerting/routes.json:zones.D.channel",
+        "alert:AL-74220-D"
+      ],
+      [
+        "config:alerting/routes.json:zones.F.channel",
+        "data:alerts_suppressed:F"
+      ],
+      [
+        "actor:k.patel",
+        "config:deploy/config.override.json:ALERT_MIN_SEVERITY"
+      ],
+      [
+        "data:readings_wrong:D",
+        "config:deploy/config.override.json:ALERT_MIN_SEVERITY"
+      ],
+      [
+        "config:deploy/config.override.json:ALERT_MIN_SEVERITY",
+        "data:alerts_suppressed:D"
+      ],
+      [
+        "config:deploy/config.override.json:ALERT_MIN_SEVERITY",
+        "data:alerts_suppressed:F"
+      ],
+      [
+        "actor:z.kowalski",
+        "msg:m0059"
+      ],
+      [
+        "msg:m0059",
+        "data:alerts_suppressed:D"
+      ],
+      [
+        "msg:m0059",
+        "data:alerts_suppressed:F"
+      ],
+      [
+        "alert:AL-74220-D",
+        "data:alerts_suppressed:D"
+      ],
+      [
+        "data:frames_dropped:D",
+        "data:alerts_suppressed:D"
+      ],
+      [
+        "commit:ce303cd",
+        "code:billing/nightly.py:run_once"
+      ],
+      [
+        "code:billing/nightly.py:run_once",
+        "code:ledger/server.py:post_readings"
+      ],
+      [
+        "code:ledger/server.py:post_readings",
+        "code:gateway/server.py:handle_line"
+      ],
+      [
+        "code:gateway/server.py:handle_line",
+        "data:frames_dropped:D"
+      ],
+      [
+        "commit:cee2ffa",
+        "code:common/httpd.py:_dispatch"
+      ],
+      [
+        "commit:cee2ffa",
+        "code:ledger/server.py:get_lots"
+      ],
+      [
+        "code:common/httpd.py:_dispatch",
+        "code:ledger/server.py:get_lots"
+      ],
+      [
+        "code:ledger/server.py:get_lots",
+        "code:dispatch/server.py:apply_move"
+      ],
+      [
+        "code:dispatch/server.py:apply_move",
+        "data:lots_wrong:D"
+      ],
+      [
+        "code:dispatch/server.py:worker_loop",
+        "data:lots_wrong:D"
+      ],
+      [
+        "data:lots_wrong:D",
+        "data:quarantine_wrong:D"
+      ],
+      [
+        "actor:h.rivera",
+        "data:quarantine_wrong:D"
+      ],
+      [
+        "actor:h.rivera",
+        "doc:postmortem"
+      ],
+      [
+        "doc:postmortem",
+        "data:quarantine_wrong:D"
+      ],
+      [
+        "physical:excursion:D",
+        "lot:LN-20092"
+      ],
+      [
+        "physical:excursion:D",
+        "lot:LN-22068"
+      ],
+      [
+        "physical:excursion:D",
+        "lot:LN-22726"
+      ],
+      [
+        "physical:excursion:D",
+        "lot:LN-23894"
+      ],
+      [
+        "physical:excursion:D",
+        "lot:LN-24907"
+      ],
+      [
+        "physical:excursion:D",
+        "lot:LN-25048"
+      ],
+      [
+        "physical:excursion:D",
+        "lot:LN-25120"
+      ],
+      [
+        "physical:excursion:D",
+        "lot:LN-25225"
+      ],
+      [
+        "physical:excursion:D",
+        "lot:LN-25312"
+      ],
+      [
+        "physical:excursion:D",
+        "lot:LN-27029"
+      ],
+      [
+        "physical:excursion:D",
+        "lot:LN-27586"
+      ],
+      [
+        "physical:excursion:D",
+        "lot:LN-27727"
+      ],
+      [
+        "physical:excursion:D",
+        "lot:LN-28029"
+      ],
+      [
+        "physical:excursion:D",
+        "lot:LN-28263"
+      ],
+      [
+        "physical:excursion:D",
+        "lot:LN-28691"
+      ],
+      [
+        "physical:excursion:D",
+        "lot:LN-28819"
+      ],
+      [
+        "physical:excursion:D",
+        "lot:LN-29237"
+      ],
+      [
+        "physical:excursion:D",
+        "lot:LN-29938"
+      ]
+    ],
+    "nodes": [
+      "actor:h.rivera",
+      "actor:i.adeyemi",
+      "actor:k.patel",
+      "actor:m.okafor",
+      "actor:o.moreau",
+      "actor:z.kowalski",
+      "alert:AL-74220-D",
+      "code:billing/nightly.py:run_once",
+      "code:common/httpd.py:_dispatch",
+      "code:dispatch/server.py:apply_move",
+      "code:dispatch/server.py:wms_pallet_lookup",
+      "code:dispatch/server.py:worker_loop",
+      "code:gateway/kw7_decode.py:decode_line",
+      "code:gateway/server.py:_post_dispatch",
+      "code:gateway/server.py:handle_line",
+      "code:ledger/server.py:get_lots",
+      "code:ledger/server.py:post_readings",
+      "commit:9e8768b",
+      "commit:b2e50f9",
+      "commit:ce303cd",
+      "commit:cee2ffa",
+      "commit:d361a9a",
+      "config:alerting/routes.json:zones.D.channel",
+      "config:alerting/routes.json:zones.F.channel",
+      "config:deploy/config.override.json:ALERT_MIN_SEVERITY",
+      "data:alerts_suppressed:D",
+      "data:alerts_suppressed:F",
+      "data:frames_dropped:D",
+      "data:lots_wrong:D",
+      "data:quarantine_wrong:D",
+      "data:readings_wrong:D",
+      "data:readings_wrong:F",
+      "doc:hr_note",
+      "doc:postmortem",
+      "doc:recall_notice",
+      "firmware:D",
+      "firmware:F",
+      "lot:LN-20092",
+      "lot:LN-22068",
+      "lot:LN-22726",
+      "lot:LN-23894",
+      "lot:LN-24907",
+      "lot:LN-25048",
+      "lot:LN-25120",
+      "lot:LN-25225",
+      "lot:LN-25312",
+      "lot:LN-27029",
+      "lot:LN-27586",
+      "lot:LN-27727",
+      "lot:LN-28029",
+      "lot:LN-28263",
+      "lot:LN-28691",
+      "lot:LN-28819",
+      "lot:LN-29237",
+      "lot:LN-29938",
+      "msg:m0059",
+      "physical:compressor_fault:D",
+      "physical:defrost:D",
+      "physical:door_open:D",
+      "physical:door_prop:D",
+      "physical:excursion:D",
+      "physical:lockout:D",
+      "physical:power_loss:D",
+      "physical:sensor_fault:D",
+      "physical:sensor_fault:F",
+      "physical:trip:D",
+      "ticket:T-0423",
+      "ticket:T-0427",
+      "ticket:T-0440"
+    ],
+    "roots": [
+      "actor:i.adeyemi",
+      "ticket:T-0423",
+      "actor:o.moreau",
+      "commit:9e8768b",
+      "actor:m.okafor",
+      "actor:k.patel",
+      "actor:z.kowalski",
+      "commit:ce303cd",
+      "commit:cee2ffa"
+    ],
+    "decoys_rejected": [
+      "physical:compressor_fault:D",
+      "physical:sensor_fault:D",
+      "physical:sensor_fault:F",
+      "physical:power_loss:D",
+      "doc:recall_notice",
+      "commit:d361a9a",
+      "doc:hr_note",
+      "ticket:T-0440",
+      "code:gateway/server.py:_post_dispatch",
+      "code:dispatch/server.py:wms_pallet_lookup"
+    ]
+  },
+  "timeline": {
+    "events": [
+      {
+        "actor": "actor:p.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-26T10:34:00Z",
+        "ref": "LN-27586: E to A; scanner and forklift, ledger job failed"
+      },
+      {
+        "actor": "actor:m.okafor",
+        "action": "commit",
+        "t": "2026-03-01T12:35:08Z",
+        "ref": "commit:d361a9a"
+      },
+      {
+        "actor": "actor:i.adeyemi",
+        "action": "purchase",
+        "t": "2026-03-02T16:53:00Z",
+        "ref": "hardware_receipt_wedge: rubber door wedge and extension cord"
+      },
+      {
+        "actor": "actor:l.mensah",
+        "action": "pallet_move",
+        "t": "2026-03-02T20:09:00Z",
+        "ref": "LN-27586: A to C; scanner and forklift, ledger job failed"
+      },
+      {
+        "actor": "actor:i.adeyemi",
+        "action": "door_prop",
+        "t": "2026-03-03T00:49:00Z",
+        "ref": "physical:door_prop:D; door contact, coincident missing TK04 frames and corridor activity"
+      },
+      {
+        "actor": "actor:i.adeyemi",
+        "action": "door_close",
+        "t": "2026-03-03T01:12:00Z",
+        "ref": "D: end of first short door/link interruption"
+      },
+      {
+        "actor": "actor:m.tanaka",
+        "action": "probe_check",
+        "t": "2026-03-03T08:44:00Z",
+        "ref": "D HH-2 -21.9 C; HH-2 requires -0.8 C correction"
+      },
+      {
+        "actor": "actor:z.kowalski",
+        "action": "probe_check",
+        "t": "2026-03-03T10:44:00Z",
+        "ref": "D HH-1 -23.1 C; HH-2 requires -0.8 C correction"
+      },
+      {
+        "actor": "actor:z.kowalski",
+        "action": "probe_check",
+        "t": "2026-03-03T11:02:00Z",
+        "ref": "F HH-1 -23.6 C; HH-2 requires -0.8 C correction"
+      },
+      {
+        "actor": "actor:o.moreau",
+        "action": "shift_start",
+        "t": "2026-03-03T13:31:00Z",
+        "ref": "badge: MAIN-ENTRANCE IN (VISITOR)"
+      },
+      {
+        "actor": "actor:o.moreau",
+        "action": "door_open",
+        "t": "2026-03-03T14:02:00Z",
+        "ref": "badge: ROOM-D UNLOCK"
+      },
+      {
+        "actor": "actor:o.moreau",
+        "action": "firmware_flash",
+        "t": "2026-03-03T14:22:00Z",
+        "ref": "firmware:D; TK04 BOOT FIRMWARE 34, tick reset, then ABS temperature frames"
+      },
+      {
+        "actor": "actor:o.moreau",
+        "action": "door_open",
+        "t": "2026-03-03T14:43:00Z",
+        "ref": "badge: ROOM-F UNLOCK"
+      },
+      {
+        "actor": "actor:o.moreau",
+        "action": "firmware_flash",
+        "t": "2026-03-03T14:58:00Z",
+        "ref": "firmware:F; TK06 BOOT FIRMWARE 34, tick reset, then ABS temperature frames"
+      },
+      {
+        "actor": "actor:o.moreau",
+        "action": "shift_end",
+        "t": "2026-03-03T15:56:00Z",
+        "ref": "badge: MAIN-ENTRANCE OUT (VISITOR)"
+      },
+      {
+        "actor": "actor:z.kowalski",
+        "action": "ticket_open",
+        "t": "2026-03-03T16:08:00Z",
+        "ref": "ticket:T-0427"
+      },
+      {
+        "actor": "actor:i.adeyemi",
+        "action": "door_prop",
+        "t": "2026-03-04T01:12:00Z",
+        "ref": "physical:door_prop:D; link interrupted until 01:31, QUEUE OVERFLOW 7"
+      },
+      {
+        "actor": "actor:i.adeyemi",
+        "action": "door_close",
+        "t": "2026-03-04T01:31:00Z",
+        "ref": "D: TK04 link resumes and reports QUEUE OVERFLOW 7"
+      },
+      {
+        "actor": "actor:m.tanaka",
+        "action": "probe_check",
+        "t": "2026-03-04T10:46:00Z",
+        "ref": "D HH-2 -20.9 C; HH-2 requires -0.8 C correction"
+      },
+      {
+        "actor": "actor:m.tanaka",
+        "action": "probe_check",
+        "t": "2026-03-04T10:51:00Z",
+        "ref": "F HH-2 -21.2 C; HH-2 requires -0.8 C correction"
+      },
+      {
+        "actor": "actor:m.okafor",
+        "action": "commit",
+        "t": "2026-03-04T11:36:12Z",
+        "ref": "commit:b2e50f9"
+      },
+      {
+        "actor": "actor:m.okafor",
+        "action": "config_edit",
+        "t": "2026-03-04T11:36:12Z",
+        "ref": "alerting/routes.json: F and D channels moved to #alerts-coldchain-old, for both severities"
+      },
+      {
+        "actor": "actor:z.kowalski",
+        "action": "probe_check",
+        "t": "2026-03-04T12:25:00Z",
+        "ref": "D HH-1 -21.9 C; HH-2 requires -0.8 C correction"
+      },
+      {
+        "actor": "actor:z.kowalski",
+        "action": "probe_check",
+        "t": "2026-03-04T12:43:00Z",
+        "ref": "F HH-1 -25.3 C; HH-2 requires -0.8 C correction"
+      },
+      {
+        "actor": "actor:m.okafor",
+        "action": "override_deploy",
+        "t": "2026-03-04T13:05:38Z",
+        "ref": "routes change first reloaded by running alerting service"
+      },
+      {
+        "actor": "actor:l.mensah",
+        "action": "pallet_move",
+        "t": "2026-03-04T20:00:00Z",
+        "ref": "LN-25204: D to A; scanner and forklift, ledger job failed"
+      },
+      {
+        "actor": "actor:l.mensah",
+        "action": "pallet_move",
+        "t": "2026-03-04T20:44:00Z",
+        "ref": "LN-25048: C to D; scanner and forklift, ledger job failed"
+      },
+      {
+        "actor": "actor:l.mensah",
+        "action": "pallet_move",
+        "t": "2026-03-04T21:26:00Z",
+        "ref": "LN-28263: D to E; scanner and forklift, ledger job failed"
+      },
+      {
+        "actor": "actor:l.mensah",
+        "action": "pallet_move",
+        "t": "2026-03-04T21:27:00Z",
+        "ref": "LN-28691: C to D; scanner and forklift, ledger job failed"
+      },
+      {
+        "actor": "actor:k.patel",
+        "action": "config_edit",
+        "t": "2026-03-05T02:14:00Z",
+        "ref": "deploy/config.override.json: ALERT_MIN_SEVERITY=critical; not subsequently reverted"
+      },
+      {
+        "actor": "actor:k.patel",
+        "action": "override_deploy",
+        "t": "2026-03-05T02:14:00Z",
+        "ref": "config:deploy/config.override.json:ALERT_MIN_SEVERITY"
+      },
+      {
+        "actor": "actor:p.larsen",
+        "action": "pallet_move",
+        "t": "2026-03-05T06:36:00Z",
+        "ref": "LN-28263: B to D; scanner and forklift, ledger job failed"
+      },
+      {
+        "actor": "actor:p.larsen",
+        "action": "pallet_move",
+        "t": "2026-03-05T06:37:00Z",
+        "ref": "LN-22035: B to D; scanner and forklift, ledger job failed"
+      },
+      {
+        "actor": "actor:p.larsen",
+        "action": "pallet_move",
+        "t": "2026-03-05T08:01:00Z",
+        "ref": "LN-20197: A to D; scanner and forklift, ledger job failed"
+      },
+      {
+        "actor": "actor:p.larsen",
+        "action": "pallet_move",
+        "t": "2026-03-05T08:02:00Z",
+        "ref": "LN-20197: D to C; scanner and forklift, ledger job failed"
+      },
+      {
+        "actor": "actor:p.larsen",
+        "action": "pallet_move",
+        "t": "2026-03-05T08:02:00Z",
+        "ref": "LN-29975: D to B; scanner and forklift, ledger job failed"
+      },
+      {
+        "actor": "actor:z.kowalski",
+        "action": "archive_channel",
+        "t": "2026-03-05T12:52:00Z",
+        "ref": "msg:m0059; #alerts-coldchain-old, before main excursion"
+      },
+      {
+        "actor": "actor:l.mensah",
+        "action": "pallet_move",
+        "t": "2026-03-05T14:32:00Z",
+        "ref": "LN-23491: D to B; scanner and forklift, ledger job failed"
+      },
+      {
+        "actor": "actor:l.mensah",
+        "action": "pallet_move",
+        "t": "2026-03-05T14:32:00Z",
+        "ref": "LN-25225: D to F; scanner and forklift, ledger job failed"
+      },
+      {
+        "actor": "actor:l.mensah",
+        "action": "pallet_move",
+        "t": "2026-03-05T15:01:00Z",
+        "ref": "LN-24014: D to E; scanner and forklift, ledger job failed"
+      },
+      {
+        "actor": "actor:l.mensah",
+        "action": "pallet_move",
+        "t": "2026-03-05T15:01:00Z",
+        "ref": "LN-22035: D to B; scanner and forklift, ledger job failed"
+      },
+      {
+        "actor": "actor:l.mensah",
+        "action": "pallet_move",
+        "t": "2026-03-05T15:52:00Z",
+        "ref": "LN-24907: F to D; scanner and forklift, ledger job failed"
+      },
+      {
+        "actor": "actor:l.mensah",
+        "action": "pallet_move",
+        "t": "2026-03-05T15:52:00Z",
+        "ref": "LN-26732: D to B; scanner and forklift, ledger job failed"
+      },
+      {
+        "actor": "actor:l.mensah",
+        "action": "pallet_move",
+        "t": "2026-03-05T19:54:00Z",
+        "ref": "LN-23774: D to A; scanner and forklift, ledger job failed"
+      },
+      {
+        "actor": "actor:l.mensah",
+        "action": "pallet_move",
+        "t": "2026-03-05T21:14:00Z",
+        "ref": "LN-25225: E to D; scanner and forklift, ledger job failed"
+      },
+      {
+        "actor": "actor:i.adeyemi",
+        "action": "shift_start",
+        "t": "2026-03-05T21:57:00Z",
+        "ref": "badge: MAIN-ENTRANCE IN"
+      },
+      {
+        "actor": "actor:a.castellano",
+        "action": "shift_start",
+        "t": "2026-03-05T22:00:00Z",
+        "ref": "badge: MAIN-ENTRANCE IN"
+      },
+      {
+        "actor": "actor:a.castellano",
+        "action": "door_open",
+        "t": "2026-03-06T00:09:00Z",
+        "ref": "badge: ROOM-E UNLOCK"
+      },
+      {
+        "actor": "actor:a.castellano",
+        "action": "door_open",
+        "t": "2026-03-06T01:03:00Z",
+        "ref": "badge: ROOM-C UNLOCK"
+      },
+      {
+        "actor": "actor:i.adeyemi",
+        "action": "door_prop",
+        "t": "2026-03-06T01:07:00Z",
+        "ref": "physical:door_prop:D; held open until 05:05, no badge needed for subsequent passages"
+      },
+      {
+        "actor": "actor:a.castellano",
+        "action": "door_close",
+        "t": "2026-03-06T05:05:00Z",
+        "ref": "D: end of long contact/link interruption; TK04 reports overflow=57, lead accesses room at 05:07"
+      },
+      {
+        "actor": "actor:a.castellano",
+        "action": "door_open",
+        "t": "2026-03-06T05:07:00Z",
+        "ref": "badge: ROOM-D UNLOCK"
+      },
+      {
+        "actor": "actor:a.castellano",
+        "action": "shift_end",
+        "t": "2026-03-06T05:55:00Z",
+        "ref": "badge: MAIN-ENTRANCE OUT"
+      },
+      {
+        "actor": "actor:i.adeyemi",
+        "action": "shift_end",
+        "t": "2026-03-06T05:57:00Z",
+        "ref": "badge: MAIN-ENTRANCE OUT"
+      },
+      {
+        "actor": "actor:p.larsen",
+        "action": "pallet_move",
+        "t": "2026-03-06T07:17:00Z",
+        "ref": "LN-23894: D to A; scanner and forklift, ledger job failed"
+      },
+      {
+        "actor": "actor:p.larsen",
+        "action": "pallet_move",
+        "t": "2026-03-06T07:17:00Z",
+        "ref": "LN-27727: D to A; scanner and forklift, ledger job failed"
+      },
+      {
+        "actor": "actor:m.tanaka",
+        "action": "probe_check",
+        "t": "2026-03-06T08:24:00Z",
+        "ref": "D HH-2 -2.0 C; HH-2 requires -0.8 C correction"
+      },
+      {
+        "actor": "actor:p.larsen",
+        "action": "pallet_move",
+        "t": "2026-03-06T08:37:00Z",
+        "ref": "LN-27727: C to D; scanner and forklift, ledger job failed"
+      },
+      {
+        "actor": "actor:p.larsen",
+        "action": "pallet_move",
+        "t": "2026-03-06T08:38:00Z",
+        "ref": "LN-27727: D to E; scanner and forklift, ledger job failed"
+      },
+      {
+        "actor": "actor:p.larsen",
+        "action": "pallet_move",
+        "t": "2026-03-06T08:39:00Z",
+        "ref": "LN-27727: E to D; scanner and forklift, ledger job failed"
+      },
+      {
+        "actor": "actor:p.larsen",
+        "action": "pallet_move",
+        "t": "2026-03-06T08:39:00Z",
+        "ref": "LN-27586: C to D; scanner and forklift, ledger job failed"
+      },
+      {
+        "actor": "actor:z.kowalski",
+        "action": "probe_check",
+        "t": "2026-03-06T09:20:00Z",
+        "ref": "D HH-1 -6.2 C; HH-2 requires -0.8 C correction"
+      },
+      {
+        "actor": "actor:z.kowalski",
+        "action": "probe_check",
+        "t": "2026-03-06T09:40:00Z",
+        "ref": "F HH-1 -24.8 C; HH-2 requires -0.8 C correction"
+      },
+      {
+        "actor": "actor:p.larsen",
+        "action": "pallet_move",
+        "t": "2026-03-07T10:50:00Z",
+        "ref": "PL-8173 / LN-25204: F to C; scanner plus forklift"
+      },
+      {
+        "actor": "actor:l.mensah",
+        "action": "pallet_move",
+        "t": "2026-03-07T16:40:00Z",
+        "ref": "PL-9434 / LN-29136: F to E; scanner plus forklift"
+      },
+      {
+        "actor": "actor:h.rivera",
+        "action": "ticket_open",
+        "t": "2026-03-11T09:00:00Z",
+        "ref": "ticket:T-0430"
+      },
+      {
+        "actor": "actor:h.rivera",
+        "action": "postmortem_publish",
+        "t": "2026-03-11T16:00:00Z",
+        "ref": "doc:postmortem; T-0430 closing comment"
+      },
+      {
+        "actor": "actor:h.rivera",
+        "action": "quarantine",
+        "t": "2026-03-11T16:00:00Z",
+        "ref": "ledger room-D list; wrong positions, 13 listed lots"
+      }
+    ],
+    "clock_offsets_min": {
+      "badge": 11,
+      "exif": -7,
+      "cctv": 4,
+      "forklift": 0,
+      "chat": 0,
+      "tickets": 0,
+      "git": 0,
+      "submeter": 0,
+      "gateway": 0,
+      "probe": 0
+    },
+    "false_claims": [
+      {
+        "doc_id": "doc:postmortem",
+        "quote": "Root cause: compressor failure on controller TK04."
+      },
+      {
+        "doc_id": "doc:postmortem",
+        "quote": "Alert routing for room D had been moved to a legacy channel after a sensor fault on the new firmware boards (ticket T-0427)."
+      },
+      {
+        "doc_id": "doc:postmortem",
+        "quote": "01:48 (est.) compressor TK04 stops."
+      },
+      {
+        "doc_id": "doc:night_lead_a.castellano",
+        "quote": "On the night of 2026-03-05 I came on at 22:07 as usual."
+      },
+      {
+        "doc_id": "doc:night_lead_a.castellano",
+        "quote": "I did my walk-through at 00:27 and all the rooms were closed."
+      },
+      {
+        "doc_id": "doc:night_lead_a.castellano",
+        "quote": "After that nobody went near room E; the corridor was quiet."
+      },
+      {
+        "doc_id": "doc:night_lead_a.castellano",
+        "quote": "I checked room D again at 06:39 on my way out and the door was shut."
+      },
+      {
+        "doc_id": "doc:ops_engineer_m.okafor",
+        "quote": "The vendor confirmed by phone that the -40 readings are a known sensor fault on the 3.4 boards, so I routed the two rooms' low-temperature alerts to the legacy channel to stop the flapping and opened a ticket for the vendor."
+      },
+      {
+        "doc_id": "doc:ops_engineer_m.okafor",
+        "quote": "Nothing else in the stack changed that week apart from the billing unit fix, which does not touch readings."
+      },
+      {
+        "doc_id": "doc:sre_oncall_k.patel",
+        "quote": "The override was temporary and I reverted it the next morning."
+      },
+      {
+        "doc_id": "doc:sre_oncall_k.patel",
+        "quote": "The billing rollup locks the ledger for a while every night at 01:00; that is old behaviour and unrelated."
+      },
+      {
+        "doc_id": "doc:temp_worker_i.adeyemi",
+        "quote": "I never propped any door open; the wedge in the photo is a receiving thing, it lives by the dock."
+      },
+      {
+        "doc_id": "doc:warehouse_manager_z.kowalski",
+        "quote": "I archived the old alert channel only after the incident, when we cleaned up the workspace; before that it was still being read."
+      },
+      {
+        "doc_id": "doc:receiving_clerk_m.tanaka",
+        "quote": "My handheld was calibrated last month and reads fine."
+      },
+      {
+        "doc_id": "doc:service_report_firmware_visit",
+        "quote": "Unit TK04 (room D): inspected only, no changes made; customer asked us to leave it on 3.2 until the next visit."
+      },
+      {
+        "doc_id": "doc:bench_report_unit01",
+        "quote": "`rote` : high-pressure cut-out"
+      },
+      {
+        "doc_id": "doc:runbook",
+        "quote": "Defrost runs on a fixed schedule every 6 hours per room; the rooms take turns so the heaters never overlap."
+      },
+      {
+        "doc_id": "doc:floor_plan",
+        "quote": "Rooms B and C are connected through the old pass-through hatch (sealed 2021, but still counts as a shared wall for the thermal survey)."
+      },
+      {
+        "doc_id": "doc:chat_export",
+        "quote": "reverted the override this morning, back to normal"
+      },
+      {
+        "doc_id": "doc:chat_export",
+        "quote": "ledger has TK04 at -40ish the whole week, dashboard never went above the high limit"
+      },
+      {
+        "doc_id": "doc:chat_export",
+        "quote": "what excursion? room D never alarmed"
+      },
+      {
+        "doc_id": "doc:chat_export",
+        "quote": "spoke to the vendor, they say the new boards have a sensor fault, known issue, will be fixed on their next visit"
+      },
+      {
+        "doc_id": "doc:tickets",
+        "quote": "vendor says sensor fault on the new boards; routing the low-temp warnings away for now"
+      }
+    ]
+  },
+  "confidence": {
+    "mechanism": 0.83,
+    "notation": 0.98,
+    "causal_chain": 0.72,
+    "timeline": 0.7
+  }
+}

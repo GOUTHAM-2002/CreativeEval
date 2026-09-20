@@ -1,0 +1,2988 @@
+{
+ "instance": "s0002_357565a8",
+ "seed": 2,
+ "tier": "default",
+ "version": 2,
+ "mechanism": {
+  "params": {
+   "k_cool.A": {
+    "value": 0.03,
+    "abs_tol": 0.006,
+    "rel_tol": 0.1,
+    "unit": "degC/min"
+   },
+   "k_cool.B": {
+    "value": 0.0934,
+    "abs_tol": 0.006,
+    "rel_tol": 0.1,
+    "unit": "degC/min"
+   },
+   "k_cool.C": {
+    "value": 0.0714,
+    "abs_tol": 0.006,
+    "rel_tol": 0.1,
+    "unit": "degC/min"
+   },
+   "k_cool.D": {
+    "value": 0.0613,
+    "abs_tol": 0.006,
+    "rel_tol": 0.1,
+    "unit": "degC/min"
+   },
+   "k_cool.E": {
+    "value": 0.1223,
+    "abs_tol": 0.006,
+    "rel_tol": 0.1,
+    "unit": "degC/min"
+   },
+   "k_cool.F": {
+    "value": 0.03,
+    "abs_tol": 0.006,
+    "rel_tol": 0.1,
+    "unit": "degC/min"
+   },
+   "k_leak.A": {
+    "value": 0.00126,
+    "abs_tol": 0.00025,
+    "rel_tol": 0.15,
+    "unit": "1/min"
+   },
+   "k_leak.B": {
+    "value": 0.00066,
+    "abs_tol": 0.00025,
+    "rel_tol": 0.15,
+    "unit": "1/min"
+   },
+   "k_leak.C": {
+    "value": 0.00072,
+    "abs_tol": 0.00025,
+    "rel_tol": 0.15,
+    "unit": "1/min"
+   },
+   "k_leak.D": {
+    "value": 0.00065,
+    "abs_tol": 0.00025,
+    "rel_tol": 0.15,
+    "unit": "1/min"
+   },
+   "k_leak.E": {
+    "value": 0.00112,
+    "abs_tol": 0.00025,
+    "rel_tol": 0.15,
+    "unit": "1/min"
+   },
+   "k_leak.F": {
+    "value": 0.00195,
+    "abs_tol": 0.00025,
+    "rel_tol": 0.15,
+    "unit": "1/min"
+   },
+   "H.A": {
+    "value": 1.59,
+    "abs_tol": 0.25,
+    "rel_tol": 0.12,
+    "unit": "degC"
+   },
+   "H.B": {
+    "value": 1.26,
+    "abs_tol": 0.25,
+    "rel_tol": 0.12,
+    "unit": "degC"
+   },
+   "H.C": {
+    "value": 1.8,
+    "abs_tol": 0.25,
+    "rel_tol": 0.12,
+    "unit": "degC"
+   },
+   "H.D": {
+    "value": 0.93,
+    "abs_tol": 0.25,
+    "rel_tol": 0.12,
+    "unit": "degC"
+   },
+   "H.E": {
+    "value": 1.29,
+    "abs_tol": 0.25,
+    "rel_tol": 0.12,
+    "unit": "degC"
+   },
+   "H.F": {
+    "value": 1.96,
+    "abs_tol": 0.25,
+    "rel_tol": 0.12,
+    "unit": "degC"
+   },
+   "bias.A": {
+    "value": 1.41,
+    "abs_tol": 0.3,
+    "rel_tol": 0.0,
+    "unit": "degC"
+   },
+   "bias.B": {
+    "value": -1.1,
+    "abs_tol": 0.3,
+    "rel_tol": 0.0,
+    "unit": "degC",
+    "undeterminable": true
+   },
+   "bias.C": {
+    "value": 0.24,
+    "abs_tol": 0.3,
+    "rel_tol": 0.0,
+    "unit": "degC"
+   },
+   "bias.D": {
+    "value": 1.2,
+    "abs_tol": 0.3,
+    "rel_tol": 0.0,
+    "unit": "degC"
+   },
+   "bias.E": {
+    "value": 0.89,
+    "abs_tol": 0.3,
+    "rel_tol": 0.0,
+    "unit": "degC"
+   },
+   "bias.F": {
+    "value": -0.22,
+    "abs_tol": 0.3,
+    "rel_tol": 0.0,
+    "unit": "degC",
+    "undeterminable": true
+   },
+   "door_gain": {
+    "value": 8.14,
+    "abs_tol": 1.0,
+    "rel_tol": 0.2,
+    "unit": "ratio"
+   },
+   "c_adj": {
+    "value": 0.0003,
+    "abs_tol": 0.0003,
+    "rel_tol": 0.35,
+    "unit": "1/min"
+   },
+   "defrost.R_hours": {
+    "value": 5,
+    "abs_tol": 0.5,
+    "rel_tol": 0.0,
+    "unit": "hours"
+   },
+   "defrost.len_min": {
+    "value": 24,
+    "abs_tol": 2,
+    "rel_tol": 0.0,
+    "unit": "min"
+   },
+   "defrost.heat_degC": {
+    "value": 4.5,
+    "abs_tol": 0.6,
+    "rel_tol": 0.0,
+    "unit": "degC"
+   },
+   "trip.d_min": {
+    "value": 10,
+    "abs_tol": 0.5,
+    "rel_tol": 0.0,
+    "unit": "min"
+   },
+   "lockout.N": {
+    "value": 4,
+    "abs_tol": 0,
+    "rel_tol": 0.0,
+    "unit": "count"
+   },
+   "lockout.W_min": {
+    "value": 90,
+    "abs_tol": 5,
+    "rel_tol": 0.0,
+    "unit": "min"
+   },
+   "lockout.L_min": {
+    "value": 90,
+    "abs_tol": 5,
+    "rel_tol": 0.0,
+    "unit": "min"
+   }
+  },
+  "rules": {
+   "defrost_rule_type": "runtime_hours",
+   "stagger_order": [
+    "C",
+    "A",
+    "F",
+    "B",
+    "D",
+    "E"
+   ],
+   "adjacency_pairs": [
+    [
+     "A",
+     "E"
+    ],
+    [
+     "A",
+     "F"
+    ],
+    [
+     "B",
+     "D"
+    ],
+    [
+     "B",
+     "F"
+    ],
+    [
+     "C",
+     "D"
+    ],
+    [
+     "C",
+     "E"
+    ],
+    [
+     "C",
+     "F"
+    ]
+   ]
+  }
+ },
+ "protocol": {
+  "checksum": "xor",
+  "tick_unit_s": 10,
+  "types": {
+   "f8": "STATUS",
+   "4d": "DOOR",
+   "74": "TRIP",
+   "1d": "LOCKOUT",
+   "bd": "DEFROST",
+   "50": "HEATER",
+   "62": "BOOT",
+   "1a": "SETPOINT",
+   "34": "QUEUE_OVERFLOW"
+  },
+  "status_words": [
+   "AIR_TEMP",
+   "DISCH_PRESSURE",
+   "STATE_FLAGS",
+   "COIL_TEMP"
+  ],
+  "temp_scale": 10,
+  "temp_offset": 1000,
+  "press_scale": 100,
+  "flag_bits": {
+   "RUN": 15,
+   "DEFROST": 1,
+   "LOCKOUT": 6,
+   "RECOVERY": 2,
+   "DOOR_OPEN": 12,
+   "ABS_TEMP": 14
+  },
+  "event_words": {
+   "DOOR": {
+    "0001": "OPEN",
+    "0000": "CLOSED"
+   },
+   "TRIP": {
+    "0001": "FAULT"
+   },
+   "LOCKOUT": {
+    "0001": "ENTER",
+    "0000": "EXIT"
+   },
+   "DEFROST": {
+    "0001": "ENTER",
+    "0000": "EXIT"
+   },
+   "HEATER": {
+    "0001": "ON",
+    "0000": "OFF"
+   },
+   "BOOT": {
+    "0032": "FW_3.2",
+    "0034": "FW_3.4"
+   },
+   "SETPOINT": {
+    "*": "TEMP"
+   },
+   "QUEUE_OVERFLOW": {
+    "*": "COUNT"
+   }
+  },
+  "known": [
+   "type:f8",
+   "f8:word0",
+   "f8:word2",
+   "flag:RUN"
+  ],
+  "v34_change": "absolute_temp",
+  "quickref_wrong_positions": [
+   1,
+   2
+  ],
+  "legacy_types": {
+   "85": "DEFROST",
+   "4c": "TRIP",
+   "53": "LOCKOUT",
+   "c7": "DOOR"
+  },
+  "heldout": [
+   {
+    "seq": 3512,
+    "ts": "2026-06-19T22:25:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -18.7,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3513,
+    "ts": "2026-06-19T22:30:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -18.9,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3514,
+    "ts": "2026-06-19T22:35:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -19.4,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3515,
+    "ts": "2026-06-19T22:40:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -19.6,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3516,
+    "ts": "2026-06-19T22:45:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -19.6,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3517,
+    "ts": "2026-06-19T22:50:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -19.4,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3518,
+    "ts": "2026-06-19T22:55:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -19.5,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3519,
+    "ts": "2026-06-19T23:00:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -19.4,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3520,
+    "ts": "2026-06-19T23:05:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -19.1,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3521,
+    "ts": "2026-06-19T23:10:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -19.5,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3522,
+    "ts": "2026-06-19T23:15:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -18.7,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3523,
+    "ts": "2026-06-19T23:20:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -19.1,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3524,
+    "ts": "2026-06-19T23:25:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -19.5,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3525,
+    "ts": "2026-06-19T23:30:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -20.1,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3526,
+    "ts": "2026-06-19T23:35:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -19.8,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3527,
+    "ts": "2026-06-19T23:40:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -19.8,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3528,
+    "ts": "2026-06-19T23:45:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -19.3,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3529,
+    "ts": "2026-06-19T23:50:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -19.5,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3530,
+    "ts": "2026-06-19T23:55:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -19.5,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3531,
+    "ts": "2026-06-20T00:00:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -19.0,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3532,
+    "ts": "2026-06-20T00:05:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -19.1,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3533,
+    "ts": "2026-06-20T00:10:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -19.7,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3534,
+    "ts": "2026-06-20T00:15:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -19.5,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3535,
+    "ts": "2026-06-20T00:20:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -20.1,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3536,
+    "ts": "2026-06-20T00:25:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -19.6,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3537,
+    "ts": "2026-06-20T00:27:00Z",
+    "zone": "E",
+    "event": "DOOR",
+    "value": null,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3538,
+    "ts": "2026-06-20T00:28:00Z",
+    "zone": "E",
+    "event": "DOOR",
+    "value": null,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3539,
+    "ts": "2026-06-20T00:30:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -19.1,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3540,
+    "ts": "2026-06-20T00:35:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -18.8,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3541,
+    "ts": "2026-06-20T00:38:00Z",
+    "zone": "E",
+    "event": "DOOR",
+    "value": null,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3542,
+    "ts": "2026-06-20T00:40:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -18.0,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3543,
+    "ts": "2026-06-20T00:45:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -17.3,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3544,
+    "ts": "2026-06-20T00:49:00Z",
+    "zone": "E",
+    "event": "TRIP",
+    "value": null,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3545,
+    "ts": "2026-06-20T00:50:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -16.9,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3546,
+    "ts": "2026-06-20T00:55:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -15.5,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3547,
+    "ts": "2026-06-20T01:00:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -14.6,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3548,
+    "ts": "2026-06-20T01:04:00Z",
+    "zone": "E",
+    "event": "TRIP",
+    "value": null,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3549,
+    "ts": "2026-06-20T01:05:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -14.2,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3550,
+    "ts": "2026-06-20T01:10:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -12.7,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3551,
+    "ts": "2026-06-20T01:15:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -12.2,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3552,
+    "ts": "2026-06-20T01:19:00Z",
+    "zone": "E",
+    "event": "TRIP",
+    "value": null,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3553,
+    "ts": "2026-06-20T01:20:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -11.7,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3554,
+    "ts": "2026-06-20T01:25:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -10.7,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3555,
+    "ts": "2026-06-20T01:30:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -9.8,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3557,
+    "ts": "2026-06-20T01:34:00Z",
+    "zone": "E",
+    "event": "LOCKOUT",
+    "value": null,
+    "tol_value": 0.2,
+    "tol_s": 120
+   }
+  ],
+  "controller_clock_epochs": {
+   "VX01": [
+    {
+     "from": "2026-06-04T00:00:00Z",
+     "epoch": "2026-02-09T14:23:00Z"
+    },
+    {
+     "from": "2026-06-07T11:25:00Z",
+     "epoch": "2026-06-07T11:25:00Z"
+    }
+   ],
+   "VX02": [
+    {
+     "from": "2026-06-04T00:00:00Z",
+     "epoch": "2026-03-05T20:25:00Z"
+    },
+    {
+     "from": "2026-06-07T11:25:00Z",
+     "epoch": "2026-06-07T11:25:00Z"
+    }
+   ],
+   "VX03": [
+    {
+     "from": "2026-06-04T00:00:00Z",
+     "epoch": "2026-03-13T16:20:00Z"
+    },
+    {
+     "from": "2026-06-07T11:25:00Z",
+     "epoch": "2026-06-07T11:25:00Z"
+    },
+    {
+     "from": "2026-06-08T15:43:00Z",
+     "epoch": "2026-06-08T15:43:00Z"
+    }
+   ],
+   "VX04": [
+    {
+     "from": "2026-06-04T00:00:00Z",
+     "epoch": "2026-05-22T10:43:00Z"
+    },
+    {
+     "from": "2026-06-07T11:25:00Z",
+     "epoch": "2026-06-07T11:25:00Z"
+    }
+   ],
+   "VX05": [
+    {
+     "from": "2026-06-04T00:00:00Z",
+     "epoch": "2026-05-11T20:53:00Z"
+    },
+    {
+     "from": "2026-06-07T11:25:00Z",
+     "epoch": "2026-06-07T11:25:00Z"
+    },
+    {
+     "from": "2026-06-08T15:02:00Z",
+     "epoch": "2026-06-08T15:02:00Z"
+    }
+   ],
+   "VX06": [
+    {
+     "from": "2026-06-04T00:00:00Z",
+     "epoch": "2026-02-13T10:57:00Z"
+    },
+    {
+     "from": "2026-06-07T11:25:00Z",
+     "epoch": "2026-06-07T11:25:00Z"
+    }
+   ]
+  },
+  "unscored_types": [
+   "1a"
+  ]
+ },
+ "notation": {
+  "base": 0,
+  "digit_glyphs": [],
+  "clause_order": "",
+  "glossary": {},
+  "known_roots": [],
+  "affixes": {},
+  "v34_change": "absolute_temp",
+  "heldout": [
+   {
+    "seq": 3512,
+    "ts": "2026-06-19T22:25:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -18.7,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3513,
+    "ts": "2026-06-19T22:30:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -18.9,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3514,
+    "ts": "2026-06-19T22:35:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -19.4,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3515,
+    "ts": "2026-06-19T22:40:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -19.6,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3516,
+    "ts": "2026-06-19T22:45:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -19.6,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3517,
+    "ts": "2026-06-19T22:50:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -19.4,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3518,
+    "ts": "2026-06-19T22:55:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -19.5,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3519,
+    "ts": "2026-06-19T23:00:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -19.4,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3520,
+    "ts": "2026-06-19T23:05:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -19.1,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3521,
+    "ts": "2026-06-19T23:10:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -19.5,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3522,
+    "ts": "2026-06-19T23:15:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -18.7,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3523,
+    "ts": "2026-06-19T23:20:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -19.1,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3524,
+    "ts": "2026-06-19T23:25:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -19.5,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3525,
+    "ts": "2026-06-19T23:30:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -20.1,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3526,
+    "ts": "2026-06-19T23:35:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -19.8,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3527,
+    "ts": "2026-06-19T23:40:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -19.8,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3528,
+    "ts": "2026-06-19T23:45:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -19.3,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3529,
+    "ts": "2026-06-19T23:50:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -19.5,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3530,
+    "ts": "2026-06-19T23:55:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -19.5,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3531,
+    "ts": "2026-06-20T00:00:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -19.0,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3532,
+    "ts": "2026-06-20T00:05:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -19.1,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3533,
+    "ts": "2026-06-20T00:10:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -19.7,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3534,
+    "ts": "2026-06-20T00:15:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -19.5,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3535,
+    "ts": "2026-06-20T00:20:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -20.1,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3536,
+    "ts": "2026-06-20T00:25:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -19.6,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3537,
+    "ts": "2026-06-20T00:27:00Z",
+    "zone": "E",
+    "event": "DOOR",
+    "value": null,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3538,
+    "ts": "2026-06-20T00:28:00Z",
+    "zone": "E",
+    "event": "DOOR",
+    "value": null,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3539,
+    "ts": "2026-06-20T00:30:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -19.1,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3540,
+    "ts": "2026-06-20T00:35:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -18.8,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3541,
+    "ts": "2026-06-20T00:38:00Z",
+    "zone": "E",
+    "event": "DOOR",
+    "value": null,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3542,
+    "ts": "2026-06-20T00:40:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -18.0,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3543,
+    "ts": "2026-06-20T00:45:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -17.3,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3544,
+    "ts": "2026-06-20T00:49:00Z",
+    "zone": "E",
+    "event": "TRIP",
+    "value": null,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3545,
+    "ts": "2026-06-20T00:50:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -16.9,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3546,
+    "ts": "2026-06-20T00:55:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -15.5,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3547,
+    "ts": "2026-06-20T01:00:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -14.6,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3548,
+    "ts": "2026-06-20T01:04:00Z",
+    "zone": "E",
+    "event": "TRIP",
+    "value": null,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3549,
+    "ts": "2026-06-20T01:05:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -14.2,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3550,
+    "ts": "2026-06-20T01:10:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -12.7,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3551,
+    "ts": "2026-06-20T01:15:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -12.2,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3552,
+    "ts": "2026-06-20T01:19:00Z",
+    "zone": "E",
+    "event": "TRIP",
+    "value": null,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3553,
+    "ts": "2026-06-20T01:20:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -11.7,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3554,
+    "ts": "2026-06-20T01:25:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -10.7,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3555,
+    "ts": "2026-06-20T01:30:00Z",
+    "zone": "E",
+    "event": "AIR_TEMP",
+    "value": -9.8,
+    "tol_value": 0.2,
+    "tol_s": 120
+   },
+   {
+    "seq": 3557,
+    "ts": "2026-06-20T01:34:00Z",
+    "zone": "E",
+    "event": "LOCKOUT",
+    "value": null,
+    "tol_value": 0.2,
+    "tol_s": 120
+   }
+  ]
+ },
+ "causal": {
+  "nodes": [
+   "physical:door_prop:E",
+   "physical:trip:E",
+   "physical:lockout:E",
+   "physical:excursion:E",
+   "firmware:E",
+   "code:gateway/rh7_decode.py:decode_line",
+   "data:readings_wrong:E",
+   "data:alerts_suppressed:E",
+   "commit:761f81a",
+   "config:alerting/routes.json:zones.E.channel",
+   "config:deploy/config.override.json:ALERT_MIN_SEVERITY",
+   "data:frames_dropped:E",
+   "code:dispatch/server.py:apply_move",
+   "code:gateway/server.py:notify_dispatch",
+   "data:lots_wrong:E",
+   "data:quarantine_wrong:E",
+   "physical:defrost:A",
+   "physical:defrost:C"
+  ],
+  "edges": [
+   [
+    "physical:door_prop:E",
+    "physical:trip:E"
+   ],
+   [
+    "physical:trip:E",
+    "physical:lockout:E"
+   ],
+   [
+    "physical:lockout:E",
+    "physical:excursion:E"
+   ],
+   [
+    "physical:door_prop:E",
+    "physical:excursion:E"
+   ],
+   [
+    "firmware:E",
+    "data:readings_wrong:E"
+   ],
+   [
+    "code:gateway/rh7_decode.py:decode_line",
+    "data:readings_wrong:E"
+   ],
+   [
+    "data:readings_wrong:E",
+    "data:alerts_suppressed:E"
+   ],
+   [
+    "commit:761f81a",
+    "config:alerting/routes.json:zones.E.channel"
+   ],
+   [
+    "config:alerting/routes.json:zones.E.channel",
+    "data:alerts_suppressed:E"
+   ],
+   [
+    "config:deploy/config.override.json:ALERT_MIN_SEVERITY",
+    "data:alerts_suppressed:E"
+   ],
+   [
+    "physical:door_prop:E",
+    "data:frames_dropped:E"
+   ],
+   [
+    "data:frames_dropped:E",
+    "data:alerts_suppressed:E"
+   ],
+   [
+    "code:dispatch/server.py:apply_move",
+    "data:lots_wrong:E"
+   ],
+   [
+    "code:gateway/server.py:notify_dispatch",
+    "data:lots_wrong:E"
+   ],
+   [
+    "data:lots_wrong:E",
+    "data:quarantine_wrong:E"
+   ],
+   [
+    "physical:defrost:A",
+    "physical:excursion:E"
+   ],
+   [
+    "physical:defrost:C",
+    "physical:excursion:E"
+   ]
+  ],
+  "roots": [
+   "physical:door_prop:E",
+   "firmware:E",
+   "code:gateway/rh7_decode.py:decode_line",
+   "commit:761f81a",
+   "config:deploy/config.override.json:ALERT_MIN_SEVERITY",
+   "code:dispatch/server.py:apply_move",
+   "code:gateway/server.py:notify_dispatch",
+   "physical:defrost:A",
+   "physical:defrost:C"
+  ],
+  "decoys": [
+   "physical:compressor_fault:E",
+   "doc:recall_notice",
+   "code:billing/nightly.py:run_once",
+   "physical:sensor_fault:E",
+   "commit:02d0edb"
+  ],
+  "node_categories": {
+   "physical:door_prop:E": "human_action",
+   "physical:trip:E": "physical",
+   "physical:lockout:E": "physical",
+   "physical:excursion:E": "physical",
+   "firmware:E": "firmware",
+   "code:gateway/rh7_decode.py:decode_line": "data_format",
+   "data:readings_wrong:E": "data_format",
+   "data:alerts_suppressed:E": "config_drift",
+   "commit:761f81a": "config_drift",
+   "config:alerting/routes.json:zones.E.channel": "config_drift",
+   "config:deploy/config.override.json:ALERT_MIN_SEVERITY": "config_drift",
+   "data:frames_dropped:E": "physical",
+   "code:dispatch/server.py:apply_move": "race_condition",
+   "code:gateway/server.py:notify_dispatch": "race_condition",
+   "data:lots_wrong:E": "race_condition",
+   "data:quarantine_wrong:E": "human_action",
+   "physical:defrost:A": "physical",
+   "physical:defrost:C": "physical"
+  },
+  "affected_lots": [
+   "lot:LN-21643",
+   "lot:LN-22416",
+   "lot:LN-24714"
+  ],
+  "excursion": {
+   "zone": "E",
+   "start": "2026-06-20T01:08:00Z",
+   "end": "2026-06-20T09:52:00Z",
+   "tol_s": 900
+  },
+  "db_lots_in_inc": [
+   "lot:LN-20373",
+   "lot:LN-20976",
+   "lot:LN-21231",
+   "lot:LN-21956",
+   "lot:LN-22116",
+   "lot:LN-22641",
+   "lot:LN-23525",
+   "lot:LN-24714",
+   "lot:LN-25020",
+   "lot:LN-25578",
+   "lot:LN-26885",
+   "lot:LN-28611"
+  ],
+  "affected_lots_determinable": [
+   "lot:LN-21643",
+   "lot:LN-22416",
+   "lot:LN-24714"
+  ],
+  "affected_lots_undeterminable": []
+ },
+ "timeline": {
+  "events": [
+   {
+    "event_id": "event:flash_incident_zone",
+    "actor": "actor:f.okafor",
+    "action": "firmware_flash",
+    "t": "2026-06-08T15:02:00Z",
+    "tol_s": 900,
+    "ref": "firmware:E"
+   },
+   {
+    "event_id": "event:flash_other_zone",
+    "actor": "actor:f.okafor",
+    "action": "firmware_flash",
+    "t": "2026-06-08T15:43:00Z",
+    "tol_s": 900,
+    "ref": "firmware:C"
+   },
+   {
+    "event_id": "event:ticket_minus40",
+    "actor": "actor:p.novak",
+    "action": "ticket_open",
+    "t": "2026-06-08T16:50:00Z",
+    "tol_s": 300,
+    "ref": "ticket:T-0407"
+   },
+   {
+    "event_id": "event:hotfix_commit",
+    "actor": "actor:m.larsen",
+    "action": "commit",
+    "t": "2026-06-09T11:36:00Z",
+    "tol_s": 300,
+    "ref": "commit:761f81a"
+   },
+   {
+    "event_id": "event:billing_commit",
+    "actor": "actor:m.larsen",
+    "action": "commit",
+    "t": "2026-06-07T12:56:00Z",
+    "tol_s": 300,
+    "ref": "commit:02d0edb"
+   },
+   {
+    "event_id": "event:archive_channel",
+    "actor": "actor:p.novak",
+    "action": "archive_channel",
+    "t": "2026-06-10T09:54:00Z",
+    "tol_s": 3600,
+    "ref": ""
+   },
+   {
+    "event_id": "event:purchase_wedge",
+    "actor": "actor:m.mensah",
+    "action": "purchase",
+    "t": "2026-06-08T17:15:00Z",
+    "tol_s": 3600,
+    "ref": "doc:hardware_receipt_wedge"
+   },
+   {
+    "event_id": "event:photo_wedge",
+    "actor": "actor:m.mensah",
+    "action": "photo",
+    "t": "2026-06-09T01:59:00Z",
+    "tol_s": 3600,
+    "ref": "doc:photos_exif"
+   },
+   {
+    "event_id": "event:shift_start_temp_incident_night",
+    "actor": "actor:m.mensah",
+    "action": "shift_start",
+    "t": "2026-06-19T21:49:00Z",
+    "tol_s": 300,
+    "ref": ""
+   },
+   {
+    "event_id": "event:lab_ticket",
+    "actor": "actor:a.schulz",
+    "action": "ticket_open",
+    "t": "2026-06-17T09:00:00Z",
+    "tol_s": 300,
+    "ref": "ticket:T-0421"
+   },
+   {
+    "event_id": "event:quarantine",
+    "actor": "actor:a.schulz",
+    "action": "quarantine",
+    "t": "2026-06-17T16:00:00Z",
+    "tol_s": 3600,
+    "ref": ""
+   },
+   {
+    "event_id": "event:postmortem_publish",
+    "actor": "actor:a.schulz",
+    "action": "postmortem_publish",
+    "t": "2026-06-17T16:00:00Z",
+    "tol_s": 3600,
+    "ref": "doc:postmortem"
+   },
+   {
+    "event_id": "event:recalibration_visit",
+    "actor": "actor:f.okafor",
+    "action": "probe_check",
+    "t": "2026-06-27T13:37:00Z",
+    "tol_s": 1800,
+    "ref": "zone:D"
+   },
+   {
+    "event_id": "event:diskfull_cleanup",
+    "actor": "actor:i.kowalski",
+    "action": "ticket_close",
+    "t": "2026-06-20T15:00:00Z",
+    "tol_s": 1800,
+    "ref": ""
+   },
+   {
+    "event_id": "event:badge_ticket",
+    "actor": "actor:p.novak",
+    "action": "ticket_open",
+    "t": "2026-06-16T09:00:00Z",
+    "tol_s": 600,
+    "ref": "ticket:T-0411"
+   },
+   {
+    "event_id": "event:drift_ticket",
+    "actor": "actor:p.dubois",
+    "action": "ticket_open",
+    "t": "2026-06-22T17:23:00Z",
+    "tol_s": 600,
+    "ref": "ticket:T-0414"
+   }
+  ],
+  "clock_offsets_min": {
+   "badge": -7,
+   "exif": -120,
+   "cctv": -4,
+   "forklift": 0,
+   "chat": 0,
+   "tickets": 0,
+   "git": 0,
+   "submeter": 0,
+   "gateway": 0,
+   "probe": 0
+  },
+  "false_claims": [
+   {
+    "claim_id": "fc05",
+    "doc_id": "doc:service_report_firmware_visit",
+    "path": "people/vendor_service_reports/service_report_firmware_visit.md",
+    "span": [
+     410,
+     461
+    ],
+    "text": "Unit VX05 (room E): inspected only, no changes made",
+    "truth_ref": ""
+   },
+   {
+    "claim_id": "fc01",
+    "doc_id": "doc:night_lead",
+    "path": "people/statements/night_lead_h.tanaka.md",
+    "span": [
+     1449,
+     1513
+    ],
+    "text": "all the rooms were closed and nobody went near room E after that",
+    "truth_ref": ""
+   },
+   {
+    "claim_id": "fc02",
+    "doc_id": "doc:warehouse_manager",
+    "path": "people/statements/warehouse_manager_p.novak.md",
+    "span": [
+     1657,
+     1713
+    ],
+    "text": "I archived the old alert channel only after the incident",
+    "truth_ref": ""
+   },
+   {
+    "claim_id": "fc03",
+    "doc_id": "doc:ops_engineer",
+    "path": "people/statements/ops_engineer_m.larsen.md",
+    "span": [
+     1495,
+     1589
+    ],
+    "text": "The vendor confirmed by phone that the -40 readings are a known sensor fault on the 3.4 boards",
+    "truth_ref": ""
+   },
+   {
+    "claim_id": "fc04",
+    "doc_id": "doc:receiving_clerk",
+    "path": "people/statements/receiving_clerk_p.dubois.md",
+    "span": [
+     991,
+     1043
+    ],
+    "text": "My handheld was calibrated last month and reads fine",
+    "truth_ref": ""
+   },
+   {
+    "claim_id": "fc06",
+    "doc_id": "doc:postmortem",
+    "path": "people/postmortem.md",
+    "span": [
+     631,
+     680
+    ],
+    "text": "Root cause: compressor failure on controller VX05",
+    "truth_ref": ""
+   },
+   {
+    "claim_id": "fc07",
+    "doc_id": "doc:postmortem",
+    "path": "people/postmortem.md",
+    "span": [
+     1383,
+     1452
+    ],
+    "text": "The agency worker propped the room E door open during the night shift",
+    "truth_ref": ""
+   },
+   {
+    "claim_id": "fc08",
+    "doc_id": "doc:postmortem",
+    "path": "people/postmortem.md",
+    "span": [
+     1118,
+     1188
+    ],
+    "text": "The on-call SRE deployed the severity override that muted the warnings",
+    "truth_ref": ""
+   }
+  ]
+ },
+ "facts": [
+  {
+   "id": "F01",
+   "topic": "door_propped",
+   "kind": "determinable",
+   "question": "Was the room E door held open on the incident night?",
+   "answer": "yes: held fully open for several hours (controller link drops whenever that door is fully open; trips and a lockout follow in the fault snapshot; a rubber wedge was bought and photographed under that door two weeks earlier)",
+   "evidence_for": [
+    "deploy/logs/gateway.log",
+    "controller/VX05_fault_snapshot.txt",
+    "people/receipts/hardware_receipt_wedge.txt",
+    "people/tickets.json"
+   ],
+   "trap_claims": [
+    {
+     "doc_id": "doc:night_lead",
+     "text": "all the rooms were closed and nobody went near room E after that",
+     "claim_id": "fc01"
+    }
+   ]
+  },
+  {
+   "id": "F02",
+   "topic": "prop_start",
+   "kind": "determinable",
+   "question": "When did the door go fully open (true UTC)?",
+   "answer": "2026-06-20T00:38:00Z",
+   "tol": 6,
+   "tol_unit": "minutes",
+   "evidence_for": [
+    "deploy/logs/gateway.log",
+    "controller/VX05_fault_snapshot.txt"
+   ],
+   "trap_claims": []
+  },
+  {
+   "id": "F03",
+   "topic": "prop_end",
+   "kind": "determinable",
+   "question": "When was the door closed (true UTC)?",
+   "answer": "2026-06-20T04:52:00Z",
+   "tol": 6,
+   "tol_unit": "minutes",
+   "evidence_for": [
+    "deploy/logs/gateway.log",
+    "db/ledger.sql",
+    "db/queue.sql"
+   ],
+   "trap_claims": []
+  },
+  {
+   "id": "F04",
+   "topic": "lockout",
+   "kind": "determinable",
+   "question": "Did controller VX05 lock out that night, and when?",
+   "answer": "yes, at 2026-06-20T01:34:00Z",
+   "tol": 10,
+   "tol_unit": "minutes",
+   "evidence_for": [
+    "controller/VX05_fault_snapshot.txt",
+    "deploy/logs/gateway.log"
+   ],
+   "trap_claims": []
+  },
+  {
+   "id": "F05",
+   "topic": "excursion_occurred",
+   "kind": "determinable",
+   "question": "Did room E exceed its product limit?",
+   "answer": "yes, from about 2026-06-20T01:08:00Z until about 2026-06-20T09:52:00Z (recovery curve after the link returned; lab result)",
+   "tol": 45,
+   "tol_unit": "minutes",
+   "evidence_for": [
+    "deploy/logs/gateway.log",
+    "people/stability_lab_email.md",
+    "people/utility_submeter.csv"
+   ],
+   "trap_claims": []
+  },
+  {
+   "id": "F06",
+   "topic": "flash_incident_zone",
+   "kind": "determinable",
+   "question": "Was unit VX05 flashed to firmware 3.4 during the vendor visit?",
+   "answer": "yes, on 2026-06-08T15:02:00Z: its readings decode about 19 C lower from then on, the invoice bills two units, and the technician's badge opened room E",
+   "evidence_for": [
+    "deploy/logs/gateway.log",
+    "people/receipts/vendor_invoice_firmware_service.txt",
+    "people/badge_access.csv",
+    "people/photos_exif.csv"
+   ],
+   "trap_claims": [
+    {
+     "doc_id": "doc:service_report_firmware_visit",
+     "text": "Unit VX05 (room E): inspected only, no changes made",
+     "claim_id": "fc05"
+    }
+   ]
+  },
+  {
+   "id": "F07",
+   "topic": "flash_other_zone",
+   "kind": "determinable",
+   "question": "Which other unit was flashed?",
+   "answer": "VX03 (room C) at 2026-06-08T15:43:00Z",
+   "tol": 30,
+   "tol_unit": "minutes",
+   "evidence_for": [
+    "deploy/logs/gateway.log",
+    "people/vendor_service_reports/service_report_firmware_visit.md"
+   ],
+   "trap_claims": []
+  },
+  {
+   "id": "F08",
+   "topic": "decoder_defect",
+   "kind": "determinable",
+   "question": "Why did the flashed rooms read about -40 C?",
+   "answer": "the gateway decoder assumes the firmware-3.2 delta encoding; firmware 3.4 sends absolute temperatures (flagged in the status word), so the decoded value equals true temperature plus the setpoint",
+   "evidence_for": [
+    "repo/gateway/rh7_decode.py",
+    "deploy/logs/gateway.log",
+    "people/probe_checks_sheet.csv"
+   ],
+   "trap_claims": [
+    {
+     "doc_id": "doc:ops_engineer",
+     "text": "The vendor confirmed by phone that the -40 readings are a known sensor fault on the 3.4 boards",
+     "claim_id": "fc03"
+    }
+   ]
+  },
+  {
+   "id": "F09",
+   "topic": "not_sensor_fault",
+   "kind": "determinable",
+   "question": "Were the -40 readings a sensor fault?",
+   "answer": "no: handheld probe checks on those rooms agree with the true temperatures; the raw frames decode correctly under the 3.4 format",
+   "evidence_for": [
+    "people/probe_checks_sheet.csv",
+    "deploy/logs/gateway.log",
+    "people/vendor_service_reports/service_report_firmware_visit.md"
+   ],
+   "trap_claims": [
+    {
+     "doc_id": "doc:ops_engineer",
+     "text": "The vendor confirmed by phone that the -40 readings are a known sensor fault on the 3.4 boards",
+     "claim_id": "fc03"
+    }
+   ]
+  },
+  {
+   "id": "F10",
+   "topic": "hotfix_routing",
+   "kind": "determinable",
+   "question": "What did the hotfix commit change?",
+   "answer": "commit 761f81a routed rooms C/E low-temperature alerts to #alerts-coldchain-old, a channel the manager then archived",
+   "evidence_for": [
+    "repo/.git",
+    "deploy/logs/alerting.log",
+    "people/chat_export.json"
+   ],
+   "trap_claims": []
+  },
+  {
+   "id": "F11",
+   "topic": "archive_timing",
+   "kind": "determinable",
+   "question": "When was #alerts-coldchain-old archived relative to the incident?",
+   "answer": "before it, on 2026-06-10T09:54:00Z",
+   "tol": 120,
+   "tol_unit": "minutes",
+   "evidence_for": [
+    "people/chat_export.json",
+    "deploy/logs/alerting.log"
+   ],
+   "trap_claims": [
+    {
+     "doc_id": "doc:warehouse_manager",
+     "text": "I archived the old alert channel only after the incident",
+     "claim_id": "fc02"
+    }
+   ]
+  },
+  {
+   "id": "F12",
+   "topic": "override_active",
+   "kind": "determinable",
+   "question": "Was a minimum-severity override active during the incident?",
+   "answer": "yes: deploy/config.override.json sets ALERT_MIN_SEVERITY=critical; the alerting log shows warnings suppressed from 2026-06-10T02:27:00Z onward and it is still present in the deployed tree",
+   "tol": 15,
+   "tol_unit": "minutes",
+   "evidence_for": [
+    "repo/deploy/config.override.json",
+    "deploy/logs/alerting.log",
+    "people/chat_export.json"
+   ],
+   "trap_claims": []
+  },
+  {
+   "id": "F13",
+   "topic": "override_not_reverted",
+   "kind": "determinable",
+   "question": "Was the override reverted?",
+   "answer": "no: the file is still in the deployed tree and suppression continues to the end of the logs",
+   "evidence_for": [
+    "repo/deploy/config.override.json",
+    "deploy/logs/alerting.log"
+   ],
+   "trap_claims": []
+  },
+  {
+   "id": "F14",
+   "topic": "compressor_not_faulty",
+   "kind": "determinable",
+   "question": "Did the VX05 compressor fail?",
+   "answer": "no: it cooled normally before and after the lockout; the lockout is the controller's trip-count rule; the recall notice covers a different compressor model",
+   "evidence_for": [
+    "controller/VX05_fault_snapshot.txt",
+    "deploy/logs/gateway.log",
+    "people/recall_notice.txt"
+   ],
+   "trap_claims": [
+    {
+     "doc_id": "doc:postmortem",
+     "text": "Root cause: compressor failure on controller VX05",
+     "claim_id": "fc06"
+    }
+   ]
+  },
+  {
+   "id": "F15",
+   "topic": "race_bug",
+   "kind": "determinable",
+   "question": "Why does the ledger disagree with physical pallet positions?",
+   "answer": "the gateway retries the dispatch webhook after a timeout and dispatch applies moves without checking the current position, so a delayed duplicate of an earlier move overwrites a later move (dispatch log 'zone mismatch' warnings)",
+   "evidence_for": [
+    "deploy/logs/dispatch.log",
+    "repo/dispatch/server.py",
+    "repo/gateway/server.py",
+    "people/forklift_telematics.csv"
+   ],
+   "trap_claims": []
+  },
+  {
+   "id": "F16",
+   "topic": "affected_lots_determinable",
+   "kind": "determinable",
+   "question": "Which lots were physically in room E during the excursion (those the surviving records establish)?",
+   "answer": "lot:LN-21643, lot:LN-22416, lot:LN-24714",
+   "evidence_for": [
+    "people/forklift_telematics.csv",
+    "deploy/logs/gateway.log",
+    "repo/deploy/inventory_import.csv"
+   ],
+   "trap_claims": []
+  },
+  {
+   "id": "F17",
+   "topic": "quarantine_wrong",
+   "kind": "determinable",
+   "question": "Was the quarantine list correct?",
+   "answer": "no: it was taken from the corrupted ledger; it includes lots that were not in the room and omits some that were",
+   "evidence_for": [
+    "people/postmortem.md",
+    "db/ledger.sql",
+    "people/forklift_telematics.csv"
+   ],
+   "trap_claims": []
+  },
+  {
+   "id": "F18",
+   "topic": "sensor_drift",
+   "kind": "determinable",
+   "question": "What happened to the room D sensor?",
+   "answer": "its reading drifted upward by about 3.2 C between 2026-06-12 and 2026-06-26 (handheld checks diverge from the panel), and was recalibrated on 2026-06-27",
+   "evidence_for": [
+    "people/probe_checks_sheet.csv",
+    "deploy/logs/gateway.log",
+    "people/vendor_service_reports/service_report_recalibration.md"
+   ],
+   "trap_claims": []
+  },
+  {
+   "id": "F19",
+   "topic": "power_outage",
+   "kind": "determinable",
+   "question": "What happened during the generator test?",
+   "answer": "site power was off from 2026-06-07T10:58:00Z to 2026-06-07T11:25:00Z: every controller rebooted (sequence and clock reset), the gateway host rebooted and its logs rotated",
+   "tol": 5,
+   "tol_unit": "minutes",
+   "evidence_for": [
+    "deploy/logs/gateway.log",
+    "deploy/logs/gateway.log.1",
+    "people/tickets.json",
+    "people/utility_notice.txt"
+   ],
+   "trap_claims": []
+  },
+  {
+   "id": "F20",
+   "topic": "log_gap",
+   "kind": "determinable",
+   "question": "Why are there no service logs for a window after the incident?",
+   "answer": "the gateway host disk was full from 2026-06-20T12:00:00Z to 2026-06-20T15:00:00Z; services kept running (the ledger database has readings for the window) but nothing was appended to the log files",
+   "tol": 20,
+   "tol_unit": "minutes",
+   "evidence_for": [
+    "people/tickets.json",
+    "db/ledger.sql",
+    "deploy/logs/gateway.log"
+   ],
+   "trap_claims": []
+  },
+  {
+   "id": "F21",
+   "topic": "badge_reader_offline",
+   "kind": "determinable",
+   "question": "Why are there no badge records for the room E reader that week?",
+   "answer": "the reader was offline from 2026-06-16 to 2026-06-21 (facilities ticket); doors were opened with the key",
+   "evidence_for": [
+    "people/tickets.json",
+    "people/badge_access.csv"
+   ],
+   "trap_claims": []
+  },
+  {
+   "id": "F22",
+   "topic": "fl2_offline",
+   "kind": "determinable",
+   "question": "Why does the forklift telematics have a gap for FL-2?",
+   "answer": "its telematics battery failed; no trail from 2026-06-20 to 2026-06-22 although the scanner kept posting moves",
+   "evidence_for": [
+    "people/tickets.json",
+    "people/forklift_telematics.csv",
+    "deploy/logs/gateway.log"
+   ],
+   "trap_claims": []
+  },
+  {
+   "id": "F23",
+   "topic": "defrost_rule",
+   "kind": "determinable",
+   "question": "How are defrosts scheduled?",
+   "answer": "by compressor runtime (about every R runtime-hours, inside fixed daily windows, one room at a time in a fixed priority order), not every 6 hours as the runbook says",
+   "evidence_for": [
+    "deploy/logs/gateway.log",
+    "people/utility_submeter.csv",
+    "repo/docs/runbook.md"
+   ],
+   "trap_claims": []
+  },
+  {
+   "id": "F24",
+   "topic": "hh2_bias",
+   "kind": "determinable",
+   "question": "Is the clerk's handheld accurate?",
+   "answer": "no: HH-2 reads +0.8 C high per the calibration certificate, so the clerk's sheet overstates",
+   "evidence_for": [
+    "people/receipts/calibration_certificate_handhelds.txt",
+    "people/probe_checks_sheet.csv"
+   ],
+   "trap_claims": [
+    {
+     "doc_id": "doc:receiving_clerk",
+     "text": "My handheld was calibrated last month and reads fine",
+     "claim_id": "fc04"
+    }
+   ]
+  },
+  {
+   "id": "F25",
+   "topic": "earlier_props",
+   "kind": "determinable",
+   "question": "Was the room E door held open on earlier nights?",
+   "answer": "yes: the controller link dropped on 9 earlier nights during the night shift, each with trips in the snapshot-style pattern",
+   "evidence_for": [
+    "deploy/logs/gateway.log",
+    "people/badge_access.csv"
+   ],
+   "trap_claims": []
+  },
+  {
+   "id": "F26",
+   "topic": "wedge_purchase",
+   "kind": "determinable",
+   "question": "Who bought the door wedge and when?",
+   "answer": "Maya Mensah on 2026-06-08 (receipt submitted for reimbursement; photo posted in chat the same night)",
+   "evidence_for": [
+    "people/receipts/hardware_receipt_wedge.txt",
+    "people/chat_export.json",
+    "people/photos_exif.csv"
+   ],
+   "trap_claims": []
+  },
+  {
+   "id": "F27",
+   "topic": "nightlead_claim_false",
+   "kind": "determinable",
+   "question": "Is the night lead's statement that nobody went near the room after the walk-through true?",
+   "answer": "no: the link drop, trips and lockout show the door was fully open for hours after it",
+   "evidence_for": [
+    "deploy/logs/gateway.log",
+    "controller/VX05_fault_snapshot.txt"
+   ],
+   "trap_claims": [
+    {
+     "doc_id": "doc:night_lead",
+     "text": "all the rooms were closed and nobody went near room E after that",
+     "claim_id": "fc01"
+    }
+   ]
+  },
+  {
+   "id": "F28",
+   "topic": "clock_offsets",
+   "kind": "determinable",
+   "question": "Which record channels have clock errors?",
+   "answer": "badge -7 min, exif -120 min, cctv -4 min",
+   "evidence_for": [
+    "people/badge_access.csv",
+    "people/forklift_telematics.csv",
+    "people/photos_exif.csv",
+    "people/cctv_motion.csv"
+   ],
+   "trap_claims": []
+  },
+  {
+   "id": "U01",
+   "topic": "door_prop_actor",
+   "kind": "undeterminable",
+   "question": "Who held the room E door open on the incident night?",
+   "answer": null,
+   "hypotheses": [
+    "actor:m.mensah",
+    "actor:h.tanaka"
+   ],
+   "supported": "someone held it open for hours; both were on site all night",
+   "why_undeterminable": "the room E badge reader was offline all week (ticket T-0411); corridor CCTV retention is 7 days and the incident night was overwritten before export; both had access and a wedge (the temp worker's purchase, the dock wedge)",
+   "evidence_for": [
+    "deploy/logs/gateway.log",
+    "controller/VX05_fault_snapshot.txt",
+    "people/receipts/hardware_receipt_wedge.txt"
+   ],
+   "evidence_missing": [
+    "people/badge_access.csv (ROOM-E rows)",
+    "people/cctv_motion.csv (incident night)"
+   ],
+   "trap_claims": [
+    {
+     "doc_id": "doc:postmortem",
+     "text": "The agency worker propped the room E door open during the night shift",
+     "claim_id": "fc07"
+    }
+   ]
+  },
+  {
+   "id": "U02",
+   "topic": "override_actor",
+   "kind": "undeterminable",
+   "question": "Who deployed the minimum-severity override?",
+   "answer": null,
+   "hypotheses": [
+    "actor:i.kowalski",
+    "actor:m.larsen"
+   ],
+   "supported": "it was deployed at about 2026-06-10T02:27:00Z (alerting log) as an untracked file",
+   "why_undeterminable": "the file is untracked (no author, uniform mtimes), both engineers deny it in statements and chat, both were on call with deploy access",
+   "evidence_for": [
+    "repo/deploy/config.override.json",
+    "deploy/logs/alerting.log",
+    "people/chat_export.json"
+   ],
+   "evidence_missing": [
+    "deploy shell history / audit trail (not collected)"
+   ],
+   "trap_claims": [
+    {
+     "doc_id": "doc:postmortem",
+     "text": "The on-call SRE deployed the severity override that muted the warnings",
+     "claim_id": "fc08"
+    }
+   ]
+  },
+  {
+   "id": "U03",
+   "topic": "peak_temperature",
+   "kind": "undeterminable",
+   "question": "What peak temperature did room E reach?",
+   "answer": null,
+   "hypotheses": [
+    "a few degrees above the product limit (roughly -10 C)",
+    "near or above 0 C (the door stood open for hours; the recovery curve is consistent with either)"
+   ],
+   "supported": "it exceeded the product limit for hours",
+   "why_undeterminable": "no telemetry reached the gateway while the door was open (link down) and the fault snapshot ends at the lockout; only the recovery curve after the door closed survives",
+   "evidence_for": [
+    "deploy/logs/gateway.log",
+    "controller/VX05_fault_snapshot.txt"
+   ],
+   "evidence_missing": [
+    "controller frames during the open-door period"
+   ],
+   "trap_claims": []
+  },
+  {
+   "id": "U04",
+   "topic": "bias_B",
+   "kind": "undeterminable",
+   "question": "What is the sensor offset of room B?",
+   "answer": null,
+   "hypotheses": [
+    "the sensor reads low (negative offset)",
+    "the sensor reads high (positive offset)"
+   ],
+   "supported": "nothing",
+   "why_undeterminable": "room B is not on either probe route, so no independent temperature reference exists for it",
+   "evidence_for": [],
+   "evidence_missing": [
+    "people/probe_checks_sheet.csv (room B rows)"
+   ],
+   "trap_claims": []
+  },
+  {
+   "id": "U05",
+   "topic": "bias_F",
+   "kind": "undeterminable",
+   "question": "What is the sensor offset of room F?",
+   "answer": null,
+   "hypotheses": [
+    "the sensor reads low (negative offset)",
+    "the sensor reads high (positive offset)"
+   ],
+   "supported": "nothing",
+   "why_undeterminable": "room F is not on either probe route, so no independent temperature reference exists for it",
+   "evidence_for": [],
+   "evidence_missing": [
+    "people/probe_checks_sheet.csv (room F rows)"
+   ],
+   "trap_claims": []
+  },
+  {
+   "id": "U07",
+   "topic": "nightlead_awareness",
+   "kind": "undeterminable",
+   "question": "Did the night lead see the propped door before it was closed?",
+   "answer": null,
+   "hypotheses": [
+    "saw it and closed it",
+    "closed it without noticing the wedge",
+    "someone else closed it"
+   ],
+   "supported": "the door was closed at the time the link returned",
+   "why_undeterminable": "no badge record (reader offline), no CCTV (retention), and the only account is the night lead's own statement",
+   "evidence_for": [
+    "deploy/logs/gateway.log"
+   ],
+   "evidence_missing": [
+    "people/badge_access.csv",
+    "people/cctv_motion.csv"
+   ],
+   "trap_claims": []
+  },
+  {
+   "id": "U08",
+   "topic": "vendor_intent",
+   "kind": "undeterminable",
+   "question": "Did the technician knowingly misreport which units were flashed?",
+   "answer": null,
+   "hypotheses": [
+    "clerical error",
+    "deliberate"
+   ],
+   "supported": "the report is wrong about the incident room",
+   "why_undeterminable": "intent is not recoverable from these records",
+   "evidence_for": [
+    "people/vendor_service_reports/service_report_firmware_visit.md"
+   ],
+   "evidence_missing": [
+    "vendor's internal job record"
+   ],
+   "trap_claims": []
+  },
+  {
+   "id": "I01",
+   "topic": "single_root_cause",
+   "kind": "ill_posed",
+   "question": "What is the single root cause of the missed alarm?",
+   "answer": "there is no single cause: the alarm was independently prevented by (1) the decoder's delta assumption after the 3.4 flash (readings never crossed the high limit), (2) the routing hotfix to an archived channel, (3) the minimum-severity override, and (4) the link loss while the door was open; removing any one alone would not have raised a page",
+   "evidence_for": [
+    "repo/gateway/rh7_decode.py",
+    "deploy/logs/alerting.log",
+    "repo/deploy/config.override.json",
+    "deploy/logs/gateway.log"
+   ],
+   "trap_claims": [
+    {
+     "doc_id": "doc:postmortem",
+     "text": "Root cause: compressor failure on controller VX05",
+     "claim_id": "fc06"
+    }
+   ]
+  },
+  {
+   "id": "I02",
+   "topic": "quarantine_by_ledger",
+   "kind": "ill_posed",
+   "question": "Which lots should be quarantined according to the ledger?",
+   "answer": "the ledger cannot answer it: its positions were corrupted by the dispatch race; the physical positions must be rebuilt from the inventory import, the forklift telematics and the scanner lines, and for the disk-full window they cannot be rebuilt at all",
+   "evidence_for": [
+    "db/ledger.sql",
+    "deploy/logs/dispatch.log",
+    "people/forklift_telematics.csv"
+   ],
+   "trap_claims": []
+  }
+ ],
+ "evidence_index": {
+  "k_cool.A": [
+   "deploy/logs/gateway.log",
+   "db/ledger.sql",
+   "people/utility_submeter.csv"
+  ],
+  "k_leak.A": [
+   "deploy/logs/gateway.log",
+   "db/ledger.sql",
+   "people/utility_submeter.csv"
+  ],
+  "H.A": [
+   "deploy/logs/gateway.log",
+   "db/ledger.sql"
+  ],
+  "bias.A": [
+   "deploy/logs/gateway.log",
+   "people/probe_checks_sheet.csv",
+   "people/receipts/calibration_certificate_handhelds.txt"
+  ],
+  "k_cool.B": [
+   "deploy/logs/gateway.log",
+   "db/ledger.sql",
+   "people/utility_submeter.csv"
+  ],
+  "k_leak.B": [
+   "deploy/logs/gateway.log",
+   "db/ledger.sql",
+   "people/utility_submeter.csv"
+  ],
+  "H.B": [
+   "deploy/logs/gateway.log",
+   "db/ledger.sql"
+  ],
+  "bias.B": [
+   "deploy/logs/gateway.log",
+   "people/probe_checks_sheet.csv",
+   "people/receipts/calibration_certificate_handhelds.txt"
+  ],
+  "k_cool.C": [
+   "deploy/logs/gateway.log",
+   "db/ledger.sql",
+   "people/utility_submeter.csv"
+  ],
+  "k_leak.C": [
+   "deploy/logs/gateway.log",
+   "db/ledger.sql",
+   "people/utility_submeter.csv"
+  ],
+  "H.C": [
+   "deploy/logs/gateway.log",
+   "db/ledger.sql"
+  ],
+  "bias.C": [
+   "deploy/logs/gateway.log",
+   "people/probe_checks_sheet.csv",
+   "people/receipts/calibration_certificate_handhelds.txt"
+  ],
+  "k_cool.D": [
+   "deploy/logs/gateway.log",
+   "db/ledger.sql",
+   "people/utility_submeter.csv"
+  ],
+  "k_leak.D": [
+   "deploy/logs/gateway.log",
+   "db/ledger.sql",
+   "people/utility_submeter.csv"
+  ],
+  "H.D": [
+   "deploy/logs/gateway.log",
+   "db/ledger.sql"
+  ],
+  "bias.D": [
+   "deploy/logs/gateway.log",
+   "people/probe_checks_sheet.csv",
+   "people/receipts/calibration_certificate_handhelds.txt"
+  ],
+  "k_cool.E": [
+   "deploy/logs/gateway.log",
+   "db/ledger.sql",
+   "people/utility_submeter.csv"
+  ],
+  "k_leak.E": [
+   "deploy/logs/gateway.log",
+   "db/ledger.sql",
+   "people/utility_submeter.csv"
+  ],
+  "H.E": [
+   "deploy/logs/gateway.log",
+   "db/ledger.sql"
+  ],
+  "bias.E": [
+   "deploy/logs/gateway.log",
+   "people/probe_checks_sheet.csv",
+   "people/receipts/calibration_certificate_handhelds.txt"
+  ],
+  "k_cool.F": [
+   "deploy/logs/gateway.log",
+   "db/ledger.sql",
+   "people/utility_submeter.csv"
+  ],
+  "k_leak.F": [
+   "deploy/logs/gateway.log",
+   "db/ledger.sql",
+   "people/utility_submeter.csv"
+  ],
+  "H.F": [
+   "deploy/logs/gateway.log",
+   "db/ledger.sql"
+  ],
+  "bias.F": [
+   "deploy/logs/gateway.log",
+   "people/probe_checks_sheet.csv",
+   "people/receipts/calibration_certificate_handhelds.txt"
+  ],
+  "door_gain": [
+   "deploy/logs/gateway.log",
+   "people/badge_access.csv",
+   "people/forklift_telematics.csv"
+  ],
+  "c_adj": [
+   "deploy/logs/gateway.log",
+   "people/utility_submeter.csv",
+   "repo/docs/floor_plan.md"
+  ],
+  "defrost.R_hours": [
+   "deploy/logs/gateway.log",
+   "people/utility_submeter.csv"
+  ],
+  "defrost.len_min": [
+   "deploy/logs/gateway.log",
+   "people/utility_submeter.csv"
+  ],
+  "defrost.heat_degC": [
+   "deploy/logs/gateway.log",
+   "people/utility_submeter.csv"
+  ],
+  "trip.d_min": [
+   "deploy/logs/gateway.log",
+   "controller/VX05_fault_snapshot.txt",
+   "people/forklift_telematics.csv"
+  ],
+  "lockout.N": [
+   "deploy/logs/gateway.log",
+   "controller/VX05_fault_snapshot.txt",
+   "people/forklift_telematics.csv"
+  ],
+  "lockout.W_min": [
+   "deploy/logs/gateway.log",
+   "controller/VX05_fault_snapshot.txt"
+  ],
+  "lockout.L_min": [
+   "deploy/logs/gateway.log",
+   "controller/VX05_fault_snapshot.txt",
+   "people/utility_submeter.csv"
+  ],
+  "physical:door_prop:E": [
+   "people/receipts/hardware_receipt_wedge.txt",
+   "people/photos_exif.csv",
+   "people/cctv_motion.csv",
+   "deploy/logs/gateway.log",
+   "people/chat_export.json"
+  ],
+  "physical:trip:E": [
+   "deploy/logs/gateway.log",
+   "controller/VX05_fault_snapshot.txt"
+  ],
+  "physical:lockout:E": [
+   "deploy/logs/gateway.log",
+   "controller/VX05_fault_snapshot.txt",
+   "people/utility_submeter.csv"
+  ],
+  "physical:excursion:E": [
+   "controller/VX05_fault_snapshot.txt",
+   "people/stability_lab_email.md",
+   "people/utility_submeter.csv"
+  ],
+  "firmware:E": [
+   "people/vendor_service_reports/service_report_firmware_visit.md",
+   "people/badge_access.csv",
+   "deploy/logs/gateway.log",
+   "people/receipts/vendor_invoice_firmware_service.txt",
+   "people/photos_exif.csv"
+  ],
+  "code:gateway/rh7_decode.py:decode_line": [
+   "repo/gateway/rh7_decode.py",
+   "deploy/logs/gateway.log",
+   "people/probe_checks_sheet.csv"
+  ],
+  "data:readings_wrong:E": [
+   "deploy/logs/gateway.log",
+   "db/ledger.sql",
+   "people/probe_checks_sheet.csv"
+  ],
+  "data:alerts_suppressed:E": [
+   "deploy/logs/alerting.log",
+   "repo/alerting/routes.json",
+   "repo/deploy/config.override.json"
+  ],
+  "commit:761f81a": [
+   "repo/.git",
+   "deploy/logs/alerting.log",
+   "people/chat_export.json"
+  ],
+  "config:alerting/routes.json:zones.E.channel": [
+   "repo/alerting/routes.json",
+   "deploy/logs/alerting.log",
+   "people/chat_export.json"
+  ],
+  "config:deploy/config.override.json:ALERT_MIN_SEVERITY": [
+   "repo/deploy/config.override.json",
+   "deploy/logs/alerting.log",
+   "people/chat_export.json"
+  ],
+  "data:frames_dropped:E": [
+   "deploy/logs/gateway.log",
+   "controller/VX05_fault_snapshot.txt",
+   "people/tickets.json"
+  ],
+  "code:dispatch/server.py:apply_move": [
+   "repo/dispatch/server.py",
+   "deploy/logs/dispatch.log"
+  ],
+  "code:gateway/server.py:notify_dispatch": [
+   "repo/gateway/server.py",
+   "deploy/logs/gateway.log",
+   "deploy/logs/dispatch.log"
+  ],
+  "data:lots_wrong:E": [
+   "db/ledger.sql",
+   "people/forklift_telematics.csv",
+   "deploy/logs/gateway.log",
+   "deploy/logs/dispatch.log"
+  ],
+  "data:quarantine_wrong:E": [
+   "people/postmortem.md",
+   "db/ledger.sql",
+   "people/forklift_telematics.csv"
+  ],
+  "physical:defrost:A": [
+   "deploy/logs/gateway.log",
+   "people/utility_submeter.csv"
+  ],
+  "physical:defrost:C": [
+   "deploy/logs/gateway.log",
+   "people/utility_submeter.csv"
+  ],
+  "physical:door_prop:E->physical:trip:E": [
+   "controller/VX05_fault_snapshot.txt",
+   "deploy/logs/gateway.log",
+   "people/photos_exif.csv",
+   "people/receipts/hardware_receipt_wedge.txt"
+  ],
+  "physical:trip:E->physical:lockout:E": [
+   "controller/VX05_fault_snapshot.txt",
+   "deploy/logs/gateway.log"
+  ],
+  "physical:lockout:E->physical:excursion:E": [
+   "controller/VX05_fault_snapshot.txt",
+   "deploy/logs/gateway.log",
+   "people/stability_lab_email.md"
+  ],
+  "physical:door_prop:E->physical:excursion:E": [
+   "controller/VX05_fault_snapshot.txt",
+   "people/photos_exif.csv",
+   "people/receipts/hardware_receipt_wedge.txt",
+   "people/stability_lab_email.md"
+  ],
+  "firmware:E->data:readings_wrong:E": [
+   "db/ledger.sql",
+   "deploy/logs/gateway.log",
+   "people/badge_access.csv",
+   "people/vendor_service_reports/service_report_firmware_visit.md"
+  ],
+  "code:gateway/rh7_decode.py:decode_line->data:readings_wrong:E": [
+   "db/ledger.sql",
+   "deploy/logs/gateway.log",
+   "repo/gateway/rh7_decode.py"
+  ],
+  "data:readings_wrong:E->data:alerts_suppressed:E": [
+   "db/ledger.sql",
+   "deploy/logs/alerting.log",
+   "deploy/logs/gateway.log",
+   "repo/alerting/routes.json"
+  ],
+  "commit:761f81a->config:alerting/routes.json:zones.E.channel": [
+   "deploy/logs/alerting.log",
+   "repo/.git",
+   "repo/alerting/routes.json"
+  ],
+  "config:alerting/routes.json:zones.E.channel->data:alerts_suppressed:E": [
+   "deploy/logs/alerting.log",
+   "repo/alerting/routes.json"
+  ],
+  "config:deploy/config.override.json:ALERT_MIN_SEVERITY->data:alerts_suppressed:E": [
+   "deploy/logs/alerting.log",
+   "repo/alerting/routes.json",
+   "repo/deploy/config.override.json"
+  ],
+  "physical:door_prop:E->data:frames_dropped:E": [
+   "controller/VX05_fault_snapshot.txt",
+   "deploy/logs/gateway.log",
+   "people/photos_exif.csv",
+   "people/receipts/hardware_receipt_wedge.txt"
+  ],
+  "data:frames_dropped:E->data:alerts_suppressed:E": [
+   "controller/VX05_fault_snapshot.txt",
+   "deploy/logs/alerting.log",
+   "deploy/logs/gateway.log",
+   "repo/alerting/routes.json"
+  ],
+  "code:dispatch/server.py:apply_move->data:lots_wrong:E": [
+   "db/ledger.sql",
+   "deploy/logs/dispatch.log",
+   "people/forklift_telematics.csv",
+   "repo/dispatch/server.py"
+  ],
+  "code:gateway/server.py:notify_dispatch->data:lots_wrong:E": [
+   "db/ledger.sql",
+   "deploy/logs/gateway.log",
+   "people/forklift_telematics.csv",
+   "repo/gateway/server.py"
+  ],
+  "data:lots_wrong:E->data:quarantine_wrong:E": [
+   "db/ledger.sql",
+   "people/forklift_telematics.csv",
+   "people/postmortem.md"
+  ],
+  "physical:defrost:A->physical:excursion:E": [
+   "controller/VX05_fault_snapshot.txt",
+   "deploy/logs/gateway.log",
+   "people/stability_lab_email.md",
+   "people/utility_submeter.csv"
+  ],
+  "physical:defrost:C->physical:excursion:E": [
+   "controller/VX05_fault_snapshot.txt",
+   "deploy/logs/gateway.log",
+   "people/stability_lab_email.md",
+   "people/utility_submeter.csv"
+  ],
+  "event:flash_incident_zone": [
+   "people/badge_access.csv",
+   "deploy/logs/gateway.log",
+   "people/vendor_service_reports/service_report_firmware_visit.md"
+  ],
+  "event:flash_other_zone": [
+   "people/badge_access.csv",
+   "deploy/logs/gateway.log",
+   "people/vendor_service_reports/service_report_firmware_visit.md"
+  ],
+  "event:ticket_minus40": [
+   "people/tickets.json",
+   "people/chat_export.json"
+  ],
+  "event:hotfix_commit": [
+   "repo/.git",
+   "people/chat_export.json"
+  ],
+  "event:billing_commit": [
+   "repo/.git",
+   "people/chat_export.json"
+  ],
+  "event:archive_channel": [
+   "people/chat_export.json",
+   "people/statements/warehouse_manager_p.novak.md"
+  ],
+  "event:purchase_wedge": [
+   "people/receipts/hardware_receipt_wedge.txt",
+   "people/chat_export.json"
+  ],
+  "event:photo_wedge": [
+   "people/photos_exif.csv",
+   "people/chat_export.json"
+  ],
+  "event:shift_start_temp_incident_night": [
+   "people/badge_access.csv",
+   "people/chat_export.json"
+  ],
+  "event:lab_ticket": [
+   "people/tickets.json",
+   "people/chat_export.json"
+  ],
+  "event:quarantine": [
+   "people/tickets.json",
+   "people/postmortem.md"
+  ],
+  "event:postmortem_publish": [
+   "people/postmortem.md",
+   "people/chat_export.json"
+  ],
+  "event:recalibration_visit": [
+   "repo/.git",
+   "people/chat_export.json"
+  ],
+  "event:diskfull_cleanup": [
+   "repo/.git",
+   "people/chat_export.json"
+  ],
+  "event:badge_ticket": [
+   "people/tickets.json",
+   "people/chat_export.json"
+  ],
+  "event:drift_ticket": [
+   "people/tickets.json",
+   "people/chat_export.json"
+  ],
+  "fc05": [
+   "deploy/logs/gateway.log",
+   "people/chat_export.json"
+  ],
+  "fc01": [
+   "deploy/logs/gateway.log",
+   "people/chat_export.json"
+  ],
+  "fc02": [
+   "deploy/logs/gateway.log",
+   "people/chat_export.json"
+  ],
+  "fc03": [
+   "deploy/logs/gateway.log",
+   "people/chat_export.json"
+  ],
+  "fc04": [
+   "deploy/logs/gateway.log",
+   "people/chat_export.json"
+  ],
+  "fc06": [
+   "deploy/logs/gateway.log",
+   "people/chat_export.json"
+  ],
+  "fc07": [
+   "deploy/logs/gateway.log",
+   "people/chat_export.json"
+  ],
+  "fc08": [
+   "deploy/logs/gateway.log",
+   "people/chat_export.json"
+  ],
+  "F01": [
+   "deploy/logs/gateway.log",
+   "controller/VX05_fault_snapshot.txt",
+   "people/receipts/hardware_receipt_wedge.txt",
+   "people/tickets.json"
+  ],
+  "F02": [
+   "deploy/logs/gateway.log",
+   "controller/VX05_fault_snapshot.txt"
+  ],
+  "F03": [
+   "deploy/logs/gateway.log",
+   "db/ledger.sql",
+   "db/queue.sql"
+  ],
+  "F04": [
+   "controller/VX05_fault_snapshot.txt",
+   "deploy/logs/gateway.log"
+  ],
+  "F05": [
+   "deploy/logs/gateway.log",
+   "people/stability_lab_email.md",
+   "people/utility_submeter.csv"
+  ],
+  "F06": [
+   "deploy/logs/gateway.log",
+   "people/receipts/vendor_invoice_firmware_service.txt",
+   "people/badge_access.csv",
+   "people/photos_exif.csv"
+  ],
+  "F07": [
+   "deploy/logs/gateway.log",
+   "people/vendor_service_reports/service_report_firmware_visit.md"
+  ],
+  "F08": [
+   "repo/gateway/rh7_decode.py",
+   "deploy/logs/gateway.log",
+   "people/probe_checks_sheet.csv"
+  ],
+  "F09": [
+   "people/probe_checks_sheet.csv",
+   "deploy/logs/gateway.log",
+   "people/vendor_service_reports/service_report_firmware_visit.md"
+  ],
+  "F10": [
+   "repo/.git",
+   "deploy/logs/alerting.log",
+   "people/chat_export.json"
+  ],
+  "F11": [
+   "people/chat_export.json",
+   "deploy/logs/alerting.log"
+  ],
+  "F12": [
+   "repo/deploy/config.override.json",
+   "deploy/logs/alerting.log",
+   "people/chat_export.json"
+  ],
+  "F13": [
+   "repo/deploy/config.override.json",
+   "deploy/logs/alerting.log"
+  ],
+  "F14": [
+   "controller/VX05_fault_snapshot.txt",
+   "deploy/logs/gateway.log",
+   "people/recall_notice.txt"
+  ],
+  "F15": [
+   "deploy/logs/dispatch.log",
+   "repo/dispatch/server.py",
+   "repo/gateway/server.py",
+   "people/forklift_telematics.csv"
+  ],
+  "F16": [
+   "people/forklift_telematics.csv",
+   "deploy/logs/gateway.log",
+   "repo/deploy/inventory_import.csv"
+  ],
+  "F17": [
+   "people/postmortem.md",
+   "db/ledger.sql",
+   "people/forklift_telematics.csv"
+  ],
+  "F18": [
+   "people/probe_checks_sheet.csv",
+   "deploy/logs/gateway.log",
+   "people/vendor_service_reports/service_report_recalibration.md"
+  ],
+  "F19": [
+   "deploy/logs/gateway.log",
+   "deploy/logs/gateway.log.1",
+   "people/tickets.json",
+   "people/utility_notice.txt"
+  ],
+  "F20": [
+   "people/tickets.json",
+   "db/ledger.sql",
+   "deploy/logs/gateway.log"
+  ],
+  "F21": [
+   "people/tickets.json",
+   "people/badge_access.csv"
+  ],
+  "F22": [
+   "people/tickets.json",
+   "people/forklift_telematics.csv",
+   "deploy/logs/gateway.log"
+  ],
+  "F23": [
+   "deploy/logs/gateway.log",
+   "people/utility_submeter.csv",
+   "repo/docs/runbook.md"
+  ],
+  "F24": [
+   "people/receipts/calibration_certificate_handhelds.txt",
+   "people/probe_checks_sheet.csv"
+  ],
+  "F25": [
+   "deploy/logs/gateway.log",
+   "people/badge_access.csv"
+  ],
+  "F26": [
+   "people/receipts/hardware_receipt_wedge.txt",
+   "people/chat_export.json",
+   "people/photos_exif.csv"
+  ],
+  "F27": [
+   "deploy/logs/gateway.log",
+   "controller/VX05_fault_snapshot.txt"
+  ],
+  "F28": [
+   "people/badge_access.csv",
+   "people/forklift_telematics.csv",
+   "people/photos_exif.csv",
+   "people/cctv_motion.csv"
+  ]
+ },
+ "canaries": [
+  "eval_imp",
+  "frostline_gen",
+  "mechanism.py",
+  "docs_gen",
+  "repo_gen",
+  "assemble.py",
+  "truth.json",
+  "world.json",
+  "sub_seed",
+  "seed=2",
+  "faketime",
+  "FAKETIME",
+  "libfaketime",
+  "/build/",
+  "/home/goutham",
+  "claude",
+  "docs_meta",
+  "sim_series",
+  "driver_report",
+  "incident_zone",
+  "red_herring",
+  "canar",
+  "fact_sheet",
+  "undeterminable",
+  "trap_claim"
+ ],
+ "build": {
+  "sub_seed": 0,
+  "incident_window_min": [
+   23108,
+   23632
+  ],
+  "checks": {
+   "w_bracket": [
+    84,
+    90
+   ],
+   "excursion_windows": [
+    [
+     6340,
+     6370
+    ],
+    [
+     20712,
+     20753
+    ],
+    [
+     23108,
+     23643
+    ],
+    [
+     30778,
+     30830
+    ],
+    [
+     37980,
+     38014
+    ],
+    [
+     40460,
+     40491
+    ]
+   ],
+   "incident_window": [
+    23108,
+    23632
+   ],
+   "n_lockouts": 5,
+   "lockout_zones": [
+    "D",
+    "E",
+    "E",
+    "D",
+    "B"
+   ],
+   "incident_lockout": true,
+   "n_near_misses": 7,
+   "near_misses": [
+    {
+     "zone": "E",
+     "t0": 40438,
+     "t1": 40468,
+     "n_trips": 3
+    },
+    {
+     "zone": "D",
+     "t0": 16372,
+     "t1": 16402,
+     "n_trips": 3
+    },
+    {
+     "zone": "D",
+     "t0": 32520,
+     "t1": 32602,
+     "n_trips": 3
+    },
+    {
+     "zone": "B",
+     "t0": 8092,
+     "t1": 8122,
+     "n_trips": 3
+    },
+    {
+     "zone": "B",
+     "t0": 13910,
+     "t1": 13940,
+     "n_trips": 3
+    },
+    {
+     "zone": "B",
+     "t0": 28090,
+     "t1": 28120,
+     "n_trips": 3
+    },
+    {
+     "zone": "B",
+     "t0": 35152,
+     "t1": 35182,
+     "n_trips": 3
+    }
+   ],
+   "n_trips": 96,
+   "n_collisions": 178,
+   "duty": {
+    "A": 0.625,
+    "B": 0.453,
+    "C": 0.549,
+    "D": 0.743,
+    "E": 0.48,
+    "F": 0.204
+   },
+   "incident_tmax": 5.6,
+   "incident_threshold": -14.3,
+   "n_defrosts": 344
+  },
+  "driver": {
+   "sent": 51263,
+   "unacked": 1288,
+   "dropped_radio": 4213,
+   "unsent_linkdown": 126,
+   "late_max_s": 485.0,
+   "moves_posted": 525,
+   "probes_posted": 154,
+   "snapshot": {
+    "t": "2026-06-20T01:34:05Z",
+    "t_sec": 1388043,
+    "entries": 45,
+    "zone": "E"
+   },
+   "outages": [
+    {
+     "t": "2026-06-07T10:58:01Z",
+     "minutes": 27
+    }
+   ]
+  },
+  "lots_wrong": [
+   "LN-20373",
+   "LN-20976",
+   "LN-21231",
+   "LN-21643",
+   "LN-21956",
+   "LN-22116",
+   "LN-22416",
+   "LN-22641",
+   "LN-23525",
+   "LN-25020",
+   "LN-25578",
+   "LN-26885",
+   "LN-28611"
+  ],
+  "mislabels": []
+ }
+}

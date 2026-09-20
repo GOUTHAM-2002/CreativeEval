@@ -1,0 +1,799 @@
+{
+  "schema_version": "2",
+  "mechanism": {
+    "parameters": {
+      "k_cool.A": {
+        "value": 0.11,
+        "confidence": 0.84
+      },
+      "k_leak.A": {
+        "value": 0.1,
+        "confidence": 0.82
+      },
+      "H.A": {
+        "value": -28.0,
+        "confidence": 0.68,
+        "note": "Dynamics identify H+bias; calibrated HH-1/HH-2 comparisons separate the approximately -0.8 C sensor bias."
+      },
+      "bias.A": {
+        "value": -0.8,
+        "confidence": 0.9
+      },
+      "k_cool.B": {
+        "value": 0.08,
+        "confidence": 0.82
+      },
+      "k_leak.B": {
+        "value": 0.075,
+        "confidence": 0.78
+      },
+      "H.B": {
+        "value": -18.7,
+        "confidence": 0.65,
+        "note": "Corrected for the approximately +0.2 C fixed-sensor bias."
+      },
+      "bias.B": {
+        "value": 0.2,
+        "confidence": 0.86
+      },
+      "k_cool.C": {
+        "value": 0.13,
+        "confidence": 0.75
+      },
+      "k_leak.C": {
+        "value": 0.035,
+        "confidence": 0.68
+      },
+      "H.C": {
+        "value": -21.6,
+        "confidence": 0.55,
+        "note": "Estimated from the pre-drift portion only."
+      },
+      "bias.C": {
+        "value": 0.8,
+        "confidence": 0.56,
+        "note": "Initial bias; it was not constant: VX03 drifted to about +2.7 C before the 2026-04-07 recalibration."
+      },
+      "k_cool.D": {
+        "value": 0.03,
+        "confidence": 0.77
+      },
+      "k_leak.D": {
+        "value": 0.045,
+        "confidence": 0.7
+      },
+      "H.D": {
+        "value": null,
+        "confidence": 0.18,
+        "note": "No calibrated probe checks survive for D; dynamics identify only H.D + bias.D."
+      },
+      "bias.D": {
+        "value": null,
+        "confidence": 0.12,
+        "note": "No independent calibrated temperature observations for D."
+      },
+      "k_cool.E": {
+        "value": 0.11,
+        "confidence": 0.82
+      },
+      "k_leak.E": {
+        "value": 0.055,
+        "confidence": 0.75
+      },
+      "H.E": {
+        "value": -22.6,
+        "confidence": 0.62,
+        "note": "Dynamics corrected using HH-1 and the documented +0.7 C HH-2 offset."
+      },
+      "bias.E": {
+        "value": -0.8,
+        "confidence": 0.88
+      },
+      "k_cool.F": {
+        "value": 0.035,
+        "confidence": 0.7
+      },
+      "k_leak.F": {
+        "value": 0.04,
+        "confidence": 0.68
+      },
+      "H.F": {
+        "value": null,
+        "confidence": 0.16,
+        "note": "No calibrated probe checks survive for F; dynamics identify only H.F + bias.F."
+      },
+      "bias.F": {
+        "value": null,
+        "confidence": 0.1,
+        "note": "No independent calibrated temperature observations for F."
+      },
+      "door_gain": {
+        "value": 2.5,
+        "confidence": 0.72
+      },
+      "c_adj": {
+        "value": 0.0004,
+        "confidence": 0.5,
+        "note": "Small shared-wall term; weakly identified relative to telemetry quantization/noise."
+      },
+      "defrost.R_hours": {
+        "value": 10,
+        "confidence": 0.9
+      },
+      "defrost.len_min": {
+        "value": 27,
+        "confidence": 0.99
+      },
+      "defrost.heat_degC": {
+        "value": 6,
+        "confidence": 0.82
+      },
+      "trip.d_min": {
+        "value": 7,
+        "confidence": 0.94
+      },
+      "lockout.N": {
+        "value": 5,
+        "confidence": 0.98
+      },
+      "lockout.W_min": {
+        "value": 60,
+        "confidence": 0.94
+      },
+      "lockout.L_min": {
+        "value": 60,
+        "confidence": 0.99
+      }
+    },
+    "rules": {
+      "defrost_rule_type": "runtime_hours",
+      "stagger_order": [
+        "C",
+        "F",
+        "D",
+        "B",
+        "A",
+        "E"
+      ],
+      "adjacency_pairs": [
+        [
+          "A",
+          "F"
+        ],
+        [
+          "A",
+          "B"
+        ],
+        [
+          "F",
+          "E"
+        ],
+        [
+          "F",
+          "C"
+        ],
+        [
+          "E",
+          "D"
+        ],
+        [
+          "B",
+          "C"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "B",
+          "E"
+        ]
+      ]
+    }
+  },
+  "protocol": {
+    "types": {
+      "3A": "STATUS",
+      "98": "DOOR",
+      "D7": "TRIP",
+      "27": "LOCKOUT",
+      "46": "DEFROST",
+      "8B": "HEATER",
+      "D3": "BOOT",
+      "63": "QUEUE_OVERFLOW"
+    },
+    "status_words": [
+      "DISCH_PRESSURE",
+      "COIL_TEMP",
+      "AIR_TEMP",
+      "STATE_FLAGS"
+    ],
+    "temp_scale": 16,
+    "temp_offset": 1000,
+    "press_scale": 10,
+    "flag_bits": {
+      "RUN": 4,
+      "DEFROST": 0,
+      "LOCKOUT": 6,
+      "RECOVERY": 5,
+      "DOOR_OPEN": 2,
+      "ABS_TEMP": 12
+    },
+    "v34_change": "absolute_temp",
+    "heldout": [
+      {
+        "seq": 3149,
+        "ts": "2026-03-30T22:45:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -24.625
+      },
+      {
+        "seq": 3150,
+        "ts": "2026-03-30T22:50:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -24.3125
+      },
+      {
+        "seq": 3151,
+        "ts": "2026-03-30T22:55:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -24.0
+      },
+      {
+        "seq": 3152,
+        "ts": "2026-03-30T23:00:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -23.6875
+      },
+      {
+        "seq": 3153,
+        "ts": "2026-03-30T23:05:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -24.125
+      },
+      {
+        "seq": 3154,
+        "ts": "2026-03-30T23:10:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -24.125
+      },
+      {
+        "seq": 3155,
+        "ts": "2026-03-30T23:15:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -23.875
+      },
+      {
+        "seq": 3156,
+        "ts": "2026-03-30T23:20:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -25.125
+      },
+      {
+        "seq": 3157,
+        "ts": "2026-03-30T23:25:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -25.125
+      },
+      {
+        "seq": 3158,
+        "ts": "2026-03-30T23:30:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -25.375
+      },
+      {
+        "seq": 3159,
+        "ts": "2026-03-30T23:35:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -26.125
+      },
+      {
+        "seq": 3160,
+        "ts": "2026-03-30T23:40:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -25.375
+      },
+      {
+        "seq": 3161,
+        "ts": "2026-03-30T23:45:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -25.375
+      },
+      {
+        "seq": 3162,
+        "ts": "2026-03-30T23:50:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -24.875
+      },
+      {
+        "seq": 3163,
+        "ts": "2026-03-30T23:55:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -24.8125
+      },
+      {
+        "seq": 3164,
+        "ts": "2026-03-31T00:00:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -24.375
+      },
+      {
+        "seq": 3165,
+        "ts": "2026-03-31T00:05:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -24.3125
+      },
+      {
+        "seq": 3166,
+        "ts": "2026-03-31T00:10:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -24.375
+      },
+      {
+        "seq": 3167,
+        "ts": "2026-03-31T00:15:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -24.0
+      },
+      {
+        "seq": 3168,
+        "ts": "2026-03-31T00:20:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -23.8125
+      },
+      {
+        "seq": 3169,
+        "ts": "2026-03-31T00:25:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -24.0
+      },
+      {
+        "seq": 3170,
+        "ts": "2026-03-31T00:30:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -24.3125
+      },
+      {
+        "seq": 3171,
+        "ts": "2026-03-31T00:35:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -24.375
+      },
+      {
+        "seq": 3172,
+        "ts": "2026-03-31T00:40:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -25.0
+      },
+      {
+        "seq": 3173,
+        "ts": "2026-03-31T00:45:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -25.0
+      },
+      {
+        "seq": 3174,
+        "ts": "2026-03-31T00:50:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -25.3125
+      },
+      {
+        "seq": 3175,
+        "ts": "2026-03-31T00:55:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -25.625
+      },
+      {
+        "seq": 3176,
+        "ts": "2026-03-31T00:56:00Z",
+        "zone": "E",
+        "event": "DOOR",
+        "value": 1
+      },
+      {
+        "seq": 3177,
+        "ts": "2026-03-31T01:00:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -25.1875
+      },
+      {
+        "seq": 3178,
+        "ts": "2026-03-31T01:03:00Z",
+        "zone": "E",
+        "event": "TRIP",
+        "value": 1
+      },
+      {
+        "seq": 3179,
+        "ts": "2026-03-31T01:05:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -25.125
+      },
+      {
+        "seq": 3180,
+        "ts": "2026-03-31T01:10:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -24.1875
+      },
+      {
+        "seq": 3182,
+        "ts": "2026-03-31T01:15:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -24.1875
+      },
+      {
+        "seq": 3181,
+        "ts": "2026-03-31T01:15:00Z",
+        "zone": "E",
+        "event": "TRIP",
+        "value": 1
+      },
+      {
+        "seq": 3183,
+        "ts": "2026-03-31T01:20:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -23.125
+      },
+      {
+        "seq": 3184,
+        "ts": "2026-03-31T01:25:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -23.0
+      },
+      {
+        "seq": 3185,
+        "ts": "2026-03-31T01:27:00Z",
+        "zone": "E",
+        "event": "TRIP",
+        "value": 1
+      },
+      {
+        "seq": 3186,
+        "ts": "2026-03-31T01:30:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -22.8125
+      },
+      {
+        "seq": 3187,
+        "ts": "2026-03-31T01:35:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -22.125
+      },
+      {
+        "seq": 3188,
+        "ts": "2026-03-31T01:39:00Z",
+        "zone": "E",
+        "event": "TRIP",
+        "value": 1
+      },
+      {
+        "seq": 3189,
+        "ts": "2026-03-31T01:40:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -22.0
+      },
+      {
+        "seq": 3190,
+        "ts": "2026-03-31T01:45:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -21.5
+      },
+      {
+        "seq": 3191,
+        "ts": "2026-03-31T01:50:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -21.375
+      },
+      {
+        "seq": 3192,
+        "ts": "2026-03-31T01:51:00Z",
+        "zone": "E",
+        "event": "TRIP",
+        "value": 1
+      },
+      {
+        "seq": 3193,
+        "ts": "2026-03-31T01:51:00Z",
+        "zone": "E",
+        "event": "LOCKOUT",
+        "value": 1
+      }
+    ]
+  },
+  "findings": [
+    {
+      "claim": "VX01 and VX05 were both flashed from firmware 3.2 to 3.4 on 2026-03-20; the service report claim that VX05 was unchanged is false.",
+      "status": "established",
+      "confidence": 0.99,
+      "evidence": [
+        "db/ledger.sql (D3 frames with word 0034)",
+        "deploy/logs/gateway.log",
+        "people/vendor_service_reports/service_report_firmware_visit.md",
+        "people/receipts/vendor_invoice_firmware_service.txt"
+      ]
+    },
+    {
+      "claim": "The approximately -40 C dashboard values for A and E were decoder errors, not sensor faults: firmware 3.4 made temperature absolute and set status bit 12, while the deployed decoder continued adding the zone setpoint.",
+      "status": "established",
+      "confidence": 0.99,
+      "evidence": [
+        "repo/gateway/rh7_decode.py",
+        "db/ledger.sql",
+        "people/vendor_service_reports/service_report_firmware_visit.md",
+        "people/probe_checks_sheet.csv",
+        "people/receipts/calibration_certificate_handhelds.txt"
+      ]
+    },
+    {
+      "claim": "Room E door opened at 2026-03-31T00:56Z true time and was held open long enough to trigger repeated high-pressure trips and a five-trip lockout; cooling later recovered without evidence of compressor failure.",
+      "status": "established",
+      "confidence": 0.97,
+      "evidence": [
+        "controller/VX05_fault_snapshot.txt",
+        "db/ledger.sql",
+        "people/tickets.json (T-0434)",
+        "people/utility_submeter.csv"
+      ]
+    },
+    {
+      "claim": "Room E experienced a severe warm excursion: the correctly decoded air temperature was about -2 C at the first surviving post-gap status and remained above -15 C until about 2026-03-31T08:10Z true time.",
+      "status": "established",
+      "confidence": 0.98,
+      "evidence": [
+        "db/ledger.sql",
+        "controller/VX05_fault_snapshot.txt",
+        "people/probe_checks_sheet.csv",
+        "people/stability_lab_email.md"
+      ]
+    },
+    {
+      "claim": "The exact excursion onset and peak cannot be determined because opening E fully pinched its telemetry cable and the reconnect reported a 67-frame queue overflow.",
+      "status": "undetermined",
+      "confidence": 0.94,
+      "evidence": [
+        "db/ledger.sql",
+        "controller/VX05_fault_snapshot.txt",
+        "people/tickets.json (T-0434)",
+        "deploy/logs/gateway.log"
+      ],
+      "alternatives": [
+        "The peak occurred in the unrecorded interval after the retained snapshot ended.",
+        "The first post-reconnect -2 C status was at or close to the peak."
+      ]
+    },
+    {
+      "claim": "The surviving evidence cannot identify who held room E open during the incident.",
+      "status": "undetermined",
+      "confidence": 0.96,
+      "evidence": [
+        "people/tickets.json (T-0441, T-0443)",
+        "people/badge_access.csv",
+        "people/cctv_motion.csv",
+        "people/forklift_telematics.csv",
+        "people/photos_exif.csv"
+      ],
+      "alternatives": [
+        "Lena Rivera used the wedge, as the earlier room-E wedge photo makes plausible.",
+        "The night lead or another key holder opened or closed E while its badge reader was down."
+      ]
+    },
+    {
+      "claim": "A failed VX05 compressor was the root cause.",
+      "status": "refuted",
+      "confidence": 0.96,
+      "evidence": [
+        "controller/VX05_fault_snapshot.txt",
+        "db/ledger.sql",
+        "people/recall_notice.txt",
+        "people/utility_submeter.csv"
+      ]
+    },
+    {
+      "claim": "The severity override caused the missed room-E alarm.",
+      "status": "refuted",
+      "confidence": 0.98,
+      "evidence": [
+        "repo/deploy/config.override.json",
+        "repo/alerting/server.py",
+        "repo/alerting/routes.json",
+        "db/ledger.sql"
+      ]
+    },
+    {
+      "claim": "Alerting missed the excursion because the bad 3.4 decode remained a low-temperature warning, was suppressed by the critical-only override, and E was also routed to an archived legacy channel.",
+      "status": "established",
+      "confidence": 0.98,
+      "evidence": [
+        "repo/gateway/rh7_decode.py",
+        "repo/deploy/config.override.json",
+        "repo/alerting/routes.json",
+        "deploy/logs/alerting.log",
+        "people/chat_export.json",
+        "repo/.git"
+      ]
+    },
+    {
+      "claim": "Lot LN-29378 was physically in E during the excursion, despite the final ledger snapshot placing it in A and the postmortem omitting it from quarantine.",
+      "status": "established",
+      "confidence": 0.98,
+      "evidence": [
+        "people/forklift_telematics.csv",
+        "db/queue.sql",
+        "repo/deploy/inventory_import.csv",
+        "db/ledger.sql",
+        "people/postmortem.md",
+        "people/stability_lab_email.md"
+      ]
+    },
+    {
+      "claim": "The complete set of product exposed in E cannot be established from the surviving inventory records.",
+      "status": "undetermined",
+      "confidence": 0.94,
+      "evidence": [
+        "db/queue.sql",
+        "db/ledger.sql",
+        "deploy/logs/dispatch.log",
+        "deploy/logs/gateway.log",
+        "people/forklift_telematics.csv",
+        "people/tickets.json (T-0443)"
+      ],
+      "alternatives": [
+        "Forklift pick/drop telemetry best represents physical pallet locations.",
+        "Scanner queue jobs represent intended moves but retries and concurrent workers applied duplicates and stale from-zones.",
+        "The final lots table is only a later snapshot and was incorrectly treated as incident-time history."
+      ]
+    }
+  ],
+  "timeline": {
+    "events": [
+      {
+        "actor": "actor:l.rivera",
+        "action": "purchase",
+        "t": "2026-03-19T15:10:00Z",
+        "ref": "people/receipts/hardware_receipt_wedge.txt"
+      },
+      {
+        "actor": "actor:l.rivera",
+        "action": "door_prop",
+        "t": "2026-03-19T22:33:00Z",
+        "ref": "IMG_2231.jpg and msg:m0051"
+      },
+      {
+        "actor": "actor:l.rivera",
+        "action": "photo",
+        "t": "2026-03-19T22:33:00Z",
+        "ref": "IMG_2231.jpg: wedge under room E door"
+      },
+      {
+        "actor": "actor:e.haddad",
+        "action": "firmware_flash",
+        "t": "2026-03-20T14:12:00Z",
+        "ref": "ctrl:VX05 boot banner 0034"
+      },
+      {
+        "actor": "actor:e.haddad",
+        "action": "firmware_flash",
+        "t": "2026-03-20T14:50:00Z",
+        "ref": "ctrl:VX01 boot banner 0034"
+      },
+      {
+        "actor": "actor:r.okafor",
+        "action": "commit",
+        "t": "2026-03-21T10:46:13Z",
+        "ref": "commit:f917296"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "archive_channel",
+        "t": "2026-03-22T11:42:00Z",
+        "ref": "msg:m0094"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "ticket_open",
+        "t": "2026-03-27T08:00:00Z",
+        "ref": "ticket:T-0441"
+      },
+      {
+        "actor": "ctrl:VX05",
+        "action": "door_open",
+        "t": "2026-03-31T00:56:00Z",
+        "ref": "controller/VX05_fault_snapshot.txt seq 3176"
+      },
+      {
+        "actor": "actor:v.larsen",
+        "action": "quarantine",
+        "t": "2026-04-10T15:00:00Z",
+        "ref": "ticket:T-0448"
+      },
+      {
+        "actor": "actor:v.larsen",
+        "action": "postmortem_publish",
+        "t": "2026-04-11T16:40:00Z",
+        "ref": "msg:m0425"
+      }
+    ],
+    "clock_offsets_min": {
+      "badge": 0,
+      "exif": 60,
+      "cctv": -5,
+      "forklift": -10,
+      "chat": -10,
+      "tickets": 60,
+      "git": 0,
+      "submeter": 0,
+      "gateway": -10,
+      "probe": -15
+    },
+    "false_claims": [
+      {
+        "doc_id": "doc:service_report_firmware_visit",
+        "quote": "Unit VX05 (room E): inspected only, no changes made; customer asked us to leave it on 3.2 until the next visit."
+      },
+      {
+        "doc_id": "doc:ops_engineer_r.okafor",
+        "quote": "The vendor confirmed by phone that the -40 readings are a known sensor fault on the 3.4 boards"
+      },
+      {
+        "doc_id": "doc:temp_worker_l.rivera",
+        "quote": "I did not prop open any cold-room door. Not in room E, not anywhere else."
+      },
+      {
+        "doc_id": "doc:warehouse_manager_s.larsen",
+        "quote": "For what it's worth, I archived the old alert channel only after the incident"
+      },
+      {
+        "doc_id": "doc:postmortem",
+        "quote": "Root cause: compressor failure on controller VX05."
+      },
+      {
+        "doc_id": "doc:postmortem",
+        "quote": "That override remained active through the excursion window and would have blocked any residual notification even if routing had been correct."
+      }
+    ]
+  },
+  "confidence": {
+    "mechanism": 0.69,
+    "protocol": 0.98,
+    "findings": 0.96,
+    "timeline": 0.82
+  }
+}

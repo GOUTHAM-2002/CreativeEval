@@ -1,0 +1,8 @@
+# Statement — Owen Ferreira (receiving)
+Taken 2026-04-11
+
+So every morning, first thing, I do my probe round with HH-2, that's the handheld we've got assigned for the three rooms nearest the dock. I've been doing this for a while now and I know the routine pretty well, in and out, checks the temp against the panel, jot it down, move on. Nothing fancy about it.
+
+Where things got a bit odd was with room C. For about two weeks I was noticing the reading on my handheld didn't quite match what the panel was showing. Not a massive gap, but enough that it niggled at me, you know, the kind of thing where you think, is that just drift, or is something actually off. I raised a ticket on it because that's what we're supposed to do, better to flag it and have someone tell you it's nothing than sit on it and have it turn into a real problem down the line. My handheld was calibrated last month and reads fine, so I wasn't too worried it was my kit playing up, but I still wanted it looked at properly rather than just guessing.
+
+Other thing I'll mention, because I think it's relevant to how these rooms behave generally, is the door situation on long unloads. When we get a truck in that takes a while to get through, the dock-room door can end up open for up to half an hour, sometimes close to that anyway, just because of how the flow works with the pallets and the forklift traffic, FL-1 and FL-2 going back and forth. That's just the nature of a big delivery, nobody's being careless about it, but it does mean the room isn't sealed the whole time and I reckon that's worth factoring in when people are looking at the numbers from that period. Happy to talk through any of this in more detail if it helps.

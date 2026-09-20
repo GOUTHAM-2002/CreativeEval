@@ -1,0 +1,318 @@
+[
+ {
+  "id": "T-0401",
+  "created": "2025-11-16T00:00:00Z",
+  "closed": "2025-11-26T00:00:00Z",
+  "reporter": "i.kowalski",
+  "assignee": "i.kowalski",
+  "title": "socket timeouts unreliable on the gateway box",
+  "body": "urllib timeouts fire early/late on the gateway host after the kernel update; moving to a deadline-based client.",
+  "tags": [
+   "gateway"
+  ],
+  "comments": []
+ },
+ {
+  "id": "T-0402",
+  "created": "2026-01-05T00:00:00Z",
+  "closed": null,
+  "reporter": "h.tanaka",
+  "assignee": "m.larsen",
+  "title": "VX05 link drops when room E door is held fully open",
+  "body": "When the room E door is fully open against the wall the controller link goes down and comes back when it closes. Cable in the door-frame conduit is probably pinched.",
+  "tags": [
+   "controllers",
+   "facilities"
+  ],
+  "comments": [
+   {
+    "ts": "2026-01-06T00:00:00Z",
+    "user": "m.larsen",
+    "text": "reproduced. facilities quoted the conduit rework; deferred to the next maintenance window"
+   }
+  ]
+ },
+ {
+  "id": "T-0403",
+  "created": "2026-04-25T00:00:00Z",
+  "closed": "2026-05-05T00:00:00Z",
+  "reporter": "p.novak",
+  "assignee": "p.dubois",
+  "title": "HH-2 reads warm vs HH-1",
+  "body": "Clerk's handheld reads about a degree warmer than mine on the same room. Send both for calibration.",
+  "tags": [
+   "probes"
+  ],
+  "comments": [
+   {
+    "ts": "2026-05-04T00:00:00Z",
+    "user": "p.dubois",
+    "text": "sent both, certificate in receipts"
+   }
+  ]
+ },
+ {
+  "id": "T-0406",
+  "created": "2026-06-02T10:58:00Z",
+  "closed": "2026-06-07T13:25:00Z",
+  "reporter": "p.novak",
+  "assignee": null,
+  "title": "utility generator test: short outage expected",
+  "body": "Utility notice: generator changeover test on 2026-06-07 morning, outage up to 30 minutes. Rooms hold temperature; controllers will reboot.",
+  "tags": [
+   "facilities"
+  ],
+  "comments": [
+   {
+    "ts": "2026-06-07T12:25:00Z",
+    "user": "i.kowalski",
+    "text": "power was off Sun 07 Jun, 10:58 am to Sun 07 Jun, 11:25 am; gateway host came back, logs rotated on boot"
+   }
+  ]
+ },
+ {
+  "id": "T-0428",
+  "created": "2026-06-04T10:00:00Z",
+  "closed": "2026-06-06T00:00:00Z",
+  "reporter": "a.schulz",
+  "assignee": null,
+  "title": "customer complaint: late delivery",
+  "body": "Unrelated to storage; carrier issue.",
+  "tags": [
+   "customer"
+  ],
+  "comments": []
+ },
+ {
+  "id": "T-0424",
+  "created": "2026-06-05T11:00:00Z",
+  "closed": "2026-06-10T00:00:00Z",
+  "reporter": "p.novak",
+  "assignee": null,
+  "title": "room B corridor light flickering",
+  "body": "Fluorescent tube, corridor B.",
+  "tags": [
+   "facilities"
+  ],
+  "comments": []
+ },
+ {
+  "id": "T-0423",
+  "created": "2026-06-06T09:00:00Z",
+  "closed": "2026-06-09T00:00:00Z",
+  "reporter": "s.tanaka",
+  "assignee": "p.novak",
+  "title": "FL-2 battery not holding charge",
+  "body": "Down to 30% by mid shift.",
+  "tags": [
+   "equipment"
+  ],
+  "comments": []
+ },
+ {
+  "id": "T-0425",
+  "created": "2026-06-07T15:00:00Z",
+  "closed": "2026-06-13T00:00:00Z",
+  "reporter": "m.larsen",
+  "assignee": null,
+  "title": "VPN drops every 4 hours",
+  "body": "IT ticket mirrored here.",
+  "tags": [
+   "it"
+  ],
+  "comments": []
+ },
+ {
+  "id": "T-0433",
+  "created": "2026-06-08T16:00:00Z",
+  "closed": "2026-06-08T17:00:00Z",
+  "reporter": "p.novak",
+  "assignee": null,
+  "title": "speeding warning FL-1",
+  "body": "Telematics flagged 14 km/h in the corridor twice.",
+  "tags": [
+   "safety"
+  ],
+  "comments": []
+ },
+ {
+  "id": "T-0407",
+  "created": "2026-06-08T16:50:00Z",
+  "closed": null,
+  "reporter": "p.novak",
+  "assignee": "m.larsen",
+  "title": "rooms C and E reading -40 after vendor visit",
+  "body": "Dashboard shows both rooms at about -40 C since the technician left. Rooms are fine on the probe. Alerts flapping.",
+  "tags": [
+   "alerts",
+   "controllers"
+  ],
+  "comments": [
+   {
+    "ts": "2026-06-08T20:19:00Z",
+    "user": "m.larsen",
+    "text": "vendor says sensor fault on the new boards; routing the low-temp warnings away for now"
+   },
+   {
+    "ts": "2026-06-09T11:56:00Z",
+    "user": "m.larsen",
+    "text": "hotfix deployed (routes.json). leaving open for the vendor fix"
+   }
+  ]
+ },
+ {
+  "id": "T-0426",
+  "created": "2026-06-10T08:00:00Z",
+  "closed": "2026-06-11T00:00:00Z",
+  "reporter": "p.dubois",
+  "assignee": null,
+  "title": "pest control visit rescheduled",
+  "body": "Moved to next Tuesday.",
+  "tags": [
+   "facilities"
+  ],
+  "comments": []
+ },
+ {
+  "id": "T-0409",
+  "created": "2026-06-11T10:45:00Z",
+  "closed": "2026-06-11T23:28:00Z",
+  "reporter": "p.dubois",
+  "assignee": "p.novak",
+  "title": "room D compressor stopped after unloading",
+  "body": "Panel showed hold-off after a long truck. Restarted by itself later.",
+  "tags": [
+   "controllers"
+  ],
+  "comments": [
+   {
+    "ts": "2026-06-11T14:26:00Z",
+    "user": "p.novak",
+    "text": "per runbook, lockout timer. keep doors shut during unloads"
+   }
+  ]
+ },
+ {
+  "id": "T-0411",
+  "created": "2026-06-16T09:00:00Z",
+  "closed": "2026-06-21T16:00:00Z",
+  "reporter": "p.novak",
+  "assignee": "facilities",
+  "title": "badge reader ROOM-E not responding",
+  "body": "Reader shows a red light, door opens with the key. Please fix.",
+  "tags": [
+   "facilities",
+   "access"
+  ],
+  "comments": [
+   {
+    "ts": "2026-06-21T15:30:00Z",
+    "user": "facilities",
+    "text": "controller board replaced, reader back online"
+   }
+  ]
+ },
+ {
+  "id": "T-0416",
+  "created": "2026-06-20T07:00:00Z",
+  "closed": "2026-06-22T08:00:00Z",
+  "reporter": "s.tanaka",
+  "assignee": "p.novak",
+  "title": "FL-2 telematics dead",
+  "body": "Battery on the telematics box died, no GPS/scan trail from FL-2. Scanner still works.",
+  "tags": [
+   "equipment"
+  ],
+  "comments": [
+   {
+    "ts": "2026-06-22T07:40:00Z",
+    "user": "p.novak",
+    "text": "new battery fitted, unit reporting again"
+   }
+  ]
+ },
+ {
+  "id": "T-0418",
+  "created": "2026-06-20T12:15:00Z",
+  "closed": "2026-06-20T15:30:00Z",
+  "reporter": "i.kowalski",
+  "assignee": "i.kowalski",
+  "title": "gateway host disk full",
+  "body": "/var filled at about Sat 20 Jun, 12:00 pm; services stayed up but nothing was written to the logs. Freed 2 GB of old billing exports and rotated logs at about Sat 20 Jun, 3:00 pm.",
+  "tags": [
+   "gateway"
+  ],
+  "comments": []
+ },
+ {
+  "id": "T-0414",
+  "created": "2026-06-22T17:23:00Z",
+  "closed": "2026-06-27T14:37:00Z",
+  "reporter": "p.dubois",
+  "assignee": "p.novak",
+  "title": "room D handheld vs panel disagree",
+  "body": "HH-2 reads warmer than the panel on room D by more and more each day. Panel says setpoint, handheld says up to two degrees above.",
+  "tags": [
+   "probes",
+   "controllers"
+  ],
+  "comments": [
+   {
+    "ts": "2026-06-27T14:07:00Z",
+    "user": "f.okafor",
+    "text": "sensor recalibrated in place, see service report"
+   }
+  ]
+ },
+ {
+  "id": "T-0431",
+  "created": "2026-06-23T12:00:00Z",
+  "closed": "2026-06-23T14:00:00Z",
+  "reporter": "i.kowalski",
+  "assignee": "i.kowalski",
+  "title": "disk 80% on the gateway box",
+  "body": "Old logs and billing exports; will clean up.",
+  "tags": [
+   "gateway"
+  ],
+  "comments": []
+ },
+ {
+  "id": "T-0435",
+  "created": "2026-06-25T10:00:00Z",
+  "closed": null,
+  "reporter": "p.novak",
+  "assignee": "facilities",
+  "title": "dock 2 seal damaged",
+  "body": "Cold air leak at dock 2 seal, quote requested.",
+  "tags": [
+   "facilities"
+  ],
+  "comments": []
+ },
+ {
+  "id": "T-0421",
+  "created": "2026-06-30T09:00:00Z",
+  "closed": null,
+  "reporter": "a.schulz",
+  "assignee": "a.schulz",
+  "title": "stability lab: lot LN-22416 degraded, excursion in room E?",
+  "body": "Customer lab reports degradation consistent with a warm excursion. Need every lot that was in room E in the window. Ledger positions attached.",
+  "tags": [
+   "quality",
+   "incident"
+  ],
+  "comments": [
+   {
+    "ts": "2026-06-30T14:00:00Z",
+    "user": "f.okafor",
+    "text": "fault snapshot pulled from VX05, attached as text (controller/VX05_fault_snapshot.txt)"
+   },
+   {
+    "ts": "2026-06-30T16:00:00Z",
+    "user": "a.schulz",
+    "text": "postmortem published; quarantine issued"
+   }
+  ]
+ }
+]

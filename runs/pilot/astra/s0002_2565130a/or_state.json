@@ -1,0 +1,1 @@
+{"nudged": false, "cost": 5.574184, "turns": 37, "i": 79, "invalid": [], "models": ["openai/gpt-6-astra"], "max_ctx": 116781, "ended": true, "wall_prev": 649.0}

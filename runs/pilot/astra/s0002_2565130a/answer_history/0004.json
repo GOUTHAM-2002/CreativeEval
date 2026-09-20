@@ -1,0 +1,4208 @@
+{
+  "schema_version": "1",
+  "mechanism": {
+    "parameters": {
+      "defrost.len_min": 24,
+      "trip.d_min": 10,
+      "lockout.N": 4,
+      "lockout.L_min": 90,
+      "k_cool.A": 0.0314,
+      "k_leak.A": 0.0012,
+      "bias.A": 1.45,
+      "H.A": 1.6,
+      "k_cool.B": 0.092,
+      "k_leak.B": 0.000693,
+      "bias.B": -1.15,
+      "H.B": 1.2,
+      "k_cool.C": 0.0716,
+      "k_leak.C": 0.000773,
+      "bias.C": 0.16,
+      "H.C": 1.8,
+      "k_cool.D": 0.0653,
+      "k_leak.D": 0.000637,
+      "bias.D": 1.2,
+      "H.D": 1.0,
+      "k_cool.E": 0.1195,
+      "k_leak.E": 0.00115,
+      "bias.E": 0.85,
+      "H.E": 1.2,
+      "k_cool.F": 0.03,
+      "k_leak.F": 0.0019,
+      "bias.F": -0.15,
+      "H.F": 2.0,
+      "door_gain": 8.15,
+      "c_adj": 0.000183,
+      "defrost.R_hours": 5,
+      "defrost.heat_degC": 4.45,
+      "lockout.W_min": 90
+    },
+    "rules": {
+      "defrost_rule_type": "runtime_hours",
+      "stagger_order": [
+        "C",
+        "A",
+        "F",
+        "B",
+        "D",
+        "E"
+      ],
+      "adjacency_pairs": [
+        [
+          "D",
+          "C"
+        ],
+        [
+          "C",
+          "E"
+        ],
+        [
+          "B",
+          "F"
+        ],
+        [
+          "F",
+          "A"
+        ],
+        [
+          "D",
+          "B"
+        ],
+        [
+          "C",
+          "F"
+        ],
+        [
+          "E",
+          "A"
+        ],
+        [
+          "D",
+          "F"
+        ]
+      ]
+    }
+  },
+  "notation": {
+    "glossary": {
+      "nowi": "COIL_TEMP",
+      "kone": "DISCH_PRESSURE",
+      "dode": "DEFROST",
+      "gago": "ENTER",
+      "kera": "HEATER",
+      "timi": "ON",
+      "rika": "EXIT",
+      "toti": "OFF",
+      "nato": "RECOVERY",
+      "kemo": "DOOR",
+      "woga": "OPEN",
+      "nata": "CLOSED",
+      "dete": "TRIP",
+      "migo": "FAULT",
+      "gawi": "LOCKOUT",
+      "mego": "QUEUE",
+      "wena": "OVERFLOW",
+      "dega": "FIRMWARE",
+      "kewe": "BOOT",
+      "nide": "ABS"
+    },
+    "affixes": {
+      "ne": "ZONE",
+      "ke": "ZONE",
+      "no": "ZONE",
+      "re": "ZONE",
+      "ma": "ZONE",
+      "ra": "ZONE",
+      "he": "ASPECT_EVENT",
+      "ho": "ASPECT_STATE"
+    },
+    "v34_change": "absolute_temp",
+    "heldout": [
+      {
+        "seq": 1002,
+        "ts": "2026-02-09T22:30:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -19.2
+      },
+      {
+        "seq": 1003,
+        "ts": "2026-02-09T22:35:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -19.3
+      },
+      {
+        "seq": 1004,
+        "ts": "2026-02-09T22:40:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -20.7
+      },
+      {
+        "seq": 1005,
+        "ts": "2026-02-09T22:45:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -19.6
+      },
+      {
+        "seq": 1006,
+        "ts": "2026-02-09T22:50:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -19.7
+      },
+      {
+        "seq": 1007,
+        "ts": "2026-02-09T22:55:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -19.4
+      },
+      {
+        "seq": 1008,
+        "ts": "2026-02-09T23:00:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -19.2
+      },
+      {
+        "seq": 1009,
+        "ts": "2026-02-09T23:05:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -18.5
+      },
+      {
+        "seq": 1010,
+        "ts": "2026-02-09T23:10:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -19.1
+      },
+      {
+        "seq": 1011,
+        "ts": "2026-02-09T23:15:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -18.6
+      },
+      {
+        "seq": 1012,
+        "ts": "2026-02-09T23:20:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -19.3
+      },
+      {
+        "seq": 1013,
+        "ts": "2026-02-09T23:25:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -19.3
+      },
+      {
+        "seq": 1014,
+        "ts": "2026-02-09T23:30:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -19.3
+      },
+      {
+        "seq": 1015,
+        "ts": "2026-02-09T23:35:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -19.7
+      },
+      {
+        "seq": 1016,
+        "ts": "2026-02-09T23:40:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -19.7
+      },
+      {
+        "seq": 1017,
+        "ts": "2026-02-09T23:45:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -19.0
+      },
+      {
+        "seq": 1018,
+        "ts": "2026-02-09T23:50:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -19.7
+      },
+      {
+        "seq": 1019,
+        "ts": "2026-02-09T23:55:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -18.9
+      },
+      {
+        "seq": 1020,
+        "ts": "2026-02-10T00:00:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -18.6
+      },
+      {
+        "seq": 1021,
+        "ts": "2026-02-10T00:05:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -18.7
+      },
+      {
+        "seq": 1022,
+        "ts": "2026-02-10T00:10:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -19.0
+      },
+      {
+        "seq": 1023,
+        "ts": "2026-02-10T00:15:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -19.6
+      },
+      {
+        "seq": 1024,
+        "ts": "2026-02-10T00:20:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -19.7
+      },
+      {
+        "seq": 1025,
+        "ts": "2026-02-10T00:25:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -19.5
+      },
+      {
+        "seq": 1026,
+        "ts": "2026-02-10T00:30:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -20.0
+      },
+      {
+        "seq": 1027,
+        "ts": "2026-02-10T00:35:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -19.5
+      },
+      {
+        "seq": 1028,
+        "ts": "2026-02-10T00:40:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -19.5
+      },
+      {
+        "seq": 1029,
+        "ts": "2026-02-10T00:45:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -18.3
+      },
+      {
+        "seq": 1030,
+        "ts": "2026-02-10T00:47:00Z",
+        "zone": "E",
+        "event": "DOOR",
+        "value": null
+      },
+      {
+        "seq": 1031,
+        "ts": "2026-02-10T00:50:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -18.1
+      },
+      {
+        "seq": 1032,
+        "ts": "2026-02-10T00:55:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -17.7
+      },
+      {
+        "seq": 1033,
+        "ts": "2026-02-10T00:57:00Z",
+        "zone": "E",
+        "event": "TRIP",
+        "value": null
+      },
+      {
+        "seq": 1034,
+        "ts": "2026-02-10T01:00:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -16.4
+      },
+      {
+        "seq": 1035,
+        "ts": "2026-02-10T01:05:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -14.9
+      },
+      {
+        "seq": 1036,
+        "ts": "2026-02-10T01:10:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -14.1
+      },
+      {
+        "seq": 1037,
+        "ts": "2026-02-10T01:12:00Z",
+        "zone": "E",
+        "event": "TRIP",
+        "value": null
+      },
+      {
+        "seq": 1038,
+        "ts": "2026-02-10T01:15:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -13.3
+      },
+      {
+        "seq": 1039,
+        "ts": "2026-02-10T01:20:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -12.8
+      },
+      {
+        "seq": 1040,
+        "ts": "2026-02-10T01:25:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -11.9
+      },
+      {
+        "seq": 1041,
+        "ts": "2026-02-10T01:27:00Z",
+        "zone": "E",
+        "event": "TRIP",
+        "value": null
+      },
+      {
+        "seq": 1042,
+        "ts": "2026-02-10T01:30:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -11.4
+      },
+      {
+        "seq": 1043,
+        "ts": "2026-02-10T01:35:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -10.6
+      },
+      {
+        "seq": 1044,
+        "ts": "2026-02-10T01:40:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -10.8
+      },
+      {
+        "seq": 1045,
+        "ts": "2026-02-10T01:42:00Z",
+        "zone": "E",
+        "event": "TRIP",
+        "value": null
+      },
+      {
+        "seq": 1046,
+        "ts": "2026-02-10T01:42:00Z",
+        "zone": "E",
+        "event": "LOCKOUT",
+        "value": null
+      }
+    ]
+  },
+  "causal_chain": {
+    "roots": [
+      "actor:m.mensah",
+      "firmware:E",
+      "firmware:B",
+      "code:gateway/kw7_decode.py:decode_line",
+      "ticket:T-0413",
+      "config:deploy/config.override.json:ALERT_MIN_SEVERITY",
+      "config:alerting/routes.json:zones.E.channel",
+      "code:common/httpd.py:_dispatch",
+      "code:billing/nightly.py:run_once"
+    ],
+    "nodes": [
+      "actor:a.schulz",
+      "actor:f.okafor",
+      "actor:i.kowalski",
+      "actor:m.larsen",
+      "actor:m.mensah",
+      "actor:p.novak",
+      "code:alerting/server.py:evaluate",
+      "code:alerting/server.py:main",
+      "code:billing/nightly.py:run_once",
+      "code:billing/nightly.py:zone_hours",
+      "code:common/httpd.py:_dispatch",
+      "code:common/netutil.py:http_call",
+      "code:dispatch/server.py:apply_move",
+      "code:dispatch/server.py:post_jobs",
+      "code:dispatch/server.py:wms_pallet_lookup",
+      "code:dispatch/server.py:worker_loop",
+      "code:gateway/kw7_decode.py:decode_line",
+      "code:gateway/server.py:_post_dispatch",
+      "code:gateway/server.py:handle_line",
+      "code:gateway/server.py:stale_watch",
+      "code:gateway/server.py:store_reading",
+      "code:ledger/server.py:get_lots",
+      "code:ledger/server.py:post_events",
+      "commit:176b7d6",
+      "commit:39bc7b8",
+      "commit:ac11924",
+      "commit:bf80e3c",
+      "config:alerting/routes.json:zones.B.channel",
+      "config:alerting/routes.json:zones.E.channel",
+      "config:deploy/config.override.json:ALERT_MIN_SEVERITY",
+      "data:alerts_suppressed:B",
+      "data:alerts_suppressed:E",
+      "data:frames_dropped:E",
+      "data:frames_dropped:all",
+      "data:lots_wrong:E",
+      "data:lots_wrong:all",
+      "data:quarantine_wrong:E",
+      "data:readings_wrong:B",
+      "data:readings_wrong:E",
+      "doc:night_lead_h.tanaka",
+      "doc:postmortem",
+      "doc:recall_notice",
+      "doc:service_report_firmware_visit",
+      "firmware:B",
+      "firmware:E",
+      "lot:LN-20400",
+      "lot:LN-22275",
+      "lot:LN-22862",
+      "lot:LN-22997",
+      "lot:LN-23230",
+      "lot:LN-23935",
+      "lot:LN-24017",
+      "lot:LN-25578",
+      "lot:LN-26885",
+      "lot:LN-27822",
+      "lot:LN-28034",
+      "lot:LN-28665",
+      "msg:m0045",
+      "msg:m0056",
+      "physical:defrost:E",
+      "physical:door_open:E",
+      "physical:door_prop:E",
+      "physical:excursion:E",
+      "physical:lockout:E",
+      "physical:trip:E",
+      "ticket:T-0413",
+      "ticket:T-0417"
+    ],
+    "edges": [
+      [
+        "actor:m.mensah",
+        "physical:door_prop:E"
+      ],
+      [
+        "physical:door_prop:E",
+        "physical:door_open:E"
+      ],
+      [
+        "physical:door_open:E",
+        "physical:trip:E"
+      ],
+      [
+        "physical:trip:E",
+        "physical:lockout:E"
+      ],
+      [
+        "physical:door_open:E",
+        "physical:excursion:E"
+      ],
+      [
+        "physical:lockout:E",
+        "physical:excursion:E"
+      ],
+      [
+        "physical:defrost:E",
+        "physical:excursion:E"
+      ],
+      [
+        "actor:m.larsen",
+        "ticket:T-0413"
+      ],
+      [
+        "ticket:T-0413",
+        "data:frames_dropped:E"
+      ],
+      [
+        "physical:door_prop:E",
+        "data:frames_dropped:E"
+      ],
+      [
+        "physical:door_open:E",
+        "data:frames_dropped:E"
+      ],
+      [
+        "data:frames_dropped:E",
+        "data:alerts_suppressed:E"
+      ],
+      [
+        "actor:f.okafor",
+        "firmware:E"
+      ],
+      [
+        "actor:f.okafor",
+        "firmware:B"
+      ],
+      [
+        "firmware:E",
+        "data:readings_wrong:E"
+      ],
+      [
+        "firmware:B",
+        "data:readings_wrong:B"
+      ],
+      [
+        "code:gateway/kw7_decode.py:decode_line",
+        "data:readings_wrong:E"
+      ],
+      [
+        "code:gateway/kw7_decode.py:decode_line",
+        "data:readings_wrong:B"
+      ],
+      [
+        "commit:39bc7b8",
+        "code:gateway/kw7_decode.py:decode_line"
+      ],
+      [
+        "data:readings_wrong:E",
+        "ticket:T-0417"
+      ],
+      [
+        "data:readings_wrong:B",
+        "ticket:T-0417"
+      ],
+      [
+        "ticket:T-0417",
+        "commit:176b7d6"
+      ],
+      [
+        "actor:m.larsen",
+        "commit:176b7d6"
+      ],
+      [
+        "commit:176b7d6",
+        "config:alerting/routes.json:zones.E.channel"
+      ],
+      [
+        "commit:176b7d6",
+        "config:alerting/routes.json:zones.B.channel"
+      ],
+      [
+        "config:alerting/routes.json:zones.E.channel",
+        "data:alerts_suppressed:E"
+      ],
+      [
+        "config:alerting/routes.json:zones.B.channel",
+        "data:alerts_suppressed:B"
+      ],
+      [
+        "actor:p.novak",
+        "msg:m0056"
+      ],
+      [
+        "msg:m0056",
+        "data:alerts_suppressed:E"
+      ],
+      [
+        "msg:m0056",
+        "data:alerts_suppressed:B"
+      ],
+      [
+        "actor:i.kowalski",
+        "config:deploy/config.override.json:ALERT_MIN_SEVERITY"
+      ],
+      [
+        "config:deploy/config.override.json:ALERT_MIN_SEVERITY",
+        "data:alerts_suppressed:E"
+      ],
+      [
+        "config:deploy/config.override.json:ALERT_MIN_SEVERITY",
+        "data:alerts_suppressed:B"
+      ],
+      [
+        "data:readings_wrong:E",
+        "data:alerts_suppressed:E"
+      ],
+      [
+        "data:readings_wrong:B",
+        "data:alerts_suppressed:B"
+      ],
+      [
+        "code:gateway/kw7_decode.py:decode_line",
+        "code:gateway/server.py:handle_line"
+      ],
+      [
+        "code:gateway/server.py:handle_line",
+        "data:alerts_suppressed:E"
+      ],
+      [
+        "code:alerting/server.py:evaluate",
+        "data:alerts_suppressed:E"
+      ],
+      [
+        "code:gateway/server.py:stale_watch",
+        "code:ledger/server.py:post_events"
+      ],
+      [
+        "code:ledger/server.py:post_events",
+        "data:alerts_suppressed:E"
+      ],
+      [
+        "commit:bf80e3c",
+        "code:billing/nightly.py:run_once"
+      ],
+      [
+        "code:billing/nightly.py:zone_hours",
+        "code:billing/nightly.py:run_once"
+      ],
+      [
+        "code:billing/nightly.py:run_once",
+        "data:frames_dropped:all"
+      ],
+      [
+        "code:gateway/server.py:store_reading",
+        "data:frames_dropped:all"
+      ],
+      [
+        "data:frames_dropped:all",
+        "data:alerts_suppressed:E"
+      ],
+      [
+        "code:common/netutil.py:http_call",
+        "code:alerting/server.py:main"
+      ],
+      [
+        "code:alerting/server.py:main",
+        "data:alerts_suppressed:E"
+      ],
+      [
+        "commit:ac11924",
+        "code:common/httpd.py:_dispatch"
+      ],
+      [
+        "code:common/httpd.py:_dispatch",
+        "code:ledger/server.py:get_lots"
+      ],
+      [
+        "code:ledger/server.py:get_lots",
+        "code:dispatch/server.py:apply_move"
+      ],
+      [
+        "code:dispatch/server.py:apply_move",
+        "code:dispatch/server.py:worker_loop"
+      ],
+      [
+        "code:dispatch/server.py:worker_loop",
+        "data:lots_wrong:all"
+      ],
+      [
+        "data:lots_wrong:all",
+        "data:lots_wrong:E"
+      ],
+      [
+        "data:lots_wrong:E",
+        "data:quarantine_wrong:E"
+      ],
+      [
+        "actor:a.schulz",
+        "data:quarantine_wrong:E"
+      ],
+      [
+        "doc:postmortem",
+        "data:quarantine_wrong:E"
+      ],
+      [
+        "code:dispatch/server.py:wms_pallet_lookup",
+        "code:gateway/server.py:_post_dispatch"
+      ],
+      [
+        "code:gateway/server.py:_post_dispatch",
+        "code:dispatch/server.py:post_jobs"
+      ],
+      [
+        "code:dispatch/server.py:post_jobs",
+        "code:dispatch/server.py:worker_loop"
+      ],
+      [
+        "doc:service_report_firmware_visit",
+        "doc:postmortem"
+      ],
+      [
+        "doc:night_lead_h.tanaka",
+        "doc:postmortem"
+      ],
+      [
+        "doc:recall_notice",
+        "doc:postmortem"
+      ],
+      [
+        "physical:excursion:E",
+        "lot:LN-20400"
+      ],
+      [
+        "data:alerts_suppressed:E",
+        "lot:LN-20400"
+      ],
+      [
+        "physical:excursion:E",
+        "lot:LN-22275"
+      ],
+      [
+        "data:alerts_suppressed:E",
+        "lot:LN-22275"
+      ],
+      [
+        "physical:excursion:E",
+        "lot:LN-22862"
+      ],
+      [
+        "data:alerts_suppressed:E",
+        "lot:LN-22862"
+      ],
+      [
+        "physical:excursion:E",
+        "lot:LN-22997"
+      ],
+      [
+        "data:alerts_suppressed:E",
+        "lot:LN-22997"
+      ],
+      [
+        "physical:excursion:E",
+        "lot:LN-23230"
+      ],
+      [
+        "data:alerts_suppressed:E",
+        "lot:LN-23230"
+      ],
+      [
+        "physical:excursion:E",
+        "lot:LN-23935"
+      ],
+      [
+        "data:alerts_suppressed:E",
+        "lot:LN-23935"
+      ],
+      [
+        "physical:excursion:E",
+        "lot:LN-24017"
+      ],
+      [
+        "data:alerts_suppressed:E",
+        "lot:LN-24017"
+      ],
+      [
+        "physical:excursion:E",
+        "lot:LN-25578"
+      ],
+      [
+        "data:alerts_suppressed:E",
+        "lot:LN-25578"
+      ],
+      [
+        "physical:excursion:E",
+        "lot:LN-26885"
+      ],
+      [
+        "data:alerts_suppressed:E",
+        "lot:LN-26885"
+      ],
+      [
+        "physical:excursion:E",
+        "lot:LN-27822"
+      ],
+      [
+        "data:alerts_suppressed:E",
+        "lot:LN-27822"
+      ],
+      [
+        "physical:excursion:E",
+        "lot:LN-28034"
+      ],
+      [
+        "data:alerts_suppressed:E",
+        "lot:LN-28034"
+      ],
+      [
+        "physical:excursion:E",
+        "lot:LN-28665"
+      ],
+      [
+        "data:alerts_suppressed:E",
+        "lot:LN-28665"
+      ],
+      [
+        "actor:m.larsen",
+        "msg:m0045"
+      ],
+      [
+        "msg:m0045",
+        "commit:176b7d6"
+      ],
+      [
+        "doc:service_report_firmware_visit",
+        "ticket:T-0417"
+      ],
+      [
+        "code:common/httpd.py:_dispatch",
+        "data:lots_wrong:all"
+      ],
+      [
+        "code:dispatch/server.py:apply_move",
+        "data:lots_wrong:all"
+      ],
+      [
+        "data:lots_wrong:all",
+        "data:quarantine_wrong:E"
+      ],
+      [
+        "code:gateway/kw7_decode.py:decode_line",
+        "data:alerts_suppressed:E"
+      ],
+      [
+        "code:alerting/server.py:evaluate",
+        "data:alerts_suppressed:B"
+      ],
+      [
+        "data:readings_wrong:E",
+        "actor:i.kowalski"
+      ],
+      [
+        "data:readings_wrong:B",
+        "actor:i.kowalski"
+      ]
+    ],
+    "decoys_rejected": [
+      "physical:compressor_fault:E",
+      "physical:sensor_fault:E",
+      "physical:sensor_fault:B",
+      "physical:power_loss:E",
+      "doc:recall_notice",
+      "doc:hr_note",
+      "commit:64e13ea",
+      "commit:f33ba1d",
+      "ticket:T-0421",
+      "ticket:T-0422",
+      "ticket:T-0423",
+      "ticket:T-0430"
+    ],
+    "affected_lots": [
+      "lot:LN-20400",
+      "lot:LN-22275",
+      "lot:LN-22862",
+      "lot:LN-22997",
+      "lot:LN-23230",
+      "lot:LN-23935",
+      "lot:LN-24017",
+      "lot:LN-25578",
+      "lot:LN-26885",
+      "lot:LN-27822",
+      "lot:LN-28034",
+      "lot:LN-28665"
+    ],
+    "excursion": {
+      "zone": "E",
+      "start": "2026-02-10T01:10:00Z",
+      "end": "2026-02-10T10:05:00Z"
+    }
+  },
+  "timeline": {
+    "events": [
+      {
+        "actor": "actor:i.kowalski",
+        "action": "ticket_open",
+        "t": "2025-07-16T00:00:00Z",
+        "ref": "ticket:T-0412"
+      },
+      {
+        "actor": "actor:i.kowalski",
+        "action": "ticket_close",
+        "t": "2025-07-26T00:00:00Z",
+        "ref": "ticket:T-0412"
+      },
+      {
+        "actor": "actor:h.tanaka",
+        "action": "ticket_open",
+        "t": "2025-09-04T00:00:00Z",
+        "ref": "ticket:T-0413"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "ticket_open",
+        "t": "2025-12-23T00:00:00Z",
+        "ref": "ticket:T-0414"
+      },
+      {
+        "actor": "actor:p.dubois",
+        "action": "ticket_close",
+        "t": "2026-01-02T00:00:00Z",
+        "ref": "ticket:T-0414"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "shift_start",
+        "t": "2026-02-01T05:56:00Z",
+        "ref": "badge B1017 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:a.schulz",
+        "action": "ticket_open",
+        "t": "2026-02-01T10:00:00Z",
+        "ref": "ticket:T-0427"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-01T13:00:00Z",
+        "ref": "LN-22445 PL-9484 A->B; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-01T13:00:00Z",
+        "ref": "LN-24334 PL-1607 F->D; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "shift_end",
+        "t": "2026-02-01T13:54:00Z",
+        "ref": "badge B1017 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "shift_start",
+        "t": "2026-02-01T13:57:00Z",
+        "ref": "badge B1024 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-01T18:39:00Z",
+        "ref": "LN-28665 PL-4355 C->F; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-01T18:40:00Z",
+        "ref": "LN-25226 PL-6147 D->C; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-01T18:41:00Z",
+        "ref": "LN-25226 PL-6147 C->C; forklift FL-2"
+      },
+      {
+        "actor": "actor:h.tanaka",
+        "action": "shift_start",
+        "t": "2026-02-01T22:01:00Z",
+        "ref": "badge B1009 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "shift_end",
+        "t": "2026-02-01T22:03:00Z",
+        "ref": "badge B1024 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "shift_start",
+        "t": "2026-02-02T05:49:00Z",
+        "ref": "badge B1002 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:p.dubois",
+        "action": "shift_start",
+        "t": "2026-02-02T05:49:00Z",
+        "ref": "badge B1036 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "shift_start",
+        "t": "2026-02-02T05:56:00Z",
+        "ref": "badge B1017 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:h.tanaka",
+        "action": "shift_end",
+        "t": "2026-02-02T05:57:00Z",
+        "ref": "badge B1009 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-02T06:38:00Z",
+        "ref": "LN-23580 PL-6955 C->F; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-02T06:38:00Z",
+        "ref": "LN-21790 PL-7707 D->F; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-02T06:39:00Z",
+        "ref": "LN-28510 PL-5902 C->A; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-02T06:39:00Z",
+        "ref": "LN-21238 PL-4463 B->D; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-02T06:40:00Z",
+        "ref": "LN-21238 PL-4463 E->D; forklift FL-1"
+      },
+      {
+        "actor": "actor:p.dubois",
+        "action": "probe_check",
+        "t": "2026-02-02T08:01:00Z",
+        "ref": "HH-2 room D -23.3 C; subtract 1 C for HH-2 calibration"
+      },
+      {
+        "actor": "actor:p.dubois",
+        "action": "probe_check",
+        "t": "2026-02-02T08:12:00Z",
+        "ref": "HH-2 room E -19.6 C; subtract 1 C for HH-2 calibration"
+      },
+      {
+        "actor": "actor:p.dubois",
+        "action": "probe_check",
+        "t": "2026-02-02T08:23:00Z",
+        "ref": "HH-2 room F 7.9 C; subtract 1 C for HH-2 calibration"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "probe_check",
+        "t": "2026-02-02T09:15:00Z",
+        "ref": "HH-1 room A 4.0 C; HH-1 calibrated"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "probe_check",
+        "t": "2026-02-02T09:22:00Z",
+        "ref": "HH-1 room B -22.8 C; HH-1 calibrated"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "probe_check",
+        "t": "2026-02-02T09:26:00Z",
+        "ref": "HH-1 room C -19.1 C; HH-1 calibrated"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "probe_check",
+        "t": "2026-02-02T09:34:00Z",
+        "ref": "HH-1 room D -26.7 C; HH-1 calibrated"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "probe_check",
+        "t": "2026-02-02T09:48:00Z",
+        "ref": "HH-1 room E -18.3 C; HH-1 calibrated"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-02T09:51:00Z",
+        "ref": "LN-21231 PL-3272 E->F; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-02T09:51:00Z",
+        "ref": "LN-22641 PL-5506 E->D; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-02T09:52:00Z",
+        "ref": "LN-22116 PL-9738 E->B; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-02T09:52:00Z",
+        "ref": "LN-23580 PL-6955 D->C; forklift FL-1"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "probe_check",
+        "t": "2026-02-02T09:57:00Z",
+        "ref": "HH-1 room F 6.4 C; HH-1 calibrated"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-02T10:24:00Z",
+        "ref": "LN-25020 PL-9254 E->F; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-02T10:24:00Z",
+        "ref": "LN-23756 PL-9748 C->D; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-02T10:25:00Z",
+        "ref": "LN-23756 PL-9748 D->D; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-02T10:25:00Z",
+        "ref": "LN-22820 PL-5677 C->A; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-02T10:27:00Z",
+        "ref": "LN-22820 PL-5677 A->A; forklift FL-1"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "ticket_open",
+        "t": "2026-02-02T11:00:00Z",
+        "ref": "ticket:T-0422"
+      },
+      {
+        "actor": "actor:p.dubois",
+        "action": "shift_end",
+        "t": "2026-02-02T13:43:00Z",
+        "ref": "badge B1036 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "shift_end",
+        "t": "2026-02-02T13:50:00Z",
+        "ref": "badge B1002 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "shift_start",
+        "t": "2026-02-02T13:51:00Z",
+        "ref": "badge B1024 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "shift_end",
+        "t": "2026-02-02T13:53:00Z",
+        "ref": "badge B1017 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-02T16:07:00Z",
+        "ref": "LN-25438 PL-3602 D->C; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-02T16:07:00Z",
+        "ref": "LN-25226 PL-6147 E->D; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-02T16:08:00Z",
+        "ref": "LN-23211 PL-8754 F->E; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-02T20:43:00Z",
+        "ref": "LN-22820 PL-5677 A->C; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-02T20:43:00Z",
+        "ref": "LN-21790 PL-7707 A->D; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-02T20:44:00Z",
+        "ref": "LN-24659 PL-6372 B->F; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-02T20:45:00Z",
+        "ref": "LN-24659 PL-6372 F->F; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-02T20:46:00Z",
+        "ref": "LN-25677 PL-5547 D->C; forklift FL-2"
+      },
+      {
+        "actor": "actor:h.tanaka",
+        "action": "shift_start",
+        "t": "2026-02-02T21:54:00Z",
+        "ref": "badge B1009 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "shift_end",
+        "t": "2026-02-02T22:03:00Z",
+        "ref": "badge B1024 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:a.schulz",
+        "action": "ticket_close",
+        "t": "2026-02-03T00:00:00Z",
+        "ref": "ticket:T-0427"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "shift_start",
+        "t": "2026-02-03T05:49:00Z",
+        "ref": "badge B1017 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "shift_start",
+        "t": "2026-02-03T05:51:00Z",
+        "ref": "badge B1002 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:p.dubois",
+        "action": "shift_start",
+        "t": "2026-02-03T05:53:00Z",
+        "ref": "badge B1036 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:h.tanaka",
+        "action": "shift_end",
+        "t": "2026-02-03T06:05:00Z",
+        "ref": "badge B1009 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:p.dubois",
+        "action": "probe_check",
+        "t": "2026-02-03T08:49:00Z",
+        "ref": "HH-2 room E -15.4 C; subtract 1 C for HH-2 calibration"
+      },
+      {
+        "actor": "actor:p.dubois",
+        "action": "probe_check",
+        "t": "2026-02-03T08:53:00Z",
+        "ref": "HH-2 room A 5.2 C; subtract 1 C for HH-2 calibration"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "ticket_open",
+        "t": "2026-02-03T09:00:00Z",
+        "ref": "ticket:T-0421"
+      },
+      {
+        "actor": "actor:p.dubois",
+        "action": "probe_check",
+        "t": "2026-02-03T09:05:00Z",
+        "ref": "HH-2 room B -21.5 C; subtract 1 C for HH-2 calibration"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-03T09:37:00Z",
+        "ref": "LN-22445 PL-9484 B->A; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-03T09:38:00Z",
+        "ref": "LN-25438 PL-3602 C->B; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-03T09:39:00Z",
+        "ref": "LN-25438 PL-3602 B->B; forklift FL-1"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "probe_check",
+        "t": "2026-02-03T11:30:00Z",
+        "ref": "HH-1 room A 2.2 C; HH-1 calibrated"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "probe_check",
+        "t": "2026-02-03T11:38:00Z",
+        "ref": "HH-1 room B -22.2 C; HH-1 calibrated"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "probe_check",
+        "t": "2026-02-03T11:50:00Z",
+        "ref": "HH-1 room C -20.8 C; HH-1 calibrated"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "probe_check",
+        "t": "2026-02-03T12:02:00Z",
+        "ref": "HH-1 room D -26.5 C; HH-1 calibrated"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "probe_check",
+        "t": "2026-02-03T12:08:00Z",
+        "ref": "HH-1 room E -20.2 C; HH-1 calibrated"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-03T12:14:00Z",
+        "ref": "LN-28611 PL-8784 E->D; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-03T12:15:00Z",
+        "ref": "LN-28611 PL-8784 D->D; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-03T12:16:00Z",
+        "ref": "LN-25677 PL-5547 C->E; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-03T12:16:00Z",
+        "ref": "LN-25429 PL-1329 C->D; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-03T12:16:00Z",
+        "ref": "LN-21065 PL-2272 A->E; forklift FL-1"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "probe_check",
+        "t": "2026-02-03T12:17:00Z",
+        "ref": "HH-1 room F 6.5 C; HH-1 calibrated"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-03T12:42:00Z",
+        "ref": "LN-25891 PL-9461 C->B; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-03T12:42:00Z",
+        "ref": "LN-22116 PL-9738 B->D; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-03T12:54:00Z",
+        "ref": "LN-20373 PL-3496 E->F; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-03T12:55:00Z",
+        "ref": "LN-27822 PL-5901 F->E; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-03T12:55:00Z",
+        "ref": "LN-23197 PL-9173 D->F; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "shift_end",
+        "t": "2026-02-03T13:45:00Z",
+        "ref": "badge B1017 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:p.dubois",
+        "action": "shift_end",
+        "t": "2026-02-03T13:52:00Z",
+        "ref": "badge B1036 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "shift_start",
+        "t": "2026-02-03T13:59:00Z",
+        "ref": "badge B1024 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "shift_end",
+        "t": "2026-02-03T14:05:00Z",
+        "ref": "badge B1002 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:p.dubois",
+        "action": "ticket_open",
+        "t": "2026-02-03T15:22:00Z",
+        "ref": "ticket:T-0419"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-03T17:58:00Z",
+        "ref": "LN-28412 PL-2342 B->C; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-03T17:58:00Z",
+        "ref": "LN-22697 PL-2694 F->E; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-03T17:59:00Z",
+        "ref": "LN-21065 PL-2272 B->F; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-03T18:00:00Z",
+        "ref": "LN-21065 PL-2272 F->F; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-03T18:01:00Z",
+        "ref": "LN-22641 PL-5506 D->F; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-03T20:15:00Z",
+        "ref": "LN-28015 PL-3920 F->D; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-03T20:15:00Z",
+        "ref": "LN-20400 PL-5517 B->C; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-03T20:16:00Z",
+        "ref": "LN-21065 PL-2272 C->A; forklift FL-2"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "ticket_close",
+        "t": "2026-02-03T21:10:00Z",
+        "ref": "ticket:T-0419"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-03T21:14:00Z",
+        "ref": "LN-23211 PL-8754 E->D; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-03T21:15:00Z",
+        "ref": "LN-23211 PL-8754 D->D; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-03T21:16:00Z",
+        "ref": "LN-20976 PL-8424 E->C; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "shift_end",
+        "t": "2026-02-03T21:50:00Z",
+        "ref": "badge B1024 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:h.tanaka",
+        "action": "shift_start",
+        "t": "2026-02-03T22:00:00Z",
+        "ref": "badge B1009 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "shift_start",
+        "t": "2026-02-04T06:00:00Z",
+        "ref": "badge B1002 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "shift_start",
+        "t": "2026-02-04T06:02:00Z",
+        "ref": "badge B1017 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:p.dubois",
+        "action": "shift_start",
+        "t": "2026-02-04T06:02:00Z",
+        "ref": "badge B1036 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:h.tanaka",
+        "action": "shift_end",
+        "t": "2026-02-04T06:19:00Z",
+        "ref": "badge B1009 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-04T06:25:00Z",
+        "ref": "LN-28665 PL-4355 F->D; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-04T06:26:00Z",
+        "ref": "LN-20705 PL-3006 B->D; forklift FL-1"
+      },
+      {
+        "actor": "actor:p.dubois",
+        "action": "probe_check",
+        "t": "2026-02-04T07:23:00Z",
+        "ref": "HH-2 room C -17.2 C; subtract 1 C for HH-2 calibration"
+      },
+      {
+        "actor": "actor:p.dubois",
+        "action": "probe_check",
+        "t": "2026-02-04T07:35:00Z",
+        "ref": "HH-2 room E -19.5 C; subtract 1 C for HH-2 calibration"
+      },
+      {
+        "actor": "actor:p.dubois",
+        "action": "probe_check",
+        "t": "2026-02-04T07:45:00Z",
+        "ref": "HH-2 room A 6.6 C; subtract 1 C for HH-2 calibration"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-04T08:25:00Z",
+        "ref": "LN-23211 PL-8754 F->C; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-04T08:25:00Z",
+        "ref": "LN-25677 PL-5547 E->D; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-04T08:26:00Z",
+        "ref": "LN-28412 PL-2342 C->E; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-04T08:26:00Z",
+        "ref": "LN-22997 PL-5214 C->E; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-04T10:20:00Z",
+        "ref": "LN-23230 PL-4484 C->E; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-04T10:20:00Z",
+        "ref": "LN-22862 PL-2837 A->E; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-04T10:22:00Z",
+        "ref": "LN-22862 PL-2837 E->E; forklift FL-1"
+      },
+      {
+        "actor": "actor:m.larsen",
+        "action": "commit",
+        "t": "2026-02-04T11:04:08Z",
+        "ref": "commit:64e13ea"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "probe_check",
+        "t": "2026-02-04T11:52:00Z",
+        "ref": "HH-1 room A 1.7 C; HH-1 calibrated"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "probe_check",
+        "t": "2026-02-04T12:00:00Z",
+        "ref": "HH-1 room B -22.5 C; HH-1 calibrated"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "probe_check",
+        "t": "2026-02-04T12:07:00Z",
+        "ref": "HH-1 room C -19.5 C; HH-1 calibrated"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "probe_check",
+        "t": "2026-02-04T12:16:00Z",
+        "ref": "HH-1 room D -28.8 C; HH-1 calibrated"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "probe_check",
+        "t": "2026-02-04T12:25:00Z",
+        "ref": "HH-1 room E -20.4 C; HH-1 calibrated"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-04T12:31:00Z",
+        "ref": "LN-21447 PL-9662 D->E; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-04T12:32:00Z",
+        "ref": "LN-25923 PL-7599 B->D; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-04T12:32:00Z",
+        "ref": "LN-28510 PL-5902 A->B; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-04T12:32:00Z",
+        "ref": "LN-20400 PL-5517 C->E; forklift FL-1"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "probe_check",
+        "t": "2026-02-04T12:38:00Z",
+        "ref": "HH-1 room F 5.3 C; HH-1 calibrated"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "shift_end",
+        "t": "2026-02-04T13:51:00Z",
+        "ref": "badge B1002 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "shift_start",
+        "t": "2026-02-04T13:55:00Z",
+        "ref": "badge B1024 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "shift_end",
+        "t": "2026-02-04T14:16:00Z",
+        "ref": "badge B1017 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:p.dubois",
+        "action": "shift_end",
+        "t": "2026-02-04T14:23:00Z",
+        "ref": "badge B1036 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:m.larsen",
+        "action": "ticket_open",
+        "t": "2026-02-04T15:00:00Z",
+        "ref": "ticket:T-0423"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-04T16:07:00Z",
+        "ref": "LN-22179 PL-2093 B->D; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-04T16:07:00Z",
+        "ref": "LN-27995 PL-2488 A->F; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-04T16:09:00Z",
+        "ref": "LN-27995 PL-2488 F->F; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-04T18:49:00Z",
+        "ref": "LN-23580 PL-6955 F->A; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-04T18:50:00Z",
+        "ref": "LN-23211 PL-8754 C->D; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-04T18:51:00Z",
+        "ref": "LN-23211 PL-8754 D->D; forklift FL-2"
+      },
+      {
+        "actor": "actor:h.tanaka",
+        "action": "shift_start",
+        "t": "2026-02-04T21:51:00Z",
+        "ref": "badge B1009 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:m.mensah",
+        "action": "shift_start",
+        "t": "2026-02-04T21:57:00Z",
+        "ref": "badge B1028 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:m.mensah",
+        "action": "shift_start",
+        "t": "2026-02-04T22:00:00Z",
+        "ref": "first agency night shift"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "shift_end",
+        "t": "2026-02-04T22:05:00Z",
+        "ref": "badge B1024 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "shift_start",
+        "t": "2026-02-05T05:51:00Z",
+        "ref": "badge B1017 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "shift_start",
+        "t": "2026-02-05T06:00:00Z",
+        "ref": "badge B1002 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:h.tanaka",
+        "action": "shift_end",
+        "t": "2026-02-05T06:02:00Z",
+        "ref": "badge B1009 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:p.dubois",
+        "action": "shift_start",
+        "t": "2026-02-05T06:04:00Z",
+        "ref": "badge B1036 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:m.mensah",
+        "action": "shift_end",
+        "t": "2026-02-05T06:09:00Z",
+        "ref": "badge B1028 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-05T07:17:00Z",
+        "ref": "LN-22862 PL-2837 A->D; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-05T07:18:00Z",
+        "ref": "LN-21790 PL-7707 F->A; forklift FL-1"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "probe_check",
+        "t": "2026-02-05T07:37:00Z",
+        "ref": "HH-1 room A 6.5 C; HH-1 calibrated"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "probe_check",
+        "t": "2026-02-05T07:43:00Z",
+        "ref": "HH-1 room B -21.0 C; HH-1 calibrated"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "probe_check",
+        "t": "2026-02-05T07:55:00Z",
+        "ref": "HH-1 room C -19.4 C; HH-1 calibrated"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "probe_check",
+        "t": "2026-02-05T07:59:00Z",
+        "ref": "HH-1 room D -24.6 C; HH-1 calibrated"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "probe_check",
+        "t": "2026-02-05T08:06:00Z",
+        "ref": "HH-1 room E -19.7 C; HH-1 calibrated"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-05T08:07:00Z",
+        "ref": "LN-22132 PL-5298 D->F; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-05T08:07:00Z",
+        "ref": "LN-22275 PL-9563 F->D; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-05T08:09:00Z",
+        "ref": "LN-22275 PL-9563 D->D; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-05T08:09:00Z",
+        "ref": "LN-23525 PL-8557 E->B; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-05T08:09:00Z",
+        "ref": "LN-22862 PL-2837 C->A; forklift FL-1"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "probe_check",
+        "t": "2026-02-05T08:18:00Z",
+        "ref": "HH-1 room F 7.6 C; HH-1 calibrated"
+      },
+      {
+        "actor": "actor:p.dubois",
+        "action": "probe_check",
+        "t": "2026-02-05T09:02:00Z",
+        "ref": "HH-2 room E -14.6 C; subtract 1 C for HH-2 calibration"
+      },
+      {
+        "actor": "actor:p.dubois",
+        "action": "probe_check",
+        "t": "2026-02-05T09:10:00Z",
+        "ref": "HH-2 room C -19.7 C; subtract 1 C for HH-2 calibration"
+      },
+      {
+        "actor": "actor:p.dubois",
+        "action": "probe_check",
+        "t": "2026-02-05T09:15:00Z",
+        "ref": "HH-2 room B -21.2 C; subtract 1 C for HH-2 calibration"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-05T12:24:00Z",
+        "ref": "LN-23756 PL-9748 E->A; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-05T12:24:00Z",
+        "ref": "LN-20722 PL-4563 B->F; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-05T12:26:00Z",
+        "ref": "LN-28510 PL-5902 B->F; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-05T12:26:00Z",
+        "ref": "LN-28694 PL-3371 B->C; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-05T12:27:00Z",
+        "ref": "LN-21437 PL-8691 D->A; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-05T12:27:00Z",
+        "ref": "LN-25842 PL-7500 B->A; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-05T12:27:00Z",
+        "ref": "LN-24487 PL-8292 B->F; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "shift_start",
+        "t": "2026-02-05T13:48:00Z",
+        "ref": "badge B1024 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "shift_end",
+        "t": "2026-02-05T13:49:00Z",
+        "ref": "badge B1017 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "shift_end",
+        "t": "2026-02-05T14:00:00Z",
+        "ref": "badge B1002 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:p.dubois",
+        "action": "shift_end",
+        "t": "2026-02-05T14:15:00Z",
+        "ref": "badge B1036 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-05T15:34:00Z",
+        "ref": "LN-28015 PL-3920 D->B; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-05T15:34:00Z",
+        "ref": "LN-24334 PL-1607 D->B; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-05T15:35:00Z",
+        "ref": "LN-24714 PL-4218 E->F; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-05T15:37:00Z",
+        "ref": "LN-24714 PL-4218 A->F; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-05T15:37:00Z",
+        "ref": "LN-28034 PL-6222 D->A; forklift FL-2"
+      },
+      {
+        "actor": "actor:m.mensah",
+        "action": "purchase",
+        "t": "2026-02-05T17:27:00Z",
+        "ref": "hardware_receipt_wedge: rubber door wedge and extension cord"
+      },
+      {
+        "actor": "actor:m.mensah",
+        "action": "shift_start",
+        "t": "2026-02-05T21:56:00Z",
+        "ref": "badge B1028 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "shift_end",
+        "t": "2026-02-05T21:58:00Z",
+        "ref": "badge B1024 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:h.tanaka",
+        "action": "shift_start",
+        "t": "2026-02-05T22:02:00Z",
+        "ref": "badge B1009 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "ticket_close",
+        "t": "2026-02-06T00:00:00Z",
+        "ref": "ticket:T-0421"
+      },
+      {
+        "actor": "actor:m.mensah",
+        "action": "photo",
+        "t": "2026-02-06T01:37:00Z",
+        "ref": "IMG_2231.jpg: wedge under room E door; EXIF -120 min"
+      },
+      {
+        "actor": "actor:m.mensah",
+        "action": "door_prop",
+        "t": "2026-02-06T01:38:00Z",
+        "ref": "zone E; link gap and overflow on return at 02:14"
+      },
+      {
+        "actor": "actor:h.tanaka",
+        "action": "door_open",
+        "t": "2026-02-06T01:49:00Z",
+        "ref": "ROOM-E visit from badge; sees ongoing door activity"
+      },
+      {
+        "actor": "actor:m.mensah",
+        "action": "door_close",
+        "t": "2026-02-06T02:14:00Z",
+        "ref": "zone E; link restored"
+      },
+      {
+        "actor": "actor:h.tanaka",
+        "action": "statement",
+        "t": "2026-02-06T02:22:00Z",
+        "ref": "msg:m0034: do not leave wedge in door"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "shift_start",
+        "t": "2026-02-06T05:54:00Z",
+        "ref": "badge B1017 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "shift_start",
+        "t": "2026-02-06T05:57:00Z",
+        "ref": "badge B1002 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:p.dubois",
+        "action": "shift_start",
+        "t": "2026-02-06T06:02:00Z",
+        "ref": "badge B1036 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:m.mensah",
+        "action": "shift_end",
+        "t": "2026-02-06T06:16:00Z",
+        "ref": "badge B1028 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:h.tanaka",
+        "action": "shift_end",
+        "t": "2026-02-06T06:24:00Z",
+        "ref": "badge B1009 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-06T07:41:00Z",
+        "ref": "LN-25677 PL-5547 D->B; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-06T07:41:00Z",
+        "ref": "LN-22862 PL-2837 D->E; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-06T08:11:00Z",
+        "ref": "LN-25842 PL-7500 A->C; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-06T08:11:00Z",
+        "ref": "LN-21238 PL-4463 D->B; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-06T08:11:00Z",
+        "ref": "LN-22132 PL-5298 F->D; forklift FL-1"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "probe_check",
+        "t": "2026-02-06T08:18:00Z",
+        "ref": "HH-1 room A 4.7 C; HH-1 calibrated"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "probe_check",
+        "t": "2026-02-06T08:24:00Z",
+        "ref": "HH-1 room B -22.0 C; HH-1 calibrated"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "probe_check",
+        "t": "2026-02-06T08:28:00Z",
+        "ref": "HH-1 room C -20.8 C; HH-1 calibrated"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "probe_check",
+        "t": "2026-02-06T08:32:00Z",
+        "ref": "HH-1 room D -24.9 C; HH-1 calibrated"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "probe_check",
+        "t": "2026-02-06T08:43:00Z",
+        "ref": "HH-1 room E -20.1 C; HH-1 calibrated"
+      },
+      {
+        "actor": "actor:p.dubois",
+        "action": "probe_check",
+        "t": "2026-02-06T08:50:00Z",
+        "ref": "HH-2 room D -23.9 C; subtract 1 C for HH-2 calibration"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "probe_check",
+        "t": "2026-02-06T08:55:00Z",
+        "ref": "HH-1 room F 6.1 C; HH-1 calibrated"
+      },
+      {
+        "actor": "actor:p.dubois",
+        "action": "probe_check",
+        "t": "2026-02-06T09:00:00Z",
+        "ref": "HH-2 room C -18.6 C; subtract 1 C for HH-2 calibration"
+      },
+      {
+        "actor": "actor:p.dubois",
+        "action": "probe_check",
+        "t": "2026-02-06T09:08:00Z",
+        "ref": "HH-2 room A 5.0 C; subtract 1 C for HH-2 calibration"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-06T09:53:00Z",
+        "ref": "LN-28034 PL-6222 A->C; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-06T09:55:00Z",
+        "ref": "LN-28034 PL-6222 C->E; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-06T09:55:00Z",
+        "ref": "LN-21238 PL-4463 B->A; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-06T09:56:00Z",
+        "ref": "LN-21238 PL-4463 A->A; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-06T09:56:00Z",
+        "ref": "LN-21231 PL-3272 F->E; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-06T09:58:00Z",
+        "ref": "LN-21231 PL-3272 A->E; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-06T09:58:00Z",
+        "ref": "LN-21065 PL-2272 E->C; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-06T10:44:00Z",
+        "ref": "LN-24487 PL-8292 F->E; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-06T10:44:00Z",
+        "ref": "LN-23197 PL-9173 F->B; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-06T10:51:00Z",
+        "ref": "LN-22697 PL-2694 E->B; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-06T10:51:00Z",
+        "ref": "LN-25527 PL-4064 F->B; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-06T10:52:00Z",
+        "ref": "LN-23935 PL-1877 D->E; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-06T10:52:00Z",
+        "ref": "LN-20976 PL-8424 C->E; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-06T10:54:00Z",
+        "ref": "LN-20976 PL-8424 E->E; forklift FL-1"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "ticket_open",
+        "t": "2026-02-06T13:00:00Z",
+        "ref": "ticket:T-0430"
+      },
+      {
+        "actor": "actor:f.okafor",
+        "action": "shift_start",
+        "t": "2026-02-06T13:46:00Z",
+        "ref": "badge B1044 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "shift_start",
+        "t": "2026-02-06T13:48:00Z",
+        "ref": "badge B1024 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "shift_end",
+        "t": "2026-02-06T13:51:00Z",
+        "ref": "badge B1017 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:p.dubois",
+        "action": "shift_end",
+        "t": "2026-02-06T13:56:00Z",
+        "ref": "badge B1036 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "shift_end",
+        "t": "2026-02-06T14:16:00Z",
+        "ref": "badge B1002 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:f.okafor",
+        "action": "firmware_flash",
+        "t": "2026-02-06T14:50:00Z",
+        "ref": "VX05 / E: boot seq=1, raw 34, ABS telegrams thereafter"
+      },
+      {
+        "actor": "actor:f.okafor",
+        "action": "firmware_flash",
+        "t": "2026-02-06T15:31:00Z",
+        "ref": "VX02 / B: boot seq=1, raw 34, ABS telegrams thereafter"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-06T16:49:00Z",
+        "ref": "LN-27822 PL-5901 E->F; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-06T16:49:00Z",
+        "ref": "LN-23756 PL-9748 A->C; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-06T16:50:00Z",
+        "ref": "LN-23756 PL-9748 C->C; forklift FL-2"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "ticket_open",
+        "t": "2026-02-06T16:52:00Z",
+        "ref": "ticket:T-0417"
+      },
+      {
+        "actor": "actor:f.okafor",
+        "action": "shift_end",
+        "t": "2026-02-06T17:19:00Z",
+        "ref": "badge B1044 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-06T19:31:00Z",
+        "ref": "LN-22179 PL-2093 D->F; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-06T19:32:00Z",
+        "ref": "LN-28694 PL-3371 C->F; forklift FL-2"
+      },
+      {
+        "actor": "actor:h.tanaka",
+        "action": "shift_start",
+        "t": "2026-02-06T21:52:00Z",
+        "ref": "badge B1009 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:m.mensah",
+        "action": "shift_start",
+        "t": "2026-02-06T22:05:00Z",
+        "ref": "badge B1028 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "shift_end",
+        "t": "2026-02-06T22:10:00Z",
+        "ref": "badge B1024 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "ticket_close",
+        "t": "2026-02-07T00:00:00Z",
+        "ref": "ticket:T-0422"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "shift_start",
+        "t": "2026-02-07T05:55:00Z",
+        "ref": "badge B1017 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:p.dubois",
+        "action": "shift_start",
+        "t": "2026-02-07T05:59:00Z",
+        "ref": "badge B1036 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:m.mensah",
+        "action": "shift_end",
+        "t": "2026-02-07T06:03:00Z",
+        "ref": "badge B1028 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:h.tanaka",
+        "action": "shift_end",
+        "t": "2026-02-07T06:15:00Z",
+        "ref": "badge B1009 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:p.dubois",
+        "action": "ticket_open",
+        "t": "2026-02-07T08:00:00Z",
+        "ref": "ticket:T-0426"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-07T11:12:00Z",
+        "ref": "LN-22641 PL-5506 F->E; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-07T11:13:00Z",
+        "ref": "LN-28510 PL-5902 F->C; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-07T11:13:00Z",
+        "ref": "LN-24487 PL-8292 E->B; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-07T11:14:00Z",
+        "ref": "LN-24487 PL-8292 B->B; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-07T11:15:00Z",
+        "ref": "LN-25438 PL-3602 D->A; forklift FL-1"
+      },
+      {
+        "actor": "actor:m.larsen",
+        "action": "commit",
+        "t": "2026-02-07T12:05:10Z",
+        "ref": "commit:176b7d6"
+      },
+      {
+        "actor": "actor:m.larsen",
+        "action": "config_edit",
+        "t": "2026-02-07T12:08:00Z",
+        "ref": "B/E routes loaded to #alerts-coldchain-old; not just low-severity routing"
+      },
+      {
+        "actor": "actor:p.dubois",
+        "action": "shift_end",
+        "t": "2026-02-07T14:03:00Z",
+        "ref": "badge B1036 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "shift_start",
+        "t": "2026-02-07T14:05:00Z",
+        "ref": "badge B1024 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "shift_end",
+        "t": "2026-02-07T14:10:00Z",
+        "ref": "badge B1017 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:h.tanaka",
+        "action": "shift_start",
+        "t": "2026-02-07T21:51:00Z",
+        "ref": "badge B1009 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:m.mensah",
+        "action": "shift_start",
+        "t": "2026-02-07T22:04:00Z",
+        "ref": "badge B1028 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "shift_end",
+        "t": "2026-02-07T22:24:00Z",
+        "ref": "badge B1024 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:p.dubois",
+        "action": "ticket_close",
+        "t": "2026-02-08T00:00:00Z",
+        "ref": "ticket:T-0426"
+      },
+      {
+        "actor": "actor:m.mensah",
+        "action": "door_prop",
+        "t": "2026-02-08T01:40:00Z",
+        "ref": "zone E, link gap until 02:10 sample"
+      },
+      {
+        "actor": "actor:i.kowalski",
+        "action": "override_deploy",
+        "t": "2026-02-08T03:18:00Z",
+        "ref": "ALERT_MIN_SEVERITY=critical; remains deployed"
+      },
+      {
+        "actor": "actor:h.tanaka",
+        "action": "shift_end",
+        "t": "2026-02-08T05:55:00Z",
+        "ref": "badge B1009 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "shift_start",
+        "t": "2026-02-08T06:00:00Z",
+        "ref": "badge B1017 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:p.dubois",
+        "action": "shift_start",
+        "t": "2026-02-08T06:01:00Z",
+        "ref": "badge B1036 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:m.mensah",
+        "action": "shift_end",
+        "t": "2026-02-08T06:15:00Z",
+        "ref": "badge B1028 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "archive_channel",
+        "t": "2026-02-08T09:32:00Z",
+        "ref": "msg:m0056: #alerts-coldchain-old archived before main incident"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-08T10:47:00Z",
+        "ref": "LN-22641 PL-5506 E->D; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-08T10:47:00Z",
+        "ref": "LN-20705 PL-3006 D->C; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-08T10:49:00Z",
+        "ref": "LN-20705 PL-3006 C->C; forklift FL-1"
+      },
+      {
+        "actor": "actor:i.kowalski",
+        "action": "statement",
+        "t": "2026-02-08T12:49:00Z",
+        "ref": "msg:m0057: falsely claimed override reverted"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "shift_start",
+        "t": "2026-02-08T13:52:00Z",
+        "ref": "badge B1024 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "shift_end",
+        "t": "2026-02-08T14:16:00Z",
+        "ref": "badge B1017 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:p.dubois",
+        "action": "shift_end",
+        "t": "2026-02-08T14:23:00Z",
+        "ref": "badge B1036 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-08T15:07:00Z",
+        "ref": "LN-25842 PL-7500 C->D; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-08T15:07:00Z",
+        "ref": "LN-21065 PL-2272 C->D; forklift FL-2"
+      },
+      {
+        "actor": "actor:h.tanaka",
+        "action": "shift_start",
+        "t": "2026-02-08T21:48:00Z",
+        "ref": "badge B1009 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:m.mensah",
+        "action": "shift_start",
+        "t": "2026-02-08T21:55:00Z",
+        "ref": "badge B1028 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "shift_end",
+        "t": "2026-02-08T22:04:00Z",
+        "ref": "badge B1024 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:h.tanaka",
+        "action": "shift_end",
+        "t": "2026-02-09T05:52:00Z",
+        "ref": "badge B1009 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "shift_start",
+        "t": "2026-02-09T05:56:00Z",
+        "ref": "badge B1002 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "shift_start",
+        "t": "2026-02-09T05:58:00Z",
+        "ref": "badge B1017 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:p.dubois",
+        "action": "shift_start",
+        "t": "2026-02-09T06:04:00Z",
+        "ref": "badge B1036 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:m.mensah",
+        "action": "shift_end",
+        "t": "2026-02-09T06:17:00Z",
+        "ref": "badge B1028 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-09T08:09:00Z",
+        "ref": "LN-22445 PL-9484 F->A; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-09T08:09:00Z",
+        "ref": "LN-24017 PL-5340 A->C; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-09T08:11:00Z",
+        "ref": "LN-24017 PL-5340 C->C; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-09T09:31:00Z",
+        "ref": "LN-28665 PL-4355 D->E; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-09T09:32:00Z",
+        "ref": "LN-25429 PL-1329 D->E; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-09T09:32:00Z",
+        "ref": "LN-25429 PL-1329 E->E; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-09T09:33:00Z",
+        "ref": "LN-28510 PL-5902 C->A; forklift FL-1"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "probe_check",
+        "t": "2026-02-09T09:41:00Z",
+        "ref": "HH-1 room A 3.3 C; HH-1 calibrated"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "probe_check",
+        "t": "2026-02-09T09:51:00Z",
+        "ref": "HH-1 room B -18.0 C; HH-1 calibrated"
+      },
+      {
+        "actor": "actor:p.dubois",
+        "action": "probe_check",
+        "t": "2026-02-09T09:51:00Z",
+        "ref": "HH-2 room A 4.5 C; subtract 1 C for HH-2 calibration"
+      },
+      {
+        "actor": "actor:p.dubois",
+        "action": "probe_check",
+        "t": "2026-02-09T09:58:00Z",
+        "ref": "HH-2 room D -27.6 C; subtract 1 C for HH-2 calibration"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "probe_check",
+        "t": "2026-02-09T10:00:00Z",
+        "ref": "HH-1 room C -19.2 C; HH-1 calibrated"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "probe_check",
+        "t": "2026-02-09T10:07:00Z",
+        "ref": "HH-1 room D -28.8 C; HH-1 calibrated"
+      },
+      {
+        "actor": "actor:p.dubois",
+        "action": "probe_check",
+        "t": "2026-02-09T10:12:00Z",
+        "ref": "HH-2 room B -18.3 C; subtract 1 C for HH-2 calibration"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "probe_check",
+        "t": "2026-02-09T10:21:00Z",
+        "ref": "HH-1 room E -20.2 C; HH-1 calibrated"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "probe_check",
+        "t": "2026-02-09T10:35:00Z",
+        "ref": "HH-1 room F 5.7 C; HH-1 calibrated"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-09T11:10:00Z",
+        "ref": "LN-22275 PL-9563 A->E; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-09T11:11:00Z",
+        "ref": "LN-27822 PL-5901 F->E; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-09T11:40:00Z",
+        "ref": "LN-20722 PL-4563 F->E; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-09T11:41:00Z",
+        "ref": "LN-20722 PL-4563 C->E; forklift FL-1"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "shift_end",
+        "t": "2026-02-09T13:48:00Z",
+        "ref": "badge B1002 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "shift_start",
+        "t": "2026-02-09T13:54:00Z",
+        "ref": "badge B1024 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "shift_end",
+        "t": "2026-02-09T14:02:00Z",
+        "ref": "badge B1017 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:p.dubois",
+        "action": "shift_end",
+        "t": "2026-02-09T14:05:00Z",
+        "ref": "badge B1036 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-09T14:48:00Z",
+        "ref": "LN-21447 PL-9662 E->F; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-09T14:49:00Z",
+        "ref": "LN-26885 PL-9690 E->D; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-09T14:49:00Z",
+        "ref": "LN-21437 PL-8691 A->E; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-09T14:50:00Z",
+        "ref": "LN-21437 PL-8691 E->E; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-09T15:01:00Z",
+        "ref": "LN-26885 PL-9690 D->C; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-09T15:02:00Z",
+        "ref": "LN-26885 PL-9690 C->C; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-09T17:36:00Z",
+        "ref": "LN-22179 PL-2093 F->C; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-09T17:36:00Z",
+        "ref": "LN-28412 PL-2342 E->C; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-09T17:38:00Z",
+        "ref": "LN-28412 PL-2342 C->C; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-09T17:38:00Z",
+        "ref": "LN-22179 PL-2093 C->C; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-09T17:38:00Z",
+        "ref": "LN-22445 PL-9484 A->F; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-09T19:52:00Z",
+        "ref": "LN-28412 PL-2342 F->B; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-09T19:52:00Z",
+        "ref": "LN-20447 PL-2859 F->C; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-09T19:53:00Z",
+        "ref": "LN-20447 PL-2859 B->C; forklift FL-2"
+      },
+      {
+        "actor": "actor:h.tanaka",
+        "action": "shift_start",
+        "t": "2026-02-09T21:53:00Z",
+        "ref": "badge B1009 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "shift_end",
+        "t": "2026-02-09T21:58:00Z",
+        "ref": "badge B1024 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:m.mensah",
+        "action": "shift_start",
+        "t": "2026-02-09T22:00:00Z",
+        "ref": "badge B1028 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:m.larsen",
+        "action": "ticket_close",
+        "t": "2026-02-10T00:00:00Z",
+        "ref": "ticket:T-0423"
+      },
+      {
+        "actor": "actor:h.tanaka",
+        "action": "door_open",
+        "t": "2026-02-10T00:08:00Z",
+        "ref": "ROOM-D unlock at badge23:57 corrected by +11 min; night walk-through"
+      },
+      {
+        "actor": "actor:m.mensah",
+        "action": "door_prop",
+        "t": "2026-02-10T00:47:00Z",
+        "ref": "zone E, seq1030 door OPEN; room stays open until 04:27"
+      },
+      {
+        "actor": "actor:h.tanaka",
+        "action": "door_open",
+        "t": "2026-02-10T01:04:00Z",
+        "ref": "ROOM-E badge visit during prolonged open-door interval"
+      },
+      {
+        "actor": "actor:h.tanaka",
+        "action": "door_close",
+        "t": "2026-02-10T04:27:00Z",
+        "ref": "zone E: corrected badge04:16, CCTV burst ends, first returned sample04:30"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "shift_start",
+        "t": "2026-02-10T05:54:00Z",
+        "ref": "badge B1002 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:p.dubois",
+        "action": "shift_start",
+        "t": "2026-02-10T06:00:00Z",
+        "ref": "badge B1036 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "shift_start",
+        "t": "2026-02-10T06:05:00Z",
+        "ref": "badge B1017 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:h.tanaka",
+        "action": "shift_end",
+        "t": "2026-02-10T06:11:00Z",
+        "ref": "badge B1009 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:m.mensah",
+        "action": "shift_end",
+        "t": "2026-02-10T06:13:00Z",
+        "ref": "badge B1028 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:p.dubois",
+        "action": "probe_check",
+        "t": "2026-02-10T07:42:00Z",
+        "ref": "HH-2 room F 5.6 C; subtract 1 C for HH-2 calibration"
+      },
+      {
+        "actor": "actor:p.dubois",
+        "action": "probe_check",
+        "t": "2026-02-10T07:53:00Z",
+        "ref": "HH-2 room E -2.8 C; subtract 1 C for HH-2 calibration"
+      },
+      {
+        "actor": "actor:p.dubois",
+        "action": "probe_check",
+        "t": "2026-02-10T07:58:00Z",
+        "ref": "HH-2 room B -22.4 C; subtract 1 C for HH-2 calibration"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-10T08:36:00Z",
+        "ref": "LN-28694 PL-3371 F->B; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-10T08:36:00Z",
+        "ref": "LN-25527 PL-4064 B->A; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-10T08:38:00Z",
+        "ref": "LN-25527 PL-4064 A->A; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-10T08:38:00Z",
+        "ref": "LN-25677 PL-5547 B->F; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-10T10:09:00Z",
+        "ref": "LN-20400 PL-5517 E->A; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-10T10:10:00Z",
+        "ref": "LN-20400 PL-5517 A->A; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-10T10:11:00Z",
+        "ref": "LN-23935 PL-1877 E->B; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-10T10:11:00Z",
+        "ref": "LN-23580 PL-6955 A->B; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-10T10:11:00Z",
+        "ref": "LN-22641 PL-5506 D->B; forklift FL-1"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "probe_check",
+        "t": "2026-02-10T10:53:00Z",
+        "ref": "HH-1 room A 3.1 C; HH-1 calibrated"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "probe_check",
+        "t": "2026-02-10T11:07:00Z",
+        "ref": "HH-1 room B -22.6 C; HH-1 calibrated"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "probe_check",
+        "t": "2026-02-10T11:18:00Z",
+        "ref": "HH-1 room C -19.8 C; HH-1 calibrated"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "probe_check",
+        "t": "2026-02-10T11:25:00Z",
+        "ref": "HH-1 room D -28.9 C; HH-1 calibrated"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "probe_check",
+        "t": "2026-02-10T11:29:00Z",
+        "ref": "HH-1 room E -20.9 C; HH-1 calibrated"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "probe_check",
+        "t": "2026-02-10T11:39:00Z",
+        "ref": "HH-1 room F 6.4 C; HH-1 calibrated"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-10T12:19:00Z",
+        "ref": "LN-25020 PL-9254 D->F; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-10T12:20:00Z",
+        "ref": "LN-25020 PL-9254 C->F; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-10T12:21:00Z",
+        "ref": "LN-21790 PL-7707 A->C; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-10T12:21:00Z",
+        "ref": "LN-24017 PL-5340 E->B; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-10T12:24:00Z",
+        "ref": "LN-25226 PL-6147 A->E; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-10T12:24:00Z",
+        "ref": "LN-25923 PL-7599 D->A; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-10T12:24:00Z",
+        "ref": "LN-22179 PL-2093 D->A; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-10T12:25:00Z",
+        "ref": "LN-22179 PL-2093 A->A; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "shift_end",
+        "t": "2026-02-10T14:00:00Z",
+        "ref": "badge B1017 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "shift_start",
+        "t": "2026-02-10T14:02:00Z",
+        "ref": "badge B1024 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "shift_end",
+        "t": "2026-02-10T14:16:00Z",
+        "ref": "badge B1002 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:p.dubois",
+        "action": "shift_end",
+        "t": "2026-02-10T14:24:00Z",
+        "ref": "badge B1036 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-10T20:44:00Z",
+        "ref": "LN-24714 PL-4218 F->A; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-10T20:44:00Z",
+        "ref": "LN-20447 PL-2859 C->B; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-10T20:50:00Z",
+        "ref": "LN-20206 PL-3509 A->F; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-10T20:52:00Z",
+        "ref": "LN-20206 PL-3509 F->F; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-10T20:52:00Z",
+        "ref": "LN-21065 PL-2272 D->F; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-10T20:53:00Z",
+        "ref": "LN-20206 PL-3509 D->D; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-10T20:54:00Z",
+        "ref": "LN-20206 PL-3509 C->C; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-10T21:14:00Z",
+        "ref": "LN-25226 PL-6147 D->A; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-10T21:14:00Z",
+        "ref": "LN-21790 PL-7707 C->B; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-10T21:15:00Z",
+        "ref": "LN-23756 PL-9748 D->B; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-10T21:15:00Z",
+        "ref": "LN-27822 PL-5901 E->F; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-10T21:21:00Z",
+        "ref": "LN-22132 PL-5298 D->F; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-10T21:22:00Z",
+        "ref": "LN-22132 PL-5298 F->F; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-10T21:22:00Z",
+        "ref": "LN-24659 PL-6372 D->F; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-10T21:23:00Z",
+        "ref": "LN-20206 PL-3509 A->D; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-10T21:24:00Z",
+        "ref": "LN-20206 PL-3509 D->D; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-10T21:25:00Z",
+        "ref": "LN-25020 PL-9254 F->A; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-10T21:26:00Z",
+        "ref": "LN-25020 PL-9254 A->A; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "shift_end",
+        "t": "2026-02-10T21:53:00Z",
+        "ref": "badge B1024 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:m.mensah",
+        "action": "shift_start",
+        "t": "2026-02-10T21:54:00Z",
+        "ref": "badge B1028 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:h.tanaka",
+        "action": "shift_start",
+        "t": "2026-02-10T22:03:00Z",
+        "ref": "badge B1009 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:m.mensah",
+        "action": "door_prop",
+        "t": "2026-02-11T01:37:00Z",
+        "ref": "zone E, link gap until02:20"
+      },
+      {
+        "actor": "actor:m.mensah",
+        "action": "shift_end",
+        "t": "2026-02-11T05:49:00Z",
+        "ref": "badge B1028 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "shift_start",
+        "t": "2026-02-11T05:51:00Z",
+        "ref": "badge B1002 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "shift_start",
+        "t": "2026-02-11T05:51:00Z",
+        "ref": "badge B1017 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:p.dubois",
+        "action": "shift_start",
+        "t": "2026-02-11T06:04:00Z",
+        "ref": "badge B1036 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:h.tanaka",
+        "action": "shift_end",
+        "t": "2026-02-11T06:15:00Z",
+        "ref": "badge B1009 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-11T06:46:00Z",
+        "ref": "LN-24714 PL-4218 A->C; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-11T06:47:00Z",
+        "ref": "LN-22179 PL-2093 B->C; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-11T07:32:00Z",
+        "ref": "LN-29837 PL-8455 F->E; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-11T07:32:00Z",
+        "ref": "LN-28034 PL-6222 E->A; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-11T07:33:00Z",
+        "ref": "LN-28412 PL-2342 B->F; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-11T09:47:00Z",
+        "ref": "LN-20976 PL-8424 A->F; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-11T09:47:00Z",
+        "ref": "LN-28510 PL-5902 A->B; forklift FL-1"
+      },
+      {
+        "actor": "actor:p.dubois",
+        "action": "probe_check",
+        "t": "2026-02-11T10:46:00Z",
+        "ref": "HH-2 room A 2.7 C; subtract 1 C for HH-2 calibration"
+      },
+      {
+        "actor": "actor:p.dubois",
+        "action": "probe_check",
+        "t": "2026-02-11T10:53:00Z",
+        "ref": "HH-2 room C -19.7 C; subtract 1 C for HH-2 calibration"
+      },
+      {
+        "actor": "actor:p.dubois",
+        "action": "probe_check",
+        "t": "2026-02-11T10:57:00Z",
+        "ref": "HH-2 room B -20.8 C; subtract 1 C for HH-2 calibration"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "probe_check",
+        "t": "2026-02-11T12:01:00Z",
+        "ref": "HH-1 room A 2.0 C; HH-1 calibrated"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "probe_check",
+        "t": "2026-02-11T12:06:00Z",
+        "ref": "HH-1 room B -22.4 C; HH-1 calibrated"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "probe_check",
+        "t": "2026-02-11T12:14:00Z",
+        "ref": "HH-1 room C -20.4 C; HH-1 calibrated"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "probe_check",
+        "t": "2026-02-11T12:28:00Z",
+        "ref": "HH-1 room D -29.6 C; HH-1 calibrated"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "probe_check",
+        "t": "2026-02-11T12:34:00Z",
+        "ref": "HH-1 room E -20.7 C; HH-1 calibrated"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "probe_check",
+        "t": "2026-02-11T12:42:00Z",
+        "ref": "HH-1 room F 5.7 C; HH-1 calibrated"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "shift_end",
+        "t": "2026-02-11T13:51:00Z",
+        "ref": "badge B1017 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:p.dubois",
+        "action": "shift_end",
+        "t": "2026-02-11T13:58:00Z",
+        "ref": "badge B1036 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "shift_end",
+        "t": "2026-02-11T13:59:00Z",
+        "ref": "badge B1002 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "shift_start",
+        "t": "2026-02-11T14:02:00Z",
+        "ref": "badge B1024 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-11T16:11:00Z",
+        "ref": "LN-22997 PL-5214 E->C; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-11T16:12:00Z",
+        "ref": "LN-27822 PL-5901 F->B; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-11T16:12:00Z",
+        "ref": "LN-22997 PL-5214 C->C; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-11T16:13:00Z",
+        "ref": "LN-22997 PL-5214 F->F; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-11T18:53:00Z",
+        "ref": "LN-24714 PL-4218 C->E; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-11T18:53:00Z",
+        "ref": "LN-28034 PL-6222 A->D; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-11T18:54:00Z",
+        "ref": "LN-28034 PL-6222 D->D; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-11T18:55:00Z",
+        "ref": "LN-28034 PL-6222 B->D; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-11T18:56:00Z",
+        "ref": "LN-28412 PL-2342 F->E; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-11T19:06:00Z",
+        "ref": "LN-25438 PL-3602 A->D; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-11T19:06:00Z",
+        "ref": "LN-25527 PL-4064 D->A; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-11T19:07:00Z",
+        "ref": "LN-22179 PL-2093 C->A; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-11T19:07:00Z",
+        "ref": "LN-22997 PL-5214 B->E; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-11T20:58:00Z",
+        "ref": "LN-20206 PL-3509 E->B; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-11T20:58:00Z",
+        "ref": "LN-20206 PL-3509 D->B; forklift FL-2"
+      },
+      {
+        "actor": "actor:h.tanaka",
+        "action": "shift_start",
+        "t": "2026-02-11T21:53:00Z",
+        "ref": "badge B1009 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:m.mensah",
+        "action": "shift_start",
+        "t": "2026-02-11T21:58:00Z",
+        "ref": "badge B1028 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "shift_end",
+        "t": "2026-02-11T22:21:00Z",
+        "ref": "badge B1024 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:h.tanaka",
+        "action": "shift_end",
+        "t": "2026-02-12T05:47:00Z",
+        "ref": "badge B1009 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:m.mensah",
+        "action": "shift_end",
+        "t": "2026-02-12T05:48:00Z",
+        "ref": "badge B1028 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:p.dubois",
+        "action": "shift_start",
+        "t": "2026-02-12T05:48:00Z",
+        "ref": "badge B1036 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "shift_start",
+        "t": "2026-02-12T05:54:00Z",
+        "ref": "badge B1017 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "shift_start",
+        "t": "2026-02-12T06:03:00Z",
+        "ref": "badge B1002 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-12T07:53:00Z",
+        "ref": "LN-21447 PL-9662 F->C; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-12T07:53:00Z",
+        "ref": "LN-21837 PL-6025 D->B; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-12T07:54:00Z",
+        "ref": "LN-28510 PL-5902 B->A; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-12T08:02:00Z",
+        "ref": "LN-25438 PL-3602 D->E; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-12T08:04:00Z",
+        "ref": "LN-25438 PL-3602 E->B; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-12T08:16:00Z",
+        "ref": "LN-25438 PL-3602 B->A; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-12T08:16:00Z",
+        "ref": "LN-26885 PL-9690 E->B; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-12T08:18:00Z",
+        "ref": "LN-26885 PL-9690 B->B; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-12T08:18:00Z",
+        "ref": "LN-23211 PL-8754 B->D; forklift FL-1"
+      },
+      {
+        "actor": "actor:p.dubois",
+        "action": "probe_check",
+        "t": "2026-02-12T09:40:00Z",
+        "ref": "HH-2 room F 6.0 C; subtract 1 C for HH-2 calibration"
+      },
+      {
+        "actor": "actor:p.dubois",
+        "action": "probe_check",
+        "t": "2026-02-12T09:47:00Z",
+        "ref": "HH-2 room D -26.5 C; subtract 1 C for HH-2 calibration"
+      },
+      {
+        "actor": "actor:p.dubois",
+        "action": "probe_check",
+        "t": "2026-02-12T09:59:00Z",
+        "ref": "HH-2 room B -18.9 C; subtract 1 C for HH-2 calibration"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "probe_check",
+        "t": "2026-02-12T10:10:00Z",
+        "ref": "HH-1 room A 5.6 C; HH-1 calibrated"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "probe_check",
+        "t": "2026-02-12T10:19:00Z",
+        "ref": "HH-1 room B -21.1 C; HH-1 calibrated"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "probe_check",
+        "t": "2026-02-12T10:28:00Z",
+        "ref": "HH-1 room C -20.5 C; HH-1 calibrated"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "probe_check",
+        "t": "2026-02-12T10:38:00Z",
+        "ref": "HH-1 room D -29.2 C; HH-1 calibrated"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "probe_check",
+        "t": "2026-02-12T10:52:00Z",
+        "ref": "HH-1 room E -20.0 C; HH-1 calibrated"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "probe_check",
+        "t": "2026-02-12T11:00:00Z",
+        "ref": "HH-1 room F 5.4 C; HH-1 calibrated"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "shift_start",
+        "t": "2026-02-12T14:01:00Z",
+        "ref": "badge B1024 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "shift_end",
+        "t": "2026-02-12T14:06:00Z",
+        "ref": "badge B1002 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:p.dubois",
+        "action": "shift_end",
+        "t": "2026-02-12T14:09:00Z",
+        "ref": "badge B1036 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "shift_end",
+        "t": "2026-02-12T14:14:00Z",
+        "ref": "badge B1017 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-12T17:35:00Z",
+        "ref": "LN-25842 PL-7500 D->E; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-12T17:35:00Z",
+        "ref": "LN-21231 PL-3272 E->A; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-12T17:37:00Z",
+        "ref": "LN-21231 PL-3272 F->A; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-12T18:39:00Z",
+        "ref": "LN-25923 PL-7599 A->B; forklift FL-2"
+      },
+      {
+        "actor": "actor:h.tanaka",
+        "action": "shift_start",
+        "t": "2026-02-12T21:55:00Z",
+        "ref": "badge B1009 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:m.mensah",
+        "action": "shift_start",
+        "t": "2026-02-12T22:04:00Z",
+        "ref": "badge B1028 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "shift_end",
+        "t": "2026-02-12T22:09:00Z",
+        "ref": "badge B1024 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:m.mensah",
+        "action": "door_prop",
+        "t": "2026-02-13T00:41:00Z",
+        "ref": "zone E, overflow report01:23"
+      },
+      {
+        "actor": "actor:m.mensah",
+        "action": "door_close",
+        "t": "2026-02-13T01:23:00Z",
+        "ref": "zone E, link resumed"
+      },
+      {
+        "actor": "actor:m.mensah",
+        "action": "shift_end",
+        "t": "2026-02-13T05:58:00Z",
+        "ref": "badge B1028 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "shift_start",
+        "t": "2026-02-13T06:00:00Z",
+        "ref": "badge B1017 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "shift_start",
+        "t": "2026-02-13T06:03:00Z",
+        "ref": "badge B1002 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:p.dubois",
+        "action": "shift_start",
+        "t": "2026-02-13T06:05:00Z",
+        "ref": "badge B1036 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:h.tanaka",
+        "action": "shift_end",
+        "t": "2026-02-13T06:12:00Z",
+        "ref": "badge B1009 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-13T06:45:00Z",
+        "ref": "LN-23211 PL-8754 D->F; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-13T06:46:00Z",
+        "ref": "LN-21447 PL-9662 D->A; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-13T06:47:00Z",
+        "ref": "LN-21447 PL-9662 A->A; forklift FL-1"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "probe_check",
+        "t": "2026-02-13T08:12:00Z",
+        "ref": "HH-1 room A 4.5 C; HH-1 calibrated"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-13T08:14:00Z",
+        "ref": "LN-25438 PL-3602 A->D; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-13T08:15:00Z",
+        "ref": "LN-24714 PL-4218 E->D; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-13T08:16:00Z",
+        "ref": "LN-24714 PL-4218 D->D; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-13T08:16:00Z",
+        "ref": "LN-23935 PL-1877 B->E; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-13T08:17:00Z",
+        "ref": "LN-23935 PL-1877 E->E; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-13T08:18:00Z",
+        "ref": "LN-29308 PL-2432 F->D; forklift FL-1"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "probe_check",
+        "t": "2026-02-13T08:18:00Z",
+        "ref": "HH-1 room B -22.2 C; HH-1 calibrated"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "probe_check",
+        "t": "2026-02-13T08:25:00Z",
+        "ref": "HH-1 room C -20.7 C; HH-1 calibrated"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "probe_check",
+        "t": "2026-02-13T08:34:00Z",
+        "ref": "HH-1 room D -24.3 C; HH-1 calibrated"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "probe_check",
+        "t": "2026-02-13T08:48:00Z",
+        "ref": "HH-1 room E -19.4 C; HH-1 calibrated"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "probe_check",
+        "t": "2026-02-13T09:01:00Z",
+        "ref": "HH-1 room F 6.1 C; HH-1 calibrated"
+      },
+      {
+        "actor": "actor:p.dubois",
+        "action": "probe_check",
+        "t": "2026-02-13T11:07:00Z",
+        "ref": "HH-2 room B -21.2 C; subtract 1 C for HH-2 calibration"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-13T11:17:00Z",
+        "ref": "LN-28412 PL-2342 E->F; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-13T11:17:00Z",
+        "ref": "LN-29837 PL-8455 D->F; forklift FL-1"
+      },
+      {
+        "actor": "actor:p.dubois",
+        "action": "probe_check",
+        "t": "2026-02-13T11:21:00Z",
+        "ref": "HH-2 room E -17.6 C; subtract 1 C for HH-2 calibration"
+      },
+      {
+        "actor": "actor:p.dubois",
+        "action": "probe_check",
+        "t": "2026-02-13T11:29:00Z",
+        "ref": "HH-2 room A 2.7 C; subtract 1 C for HH-2 calibration"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "shift_start",
+        "t": "2026-02-13T13:53:00Z",
+        "ref": "badge B1024 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:p.dubois",
+        "action": "shift_end",
+        "t": "2026-02-13T14:06:00Z",
+        "ref": "badge B1036 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "shift_end",
+        "t": "2026-02-13T14:08:00Z",
+        "ref": "badge B1002 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "shift_end",
+        "t": "2026-02-13T14:21:00Z",
+        "ref": "badge B1017 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-13T17:02:00Z",
+        "ref": "LN-24017 PL-5340 B->E; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-13T17:02:00Z",
+        "ref": "LN-25527 PL-4064 A->E; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-13T17:13:00Z",
+        "ref": "LN-21447 PL-9662 C->D; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-13T17:14:00Z",
+        "ref": "LN-29837 PL-8455 E->D; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-13T17:14:00Z",
+        "ref": "LN-28510 PL-5902 A->C; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-02-13T17:14:00Z",
+        "ref": "LN-26885 PL-9690 D->E; forklift FL-2"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "shift_end",
+        "t": "2026-02-13T21:45:00Z",
+        "ref": "badge B1024 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:m.mensah",
+        "action": "shift_start",
+        "t": "2026-02-13T21:50:00Z",
+        "ref": "badge B1028 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:h.tanaka",
+        "action": "shift_start",
+        "t": "2026-02-13T21:53:00Z",
+        "ref": "badge B1009 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:m.mensah",
+        "action": "door_prop",
+        "t": "2026-02-14T01:05:00Z",
+        "ref": "zone E, link gap until01:45"
+      },
+      {
+        "actor": "actor:h.tanaka",
+        "action": "shift_end",
+        "t": "2026-02-14T05:43:00Z",
+        "ref": "badge B1009 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "shift_start",
+        "t": "2026-02-14T05:55:00Z",
+        "ref": "badge B1017 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:m.mensah",
+        "action": "shift_end",
+        "t": "2026-02-14T06:09:00Z",
+        "ref": "badge B1028 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-14T06:48:00Z",
+        "ref": "LN-28510 PL-5902 C->B; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-14T06:48:00Z",
+        "ref": "LN-25527 PL-4064 E->C; forklift FL-1"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-02-14T06:49:00Z",
+        "ref": "LN-22997 PL-5214 E->A; forklift FL-1"
+      },
+      {
+        "actor": "actor:a.schulz",
+        "action": "ticket_open",
+        "t": "2026-02-14T09:00:00Z",
+        "ref": "ticket:T-0420"
+      },
+      {
+        "actor": "actor:a.schulz",
+        "action": "statement",
+        "t": "2026-02-14T09:00:00Z",
+        "ref": "stability-lab message LN-23935: damage after hours above -15 C. Corrected sensor bias gives room E roughly above -15 C from 2026-02-10 01:10 through 10:05 UTC; the causative door-open interval was 00:47\u201304:27, not a compressor failure at 01:06. Held-out trips: 00:57,01:12,01:27,01:42; lockout at01:42. With the door still open, restart leads to another lockout; final timer exits05:37. Defrost07:10\u201307:34 further delays recovery."
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "shift_start",
+        "t": "2026-02-14T13:52:00Z",
+        "ref": "badge B1024 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "shift_end",
+        "t": "2026-02-14T14:15:00Z",
+        "ref": "badge B1017 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:a.schulz",
+        "action": "quarantine",
+        "t": "2026-02-14T16:00:00Z",
+        "ref": "ticket:T-0420; selected stale ledger E positions, not physical inventory"
+      },
+      {
+        "actor": "actor:a.schulz",
+        "action": "postmortem_publish",
+        "t": "2026-02-14T16:00:00Z",
+        "ref": "doc:postmortem"
+      },
+      {
+        "actor": "actor:h.tanaka",
+        "action": "shift_start",
+        "t": "2026-02-14T21:52:00Z",
+        "ref": "badge B1009 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "shift_end",
+        "t": "2026-02-14T21:55:00Z",
+        "ref": "badge B1024 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:m.mensah",
+        "action": "shift_start",
+        "t": "2026-02-14T22:03:00Z",
+        "ref": "badge B1028 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:h.tanaka",
+        "action": "shift_end",
+        "t": "2026-02-15T05:54:00Z",
+        "ref": "badge B1009 corrected -11 min offset"
+      },
+      {
+        "actor": "actor:m.mensah",
+        "action": "shift_end",
+        "t": "2026-02-15T06:07:00Z",
+        "ref": "badge B1028 corrected -11 min offset"
+      }
+    ],
+    "clock_offsets_min": {
+      "badge": -11,
+      "exif": -120,
+      "cctv": 4,
+      "forklift": 0,
+      "chat": 1,
+      "tickets": 0,
+      "git": 0,
+      "submeter": 0,
+      "gateway": 0,
+      "probe": 0
+    },
+    "false_claims": [
+      {
+        "doc_id": "doc:night_lead_h.tanaka",
+        "quote": "I did my walk-through at 02:34 and all the rooms were closed."
+      },
+      {
+        "doc_id": "doc:night_lead_h.tanaka",
+        "quote": "After that nobody went near room E; the corridor was quiet."
+      },
+      {
+        "doc_id": "doc:night_lead_h.tanaka",
+        "quote": "I checked room E again at 05:59 on my way out and the door was shut."
+      },
+      {
+        "doc_id": "doc:temp_worker_m.mensah",
+        "quote": "I never propped any door open; the wedge in the photo is a receiving thing, it lives by the dock."
+      },
+      {
+        "doc_id": "doc:ops_engineer_m.larsen",
+        "quote": "The vendor confirmed by phone that the -40 readings are a known sensor fault on the 3.4 boards, so I routed the two rooms' low-temperature alerts to the legacy channel to stop the flapping and opened a ticket for the vendor."
+      },
+      {
+        "doc_id": "doc:ops_engineer_m.larsen",
+        "quote": "Nothing else in the stack changed that week apart from the billing unit fix, which does not touch readings."
+      },
+      {
+        "doc_id": "doc:sre_oncall_i.kowalski",
+        "quote": "The override was temporary and I reverted it the next morning."
+      },
+      {
+        "doc_id": "doc:warehouse_manager_p.novak",
+        "quote": "I archived the old alert channel only after the incident, when we cleaned up the workspace; before that it was still being read."
+      },
+      {
+        "doc_id": "doc:warehouse_manager_p.novak",
+        "quote": "Probe checks are done twice a day on weekdays with the two handhelds; both were calibrated recently."
+      },
+      {
+        "doc_id": "doc:receiving_clerk_p.dubois",
+        "quote": "My handheld was calibrated last month and reads fine."
+      },
+      {
+        "doc_id": "doc:service_report_firmware_visit",
+        "quote": "Unit VX05 (room E): inspected only, no changes made; customer asked us to leave it on 3.2 until the next visit."
+      },
+      {
+        "doc_id": "doc:bench_report_unit01",
+        "quote": "`kemo` : high-pressure cut-out"
+      },
+      {
+        "doc_id": "doc:runbook",
+        "quote": "Defrost runs on a fixed schedule every 6 hours per room; the rooms take turns so the heaters never overlap."
+      },
+      {
+        "doc_id": "doc:postmortem",
+        "quote": "Root cause: compressor failure on controller VX05."
+      },
+      {
+        "doc_id": "doc:postmortem",
+        "quote": "Alert routing for room E had been moved to a legacy channel after a sensor fault on the new firmware boards (ticket T-0417)."
+      },
+      {
+        "doc_id": "doc:postmortem",
+        "quote": "23:06 walk-through, all rooms closed."
+      },
+      {
+        "doc_id": "doc:postmortem",
+        "quote": "01:06 (est.) compressor VX05 stops."
+      },
+      {
+        "doc_id": "doc:postmortem",
+        "quote": "04:16 room E door opened by the night lead on a routine check; nothing noted."
+      },
+      {
+        "doc_id": "doc:postmortem",
+        "quote": "Restore alert routing for rooms B and E (done)."
+      },
+      {
+        "doc_id": "doc:chat_export",
+        "quote": "spoke to the vendor, they say the new boards have a sensor fault, known issue, will be fixed on their next visit"
+      },
+      {
+        "doc_id": "doc:chat_export",
+        "quote": "reverted the override this morning, back to normal"
+      }
+    ]
+  },
+  "confidence": {
+    "mechanism": 0.87,
+    "notation": 0.99,
+    "causal_chain": 0.84,
+    "timeline": 0.83
+  }
+}

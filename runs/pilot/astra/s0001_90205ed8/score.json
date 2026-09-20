@@ -1,0 +1,1825 @@
+{
+ "instance": "s0001_90205ed8",
+ "submission_status": "ok",
+ "section_status": {
+  "mechanism": "ok",
+  "notation": "ok",
+  "causal_chain": "ok",
+  "timeline": "ok",
+  "confidence": "ok"
+ },
+ "section_errors": {},
+ "measured": {
+  "sections": {
+   "mechanism": {
+    "score": 0.982638889,
+    "params": {
+     "k_cool.A": {
+      "pred": 0.12076,
+      "value": 0.125,
+      "tol": 0.0125,
+      "pts": 1.0
+     },
+     "k_cool.B": {
+      "pred": 0.08209,
+      "value": 0.0831,
+      "tol": 0.00831,
+      "pts": 1.0
+     },
+     "k_cool.C": {
+      "pred": 0.133,
+      "value": 0.1342,
+      "tol": 0.013420000000000001,
+      "pts": 1.0
+     },
+     "k_cool.D": {
+      "pred": 0.02976,
+      "value": 0.03,
+      "tol": 0.006,
+      "pts": 1.0
+     },
+     "k_cool.E": {
+      "pred": 0.11531,
+      "value": 0.1165,
+      "tol": 0.01165,
+      "pts": 1.0
+     },
+     "k_cool.F": {
+      "pred": 0.02957,
+      "value": 0.03,
+      "tol": 0.006,
+      "pts": 1.0
+     },
+     "k_leak.A": {
+      "pred": 0.001033,
+      "value": 0.00108,
+      "tol": 0.00025,
+      "pts": 1.0
+     },
+     "k_leak.B": {
+      "pred": 0.0009938,
+      "value": 0.00097,
+      "tol": 0.00025,
+      "pts": 1.0
+     },
+     "k_leak.C": {
+      "pred": 0.0011169,
+      "value": 0.00112,
+      "tol": 0.00025,
+      "pts": 1.0
+     },
+     "k_leak.D": {
+      "pred": 0.0015007,
+      "value": 0.00154,
+      "tol": 0.00025,
+      "pts": 1.0
+     },
+     "k_leak.E": {
+      "pred": 0.0011012,
+      "value": 0.00115,
+      "tol": 0.00025,
+      "pts": 1.0
+     },
+     "k_leak.F": {
+      "pred": 0.0017526,
+      "value": 0.0018,
+      "tol": 0.00027,
+      "pts": 1.0
+     },
+     "H.A": {
+      "pred": 1.5,
+      "value": 1.47,
+      "tol": 0.25,
+      "pts": 1.0
+     },
+     "H.B": {
+      "pred": 1.66,
+      "value": 1.63,
+      "tol": 0.25,
+      "pts": 1.0
+     },
+     "H.C": {
+      "pred": 2.36,
+      "value": 2.31,
+      "tol": 0.2772,
+      "pts": 1.0
+     },
+     "H.D": {
+      "pred": 2.18,
+      "value": 2.3,
+      "tol": 0.27599999999999997,
+      "pts": 1.0
+     },
+     "H.E": {
+      "pred": 2.21,
+      "value": 2.17,
+      "tol": 0.26039999999999996,
+      "pts": 1.0
+     },
+     "H.F": {
+      "pred": 2.35,
+      "value": 2.4,
+      "tol": 0.288,
+      "pts": 1.0
+     },
+     "bias.A": {
+      "pred": -0.75,
+      "value": -0.84,
+      "tol": 0.3,
+      "pts": 1.0
+     },
+     "bias.B": {
+      "pred": 0.125,
+      "value": 0.14,
+      "tol": 0.3,
+      "pts": 1.0
+     },
+     "bias.C": {
+      "pred": 0.73,
+      "value": 0.72,
+      "tol": 0.3,
+      "pts": 1.0
+     },
+     "bias.D": {
+      "pred": -0.39,
+      "value": -0.32,
+      "tol": 0.3,
+      "pts": 1.0
+     },
+     "bias.E": {
+      "pred": -0.72,
+      "value": -0.89,
+      "tol": 0.3,
+      "pts": 1.0
+     },
+     "bias.F": {
+      "pred": 0.2,
+      "value": 0.26,
+      "tol": 0.3,
+      "pts": 1.0
+     },
+     "door_gain": {
+      "pred": 3.36,
+      "value": 3.29,
+      "tol": 1.0,
+      "pts": 1.0
+     },
+     "c_adj": {
+      "pred": 0.0002895,
+      "value": 0.0003,
+      "tol": 0.0003,
+      "pts": 1.0
+     },
+     "defrost.R_hours": {
+      "pred": 10,
+      "value": 10,
+      "tol": 0.5,
+      "pts": 1.0
+     },
+     "defrost.len_min": {
+      "pred": 27,
+      "value": 27,
+      "tol": 2,
+      "pts": 1.0
+     },
+     "defrost.heat_degC": {
+      "pred": 4.15,
+      "value": 4.2,
+      "tol": 0.6,
+      "pts": 1.0
+     },
+     "trip.d_min": {
+      "pred": 8,
+      "value": 7,
+      "tol": 0.5,
+      "pts": 0.5
+     },
+     "lockout.N": {
+      "pred": 5,
+      "value": 5,
+      "tol": 0,
+      "pts": 1.0
+     },
+     "lockout.W_min": {
+      "pred": 60,
+      "value": 60,
+      "tol": 5,
+      "pts": 1.0
+     },
+     "lockout.L_min": {
+      "pred": 60,
+      "value": 60,
+      "tol": 5,
+      "pts": 1.0
+     }
+    },
+    "params_hits": 32,
+    "params_half": 1,
+    "n_params": 33,
+    "params_acc": 0.9696969696969697,
+    "params_pts_sum": 32.5,
+    "rules": {
+     "defrost_rule_type": {
+      "pred": "runtime_hours",
+      "value": "runtime_hours",
+      "pts": 1.0
+     },
+     "stagger_order": {
+      "pred": [
+       "C",
+       "F",
+       "D",
+       "B",
+       "A",
+       "E"
+      ],
+      "value": [
+       "C",
+       "F",
+       "D",
+       "B",
+       "A",
+       "E"
+      ],
+      "pts": 1.0
+     },
+     "adjacency_pairs": {
+      "pred": [
+       [
+        "C",
+        "F"
+       ],
+       [
+        "E",
+        "F"
+       ],
+       [
+        "B",
+        "E"
+       ],
+       [
+        "D",
+        "E"
+       ],
+       [
+        "A",
+        "F"
+       ],
+       [
+        "C",
+        "D"
+       ],
+       [
+        "B",
+        "C"
+       ],
+       [
+        "A",
+        "B"
+       ]
+      ],
+      "value": [
+       [
+        "C",
+        "F"
+       ],
+       [
+        "E",
+        "F"
+       ],
+       [
+        "D",
+        "E"
+       ],
+       [
+        "A",
+        "F"
+       ],
+       [
+        "C",
+        "D"
+       ],
+       [
+        "B",
+        "C"
+       ],
+       [
+        "A",
+        "B"
+       ]
+      ],
+      "intersection": 7,
+      "union": 8,
+      "pts": 0.875
+     }
+    },
+    "rules_pts_sum": 2.875,
+    "n_rules": 3,
+    "rules_all_correct": false
+   },
+   "notation": {
+    "score": 1.0,
+    "glossary": {
+     "maha": {
+      "pred": "DEFROST",
+      "value": "DEFROST",
+      "hit": true
+     },
+     "robo": {
+      "pred": "RECOVERY",
+      "value": "RECOVERY",
+      "hit": true
+     },
+     "vawe": {
+      "pred": "LOCKOUT",
+      "value": "LOCKOUT",
+      "hit": true
+     },
+     "reve": {
+      "pred": "TRIP",
+      "value": "TRIP",
+      "hit": true
+     },
+     "bahe": {
+      "pred": "COIL_TEMP",
+      "value": "COIL_TEMP",
+      "hit": true
+     },
+     "rane": {
+      "pred": "DISCH_PRESSURE",
+      "value": "DISCH_PRESSURE",
+      "hit": true
+     },
+     "hamo": {
+      "pred": "DOOR",
+      "value": "DOOR",
+      "hit": true
+     },
+     "wewa": {
+      "pred": "HEATER",
+      "value": "HEATER",
+      "hit": true
+     },
+     "neka": {
+      "pred": "FIRMWARE",
+      "value": "FIRMWARE",
+      "hit": true
+     },
+     "mabo": {
+      "pred": "ENTER",
+      "value": "ENTER",
+      "hit": true
+     },
+     "mava": {
+      "pred": "EXIT",
+      "value": "EXIT",
+      "hit": true
+     },
+     "heho": {
+      "pred": "FAULT",
+      "value": "FAULT",
+      "hit": true
+     },
+     "bepa": {
+      "pred": "BOOT",
+      "value": "BOOT",
+      "hit": true
+     },
+     "howa": {
+      "pred": "OPEN",
+      "value": "OPEN",
+      "hit": true
+     },
+     "koha": {
+      "pred": "CLOSED",
+      "value": "CLOSED",
+      "hit": true
+     },
+     "mera": {
+      "pred": "ON",
+      "value": "ON",
+      "hit": true
+     },
+     "keha": {
+      "pred": "OFF",
+      "value": "OFF",
+      "hit": true
+     },
+     "kono": {
+      "pred": "ABS",
+      "value": "ABS",
+      "hit": true
+     }
+    },
+    "glossary_hits": 18,
+    "n_unknown": 18,
+    "glossary_acc": 1.0,
+    "extra_roots": 4,
+    "extra_roots_list": [
+     "pamo",
+     "wama",
+     "wapo",
+     "weko"
+    ],
+    "affixes": {
+     "na": {
+      "pred": "ZONE",
+      "value": "ZONE",
+      "hit": true
+     },
+     "ka": {
+      "pred": "ZONE",
+      "value": "ZONE",
+      "hit": true
+     },
+     "no": {
+      "pred": "ZONE",
+      "value": "ZONE",
+      "hit": true
+     },
+     "ba": {
+      "pred": "ZONE",
+      "value": "ZONE",
+      "hit": true
+     },
+     "ve": {
+      "pred": "ZONE",
+      "value": "ZONE",
+      "hit": true
+     },
+     "ko": {
+      "pred": "ZONE",
+      "value": "ZONE",
+      "hit": true
+     },
+     "ga": {
+      "pred": "ASPECT_EVENT",
+      "value": "ASPECT_EVENT",
+      "hit": true
+     },
+     "go": {
+      "pred": "ASPECT_STATE",
+      "value": "ASPECT_STATE",
+      "hit": true
+     }
+    },
+    "affix_hits": 8,
+    "n_affixes": 8,
+    "affix_acc": 1.0,
+    "v34": {
+     "pred": "absolute_temp",
+     "value": "absolute_temp",
+     "pts": 1.0
+    },
+    "heldout": [
+     {
+      "seq": 1023,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1024,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1025,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1026,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1027,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1028,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1029,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1030,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1031,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1032,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1033,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1034,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1035,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1036,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1037,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1038,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1039,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1040,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1041,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1042,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1043,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1044,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1045,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1046,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1047,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1048,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1049,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1050,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1051,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1052,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1053,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1054,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1055,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1056,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1057,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1058,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1059,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1060,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1061,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1062,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1063,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1064,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1065,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1066,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1067,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "ts": true
+      },
+      "score": 1.0
+     }
+    ],
+    "heldout_frames_full": 45,
+    "n_heldout": 45,
+    "heldout_mean": 1.0,
+    "heldout_duplicate_seq": 0
+   },
+   "causal_chain": {
+    "score": 0.342989269,
+    "nodes": {
+     "hits": 16,
+     "n_pred": 79,
+     "n_truth": 16,
+     "precision": 0.20253164556962025,
+     "recall": 1.0,
+     "f1": 0.3368421052631579,
+     "missing": [],
+     "extra": [
+      "actor:a.larsen",
+      "actor:e.haddad",
+      "actor:l.rivera",
+      "actor:r.okafor",
+      "actor:s.larsen",
+      "actor:v.larsen",
+      "code:alerting/server.py:evaluate",
+      "code:billing/nightly.py:run_once",
+      "code:billing/nightly.py:zone_hours",
+      "code:common/httpd.py:_dispatch",
+      "code:common/netutil.py:http_call",
+      "code:dispatch/server.py:post_jobs",
+      "code:dispatch/server.py:wms_pallet_lookup",
+      "code:dispatch/server.py:worker_loop",
+      "code:gateway/server.py:_post_dispatch",
+      "code:gateway/server.py:handle_line",
+      "code:gateway/server.py:stale_watch",
+      "code:ledger/server.py:get_lots",
+      "code:ledger/server.py:post_events",
+      "code:ledger/server.py:post_readings",
+      "commit:0a19f1e",
+      "commit:0e666b0",
+      "commit:265272a",
+      "commit:774b046",
+      "commit:be34510",
+      "commit:bf44b2d",
+      "commit:c4cc40e",
+      "commit:cd7c07c",
+      "commit:d33eb5c",
+      "commit:d8ba686",
+      "config:alerting/routes.json:zones.c.channel",
+      "config:deploy/config.json:ledger_busy_timeout_s",
+      "config:deploy/config.json:ledger_timeout_s",
+      "config:deploy/config.json:webhook_retries",
+      "config:deploy/config.json:webhook_timeout_s",
+      "config:deploy/config.json:wms_lookup_s",
+      "ctrl:vx05",
+      "data:alerts_suppressed:c",
+      "data:readings_wrong:c",
+      "doc:night_lead_l.okafor",
+      "doc:postmortem",
+      "doc:recall_notice",
+      "doc:service_report_firmware_visit",
+      "firmware:c",
+      "lot:ln-20074",
+      "lot:ln-20323",
+      "lot:ln-21306",
+      "lot:ln-23567",
+      "lot:ln-23600",
+      "lot:ln-24829",
+      "lot:ln-25575",
+      "lot:ln-26954",
+      "lot:ln-27547",
+      "lot:ln-27897",
+      "lot:ln-28792",
+      "lot:ln-29003",
+      "lot:ln-29378",
+      "lot:ln-29484",
+      "msg:m0037",
+      "physical:door_open:e",
+      "ticket:t-0434",
+      "ticket:t-0439",
+      "zone:e"
+     ]
+    },
+    "edges": {
+     "hits": 10,
+     "n_pred": 88,
+     "n_truth": 15,
+     "precision": 0.11363636363636363,
+     "recall": 0.6666666666666666,
+     "f1": 0.19417475728155337,
+     "missing": [
+      [
+       "code:gateway/server.py:notify_dispatch",
+       "data:lots_wrong:e"
+      ],
+      [
+       "config:deploy/config.override.json:alert_min_severity",
+       "data:alerts_suppressed:e"
+      ],
+      [
+       "firmware:e",
+       "data:readings_wrong:e"
+      ],
+      [
+       "physical:door_prop:e",
+       "physical:excursion:e"
+      ],
+      [
+       "physical:door_prop:e",
+       "physical:trip:e"
+      ]
+     ],
+     "extra": [
+      [
+       "actor:a.larsen",
+       "config:deploy/config.override.json:alert_min_severity"
+      ],
+      [
+       "actor:e.haddad",
+       "firmware:c"
+      ],
+      [
+       "actor:e.haddad",
+       "firmware:e"
+      ],
+      [
+       "actor:l.rivera",
+       "physical:door_prop:e"
+      ],
+      [
+       "actor:r.okafor",
+       "commit:b942c48"
+      ],
+      [
+       "actor:r.okafor",
+       "ticket:t-0434"
+      ],
+      [
+       "actor:s.larsen",
+       "msg:m0037"
+      ],
+      [
+       "actor:v.larsen",
+       "data:quarantine_wrong:e"
+      ],
+      [
+       "actor:v.larsen",
+       "doc:postmortem"
+      ],
+      [
+       "code:alerting/server.py:evaluate",
+       "data:alerts_suppressed:c"
+      ],
+      [
+       "code:alerting/server.py:evaluate",
+       "data:alerts_suppressed:e"
+      ],
+      [
+       "code:billing/nightly.py:run_once",
+       "code:ledger/server.py:post_readings"
+      ],
+      [
+       "code:billing/nightly.py:zone_hours",
+       "code:billing/nightly.py:run_once"
+      ],
+      [
+       "code:common/httpd.py:_dispatch",
+       "code:ledger/server.py:get_lots"
+      ],
+      [
+       "code:common/netutil.py:http_call",
+       "code:gateway/server.py:_post_dispatch"
+      ],
+      [
+       "code:dispatch/server.py:post_jobs",
+       "code:dispatch/server.py:worker_loop"
+      ],
+      [
+       "code:dispatch/server.py:wms_pallet_lookup",
+       "code:dispatch/server.py:post_jobs"
+      ],
+      [
+       "code:dispatch/server.py:worker_loop",
+       "data:lots_wrong:e"
+      ],
+      [
+       "code:gateway/kw7_decode.py:decode_line",
+       "data:readings_wrong:c"
+      ],
+      [
+       "code:gateway/server.py:_post_dispatch",
+       "code:dispatch/server.py:post_jobs"
+      ],
+      [
+       "code:gateway/server.py:handle_line",
+       "data:frames_dropped:e"
+      ],
+      [
+       "code:gateway/server.py:notify_dispatch",
+       "code:dispatch/server.py:post_jobs"
+      ],
+      [
+       "code:gateway/server.py:stale_watch",
+       "code:ledger/server.py:post_events"
+      ],
+      [
+       "code:ledger/server.py:get_lots",
+       "code:dispatch/server.py:apply_move"
+      ],
+      [
+       "code:ledger/server.py:post_events",
+       "data:alerts_suppressed:e"
+      ],
+      [
+       "code:ledger/server.py:post_readings",
+       "code:gateway/server.py:handle_line"
+      ],
+      [
+       "commit:0a19f1e",
+       "code:dispatch/server.py:worker_loop"
+      ],
+      [
+       "commit:0e666b0",
+       "code:gateway/server.py:notify_dispatch"
+      ],
+      [
+       "commit:265272a",
+       "code:common/httpd.py:_dispatch"
+      ],
+      [
+       "commit:265272a",
+       "code:dispatch/server.py:apply_move"
+      ],
+      [
+       "commit:265272a",
+       "code:gateway/kw7_decode.py:decode_line"
+      ],
+      [
+       "commit:774b046",
+       "code:gateway/server.py:_post_dispatch"
+      ],
+      [
+       "commit:b942c48",
+       "config:alerting/routes.json:zones.c.channel"
+      ],
+      [
+       "commit:be34510",
+       "code:dispatch/server.py:wms_pallet_lookup"
+      ],
+      [
+       "commit:bf44b2d",
+       "code:gateway/server.py:stale_watch"
+      ],
+      [
+       "commit:c4cc40e",
+       "code:billing/nightly.py:run_once"
+      ],
+      [
+       "commit:cd7c07c",
+       "code:gateway/server.py:handle_line"
+      ],
+      [
+       "commit:d33eb5c",
+       "code:gateway/kw7_decode.py:decode_line"
+      ],
+      [
+       "commit:d8ba686",
+       "code:common/netutil.py:http_call"
+      ],
+      [
+       "config:alerting/routes.json:zones.c.channel",
+       "data:alerts_suppressed:c"
+      ],
+      [
+       "config:deploy/config.json:ledger_busy_timeout_s",
+       "data:frames_dropped:e"
+      ],
+      [
+       "config:deploy/config.json:ledger_timeout_s",
+       "data:frames_dropped:e"
+      ],
+      [
+       "config:deploy/config.json:webhook_retries",
+       "code:gateway/server.py:_post_dispatch"
+      ],
+      [
+       "config:deploy/config.json:webhook_timeout_s",
+       "code:gateway/server.py:_post_dispatch"
+      ],
+      [
+       "config:deploy/config.json:wms_lookup_s",
+       "code:dispatch/server.py:wms_pallet_lookup"
+      ],
+      [
+       "config:deploy/config.override.json:alert_min_severity",
+       "code:alerting/server.py:evaluate"
+      ],
+      [
+       "data:lots_wrong:e",
+       "doc:postmortem"
+      ],
+      [
+       "data:readings_wrong:c",
+       "data:alerts_suppressed:c"
+      ],
+      [
+       "data:readings_wrong:c",
+       "ticket:t-0439"
+      ],
+      [
+       "data:readings_wrong:e",
+       "doc:postmortem"
+      ],
+      [
+       "data:readings_wrong:e",
+       "ticket:t-0439"
+      ],
+      [
+       "doc:night_lead_l.okafor",
+       "doc:postmortem"
+      ],
+      [
+       "doc:postmortem",
+       "data:quarantine_wrong:e"
+      ],
+      [
+       "doc:recall_notice",
+       "doc:postmortem"
+      ],
+      [
+       "doc:service_report_firmware_visit",
+       "ticket:t-0439"
+      ],
+      [
+       "firmware:c",
+       "code:gateway/kw7_decode.py:decode_line"
+      ],
+      [
+       "firmware:e",
+       "code:gateway/kw7_decode.py:decode_line"
+      ],
+      [
+       "msg:m0037",
+       "data:alerts_suppressed:c"
+      ],
+      [
+       "msg:m0037",
+       "data:alerts_suppressed:e"
+      ],
+      [
+       "physical:door_open:e",
+       "physical:excursion:e"
+      ],
+      [
+       "physical:door_open:e",
+       "physical:trip:e"
+      ],
+      [
+       "physical:door_prop:e",
+       "physical:door_open:e"
+      ],
+      [
+       "physical:excursion:e",
+       "lot:ln-20074"
+      ],
+      [
+       "physical:excursion:e",
+       "lot:ln-20323"
+      ],
+      [
+       "physical:excursion:e",
+       "lot:ln-21306"
+      ],
+      [
+       "physical:excursion:e",
+       "lot:ln-23567"
+      ],
+      [
+       "physical:excursion:e",
+       "lot:ln-23600"
+      ],
+      [
+       "physical:excursion:e",
+       "lot:ln-24829"
+      ],
+      [
+       "physical:excursion:e",
+       "lot:ln-25575"
+      ],
+      [
+       "physical:excursion:e",
+       "lot:ln-26954"
+      ],
+      [
+       "physical:excursion:e",
+       "lot:ln-27547"
+      ],
+      [
+       "physical:excursion:e",
+       "lot:ln-27897"
+      ],
+      [
+       "physical:excursion:e",
+       "lot:ln-28792"
+      ],
+      [
+       "physical:excursion:e",
+       "lot:ln-29003"
+      ],
+      [
+       "physical:excursion:e",
+       "lot:ln-29378"
+      ],
+      [
+       "physical:excursion:e",
+       "lot:ln-29484"
+      ],
+      [
+       "ticket:t-0434",
+       "data:frames_dropped:e"
+      ],
+      [
+       "ticket:t-0439",
+       "commit:b942c48"
+      ]
+     ]
+    },
+    "affected_lots": {
+     "hits": 14,
+     "n_pred": 14,
+     "n_truth": 14,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "missing": [],
+     "extra": []
+    },
+    "roots_hits": 0,
+    "n_roots": 7,
+    "n_roots_pred": 11,
+    "roots_missing": [
+     "code:dispatch/server.py:apply_move",
+     "code:gateway/kw7_decode.py:decode_line",
+     "code:gateway/server.py:notify_dispatch",
+     "commit:b942c48",
+     "config:deploy/config.override.json:alert_min_severity",
+     "firmware:e",
+     "physical:door_prop:e"
+    ],
+    "roots_extra": [
+     "actor:a.larsen",
+     "actor:e.haddad",
+     "actor:l.rivera",
+     "actor:r.okafor",
+     "actor:s.larsen",
+     "actor:v.larsen",
+     "commit:265272a",
+     "commit:c4cc40e",
+     "commit:cd7c07c",
+     "commit:d33eb5c",
+     "ticket:t-0434"
+    ],
+    "decoys_included": 2,
+    "decoys_included_list": [
+     "code:billing/nightly.py:run_once",
+     "doc:recall_notice"
+    ],
+    "decoys_rejected_hits": 4,
+    "n_decoys": 5,
+    "excursion": {
+     "pred": {
+      "zone": "E",
+      "start": "2026-05-24T00:48:00Z",
+      "end": "2026-05-24T04:48:00Z"
+     },
+     "value": {
+      "zone": "E",
+      "start": "2026-05-24T01:25:00Z",
+      "end": "2026-05-24T09:36:00Z"
+     },
+     "tol_s": 900,
+     "zone_ok": true,
+     "start_ok": false,
+     "end_ok": false,
+     "start_delta_s": 2220.0,
+     "end_delta_s": 17280.0,
+     "pts": 0.0
+    },
+    "unmatched_ids": []
+   },
+   "timeline": {
+    "score": 0.296914498,
+    "events": {
+     "matched": 15,
+     "n_truth": 18,
+     "n_pred": 251,
+     "recall": 0.8333333333333334,
+     "precision": 0.05976095617529881,
+     "f1": 0.11152416356877323,
+     "wrong_actor": 0,
+     "wrong_time": 1,
+     "unparseable_t": 0,
+     "pairs": [
+      {
+       "pred_index": 77,
+       "event_id": "event:purchase_wedge",
+       "delta_s": 0.0
+      },
+      {
+       "pred_index": 100,
+       "event_id": "event:flash_incident_zone",
+       "delta_s": 0.0
+      },
+      {
+       "pred_index": 102,
+       "event_id": "event:flash_other_zone",
+       "delta_s": 0.0
+      },
+      {
+       "pred_index": 103,
+       "event_id": "event:ticket_minus40",
+       "delta_s": 0.0
+      },
+      {
+       "pred_index": 109,
+       "event_id": "event:door_prop_earlier_1",
+       "delta_s": 0.0
+      },
+      {
+       "pred_index": 139,
+       "event_id": "event:override_deploy",
+       "delta_s": 0.0
+      },
+      {
+       "pred_index": 151,
+       "event_id": "event:archive_channel",
+       "delta_s": 0.0
+      },
+      {
+       "pred_index": 162,
+       "event_id": "event:shift_start_temp_incident_night",
+       "delta_s": 0.0
+      },
+      {
+       "pred_index": 165,
+       "event_id": "event:door_prop_incident",
+       "delta_s": 0.0
+      },
+      {
+       "pred_index": 244,
+       "event_id": "event:lab_ticket",
+       "delta_s": 0.0
+      },
+      {
+       "pred_index": 248,
+       "event_id": "event:quarantine",
+       "delta_s": 0.0
+      },
+      {
+       "pred_index": 249,
+       "event_id": "event:postmortem_publish",
+       "delta_s": 0.0
+      },
+      {
+       "pred_index": 46,
+       "event_id": "event:billing_commit",
+       "delta_s": 9.0
+      },
+      {
+       "pred_index": 126,
+       "event_id": "event:hotfix_commit",
+       "delta_s": 10.0
+      },
+      {
+       "pred_index": 167,
+       "event_id": "event:door_close_incident",
+       "delta_s": 60.0
+      }
+     ],
+     "unmatched_truth": [
+      "event:photo_wedge",
+      "event:door_prop_earlier_2",
+      "event:door_prop_earlier_3"
+     ]
+    },
+    "offsets": {
+     "channels": {
+      "badge": {
+       "pred": -11,
+       "value": -11,
+       "hit": true
+      },
+      "exif": {
+       "pred": 8,
+       "value": -60,
+       "hit": false
+      },
+      "cctv": {
+       "pred": 4,
+       "value": 5,
+       "hit": true
+      },
+      "forklift": {
+       "pred": 0,
+       "value": 0,
+       "hit": true
+      },
+      "chat": {
+       "pred": 0,
+       "value": 0,
+       "hit": true
+      },
+      "tickets": {
+       "pred": 0,
+       "value": 0,
+       "hit": true
+      },
+      "git": {
+       "pred": 0,
+       "value": 0,
+       "hit": true
+      },
+      "submeter": {
+       "pred": 0,
+       "value": 0,
+       "hit": true
+      },
+      "gateway": {
+       "pred": 0,
+       "value": 0,
+       "hit": true
+      },
+      "probe": {
+       "pred": 0,
+       "value": 0,
+       "hit": true
+      }
+     },
+     "hits": 9,
+     "n_channels": 10,
+     "acc": 0.9,
+     "extra_channels": []
+    },
+    "claims": {
+     "claims": [
+      {
+       "claim_id": "fc01",
+       "doc_id": "doc:service_report_firmware_visit",
+       "text_source": "evidence",
+       "matched_pred_index": 12,
+       "overlap": 1.0,
+       "hit": true
+      },
+      {
+       "claim_id": "fc02",
+       "doc_id": "doc:night_lead",
+       "text_source": "evidence",
+       "matched_pred_index": null,
+       "overlap": null,
+       "hit": false
+      },
+      {
+       "claim_id": "fc03",
+       "doc_id": "doc:temp_worker",
+       "text_source": "evidence",
+       "matched_pred_index": null,
+       "overlap": null,
+       "hit": false
+      },
+      {
+       "claim_id": "fc04",
+       "doc_id": "doc:warehouse_manager",
+       "text_source": "evidence",
+       "matched_pred_index": null,
+       "overlap": null,
+       "hit": false
+      },
+      {
+       "claim_id": "fc05",
+       "doc_id": "doc:ops_engineer",
+       "text_source": "evidence",
+       "matched_pred_index": null,
+       "overlap": null,
+       "hit": false
+      },
+      {
+       "claim_id": "fc06",
+       "doc_id": "doc:sre_oncall",
+       "text_source": "evidence",
+       "matched_pred_index": null,
+       "overlap": null,
+       "hit": false
+      },
+      {
+       "claim_id": "fc07",
+       "doc_id": "doc:receiving_clerk",
+       "text_source": "evidence",
+       "matched_pred_index": null,
+       "overlap": null,
+       "hit": false
+      },
+      {
+       "claim_id": "fc08",
+       "doc_id": "doc:night_lead",
+       "text_source": "evidence",
+       "matched_pred_index": null,
+       "overlap": null,
+       "hit": false
+      },
+      {
+       "claim_id": "fc09",
+       "doc_id": "doc:chat_export",
+       "text_source": "evidence",
+       "matched_pred_index": 18,
+       "overlap": 1.0,
+       "hit": true
+      },
+      {
+       "claim_id": "fc10",
+       "doc_id": "doc:chat_export",
+       "text_source": "evidence",
+       "matched_pred_index": 19,
+       "overlap": 1.0,
+       "hit": true
+      },
+      {
+       "claim_id": "fc11",
+       "doc_id": "doc:postmortem",
+       "text_source": "evidence",
+       "matched_pred_index": 15,
+       "overlap": 1.0,
+       "hit": true
+      },
+      {
+       "claim_id": "fc12",
+       "doc_id": "doc:postmortem",
+       "text_source": "evidence",
+       "matched_pred_index": null,
+       "overlap": null,
+       "hit": false
+      }
+     ],
+     "hits": 4,
+     "n_truth": 12,
+     "n_pred": 20,
+     "precision": 0.2,
+     "recall": 0.3333333333333333,
+     "f1": 0.25,
+     "unmatched_pred_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      13,
+      14,
+      16,
+      17
+     ]
+    }
+   }
+  },
+  "aggregate": 0.655635664,
+  "solved": {
+   "mechanism": false,
+   "notation": true,
+   "causal_chain": false,
+   "timeline": false
+  },
+  "solved_all": false,
+  "calibration": {
+   "sections": {
+    "mechanism": {
+     "confidence": 0.87,
+     "solved": false,
+     "sq_err": 0.7569
+    },
+    "notation": {
+     "confidence": 0.98,
+     "solved": true,
+     "sq_err": 0.0004000000000000007
+    },
+    "causal_chain": {
+     "confidence": 0.84,
+     "solved": false,
+     "sq_err": 0.7055999999999999
+    },
+    "timeline": {
+     "confidence": 0.76,
+     "solved": false,
+     "sq_err": 0.5776
+    }
+   },
+   "brier": 0.510125,
+   "n_scored": 4,
+   "confidence_missing": 0
+  }
+ },
+ "authored": {
+  "weights": {
+   "mechanism": 0.25,
+   "notation": 0.25,
+   "causal_chain": 0.25,
+   "timeline": 0.25
+  },
+  "section_mix": {
+   "mechanism": {
+    "param_item": 1.0,
+    "rule_item": 1.0
+   },
+   "notation": {
+    "glossary_acc": 0.45,
+    "affix_acc": 0.1,
+    "heldout_mean": 0.4,
+    "v34": 0.05
+   },
+   "causal_chain": {
+    "f1_nodes": 0.4,
+    "f1_edges": 0.3,
+    "f1_lots": 0.15,
+    "excursion": 0.15
+   },
+   "timeline": {
+    "f1": 0.6,
+    "offsets_acc": 0.2,
+    "claims_f1": 0.2
+   }
+  },
+  "solved_thresholds": {
+   "mechanism": {
+    "params_acc": 0.8,
+    "rules_all_correct": true
+   },
+   "notation": {
+    "glossary_acc": 0.8,
+    "heldout_mean": 0.8
+   },
+   "causal_chain": {
+    "f1_nodes": 0.75,
+    "roots_all": true
+   },
+   "timeline": {
+    "f1": 0.7
+   }
+  },
+  "offset_tol_min": 2,
+  "half_credit_factor": 2.0,
+  "half_credit_pts": 0.5,
+  "excursion_one_bound_pts": 0.5,
+  "claim_min_overlap": 0.6,
+  "claim_match_rule": "doc_id equal after strip().lower(); the quote and the truth claim text (evidence doc sliced at the truth span when readable, else truth.text) are whitespace-collapsed, lower-cased and stripped; hit if the longest common contiguous substring (difflib.SequenceMatcher.find_longest_match, autojunk off) has length >= claim_min_overlap * len(shorter string); truth claims and predicted quotes are assigned one-to-one greedily by descending overlap ratio",
+  "vacuous_component_score": 1.0,
+  "id_prefix_pattern": "^[a-z_]+:",
+  "calibration_bins": 5,
+  "tolerance_source": "truth.json"
+ }
+}

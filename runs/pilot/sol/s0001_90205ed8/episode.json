@@ -1,0 +1,45 @@
+{
+ "model": "sol",
+ "model_slug": "openai/gpt-5.6-sol",
+ "model_id_observed": "openai/gpt-5.6-sol",
+ "route": "or",
+ "inst_id": "s0001_90205ed8",
+ "tier": "default",
+ "end_reason": "stopped",
+ "end_detail": "no tool call; answer.json schema-valid",
+ "n_tool_calls": 92,
+ "n_validate_calls": 2,
+ "wall_s": 779.3,
+ "cost_usd": 1.98733,
+ "cost_source": "openrouter_usage",
+ "cost_estimate_usd": 38.179746,
+ "invalid_markers": [],
+ "started": "2026-09-19T19:44:31-0400",
+ "ended": "2026-09-19T19:57:31-0400",
+ "via": "openrouter",
+ "effort": "high",
+ "caps": {
+  "max_tool_calls": 600,
+  "wall_s": 18000.0,
+  "budget_usd": 150.0
+ },
+ "store": "/var/tmp/.sbx/e76044900f448d4c",
+ "usage_totals": {
+  "input_tokens": 6014375,
+  "cache_read": 5845677,
+  "cache_write": 0,
+  "output_tokens": 32031
+ },
+ "max_context_tokens": 168115,
+ "n_tool_calls_stream": 92,
+ "n_assistant_messages": 54,
+ "nudged": false,
+ "n_snapshots": 5,
+ "answer_from": "0005.json",
+ "answer_present": true,
+ "grader": {
+  "ran": true,
+  "rc": 0,
+  "note": "ok"
+ }
+}

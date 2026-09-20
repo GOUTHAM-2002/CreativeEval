@@ -1,0 +1,2509 @@
+{
+  "schema_version": "1",
+  "mechanism": {
+    "parameters": {
+      "defrost.R_hours": 10,
+      "defrost.len_min": 27,
+      "defrost.heat_degC": 4.15,
+      "trip.d_min": 8,
+      "lockout.N": 5,
+      "lockout.W_min": 60,
+      "lockout.L_min": 60,
+      "door_gain": 3.36,
+      "c_adj": 0.0002895,
+      "bias.A": -0.75,
+      "bias.B": 0.125,
+      "bias.C": 0.73,
+      "bias.D": -0.39,
+      "bias.E": -0.72,
+      "bias.F": 0.2,
+      "k_cool.A": 0.12076,
+      "k_leak.A": 0.001033,
+      "k_cool.B": 0.08209,
+      "k_leak.B": 0.0009938,
+      "k_cool.C": 0.133,
+      "k_leak.C": 0.0011169,
+      "k_cool.D": 0.02976,
+      "k_leak.D": 0.0015007,
+      "k_cool.E": 0.11531,
+      "k_leak.E": 0.0011012,
+      "k_cool.F": 0.02957,
+      "k_leak.F": 0.0017526,
+      "H.A": 1.5,
+      "H.B": 1.66,
+      "H.C": 2.36,
+      "H.D": 2.18,
+      "H.E": 2.21,
+      "H.F": 2.35
+    },
+    "rules": {
+      "defrost_rule_type": "runtime_hours",
+      "stagger_order": [
+        "C",
+        "F",
+        "D",
+        "B",
+        "A",
+        "E"
+      ],
+      "adjacency_pairs": [
+        [
+          "A",
+          "F"
+        ],
+        [
+          "F",
+          "E"
+        ],
+        [
+          "A",
+          "B"
+        ],
+        [
+          "F",
+          "C"
+        ],
+        [
+          "E",
+          "D"
+        ],
+        [
+          "B",
+          "C"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "B",
+          "E"
+        ]
+      ]
+    }
+  },
+  "notation": {
+    "glossary": {
+      "vaka": "HDR",
+      "naha": "ZONE_A",
+      "kawo": "ZONE_B",
+      "nomo": "ZONE_C",
+      "bare": "ZONE_D",
+      "vepe": "ZONE_E",
+      "kobo": "ZONE_F",
+      "wemo": "RUN",
+      "wohe": "IDLE",
+      "mora": "AIR_TEMP",
+      "wobe": "SETPOINT",
+      "bame": "COMPRESSOR",
+      "keho": "READ",
+      "de": "DIGIT_0",
+      "te": "DIGIT_1",
+      "zo": "DIGIT_2",
+      "sa": "DIGIT_3",
+      "ze": "DIGIT_4",
+      "to": "DIGIT_5",
+      "za": "DIGIT_6",
+      "se": "DIGIT_7",
+      "do": "DIGIT_8",
+      "so": "DIGIT_9",
+      "ta": "DIGIT_10",
+      "maha": "DEFROST",
+      "hamo": "DOOR",
+      "wewa": "HEATER",
+      "reve": "TRIP",
+      "vawe": "LOCKOUT",
+      "bahe": "COIL_TEMP",
+      "robo": "RECOVERY",
+      "rane": "DISCH_PRESSURE",
+      "neka": "FIRMWARE",
+      "kono": "ABS",
+      "mabo": "ENTER",
+      "mava": "EXIT",
+      "howa": "OPEN",
+      "koha": "CLOSED",
+      "heho": "FAULT",
+      "bepa": "BOOT",
+      "mera": "ON",
+      "keha": "OFF",
+      "pamo": "DEFROST",
+      "wapo": "TRIP",
+      "wama": "LOCKOUT",
+      "weko": "DOOR"
+    },
+    "affixes": {
+      "na": "ZONE",
+      "ka": "ZONE",
+      "no": "ZONE",
+      "ba": "ZONE",
+      "ve": "ZONE",
+      "ko": "ZONE",
+      "ga": "ASPECT_EVENT",
+      "go": "ASPECT_STATE"
+    },
+    "v34_change": "absolute_temp",
+    "heldout": [
+      {
+        "seq": 1023,
+        "ts": "2026-05-23T22:35:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -25.0
+      },
+      {
+        "seq": 1024,
+        "ts": "2026-05-23T22:40:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -25.0
+      },
+      {
+        "seq": 1025,
+        "ts": "2026-05-23T22:45:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -25.4
+      },
+      {
+        "seq": 1026,
+        "ts": "2026-05-23T22:50:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -25.6
+      },
+      {
+        "seq": 1027,
+        "ts": "2026-05-23T22:55:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -25.1
+      },
+      {
+        "seq": 1028,
+        "ts": "2026-05-23T23:00:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -25.1
+      },
+      {
+        "seq": 1029,
+        "ts": "2026-05-23T23:05:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -24.7
+      },
+      {
+        "seq": 1030,
+        "ts": "2026-05-23T23:10:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -24.5
+      },
+      {
+        "seq": 1031,
+        "ts": "2026-05-23T23:15:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -23.9
+      },
+      {
+        "seq": 1032,
+        "ts": "2026-05-23T23:20:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -23.9
+      },
+      {
+        "seq": 1033,
+        "ts": "2026-05-23T23:25:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -23.9
+      },
+      {
+        "seq": 1034,
+        "ts": "2026-05-23T23:30:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -23.6
+      },
+      {
+        "seq": 1035,
+        "ts": "2026-05-23T23:35:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -24.4
+      },
+      {
+        "seq": 1036,
+        "ts": "2026-05-23T23:40:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -24.7
+      },
+      {
+        "seq": 1037,
+        "ts": "2026-05-23T23:45:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -24.2
+      },
+      {
+        "seq": 1038,
+        "ts": "2026-05-23T23:50:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -24.8
+      },
+      {
+        "seq": 1039,
+        "ts": "2026-05-23T23:55:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -24.8
+      },
+      {
+        "seq": 1040,
+        "ts": "2026-05-24T00:00:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -25.5
+      },
+      {
+        "seq": 1041,
+        "ts": "2026-05-24T00:05:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -25.4
+      },
+      {
+        "seq": 1042,
+        "ts": "2026-05-24T00:10:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -25.6
+      },
+      {
+        "seq": 1043,
+        "ts": "2026-05-24T00:15:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -25.8
+      },
+      {
+        "seq": 1044,
+        "ts": "2026-05-24T00:20:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -25.4
+      },
+      {
+        "seq": 1045,
+        "ts": "2026-05-24T00:25:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -25.4
+      },
+      {
+        "seq": 1046,
+        "ts": "2026-05-24T00:30:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -24.7
+      },
+      {
+        "seq": 1047,
+        "ts": "2026-05-24T00:35:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -24.6
+      },
+      {
+        "seq": 1048,
+        "ts": "2026-05-24T00:40:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -24.3
+      },
+      {
+        "seq": 1049,
+        "ts": "2026-05-24T00:45:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -23.5
+      },
+      {
+        "seq": 1050,
+        "ts": "2026-05-24T00:48:00Z",
+        "zone": "E",
+        "event": "DOOR",
+        "value": null
+      },
+      {
+        "seq": 1051,
+        "ts": "2026-05-24T00:50:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -23.3
+      },
+      {
+        "seq": 1052,
+        "ts": "2026-05-24T00:55:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -22.8
+      },
+      {
+        "seq": 1053,
+        "ts": "2026-05-24T00:56:00Z",
+        "zone": "E",
+        "event": "TRIP",
+        "value": null
+      },
+      {
+        "seq": 1054,
+        "ts": "2026-05-24T01:00:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -22.8
+      },
+      {
+        "seq": 1055,
+        "ts": "2026-05-24T01:05:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -22.0
+      },
+      {
+        "seq": 1056,
+        "ts": "2026-05-24T01:08:00Z",
+        "zone": "E",
+        "event": "TRIP",
+        "value": null
+      },
+      {
+        "seq": 1057,
+        "ts": "2026-05-24T01:10:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -22.3
+      },
+      {
+        "seq": 1058,
+        "ts": "2026-05-24T01:15:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -21.1
+      },
+      {
+        "seq": 1059,
+        "ts": "2026-05-24T01:20:00Z",
+        "zone": "E",
+        "event": "TRIP",
+        "value": null
+      },
+      {
+        "seq": 1060,
+        "ts": "2026-05-24T01:20:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -20.9
+      },
+      {
+        "seq": 1061,
+        "ts": "2026-05-24T01:25:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -20.5
+      },
+      {
+        "seq": 1062,
+        "ts": "2026-05-24T01:30:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -20.6
+      },
+      {
+        "seq": 1063,
+        "ts": "2026-05-24T01:32:00Z",
+        "zone": "E",
+        "event": "TRIP",
+        "value": null
+      },
+      {
+        "seq": 1064,
+        "ts": "2026-05-24T01:35:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -19.8
+      },
+      {
+        "seq": 1065,
+        "ts": "2026-05-24T01:40:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -18.9
+      },
+      {
+        "seq": 1066,
+        "ts": "2026-05-24T01:44:00Z",
+        "zone": "E",
+        "event": "TRIP",
+        "value": null
+      },
+      {
+        "seq": 1067,
+        "ts": "2026-05-24T01:44:00Z",
+        "zone": "E",
+        "event": "LOCKOUT",
+        "value": null
+      }
+    ]
+  },
+  "causal_chain": {
+    "roots": [
+      "actor:l.rivera",
+      "actor:e.haddad",
+      "commit:d33eb5c",
+      "ticket:T-0434",
+      "commit:c4cc40e",
+      "commit:cd7c07c",
+      "commit:265272a",
+      "actor:r.okafor",
+      "actor:s.larsen",
+      "actor:a.larsen",
+      "actor:v.larsen"
+    ],
+    "nodes": [
+      "actor:a.larsen",
+      "actor:e.haddad",
+      "actor:l.rivera",
+      "actor:r.okafor",
+      "actor:s.larsen",
+      "actor:v.larsen",
+      "code:alerting/server.py:evaluate",
+      "code:billing/nightly.py:run_once",
+      "code:billing/nightly.py:zone_hours",
+      "code:common/httpd.py:_dispatch",
+      "code:dispatch/server.py:apply_move",
+      "code:dispatch/server.py:post_jobs",
+      "code:dispatch/server.py:wms_pallet_lookup",
+      "code:dispatch/server.py:worker_loop",
+      "code:gateway/kw7_decode.py:decode_line",
+      "code:gateway/server.py:_post_dispatch",
+      "code:gateway/server.py:handle_line",
+      "code:gateway/server.py:notify_dispatch",
+      "code:gateway/server.py:stale_watch",
+      "code:ledger/server.py:get_lots",
+      "code:ledger/server.py:post_events",
+      "code:ledger/server.py:post_readings",
+      "commit:0a19f1e",
+      "commit:0e666b0",
+      "commit:265272a",
+      "commit:774b046",
+      "commit:b942c48",
+      "commit:be34510",
+      "commit:c4cc40e",
+      "commit:cd7c07c",
+      "commit:d33eb5c",
+      "config:alerting/routes.json:zones.C.channel",
+      "config:alerting/routes.json:zones.E.channel",
+      "config:deploy/config.json:LEDGER_BUSY_TIMEOUT_S",
+      "config:deploy/config.json:LEDGER_TIMEOUT_S",
+      "config:deploy/config.override.json:ALERT_MIN_SEVERITY",
+      "ctrl:VX05",
+      "data:alerts_suppressed:C",
+      "data:alerts_suppressed:E",
+      "data:frames_dropped:E",
+      "data:lots_wrong:E",
+      "data:quarantine_wrong:E",
+      "data:readings_wrong:C",
+      "data:readings_wrong:E",
+      "doc:night_lead_l.okafor",
+      "doc:postmortem",
+      "doc:recall_notice",
+      "doc:service_report_firmware_visit",
+      "firmware:C",
+      "firmware:E",
+      "lot:LN-20074",
+      "lot:LN-20323",
+      "lot:LN-21306",
+      "lot:LN-23567",
+      "lot:LN-23600",
+      "lot:LN-24829",
+      "lot:LN-25575",
+      "lot:LN-26954",
+      "lot:LN-27547",
+      "lot:LN-27897",
+      "lot:LN-28792",
+      "lot:LN-29003",
+      "lot:LN-29378",
+      "lot:LN-29484",
+      "msg:m0037",
+      "physical:door_open:E",
+      "physical:door_prop:E",
+      "physical:excursion:E",
+      "physical:lockout:E",
+      "physical:trip:E",
+      "ticket:T-0434",
+      "ticket:T-0439",
+      "zone:E"
+    ],
+    "edges": [
+      [
+        "actor:l.rivera",
+        "physical:door_prop:E"
+      ],
+      [
+        "physical:door_prop:E",
+        "physical:door_open:E"
+      ],
+      [
+        "physical:door_open:E",
+        "physical:trip:E"
+      ],
+      [
+        "physical:trip:E",
+        "physical:lockout:E"
+      ],
+      [
+        "physical:lockout:E",
+        "physical:excursion:E"
+      ],
+      [
+        "physical:door_open:E",
+        "physical:excursion:E"
+      ],
+      [
+        "ticket:T-0434",
+        "data:frames_dropped:E"
+      ],
+      [
+        "physical:door_prop:E",
+        "data:frames_dropped:E"
+      ],
+      [
+        "data:frames_dropped:E",
+        "data:alerts_suppressed:E"
+      ],
+      [
+        "actor:r.okafor",
+        "ticket:T-0434"
+      ],
+      [
+        "actor:e.haddad",
+        "firmware:C"
+      ],
+      [
+        "firmware:C",
+        "code:gateway/kw7_decode.py:decode_line"
+      ],
+      [
+        "code:gateway/kw7_decode.py:decode_line",
+        "data:readings_wrong:C"
+      ],
+      [
+        "data:readings_wrong:C",
+        "data:alerts_suppressed:C"
+      ],
+      [
+        "commit:d33eb5c",
+        "code:gateway/kw7_decode.py:decode_line"
+      ],
+      [
+        "data:readings_wrong:C",
+        "ticket:T-0439"
+      ],
+      [
+        "ticket:T-0439",
+        "commit:b942c48"
+      ],
+      [
+        "commit:b942c48",
+        "config:alerting/routes.json:zones.C.channel"
+      ],
+      [
+        "config:alerting/routes.json:zones.C.channel",
+        "data:alerts_suppressed:C"
+      ],
+      [
+        "actor:r.okafor",
+        "commit:b942c48"
+      ],
+      [
+        "actor:s.larsen",
+        "msg:m0037"
+      ],
+      [
+        "msg:m0037",
+        "data:alerts_suppressed:C"
+      ],
+      [
+        "actor:a.larsen",
+        "config:deploy/config.override.json:ALERT_MIN_SEVERITY"
+      ],
+      [
+        "config:deploy/config.override.json:ALERT_MIN_SEVERITY",
+        "code:alerting/server.py:evaluate"
+      ],
+      [
+        "code:alerting/server.py:evaluate",
+        "data:alerts_suppressed:C"
+      ],
+      [
+        "code:gateway/server.py:stale_watch",
+        "code:ledger/server.py:post_events"
+      ],
+      [
+        "actor:e.haddad",
+        "firmware:E"
+      ],
+      [
+        "firmware:E",
+        "code:gateway/kw7_decode.py:decode_line"
+      ],
+      [
+        "code:gateway/kw7_decode.py:decode_line",
+        "data:readings_wrong:E"
+      ],
+      [
+        "data:readings_wrong:E",
+        "data:alerts_suppressed:E"
+      ],
+      [
+        "data:readings_wrong:E",
+        "ticket:T-0439"
+      ],
+      [
+        "commit:b942c48",
+        "config:alerting/routes.json:zones.E.channel"
+      ],
+      [
+        "config:alerting/routes.json:zones.E.channel",
+        "data:alerts_suppressed:E"
+      ],
+      [
+        "msg:m0037",
+        "data:alerts_suppressed:E"
+      ],
+      [
+        "code:alerting/server.py:evaluate",
+        "data:alerts_suppressed:E"
+      ],
+      [
+        "commit:c4cc40e",
+        "code:billing/nightly.py:run_once"
+      ],
+      [
+        "code:billing/nightly.py:run_once",
+        "code:ledger/server.py:post_readings"
+      ],
+      [
+        "code:ledger/server.py:post_readings",
+        "code:gateway/server.py:handle_line"
+      ],
+      [
+        "code:gateway/server.py:handle_line",
+        "data:frames_dropped:E"
+      ],
+      [
+        "code:billing/nightly.py:zone_hours",
+        "code:billing/nightly.py:run_once"
+      ],
+      [
+        "commit:cd7c07c",
+        "code:gateway/server.py:handle_line"
+      ],
+      [
+        "config:deploy/config.json:LEDGER_TIMEOUT_S",
+        "data:frames_dropped:E"
+      ],
+      [
+        "config:deploy/config.json:LEDGER_BUSY_TIMEOUT_S",
+        "data:frames_dropped:E"
+      ],
+      [
+        "commit:265272a",
+        "code:common/httpd.py:_dispatch"
+      ],
+      [
+        "code:common/httpd.py:_dispatch",
+        "code:ledger/server.py:get_lots"
+      ],
+      [
+        "code:ledger/server.py:get_lots",
+        "code:dispatch/server.py:apply_move"
+      ],
+      [
+        "code:dispatch/server.py:apply_move",
+        "data:lots_wrong:E"
+      ],
+      [
+        "data:lots_wrong:E",
+        "data:quarantine_wrong:E"
+      ],
+      [
+        "code:dispatch/server.py:worker_loop",
+        "data:lots_wrong:E"
+      ],
+      [
+        "commit:0a19f1e",
+        "code:dispatch/server.py:worker_loop"
+      ],
+      [
+        "actor:v.larsen",
+        "data:quarantine_wrong:E"
+      ],
+      [
+        "data:lots_wrong:E",
+        "doc:postmortem"
+      ],
+      [
+        "doc:postmortem",
+        "data:quarantine_wrong:E"
+      ],
+      [
+        "doc:recall_notice",
+        "doc:postmortem"
+      ],
+      [
+        "doc:night_lead_l.okafor",
+        "doc:postmortem"
+      ],
+      [
+        "actor:v.larsen",
+        "doc:postmortem"
+      ],
+      [
+        "doc:service_report_firmware_visit",
+        "ticket:T-0439"
+      ],
+      [
+        "commit:be34510",
+        "code:dispatch/server.py:wms_pallet_lookup"
+      ],
+      [
+        "code:dispatch/server.py:wms_pallet_lookup",
+        "code:dispatch/server.py:post_jobs"
+      ],
+      [
+        "commit:774b046",
+        "code:gateway/server.py:_post_dispatch"
+      ],
+      [
+        "code:gateway/server.py:_post_dispatch",
+        "code:dispatch/server.py:post_jobs"
+      ],
+      [
+        "commit:0e666b0",
+        "code:gateway/server.py:notify_dispatch"
+      ],
+      [
+        "code:gateway/server.py:notify_dispatch",
+        "code:dispatch/server.py:post_jobs"
+      ],
+      [
+        "physical:excursion:E",
+        "lot:LN-20074"
+      ],
+      [
+        "physical:excursion:E",
+        "lot:LN-20323"
+      ],
+      [
+        "physical:excursion:E",
+        "lot:LN-21306"
+      ],
+      [
+        "physical:excursion:E",
+        "lot:LN-23567"
+      ],
+      [
+        "physical:excursion:E",
+        "lot:LN-23600"
+      ],
+      [
+        "physical:excursion:E",
+        "lot:LN-24829"
+      ],
+      [
+        "physical:excursion:E",
+        "lot:LN-25575"
+      ],
+      [
+        "physical:excursion:E",
+        "lot:LN-26954"
+      ],
+      [
+        "physical:excursion:E",
+        "lot:LN-27547"
+      ],
+      [
+        "physical:excursion:E",
+        "lot:LN-27897"
+      ],
+      [
+        "physical:excursion:E",
+        "lot:LN-28792"
+      ],
+      [
+        "physical:excursion:E",
+        "lot:LN-29378"
+      ],
+      [
+        "physical:excursion:E",
+        "lot:LN-29484"
+      ],
+      [
+        "physical:excursion:E",
+        "lot:LN-29003"
+      ]
+    ],
+    "decoys_rejected": [
+      "physical:compressor_fault:E",
+      "physical:sensor_fault:E",
+      "physical:sensor_fault:C",
+      "physical:power_loss:E",
+      "commit:725e3f3",
+      "doc:recall_notice",
+      "doc:hr_note",
+      "ticket:T-0443",
+      "ticket:T-0445",
+      "ticket:T-0447",
+      "ticket:T-0450",
+      "ticket:T-0453",
+      "ticket:T-0454"
+    ],
+    "affected_lots": [
+      "lot:LN-20074",
+      "lot:LN-20323",
+      "lot:LN-21306",
+      "lot:LN-23567",
+      "lot:LN-23600",
+      "lot:LN-24829",
+      "lot:LN-25575",
+      "lot:LN-26954",
+      "lot:LN-27547",
+      "lot:LN-27897",
+      "lot:LN-28792",
+      "lot:LN-29003",
+      "lot:LN-29378",
+      "lot:LN-29484"
+    ],
+    "excursion": {
+      "zone": "E",
+      "start": "2026-05-24T01:44:00Z",
+      "end": "2026-05-24T08:00:00Z"
+    }
+  },
+  "timeline": {
+    "events": [
+      {
+        "actor": "actor:d.whitcombe",
+        "action": "commit",
+        "t": "2025-08-17T21:26:00Z",
+        "ref": "commit:265272a initial import: ledger service and shared http/config helpers"
+      },
+      {
+        "actor": "actor:d.whitcombe",
+        "action": "commit",
+        "t": "2025-09-16T23:29:00Z",
+        "ref": "commit:d33eb5c gateway: partial VX-9 telegram decoder from unit 01 bench captures"
+      },
+      {
+        "actor": "actor:d.whitcombe",
+        "action": "commit",
+        "t": "2025-09-18T23:16:00Z",
+        "ref": "commit:cd7c07c gateway: tcp link handler, ack after ledger write"
+      },
+      {
+        "actor": "actor:r.okafor",
+        "action": "commit",
+        "t": "2025-10-05T22:46:00Z",
+        "ref": "commit:0a19f1e dispatch: reconciliation queue with worker pool"
+      },
+      {
+        "actor": "actor:a.larsen",
+        "action": "commit",
+        "t": "2025-11-07T17:54:00Z",
+        "ref": "commit:c4cc40e billing: nightly zone-hours rollup (exclusive snapshot of the ledger file)"
+      },
+      {
+        "actor": "actor:l.okafor",
+        "action": "ticket_open",
+        "t": "2025-12-16T00:00:00Z",
+        "ref": "T-0434: door held fully open interrupts VX05 link; subsequently reproduced by r.okafor and deferred."
+      },
+      {
+        "actor": "actor:r.okafor",
+        "action": "statement",
+        "t": "2025-12-17T00:00:00Z",
+        "ref": "T-0434: reproduced pinched door-frame conduit fault; repair deferred."
+      },
+      {
+        "actor": "actor:r.okafor",
+        "action": "commit",
+        "t": "2026-01-01T21:40:00Z",
+        "ref": "commit:be34510 dispatch: inline WMS pallet lookup before queueing (temporary until the async export lands)"
+      },
+      {
+        "actor": "actor:a.larsen",
+        "action": "commit",
+        "t": "2026-01-14T17:33:00Z",
+        "ref": "commit:d8ba686 common: deadline-based http client, socket timeouts unreliable on the gateway box (T-0188)"
+      },
+      {
+        "actor": "actor:r.okafor",
+        "action": "commit",
+        "t": "2026-02-07T15:34:00Z",
+        "ref": "commit:774b046 gateway: retry dispatch webhook once on timeout"
+      },
+      {
+        "actor": "actor:a.larsen",
+        "action": "commit",
+        "t": "2026-04-03T16:08:00Z",
+        "ref": "commit:bf44b2d gateway: stale-controller watchdog posts ledger events"
+      },
+      {
+        "actor": "actor:a.larsen",
+        "action": "commit",
+        "t": "2026-04-11T21:35:00Z",
+        "ref": "commit:65d505d ledger: WAL journal and longer busy timeout, writers were tripping over each other"
+      },
+      {
+        "actor": "actor:o.ferreira",
+        "action": "ticket_close",
+        "t": "2026-04-15T00:00:00Z",
+        "ref": "T-0437 closed although HH-2 certificate says +0.9 C, out of tolerance; HH-2 continued in use."
+      },
+      {
+        "actor": "actor:r.okafor",
+        "action": "commit",
+        "t": "2026-04-21T22:45:00Z",
+        "ref": "commit:7d0b84f config: raise webhook timeout to 30s, WMS lookup is slow"
+      },
+      {
+        "actor": "actor:a.larsen",
+        "action": "commit",
+        "t": "2026-05-11T23:00:00Z",
+        "ref": "commit:0ef25f9 billing: rollup timing tweak"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "probe_check",
+        "t": "2026-05-15T07:49:00Z",
+        "ref": "A HH-1 -28.8 C; HH-1 calibration offset 0.0 C."
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "probe_check",
+        "t": "2026-05-15T07:54:00Z",
+        "ref": "B HH-1 -17.6 C; HH-1 calibration offset 0.0 C."
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "probe_check",
+        "t": "2026-05-15T07:59:00Z",
+        "ref": "C HH-1 -24.4 C; HH-1 calibration offset 0.0 C."
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "probe_check",
+        "t": "2026-05-15T08:08:00Z",
+        "ref": "D HH-1 6.4 C; HH-1 calibration offset 0.0 C."
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "probe_check",
+        "t": "2026-05-15T08:17:00Z",
+        "ref": "E HH-1 -23.7 C; HH-1 calibration offset 0.0 C."
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "probe_check",
+        "t": "2026-05-15T08:26:00Z",
+        "ref": "F HH-1 2.0 C; HH-1 calibration offset 0.0 C."
+      },
+      {
+        "actor": "actor:o.ferreira",
+        "action": "probe_check",
+        "t": "2026-05-15T08:38:00Z",
+        "ref": "A HH-2 -27.9 C; HH-2 reads +0.9 C and is out of tolerance."
+      },
+      {
+        "actor": "actor:o.ferreira",
+        "action": "probe_check",
+        "t": "2026-05-15T08:42:00Z",
+        "ref": "E HH-2 -22.4 C; HH-2 reads +0.9 C and is out of tolerance."
+      },
+      {
+        "actor": "actor:o.ferreira",
+        "action": "probe_check",
+        "t": "2026-05-15T08:53:00Z",
+        "ref": "F HH-2 3.2 C; HH-2 reads +0.9 C and is out of tolerance."
+      },
+      {
+        "actor": "actor:i.rivera",
+        "action": "pallet_move",
+        "t": "2026-05-15T16:55:00Z",
+        "ref": "LN-29796 PL-9738 E->A; destination drop 2026-05-15T16:58:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:i.rivera",
+        "action": "pallet_move",
+        "t": "2026-05-15T16:58:00Z",
+        "ref": "LN-20669 PL-2658 C->E; destination drop 2026-05-15T17:00:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:i.rivera",
+        "action": "pallet_move",
+        "t": "2026-05-15T19:31:00Z",
+        "ref": "LN-24719 PL-3840 F->E; destination drop 2026-05-15T19:32:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:i.rivera",
+        "action": "pallet_move",
+        "t": "2026-05-15T20:33:00Z",
+        "ref": "LN-21319 PL-3149 F->E; destination drop 2026-05-15T20:35:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:i.rivera",
+        "action": "pallet_move",
+        "t": "2026-05-15T20:34:00Z",
+        "ref": "LN-26269 PL-9037 D->E; destination drop 2026-05-15T20:38:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:i.rivera",
+        "action": "pallet_move",
+        "t": "2026-05-15T20:43:00Z",
+        "ref": "LN-22096 PL-3726 A->E; destination drop 2026-05-15T20:45:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:i.rivera",
+        "action": "pallet_move",
+        "t": "2026-05-15T20:44:00Z",
+        "ref": "LN-22096 PL-3726 E->C; destination drop 2026-05-15T20:46:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:i.rivera",
+        "action": "pallet_move",
+        "t": "2026-05-15T20:44:00Z",
+        "ref": "LN-24952 PL-2535 E->B; destination drop 2026-05-15T20:47:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:e.patel",
+        "action": "pallet_move",
+        "t": "2026-05-17T12:30:00Z",
+        "ref": "LN-20669 PL-2658 E->D; destination drop 2026-05-17T12:32:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:e.patel",
+        "action": "pallet_move",
+        "t": "2026-05-18T06:42:00Z",
+        "ref": "LN-29333 PL-9940 E->D; destination drop 2026-05-18T06:44:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:o.ferreira",
+        "action": "probe_check",
+        "t": "2026-05-18T08:23:00Z",
+        "ref": "D HH-2 6.7 C; HH-2 reads +0.9 C and is out of tolerance."
+      },
+      {
+        "actor": "actor:e.patel",
+        "action": "pallet_move",
+        "t": "2026-05-18T08:28:00Z",
+        "ref": "LN-23567 PL-2450 A->E; destination drop 2026-05-18T08:29:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:e.patel",
+        "action": "pallet_move",
+        "t": "2026-05-18T08:29:00Z",
+        "ref": "LN-26766 PL-8095 E->B; destination drop 2026-05-18T08:30:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:o.ferreira",
+        "action": "probe_check",
+        "t": "2026-05-18T08:35:00Z",
+        "ref": "C HH-2 -23.0 C; HH-2 reads +0.9 C and is out of tolerance."
+      },
+      {
+        "actor": "actor:o.ferreira",
+        "action": "probe_check",
+        "t": "2026-05-18T08:44:00Z",
+        "ref": "E HH-2 -22.7 C; HH-2 reads +0.9 C and is out of tolerance."
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "probe_check",
+        "t": "2026-05-18T09:39:00Z",
+        "ref": "A HH-1 -28.5 C; HH-1 calibration offset 0.0 C."
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "probe_check",
+        "t": "2026-05-18T09:53:00Z",
+        "ref": "B HH-1 -19.0 C; HH-1 calibration offset 0.0 C."
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "probe_check",
+        "t": "2026-05-18T10:01:00Z",
+        "ref": "C HH-1 -24.2 C; HH-1 calibration offset 0.0 C."
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "probe_check",
+        "t": "2026-05-18T10:07:00Z",
+        "ref": "D HH-1 5.9 C; HH-1 calibration offset 0.0 C."
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "probe_check",
+        "t": "2026-05-18T10:19:00Z",
+        "ref": "E HH-1 -24.1 C; HH-1 calibration offset 0.0 C."
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "probe_check",
+        "t": "2026-05-18T10:29:00Z",
+        "ref": "F HH-1 2.9 C; HH-1 calibration offset 0.0 C."
+      },
+      {
+        "actor": "actor:e.patel",
+        "action": "pallet_move",
+        "t": "2026-05-18T10:38:00Z",
+        "ref": "LN-24719 PL-3840 E->A; destination drop 2026-05-18T10:41:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:r.okafor",
+        "action": "commit",
+        "t": "2026-05-18T12:54:09Z",
+        "ref": "commit:725e3f3 billing: fix zone-hours unit conversion (minutes were billed as hours)"
+      },
+      {
+        "actor": "actor:o.ferreira",
+        "action": "ticket_open",
+        "t": "2026-05-18T15:08:00Z",
+        "ref": "T-0441: B stopped after unloading, known door-trip/lockout precedent, not a broken compressor."
+      },
+      {
+        "actor": "actor:i.rivera",
+        "action": "pallet_move",
+        "t": "2026-05-18T18:47:00Z",
+        "ref": "LN-26269 PL-9037 E->C; destination drop 2026-05-18T18:48:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:i.rivera",
+        "action": "pallet_move",
+        "t": "2026-05-18T18:47:00Z",
+        "ref": "LN-29303 PL-6745 E->B; destination drop 2026-05-18T18:50:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:i.rivera",
+        "action": "pallet_move",
+        "t": "2026-05-18T19:35:00Z",
+        "ref": "LN-21319 PL-3149 E->F; destination drop 2026-05-18T19:37:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:i.rivera",
+        "action": "pallet_move",
+        "t": "2026-05-18T19:35:00Z",
+        "ref": "LN-21218 PL-6067 F->E; destination drop 2026-05-18T19:39:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:i.rivera",
+        "action": "pallet_move",
+        "t": "2026-05-18T19:36:00Z",
+        "ref": "LN-21770 PL-2928 F->E; destination drop 2026-05-18T19:38:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:l.rivera",
+        "action": "shift_start",
+        "t": "2026-05-18T21:52:00Z",
+        "ref": "First agency shift; badge 21:41 plus 11 minutes."
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "ticket_close",
+        "t": "2026-05-18T23:04:00Z",
+        "ref": "T-0441: spontaneous restart following lockout."
+      },
+      {
+        "actor": "actor:e.patel",
+        "action": "pallet_move",
+        "t": "2026-05-19T10:01:00Z",
+        "ref": "LN-28014 PL-2109 D->E; destination drop 2026-05-19T10:04:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:e.patel",
+        "action": "pallet_move",
+        "t": "2026-05-19T10:03:00Z",
+        "ref": "LN-28014 PL-2109 E->B; destination drop 2026-05-19T10:04:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:e.patel",
+        "action": "pallet_move",
+        "t": "2026-05-19T10:03:00Z",
+        "ref": "LN-21770 PL-2928 E->A; destination drop 2026-05-19T10:04:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:e.patel",
+        "action": "pallet_move",
+        "t": "2026-05-19T10:05:00Z",
+        "ref": "LN-29709 PL-3905 A->E; destination drop 2026-05-19T10:09:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:e.patel",
+        "action": "pallet_move",
+        "t": "2026-05-19T10:06:00Z",
+        "ref": "LN-29709 PL-3905 E->C; destination drop 2026-05-19T10:09:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:e.patel",
+        "action": "pallet_move",
+        "t": "2026-05-19T10:52:00Z",
+        "ref": "LN-20669 PL-2658 C->E; destination drop 2026-05-19T10:55:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:e.patel",
+        "action": "pallet_move",
+        "t": "2026-05-19T10:53:00Z",
+        "ref": "LN-27897 PL-1069 C->E; destination drop 2026-05-19T10:57:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:e.patel",
+        "action": "pallet_move",
+        "t": "2026-05-19T10:53:00Z",
+        "ref": "LN-26269 PL-9037 A->E; destination drop 2026-05-19T10:56:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:o.ferreira",
+        "action": "probe_check",
+        "t": "2026-05-19T11:04:00Z",
+        "ref": "C HH-2 -22.0 C; HH-2 reads +0.9 C and is out of tolerance."
+      },
+      {
+        "actor": "actor:o.ferreira",
+        "action": "probe_check",
+        "t": "2026-05-19T11:10:00Z",
+        "ref": "E HH-2 -23.5 C; HH-2 reads +0.9 C and is out of tolerance."
+      },
+      {
+        "actor": "actor:o.ferreira",
+        "action": "probe_check",
+        "t": "2026-05-19T11:23:00Z",
+        "ref": "D HH-2 5.4 C; HH-2 reads +0.9 C and is out of tolerance."
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "probe_check",
+        "t": "2026-05-19T11:28:00Z",
+        "ref": "A HH-1 -28.7 C; HH-1 calibration offset 0.0 C."
+      },
+      {
+        "actor": "actor:e.patel",
+        "action": "pallet_move",
+        "t": "2026-05-19T11:29:00Z",
+        "ref": "LN-28792 PL-1543 A->E; destination drop 2026-05-19T11:32:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "probe_check",
+        "t": "2026-05-19T11:38:00Z",
+        "ref": "B HH-1 -19.2 C; HH-1 calibration offset 0.0 C."
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "probe_check",
+        "t": "2026-05-19T11:46:00Z",
+        "ref": "C HH-1 -23.7 C; HH-1 calibration offset 0.0 C."
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "probe_check",
+        "t": "2026-05-19T11:52:00Z",
+        "ref": "D HH-1 4.1 C; HH-1 calibration offset 0.0 C."
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "probe_check",
+        "t": "2026-05-19T11:57:00Z",
+        "ref": "E HH-1 -22.6 C; HH-1 calibration offset 0.0 C."
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "probe_check",
+        "t": "2026-05-19T12:11:00Z",
+        "ref": "F HH-1 2.1 C; HH-1 calibration offset 0.0 C."
+      },
+      {
+        "actor": "actor:i.rivera",
+        "action": "pallet_move",
+        "t": "2026-05-19T14:45:00Z",
+        "ref": "LN-25575 PL-7663 A->E; destination drop 2026-05-19T14:48:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:i.rivera",
+        "action": "pallet_move",
+        "t": "2026-05-19T14:45:00Z",
+        "ref": "LN-26832 PL-3119 B->E; destination drop 2026-05-19T14:47:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:i.rivera",
+        "action": "pallet_move",
+        "t": "2026-05-19T14:45:00Z",
+        "ref": "LN-21770 PL-2928 B->E; destination drop 2026-05-19T14:47:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:i.rivera",
+        "action": "pallet_move",
+        "t": "2026-05-19T14:47:00Z",
+        "ref": "LN-21770 PL-2928 E->C; destination drop 2026-05-19T14:49:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:l.rivera",
+        "action": "purchase",
+        "t": "2026-05-19T16:55:00Z",
+        "ref": "hardware_receipt_wedge: black rubber door wedge and extension cord."
+      },
+      {
+        "actor": "actor:i.rivera",
+        "action": "pallet_move",
+        "t": "2026-05-19T21:19:00Z",
+        "ref": "LN-22625 PL-3744 A->E; destination drop 2026-05-19T21:22:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:i.rivera",
+        "action": "pallet_move",
+        "t": "2026-05-19T21:21:00Z",
+        "ref": "LN-25827 PL-5824 D->E; destination drop 2026-05-19T21:24:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:l.rivera",
+        "action": "photo",
+        "t": "2026-05-19T23:06:00Z",
+        "ref": "IMG_2231.jpg: wedge under room E door; EXIF clock estimated +8 min."
+      },
+      {
+        "actor": "actor:l.rivera",
+        "action": "statement",
+        "t": "2026-05-20T00:40:00Z",
+        "ref": "m0018: posted photo and admitted new toy for airflow problem in E."
+      },
+      {
+        "actor": "actor:l.okafor",
+        "action": "statement",
+        "t": "2026-05-20T01:23:00Z",
+        "ref": "m0020: warned not to leave it in the door, showing awareness before incident."
+      },
+      {
+        "actor": "actor:e.patel",
+        "action": "pallet_move",
+        "t": "2026-05-20T08:11:00Z",
+        "ref": "LN-26290 PL-2248 E->C; destination drop 2026-05-20T08:14:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:e.patel",
+        "action": "pallet_move",
+        "t": "2026-05-20T08:11:00Z",
+        "ref": "LN-29003 PL-8258 B->E; destination drop 2026-05-20T08:15:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:o.ferreira",
+        "action": "probe_check",
+        "t": "2026-05-20T08:12:00Z",
+        "ref": "B HH-2 -17.1 C; HH-2 reads +0.9 C and is out of tolerance."
+      },
+      {
+        "actor": "actor:e.patel",
+        "action": "pallet_move",
+        "t": "2026-05-20T08:13:00Z",
+        "ref": "LN-29003 PL-8258 E->C; destination drop 2026-05-20T08:16:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:o.ferreira",
+        "action": "probe_check",
+        "t": "2026-05-20T08:23:00Z",
+        "ref": "F HH-2 3.0 C; HH-2 reads +0.9 C and is out of tolerance."
+      },
+      {
+        "actor": "actor:o.ferreira",
+        "action": "probe_check",
+        "t": "2026-05-20T08:30:00Z",
+        "ref": "A HH-2 -28.3 C; HH-2 reads +0.9 C and is out of tolerance."
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "probe_check",
+        "t": "2026-05-20T09:30:00Z",
+        "ref": "A HH-1 -28.4 C; HH-1 calibration offset 0.0 C."
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "probe_check",
+        "t": "2026-05-20T09:38:00Z",
+        "ref": "B HH-1 -18.6 C; HH-1 calibration offset 0.0 C."
+      },
+      {
+        "actor": "actor:e.patel",
+        "action": "pallet_move",
+        "t": "2026-05-20T09:42:00Z",
+        "ref": "LN-26954 PL-5544 D->E; destination drop 2026-05-20T09:44:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "probe_check",
+        "t": "2026-05-20T09:47:00Z",
+        "ref": "C HH-1 -22.5 C; HH-1 calibration offset 0.0 C."
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "probe_check",
+        "t": "2026-05-20T09:56:00Z",
+        "ref": "D HH-1 6.2 C; HH-1 calibration offset 0.0 C."
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "probe_check",
+        "t": "2026-05-20T10:01:00Z",
+        "ref": "E HH-1 -18.4 C; HH-1 calibration offset 0.0 C."
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "probe_check",
+        "t": "2026-05-20T10:15:00Z",
+        "ref": "F HH-1 1.4 C; HH-1 calibration offset 0.0 C."
+      },
+      {
+        "actor": "actor:e.patel",
+        "action": "pallet_move",
+        "t": "2026-05-20T11:24:00Z",
+        "ref": "LN-23961 PL-4172 B->E; destination drop 2026-05-20T11:28:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:e.patel",
+        "action": "pallet_move",
+        "t": "2026-05-20T12:39:00Z",
+        "ref": "LN-26766 PL-8095 A->E; destination drop 2026-05-20T12:40:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:e.haddad",
+        "action": "shift_start",
+        "t": "2026-05-20T13:27:00Z",
+        "ref": "Visitor badge entry 13:16 corrected by +11 minutes."
+      },
+      {
+        "actor": "actor:e.haddad",
+        "action": "door_open",
+        "t": "2026-05-20T14:16:00Z",
+        "ref": "ROOM-E badge 14:05; visit to E precedes firmware reboot."
+      },
+      {
+        "actor": "actor:e.haddad",
+        "action": "firmware_flash",
+        "t": "2026-05-20T14:32:00Z",
+        "ref": "VX05 E boots at seq=1 tick=0 firmware=34; absolute-temperature kono marker begins. Contradicts inspected-only service report; invoice charges two units."
+      },
+      {
+        "actor": "actor:e.haddad",
+        "action": "door_open",
+        "t": "2026-05-20T15:13:00Z",
+        "ref": "ROOM-C visitor badge 15:02 corrected; access before VX03 reboot."
+      },
+      {
+        "actor": "actor:e.haddad",
+        "action": "firmware_flash",
+        "t": "2026-05-20T15:28:00Z",
+        "ref": "VX03 C boots at seq=1 tick=0 firmware=34, temperature changes from setpoint-delta to absolute."
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "ticket_open",
+        "t": "2026-05-20T16:29:00Z",
+        "ref": "T-0439: C/E implausibly cold dashboard readings after firmware update."
+      },
+      {
+        "actor": "actor:e.haddad",
+        "action": "shift_end",
+        "t": "2026-05-20T16:31:00Z",
+        "ref": "Visitor badge exit 16:20 corrected."
+      },
+      {
+        "actor": "actor:i.rivera",
+        "action": "pallet_move",
+        "t": "2026-05-20T19:19:00Z",
+        "ref": "LN-29378 PL-3290 A->E; destination drop 2026-05-20T19:22:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:i.rivera",
+        "action": "pallet_move",
+        "t": "2026-05-20T19:37:00Z",
+        "ref": "LN-25827 PL-5824 E->F; destination drop 2026-05-20T19:40:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:i.rivera",
+        "action": "pallet_move",
+        "t": "2026-05-20T19:39:00Z",
+        "ref": "LN-21306 PL-6576 B->E; destination drop 2026-05-20T19:40:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:r.okafor",
+        "action": "statement",
+        "t": "2026-05-20T20:41:00Z",
+        "ref": "m0026: incorrectly attributes new-format telegrams to sensor faults."
+      },
+      {
+        "actor": "actor:l.rivera",
+        "action": "door_prop",
+        "t": "2026-05-21T01:16:00Z",
+        "ref": "Earlier E door-hold episode: door OPEN frame at 01:16, link closes 01:17, CCTV sustained motion, reconnect 01:51."
+      },
+      {
+        "actor": "actor:l.rivera",
+        "action": "door_close",
+        "t": "2026-05-21T01:51:00Z",
+        "ref": "Earlier E door-hold ends; link re-established 01:51:54."
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "probe_check",
+        "t": "2026-05-21T07:40:00Z",
+        "ref": "A HH-1 -28.9 C; HH-1 calibration offset 0.0 C."
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "probe_check",
+        "t": "2026-05-21T07:54:00Z",
+        "ref": "B HH-1 -19.7 C; HH-1 calibration offset 0.0 C."
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "probe_check",
+        "t": "2026-05-21T08:02:00Z",
+        "ref": "C HH-1 -23.8 C; HH-1 calibration offset 0.0 C."
+      },
+      {
+        "actor": "actor:e.patel",
+        "action": "pallet_move",
+        "t": "2026-05-21T08:13:00Z",
+        "ref": "LN-28536 PL-3547 D->E; destination drop 2026-05-21T08:15:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:e.patel",
+        "action": "pallet_move",
+        "t": "2026-05-21T08:14:00Z",
+        "ref": "LN-20323 PL-1955 B->E; destination drop 2026-05-21T08:18:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "probe_check",
+        "t": "2026-05-21T08:16:00Z",
+        "ref": "D HH-1 6.1 C; HH-1 calibration offset 0.0 C."
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "probe_check",
+        "t": "2026-05-21T08:25:00Z",
+        "ref": "E HH-1 -24.1 C; HH-1 calibration offset 0.0 C."
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "probe_check",
+        "t": "2026-05-21T08:32:00Z",
+        "ref": "F HH-1 1.9 C; HH-1 calibration offset 0.0 C."
+      },
+      {
+        "actor": "actor:e.patel",
+        "action": "pallet_move",
+        "t": "2026-05-21T08:51:00Z",
+        "ref": "LN-24829 PL-6740 E->A; destination drop 2026-05-21T08:54:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:e.patel",
+        "action": "pallet_move",
+        "t": "2026-05-21T10:14:00Z",
+        "ref": "LN-29303 PL-6745 D->E; destination drop 2026-05-21T10:16:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:e.patel",
+        "action": "pallet_move",
+        "t": "2026-05-21T10:15:00Z",
+        "ref": "LN-23961 PL-4172 E->A; destination drop 2026-05-21T10:18:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:e.patel",
+        "action": "pallet_move",
+        "t": "2026-05-21T10:45:00Z",
+        "ref": "LN-29303 PL-6745 E->C; destination drop 2026-05-21T10:48:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:e.patel",
+        "action": "pallet_move",
+        "t": "2026-05-21T11:16:00Z",
+        "ref": "LN-20669 PL-2658 E->A; destination drop 2026-05-21T11:18:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:e.patel",
+        "action": "pallet_move",
+        "t": "2026-05-21T11:17:00Z",
+        "ref": "LN-27547 PL-1722 F->E; destination drop 2026-05-21T11:21:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:r.okafor",
+        "action": "config_edit",
+        "t": "2026-05-21T11:17:10Z",
+        "ref": "b942c48 edits zones.C.channel and zones.E.channel in alerting/routes.json; affects all severities, not merely low-temp warnings."
+      },
+      {
+        "actor": "actor:r.okafor",
+        "action": "commit",
+        "t": "2026-05-21T11:17:10Z",
+        "ref": "commit:b942c48 hotfix: silence flapping zone E/C low-temp alerts (route to legacy channel; sensor fault confirmed by vendor)"
+      },
+      {
+        "actor": "actor:e.patel",
+        "action": "pallet_move",
+        "t": "2026-05-21T11:18:00Z",
+        "ref": "LN-24829 PL-6740 A->E; destination drop 2026-05-21T11:22:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:o.ferreira",
+        "action": "probe_check",
+        "t": "2026-05-21T11:22:00Z",
+        "ref": "D HH-2 5.5 C; HH-2 reads +0.9 C and is out of tolerance."
+      },
+      {
+        "actor": "actor:r.okafor",
+        "action": "statement",
+        "t": "2026-05-21T11:32:00Z",
+        "ref": "m0028 announces routing hotfix, leaving decoder incompatible."
+      },
+      {
+        "actor": "actor:o.ferreira",
+        "action": "probe_check",
+        "t": "2026-05-21T11:32:00Z",
+        "ref": "A HH-2 -27.8 C; HH-2 reads +0.9 C and is out of tolerance."
+      },
+      {
+        "actor": "actor:o.ferreira",
+        "action": "probe_check",
+        "t": "2026-05-21T11:37:00Z",
+        "ref": "E HH-2 -23.4 C; HH-2 reads +0.9 C and is out of tolerance."
+      },
+      {
+        "actor": "actor:r.okafor",
+        "action": "override_deploy",
+        "t": "2026-05-21T12:28:05Z",
+        "ref": "Alerting log confirms C/E legacy routes loaded by this time (first observed reload)."
+      },
+      {
+        "actor": "actor:e.patel",
+        "action": "pallet_move",
+        "t": "2026-05-21T12:35:00Z",
+        "ref": "LN-20074 PL-8252 D->E; destination drop 2026-05-21T12:38:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:i.rivera",
+        "action": "pallet_move",
+        "t": "2026-05-21T20:08:00Z",
+        "ref": "LN-21770 PL-2928 C->E; destination drop 2026-05-21T20:11:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:i.rivera",
+        "action": "pallet_move",
+        "t": "2026-05-21T20:10:00Z",
+        "ref": "LN-21770 PL-2928 E->A; destination drop 2026-05-21T20:13:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:i.rivera",
+        "action": "pallet_move",
+        "t": "2026-05-21T20:10:00Z",
+        "ref": "LN-21218 PL-6067 E->F; destination drop 2026-05-21T20:13:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:i.rivera",
+        "action": "pallet_move",
+        "t": "2026-05-21T20:11:00Z",
+        "ref": "LN-26766 PL-8095 E->B; destination drop 2026-05-21T20:12:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:a.larsen",
+        "action": "config_edit",
+        "t": "2026-05-22T02:12:00Z",
+        "ref": "Set deploy/config.override.json ALERT_MIN_SEVERITY=critical; stated time, confirmed by m0034 at 02:17 and deployed override."
+      },
+      {
+        "actor": "actor:a.larsen",
+        "action": "override_deploy",
+        "t": "2026-05-22T02:12:00Z",
+        "ref": "Critical-only global alert minimum; configuration remained in frozen deployment, not reverted."
+      },
+      {
+        "actor": "actor:e.patel",
+        "action": "pallet_move",
+        "t": "2026-05-22T06:39:00Z",
+        "ref": "LN-26290 PL-2248 C->E; destination drop 2026-05-22T06:40:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:o.ferreira",
+        "action": "probe_check",
+        "t": "2026-05-22T08:05:00Z",
+        "ref": "D HH-2 7.2 C; HH-2 reads +0.9 C and is out of tolerance."
+      },
+      {
+        "actor": "actor:o.ferreira",
+        "action": "probe_check",
+        "t": "2026-05-22T08:18:00Z",
+        "ref": "A HH-2 -27.1 C; HH-2 reads +0.9 C and is out of tolerance."
+      },
+      {
+        "actor": "actor:o.ferreira",
+        "action": "probe_check",
+        "t": "2026-05-22T08:24:00Z",
+        "ref": "C HH-2 -23.3 C; HH-2 reads +0.9 C and is out of tolerance."
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "probe_check",
+        "t": "2026-05-22T08:31:00Z",
+        "ref": "A HH-1 -28.2 C; HH-1 calibration offset 0.0 C."
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "probe_check",
+        "t": "2026-05-22T08:45:00Z",
+        "ref": "B HH-1 -19.4 C; HH-1 calibration offset 0.0 C."
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "probe_check",
+        "t": "2026-05-22T08:54:00Z",
+        "ref": "C HH-1 -22.7 C; HH-1 calibration offset 0.0 C."
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "probe_check",
+        "t": "2026-05-22T09:00:00Z",
+        "ref": "D HH-1 6.0 C; HH-1 calibration offset 0.0 C."
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "probe_check",
+        "t": "2026-05-22T09:13:00Z",
+        "ref": "E HH-1 -24.9 C; HH-1 calibration offset 0.0 C."
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "probe_check",
+        "t": "2026-05-22T09:25:00Z",
+        "ref": "F HH-1 6.0 C; HH-1 calibration offset 0.0 C."
+      },
+      {
+        "actor": "actor:a.larsen",
+        "action": "statement",
+        "t": "2026-05-22T10:33:00Z",
+        "ref": "m0036 falsely claims override was reverted."
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "archive_channel",
+        "t": "2026-05-22T11:35:00Z",
+        "ref": "m0037: archives #alerts-coldchain-old before the excursion."
+      },
+      {
+        "actor": "actor:i.rivera",
+        "action": "pallet_move",
+        "t": "2026-05-22T14:34:00Z",
+        "ref": "LN-27211 PL-2886 C->E; destination drop 2026-05-22T14:36:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:i.rivera",
+        "action": "pallet_move",
+        "t": "2026-05-22T14:35:00Z",
+        "ref": "LN-27211 PL-2886 E->F; destination drop 2026-05-22T14:36:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:i.rivera",
+        "action": "pallet_move",
+        "t": "2026-05-22T14:48:00Z",
+        "ref": "LN-23600 PL-8758 B->E; destination drop 2026-05-22T14:50:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:i.rivera",
+        "action": "pallet_move",
+        "t": "2026-05-22T14:48:00Z",
+        "ref": "LN-28536 PL-3547 E->B; destination drop 2026-05-22T14:52:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:i.rivera",
+        "action": "pallet_move",
+        "t": "2026-05-22T18:21:00Z",
+        "ref": "LN-29003 PL-8258 C->E; destination drop 2026-05-22T18:23:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:i.rivera",
+        "action": "pallet_move",
+        "t": "2026-05-22T18:21:00Z",
+        "ref": "LN-26832 PL-3119 E->D; destination drop 2026-05-22T18:25:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:i.rivera",
+        "action": "pallet_move",
+        "t": "2026-05-22T18:49:00Z",
+        "ref": "LN-22625 PL-3744 E->F; destination drop 2026-05-22T18:52:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:e.patel",
+        "action": "pallet_move",
+        "t": "2026-05-23T06:26:00Z",
+        "ref": "LN-29484 PL-7402 D->E; destination drop 2026-05-23T06:27:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:e.patel",
+        "action": "pallet_move",
+        "t": "2026-05-23T09:01:00Z",
+        "ref": "LN-26290 PL-2248 E->D; destination drop 2026-05-23T09:04:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:l.okafor",
+        "action": "shift_start",
+        "t": "2026-05-23T21:48:00Z",
+        "ref": "Badge 21:37, corrected +11 minutes."
+      },
+      {
+        "actor": "actor:l.rivera",
+        "action": "shift_start",
+        "t": "2026-05-23T22:04:00Z",
+        "ref": "Badge 21:53, corrected +11 minutes; she did not arrive simultaneously with the lead."
+      },
+      {
+        "actor": "actor:l.okafor",
+        "action": "door_open",
+        "t": "2026-05-23T23:21:00Z",
+        "ref": "ROOM-D night walk-through badge 23:10."
+      },
+      {
+        "actor": "actor:l.okafor",
+        "action": "door_open",
+        "t": "2026-05-24T00:18:00Z",
+        "ref": "ROOM-A walk-through badge 00:07, not postmortem 23:07."
+      },
+      {
+        "actor": "actor:l.rivera",
+        "action": "door_prop",
+        "t": "2026-05-24T00:48:00Z",
+        "ref": "E door OPEN seq1050; held fully open about four hours. Trips at 00:56,01:08,01:20,01:32,01:44; fifth enters lockout. Door-frame link lost, fault frames retained locally only."
+      },
+      {
+        "actor": "actor:l.rivera",
+        "action": "door_open",
+        "t": "2026-05-24T00:48:00Z",
+        "ref": "Same incident as door_prop: sustained CCTV motion despite lack of a room-entry badge swipe."
+      },
+      {
+        "actor": "actor:l.okafor",
+        "action": "door_close",
+        "t": "2026-05-24T04:48:00Z",
+        "ref": "E door hold ends around link reconnection 04:48:32; night-lead badge 04:41 corresponds to room visit about 04:52. Attribution to lead less certain than time."
+      },
+      {
+        "actor": "actor:l.okafor",
+        "action": "door_open",
+        "t": "2026-05-24T04:52:00Z",
+        "ref": "ROOM-E badge 04:41 corrected; contradicts claim nobody approached E and claimed 06:22 check. Door already closed/reconnected by then."
+      },
+      {
+        "actor": "actor:l.okafor",
+        "action": "shift_end",
+        "t": "2026-05-24T05:42:00Z",
+        "ref": "Badge exit 05:31 +11 min, before claimed 06:22 check."
+      },
+      {
+        "actor": "actor:l.rivera",
+        "action": "shift_end",
+        "t": "2026-05-24T06:01:00Z",
+        "ref": "Badge exit 05:50 +11 min."
+      },
+      {
+        "actor": "actor:e.patel",
+        "action": "pallet_move",
+        "t": "2026-05-24T11:20:00Z",
+        "ref": "LN-24952 PL-2535 C->E; destination drop 2026-05-24T11:22:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "probe_check",
+        "t": "2026-05-25T07:17:00Z",
+        "ref": "A HH-1 -28.9 C; HH-1 calibration offset 0.0 C."
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "probe_check",
+        "t": "2026-05-25T07:21:00Z",
+        "ref": "B HH-1 -18.9 C; HH-1 calibration offset 0.0 C."
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "probe_check",
+        "t": "2026-05-25T07:34:00Z",
+        "ref": "C HH-1 -23.7 C; HH-1 calibration offset 0.0 C."
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "probe_check",
+        "t": "2026-05-25T07:47:00Z",
+        "ref": "D HH-1 5.4 C; HH-1 calibration offset 0.0 C."
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "probe_check",
+        "t": "2026-05-25T07:51:00Z",
+        "ref": "E HH-1 -24.2 C; HH-1 calibration offset 0.0 C."
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "probe_check",
+        "t": "2026-05-25T07:57:00Z",
+        "ref": "F HH-1 2.9 C; HH-1 calibration offset 0.0 C."
+      },
+      {
+        "actor": "actor:o.ferreira",
+        "action": "probe_check",
+        "t": "2026-05-25T10:05:00Z",
+        "ref": "B HH-2 -18.3 C; HH-2 reads +0.9 C and is out of tolerance."
+      },
+      {
+        "actor": "actor:o.ferreira",
+        "action": "probe_check",
+        "t": "2026-05-25T10:16:00Z",
+        "ref": "A HH-2 -27.2 C; HH-2 reads +0.9 C and is out of tolerance."
+      },
+      {
+        "actor": "actor:o.ferreira",
+        "action": "probe_check",
+        "t": "2026-05-25T10:22:00Z",
+        "ref": "F HH-2 3.9 C; HH-2 reads +0.9 C and is out of tolerance."
+      },
+      {
+        "actor": "actor:e.patel",
+        "action": "pallet_move",
+        "t": "2026-05-25T11:09:00Z",
+        "ref": "LN-25976 PL-2160 B->E; destination drop 2026-05-25T11:12:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:e.patel",
+        "action": "pallet_move",
+        "t": "2026-05-25T12:58:00Z",
+        "ref": "LN-27547 PL-1722 E->F; destination drop 2026-05-25T13:00:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:e.patel",
+        "action": "pallet_move",
+        "t": "2026-05-25T13:00:00Z",
+        "ref": "LN-20074 PL-8252 E->A; destination drop 2026-05-25T13:04:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:i.rivera",
+        "action": "pallet_move",
+        "t": "2026-05-25T15:47:00Z",
+        "ref": "LN-25827 PL-5824 C->E; destination drop 2026-05-25T15:49:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:i.rivera",
+        "action": "pallet_move",
+        "t": "2026-05-25T15:48:00Z",
+        "ref": "LN-29484 PL-7402 E->B; destination drop 2026-05-25T15:51:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:i.rivera",
+        "action": "pallet_move",
+        "t": "2026-05-25T19:24:00Z",
+        "ref": "LN-25158 PL-8411 F->C; destination drop 2026-05-25T19:26:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:i.rivera",
+        "action": "pallet_move",
+        "t": "2026-05-25T19:25:00Z",
+        "ref": "LN-25158 PL-8411 C->E; destination drop 2026-05-25T19:28:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:i.rivera",
+        "action": "pallet_move",
+        "t": "2026-05-25T19:25:00Z",
+        "ref": "LN-29378 PL-3290 E->A; destination drop 2026-05-25T19:28:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:i.rivera",
+        "action": "pallet_move",
+        "t": "2026-05-25T20:05:00Z",
+        "ref": "LN-24952 PL-2535 E->A; destination drop 2026-05-25T20:07:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "probe_check",
+        "t": "2026-05-26T07:55:00Z",
+        "ref": "A HH-1 -29.0 C; HH-1 calibration offset 0.0 C."
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "probe_check",
+        "t": "2026-05-26T08:01:00Z",
+        "ref": "B HH-1 -19.6 C; HH-1 calibration offset 0.0 C."
+      },
+      {
+        "actor": "actor:o.ferreira",
+        "action": "probe_check",
+        "t": "2026-05-26T08:09:00Z",
+        "ref": "B HH-2 -18.5 C; HH-2 reads +0.9 C and is out of tolerance."
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "probe_check",
+        "t": "2026-05-26T08:14:00Z",
+        "ref": "C HH-1 -22.6 C; HH-1 calibration offset 0.0 C."
+      },
+      {
+        "actor": "actor:o.ferreira",
+        "action": "probe_check",
+        "t": "2026-05-26T08:17:00Z",
+        "ref": "D HH-2 7.6 C; HH-2 reads +0.9 C and is out of tolerance."
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "probe_check",
+        "t": "2026-05-26T08:26:00Z",
+        "ref": "D HH-1 6.5 C; HH-1 calibration offset 0.0 C."
+      },
+      {
+        "actor": "actor:o.ferreira",
+        "action": "probe_check",
+        "t": "2026-05-26T08:26:00Z",
+        "ref": "C HH-2 -22.5 C; HH-2 reads +0.9 C and is out of tolerance."
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "probe_check",
+        "t": "2026-05-26T08:35:00Z",
+        "ref": "E HH-1 -23.7 C; HH-1 calibration offset 0.0 C."
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "probe_check",
+        "t": "2026-05-26T08:49:00Z",
+        "ref": "F HH-1 3.3 C; HH-1 calibration offset 0.0 C."
+      },
+      {
+        "actor": "actor:e.patel",
+        "action": "pallet_move",
+        "t": "2026-05-26T09:45:00Z",
+        "ref": "LN-28792 PL-1543 E->D; destination drop 2026-05-26T09:46:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:e.patel",
+        "action": "pallet_move",
+        "t": "2026-05-26T09:46:00Z",
+        "ref": "LN-23026 PL-6835 F->E; destination drop 2026-05-26T09:49:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:e.patel",
+        "action": "pallet_move",
+        "t": "2026-05-26T09:55:00Z",
+        "ref": "LN-23567 PL-2450 E->A; destination drop 2026-05-26T09:56:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:e.patel",
+        "action": "pallet_move",
+        "t": "2026-05-26T09:55:00Z",
+        "ref": "LN-20669 PL-2658 A->E; destination drop 2026-05-26T09:58:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:i.rivera",
+        "action": "pallet_move",
+        "t": "2026-05-26T20:05:00Z",
+        "ref": "LN-25575 PL-7663 E->A; destination drop 2026-05-26T20:08:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:i.rivera",
+        "action": "pallet_move",
+        "t": "2026-05-26T20:08:00Z",
+        "ref": "LN-21319 PL-3149 C->E; destination drop 2026-05-26T20:10:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:i.rivera",
+        "action": "pallet_move",
+        "t": "2026-05-26T20:08:00Z",
+        "ref": "LN-20074 PL-8252 B->E; destination drop 2026-05-26T20:12:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:i.rivera",
+        "action": "pallet_move",
+        "t": "2026-05-26T20:09:00Z",
+        "ref": "LN-20074 PL-8252 E->F; destination drop 2026-05-26T20:13:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:i.rivera",
+        "action": "pallet_move",
+        "t": "2026-05-26T20:17:00Z",
+        "ref": "LN-29484 PL-7402 B->E; destination drop 2026-05-26T20:19:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:i.rivera",
+        "action": "pallet_move",
+        "t": "2026-05-26T20:17:00Z",
+        "ref": "LN-20669 PL-2658 E->D; destination drop 2026-05-26T20:20:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:i.rivera",
+        "action": "pallet_move",
+        "t": "2026-05-26T20:18:00Z",
+        "ref": "LN-29484 PL-7402 E->C; destination drop 2026-05-26T20:21:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:e.patel",
+        "action": "pallet_move",
+        "t": "2026-05-27T08:08:00Z",
+        "ref": "LN-29484 PL-7402 A->E; destination drop 2026-05-27T08:09:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:e.patel",
+        "action": "pallet_move",
+        "t": "2026-05-27T08:09:00Z",
+        "ref": "LN-29484 PL-7402 E->D; destination drop 2026-05-27T08:11:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:e.haddad",
+        "action": "photo",
+        "t": "2026-05-27T09:52:00Z",
+        "ref": "IMG_2250: VX05 fault-snapshot dump; EXIF estimated +8 min."
+      },
+      {
+        "actor": "actor:e.patel",
+        "action": "pallet_move",
+        "t": "2026-05-27T10:32:00Z",
+        "ref": "LN-26954 PL-5544 E->D; destination drop 2026-05-27T10:33:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:e.patel",
+        "action": "pallet_move",
+        "t": "2026-05-27T10:34:00Z",
+        "ref": "LN-29003 PL-8258 E->D; destination drop 2026-05-27T10:36:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "probe_check",
+        "t": "2026-05-27T10:41:00Z",
+        "ref": "A HH-1 -27.2 C; HH-1 calibration offset 0.0 C."
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "probe_check",
+        "t": "2026-05-27T10:49:00Z",
+        "ref": "B HH-1 -18.8 C; HH-1 calibration offset 0.0 C."
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "probe_check",
+        "t": "2026-05-27T10:53:00Z",
+        "ref": "C HH-1 -20.6 C; HH-1 calibration offset 0.0 C."
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "probe_check",
+        "t": "2026-05-27T11:03:00Z",
+        "ref": "D HH-1 6.0 C; HH-1 calibration offset 0.0 C."
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "probe_check",
+        "t": "2026-05-27T11:12:00Z",
+        "ref": "E HH-1 -20.8 C; HH-1 calibration offset 0.0 C."
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "probe_check",
+        "t": "2026-05-27T11:16:00Z",
+        "ref": "F HH-1 2.8 C; HH-1 calibration offset 0.0 C."
+      },
+      {
+        "actor": "actor:e.patel",
+        "action": "pallet_move",
+        "t": "2026-05-27T11:58:00Z",
+        "ref": "LN-25575 PL-7663 B->E; destination drop 2026-05-27T12:00:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:o.ferreira",
+        "action": "probe_check",
+        "t": "2026-05-27T12:05:00Z",
+        "ref": "A HH-2 -28.0 C; HH-2 reads +0.9 C and is out of tolerance."
+      },
+      {
+        "actor": "actor:e.patel",
+        "action": "pallet_move",
+        "t": "2026-05-27T12:10:00Z",
+        "ref": "LN-27461 PL-3192 F->E; destination drop 2026-05-27T12:12:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:e.patel",
+        "action": "pallet_move",
+        "t": "2026-05-27T12:10:00Z",
+        "ref": "LN-23026 PL-6835 F->E; destination drop 2026-05-27T12:12:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:o.ferreira",
+        "action": "probe_check",
+        "t": "2026-05-27T12:15:00Z",
+        "ref": "E HH-2 -22.1 C; HH-2 reads +0.9 C and is out of tolerance."
+      },
+      {
+        "actor": "actor:o.ferreira",
+        "action": "probe_check",
+        "t": "2026-05-27T12:22:00Z",
+        "ref": "C HH-2 -20.5 C; HH-2 reads +0.9 C and is out of tolerance."
+      },
+      {
+        "actor": "actor:e.patel",
+        "action": "pallet_move",
+        "t": "2026-05-27T12:28:00Z",
+        "ref": "LN-25158 PL-8411 E->D; destination drop 2026-05-27T12:32:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:i.rivera",
+        "action": "pallet_move",
+        "t": "2026-05-27T16:07:00Z",
+        "ref": "LN-23026 PL-6835 E->F; destination drop 2026-05-27T16:10:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:i.rivera",
+        "action": "pallet_move",
+        "t": "2026-05-27T18:37:00Z",
+        "ref": "LN-22924 PL-9407 D->E; destination drop 2026-05-27T18:39:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:i.rivera",
+        "action": "pallet_move",
+        "t": "2026-05-27T18:39:00Z",
+        "ref": "LN-22924 PL-9407 E->A; destination drop 2026-05-27T18:40:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:i.rivera",
+        "action": "pallet_move",
+        "t": "2026-05-27T18:39:00Z",
+        "ref": "LN-24700 PL-2236 C->E; destination drop 2026-05-27T18:43:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:e.patel",
+        "action": "pallet_move",
+        "t": "2026-05-28T06:27:00Z",
+        "ref": "LN-25189 PL-1441 A->E; destination drop 2026-05-28T06:30:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:e.patel",
+        "action": "pallet_move",
+        "t": "2026-05-28T07:11:00Z",
+        "ref": "LN-29303 PL-6745 D->E; destination drop 2026-05-28T07:14:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:e.patel",
+        "action": "pallet_move",
+        "t": "2026-05-28T07:12:00Z",
+        "ref": "LN-28536 PL-3547 B->E; destination drop 2026-05-28T07:15:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:e.patel",
+        "action": "pallet_move",
+        "t": "2026-05-28T07:14:00Z",
+        "ref": "LN-26290 PL-2248 A->E; destination drop 2026-05-28T07:16:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:o.ferreira",
+        "action": "probe_check",
+        "t": "2026-05-28T07:21:00Z",
+        "ref": "B HH-2 -18.5 C; HH-2 reads +0.9 C and is out of tolerance."
+      },
+      {
+        "actor": "actor:o.ferreira",
+        "action": "probe_check",
+        "t": "2026-05-28T07:31:00Z",
+        "ref": "F HH-2 4.0 C; HH-2 reads +0.9 C and is out of tolerance."
+      },
+      {
+        "actor": "actor:o.ferreira",
+        "action": "probe_check",
+        "t": "2026-05-28T07:44:00Z",
+        "ref": "D HH-2 6.9 C; HH-2 reads +0.9 C and is out of tolerance."
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "probe_check",
+        "t": "2026-05-28T08:24:00Z",
+        "ref": "A HH-1 -28.3 C; HH-1 calibration offset 0.0 C."
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "probe_check",
+        "t": "2026-05-28T08:35:00Z",
+        "ref": "B HH-1 -19.5 C; HH-1 calibration offset 0.0 C."
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "probe_check",
+        "t": "2026-05-28T08:40:00Z",
+        "ref": "C HH-1 -23.3 C; HH-1 calibration offset 0.0 C."
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "probe_check",
+        "t": "2026-05-28T08:48:00Z",
+        "ref": "D HH-1 5.9 C; HH-1 calibration offset 0.0 C."
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "probe_check",
+        "t": "2026-05-28T08:53:00Z",
+        "ref": "E HH-1 -24.4 C; HH-1 calibration offset 0.0 C."
+      },
+      {
+        "actor": "actor:v.larsen",
+        "action": "ticket_open",
+        "t": "2026-05-28T09:00:00Z",
+        "ref": "T-0442 and lab email identify degraded LN-27897; shipping records put it in E."
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "probe_check",
+        "t": "2026-05-28T09:01:00Z",
+        "ref": "F HH-1 1.2 C; HH-1 calibration offset 0.0 C."
+      },
+      {
+        "actor": "actor:e.patel",
+        "action": "pallet_move",
+        "t": "2026-05-28T10:38:00Z",
+        "ref": "LN-21306 PL-6576 E->C; destination drop 2026-05-28T10:41:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:i.rivera",
+        "action": "pallet_move",
+        "t": "2026-05-28T15:57:00Z",
+        "ref": "LN-25158 PL-8411 D->E; destination drop 2026-05-28T15:59:00Z; repeated scanner submissions are not extra physical moves."
+      },
+      {
+        "actor": "actor:v.larsen",
+        "action": "quarantine",
+        "t": "2026-05-28T16:00:00Z",
+        "ref": "T-0442: issued quarantine using stale ledger positions. Ledger has no applied moves. Actual E occupants reconstructed from physical move chains, not jobs marked done."
+      },
+      {
+        "actor": "actor:v.larsen",
+        "action": "postmortem_publish",
+        "t": "2026-05-28T16:00:00Z",
+        "ref": "T-0442 publication comment; erroneous compressor-failure conclusion and wrong product list."
+      },
+      {
+        "actor": "actor:i.rivera",
+        "action": "pallet_move",
+        "t": "2026-05-28T21:18:00Z",
+        "ref": "LN-25827 PL-5824 E->D; destination drop 2026-05-28T21:22:00Z; repeated scanner submissions are not extra physical moves."
+      }
+    ],
+    "clock_offsets_min": {
+      "badge": -11,
+      "exif": 8,
+      "cctv": 4,
+      "forklift": 0,
+      "chat": 0,
+      "tickets": 0,
+      "git": 0,
+      "submeter": 0,
+      "gateway": 0,
+      "probe": 0
+    },
+    "false_claims": [
+      {
+        "doc_id": "doc:temp_worker_l.rivera",
+        "quote": "I never propped any door open; the wedge in the photo is a receiving thing, it lives by the dock."
+      },
+      {
+        "doc_id": "doc:night_lead_l.okafor",
+        "quote": "After that nobody went near room E; the corridor was quiet."
+      },
+      {
+        "doc_id": "doc:night_lead_l.okafor",
+        "quote": "The first I heard of any problem was the lab e-mail."
+      },
+      {
+        "doc_id": "doc:night_lead_l.okafor",
+        "quote": "I checked room E again at 06:22 on my way out and the door was shut."
+      },
+      {
+        "doc_id": "doc:warehouse_manager_s.larsen",
+        "quote": "I archived the old alert channel only after the incident, when we cleaned up the workspace; before that it was still being read."
+      },
+      {
+        "doc_id": "doc:warehouse_manager_s.larsen",
+        "quote": "both were calibrated recently."
+      },
+      {
+        "doc_id": "doc:warehouse_manager_s.larsen",
+        "quote": "night access to the rooms is on the badge system."
+      },
+      {
+        "doc_id": "doc:receiving_clerk_o.ferreira",
+        "quote": "My handheld was calibrated last month and reads fine."
+      },
+      {
+        "doc_id": "doc:sre_oncall_a.larsen",
+        "quote": "The override was temporary and I reverted it the next morning."
+      },
+      {
+        "doc_id": "doc:sre_oncall_a.larsen",
+        "quote": "The billing rollup locks the ledger for a while every night at 01:00; that is old behaviour and unrelated."
+      },
+      {
+        "doc_id": "doc:ops_engineer_r.okafor",
+        "quote": "the -40 readings are a known sensor fault on the 3.4 boards"
+      },
+      {
+        "doc_id": "doc:ops_engineer_r.okafor",
+        "quote": "Nothing else in the stack changed that week apart from the billing unit fix, which does not touch readings."
+      },
+      {
+        "doc_id": "doc:service_report_firmware_visit",
+        "quote": "Unit VX05 (room E): inspected only, no changes made; customer asked us to leave it on 3.2 until the next visit."
+      },
+      {
+        "doc_id": "doc:bench_report_unit01",
+        "quote": "`maha` : condenser fan"
+      },
+      {
+        "doc_id": "doc:runbook",
+        "quote": "Defrost runs on a fixed schedule every 6 hours per room; the rooms take turns so the heaters never overlap."
+      },
+      {
+        "doc_id": "doc:postmortem",
+        "quote": "Root cause: compressor failure on controller VX05."
+      },
+      {
+        "doc_id": "doc:postmortem",
+        "quote": "Alert routing for room E had been moved to a legacy channel after a sensor fault on the new firmware boards (ticket T-0439)."
+      },
+      {
+        "doc_id": "doc:postmortem",
+        "quote": "Restore alert routing for rooms C and E (done)."
+      },
+      {
+        "doc_id": "doc:chat_export",
+        "quote": "reverted the override this morning, back to normal"
+      },
+      {
+        "doc_id": "doc:chat_export",
+        "quote": "spoke to the vendor, they say the new boards have a sensor fault, known issue, will be fixed on their next visit"
+      }
+    ]
+  },
+  "confidence": {
+    "mechanism": 0.86,
+    "notation": 0.96,
+    "causal_chain": 0.87,
+    "timeline": 0.76
+  }
+}

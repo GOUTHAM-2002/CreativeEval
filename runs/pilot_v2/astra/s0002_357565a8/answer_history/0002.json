@@ -1,0 +1,2170 @@
+{
+  "schema_version": "2",
+  "mechanism": {
+    "parameters": {
+      "k_cool.A": {
+        "value": 0.031,
+        "confidence": 0.65,
+        "note": "Approximate gross cooling coefficient from interval thermal balance; state sampled every five minutes, not continuous actuator history."
+      },
+      "k_leak.A": {
+        "value": 0.0011,
+        "confidence": 0.53,
+        "note": "Approximate fitted heat-leak coefficient using panel-room ambient and shared-wall coupling. Uncertainty includes sensor calibration and unsampled switching."
+      },
+      "H.A": {
+        "value": 0.9,
+        "confidence": 0.67,
+        "note": "Approximate hysteresis half-width: normal cooling starts near setpoint + H and stops near setpoint - H; observation noise and five-minute sampling blur crossings."
+      },
+      "bias.A": {
+        "value": 1.4,
+        "confidence": 0.85,
+        "note": "Sensor minus true air temperature. Calibrated HH-1 and HH-2 corrected by -0.8 C."
+      },
+      "k_cool.B": {
+        "value": 0.093,
+        "confidence": 0.65,
+        "note": "Approximate gross cooling coefficient from interval thermal balance; state sampled every five minutes, not continuous actuator history."
+      },
+      "k_leak.B": {
+        "value": 0.0007,
+        "confidence": 0.53,
+        "note": "Approximate fitted heat-leak coefficient using panel-room ambient and shared-wall coupling. Uncertainty includes sensor calibration and unsampled switching."
+      },
+      "H.B": {
+        "value": 0.7,
+        "confidence": 0.67,
+        "note": "Approximate hysteresis half-width: normal cooling starts near setpoint + H and stops near setpoint - H; observation noise and five-minute sampling blur crossings."
+      },
+      "bias.B": {
+        "value": null,
+        "confidence": 0.98,
+        "note": "No independent calibrated probe observations in this room. Absolute sensor bias cannot be securely separated from thermal-model assumptions; do not assume zero."
+      },
+      "k_cool.C": {
+        "value": 0.07,
+        "confidence": 0.65,
+        "note": "Approximate gross cooling coefficient from interval thermal balance; state sampled every five minutes, not continuous actuator history."
+      },
+      "k_leak.C": {
+        "value": 0.00075,
+        "confidence": 0.53,
+        "note": "Approximate fitted heat-leak coefficient using panel-room ambient and shared-wall coupling. Uncertainty includes sensor calibration and unsampled switching."
+      },
+      "H.C": {
+        "value": 1.0,
+        "confidence": 0.67,
+        "note": "Approximate hysteresis half-width: normal cooling starts near setpoint + H and stops near setpoint - H; observation noise and five-minute sampling blur crossings."
+      },
+      "bias.C": {
+        "value": 0.3,
+        "confidence": 0.85,
+        "note": "Sensor minus true air temperature. Calibrated HH-1 and HH-2 corrected by -0.8 C."
+      },
+      "k_cool.D": {
+        "value": 0.066,
+        "confidence": 0.65,
+        "note": "Approximate gross cooling coefficient from interval thermal balance; state sampled every five minutes, not continuous actuator history."
+      },
+      "k_leak.D": {
+        "value": 0.00068,
+        "confidence": 0.53,
+        "note": "Approximate fitted heat-leak coefficient using panel-room ambient and shared-wall coupling. Uncertainty includes sensor calibration and unsampled switching."
+      },
+      "H.D": {
+        "value": 0.5,
+        "confidence": 0.67,
+        "note": "Approximate hysteresis half-width: normal cooling starts near setpoint + H and stops near setpoint - H; observation noise and five-minute sampling blur crossings."
+      },
+      "bias.D": {
+        "value": 1.3,
+        "confidence": 0.85,
+        "note": "Baseline approximately +1.3 C, plus a separate gradual drift of about +3.2 C developing in mid-June, removed on June 27. A single constant does not describe the whole month."
+      },
+      "k_cool.E": {
+        "value": 0.12,
+        "confidence": 0.65,
+        "note": "Approximate gross cooling coefficient from interval thermal balance; state sampled every five minutes, not continuous actuator history."
+      },
+      "k_leak.E": {
+        "value": 0.0011,
+        "confidence": 0.53,
+        "note": "Approximate fitted heat-leak coefficient using panel-room ambient and shared-wall coupling. Uncertainty includes sensor calibration and unsampled switching."
+      },
+      "H.E": {
+        "value": 0.7,
+        "confidence": 0.67,
+        "note": "Approximate hysteresis half-width: normal cooling starts near setpoint + H and stops near setpoint - H; observation noise and five-minute sampling blur crossings."
+      },
+      "bias.E": {
+        "value": 1.0,
+        "confidence": 0.85,
+        "note": "Sensor minus true air temperature. Calibrated HH-1 and HH-2 corrected by -0.8 C."
+      },
+      "k_cool.F": {
+        "value": 0.03,
+        "confidence": 0.65,
+        "note": "Approximate gross cooling coefficient from interval thermal balance; state sampled every five minutes, not continuous actuator history."
+      },
+      "k_leak.F": {
+        "value": 0.0018,
+        "confidence": 0.53,
+        "note": "Approximate fitted heat-leak coefficient using panel-room ambient and shared-wall coupling. Uncertainty includes sensor calibration and unsampled switching."
+      },
+      "H.F": {
+        "value": 1.1,
+        "confidence": 0.67,
+        "note": "Approximate hysteresis half-width: normal cooling starts near setpoint + H and stops near setpoint - H; observation noise and five-minute sampling blur crossings."
+      },
+      "bias.F": {
+        "value": null,
+        "confidence": 0.98,
+        "note": "No independent calibrated probe observations in this room. Absolute sensor bias cannot be securely separated from thermal-model assumptions; do not assume zero."
+      },
+      "door_gain": {
+        "value": 7.5,
+        "confidence": 0.62,
+        "note": "Approximate multiplier on ambient heat ingress when open; interval fits range about 6.5\u20138.2."
+      },
+      "c_adj": {
+        "value": 0.0002,
+        "confidence": 0.52,
+        "note": "Small shared-wall coupling; estimates are model-dependent (roughly 0.0001\u20130.0002/min)."
+      },
+      "defrost.R_hours": {
+        "value": 5,
+        "confidence": 0.69,
+        "note": "Approximately five accumulated compressor-running hours, not six wall-clock hours. Shared heater arbitration can defer an already-due room; missing status frames bias naive runtime sums downward."
+      },
+      "defrost.len_min": {
+        "value": 24,
+        "confidence": 0.99,
+        "note": "Repeated paired BD/50 start and end ticks differ by 144 ticks, at ten seconds/tick."
+      },
+      "defrost.heat_degC": {
+        "value": 4.5,
+        "confidence": 0.74,
+        "note": "Approximate added heat over one 24-minute defrost, after allowing for ambient and shared-wall heat flows; not simply observed net rise."
+      },
+      "trip.d_min": {
+        "value": 10,
+        "confidence": 0.94,
+        "note": "About ten minutes of running with sustained open-door/high-pressure load; retries approximately every fifteen minutes include a roughly five-minute hold-off."
+      },
+      "lockout.N": {
+        "value": 4,
+        "confidence": 0.99,
+        "note": "Fourth qualifying trip enters lockout; groups of three do not."
+      },
+      "lockout.W_min": {
+        "value": 85,
+        "confidence": 0.8,
+        "note": "Approximately 85 min. Surviving trip sequences constrain the look-back to at least 84 and less than 90 minutes; the exact boundary is not directly tested."
+      },
+      "lockout.L_min": {
+        "value": 90,
+        "confidence": 0.99,
+        "note": "Three independent visible enter/clear pairs are exactly 540 ticks = 90 min."
+      }
+    },
+    "rules": {
+      "defrost_rule_type": "runtime_hours",
+      "stagger_order": [
+        "C",
+        "A",
+        "F",
+        "B",
+        "D",
+        "E"
+      ],
+      "adjacency_pairs": [
+        [
+          "D",
+          "C"
+        ],
+        [
+          "C",
+          "E"
+        ],
+        [
+          "D",
+          "B"
+        ],
+        [
+          "C",
+          "F"
+        ],
+        [
+          "E",
+          "A"
+        ],
+        [
+          "B",
+          "F"
+        ],
+        [
+          "F",
+          "A"
+        ],
+        [
+          "D",
+          "F"
+        ]
+      ]
+    }
+  },
+  "protocol": {
+    "types": {
+      "F8": "STATUS",
+      "4D": "DOOR",
+      "74": "TRIP",
+      "1D": "LOCKOUT",
+      "BD": "DEFROST",
+      "50": "HEATER",
+      "62": "BOOT",
+      "34": "QUEUE_OVERFLOW"
+    },
+    "status_words": [
+      "AIR_TEMP",
+      "DISCH_PRESSURE",
+      "STATE_FLAGS",
+      "COIL_TEMP"
+    ],
+    "temp_scale": 10,
+    "temp_offset": 1000,
+    "press_scale": 100,
+    "flag_bits": {
+      "RUN": 15,
+      "DEFROST": 1,
+      "LOCKOUT": 6,
+      "RECOVERY": 2,
+      "DOOR_OPEN": 12,
+      "ABS_TEMP": 14
+    },
+    "v34_change": "absolute_temp",
+    "heldout": [
+      {
+        "seq": 3512,
+        "ts": "2026-06-19T22:25:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -18.7
+      },
+      {
+        "seq": 3512,
+        "ts": "2026-06-19T22:25:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 10.9
+      },
+      {
+        "seq": 3512,
+        "ts": "2026-06-19T22:25:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 16384
+      },
+      {
+        "seq": 3512,
+        "ts": "2026-06-19T22:25:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -19.0
+      },
+      {
+        "seq": 3512,
+        "ts": "2026-06-19T22:25:00Z",
+        "zone": "E",
+        "event": "IDLE",
+        "value": null
+      },
+      {
+        "seq": 3513,
+        "ts": "2026-06-19T22:30:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -18.9
+      },
+      {
+        "seq": 3513,
+        "ts": "2026-06-19T22:30:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 11.8
+      },
+      {
+        "seq": 3513,
+        "ts": "2026-06-19T22:30:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 49152
+      },
+      {
+        "seq": 3513,
+        "ts": "2026-06-19T22:30:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -25.0
+      },
+      {
+        "seq": 3513,
+        "ts": "2026-06-19T22:30:00Z",
+        "zone": "E",
+        "event": "RUN",
+        "value": null
+      },
+      {
+        "seq": 3514,
+        "ts": "2026-06-19T22:35:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -19.4
+      },
+      {
+        "seq": 3514,
+        "ts": "2026-06-19T22:35:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 11.8
+      },
+      {
+        "seq": 3514,
+        "ts": "2026-06-19T22:35:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 49152
+      },
+      {
+        "seq": 3514,
+        "ts": "2026-06-19T22:35:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -25.2
+      },
+      {
+        "seq": 3514,
+        "ts": "2026-06-19T22:35:00Z",
+        "zone": "E",
+        "event": "RUN",
+        "value": null
+      },
+      {
+        "seq": 3515,
+        "ts": "2026-06-19T22:40:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -19.6
+      },
+      {
+        "seq": 3515,
+        "ts": "2026-06-19T22:40:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 11.8
+      },
+      {
+        "seq": 3515,
+        "ts": "2026-06-19T22:40:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 49152
+      },
+      {
+        "seq": 3515,
+        "ts": "2026-06-19T22:40:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -25.5
+      },
+      {
+        "seq": 3515,
+        "ts": "2026-06-19T22:40:00Z",
+        "zone": "E",
+        "event": "RUN",
+        "value": null
+      },
+      {
+        "seq": 3516,
+        "ts": "2026-06-19T22:45:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -19.6
+      },
+      {
+        "seq": 3516,
+        "ts": "2026-06-19T22:45:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 10.9
+      },
+      {
+        "seq": 3516,
+        "ts": "2026-06-19T22:45:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 16384
+      },
+      {
+        "seq": 3516,
+        "ts": "2026-06-19T22:45:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -20.2
+      },
+      {
+        "seq": 3516,
+        "ts": "2026-06-19T22:45:00Z",
+        "zone": "E",
+        "event": "IDLE",
+        "value": null
+      },
+      {
+        "seq": 3517,
+        "ts": "2026-06-19T22:50:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -19.4
+      },
+      {
+        "seq": 3517,
+        "ts": "2026-06-19T22:50:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 10.9
+      },
+      {
+        "seq": 3517,
+        "ts": "2026-06-19T22:50:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 16384
+      },
+      {
+        "seq": 3517,
+        "ts": "2026-06-19T22:50:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -19.9
+      },
+      {
+        "seq": 3517,
+        "ts": "2026-06-19T22:50:00Z",
+        "zone": "E",
+        "event": "IDLE",
+        "value": null
+      },
+      {
+        "seq": 3518,
+        "ts": "2026-06-19T22:55:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -19.5
+      },
+      {
+        "seq": 3518,
+        "ts": "2026-06-19T22:55:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 10.9
+      },
+      {
+        "seq": 3518,
+        "ts": "2026-06-19T22:55:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 16384
+      },
+      {
+        "seq": 3518,
+        "ts": "2026-06-19T22:55:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -20.0
+      },
+      {
+        "seq": 3518,
+        "ts": "2026-06-19T22:55:00Z",
+        "zone": "E",
+        "event": "IDLE",
+        "value": null
+      },
+      {
+        "seq": 3519,
+        "ts": "2026-06-19T23:00:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -19.4
+      },
+      {
+        "seq": 3519,
+        "ts": "2026-06-19T23:00:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 11.0
+      },
+      {
+        "seq": 3519,
+        "ts": "2026-06-19T23:00:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 16384
+      },
+      {
+        "seq": 3519,
+        "ts": "2026-06-19T23:00:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -19.9
+      },
+      {
+        "seq": 3519,
+        "ts": "2026-06-19T23:00:00Z",
+        "zone": "E",
+        "event": "IDLE",
+        "value": null
+      },
+      {
+        "seq": 3520,
+        "ts": "2026-06-19T23:05:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -19.1
+      },
+      {
+        "seq": 3520,
+        "ts": "2026-06-19T23:05:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 10.9
+      },
+      {
+        "seq": 3520,
+        "ts": "2026-06-19T23:05:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 16384
+      },
+      {
+        "seq": 3520,
+        "ts": "2026-06-19T23:05:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -19.6
+      },
+      {
+        "seq": 3520,
+        "ts": "2026-06-19T23:05:00Z",
+        "zone": "E",
+        "event": "IDLE",
+        "value": null
+      },
+      {
+        "seq": 3521,
+        "ts": "2026-06-19T23:10:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -19.5
+      },
+      {
+        "seq": 3521,
+        "ts": "2026-06-19T23:10:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 11.0
+      },
+      {
+        "seq": 3521,
+        "ts": "2026-06-19T23:10:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 16384
+      },
+      {
+        "seq": 3521,
+        "ts": "2026-06-19T23:10:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -20.1
+      },
+      {
+        "seq": 3521,
+        "ts": "2026-06-19T23:10:00Z",
+        "zone": "E",
+        "event": "IDLE",
+        "value": null
+      },
+      {
+        "seq": 3522,
+        "ts": "2026-06-19T23:15:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -18.7
+      },
+      {
+        "seq": 3522,
+        "ts": "2026-06-19T23:15:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 10.8
+      },
+      {
+        "seq": 3522,
+        "ts": "2026-06-19T23:15:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 16384
+      },
+      {
+        "seq": 3522,
+        "ts": "2026-06-19T23:15:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -19.2
+      },
+      {
+        "seq": 3522,
+        "ts": "2026-06-19T23:15:00Z",
+        "zone": "E",
+        "event": "IDLE",
+        "value": null
+      },
+      {
+        "seq": 3523,
+        "ts": "2026-06-19T23:20:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -19.1
+      },
+      {
+        "seq": 3523,
+        "ts": "2026-06-19T23:20:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 11.8
+      },
+      {
+        "seq": 3523,
+        "ts": "2026-06-19T23:20:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 49152
+      },
+      {
+        "seq": 3523,
+        "ts": "2026-06-19T23:20:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -25.3
+      },
+      {
+        "seq": 3523,
+        "ts": "2026-06-19T23:20:00Z",
+        "zone": "E",
+        "event": "RUN",
+        "value": null
+      },
+      {
+        "seq": 3524,
+        "ts": "2026-06-19T23:25:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -19.5
+      },
+      {
+        "seq": 3524,
+        "ts": "2026-06-19T23:25:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 11.8
+      },
+      {
+        "seq": 3524,
+        "ts": "2026-06-19T23:25:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 49152
+      },
+      {
+        "seq": 3524,
+        "ts": "2026-06-19T23:25:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -25.4
+      },
+      {
+        "seq": 3524,
+        "ts": "2026-06-19T23:25:00Z",
+        "zone": "E",
+        "event": "RUN",
+        "value": null
+      },
+      {
+        "seq": 3525,
+        "ts": "2026-06-19T23:30:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -20.1
+      },
+      {
+        "seq": 3525,
+        "ts": "2026-06-19T23:30:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 11.9
+      },
+      {
+        "seq": 3525,
+        "ts": "2026-06-19T23:30:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 49152
+      },
+      {
+        "seq": 3525,
+        "ts": "2026-06-19T23:30:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -25.7
+      },
+      {
+        "seq": 3525,
+        "ts": "2026-06-19T23:30:00Z",
+        "zone": "E",
+        "event": "RUN",
+        "value": null
+      },
+      {
+        "seq": 3526,
+        "ts": "2026-06-19T23:35:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -19.8
+      },
+      {
+        "seq": 3526,
+        "ts": "2026-06-19T23:35:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 10.8
+      },
+      {
+        "seq": 3526,
+        "ts": "2026-06-19T23:35:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 16384
+      },
+      {
+        "seq": 3526,
+        "ts": "2026-06-19T23:35:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -20.3
+      },
+      {
+        "seq": 3526,
+        "ts": "2026-06-19T23:35:00Z",
+        "zone": "E",
+        "event": "IDLE",
+        "value": null
+      },
+      {
+        "seq": 3527,
+        "ts": "2026-06-19T23:40:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -19.8
+      },
+      {
+        "seq": 3527,
+        "ts": "2026-06-19T23:40:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 10.9
+      },
+      {
+        "seq": 3527,
+        "ts": "2026-06-19T23:40:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 16384
+      },
+      {
+        "seq": 3527,
+        "ts": "2026-06-19T23:40:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -20.2
+      },
+      {
+        "seq": 3527,
+        "ts": "2026-06-19T23:40:00Z",
+        "zone": "E",
+        "event": "IDLE",
+        "value": null
+      },
+      {
+        "seq": 3528,
+        "ts": "2026-06-19T23:45:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -19.3
+      },
+      {
+        "seq": 3528,
+        "ts": "2026-06-19T23:45:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 10.9
+      },
+      {
+        "seq": 3528,
+        "ts": "2026-06-19T23:45:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 16384
+      },
+      {
+        "seq": 3528,
+        "ts": "2026-06-19T23:45:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -20.1
+      },
+      {
+        "seq": 3528,
+        "ts": "2026-06-19T23:45:00Z",
+        "zone": "E",
+        "event": "IDLE",
+        "value": null
+      },
+      {
+        "seq": 3529,
+        "ts": "2026-06-19T23:50:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -19.5
+      },
+      {
+        "seq": 3529,
+        "ts": "2026-06-19T23:50:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 10.9
+      },
+      {
+        "seq": 3529,
+        "ts": "2026-06-19T23:50:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 16384
+      },
+      {
+        "seq": 3529,
+        "ts": "2026-06-19T23:50:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -19.9
+      },
+      {
+        "seq": 3529,
+        "ts": "2026-06-19T23:50:00Z",
+        "zone": "E",
+        "event": "IDLE",
+        "value": null
+      },
+      {
+        "seq": 3530,
+        "ts": "2026-06-19T23:55:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -19.5
+      },
+      {
+        "seq": 3530,
+        "ts": "2026-06-19T23:55:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 10.9
+      },
+      {
+        "seq": 3530,
+        "ts": "2026-06-19T23:55:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 16384
+      },
+      {
+        "seq": 3530,
+        "ts": "2026-06-19T23:55:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -20.0
+      },
+      {
+        "seq": 3530,
+        "ts": "2026-06-19T23:55:00Z",
+        "zone": "E",
+        "event": "IDLE",
+        "value": null
+      },
+      {
+        "seq": 3531,
+        "ts": "2026-06-20T00:00:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -19.0
+      },
+      {
+        "seq": 3531,
+        "ts": "2026-06-20T00:00:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 10.9
+      },
+      {
+        "seq": 3531,
+        "ts": "2026-06-20T00:00:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 16384
+      },
+      {
+        "seq": 3531,
+        "ts": "2026-06-20T00:00:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -19.2
+      },
+      {
+        "seq": 3531,
+        "ts": "2026-06-20T00:00:00Z",
+        "zone": "E",
+        "event": "IDLE",
+        "value": null
+      },
+      {
+        "seq": 3532,
+        "ts": "2026-06-20T00:05:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -19.1
+      },
+      {
+        "seq": 3532,
+        "ts": "2026-06-20T00:05:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 11.9
+      },
+      {
+        "seq": 3532,
+        "ts": "2026-06-20T00:05:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 49152
+      },
+      {
+        "seq": 3532,
+        "ts": "2026-06-20T00:05:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -25.2
+      },
+      {
+        "seq": 3532,
+        "ts": "2026-06-20T00:05:00Z",
+        "zone": "E",
+        "event": "RUN",
+        "value": null
+      },
+      {
+        "seq": 3533,
+        "ts": "2026-06-20T00:10:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -19.7
+      },
+      {
+        "seq": 3533,
+        "ts": "2026-06-20T00:10:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 11.9
+      },
+      {
+        "seq": 3533,
+        "ts": "2026-06-20T00:10:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 49152
+      },
+      {
+        "seq": 3533,
+        "ts": "2026-06-20T00:10:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -26.1
+      },
+      {
+        "seq": 3533,
+        "ts": "2026-06-20T00:10:00Z",
+        "zone": "E",
+        "event": "RUN",
+        "value": null
+      },
+      {
+        "seq": 3534,
+        "ts": "2026-06-20T00:15:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -19.5
+      },
+      {
+        "seq": 3534,
+        "ts": "2026-06-20T00:15:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 11.9
+      },
+      {
+        "seq": 3534,
+        "ts": "2026-06-20T00:15:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 49152
+      },
+      {
+        "seq": 3534,
+        "ts": "2026-06-20T00:15:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -25.5
+      },
+      {
+        "seq": 3534,
+        "ts": "2026-06-20T00:15:00Z",
+        "zone": "E",
+        "event": "RUN",
+        "value": null
+      },
+      {
+        "seq": 3535,
+        "ts": "2026-06-20T00:20:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -20.1
+      },
+      {
+        "seq": 3535,
+        "ts": "2026-06-20T00:20:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 11.0
+      },
+      {
+        "seq": 3535,
+        "ts": "2026-06-20T00:20:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 16384
+      },
+      {
+        "seq": 3535,
+        "ts": "2026-06-20T00:20:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -20.6
+      },
+      {
+        "seq": 3535,
+        "ts": "2026-06-20T00:20:00Z",
+        "zone": "E",
+        "event": "IDLE",
+        "value": null
+      },
+      {
+        "seq": 3536,
+        "ts": "2026-06-20T00:25:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -19.6
+      },
+      {
+        "seq": 3536,
+        "ts": "2026-06-20T00:25:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 10.9
+      },
+      {
+        "seq": 3536,
+        "ts": "2026-06-20T00:25:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 16384
+      },
+      {
+        "seq": 3536,
+        "ts": "2026-06-20T00:25:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -20.0
+      },
+      {
+        "seq": 3536,
+        "ts": "2026-06-20T00:25:00Z",
+        "zone": "E",
+        "event": "IDLE",
+        "value": null
+      },
+      {
+        "seq": 3537,
+        "ts": "2026-06-20T00:27:00Z",
+        "zone": "E",
+        "event": "DOOR",
+        "value": 1
+      },
+      {
+        "seq": 3538,
+        "ts": "2026-06-20T00:28:00Z",
+        "zone": "E",
+        "event": "DOOR",
+        "value": 0
+      },
+      {
+        "seq": 3539,
+        "ts": "2026-06-20T00:30:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -19.1
+      },
+      {
+        "seq": 3539,
+        "ts": "2026-06-20T00:30:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 10.8
+      },
+      {
+        "seq": 3539,
+        "ts": "2026-06-20T00:30:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 16384
+      },
+      {
+        "seq": 3539,
+        "ts": "2026-06-20T00:30:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -19.3
+      },
+      {
+        "seq": 3539,
+        "ts": "2026-06-20T00:30:00Z",
+        "zone": "E",
+        "event": "IDLE",
+        "value": null
+      },
+      {
+        "seq": 3540,
+        "ts": "2026-06-20T00:35:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -18.8
+      },
+      {
+        "seq": 3540,
+        "ts": "2026-06-20T00:35:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 11.0
+      },
+      {
+        "seq": 3540,
+        "ts": "2026-06-20T00:35:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 16384
+      },
+      {
+        "seq": 3540,
+        "ts": "2026-06-20T00:35:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -19.3
+      },
+      {
+        "seq": 3540,
+        "ts": "2026-06-20T00:35:00Z",
+        "zone": "E",
+        "event": "IDLE",
+        "value": null
+      },
+      {
+        "seq": 3541,
+        "ts": "2026-06-20T00:38:00Z",
+        "zone": "E",
+        "event": "DOOR",
+        "value": 1
+      },
+      {
+        "seq": 3542,
+        "ts": "2026-06-20T00:40:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -18.0
+      },
+      {
+        "seq": 3542,
+        "ts": "2026-06-20T00:40:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 12.0
+      },
+      {
+        "seq": 3542,
+        "ts": "2026-06-20T00:40:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 53248
+      },
+      {
+        "seq": 3542,
+        "ts": "2026-06-20T00:40:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -23.9
+      },
+      {
+        "seq": 3542,
+        "ts": "2026-06-20T00:40:00Z",
+        "zone": "E",
+        "event": "RUN",
+        "value": null
+      },
+      {
+        "seq": 3543,
+        "ts": "2026-06-20T00:45:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -17.3
+      },
+      {
+        "seq": 3543,
+        "ts": "2026-06-20T00:45:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 12.7
+      },
+      {
+        "seq": 3543,
+        "ts": "2026-06-20T00:45:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 53248
+      },
+      {
+        "seq": 3543,
+        "ts": "2026-06-20T00:45:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -23.1
+      },
+      {
+        "seq": 3543,
+        "ts": "2026-06-20T00:45:00Z",
+        "zone": "E",
+        "event": "RUN",
+        "value": null
+      },
+      {
+        "seq": 3544,
+        "ts": "2026-06-20T00:49:00Z",
+        "zone": "E",
+        "event": "TRIP",
+        "value": 1
+      },
+      {
+        "seq": 3545,
+        "ts": "2026-06-20T00:50:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -16.9
+      },
+      {
+        "seq": 3545,
+        "ts": "2026-06-20T00:50:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 11.0
+      },
+      {
+        "seq": 3545,
+        "ts": "2026-06-20T00:50:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 20480
+      },
+      {
+        "seq": 3545,
+        "ts": "2026-06-20T00:50:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -17.5
+      },
+      {
+        "seq": 3545,
+        "ts": "2026-06-20T00:50:00Z",
+        "zone": "E",
+        "event": "IDLE",
+        "value": null
+      },
+      {
+        "seq": 3546,
+        "ts": "2026-06-20T00:55:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -15.5
+      },
+      {
+        "seq": 3546,
+        "ts": "2026-06-20T00:55:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 12.0
+      },
+      {
+        "seq": 3546,
+        "ts": "2026-06-20T00:55:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 53248
+      },
+      {
+        "seq": 3546,
+        "ts": "2026-06-20T00:55:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -21.6
+      },
+      {
+        "seq": 3546,
+        "ts": "2026-06-20T00:55:00Z",
+        "zone": "E",
+        "event": "RUN",
+        "value": null
+      },
+      {
+        "seq": 3547,
+        "ts": "2026-06-20T01:00:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -14.6
+      },
+      {
+        "seq": 3547,
+        "ts": "2026-06-20T01:00:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 12.7
+      },
+      {
+        "seq": 3547,
+        "ts": "2026-06-20T01:00:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 53248
+      },
+      {
+        "seq": 3547,
+        "ts": "2026-06-20T01:00:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -20.8
+      },
+      {
+        "seq": 3547,
+        "ts": "2026-06-20T01:00:00Z",
+        "zone": "E",
+        "event": "RUN",
+        "value": null
+      },
+      {
+        "seq": 3548,
+        "ts": "2026-06-20T01:04:00Z",
+        "zone": "E",
+        "event": "TRIP",
+        "value": 1
+      },
+      {
+        "seq": 3549,
+        "ts": "2026-06-20T01:05:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -14.2
+      },
+      {
+        "seq": 3549,
+        "ts": "2026-06-20T01:05:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 11.0
+      },
+      {
+        "seq": 3549,
+        "ts": "2026-06-20T01:05:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 20480
+      },
+      {
+        "seq": 3549,
+        "ts": "2026-06-20T01:05:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -14.4
+      },
+      {
+        "seq": 3549,
+        "ts": "2026-06-20T01:05:00Z",
+        "zone": "E",
+        "event": "IDLE",
+        "value": null
+      },
+      {
+        "seq": 3550,
+        "ts": "2026-06-20T01:10:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -12.7
+      },
+      {
+        "seq": 3550,
+        "ts": "2026-06-20T01:10:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 12.2
+      },
+      {
+        "seq": 3550,
+        "ts": "2026-06-20T01:10:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 53248
+      },
+      {
+        "seq": 3550,
+        "ts": "2026-06-20T01:10:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -18.3
+      },
+      {
+        "seq": 3550,
+        "ts": "2026-06-20T01:10:00Z",
+        "zone": "E",
+        "event": "RUN",
+        "value": null
+      },
+      {
+        "seq": 3551,
+        "ts": "2026-06-20T01:15:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -12.2
+      },
+      {
+        "seq": 3551,
+        "ts": "2026-06-20T01:15:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 12.8
+      },
+      {
+        "seq": 3551,
+        "ts": "2026-06-20T01:15:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 53248
+      },
+      {
+        "seq": 3551,
+        "ts": "2026-06-20T01:15:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -17.9
+      },
+      {
+        "seq": 3551,
+        "ts": "2026-06-20T01:15:00Z",
+        "zone": "E",
+        "event": "RUN",
+        "value": null
+      },
+      {
+        "seq": 3552,
+        "ts": "2026-06-20T01:19:00Z",
+        "zone": "E",
+        "event": "TRIP",
+        "value": 1
+      },
+      {
+        "seq": 3553,
+        "ts": "2026-06-20T01:20:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -11.7
+      },
+      {
+        "seq": 3553,
+        "ts": "2026-06-20T01:20:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 11.0
+      },
+      {
+        "seq": 3553,
+        "ts": "2026-06-20T01:20:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 20480
+      },
+      {
+        "seq": 3553,
+        "ts": "2026-06-20T01:20:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -12.1
+      },
+      {
+        "seq": 3553,
+        "ts": "2026-06-20T01:20:00Z",
+        "zone": "E",
+        "event": "IDLE",
+        "value": null
+      },
+      {
+        "seq": 3554,
+        "ts": "2026-06-20T01:25:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -10.7
+      },
+      {
+        "seq": 3554,
+        "ts": "2026-06-20T01:25:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 12.3
+      },
+      {
+        "seq": 3554,
+        "ts": "2026-06-20T01:25:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 53248
+      },
+      {
+        "seq": 3554,
+        "ts": "2026-06-20T01:25:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -16.6
+      },
+      {
+        "seq": 3554,
+        "ts": "2026-06-20T01:25:00Z",
+        "zone": "E",
+        "event": "RUN",
+        "value": null
+      },
+      {
+        "seq": 3555,
+        "ts": "2026-06-20T01:30:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -9.8
+      },
+      {
+        "seq": 3555,
+        "ts": "2026-06-20T01:30:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 12.8
+      },
+      {
+        "seq": 3555,
+        "ts": "2026-06-20T01:30:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 53248
+      },
+      {
+        "seq": 3555,
+        "ts": "2026-06-20T01:30:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -15.9
+      },
+      {
+        "seq": 3555,
+        "ts": "2026-06-20T01:30:00Z",
+        "zone": "E",
+        "event": "RUN",
+        "value": null
+      },
+      {
+        "seq": 3557,
+        "ts": "2026-06-20T01:34:00Z",
+        "zone": "E",
+        "event": "LOCKOUT",
+        "value": 1
+      }
+    ]
+  },
+  "findings": [
+    {
+      "claim": "The room E excursion began with a sustained door opening at 2026-06-20 00:38 UTC, followed by rising discharge pressure, high-pressure trips and protective lockout at 01:34; it was not initiated by an established compressor hardware failure or a drifting setpoint.",
+      "status": "established",
+      "confidence": 0.98,
+      "evidence": [
+        "controller/VX05_fault_snapshot.txt",
+        "deploy/logs/gateway.log",
+        "people/tickets.json:T-0402"
+      ]
+    },
+    {
+      "claim": "The postmortem attribution to compressor failure is contradicted by normal pre-event cycling, the door-first trip sequence, a timed lockout-clear at 05:29 and resumed cooling without a recorded compressor replacement. The compressor recall does not cover this site\u2019s NK-380 equipment.",
+      "status": "refuted",
+      "confidence": 0.97,
+      "evidence": [
+        "people/postmortem.md",
+        "people/recall_notice.txt",
+        "controller/VX05_fault_snapshot.txt",
+        "deploy/logs/gateway.log"
+      ]
+    },
+    {
+      "claim": "VX05 communication was lost shortly after the 00:38 door opening and restored about 04:53\u201304:55. The previously reproduced door-frame cable fault explains this selective loss; overflow report 34/0041 reports 65 lost entries. The separate noon disk-full gap is not the cause of the overnight blackout.",
+      "status": "established",
+      "confidence": 0.98,
+      "evidence": [
+        "people/tickets.json:T-0402,T-0418",
+        "deploy/logs/gateway.log",
+        "controller/VX05_fault_snapshot.txt"
+      ]
+    },
+    {
+      "claim": "Room E was genuinely warm for hours: the recovered snapshot shows warming to a reported -9.8 C by 01:30; resumed reports show +6.2 C at 04:55 and +7.0 C at 05:25. Its independent probe bias is about +1 C, making the latter about +6 C actual air. Cooling resumes after the 05:29 lockout clear; later defrost prolongs recovery.",
+      "status": "established",
+      "confidence": 0.96,
+      "evidence": [
+        "controller/VX05_fault_snapshot.txt",
+        "deploy/logs/gateway.log",
+        "people/probe_checks_sheet.csv",
+        "people/receipts/calibration_certificate_handhelds.txt"
+      ]
+    },
+    {
+      "claim": "The exact room E peak, continuous temperature curve, all intervening trip/lockout cycles and exact thermal dose cannot be recovered across the link outage. The 45-entry snapshot freezes at the first visible lockout rather than preserving the whole night.",
+      "status": "undetermined",
+      "confidence": 0.99,
+      "evidence": [
+        "controller/VX05_fault_snapshot.txt",
+        "deploy/logs/gateway.log",
+        "people/utility_submeter.csv"
+      ],
+      "alternatives": [
+        "Repeated automatic retry and further lockout while the door remained open, followed by closure and recovery (best supported).",
+        "Different unrecorded retry/door histories within the missing period; panel P1 measures C and E together and cannot uniquely split their loads."
+      ]
+    },
+    {
+      "claim": "Felix Okafor\u2019s June 8 visit updated BOTH VX05/E and VX03/C to firmware 3.4, with new boot epochs at 15:02 and 15:43 UTC respectively. The service report\u2019s inspection-only account for VX05 is false.",
+      "status": "established",
+      "confidence": 0.99,
+      "evidence": [
+        "deploy/logs/gateway.log",
+        "people/vendor_service_reports/service_report_firmware_visit.md",
+        "people/receipts/vendor_invoice_firmware_service.txt"
+      ]
+    },
+    {
+      "claim": "Firmware 3.4 makes the temperature words absolute Celsius and sets ABS_TEMP bit 14. The gateway ignores that flag and still adds the negative setpoint, producing approximately -40 C for otherwise normal C/E sensors. This is a decoder compatibility error, not a demonstrated new-board sensor failure.",
+      "status": "established",
+      "confidence": 0.99,
+      "evidence": [
+        "repo/gateway/rh7_decode.py",
+        "deploy/logs/gateway.log",
+        "people/probe_checks_sheet.csv",
+        "people/vendor_service_reports/service_report_firmware_visit.md"
+      ]
+    },
+    {
+      "claim": "Maya Larsen committed C/E routing to #alerts-coldchain-old on June 9 (761f81a); Priya Novak archived that channel on June 10, before the excursion. The route is per zone, not restricted to low-temperature warnings.",
+      "status": "established",
+      "confidence": 0.99,
+      "evidence": [
+        "repo/.git:761f81a",
+        "repo/alerting/routes.json",
+        "repo/alerting/server.py",
+        "people/chat_export.json:m0083,m0098"
+      ]
+    },
+    {
+      "claim": "The critical minimum-severity override exists and suppresses warnings, but its deployer and exact deployment time are not established. Neither Ivan Kowalski nor Maya Larsen can be assigned responsibility from these records; git contains the routing change, not an authored override deployment, and ledger audit is empty.",
+      "status": "undetermined",
+      "confidence": 0.99,
+      "evidence": [
+        "repo/deploy/config.override.json",
+        "repo/.git",
+        "db/ledger.sql:audit",
+        "people/chat_export.json:m0091,m0093,m0100",
+        "people/statements/sre_oncall_i.kowalski.md",
+        "people/statements/ops_engineer_m.larsen.md"
+      ],
+      "alternatives": [
+        "Ivan Kowalski deployed it despite his denial.",
+        "Maya Larsen or another person/process deployed it; the surviving override and chat do not discriminate."
+      ]
+    },
+    {
+      "claim": "Alerting tests only the cached temperature, not its age or controller_stale events. Overnight E therefore retained a falsely cold reading; after reconnection the highest misdecoded value only reached the -12.3 C high limit, while the critical rule requires strictly greater. No correctly interpreted E high-temperature alert was generated.",
+      "status": "established",
+      "confidence": 0.99,
+      "evidence": [
+        "repo/alerting/server.py:evaluate",
+        "repo/gateway/server.py:stale_watch",
+        "repo/ledger/server.py:post_readings",
+        "repo/alerting/routes.json",
+        "deploy/logs/alerting.log",
+        "db/ledger.sql"
+      ]
+    },
+    {
+      "claim": "Maya Mensah had used a wedge on room E on an earlier night: her purchase, corrected photo time of June 9 01:21, photo caption and ensuing chat contradict her categorical denial of ever propping a cold-room door. This does not identify the opener on the excursion night.",
+      "status": "established",
+      "confidence": 0.96,
+      "evidence": [
+        "people/receipts/hardware_receipt_wedge.txt",
+        "people/photos_exif.csv:IMG_2231.jpg",
+        "people/chat_export.json:m0080,m0081",
+        "people/statements/temp_worker_m.mensah.md"
+      ]
+    },
+    {
+      "claim": "Who held or propped room E open at 00:38 on June 20 cannot be determined. Maya Mensah\u2019s prior wedge use is not proof of this act. The room E badge reader was out of service, relevant CCTV was overwritten, and the door contact identifies no person.",
+      "status": "undetermined",
+      "confidence": 0.99,
+      "evidence": [
+        "people/tickets.json:T-0411",
+        "people/badge_access.csv",
+        "people/cctv_motion.csv",
+        "controller/VX05_fault_snapshot.txt",
+        "people/photos_exif.csv"
+      ],
+      "alternatives": [
+        "Maya Mensah repeated the earlier practice.",
+        "Hana Tanaka or another person with key/access opened or left the door open; no surviving identity-bearing record distinguishes them."
+      ]
+    },
+    {
+      "claim": "Night-lead Hana Tanaka\u2019s account of a joint 21:38 arrival is contradicted by corrected entrance badges: Maya Mensah at 21:49 and Hana at 22:02. Her claim that nobody approached room E after departure is contradicted by a further E opening at 06:23.",
+      "status": "established",
+      "confidence": 0.96,
+      "evidence": [
+        "people/badge_access.csv",
+        "people/statements/night_lead_h.tanaka.md",
+        "deploy/logs/gateway.log"
+      ]
+    },
+    {
+      "claim": "Room D had a baseline positive sensor bias around 1.3 C and an additional gradual mid-June positive drift of about 3.2 C, removed at the June 27 service. HH-2 itself reads +0.8 C high and was certified out of tolerance; treating it as an accurate calibrated reference reverses/misstates the discrepancy.",
+      "status": "established",
+      "confidence": 0.94,
+      "evidence": [
+        "people/probe_checks_sheet.csv",
+        "people/receipts/calibration_certificate_handhelds.txt",
+        "people/vendor_service_reports/service_report_recalibration.md",
+        "deploy/logs/gateway.log"
+      ]
+    },
+    {
+      "claim": "Priya Novak\u2019s probe records repeatedly cover rooms C and E as well as A and D, contradicting the claim that C/E were not on her routine HH-1 route. No equivalent calibrated probe record establishes absolute sensor bias in B or F.",
+      "status": "established",
+      "confidence": 0.99,
+      "evidence": [
+        "people/probe_checks_sheet.csv",
+        "people/statements/warehouse_manager_p.novak.md"
+      ]
+    },
+    {
+      "claim": "The ledger\u2019s individual-lot GET route is shadowed by the earlier /lots prefix route. Dispatch receives a collection instead of a lot, raises KeyError zone, and still marks jobs done. All 66 lot positions remain the initial import and the moves table is empty. Successful scanner acceptance or done queue state is not successful reconciliation.",
+      "status": "established",
+      "confidence": 1,
+      "evidence": [
+        "repo/common/httpd.py:JSONHandler._dispatch",
+        "repo/ledger/server.py:H.routes",
+        "repo/dispatch/server.py:apply_move,worker_loop",
+        "deploy/logs/dispatch.log.1",
+        "deploy/logs/dispatch.log",
+        "db/ledger.sql",
+        "db/queue.sql"
+      ]
+    },
+    {
+      "claim": "The postmortem\u2019s twelve-lot quarantine list simply reproduces the imported E inventory, not actual excursion-window residence. It misses LN-22416, physically dropped into E by Samuel Tanaka at 14:59 on June 19, and includes LN-25578, moved to C before the excursion and picked there again afterward.",
+      "status": "established",
+      "confidence": 0.98,
+      "evidence": [
+        "people/postmortem.md",
+        "repo/deploy/inventory_import.csv",
+        "db/ledger.sql",
+        "db/queue.sql",
+        "people/forklift_telematics.csv",
+        "people/stability_lab_email.md"
+      ]
+    },
+    {
+      "claim": "Sofia Larsen\u2019s June 21 move of PL-9143/LN-25578 from C to B was a real scanned move, not proof of operator wrongdoing. Forklift pickup 12:41/drop 12:45, gateway request and queue payload agree; the ledger remained at imported E because reconciliation failed.",
+      "status": "established",
+      "confidence": 0.99,
+      "evidence": [
+        "people/statements/forklift_op_1_s.larsen.md",
+        "people/forklift_telematics.csv",
+        "deploy/logs/gateway.log",
+        "deploy/logs/dispatch.log",
+        "db/queue.sql",
+        "db/ledger.sql"
+      ]
+    },
+    {
+      "claim": "Initial import errors also exist: LN-23197/PL-9173 was imported in D but the earliest June 4 physical pickup and scanner request place it in C. Subsequent queue processing cannot explain an already-wrong initial location.",
+      "status": "established",
+      "confidence": 0.94,
+      "evidence": [
+        "repo/deploy/inventory_import.csv",
+        "people/forklift_telematics.csv",
+        "deploy/logs/gateway.log.1",
+        "db/queue.sql"
+      ]
+    },
+    {
+      "claim": "A complete definitive exposed-lot list and every physical move cannot be reconstructed. Some physical chains change rooms without a surviving connecting scan, FL-2 telemetry is missing June 20\u201322, E badges fail June 16\u201321, and all gateway logs are absent June 20 noon\u201315:00.",
+      "status": "undetermined",
+      "confidence": 0.99,
+      "evidence": [
+        "people/forklift_telematics.csv",
+        "people/tickets.json:T-0411,T-0416,T-0418",
+        "people/cctv_motion.csv",
+        "db/queue.sql",
+        "db/ledger.sql"
+      ],
+      "alternatives": [
+        "Unscanned or otherwise unrecorded moves occurred, including within the overlapping blind spots.",
+        "Some contradictory origin entries reflect source-record errors; no complete physical location audit survives to distinguish every case."
+      ]
+    },
+    {
+      "claim": "The nightly billing process holds a ledger write transaction for roughly 33\u201346 minutes at 01:00; ledger database-is-locked errors, gateway write deadlines and missed ACKs coincide. This recurring loss mechanism is distinct from E\u2019s door/link fault and the later disk-full gap.",
+      "status": "established",
+      "confidence": 0.99,
+      "evidence": [
+        "repo/.git:HEAD:billing/nightly.py",
+        "deploy/logs/billing.log.1",
+        "deploy/logs/billing.log",
+        "deploy/logs/ledger.log.1",
+        "deploy/logs/ledger.log",
+        "deploy/logs/gateway.log",
+        "repo/gateway/server.py:handle_line"
+      ]
+    },
+    {
+      "claim": "Synchronous serialized WMS lookup before enqueue, 30-second webhook deadlines and retry without an idempotency key can duplicate accepted work. Queue duplicates exist, but they are not evidence that duplicate/reordered ledger writes caused the frozen inventory: the individual-lot read fails first.",
+      "status": "established",
+      "confidence": 0.98,
+      "evidence": [
+        "repo/dispatch/server.py:post_jobs,wms_pallet_lookup,apply_move",
+        "repo/gateway/server.py:_post_dispatch",
+        "repo/common/netutil.py:http_call",
+        "repo/deploy/config.json",
+        "db/queue.sql",
+        "deploy/logs/dispatch.log"
+      ]
+    },
+    {
+      "claim": "Defrost is runtime-dependent and serially staggered, not a fixed six-hour wall-clock schedule. BD denotes defrost rather than the bench report\u2019s condenser-fan label; heater events track its 24-minute windows and are followed by RUN plus RECOVERY.",
+      "status": "established",
+      "confidence": 0.94,
+      "evidence": [
+        "deploy/logs/gateway.log.1",
+        "deploy/logs/gateway.log",
+        "people/utility_submeter.csv",
+        "repo/docs/runbook.md",
+        "people/vendor_service_reports/bench_report_unit01.md"
+      ]
+    },
+    {
+      "claim": "The June 7 planned power interruption is an independent all-room reset event, not the explanation for C/E absolute-temperature formatting changes on June 8 or the selective E outage on June 20.",
+      "status": "established",
+      "confidence": 0.99,
+      "evidence": [
+        "people/utility_notice.txt",
+        "people/utility_submeter.csv",
+        "people/tickets.json:T-0406",
+        "deploy/logs/gateway.log.1",
+        "deploy/logs/gateway.log"
+      ]
+    },
+    {
+      "claim": "No SETPOINT telegram survives in the raw capture or snapshot, so its VX-5 type code and payload cannot be inferred from this evidence. Old firmware-2.x documentation is not a reliable current message map.",
+      "status": "undetermined",
+      "confidence": 0.99,
+      "evidence": [
+        "repo/docs/rh7_integration_note_v2.txt",
+        "deploy/logs/gateway.log.1",
+        "deploy/logs/gateway.log",
+        "controller/VX05_fault_snapshot.txt"
+      ],
+      "alternatives": [
+        "An unobserved reserved type carries setpoint changes.",
+        "Setpoint changes use a different interface or payload not captured here; a controlled panel change with bus capture would discriminate."
+      ]
+    }
+  ],
+  "timeline": {
+    "events": [
+      {
+        "actor": "actor:f.okafor",
+        "action": "firmware_flash",
+        "t": "2026-06-08T15:02:00Z",
+        "ref": "firmware:E; gateway BOOT 62/0034 at tick 0; agency and invoice identify visit technician"
+      },
+      {
+        "actor": "actor:f.okafor",
+        "action": "firmware_flash",
+        "t": "2026-06-08T15:43:00Z",
+        "ref": "firmware:C; gateway BOOT 62/0034 at tick 0"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "ticket_open",
+        "t": "2026-06-08T16:50:00Z",
+        "ref": "ticket:T-0407; C/E approximately -40 dashboard readings"
+      },
+      {
+        "actor": "actor:m.mensah",
+        "action": "purchase",
+        "t": "2026-06-08T17:15:00Z",
+        "ref": "people/receipts/hardware_receipt_wedge.txt: wedge and extension cord; purchase is not proof of incident-night use"
+      },
+      {
+        "actor": "actor:m.mensah",
+        "action": "door_prop",
+        "t": "2026-06-09T01:21:00Z",
+        "ref": "physical:door:E; earlier use evidenced by IMG_2231 caption at corrected EXIF time; onset itself not timed"
+      },
+      {
+        "actor": "actor:m.mensah",
+        "action": "photo",
+        "t": "2026-06-09T01:21:00Z",
+        "ref": "people/photos_exif.csv:IMG_2231.jpg; DateTimeOriginal + 120 min"
+      },
+      {
+        "actor": "actor:m.larsen",
+        "action": "commit",
+        "t": "2026-06-09T11:36:13Z",
+        "ref": "commit:761f81a; C/E route to legacy channel, no severity override in diff"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "archive_channel",
+        "t": "2026-06-10T09:54:00Z",
+        "ref": "msg:m0098; #alerts-coldchain-old archived"
+      },
+      {
+        "actor": "actor:p.novak",
+        "action": "ticket_open",
+        "t": "2026-06-16T09:00:00Z",
+        "ref": "ticket:T-0411; ROOM-E badge reader failed"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-06-19T08:56:00Z",
+        "ref": "lot:LN-25578 / PL-9143; pick B, drop C at 09:00, forklift plus gateway"
+      },
+      {
+        "actor": "actor:s.tanaka",
+        "action": "pallet_move",
+        "t": "2026-06-19T14:57:00Z",
+        "ref": "lot:LN-22416 / PL-6443; pick C, drop E at 14:59, forklift plus scanner payload"
+      },
+      {
+        "actor": "actor:m.mensah",
+        "action": "shift_start",
+        "t": "2026-06-19T21:49:00Z",
+        "ref": "MAIN-ENTRANCE badge IN 21:42 plus seven minutes"
+      },
+      {
+        "actor": "actor:h.tanaka",
+        "action": "shift_start",
+        "t": "2026-06-19T22:02:00Z",
+        "ref": "MAIN-ENTRANCE badge IN 21:55 plus seven minutes"
+      },
+      {
+        "actor": "physical:door:E",
+        "action": "door_open",
+        "t": "2026-06-20T00:27:00Z",
+        "ref": "snapshot seq 3537 tick 01807E: brief opening; human actor unknown"
+      },
+      {
+        "actor": "physical:door:E",
+        "action": "door_close",
+        "t": "2026-06-20T00:28:00Z",
+        "ref": "snapshot seq 3538 tick 018084"
+      },
+      {
+        "actor": "physical:door:E",
+        "action": "door_open",
+        "t": "2026-06-20T00:38:00Z",
+        "ref": "snapshot seq 3541 / gateway; sustained incident opening, human identity undetermined"
+      },
+      {
+        "actor": "actor:h.tanaka",
+        "action": "door_open",
+        "t": "2026-06-20T00:58:00Z",
+        "ref": "ROOM-B badge UNLOCK 00:51 + seven min; identifies access to B, not the earlier E opening"
+      },
+      {
+        "actor": "actor:m.mensah",
+        "action": "shift_end",
+        "t": "2026-06-20T05:58:00Z",
+        "ref": "MAIN-ENTRANCE OUT 05:51 plus seven minutes"
+      },
+      {
+        "actor": "actor:h.tanaka",
+        "action": "shift_end",
+        "t": "2026-06-20T06:05:00Z",
+        "ref": "MAIN-ENTRANCE OUT 05:58 plus seven minutes"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-06-20T06:16:00Z",
+        "ref": "lot:LN-21643 / PL-9709; pick D and drop E 06:20; independent evidence of morning E activity"
+      },
+      {
+        "actor": "physical:door:E",
+        "action": "door_open",
+        "t": "2026-06-20T06:23:00Z",
+        "ref": "gateway seq 3625; another E opening after night staff departed"
+      },
+      {
+        "actor": "physical:door:E",
+        "action": "door_close",
+        "t": "2026-06-20T06:26:00Z",
+        "ref": "gateway seq 3627"
+      },
+      {
+        "actor": "actor:i.kowalski",
+        "action": "ticket_open",
+        "t": "2026-06-20T12:15:00Z",
+        "ref": "ticket:T-0418; no logs noon\u201315:00; services reportedly continued"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "pallet_move",
+        "t": "2026-06-21T12:41:00Z",
+        "ref": "lot:LN-25578 / PL-9143; physical pick C, drop B 12:45; scanner request 12:41:03"
+      },
+      {
+        "actor": "actor:p.dubois",
+        "action": "ticket_open",
+        "t": "2026-06-22T17:23:00Z",
+        "ref": "ticket:T-0414; D panel versus handheld discrepancy"
+      },
+      {
+        "actor": "actor:a.schulz",
+        "action": "ticket_open",
+        "t": "2026-06-30T09:00:00Z",
+        "ref": "ticket:T-0421; stability-lab email identifies LN-22416"
+      }
+    ],
+    "clock_offsets_min": {
+      "badge": -7,
+      "exif": -120,
+      "cctv": -5,
+      "forklift": 0,
+      "chat": 0,
+      "tickets": 0,
+      "git": 0,
+      "submeter": 0,
+      "gateway": 0,
+      "probe": 0
+    },
+    "false_claims": [
+      {
+        "doc_id": "doc:postmortem",
+        "quote": "Root cause: compressor failure on controller VX05."
+      },
+      {
+        "doc_id": "doc:postmortem",
+        "quote": "The failure caused the room E setpoint to drift upward over several hours without triggering an audible or dispatched alarm to any on-shift personnel."
+      },
+      {
+        "doc_id": "doc:service_report_firmware_visit",
+        "quote": "Unit VX05 (room E): inspected only, no changes made"
+      },
+      {
+        "doc_id": "doc:bench_report_unit01",
+        "quote": "message type 0xbd: condenser fan"
+      },
+      {
+        "doc_id": "doc:runbook",
+        "quote": "Defrost runs on a fixed schedule every 6 hours per room; the rooms take turns so the heaters never overlap."
+      },
+      {
+        "doc_id": "doc:temp_worker_m.mensah",
+        "quote": "I deny propping any cold-room door, ever."
+      },
+      {
+        "doc_id": "doc:temp_worker_m.mensah",
+        "quote": "I never used that wedge or anything else on room E or any other room door."
+      },
+      {
+        "doc_id": "doc:warehouse_manager_p.novak",
+        "quote": "room E and room C aren't rooms I'm walking every day with that unit."
+      },
+      {
+        "doc_id": "doc:warehouse_manager_p.novak",
+        "quote": "I archived the old alert channel only after the incident"
+      },
+      {
+        "doc_id": "doc:receiving_clerk_p.dubois",
+        "quote": "My handheld was calibrated last month and reads fine"
+      },
+      {
+        "doc_id": "doc:night_lead_h.tanaka",
+        "quote": "I came on shift at about 9:38 pm on Fri 19 Jun, together with the agency worker Maya Mensah"
+      },
+      {
+        "doc_id": "doc:night_lead_h.tanaka",
+        "quote": "all the rooms were closed and nobody went near room E after that."
+      },
+      {
+        "doc_id": "doc:ops_engineer_m.larsen",
+        "quote": "the -40 readings are a known sensor fault on the 3.4 boards"
+      }
+    ]
+  },
+  "confidence": {
+    "mechanism": 0.72,
+    "protocol": 0.96,
+    "findings": 0.95,
+    "timeline": 0.9
+  }
+}

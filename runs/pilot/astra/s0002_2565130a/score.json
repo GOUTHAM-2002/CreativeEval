@@ -1,0 +1,1892 @@
+{
+ "instance": "s0002_2565130a",
+ "submission_status": "ok",
+ "section_status": {
+  "mechanism": "ok",
+  "notation": "ok",
+  "causal_chain": "ok",
+  "timeline": "ok",
+  "confidence": "ok"
+ },
+ "section_errors": {},
+ "measured": {
+  "sections": {
+   "mechanism": {
+    "score": 0.996527778,
+    "params": {
+     "k_cool.A": {
+      "pred": 0.0314,
+      "value": 0.03,
+      "tol": 0.006,
+      "pts": 1.0
+     },
+     "k_cool.B": {
+      "pred": 0.092,
+      "value": 0.0934,
+      "tol": 0.00934,
+      "pts": 1.0
+     },
+     "k_cool.C": {
+      "pred": 0.0716,
+      "value": 0.0714,
+      "tol": 0.0071400000000000005,
+      "pts": 1.0
+     },
+     "k_cool.D": {
+      "pred": 0.0653,
+      "value": 0.0613,
+      "tol": 0.00613,
+      "pts": 1.0
+     },
+     "k_cool.E": {
+      "pred": 0.1195,
+      "value": 0.1223,
+      "tol": 0.012230000000000001,
+      "pts": 1.0
+     },
+     "k_cool.F": {
+      "pred": 0.03,
+      "value": 0.03,
+      "tol": 0.006,
+      "pts": 1.0
+     },
+     "k_leak.A": {
+      "pred": 0.0012,
+      "value": 0.00126,
+      "tol": 0.00025,
+      "pts": 1.0
+     },
+     "k_leak.B": {
+      "pred": 0.000693,
+      "value": 0.00066,
+      "tol": 0.00025,
+      "pts": 1.0
+     },
+     "k_leak.C": {
+      "pred": 0.000773,
+      "value": 0.00072,
+      "tol": 0.00025,
+      "pts": 1.0
+     },
+     "k_leak.D": {
+      "pred": 0.000637,
+      "value": 0.00065,
+      "tol": 0.00025,
+      "pts": 1.0
+     },
+     "k_leak.E": {
+      "pred": 0.00115,
+      "value": 0.00112,
+      "tol": 0.00025,
+      "pts": 1.0
+     },
+     "k_leak.F": {
+      "pred": 0.0019,
+      "value": 0.00195,
+      "tol": 0.00029249999999999995,
+      "pts": 1.0
+     },
+     "H.A": {
+      "pred": 1.6,
+      "value": 1.59,
+      "tol": 0.25,
+      "pts": 1.0
+     },
+     "H.B": {
+      "pred": 1.2,
+      "value": 1.26,
+      "tol": 0.25,
+      "pts": 1.0
+     },
+     "H.C": {
+      "pred": 1.8,
+      "value": 1.8,
+      "tol": 0.25,
+      "pts": 1.0
+     },
+     "H.D": {
+      "pred": 1.0,
+      "value": 0.93,
+      "tol": 0.25,
+      "pts": 1.0
+     },
+     "H.E": {
+      "pred": 1.2,
+      "value": 1.29,
+      "tol": 0.25,
+      "pts": 1.0
+     },
+     "H.F": {
+      "pred": 2.0,
+      "value": 1.96,
+      "tol": 0.25,
+      "pts": 1.0
+     },
+     "bias.A": {
+      "pred": 1.45,
+      "value": 1.41,
+      "tol": 0.3,
+      "pts": 1.0
+     },
+     "bias.B": {
+      "pred": -1.15,
+      "value": -1.1,
+      "tol": 0.3,
+      "pts": 1.0
+     },
+     "bias.C": {
+      "pred": 0.16,
+      "value": 0.24,
+      "tol": 0.3,
+      "pts": 1.0
+     },
+     "bias.D": {
+      "pred": 1.2,
+      "value": 1.2,
+      "tol": 0.3,
+      "pts": 1.0
+     },
+     "bias.E": {
+      "pred": 0.85,
+      "value": 0.89,
+      "tol": 0.3,
+      "pts": 1.0
+     },
+     "bias.F": {
+      "pred": -0.15,
+      "value": -0.22,
+      "tol": 0.3,
+      "pts": 1.0
+     },
+     "door_gain": {
+      "pred": 8.15,
+      "value": 8.14,
+      "tol": 1.6280000000000001,
+      "pts": 1.0
+     },
+     "c_adj": {
+      "pred": 0.000183,
+      "value": 0.0003,
+      "tol": 0.0003,
+      "pts": 1.0
+     },
+     "defrost.R_hours": {
+      "pred": 5,
+      "value": 5,
+      "tol": 0.5,
+      "pts": 1.0
+     },
+     "defrost.len_min": {
+      "pred": 24,
+      "value": 24,
+      "tol": 2,
+      "pts": 1.0
+     },
+     "defrost.heat_degC": {
+      "pred": 4.45,
+      "value": 4.5,
+      "tol": 0.6,
+      "pts": 1.0
+     },
+     "trip.d_min": {
+      "pred": 10,
+      "value": 10,
+      "tol": 0.5,
+      "pts": 1.0
+     },
+     "lockout.N": {
+      "pred": 4,
+      "value": 4,
+      "tol": 0,
+      "pts": 1.0
+     },
+     "lockout.W_min": {
+      "pred": 90,
+      "value": 90,
+      "tol": 5,
+      "pts": 1.0
+     },
+     "lockout.L_min": {
+      "pred": 90,
+      "value": 90,
+      "tol": 5,
+      "pts": 1.0
+     }
+    },
+    "params_hits": 33,
+    "params_half": 0,
+    "n_params": 33,
+    "params_acc": 1.0,
+    "params_pts_sum": 33.0,
+    "rules": {
+     "defrost_rule_type": {
+      "pred": "runtime_hours",
+      "value": "runtime_hours",
+      "pts": 1.0
+     },
+     "stagger_order": {
+      "pred": [
+       "C",
+       "A",
+       "F",
+       "B",
+       "D",
+       "E"
+      ],
+      "value": [
+       "C",
+       "A",
+       "F",
+       "B",
+       "D",
+       "E"
+      ],
+      "pts": 1.0
+     },
+     "adjacency_pairs": {
+      "pred": [
+       [
+        "A",
+        "F"
+       ],
+       [
+        "B",
+        "D"
+       ],
+       [
+        "D",
+        "F"
+       ],
+       [
+        "A",
+        "E"
+       ],
+       [
+        "C",
+        "F"
+       ],
+       [
+        "B",
+        "F"
+       ],
+       [
+        "C",
+        "E"
+       ],
+       [
+        "C",
+        "D"
+       ]
+      ],
+      "value": [
+       [
+        "A",
+        "F"
+       ],
+       [
+        "B",
+        "D"
+       ],
+       [
+        "A",
+        "E"
+       ],
+       [
+        "C",
+        "F"
+       ],
+       [
+        "B",
+        "F"
+       ],
+       [
+        "C",
+        "E"
+       ],
+       [
+        "C",
+        "D"
+       ]
+      ],
+      "intersection": 7,
+      "union": 8,
+      "pts": 0.875
+     }
+    },
+    "rules_pts_sum": 2.875,
+    "n_rules": 3,
+    "rules_all_correct": false
+   },
+   "notation": {
+    "score": 0.978571429,
+    "glossary": {
+     "dode": {
+      "pred": "DEFROST",
+      "value": "DEFROST",
+      "hit": true
+     },
+     "nato": {
+      "pred": "RECOVERY",
+      "value": "RECOVERY",
+      "hit": true
+     },
+     "gawi": {
+      "pred": "LOCKOUT",
+      "value": "LOCKOUT",
+      "hit": true
+     },
+     "dete": {
+      "pred": "TRIP",
+      "value": "TRIP",
+      "hit": true
+     },
+     "nowi": {
+      "pred": "COIL_TEMP",
+      "value": "COIL_TEMP",
+      "hit": true
+     },
+     "kone": {
+      "pred": "DISCH_PRESSURE",
+      "value": "DISCH_PRESSURE",
+      "hit": true
+     },
+     "kemo": {
+      "pred": "DOOR",
+      "value": "DOOR",
+      "hit": true
+     },
+     "kera": {
+      "pred": "HEATER",
+      "value": "HEATER",
+      "hit": true
+     },
+     "dega": {
+      "pred": "FIRMWARE",
+      "value": "FIRMWARE",
+      "hit": true
+     },
+     "mego": {
+      "pred": "QUEUE",
+      "value": "QUEUE",
+      "hit": true
+     },
+     "gago": {
+      "pred": "ENTER",
+      "value": "ENTER",
+      "hit": true
+     },
+     "rika": {
+      "pred": "EXIT",
+      "value": "EXIT",
+      "hit": true
+     },
+     "migo": {
+      "pred": "FAULT",
+      "value": "FAULT",
+      "hit": true
+     },
+     "kewe": {
+      "pred": "BOOT",
+      "value": "BOOT",
+      "hit": true
+     },
+     "woga": {
+      "pred": "OPEN",
+      "value": "OPEN",
+      "hit": true
+     },
+     "nata": {
+      "pred": "CLOSED",
+      "value": "CLOSED",
+      "hit": true
+     },
+     "timi": {
+      "pred": "ON",
+      "value": "ON",
+      "hit": true
+     },
+     "toti": {
+      "pred": "OFF",
+      "value": "OFF",
+      "hit": true
+     },
+     "tana": {
+      "pred": null,
+      "value": "STALE",
+      "hit": false
+     },
+     "nide": {
+      "pred": "ABS",
+      "value": "ABS",
+      "hit": true
+     },
+     "wena": {
+      "pred": "OVERFLOW",
+      "value": "OVERFLOW",
+      "hit": true
+     }
+    },
+    "glossary_hits": 20,
+    "n_unknown": 21,
+    "glossary_acc": 0.9523809523809523,
+    "extra_roots": 0,
+    "extra_roots_list": [],
+    "affixes": {
+     "ne": {
+      "pred": "ZONE",
+      "value": "ZONE",
+      "hit": true
+     },
+     "ke": {
+      "pred": "ZONE",
+      "value": "ZONE",
+      "hit": true
+     },
+     "no": {
+      "pred": "ZONE",
+      "value": "ZONE",
+      "hit": true
+     },
+     "re": {
+      "pred": "ZONE",
+      "value": "ZONE",
+      "hit": true
+     },
+     "ma": {
+      "pred": "ZONE",
+      "value": "ZONE",
+      "hit": true
+     },
+     "ra": {
+      "pred": "ZONE",
+      "value": "ZONE",
+      "hit": true
+     },
+     "he": {
+      "pred": "ASPECT_EVENT",
+      "value": "ASPECT_EVENT",
+      "hit": true
+     },
+     "ho": {
+      "pred": "ASPECT_STATE",
+      "value": "ASPECT_STATE",
+      "hit": true
+     }
+    },
+    "affix_hits": 8,
+    "n_affixes": 8,
+    "affix_acc": 1.0,
+    "v34": {
+     "pred": "absolute_temp",
+     "value": "absolute_temp",
+     "pts": 1.0
+    },
+    "heldout": [
+     {
+      "seq": 1002,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1003,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1004,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1005,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1006,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1007,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1008,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1009,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1010,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1011,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1012,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1013,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1014,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1015,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1016,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1017,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1018,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1019,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1020,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1021,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1022,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1023,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1024,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1025,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1026,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1027,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1028,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1029,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1030,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1031,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1032,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1033,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1034,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1035,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1036,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1037,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1038,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1039,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1040,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1041,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1042,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1043,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1044,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1045,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 1046,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "ts": true
+      },
+      "score": 1.0
+     }
+    ],
+    "heldout_frames_full": 45,
+    "n_heldout": 45,
+    "heldout_mean": 1.0,
+    "heldout_duplicate_seq": 0
+   },
+   "causal_chain": {
+    "score": 0.405757378,
+    "nodes": {
+     "hits": 15,
+     "n_pred": 70,
+     "n_truth": 18,
+     "precision": 0.21428571428571427,
+     "recall": 0.8333333333333334,
+     "f1": 0.3409090909090909,
+     "missing": [
+      "code:gateway/server.py:notify_dispatch",
+      "physical:defrost:a",
+      "physical:defrost:c"
+     ],
+     "extra": [
+      "actor:a.schulz",
+      "actor:f.okafor",
+      "actor:i.kowalski",
+      "actor:m.larsen",
+      "actor:m.mensah",
+      "actor:p.novak",
+      "alert:al-89907-e",
+      "alert:al-92144-b",
+      "code:alerting/server.py:evaluate",
+      "code:alerting/server.py:main",
+      "code:billing/nightly.py:run_once",
+      "code:billing/nightly.py:zone_hours",
+      "code:common/httpd.py:_dispatch",
+      "code:common/netutil.py:http_call",
+      "code:dispatch/server.py:post_jobs",
+      "code:dispatch/server.py:wms_pallet_lookup",
+      "code:dispatch/server.py:worker_loop",
+      "code:gateway/server.py:_post_dispatch",
+      "code:gateway/server.py:handle_line",
+      "code:gateway/server.py:stale_watch",
+      "code:gateway/server.py:store_reading",
+      "code:ledger/server.py:get_lots",
+      "code:ledger/server.py:get_readings_latest",
+      "code:ledger/server.py:post_events",
+      "commit:39bc7b8",
+      "commit:ac11924",
+      "commit:bf80e3c",
+      "config:alerting/routes.json:zones.b.channel",
+      "data:alerts_suppressed:b",
+      "data:frames_dropped:all",
+      "data:lots_wrong:all",
+      "data:readings_wrong:b",
+      "doc:night_lead_h.tanaka",
+      "doc:postmortem",
+      "doc:recall_notice",
+      "doc:service_report_firmware_visit",
+      "firmware:b",
+      "lot:ln-20400",
+      "lot:ln-22275",
+      "lot:ln-22862",
+      "lot:ln-22997",
+      "lot:ln-23230",
+      "lot:ln-23935",
+      "lot:ln-24017",
+      "lot:ln-25578",
+      "lot:ln-26885",
+      "lot:ln-27822",
+      "lot:ln-28034",
+      "lot:ln-28665",
+      "msg:m0045",
+      "msg:m0056",
+      "physical:defrost:e",
+      "physical:door_open:e",
+      "ticket:t-0413",
+      "ticket:t-0417"
+     ]
+    },
+    "edges": {
+     "hits": 11,
+     "n_pred": 101,
+     "n_truth": 17,
+     "precision": 0.10891089108910891,
+     "recall": 0.6470588235294118,
+     "f1": 0.1864406779661017,
+     "missing": [
+      [
+       "code:dispatch/server.py:apply_move",
+       "data:lots_wrong:e"
+      ],
+      [
+       "code:gateway/server.py:notify_dispatch",
+       "data:lots_wrong:e"
+      ],
+      [
+       "physical:defrost:a",
+       "physical:excursion:e"
+      ],
+      [
+       "physical:defrost:c",
+       "physical:excursion:e"
+      ],
+      [
+       "physical:door_prop:e",
+       "physical:excursion:e"
+      ],
+      [
+       "physical:door_prop:e",
+       "physical:trip:e"
+      ]
+     ],
+     "extra": [
+      [
+       "actor:a.schulz",
+       "data:quarantine_wrong:e"
+      ],
+      [
+       "actor:f.okafor",
+       "firmware:b"
+      ],
+      [
+       "actor:f.okafor",
+       "firmware:e"
+      ],
+      [
+       "actor:i.kowalski",
+       "config:deploy/config.override.json:alert_min_severity"
+      ],
+      [
+       "actor:m.larsen",
+       "commit:176b7d6"
+      ],
+      [
+       "actor:m.larsen",
+       "msg:m0045"
+      ],
+      [
+       "actor:m.larsen",
+       "ticket:t-0413"
+      ],
+      [
+       "actor:m.mensah",
+       "physical:door_prop:e"
+      ],
+      [
+       "actor:p.novak",
+       "msg:m0056"
+      ],
+      [
+       "alert:al-89907-e",
+       "config:deploy/config.override.json:alert_min_severity"
+      ],
+      [
+       "alert:al-92144-b",
+       "config:deploy/config.override.json:alert_min_severity"
+      ],
+      [
+       "code:alerting/server.py:evaluate",
+       "data:alerts_suppressed:b"
+      ],
+      [
+       "code:alerting/server.py:evaluate",
+       "data:alerts_suppressed:e"
+      ],
+      [
+       "code:alerting/server.py:main",
+       "data:alerts_suppressed:e"
+      ],
+      [
+       "code:billing/nightly.py:run_once",
+       "data:frames_dropped:all"
+      ],
+      [
+       "code:billing/nightly.py:zone_hours",
+       "code:billing/nightly.py:run_once"
+      ],
+      [
+       "code:common/httpd.py:_dispatch",
+       "code:ledger/server.py:get_lots"
+      ],
+      [
+       "code:common/httpd.py:_dispatch",
+       "data:lots_wrong:all"
+      ],
+      [
+       "code:common/netutil.py:http_call",
+       "code:alerting/server.py:main"
+      ],
+      [
+       "code:dispatch/server.py:apply_move",
+       "code:dispatch/server.py:worker_loop"
+      ],
+      [
+       "code:dispatch/server.py:apply_move",
+       "data:lots_wrong:all"
+      ],
+      [
+       "code:dispatch/server.py:post_jobs",
+       "code:dispatch/server.py:worker_loop"
+      ],
+      [
+       "code:dispatch/server.py:wms_pallet_lookup",
+       "code:gateway/server.py:_post_dispatch"
+      ],
+      [
+       "code:dispatch/server.py:worker_loop",
+       "data:lots_wrong:all"
+      ],
+      [
+       "code:gateway/kw7_decode.py:decode_line",
+       "code:gateway/server.py:handle_line"
+      ],
+      [
+       "code:gateway/kw7_decode.py:decode_line",
+       "data:alerts_suppressed:e"
+      ],
+      [
+       "code:gateway/kw7_decode.py:decode_line",
+       "data:readings_wrong:b"
+      ],
+      [
+       "code:gateway/server.py:_post_dispatch",
+       "code:dispatch/server.py:post_jobs"
+      ],
+      [
+       "code:gateway/server.py:handle_line",
+       "data:alerts_suppressed:e"
+      ],
+      [
+       "code:gateway/server.py:stale_watch",
+       "code:ledger/server.py:post_events"
+      ],
+      [
+       "code:gateway/server.py:store_reading",
+       "data:frames_dropped:all"
+      ],
+      [
+       "code:ledger/server.py:get_lots",
+       "code:dispatch/server.py:apply_move"
+      ],
+      [
+       "code:ledger/server.py:get_readings_latest",
+       "code:alerting/server.py:main"
+      ],
+      [
+       "code:ledger/server.py:post_events",
+       "data:alerts_suppressed:e"
+      ],
+      [
+       "commit:176b7d6",
+       "config:alerting/routes.json:zones.b.channel"
+      ],
+      [
+       "commit:39bc7b8",
+       "code:gateway/kw7_decode.py:decode_line"
+      ],
+      [
+       "commit:ac11924",
+       "code:common/httpd.py:_dispatch"
+      ],
+      [
+       "commit:bf80e3c",
+       "code:billing/nightly.py:run_once"
+      ],
+      [
+       "config:alerting/routes.json:zones.b.channel",
+       "data:alerts_suppressed:b"
+      ],
+      [
+       "config:deploy/config.override.json:alert_min_severity",
+       "data:alerts_suppressed:b"
+      ],
+      [
+       "data:alerts_suppressed:e",
+       "lot:ln-20400"
+      ],
+      [
+       "data:alerts_suppressed:e",
+       "lot:ln-22275"
+      ],
+      [
+       "data:alerts_suppressed:e",
+       "lot:ln-22862"
+      ],
+      [
+       "data:alerts_suppressed:e",
+       "lot:ln-22997"
+      ],
+      [
+       "data:alerts_suppressed:e",
+       "lot:ln-23230"
+      ],
+      [
+       "data:alerts_suppressed:e",
+       "lot:ln-23935"
+      ],
+      [
+       "data:alerts_suppressed:e",
+       "lot:ln-24017"
+      ],
+      [
+       "data:alerts_suppressed:e",
+       "lot:ln-25578"
+      ],
+      [
+       "data:alerts_suppressed:e",
+       "lot:ln-26885"
+      ],
+      [
+       "data:alerts_suppressed:e",
+       "lot:ln-27822"
+      ],
+      [
+       "data:alerts_suppressed:e",
+       "lot:ln-28034"
+      ],
+      [
+       "data:alerts_suppressed:e",
+       "lot:ln-28665"
+      ],
+      [
+       "data:frames_dropped:all",
+       "data:alerts_suppressed:e"
+      ],
+      [
+       "data:lots_wrong:all",
+       "data:lots_wrong:e"
+      ],
+      [
+       "data:lots_wrong:all",
+       "data:quarantine_wrong:e"
+      ],
+      [
+       "data:readings_wrong:b",
+       "actor:i.kowalski"
+      ],
+      [
+       "data:readings_wrong:b",
+       "alert:al-92144-b"
+      ],
+      [
+       "data:readings_wrong:b",
+       "data:alerts_suppressed:b"
+      ],
+      [
+       "data:readings_wrong:b",
+       "ticket:t-0417"
+      ],
+      [
+       "data:readings_wrong:e",
+       "actor:i.kowalski"
+      ],
+      [
+       "data:readings_wrong:e",
+       "alert:al-89907-e"
+      ],
+      [
+       "data:readings_wrong:e",
+       "ticket:t-0417"
+      ],
+      [
+       "doc:night_lead_h.tanaka",
+       "doc:postmortem"
+      ],
+      [
+       "doc:postmortem",
+       "data:quarantine_wrong:e"
+      ],
+      [
+       "doc:recall_notice",
+       "doc:postmortem"
+      ],
+      [
+       "doc:service_report_firmware_visit",
+       "doc:postmortem"
+      ],
+      [
+       "doc:service_report_firmware_visit",
+       "ticket:t-0417"
+      ],
+      [
+       "firmware:b",
+       "data:readings_wrong:b"
+      ],
+      [
+       "msg:m0045",
+       "commit:176b7d6"
+      ],
+      [
+       "msg:m0056",
+       "data:alerts_suppressed:b"
+      ],
+      [
+       "msg:m0056",
+       "data:alerts_suppressed:e"
+      ],
+      [
+       "physical:defrost:e",
+       "physical:excursion:e"
+      ],
+      [
+       "physical:door_open:e",
+       "data:frames_dropped:e"
+      ],
+      [
+       "physical:door_open:e",
+       "physical:excursion:e"
+      ],
+      [
+       "physical:door_open:e",
+       "physical:trip:e"
+      ],
+      [
+       "physical:door_prop:e",
+       "physical:door_open:e"
+      ],
+      [
+       "physical:excursion:e",
+       "lot:ln-20400"
+      ],
+      [
+       "physical:excursion:e",
+       "lot:ln-22275"
+      ],
+      [
+       "physical:excursion:e",
+       "lot:ln-22862"
+      ],
+      [
+       "physical:excursion:e",
+       "lot:ln-22997"
+      ],
+      [
+       "physical:excursion:e",
+       "lot:ln-23230"
+      ],
+      [
+       "physical:excursion:e",
+       "lot:ln-23935"
+      ],
+      [
+       "physical:excursion:e",
+       "lot:ln-24017"
+      ],
+      [
+       "physical:excursion:e",
+       "lot:ln-25578"
+      ],
+      [
+       "physical:excursion:e",
+       "lot:ln-26885"
+      ],
+      [
+       "physical:excursion:e",
+       "lot:ln-27822"
+      ],
+      [
+       "physical:excursion:e",
+       "lot:ln-28034"
+      ],
+      [
+       "physical:excursion:e",
+       "lot:ln-28665"
+      ],
+      [
+       "ticket:t-0413",
+       "data:frames_dropped:e"
+      ],
+      [
+       "ticket:t-0417",
+       "commit:176b7d6"
+      ]
+     ]
+    },
+    "affected_lots": {
+     "hits": 12,
+     "n_pred": 12,
+     "n_truth": 14,
+     "precision": 1.0,
+     "recall": 0.8571428571428571,
+     "f1": 0.923076923076923,
+     "missing": [
+      "lot:ln-20722",
+      "lot:ln-21231"
+     ],
+     "extra": []
+    },
+    "roots_hits": 3,
+    "n_roots": 9,
+    "n_roots_pred": 9,
+    "roots_missing": [
+     "code:dispatch/server.py:apply_move",
+     "code:gateway/server.py:notify_dispatch",
+     "commit:176b7d6",
+     "physical:defrost:a",
+     "physical:defrost:c",
+     "physical:door_prop:e"
+    ],
+    "roots_extra": [
+     "actor:m.mensah",
+     "code:billing/nightly.py:run_once",
+     "code:common/httpd.py:_dispatch",
+     "config:alerting/routes.json:zones.e.channel",
+     "firmware:b",
+     "ticket:t-0413"
+    ],
+    "decoys_included": 2,
+    "decoys_included_list": [
+     "code:billing/nightly.py:run_once",
+     "doc:recall_notice"
+    ],
+    "decoys_rejected_hits": 4,
+    "n_decoys": 5,
+    "excursion": {
+     "pred": {
+      "zone": "E",
+      "start": "2026-02-10T01:10:00Z",
+      "end": "2026-02-10T10:05:00Z"
+     },
+     "value": {
+      "zone": "E",
+      "start": "2026-02-10T01:17:00Z",
+      "end": "2026-02-10T09:24:00Z"
+     },
+     "tol_s": 900,
+     "zone_ok": true,
+     "start_ok": true,
+     "end_ok": false,
+     "start_delta_s": 420.0,
+     "end_delta_s": 2460.0,
+     "pts": 0.5
+    },
+    "unmatched_ids": []
+   },
+   "timeline": {
+    "score": 0.300311943,
+    "events": {
+     "matched": 18,
+     "n_truth": 18,
+     "n_pred": 526,
+     "recall": 1.0,
+     "precision": 0.034220532319391636,
+     "f1": 0.0661764705882353,
+     "wrong_actor": 0,
+     "wrong_time": 0,
+     "unparseable_t": 0,
+     "pairs": [
+      {
+       "pred_index": 184,
+       "event_id": "event:purchase_wedge",
+       "delta_s": 0.0
+      },
+      {
+       "pred_index": 190,
+       "event_id": "event:door_prop_earlier_1",
+       "delta_s": 0.0
+      },
+      {
+       "pred_index": 233,
+       "event_id": "event:flash_incident_zone",
+       "delta_s": 0.0
+      },
+      {
+       "pred_index": 234,
+       "event_id": "event:flash_other_zone",
+       "delta_s": 0.0
+      },
+      {
+       "pred_index": 238,
+       "event_id": "event:ticket_minus40",
+       "delta_s": 0.0
+      },
+      {
+       "pred_index": 265,
+       "event_id": "event:door_prop_earlier_2",
+       "delta_s": 0.0
+      },
+      {
+       "pred_index": 266,
+       "event_id": "event:override_deploy",
+       "delta_s": 0.0
+      },
+      {
+       "pred_index": 329,
+       "event_id": "event:shift_start_temp_incident_night",
+       "delta_s": 0.0
+      },
+      {
+       "pred_index": 332,
+       "event_id": "event:door_prop_incident",
+       "delta_s": 0.0
+      },
+      {
+       "pred_index": 391,
+       "event_id": "event:door_prop_earlier_3",
+       "delta_s": 0.0
+      },
+      {
+       "pred_index": 516,
+       "event_id": "event:lab_ticket",
+       "delta_s": 0.0
+      },
+      {
+       "pred_index": 519,
+       "event_id": "event:quarantine",
+       "delta_s": 0.0
+      },
+      {
+       "pred_index": 520,
+       "event_id": "event:postmortem_publish",
+       "delta_s": 0.0
+      },
+      {
+       "pred_index": 121,
+       "event_id": "event:billing_commit",
+       "delta_s": 8.0
+      },
+      {
+       "pred_index": 256,
+       "event_id": "event:hotfix_commit",
+       "delta_s": 10.0
+      },
+      {
+       "pred_index": 271,
+       "event_id": "event:archive_channel",
+       "delta_s": 60.0
+      },
+      {
+       "pred_index": 334,
+       "event_id": "event:door_close_incident",
+       "delta_s": 180.0
+      },
+      {
+       "pred_index": 189,
+       "event_id": "event:photo_wedge",
+       "delta_s": 900.0
+      }
+     ],
+     "unmatched_truth": []
+    },
+    "offsets": {
+     "channels": {
+      "badge": {
+       "pred": -11,
+       "value": -11,
+       "hit": true
+      },
+      "exif": {
+       "pred": -120,
+       "value": -120,
+       "hit": true
+      },
+      "cctv": {
+       "pred": 4,
+       "value": 3,
+       "hit": true
+      },
+      "forklift": {
+       "pred": 0,
+       "value": 0,
+       "hit": true
+      },
+      "chat": {
+       "pred": 1,
+       "value": 0,
+       "hit": true
+      },
+      "tickets": {
+       "pred": 0,
+       "value": 0,
+       "hit": true
+      },
+      "git": {
+       "pred": 0,
+       "value": 0,
+       "hit": true
+      },
+      "submeter": {
+       "pred": 0,
+       "value": 0,
+       "hit": true
+      },
+      "gateway": {
+       "pred": 0,
+       "value": 0,
+       "hit": true
+      },
+      "probe": {
+       "pred": 0,
+       "value": 0,
+       "hit": true
+      }
+     },
+     "hits": 10,
+     "n_channels": 10,
+     "acc": 1.0,
+     "extra_channels": []
+    },
+    "claims": {
+     "claims": [
+      {
+       "claim_id": "fc01",
+       "doc_id": "doc:service_report_firmware_visit",
+       "text_source": "evidence",
+       "matched_pred_index": 10,
+       "overlap": 1.0,
+       "hit": true
+      },
+      {
+       "claim_id": "fc02",
+       "doc_id": "doc:night_lead",
+       "text_source": "evidence",
+       "matched_pred_index": null,
+       "overlap": null,
+       "hit": false
+      },
+      {
+       "claim_id": "fc03",
+       "doc_id": "doc:temp_worker",
+       "text_source": "evidence",
+       "matched_pred_index": null,
+       "overlap": null,
+       "hit": false
+      },
+      {
+       "claim_id": "fc04",
+       "doc_id": "doc:warehouse_manager",
+       "text_source": "evidence",
+       "matched_pred_index": null,
+       "overlap": null,
+       "hit": false
+      },
+      {
+       "claim_id": "fc05",
+       "doc_id": "doc:ops_engineer",
+       "text_source": "evidence",
+       "matched_pred_index": null,
+       "overlap": null,
+       "hit": false
+      },
+      {
+       "claim_id": "fc06",
+       "doc_id": "doc:sre_oncall",
+       "text_source": "evidence",
+       "matched_pred_index": null,
+       "overlap": null,
+       "hit": false
+      },
+      {
+       "claim_id": "fc07",
+       "doc_id": "doc:receiving_clerk",
+       "text_source": "evidence",
+       "matched_pred_index": null,
+       "overlap": null,
+       "hit": false
+      },
+      {
+       "claim_id": "fc08",
+       "doc_id": "doc:night_lead",
+       "text_source": "evidence",
+       "matched_pred_index": null,
+       "overlap": null,
+       "hit": false
+      },
+      {
+       "claim_id": "fc09",
+       "doc_id": "doc:chat_export",
+       "text_source": "evidence",
+       "matched_pred_index": 20,
+       "overlap": 1.0,
+       "hit": true
+      },
+      {
+       "claim_id": "fc10",
+       "doc_id": "doc:chat_export",
+       "text_source": "evidence",
+       "matched_pred_index": 19,
+       "overlap": 1.0,
+       "hit": true
+      },
+      {
+       "claim_id": "fc11",
+       "doc_id": "doc:postmortem",
+       "text_source": "evidence",
+       "matched_pred_index": 13,
+       "overlap": 1.0,
+       "hit": true
+      },
+      {
+       "claim_id": "fc12",
+       "doc_id": "doc:postmortem",
+       "text_source": "evidence",
+       "matched_pred_index": 17,
+       "overlap": 1.0,
+       "hit": true
+      }
+     ],
+     "hits": 5,
+     "n_truth": 12,
+     "n_pred": 21,
+     "precision": 0.23809523809523808,
+     "recall": 0.4166666666666667,
+     "f1": 0.30303030303030304,
+     "unmatched_pred_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      11,
+      12,
+      14,
+      15,
+      16,
+      18
+     ]
+    }
+   }
+  },
+  "aggregate": 0.670292132,
+  "solved": {
+   "mechanism": false,
+   "notation": true,
+   "causal_chain": false,
+   "timeline": false
+  },
+  "solved_all": false,
+  "calibration": {
+   "sections": {
+    "mechanism": {
+     "confidence": 0.87,
+     "solved": false,
+     "sq_err": 0.7569
+    },
+    "notation": {
+     "confidence": 0.99,
+     "solved": true,
+     "sq_err": 0.00010000000000000018
+    },
+    "causal_chain": {
+     "confidence": 0.86,
+     "solved": false,
+     "sq_err": 0.7395999999999999
+    },
+    "timeline": {
+     "confidence": 0.83,
+     "solved": false,
+     "sq_err": 0.6889
+    }
+   },
+   "brier": 0.546375,
+   "n_scored": 4,
+   "confidence_missing": 0
+  }
+ },
+ "authored": {
+  "weights": {
+   "mechanism": 0.25,
+   "notation": 0.25,
+   "causal_chain": 0.25,
+   "timeline": 0.25
+  },
+  "section_mix": {
+   "mechanism": {
+    "param_item": 1.0,
+    "rule_item": 1.0
+   },
+   "notation": {
+    "glossary_acc": 0.45,
+    "affix_acc": 0.1,
+    "heldout_mean": 0.4,
+    "v34": 0.05
+   },
+   "causal_chain": {
+    "f1_nodes": 0.4,
+    "f1_edges": 0.3,
+    "f1_lots": 0.15,
+    "excursion": 0.15
+   },
+   "timeline": {
+    "f1": 0.6,
+    "offsets_acc": 0.2,
+    "claims_f1": 0.2
+   }
+  },
+  "solved_thresholds": {
+   "mechanism": {
+    "params_acc": 0.8,
+    "rules_all_correct": true
+   },
+   "notation": {
+    "glossary_acc": 0.8,
+    "heldout_mean": 0.8
+   },
+   "causal_chain": {
+    "f1_nodes": 0.75,
+    "roots_all": true
+   },
+   "timeline": {
+    "f1": 0.7
+   }
+  },
+  "offset_tol_min": 2,
+  "half_credit_factor": 2.0,
+  "half_credit_pts": 0.5,
+  "excursion_one_bound_pts": 0.5,
+  "claim_min_overlap": 0.6,
+  "claim_match_rule": "doc_id equal after strip().lower(); the quote and the truth claim text (evidence doc sliced at the truth span when readable, else truth.text) are whitespace-collapsed, lower-cased and stripped; hit if the longest common contiguous substring (difflib.SequenceMatcher.find_longest_match, autojunk off) has length >= claim_min_overlap * len(shorter string); truth claims and predicted quotes are assigned one-to-one greedily by descending overlap ratio",
+  "vacuous_component_score": 1.0,
+  "id_prefix_pattern": "^[a-z_]+:",
+  "calibration_bins": 5,
+  "tolerance_source": "truth.json"
+ }
+}

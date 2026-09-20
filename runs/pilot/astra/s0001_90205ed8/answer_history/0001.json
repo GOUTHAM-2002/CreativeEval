@@ -1,0 +1,1 @@
+{"schema_version":"1","mechanism":{"parameters":{},"rules":{}},"notation":{"glossary":{},"affixes":{},"heldout":[]},"causal_chain":{"roots":[],"nodes":[],"edges":[],"decoys_rejected":[],"affected_lots":[]},"timeline":{"events":[],"clock_offsets_min":{},"false_claims":[]},"confidence":{"mechanism":0.1,"notation":0.1,"causal_chain":0.1,"timeline":0.1}}

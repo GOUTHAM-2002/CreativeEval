@@ -1,0 +1,261 @@
+{
+ "instance": "s0001_8add781f",
+ "zones": [
+  "A",
+  "B",
+  "C",
+  "D",
+  "E",
+  "F"
+ ],
+ "controllers": {
+  "A": "VX01",
+  "B": "VX02",
+  "C": "VX03",
+  "D": "VX04",
+  "E": "VX05",
+  "F": "VX06"
+ },
+ "site": "NGN54",
+ "company": "Polaris Pharma Logistics",
+ "controller_model": "VX-9",
+ "site_timezone": "Atlantic/Reykjavik (UTC all year); staff quote local times in 12-hour form",
+ "evidence_window": {
+  "start": "2026-03-15T00:00:00Z",
+  "end": "2026-04-14T00:00:00Z"
+ },
+ "mechanism_params": {
+  "k_cool.A": {
+   "unit": "degC/min"
+  },
+  "k_leak.A": {
+   "unit": "1/min"
+  },
+  "H.A": {
+   "unit": "degC"
+  },
+  "bias.A": {
+   "unit": "degC"
+  },
+  "k_cool.B": {
+   "unit": "degC/min"
+  },
+  "k_leak.B": {
+   "unit": "1/min"
+  },
+  "H.B": {
+   "unit": "degC"
+  },
+  "bias.B": {
+   "unit": "degC"
+  },
+  "k_cool.C": {
+   "unit": "degC/min"
+  },
+  "k_leak.C": {
+   "unit": "1/min"
+  },
+  "H.C": {
+   "unit": "degC"
+  },
+  "bias.C": {
+   "unit": "degC"
+  },
+  "k_cool.D": {
+   "unit": "degC/min"
+  },
+  "k_leak.D": {
+   "unit": "1/min"
+  },
+  "H.D": {
+   "unit": "degC"
+  },
+  "bias.D": {
+   "unit": "degC"
+  },
+  "k_cool.E": {
+   "unit": "degC/min"
+  },
+  "k_leak.E": {
+   "unit": "1/min"
+  },
+  "H.E": {
+   "unit": "degC"
+  },
+  "bias.E": {
+   "unit": "degC"
+  },
+  "k_cool.F": {
+   "unit": "degC/min"
+  },
+  "k_leak.F": {
+   "unit": "1/min"
+  },
+  "H.F": {
+   "unit": "degC"
+  },
+  "bias.F": {
+   "unit": "degC"
+  },
+  "door_gain": {
+   "unit": "ratio"
+  },
+  "c_adj": {
+   "unit": "1/min"
+  },
+  "defrost.R_hours": {
+   "unit": "hours"
+  },
+  "defrost.len_min": {
+   "unit": "min"
+  },
+  "defrost.heat_degC": {
+   "unit": "degC"
+  },
+  "trip.d_min": {
+   "unit": "min"
+  },
+  "lockout.N": {
+   "unit": "count"
+  },
+  "lockout.W_min": {
+   "unit": "min"
+  },
+  "lockout.L_min": {
+   "unit": "min"
+  }
+ },
+ "heldout_path": "controller/VX05_fault_snapshot.txt",
+ "id_grammar": {
+  "actor": "actor:<handle>",
+  "commit": "commit:<sha7>",
+  "config": "config:<relpath>:<dotted.key>",
+  "code": "code:<relpath>:<function>",
+  "firmware": "firmware:<zone>",
+  "physical": "physical:<PHYSICAL_TYPE>:<zone>",
+  "data": "data:<DATA_TYPE>:<scope>",
+  "doc": "doc:<file-stem>",
+  "ticket": "ticket:<id>",
+  "alert": "alert:<id>",
+  "msg": "msg:<id>",
+  "lot": "lot:<id>",
+  "zone": "zone:<L>",
+  "ctrl": "ctrl:<id>"
+ },
+ "enums": {
+  "ACTIONS": [
+   "door_prop",
+   "door_open",
+   "door_close",
+   "pallet_move",
+   "firmware_flash",
+   "config_edit",
+   "commit",
+   "override_deploy",
+   "archive_channel",
+   "probe_check",
+   "ticket_open",
+   "ticket_close",
+   "alert_ack",
+   "statement",
+   "quarantine",
+   "shift_start",
+   "shift_end",
+   "purchase",
+   "photo",
+   "postmortem_publish"
+  ],
+  "DEFROST_RULE_TYPES": [
+   "runtime_hours",
+   "wall_clock",
+   "temperature"
+  ],
+  "V34_CHANGE": [
+   "absolute_temp",
+   "delta_temp",
+   "unit_change",
+   "scale_change",
+   "none"
+  ],
+  "PROTOCOL_LABELS": [
+   "STATUS",
+   "DOOR",
+   "TRIP",
+   "LOCKOUT",
+   "DEFROST",
+   "HEATER",
+   "BOOT",
+   "SETPOINT",
+   "QUEUE_OVERFLOW"
+  ],
+  "STATUS_WORDS": [
+   "AIR_TEMP",
+   "COIL_TEMP",
+   "DISCH_PRESSURE",
+   "STATE_FLAGS"
+  ],
+  "FLAG_LABELS": [
+   "RUN",
+   "DEFROST",
+   "LOCKOUT",
+   "RECOVERY",
+   "DOOR_OPEN",
+   "ABS_TEMP"
+  ],
+  "HELDOUT_EVENTS": [
+   "AIR_TEMP",
+   "COIL_TEMP",
+   "DISCH_PRESSURE",
+   "STATE_FLAGS",
+   "DOOR",
+   "TRIP",
+   "LOCKOUT",
+   "DEFROST",
+   "HEATER",
+   "FIRMWARE",
+   "SETPOINT",
+   "QUEUE",
+   "RUN",
+   "IDLE",
+   "RECOVERY"
+  ],
+  "FINDING_STATUS": [
+   "established",
+   "probable",
+   "undetermined",
+   "refuted"
+  ],
+  "CHANNELS": [
+   "badge",
+   "exif",
+   "cctv",
+   "forklift",
+   "chat",
+   "tickets",
+   "git",
+   "submeter",
+   "gateway",
+   "probe"
+  ]
+ },
+ "channels": [
+  "badge",
+  "exif",
+  "cctv",
+  "forklift",
+  "chat",
+  "tickets",
+  "git",
+  "submeter",
+  "gateway",
+  "probe"
+ ],
+ "notes": [
+  "Answer with /work/report.md (narrative) and /work/answer.json (schema in ANSWER_SCHEMA.json).",
+  "Some questions cannot be settled from this evidence. Mark those findings 'undetermined' with the competing hypotheses; a parameter you cannot establish takes value null. Asserting an unknowable is scored as fabrication.",
+  "List-valued answers (findings, timeline events, false claims) are scored on precision and recall; padding costs as much as omission.",
+  "timeline.events use TRUE time (UTC); clock_offsets_min[channel] = (channel clock) - (true time) in minutes.",
+  "protocol: message type codes are two hex digits as they appear on the wire; status_words is the order of the four status quantities; scales/offsets are integers.",
+  "false_claims: quote the exact text of a statement in a human document that the evidence shows to be false (do not list claims that merely cannot be verified)."
+ ]
+}

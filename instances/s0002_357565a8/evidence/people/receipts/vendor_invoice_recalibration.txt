@@ -1,0 +1,6 @@
+SERVICE INVOICE  VX Controls Ltd
+Customer: Borealis Coldchain  Site ZLH62
+Visit date: 2026-06-27   Technician: Felix Okafor
+  Air sensor recalibration, room D (VX04) ........  190.00
+  Travel ............................................................................  120.00
+  Total ............................................................................  310.00

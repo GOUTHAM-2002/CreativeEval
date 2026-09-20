@@ -1,0 +1,810 @@
+{
+  "schema_version": "1",
+  "mechanism": {
+    "parameters": {
+      "k_cool.A": 0.12,
+      "k_leak.A": 0.0011,
+      "H.A": 1.4,
+      "bias.A": -0.8,
+      "k_cool.B": 0.08,
+      "k_leak.B": 0.001,
+      "H.B": 1.6,
+      "bias.B": 0.2,
+      "k_cool.C": 0.13,
+      "k_leak.C": 0.0012,
+      "H.C": 2.2,
+      "bias.C": 0.7,
+      "k_cool.D": 0.03,
+      "k_leak.D": 0.0014,
+      "H.D": 2.0,
+      "bias.D": -0.4,
+      "k_cool.E": 0.11,
+      "k_leak.E": 0.0011,
+      "H.E": 2.0,
+      "bias.E": -0.7,
+      "k_cool.F": 0.03,
+      "k_leak.F": 0.0016,
+      "H.F": 2.2,
+      "bias.F": 0.3,
+      "door_gain": 6.0,
+      "c_adj": 0.0003,
+      "defrost.R_hours": 6.0,
+      "defrost.len_min": 27.0,
+      "defrost.heat_degC": 4.2,
+      "trip.d_min": 8.0,
+      "lockout.N": 5.0,
+      "lockout.W_min": 60.0,
+      "lockout.L_min": 60.0
+    },
+    "rules": {
+      "defrost_rule_type": "runtime_hours",
+      "stagger_order": [
+        "C",
+        "F",
+        "D",
+        "B",
+        "A",
+        "E"
+      ],
+      "adjacency_pairs": [
+        [
+          "A",
+          "F"
+        ],
+        [
+          "A",
+          "B"
+        ],
+        [
+          "F",
+          "E"
+        ],
+        [
+          "F",
+          "C"
+        ],
+        [
+          "E",
+          "D"
+        ],
+        [
+          "B",
+          "C"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "B",
+          "E"
+        ]
+      ]
+    }
+  },
+  "notation": {
+    "glossary": {
+      "pamo": "DEFROST",
+      "wapo": "TRIP",
+      "wama": "LOCKOUT",
+      "weko": "DOOR",
+      "maha": "COMPRESSOR",
+      "hamo": "DOOR",
+      "wewa": "HEATER",
+      "reve": "DISCH_PRESSURE",
+      "vawe": "LOCKOUT",
+      "bahe": "COIL_TEMP",
+      "robo": "RECOVERY",
+      "kono": "ABS",
+      "rane": "DISCH_PRESSURE",
+      "howa": "OPEN",
+      "koha": "CLOSED",
+      "mabo": "SET",
+      "mava": "CLEAR",
+      "mera": "ON",
+      "keha": "OFF",
+      "heho": "FAULT",
+      "bepa": "BOOT",
+      "neka": "FIRMWARE"
+    },
+    "affixes": {
+      "na": "ZONE",
+      "ka": "ZONE",
+      "no": "ZONE",
+      "ba": "ZONE",
+      "ve": "ZONE",
+      "ko": "ZONE",
+      "ga": "ASPECT_EVENT",
+      "go": "ASPECT_STATE"
+    },
+    "v34_change": "absolute_temp",
+    "heldout": [
+      {
+        "seq": 1023,
+        "ts": "2026-05-23T22:35:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -25.0
+      },
+      {
+        "seq": 1024,
+        "ts": "2026-05-23T22:40:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -25.0
+      },
+      {
+        "seq": 1025,
+        "ts": "2026-05-23T22:45:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -25.4
+      },
+      {
+        "seq": 1026,
+        "ts": "2026-05-23T22:50:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -25.6
+      },
+      {
+        "seq": 1027,
+        "ts": "2026-05-23T22:55:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -25.1
+      },
+      {
+        "seq": 1028,
+        "ts": "2026-05-23T23:00:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -25.1
+      },
+      {
+        "seq": 1029,
+        "ts": "2026-05-23T23:05:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -24.7
+      },
+      {
+        "seq": 1030,
+        "ts": "2026-05-23T23:10:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -24.5
+      },
+      {
+        "seq": 1031,
+        "ts": "2026-05-23T23:15:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -23.9
+      },
+      {
+        "seq": 1032,
+        "ts": "2026-05-23T23:20:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -23.9
+      },
+      {
+        "seq": 1033,
+        "ts": "2026-05-23T23:25:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -23.9
+      },
+      {
+        "seq": 1034,
+        "ts": "2026-05-23T23:30:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -23.6
+      },
+      {
+        "seq": 1035,
+        "ts": "2026-05-23T23:35:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -24.4
+      },
+      {
+        "seq": 1036,
+        "ts": "2026-05-23T23:40:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -24.7
+      },
+      {
+        "seq": 1037,
+        "ts": "2026-05-23T23:45:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -24.2
+      },
+      {
+        "seq": 1038,
+        "ts": "2026-05-23T23:50:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -24.8
+      },
+      {
+        "seq": 1039,
+        "ts": "2026-05-23T23:55:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -24.8
+      },
+      {
+        "seq": 1040,
+        "ts": "2026-05-24T00:00:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -25.5
+      },
+      {
+        "seq": 1041,
+        "ts": "2026-05-24T00:05:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -25.4
+      },
+      {
+        "seq": 1042,
+        "ts": "2026-05-24T00:10:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -25.6
+      },
+      {
+        "seq": 1043,
+        "ts": "2026-05-24T00:15:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -25.8
+      },
+      {
+        "seq": 1044,
+        "ts": "2026-05-24T00:20:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -25.4
+      },
+      {
+        "seq": 1045,
+        "ts": "2026-05-24T00:25:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -25.4
+      },
+      {
+        "seq": 1046,
+        "ts": "2026-05-24T00:30:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -24.7
+      },
+      {
+        "seq": 1047,
+        "ts": "2026-05-24T00:35:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -24.6
+      },
+      {
+        "seq": 1048,
+        "ts": "2026-05-24T00:40:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -24.3
+      },
+      {
+        "seq": 1049,
+        "ts": "2026-05-24T00:45:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -23.5
+      },
+      {
+        "seq": 1050,
+        "ts": "2026-05-24T00:48:00Z",
+        "zone": "E",
+        "event": "DOOR",
+        "value": null
+      },
+      {
+        "seq": 1051,
+        "ts": "2026-05-24T00:50:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -23.3
+      },
+      {
+        "seq": 1052,
+        "ts": "2026-05-24T00:55:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -22.8
+      },
+      {
+        "seq": 1053,
+        "ts": "2026-05-24T00:56:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": null
+      },
+      {
+        "seq": 1054,
+        "ts": "2026-05-24T01:00:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -22.8
+      },
+      {
+        "seq": 1055,
+        "ts": "2026-05-24T01:05:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -22.0
+      },
+      {
+        "seq": 1056,
+        "ts": "2026-05-24T01:08:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": null
+      },
+      {
+        "seq": 1057,
+        "ts": "2026-05-24T01:10:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -22.3
+      },
+      {
+        "seq": 1058,
+        "ts": "2026-05-24T01:15:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -21.1
+      },
+      {
+        "seq": 1059,
+        "ts": "2026-05-24T01:20:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": null
+      },
+      {
+        "seq": 1060,
+        "ts": "2026-05-24T01:20:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -20.9
+      },
+      {
+        "seq": 1061,
+        "ts": "2026-05-24T01:25:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -20.5
+      },
+      {
+        "seq": 1062,
+        "ts": "2026-05-24T01:30:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -20.6
+      },
+      {
+        "seq": 1063,
+        "ts": "2026-05-24T01:32:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": null
+      },
+      {
+        "seq": 1064,
+        "ts": "2026-05-24T01:35:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -19.8
+      },
+      {
+        "seq": 1065,
+        "ts": "2026-05-24T01:40:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -18.9
+      },
+      {
+        "seq": 1066,
+        "ts": "2026-05-24T01:44:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": null
+      },
+      {
+        "seq": 1067,
+        "ts": "2026-05-24T01:44:00Z",
+        "zone": "E",
+        "event": "LOCKOUT",
+        "value": null
+      }
+    ]
+  },
+  "causal_chain": {
+    "roots": [
+      "physical:door_prop:E",
+      "firmware:E",
+      "code:gateway/kw7_decode.py:decode_line",
+      "code:common/httpd.py:_dispatch"
+    ],
+    "nodes": [
+      "physical:door_prop:E",
+      "firmware:E",
+      "code:gateway/kw7_decode.py:decode_line",
+      "code:common/httpd.py:_dispatch",
+      "actor:l.rivera",
+      "actor:e.haddad",
+      "physical:door_open:E",
+      "physical:trip:E",
+      "physical:lockout:E",
+      "physical:excursion:E",
+      "physical:frame_burst:E",
+      "data:frames_dropped:E",
+      "data:readings_wrong:E",
+      "data:alerts_suppressed:E",
+      "commit:b942c48",
+      "config:alerting/routes.json:zones.E.channel",
+      "actor:s.larsen",
+      "code:dispatch/server.py:apply_move",
+      "code:ledger/server.py:get_lots",
+      "data:lots_wrong:site",
+      "data:quarantine_wrong:E",
+      "actor:v.larsen",
+      "lot:LN-20074",
+      "lot:LN-20323",
+      "lot:LN-21306",
+      "lot:LN-23567",
+      "lot:LN-23600",
+      "lot:LN-24829",
+      "lot:LN-25575",
+      "lot:LN-26954",
+      "lot:LN-27547",
+      "lot:LN-27897",
+      "lot:LN-28792",
+      "lot:LN-29378",
+      "lot:LN-29484"
+    ],
+    "edges": [
+      [
+        "actor:l.rivera",
+        "physical:door_prop:E"
+      ],
+      [
+        "physical:door_prop:E",
+        "physical:door_open:E"
+      ],
+      [
+        "physical:door_open:E",
+        "physical:trip:E"
+      ],
+      [
+        "physical:trip:E",
+        "physical:lockout:E"
+      ],
+      [
+        "physical:lockout:E",
+        "physical:excursion:E"
+      ],
+      [
+        "physical:door_open:E",
+        "physical:frame_burst:E"
+      ],
+      [
+        "physical:frame_burst:E",
+        "data:frames_dropped:E"
+      ],
+      [
+        "actor:e.haddad",
+        "firmware:E"
+      ],
+      [
+        "firmware:E",
+        "data:readings_wrong:E"
+      ],
+      [
+        "code:gateway/kw7_decode.py:decode_line",
+        "data:readings_wrong:E"
+      ],
+      [
+        "data:readings_wrong:E",
+        "data:alerts_suppressed:E"
+      ],
+      [
+        "data:frames_dropped:E",
+        "data:alerts_suppressed:E"
+      ],
+      [
+        "commit:b942c48",
+        "config:alerting/routes.json:zones.E.channel"
+      ],
+      [
+        "config:alerting/routes.json:zones.E.channel",
+        "data:alerts_suppressed:E"
+      ],
+      [
+        "actor:s.larsen",
+        "data:alerts_suppressed:E"
+      ],
+      [
+        "code:common/httpd.py:_dispatch",
+        "code:ledger/server.py:get_lots"
+      ],
+      [
+        "code:ledger/server.py:get_lots",
+        "code:dispatch/server.py:apply_move"
+      ],
+      [
+        "code:dispatch/server.py:apply_move",
+        "data:lots_wrong:site"
+      ],
+      [
+        "data:lots_wrong:site",
+        "data:quarantine_wrong:E"
+      ],
+      [
+        "actor:v.larsen",
+        "data:quarantine_wrong:E"
+      ],
+      [
+        "physical:excursion:E",
+        "lot:LN-20074"
+      ],
+      [
+        "physical:excursion:E",
+        "lot:LN-20323"
+      ],
+      [
+        "physical:excursion:E",
+        "lot:LN-21306"
+      ],
+      [
+        "physical:excursion:E",
+        "lot:LN-23567"
+      ],
+      [
+        "physical:excursion:E",
+        "lot:LN-23600"
+      ],
+      [
+        "physical:excursion:E",
+        "lot:LN-24829"
+      ],
+      [
+        "physical:excursion:E",
+        "lot:LN-25575"
+      ],
+      [
+        "physical:excursion:E",
+        "lot:LN-26954"
+      ],
+      [
+        "physical:excursion:E",
+        "lot:LN-27547"
+      ],
+      [
+        "physical:excursion:E",
+        "lot:LN-27897"
+      ],
+      [
+        "physical:excursion:E",
+        "lot:LN-28792"
+      ],
+      [
+        "physical:excursion:E",
+        "lot:LN-29378"
+      ],
+      [
+        "physical:excursion:E",
+        "lot:LN-29484"
+      ]
+    ],
+    "decoys_rejected": [
+      "physical:compressor_fault:E",
+      "physical:sensor_fault:E",
+      "physical:power_loss:E",
+      "physical:defrost:E"
+    ],
+    "affected_lots": [
+      "lot:LN-20074",
+      "lot:LN-20323",
+      "lot:LN-21306",
+      "lot:LN-23567",
+      "lot:LN-23600",
+      "lot:LN-24829",
+      "lot:LN-25575",
+      "lot:LN-26954",
+      "lot:LN-27547",
+      "lot:LN-27897",
+      "lot:LN-28792",
+      "lot:LN-29378",
+      "lot:LN-29484"
+    ],
+    "excursion": {
+      "zone": "E",
+      "start": "2026-05-24T01:58:00Z",
+      "end": "2026-05-24T08:13:00Z"
+    }
+  },
+  "timeline": {
+    "events": [
+      {
+        "actor": "actor:l.rivera",
+        "action": "purchase",
+        "t": "2026-05-19T16:55:00Z",
+        "ref": "hardware_receipt_wedge"
+      },
+      {
+        "actor": "actor:l.rivera",
+        "action": "photo",
+        "t": "2026-05-19T23:14:00Z",
+        "ref": "IMG_2231.jpg"
+      },
+      {
+        "actor": "actor:e.haddad",
+        "action": "firmware_flash",
+        "t": "2026-05-20T14:32:00Z",
+        "ref": "VX05 seq 1 firmware 3.4"
+      },
+      {
+        "actor": "actor:e.haddad",
+        "action": "firmware_flash",
+        "t": "2026-05-20T15:28:00Z",
+        "ref": "VX03 seq 1 firmware 3.4"
+      },
+      {
+        "actor": "actor:r.okafor",
+        "action": "commit",
+        "t": "2026-05-21T11:17:10Z",
+        "ref": "commit:b942c48"
+      },
+      {
+        "actor": "actor:r.okafor",
+        "action": "override_deploy",
+        "t": "2026-05-21T12:28:00Z",
+        "ref": "routes reload"
+      },
+      {
+        "actor": "actor:a.larsen",
+        "action": "config_edit",
+        "t": "2026-05-22T02:12:00Z",
+        "ref": "ALERT_MIN_SEVERITY=critical"
+      },
+      {
+        "actor": "actor:s.larsen",
+        "action": "archive_channel",
+        "t": "2026-05-22T11:35:00Z",
+        "ref": "#alerts-coldchain-old"
+      },
+      {
+        "actor": "actor:l.okafor",
+        "action": "shift_start",
+        "t": "2026-05-23T21:48:00Z",
+        "ref": "badge +11 min correction"
+      },
+      {
+        "actor": "actor:l.rivera",
+        "action": "shift_start",
+        "t": "2026-05-23T22:04:00Z",
+        "ref": "badge +11 min correction"
+      },
+      {
+        "actor": "actor:l.rivera",
+        "action": "door_prop",
+        "t": "2026-05-24T00:48:00Z",
+        "ref": "VX05 seq 1050 / wedge"
+      },
+      {
+        "actor": "actor:l.rivera",
+        "action": "door_open",
+        "t": "2026-05-24T00:48:00Z",
+        "ref": "VX05 seq 1050"
+      },
+      {
+        "actor": "actor:l.okafor",
+        "action": "door_close",
+        "t": "2026-05-24T04:50:00Z",
+        "ref": "VX05 link resumes"
+      },
+      {
+        "actor": "actor:l.okafor",
+        "action": "shift_end",
+        "t": "2026-05-24T05:42:00Z",
+        "ref": "badge +11 min correction"
+      },
+      {
+        "actor": "actor:l.rivera",
+        "action": "shift_end",
+        "t": "2026-05-24T06:01:00Z",
+        "ref": "badge +11 min correction"
+      },
+      {
+        "actor": "actor:v.larsen",
+        "action": "quarantine",
+        "t": "2026-05-28T16:00:00Z",
+        "ref": "ticket:T-0442"
+      },
+      {
+        "actor": "actor:v.larsen",
+        "action": "postmortem_publish",
+        "t": "2026-05-28T16:00:00Z",
+        "ref": "doc:postmortem"
+      }
+    ],
+    "clock_offsets_min": {
+      "badge": -11,
+      "exif": 0,
+      "cctv": 3,
+      "forklift": 0,
+      "chat": 0,
+      "tickets": 0,
+      "git": 0,
+      "submeter": 0,
+      "gateway": 0,
+      "probe": 0
+    },
+    "false_claims": [
+      {
+        "doc_id": "doc:service_report_firmware_visit",
+        "quote": "- Unit VX05 (room E): inspected only, no changes made; customer asked us to leave it on 3.2 until the next visit."
+      },
+      {
+        "doc_id": "doc:ops_engineer_r.okafor",
+        "quote": "The vendor confirmed by phone that the -40 readings are a known sensor fault on the 3.4 boards"
+      },
+      {
+        "doc_id": "doc:night_lead_l.okafor",
+        "quote": "After that nobody went near room E; the corridor was quiet."
+      },
+      {
+        "doc_id": "doc:temp_worker_l.rivera",
+        "quote": "I never propped any door open; the wedge in the photo is a receiving thing, it lives by the dock."
+      },
+      {
+        "doc_id": "doc:warehouse_manager_s.larsen",
+        "quote": "I archived the old alert channel only after the incident, when we cleaned up the workspace; before that it was still being read."
+      },
+      {
+        "doc_id": "doc:sre_oncall_a.larsen",
+        "quote": "The override was temporary and I reverted it the next morning."
+      },
+      {
+        "doc_id": "doc:postmortem",
+        "quote": "Root cause: compressor failure on controller VX05."
+      },
+      {
+        "doc_id": "doc:postmortem",
+        "quote": "- 21:37 night shift on site (Lena Okafor, Lena Rivera)."
+      },
+      {
+        "doc_id": "doc:postmortem",
+        "quote": "- 04:39 room E door opened by the night lead on a routine check; nothing noted."
+      },
+      {
+        "doc_id": "doc:forklift_op_2_i.rivera",
+        "quote": "On 2026-05-25 I moved pallet PL-8411 from room F to room C around 19:24, scanned both ends as always."
+      }
+    ]
+  },
+  "confidence": {
+    "mechanism": 0.88,
+    "notation": 0.94,
+    "causal_chain": 0.85,
+    "timeline": 0.82
+  }
+}

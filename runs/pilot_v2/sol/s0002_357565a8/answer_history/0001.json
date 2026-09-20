@@ -1,0 +1,1 @@
+{"schema_version":"2","mechanism":{"parameters":{},"rules":{}},"protocol":{"types":{},"status_words":["AIR_TEMP","COIL_TEMP","DISCH_PRESSURE","STATE_FLAGS"],"heldout":[]},"findings":[],"timeline":{"events":[],"clock_offsets_min":{},"false_claims":[]},"confidence":{"mechanism":0,"protocol":0,"findings":0,"timeline":0}}

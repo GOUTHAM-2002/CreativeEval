@@ -1,0 +1,70 @@
+{
+  "schema_version": "1",
+  "mechanism": {
+    "parameters": {},
+    "rules": {
+      "defrost_rule_type": "runtime_hours",
+      "adjacency_pairs": [
+        [
+          "A",
+          "B"
+        ],
+        [
+          "A",
+          "C"
+        ],
+        [
+          "A",
+          "D"
+        ],
+        [
+          "B",
+          "F"
+        ],
+        [
+          "B",
+          "C"
+        ],
+        [
+          "C",
+          "E"
+        ],
+        [
+          "D",
+          "F"
+        ],
+        [
+          "D",
+          "E"
+        ]
+      ]
+    }
+  },
+  "notation": {
+    "glossary": {},
+    "affixes": {
+      "to": "ZONE",
+      "na": "ZONE",
+      "si": "ZONE",
+      "zi": "ZONE",
+      "de": "ZONE",
+      "ro": "ZONE",
+      "ba": "ASPECT_EVENT",
+      "be": "ASPECT_STATE"
+    },
+    "v34_change": "absolute_temp",
+    "heldout": []
+  },
+  "causal_chain": {},
+  "timeline": {
+    "events": [],
+    "clock_offsets_min": {},
+    "false_claims": []
+  },
+  "confidence": {
+    "mechanism": 0.4,
+    "notation": 0.7,
+    "causal_chain": 0.3,
+    "timeline": 0.3
+  }
+}

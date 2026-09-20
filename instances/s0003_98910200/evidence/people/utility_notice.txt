@@ -1,0 +1,4 @@
+NOTICE OF PLANNED SUPPLY INTERRUPTION
+Customer: Glacier Bay Storage, JPS45
+Date: 2026-03-14   Window: 10:00-11:00 local   Expected duration: up to 30 minutes
+Reason: generator changeover test at the substation. Please ensure critical equipment is on UPS or can tolerate a short interruption.

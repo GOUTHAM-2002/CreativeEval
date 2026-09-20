@@ -1,0 +1,6 @@
+SERVICE INVOICE  VX Controls Ltd
+Customer: Borealis Coldchain  Site ZLH62
+Visit date: 2026-06-08   Technician: Felix Okafor
+  Firmware service, VX-5 controller, per unit ........ 2 units   380.00
+  Travel ............................................................................  120.00
+  Total ............................................................................  500.00

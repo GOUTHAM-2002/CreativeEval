@@ -1,0 +1,55 @@
+2026-03-14T11:16:05Z INFO billing billing scheduler started run_at=01:00
+2026-03-15T01:00:27Z INFO billing rollup start day=2026-03-15
+2026-03-15T01:32:52Z INFO billing rollup done day=2026-03-15 lots=62 took=1945s
+2026-03-16T01:00:24Z INFO billing rollup start day=2026-03-16
+2026-03-16T01:33:04Z INFO billing rollup done day=2026-03-16 lots=62 took=1960s
+2026-03-17T01:00:07Z INFO billing rollup start day=2026-03-17
+2026-03-17T01:33:07Z INFO billing rollup done day=2026-03-17 lots=62 took=1981s
+2026-03-18T01:00:08Z INFO billing rollup start day=2026-03-18
+2026-03-18T01:33:22Z INFO billing rollup done day=2026-03-18 lots=62 took=1994s
+2026-03-19T01:00:15Z INFO billing rollup start day=2026-03-19
+2026-03-19T01:33:53Z INFO billing rollup done day=2026-03-19 lots=62 took=2019s
+2026-03-20T01:00:25Z INFO billing rollup start day=2026-03-20
+2026-03-20T01:35:16Z INFO billing rollup done day=2026-03-20 lots=62 took=2091s
+2026-03-21T01:00:28Z INFO billing rollup start day=2026-03-21
+2026-03-21T01:36:03Z INFO billing rollup done day=2026-03-21 lots=62 took=2135s
+2026-03-22T01:00:15Z INFO billing rollup start day=2026-03-22
+2026-03-22T01:36:16Z INFO billing rollup done day=2026-03-22 lots=62 took=2161s
+2026-03-23T01:00:14Z INFO billing rollup start day=2026-03-23
+2026-03-23T01:37:00Z INFO billing rollup done day=2026-03-23 lots=62 took=2207s
+2026-03-24T01:00:19Z INFO billing rollup start day=2026-03-24
+2026-03-24T01:37:30Z INFO billing rollup done day=2026-03-24 lots=62 took=2231s
+2026-03-25T01:00:21Z INFO billing rollup start day=2026-03-25
+2026-03-25T01:37:48Z INFO billing rollup done day=2026-03-25 lots=62 took=2247s
+2026-03-26T01:00:15Z INFO billing rollup start day=2026-03-26
+2026-03-26T01:38:20Z INFO billing rollup done day=2026-03-26 lots=62 took=2285s
+2026-03-27T01:00:11Z INFO billing rollup start day=2026-03-27
+2026-03-27T01:38:38Z INFO billing rollup done day=2026-03-27 lots=62 took=2307s
+2026-03-28T01:00:22Z INFO billing rollup start day=2026-03-28
+2026-03-28T01:39:02Z INFO billing rollup done day=2026-03-28 lots=62 took=2320s
+2026-03-29T01:00:15Z INFO billing rollup start day=2026-03-29
+2026-03-29T01:39:22Z INFO billing rollup done day=2026-03-29 lots=62 took=2346s
+2026-03-30T01:00:00Z INFO billing rollup start day=2026-03-30
+2026-03-30T01:40:05Z INFO billing rollup done day=2026-03-30 lots=62 took=2405s
+2026-03-31T01:00:07Z INFO billing rollup start day=2026-03-31
+2026-03-31T01:40:14Z INFO billing rollup done day=2026-03-31 lots=62 took=2407s
+2026-04-01T01:00:26Z INFO billing rollup start day=2026-04-01
+2026-04-01T01:41:20Z INFO billing rollup done day=2026-04-01 lots=62 took=2455s
+2026-04-02T01:00:04Z INFO billing rollup start day=2026-04-02
+2026-04-02T01:41:31Z INFO billing rollup done day=2026-04-02 lots=62 took=2487s
+2026-04-03T01:00:02Z INFO billing rollup start day=2026-04-03
+2026-04-03T01:41:29Z INFO billing rollup done day=2026-04-03 lots=62 took=2488s
+2026-04-04T01:00:12Z INFO billing rollup start day=2026-04-04
+2026-04-04T01:42:16Z INFO billing rollup done day=2026-04-04 lots=62 took=2525s
+2026-04-05T01:00:17Z INFO billing rollup start day=2026-04-05
+2026-04-05T01:43:20Z INFO billing rollup done day=2026-04-05 lots=62 took=2583s
+2026-04-06T01:00:18Z INFO billing rollup start day=2026-04-06
+2026-04-06T01:43:23Z INFO billing rollup done day=2026-04-06 lots=62 took=2585s
+2026-04-07T01:00:24Z INFO billing rollup start day=2026-04-07
+2026-04-07T01:43:51Z INFO billing rollup done day=2026-04-07 lots=62 took=2608s
+2026-04-08T01:00:29Z INFO billing rollup start day=2026-04-08
+2026-04-08T01:44:56Z INFO billing rollup done day=2026-04-08 lots=62 took=2668s
+2026-04-09T01:00:07Z INFO billing rollup start day=2026-04-09
+2026-04-09T01:44:13Z INFO billing rollup done day=2026-04-09 lots=62 took=2646s
+2026-04-10T01:00:01Z INFO billing rollup start day=2026-04-10
+2026-04-10T01:44:24Z INFO billing rollup done day=2026-04-10 lots=62 took=2663s

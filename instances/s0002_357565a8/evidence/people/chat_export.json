@@ -1,0 +1,3614 @@
+[
+ {
+  "id": "m0001",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-04T10:21:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone A high temp: 8.7 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0002",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-04T10:23:00Z",
+  "user": "p.novak",
+  "text": "zone A creeping up again, on it"
+ },
+ {
+  "id": "m0003",
+  "channel": "#ops-floor",
+  "ts": "2026-06-04T10:26:00Z",
+  "user": "m.mensah",
+  "text": "morning, door seals in zone A getting checked, heads up"
+ },
+ {
+  "id": "m0004",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-04T10:33:00Z",
+  "user": "p.novak",
+  "text": "temp settling back down, will keep an eye"
+ },
+ {
+  "id": "m0005",
+  "channel": "#ops-floor",
+  "ts": "2026-06-04T11:05:00Z",
+  "user": "a.schulz",
+  "text": "coffee machine in the break room is dead again lol"
+ },
+ {
+  "id": "m0006",
+  "channel": "#ops-floor",
+  "ts": "2026-06-04T11:07:00Z",
+  "user": "f.okafor",
+  "text": "same energy as last week honestly"
+ },
+ {
+  "id": "m0007",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-04T13:15:00Z",
+  "user": "i.kowalski",
+  "text": "pushed the firmware patch to the zone A sensor, monitoring for stability"
+ },
+ {
+  "id": "m0008",
+  "channel": "#ops-floor",
+  "ts": "2026-06-04T13:40:00Z",
+  "user": "h.tanaka",
+  "text": "anyone seen the spare pallet jack? not in its usual spot"
+ },
+ {
+  "id": "m0009",
+  "channel": "#ops-floor",
+  "ts": "2026-06-04T13:44:00Z",
+  "user": "s.larsen",
+  "text": "think it's by the loading dock, saw it there this morning"
+ },
+ {
+  "id": "m0010",
+  "channel": "#ops-floor",
+  "ts": "2026-06-04T14:12:00Z",
+  "user": "s.tanaka",
+  "text": "checking in for the evening shift, starting rounds at FL-2 first"
+ },
+ {
+  "id": "m0011",
+  "channel": "#ops-floor",
+  "ts": "2026-06-04T14:15:00Z",
+  "user": "m.larsen",
+  "text": "welcome back, quiet so far today aside from zone A blip"
+ },
+ {
+  "id": "m0012",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-04T15:30:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone D high temp: -19.7 C (limits -35.0..-21.0)"
+ },
+ {
+  "id": "m0013",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-04T15:33:00Z",
+  "user": "p.dubois",
+  "text": "zone D reading looks off, checking the door log"
+ },
+ {
+  "id": "m0014",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-04T15:39:00Z",
+  "user": "p.dubois",
+  "text": "door was open longer than usual during restock, should recover"
+ },
+ {
+  "id": "m0015",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-04T16:21:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone E high temp: -11.8 C (limits -26.3..-12.3)"
+ },
+ {
+  "id": "m0016",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-04T16:24:00Z",
+  "user": "f.okafor",
+  "text": "zone E now too, might be a chain reaction from the restock traffic"
+ },
+ {
+  "id": "m0017",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-04T16:35:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone F high temp: 9.0 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0018",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-04T16:38:00Z",
+  "user": "a.schulz",
+  "text": "zone F tripping as well, going to check the compressor"
+ },
+ {
+  "id": "m0019",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-04T16:43:00Z",
+  "user": "i.kowalski",
+  "text": "seeing multiple zones flagging, pulling logs now"
+ },
+ {
+  "id": "m0020",
+  "channel": "#ops-floor",
+  "ts": "2026-06-04T16:51:00Z",
+  "user": "s.tanaka",
+  "text": "lots of alerts coming through, floor traffic was heavy this hour"
+ },
+ {
+  "id": "m0021",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-04T17:10:00Z",
+  "user": "m.mensah",
+  "text": "compressor load looks high on F, might need a manual reset"
+ },
+ {
+  "id": "m0022",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-04T17:45:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone F high temp: 8.7 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0023",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-04T17:47:00Z",
+  "user": "a.schulz",
+  "text": "still hovering, reset didn't fully clear it, watching closely"
+ },
+ {
+  "id": "m0024",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-04T18:01:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone F high temp: 8.6 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0025",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-04T18:03:00Z",
+  "user": "m.mensah",
+  "text": "almost back in range, just barely over still"
+ },
+ {
+  "id": "m0026",
+  "channel": "#ops-floor",
+  "ts": "2026-06-04T18:09:00Z",
+  "user": "h.tanaka",
+  "text": "found the pallet jack btw, was at the dock like s.larsen said"
+ },
+ {
+  "id": "m0027",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-04T18:15:00Z",
+  "user": "i.kowalski",
+  "text": "zone F stable now, closing this out"
+ },
+ {
+  "id": "m0028",
+  "channel": "#ops-floor",
+  "ts": "2026-06-05T06:18:00Z",
+  "user": "p.novak",
+  "text": "morning all, don't forget the probe round before 7"
+ },
+ {
+  "id": "m0029",
+  "channel": "#ops-floor",
+  "ts": "2026-06-05T06:21:00Z",
+  "user": "f.okafor",
+  "text": "on it, grabbing the checklist now"
+ },
+ {
+  "id": "m0030",
+  "channel": "#ops-floor",
+  "ts": "2026-06-05T06:34:00Z",
+  "user": "a.schulz",
+  "text": "coffee machine's out again, heads up"
+ },
+ {
+  "id": "m0031",
+  "channel": "#ops-floor",
+  "ts": "2026-06-05T06:36:00Z",
+  "user": "p.novak",
+  "text": "classic monday"
+ },
+ {
+  "id": "m0032",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-05T08:46:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone D high temp: -20.7 C (limits -35.0..-21.0)"
+ },
+ {
+  "id": "m0033",
+  "channel": "#ops-floor",
+  "ts": "2026-06-05T08:49:00Z",
+  "user": "m.larsen",
+  "text": "seeing the zone D alert, anyone on it already?"
+ },
+ {
+  "id": "m0034",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-05T08:51:00Z",
+  "user": "i.kowalski",
+  "text": "checking zone D compressor now, might just be a door left open"
+ },
+ {
+  "id": "m0035",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-05T09:02:00Z",
+  "user": "i.kowalski",
+  "text": "door was fine, temp still creeping, digging deeper"
+ },
+ {
+  "id": "m0036",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-05T09:30:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone D high temp: -20.6 C (limits -35.0..-21.0)"
+ },
+ {
+  "id": "m0037",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-05T09:33:00Z",
+  "user": "p.dubois",
+  "text": "still climbing, want me to swap in the backup unit?"
+ },
+ {
+  "id": "m0038",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-05T09:35:00Z",
+  "user": "i.kowalski",
+  "text": "yeah go ahead, primary's not keeping up"
+ },
+ {
+  "id": "m0039",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-05T09:46:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone D high temp: -20.9 C (limits -35.0..-21.0)"
+ },
+ {
+  "id": "m0040",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-05T09:56:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone D high temp: -20.7 C (limits -35.0..-21.0)"
+ },
+ {
+  "id": "m0041",
+  "channel": "#ops-floor",
+  "ts": "2026-06-05T09:59:00Z",
+  "user": "m.mensah",
+  "text": "zone D still bouncing around near limit, anyone got eyes on stock in there?"
+ },
+ {
+  "id": "m0042",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-05T10:03:00Z",
+  "user": "p.dubois",
+  "text": "backup's online, should stabilize shortly"
+ },
+ {
+  "id": "m0043",
+  "channel": "#ops-floor",
+  "ts": "2026-06-05T10:15:00Z",
+  "user": "h.tanaka",
+  "text": "good, was starting to worry about that batch in D"
+ },
+ {
+  "id": "m0044",
+  "channel": "#ops-floor",
+  "ts": "2026-06-05T12:04:00Z",
+  "user": "s.larsen",
+  "text": "lunch run, anyone want anything from the corner shop"
+ },
+ {
+  "id": "m0045",
+  "channel": "#ops-floor",
+  "ts": "2026-06-05T12:06:00Z",
+  "user": "a.schulz",
+  "text": "just water for me thanks"
+ },
+ {
+  "id": "m0046",
+  "channel": "#ops-floor",
+  "ts": "2026-06-05T14:27:00Z",
+  "user": "s.tanaka",
+  "text": "clocking in for evening shift, starting a walkthrough near FL-2 first"
+ },
+ {
+  "id": "m0047",
+  "channel": "#ops-floor",
+  "ts": "2026-06-05T14:30:00Z",
+  "user": "m.larsen",
+  "text": "all quiet since this morning's zone D thing settled down"
+ },
+ {
+  "id": "m0048",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-05T16:16:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone D high temp: -20.1 C (limits -35.0..-21.0)"
+ },
+ {
+  "id": "m0049",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-05T16:19:00Z",
+  "user": "i.kowalski",
+  "text": "backup's slipping too, this is not great"
+ },
+ {
+  "id": "m0050",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-05T16:22:00Z",
+  "user": "p.dubois",
+  "text": "on my way back to check it now"
+ },
+ {
+  "id": "m0051",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-05T16:40:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone F high temp: 8.6 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0052",
+  "channel": "#ops-floor",
+  "ts": "2026-06-05T16:43:00Z",
+  "user": "s.tanaka",
+  "text": "now zone F too, busy evening ahead"
+ },
+ {
+  "id": "m0053",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-05T16:46:00Z",
+  "user": "m.mensah",
+  "text": "I'll grab zone F, p.dubois stay on D"
+ },
+ {
+  "id": "m0054",
+  "channel": "#ops-floor",
+  "ts": "2026-06-06T06:15:00Z",
+  "user": "p.novak",
+  "text": "morning, quiet day"
+ },
+ {
+  "id": "m0055",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-06T12:52:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone D high temp: -20.8 C (limits -35.0..-21.0)"
+ },
+ {
+  "id": "m0056",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-06T13:36:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone D high temp: -20.9 C (limits -35.0..-21.0)"
+ },
+ {
+  "id": "m0057",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-06T13:51:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone D high temp: -20.2 C (limits -35.0..-21.0)"
+ },
+ {
+  "id": "m0058",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-06T14:46:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone D high temp: -20.4 C (limits -35.0..-21.0)"
+ },
+ {
+  "id": "m0059",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-06T16:11:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone D high temp: -20.0 C (limits -35.0..-21.0)"
+ },
+ {
+  "id": "m0060",
+  "channel": "#ops-floor",
+  "ts": "2026-06-07T06:35:00Z",
+  "user": "p.novak",
+  "text": "morning, quiet day"
+ },
+ {
+  "id": "m0061",
+  "channel": "#ops-floor",
+  "ts": "2026-06-07T09:58:00Z",
+  "user": "p.novak",
+  "text": "reminder that the utility generator test is this morning, rooms will hold"
+ },
+ {
+  "id": "m0062",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-07T11:40:00Z",
+  "user": "i.kowalski",
+  "text": "power is back, gateway host rebooted, all controllers reconnected"
+ },
+ {
+  "id": "m0063",
+  "channel": "#ops-floor",
+  "ts": "2026-06-07T14:12:00Z",
+  "user": "s.tanaka",
+  "text": "checking in for the evening shift, mentions FL-2"
+ },
+ {
+  "id": "m0064",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-07T16:00:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone A high temp: 8.9 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0065",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-07T16:06:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone F high temp: 8.6 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0066",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-07T16:25:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone A high temp: 8.8 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0067",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-07T16:41:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone A high temp: 8.6 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0068",
+  "channel": "#ops-floor",
+  "ts": "2026-06-08T06:06:00Z",
+  "user": "p.novak",
+  "text": "morning, reminder about the probe round"
+ },
+ {
+  "id": "m0069",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-08T09:02:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone A high temp: 9.8 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0070",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-08T09:30:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone A high temp: 8.7 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0071",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-08T09:46:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone E high temp: -11.9 C (limits -26.3..-12.3)"
+ },
+ {
+  "id": "m0072",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-08T15:05:00Z",
+  "user": "alerting-bot",
+  "text": "[WARNING] zone E low temp: -39.2 C (limits -26.3..-12.3)"
+ },
+ {
+  "id": "m0073",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-08T15:45:00Z",
+  "user": "alerting-bot",
+  "text": "[WARNING] zone C low temp: -35.5 C (limits -26.8..-12.8)"
+ },
+ {
+  "id": "m0074",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-08T16:01:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone A high temp: 8.8 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0075",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-08T16:21:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone F high temp: 9.7 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0076",
+  "channel": "#ops-floor",
+  "ts": "2026-06-08T17:14:00Z",
+  "user": "p.novak",
+  "text": "dashboard shows room C and room E at -40, that cannot be right, the technician was just here"
+ },
+ {
+  "id": "m0077",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-08T19:28:00Z",
+  "user": "m.larsen",
+  "text": "seeing VX03 and VX05 decode at about -40 since the vendor visit, low-temp warnings flapping"
+ },
+ {
+  "id": "m0078",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-08T21:21:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone A high temp: 8.8 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0079",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-08T21:48:00Z",
+  "user": "m.larsen",
+  "text": "they say the new boards have a sensor fault, known issue"
+ },
+ {
+  "id": "m0080",
+  "channel": "#ops-floor",
+  "ts": "2026-06-09T01:59:00Z",
+  "user": "m.mensah",
+  "text": "new toy for the airflow problem in room E"
+ },
+ {
+  "id": "m0081",
+  "channel": "#ops-floor",
+  "ts": "2026-06-09T02:37:00Z",
+  "user": "h.tanaka",
+  "text": "tells them not to leave that in the door"
+ },
+ {
+  "id": "m0082",
+  "channel": "#ops-floor",
+  "ts": "2026-06-09T06:22:00Z",
+  "user": "p.novak",
+  "text": "morning, quiet day"
+ },
+ {
+  "id": "m0083",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-09T11:54:00Z",
+  "user": "m.larsen",
+  "text": "pushed the hotfix routing C/E low-temp alerts to #alerts-coldchain-old"
+ },
+ {
+  "id": "m0084",
+  "channel": "#ops-floor",
+  "ts": "2026-06-09T14:08:00Z",
+  "user": "s.tanaka",
+  "text": "checking in for the evening shift, mentions FL-2"
+ },
+ {
+  "id": "m0085",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-09T16:01:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone A high temp: 8.9 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0086",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-09T16:11:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone F high temp: 9.7 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0087",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-09T16:21:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone A high temp: 9.2 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0088",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-09T16:46:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone D high temp: -20.7 C (limits -35.0..-21.0)"
+ },
+ {
+  "id": "m0089",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-09T17:00:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone A high temp: 8.7 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0090",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-09T17:51:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone F high temp: 8.9 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0091",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-10T01:51:00Z",
+  "user": "i.kowalski",
+  "text": "paged six times tonight by the low-temp warnings, asks whether anyone has a quieter option"
+ },
+ {
+  "id": "m0092",
+  "channel": "#ops-floor",
+  "ts": "2026-06-10T06:28:00Z",
+  "user": "p.novak",
+  "text": "morning, reminder about the probe round"
+ },
+ {
+  "id": "m0093",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-10T08:34:00Z",
+  "user": "i.kowalski",
+  "text": "someone set the minimum severity to critical last night, was that you?"
+ },
+ {
+  "id": "m0094",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-10T09:01:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone A high temp: 9.6 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0095",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-10T09:16:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone A high temp: 9.2 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0096",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-10T09:26:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone A high temp: 8.8 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0097",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-10T09:46:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone A high temp: 8.6 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0098",
+  "channel": "#ops-floor",
+  "ts": "2026-06-10T09:54:00Z",
+  "user": "p.novak",
+  "text": "archived #alerts-coldchain-old"
+ },
+ {
+  "id": "m0099",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-10T10:11:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone A high temp: 8.6 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0100",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-10T12:02:00Z",
+  "user": "m.larsen",
+  "text": "not me"
+ },
+ {
+  "id": "m0101",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-10T14:21:00Z",
+  "user": "m.larsen",
+  "text": "notes a slow query"
+ },
+ {
+  "id": "m0102",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-10T16:11:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone F high temp: 8.6 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0103",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-10T16:46:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone D high temp: -19.9 C (limits -35.0..-21.0)"
+ },
+ {
+  "id": "m0104",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-10T17:36:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone F high temp: 8.6 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0105",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-11T06:16:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone A high temp: 8.9 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0106",
+  "channel": "#ops-floor",
+  "ts": "2026-06-11T06:24:00Z",
+  "user": "p.novak",
+  "text": "morning, quiet day"
+ },
+ {
+  "id": "m0107",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-11T10:00:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone D high temp: -19.9 C (limits -35.0..-21.0)"
+ },
+ {
+  "id": "m0108",
+  "channel": "#ops-floor",
+  "ts": "2026-06-11T11:08:00Z",
+  "user": "p.dubois",
+  "text": "room D stopped cooling after the truck, panel says hold-off"
+ },
+ {
+  "id": "m0109",
+  "channel": "#ops-floor",
+  "ts": "2026-06-11T11:35:00Z",
+  "user": "p.novak",
+  "text": "runbook says it restarts after the timer, keep the door shut"
+ },
+ {
+  "id": "m0110",
+  "channel": "#ops-floor",
+  "ts": "2026-06-11T14:10:00Z",
+  "user": "s.tanaka",
+  "text": "checking in for the evening shift, mentions FL-2"
+ },
+ {
+  "id": "m0111",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-11T14:31:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone D high temp: -20.6 C (limits -35.0..-21.0)"
+ },
+ {
+  "id": "m0112",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-11T15:06:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone D high temp: -20.8 C (limits -35.0..-21.0)"
+ },
+ {
+  "id": "m0113",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-11T15:30:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone A high temp: 9.2 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0114",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-11T16:16:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone A high temp: 8.9 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0115",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-11T16:16:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone F high temp: 9.6 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0116",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-11T16:30:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone D high temp: -20.7 C (limits -35.0..-21.0)"
+ },
+ {
+  "id": "m0117",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-11T18:05:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone D high temp: -20.9 C (limits -35.0..-21.0)"
+ },
+ {
+  "id": "m0118",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-11T18:16:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone D high temp: -20.8 C (limits -35.0..-21.0)"
+ },
+ {
+  "id": "m0119",
+  "channel": "#ops-floor",
+  "ts": "2026-06-12T06:26:00Z",
+  "user": "p.novak",
+  "text": "morning all, looking like a quiet one today"
+ },
+ {
+  "id": "m0120",
+  "channel": "#ops-floor",
+  "ts": "2026-06-12T06:29:00Z",
+  "user": "f.okafor",
+  "text": "coffee's on, let's keep it that way"
+ },
+ {
+  "id": "m0121",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-12T08:56:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone A high temp: 9.0 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0122",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-12T08:59:00Z",
+  "user": "a.schulz",
+  "text": "on it, heading to zone A now"
+ },
+ {
+  "id": "m0123",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-12T09:05:00Z",
+  "user": "a.schulz",
+  "text": "door seal looked loose, adjusting"
+ },
+ {
+  "id": "m0124",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-12T09:41:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone A high temp: 8.6 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0125",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-12T09:44:00Z",
+  "user": "h.tanaka",
+  "text": "still creeping up, keep an eye on it"
+ },
+ {
+  "id": "m0126",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-12T10:11:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone F high temp: 9.3 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0127",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-12T10:16:00Z",
+  "user": "i.kowalski",
+  "text": "zone F now too, checking compressor"
+ },
+ {
+  "id": "m0128",
+  "channel": "#ops-floor",
+  "ts": "2026-06-12T10:35:00Z",
+  "user": "m.mensah",
+  "text": "busy morning with those two zones acting up"
+ },
+ {
+  "id": "m0129",
+  "channel": "#ops-floor",
+  "ts": "2026-06-12T14:25:00Z",
+  "user": "s.tanaka",
+  "text": "clocking in for evening, starting rounds at FL-2"
+ },
+ {
+  "id": "m0130",
+  "channel": "#ops-floor",
+  "ts": "2026-06-12T14:30:00Z",
+  "user": "p.dubois",
+  "text": "all quiet since the morning fixes, good handover"
+ },
+ {
+  "id": "m0131",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-12T20:20:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone F high temp: 8.9 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0132",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-12T20:24:00Z",
+  "user": "m.larsen",
+  "text": "zone F again, going to check the unit"
+ },
+ {
+  "id": "m0133",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-12T21:06:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone F high temp: 9.1 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0134",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-12T21:11:00Z",
+  "user": "p.dubois",
+  "text": "not settling, might need a tech callout"
+ },
+ {
+  "id": "m0135",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-12T21:25:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone F high temp: 8.7 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0136",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-12T21:29:00Z",
+  "user": "s.larsen",
+  "text": "trending down slowly, watching it closely"
+ },
+ {
+  "id": "m0137",
+  "channel": "#ops-floor",
+  "ts": "2026-06-12T21:40:00Z",
+  "user": "s.tanaka",
+  "text": "logging zone F for the next shift, keep monitoring"
+ },
+ {
+  "id": "m0138",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-13T06:36:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone A high temp: 8.6 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0139",
+  "channel": "#ops-floor",
+  "ts": "2026-06-13T06:41:00Z",
+  "user": "m.larsen",
+  "text": "zone A creeping up again, anyone on it?"
+ },
+ {
+  "id": "m0140",
+  "channel": "#ops-floor",
+  "ts": "2026-06-13T06:44:00Z",
+  "user": "p.dubois",
+  "text": "on my way, checking the door seal first"
+ },
+ {
+  "id": "m0141",
+  "channel": "#ops-floor",
+  "ts": "2026-06-13T06:52:00Z",
+  "user": "p.dubois",
+  "text": "seal looked fine, temp settling back down"
+ },
+ {
+  "id": "m0142",
+  "channel": "#ops-floor",
+  "ts": "2026-06-13T08:05:00Z",
+  "user": "a.schulz",
+  "text": "morning all, quiet start"
+ },
+ {
+  "id": "m0143",
+  "channel": "#ops-floor",
+  "ts": "2026-06-13T08:07:00Z",
+  "user": "i.kowalski",
+  "text": "coffee machine's out again lol"
+ },
+ {
+  "id": "m0144",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-13T09:30:00Z",
+  "user": "f.okafor",
+  "text": "pulling logs on zone A compressor, want to see if it's cycling right"
+ },
+ {
+  "id": "m0145",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-13T09:42:00Z",
+  "user": "m.mensah",
+  "text": "let me know what you find, been a bit twitchy lately"
+ },
+ {
+  "id": "m0146",
+  "channel": "#ops-floor",
+  "ts": "2026-06-13T11:15:00Z",
+  "user": "s.larsen",
+  "text": "restock done in bay, all good"
+ },
+ {
+  "id": "m0147",
+  "channel": "#ops-floor",
+  "ts": "2026-06-13T14:03:00Z",
+  "user": "s.tanaka",
+  "text": "checking in for the evening shift, everything looks steady over by FL-2"
+ },
+ {
+  "id": "m0148",
+  "channel": "#ops-floor",
+  "ts": "2026-06-13T14:06:00Z",
+  "user": "h.tanaka",
+  "text": "thanks for the update, have a good one"
+ },
+ {
+  "id": "m0149",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-13T16:06:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone A high temp: 9.2 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0150",
+  "channel": "#ops-floor",
+  "ts": "2026-06-13T16:09:00Z",
+  "user": "p.novak",
+  "text": "zone A again, going to take a look now"
+ },
+ {
+  "id": "m0151",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-13T16:20:00Z",
+  "user": "f.okafor",
+  "text": "compressor logs show a short dropout around that time, digging in"
+ },
+ {
+  "id": "m0152",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-13T16:26:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone B high temp: -16.8 C (limits -30.9..-16.9)"
+ },
+ {
+  "id": "m0153",
+  "channel": "#ops-floor",
+  "ts": "2026-06-13T16:29:00Z",
+  "user": "m.mensah",
+  "text": "zone B tripped too, going to check the door on that one"
+ },
+ {
+  "id": "m0154",
+  "channel": "#ops-floor",
+  "ts": "2026-06-13T16:38:00Z",
+  "user": "m.mensah",
+  "text": "door was propped slightly, closed it up, should recover"
+ },
+ {
+  "id": "m0155",
+  "channel": "#ops-floor",
+  "ts": "2026-06-13T18:00:00Z",
+  "user": "s.larsen",
+  "text": "quiet afternoon, paperwork caught up"
+ },
+ {
+  "id": "m0156",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-13T20:10:00Z",
+  "user": "f.okafor",
+  "text": "still not 100% sure what's causing the zone A spikes, keeping an eye on it"
+ },
+ {
+  "id": "m0157",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-13T21:20:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone A high temp: 9.4 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0158",
+  "channel": "#ops-floor",
+  "ts": "2026-06-13T21:24:00Z",
+  "user": "a.schulz",
+  "text": "third time today on zone A, someone should flag this to eng"
+ },
+ {
+  "id": "m0159",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-13T21:27:00Z",
+  "user": "m.mensah",
+  "text": "seeing it, will escalate first thing tomorrow if it keeps up"
+ },
+ {
+  "id": "m0160",
+  "channel": "#ops-floor",
+  "ts": "2026-06-13T22:12:00Z",
+  "user": "h.tanaka",
+  "text": "night shift on, heads up zone A has been unstable today so keep watching it"
+ },
+ {
+  "id": "m0161",
+  "channel": "#ops-floor",
+  "ts": "2026-06-13T22:15:00Z",
+  "user": "i.kowalski",
+  "text": "copy that, will check it every hour"
+ },
+ {
+  "id": "m0162",
+  "channel": "#ops-floor",
+  "ts": "2026-06-14T06:37:00Z",
+  "user": "p.novak",
+  "text": "morning, reminder about the probe round"
+ },
+ {
+  "id": "m0163",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-14T16:11:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone F high temp: 9.4 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0164",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-14T17:46:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone F high temp: 8.9 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0165",
+  "channel": "#ops-floor",
+  "ts": "2026-06-14T22:27:00Z",
+  "user": "h.tanaka",
+  "text": "night shift on, handover note"
+ },
+ {
+  "id": "m0166",
+  "channel": "#ops-floor",
+  "ts": "2026-06-15T06:39:00Z",
+  "user": "p.novak",
+  "text": "morning all, don't forget the probe round before the shift gets busy"
+ },
+ {
+  "id": "m0167",
+  "channel": "#ops-floor",
+  "ts": "2026-06-15T06:41:00Z",
+  "user": "f.okafor",
+  "text": "on it, grabbing the clipboard now"
+ },
+ {
+  "id": "m0168",
+  "channel": "#ops-floor",
+  "ts": "2026-06-15T06:52:00Z",
+  "user": "s.tanaka",
+  "text": "coffee machine is empty again, someone start a pot"
+ },
+ {
+  "id": "m0169",
+  "channel": "#ops-floor",
+  "ts": "2026-06-15T07:01:00Z",
+  "user": "a.schulz",
+  "text": "on shift, quiet so far"
+ },
+ {
+  "id": "m0170",
+  "channel": "#ops-floor",
+  "ts": "2026-06-15T08:15:00Z",
+  "user": "m.mensah",
+  "text": "anyone seen the spare pallet jack? not in its spot"
+ },
+ {
+  "id": "m0171",
+  "channel": "#ops-floor",
+  "ts": "2026-06-15T08:17:00Z",
+  "user": "i.kowalski",
+  "text": "think it's still over by the dock doors"
+ },
+ {
+  "id": "m0172",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-15T09:06:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone D high temp: -20.9 C (limits -35.0..-21.0)"
+ },
+ {
+  "id": "m0173",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-15T09:08:00Z",
+  "user": "p.dubois",
+  "text": "checking zone D now, door was cycled a lot this morning"
+ },
+ {
+  "id": "m0174",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-15T09:14:00Z",
+  "user": "h.tanaka",
+  "text": "zone D compressor looked fine on last check, will log this reading"
+ },
+ {
+  "id": "m0175",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-15T09:20:00Z",
+  "user": "p.dubois",
+  "text": "back within range now, keeping an eye on it"
+ },
+ {
+  "id": "m0176",
+  "channel": "#ops-floor",
+  "ts": "2026-06-15T11:02:00Z",
+  "user": "s.larsen",
+  "text": "lunch orders going out in ten if anyone wants in"
+ },
+ {
+  "id": "m0177",
+  "channel": "#ops-floor",
+  "ts": "2026-06-15T11:03:00Z",
+  "user": "m.larsen",
+  "text": "count me in"
+ },
+ {
+  "id": "m0178",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-15T15:01:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone D high temp: -20.3 C (limits -35.0..-21.0)"
+ },
+ {
+  "id": "m0179",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-15T15:03:00Z",
+  "user": "h.tanaka",
+  "text": "zone D creeping up again, going to take a look at the seals"
+ },
+ {
+  "id": "m0180",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-15T15:56:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone A high temp: 8.9 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0181",
+  "channel": "#ops-floor",
+  "ts": "2026-06-15T15:58:00Z",
+  "user": "f.okafor",
+  "text": "zone A alert just came through, heading over"
+ },
+ {
+  "id": "m0182",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-15T16:16:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone F high temp: 9.4 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0183",
+  "channel": "#ops-floor",
+  "ts": "2026-06-15T16:18:00Z",
+  "user": "a.schulz",
+  "text": "zone F too now? that's a lot of alerts for one afternoon"
+ },
+ {
+  "id": "m0184",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-15T16:21:00Z",
+  "user": "p.dubois",
+  "text": "might be the ambient heat wave messing with several units at once, checking the panel"
+ },
+ {
+  "id": "m0185",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-15T16:36:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone D high temp: -20.6 C (limits -35.0..-21.0)"
+ },
+ {
+  "id": "m0186",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-15T16:39:00Z",
+  "user": "h.tanaka",
+  "text": "still working zone D, flagging it as ongoing"
+ },
+ {
+  "id": "m0187",
+  "channel": "#ops-floor",
+  "ts": "2026-06-15T17:02:00Z",
+  "user": "i.kowalski",
+  "text": "handover notes updated for evening crew, several zones running warm today"
+ },
+ {
+  "id": "m0188",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-15T17:36:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone F high temp: 8.8 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0189",
+  "channel": "#ops-floor",
+  "ts": "2026-06-15T17:38:00Z",
+  "user": "m.mensah",
+  "text": "zone F again, someone from eng still on that?"
+ },
+ {
+  "id": "m0190",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-15T17:40:00Z",
+  "user": "p.dubois",
+  "text": "yep still on it, waiting on parts for the unit"
+ },
+ {
+  "id": "m0191",
+  "channel": "#ops-floor",
+  "ts": "2026-06-15T18:05:00Z",
+  "user": "s.tanaka",
+  "text": "all quiet on my end, ready for handover"
+ },
+ {
+  "id": "m0192",
+  "channel": "#ops-floor",
+  "ts": "2026-06-16T06:07:00Z",
+  "user": "p.novak",
+  "text": "morning all, don't forget the probe round before shift change"
+ },
+ {
+  "id": "m0193",
+  "channel": "#ops-floor",
+  "ts": "2026-06-16T06:12:00Z",
+  "user": "a.schulz",
+  "text": "on it, grabbing the clipboard now"
+ },
+ {
+  "id": "m0194",
+  "channel": "#ops-floor",
+  "ts": "2026-06-16T06:15:00Z",
+  "user": "f.okafor",
+  "text": "coffee first, probes second lol"
+ },
+ {
+  "id": "m0195",
+  "channel": "#ops-floor",
+  "ts": "2026-06-16T08:32:00Z",
+  "user": "m.mensah",
+  "text": "anyone seen the spare pallet jack? not in its usual spot"
+ },
+ {
+  "id": "m0196",
+  "channel": "#ops-floor",
+  "ts": "2026-06-16T08:40:00Z",
+  "user": "i.kowalski",
+  "text": "think it's by the loading dock, saw it there earlier"
+ },
+ {
+  "id": "m0197",
+  "channel": "#ops-floor",
+  "ts": "2026-06-16T10:05:00Z",
+  "user": "p.dubois",
+  "text": "quiet morning so far, all good on my end"
+ },
+ {
+  "id": "m0198",
+  "channel": "#ops-floor",
+  "ts": "2026-06-16T11:47:00Z",
+  "user": "s.larsen",
+  "text": "lunch run, anyone want anything from the cafeteria"
+ },
+ {
+  "id": "m0199",
+  "channel": "#ops-floor",
+  "ts": "2026-06-16T11:50:00Z",
+  "user": "m.larsen",
+  "text": "just a coffee for me thanks"
+ },
+ {
+  "id": "m0200",
+  "channel": "#ops-floor",
+  "ts": "2026-06-16T14:06:00Z",
+  "user": "s.tanaka",
+  "text": "clocking in for evening, heading to check FL-2 first"
+ },
+ {
+  "id": "m0201",
+  "channel": "#ops-floor",
+  "ts": "2026-06-16T14:10:00Z",
+  "user": "p.dubois",
+  "text": "all normal here, handing over"
+ },
+ {
+  "id": "m0202",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-16T16:11:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone F high temp: 9.1 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0203",
+  "channel": "#ops-floor",
+  "ts": "2026-06-16T16:13:00Z",
+  "user": "s.tanaka",
+  "text": "seeing the zone F alert, heading over now"
+ },
+ {
+  "id": "m0204",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-16T16:16:00Z",
+  "user": "m.mensah",
+  "text": "checking compressor logs for zone F, will update"
+ },
+ {
+  "id": "m0205",
+  "channel": "#ops-floor",
+  "ts": "2026-06-16T16:22:00Z",
+  "user": "i.kowalski",
+  "text": "door was propped open earlier, might be related"
+ },
+ {
+  "id": "m0206",
+  "channel": "#ops-floor",
+  "ts": "2026-06-16T16:25:00Z",
+  "user": "s.tanaka",
+  "text": "closed it up, temp should start dropping"
+ },
+ {
+  "id": "m0207",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-16T17:41:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone F high temp: 8.6 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0208",
+  "channel": "#ops-floor",
+  "ts": "2026-06-16T17:44:00Z",
+  "user": "m.mensah",
+  "text": "still creeping, keeping an eye on it"
+ },
+ {
+  "id": "m0209",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-16T17:50:00Z",
+  "user": "f.okafor",
+  "text": "compressor cycling normal on our end, might just be door recovery"
+ },
+ {
+  "id": "m0210",
+  "channel": "#ops-floor",
+  "ts": "2026-06-16T18:10:00Z",
+  "user": "a.schulz",
+  "text": "zone F reading back within range now"
+ },
+ {
+  "id": "m0211",
+  "channel": "#ops-floor",
+  "ts": "2026-06-16T18:12:00Z",
+  "user": "s.tanaka",
+  "text": "good, will keep monitoring through the evening"
+ },
+ {
+  "id": "m0212",
+  "channel": "#ops-floor",
+  "ts": "2026-06-16T20:30:00Z",
+  "user": "m.larsen",
+  "text": "all quiet, nothing new to report"
+ },
+ {
+  "id": "m0213",
+  "channel": "#ops-floor",
+  "ts": "2026-06-16T22:06:00Z",
+  "user": "h.tanaka",
+  "text": "night shift on, all quiet, just a heads up zone F had a temp blip earlier but it's settled"
+ },
+ {
+  "id": "m0214",
+  "channel": "#ops-floor",
+  "ts": "2026-06-16T22:10:00Z",
+  "user": "s.tanaka",
+  "text": "yep resolved before I left, door recovery most likely"
+ },
+ {
+  "id": "m0215",
+  "channel": "#ops-floor",
+  "ts": "2026-06-16T22:14:00Z",
+  "user": "h.tanaka",
+  "text": "noted, will keep an eye overnight"
+ },
+ {
+  "id": "m0216",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-17T06:36:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone A high temp: 8.6 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0217",
+  "channel": "#ops-floor",
+  "ts": "2026-06-17T06:41:00Z",
+  "user": "p.novak",
+  "text": "zone A alert again, someone check the door seal"
+ },
+ {
+  "id": "m0218",
+  "channel": "#ops-floor",
+  "ts": "2026-06-17T06:44:00Z",
+  "user": "i.kowalski",
+  "text": "on it, walking over now"
+ },
+ {
+  "id": "m0219",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-17T07:06:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone A high temp: 8.6 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0220",
+  "channel": "#ops-floor",
+  "ts": "2026-06-17T07:11:00Z",
+  "user": "i.kowalski",
+  "text": "seal looked fine, temp still creeping, logging it for maintenance"
+ },
+ {
+  "id": "m0221",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-17T07:50:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone D high temp: -20.4 C (limits -35.0..-21.0)"
+ },
+ {
+  "id": "m0222",
+  "channel": "#ops-floor",
+  "ts": "2026-06-17T07:54:00Z",
+  "user": "m.mensah",
+  "text": "zone D creeping up too, morning is rough today"
+ },
+ {
+  "id": "m0223",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-17T09:01:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone D high temp: -20.5 C (limits -35.0..-21.0)"
+ },
+ {
+  "id": "m0224",
+  "channel": "#ops-floor",
+  "ts": "2026-06-17T09:06:00Z",
+  "user": "p.dubois",
+  "text": "still above limit, flagging to eng"
+ },
+ {
+  "id": "m0225",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-17T09:10:00Z",
+  "user": "p.dubois",
+  "text": "zone D running warm since this morning, worth a look when you get a chance"
+ },
+ {
+  "id": "m0226",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-17T09:14:00Z",
+  "user": "a.schulz",
+  "text": "will check the unit after lunch"
+ },
+ {
+  "id": "m0227",
+  "channel": "#ops-floor",
+  "ts": "2026-06-17T14:27:00Z",
+  "user": "s.tanaka",
+  "text": "checking in for the evening shift, all looks quiet, FL-2 included"
+ },
+ {
+  "id": "m0228",
+  "channel": "#ops-floor",
+  "ts": "2026-06-17T14:32:00Z",
+  "user": "f.okafor",
+  "text": "morning was quiet after the D zone thing settled, all good now"
+ },
+ {
+  "id": "m0229",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-17T16:16:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone F high temp: 8.9 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0230",
+  "channel": "#ops-floor",
+  "ts": "2026-06-17T16:21:00Z",
+  "user": "s.tanaka",
+  "text": "zone F alert, heading there now"
+ },
+ {
+  "id": "m0231",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-17T17:10:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone F high temp: 8.7 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0232",
+  "channel": "#ops-floor",
+  "ts": "2026-06-17T17:15:00Z",
+  "user": "m.larsen",
+  "text": "still hovering high, door was open for restock, should settle"
+ },
+ {
+  "id": "m0233",
+  "channel": "#ops-floor",
+  "ts": "2026-06-17T18:19:00Z",
+  "user": "h.tanaka",
+  "text": "VX05 compressor is clicking on and off at night again, sounds pretty rough"
+ },
+ {
+  "id": "m0234",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-17T18:24:00Z",
+  "user": "s.larsen",
+  "text": "heard about VX05, adding it to tomorrow's check list"
+ },
+ {
+  "id": "m0235",
+  "channel": "#ops-floor",
+  "ts": "2026-06-17T18:27:00Z",
+  "user": "p.novak",
+  "text": "thanks, it's been doing that on and off for a few days now"
+ },
+ {
+  "id": "m0236",
+  "channel": "#ops-floor",
+  "ts": "2026-06-17T22:25:00Z",
+  "user": "h.tanaka",
+  "text": "night shift on, handover note: all quiet, still keeping an ear on VX05 overnight"
+ },
+ {
+  "id": "m0237",
+  "channel": "#ops-floor",
+  "ts": "2026-06-17T22:31:00Z",
+  "user": "m.mensah",
+  "text": "good, ping if it gets louder"
+ },
+ {
+  "id": "m0238",
+  "channel": "#ops-floor",
+  "ts": "2026-06-18T06:17:00Z",
+  "user": "p.novak",
+  "text": "morning all, looks like a quiet day ahead"
+ },
+ {
+  "id": "m0239",
+  "channel": "#ops-floor",
+  "ts": "2026-06-18T06:19:00Z",
+  "user": "a.schulz",
+  "text": "good, could use one of those for a change"
+ },
+ {
+  "id": "m0240",
+  "channel": "#ops-floor",
+  "ts": "2026-06-18T06:34:00Z",
+  "user": "f.okafor",
+  "text": "coffee machine in the break room is fixed btw"
+ },
+ {
+  "id": "m0241",
+  "channel": "#ops-floor",
+  "ts": "2026-06-18T06:35:00Z",
+  "user": "p.novak",
+  "text": "finally, thank god"
+ },
+ {
+  "id": "m0242",
+  "channel": "#ops-floor",
+  "ts": "2026-06-18T09:02:00Z",
+  "user": "m.mensah",
+  "text": "anyone seen the pallet jack from bay 3? not in its spot"
+ },
+ {
+  "id": "m0243",
+  "channel": "#ops-floor",
+  "ts": "2026-06-18T09:05:00Z",
+  "user": "i.kowalski",
+  "text": "think s.larsen had it earlier, check by receiving"
+ },
+ {
+  "id": "m0244",
+  "channel": "#ops-floor",
+  "ts": "2026-06-18T09:07:00Z",
+  "user": "s.larsen",
+  "text": "yep it's here, bringing it back now"
+ },
+ {
+  "id": "m0245",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-18T11:15:00Z",
+  "user": "m.larsen",
+  "text": "doing routine sensor calibration checks this morning, all nominal so far"
+ },
+ {
+  "id": "m0246",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-18T11:22:00Z",
+  "user": "p.dubois",
+  "text": "nice, let me know if anything looks twitchy, had some odd readings last week"
+ },
+ {
+  "id": "m0247",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-18T11:24:00Z",
+  "user": "m.larsen",
+  "text": "will do, seems fine right now"
+ },
+ {
+  "id": "m0248",
+  "channel": "#ops-floor",
+  "ts": "2026-06-18T14:23:00Z",
+  "user": "s.tanaka",
+  "text": "checking in for the evening shift, starting with a walkthrough near FL-2"
+ },
+ {
+  "id": "m0249",
+  "channel": "#ops-floor",
+  "ts": "2026-06-18T14:26:00Z",
+  "user": "a.schulz",
+  "text": "all good on my end, nothing to flag"
+ },
+ {
+  "id": "m0250",
+  "channel": "#ops-floor",
+  "ts": "2026-06-18T16:40:00Z",
+  "user": "f.okafor",
+  "text": "heading out, have a good one everyone"
+ },
+ {
+  "id": "m0251",
+  "channel": "#ops-floor",
+  "ts": "2026-06-18T16:41:00Z",
+  "user": "m.mensah",
+  "text": "see ya"
+ },
+ {
+  "id": "m0252",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-18T20:20:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone F high temp: 8.7 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0253",
+  "channel": "#ops-floor",
+  "ts": "2026-06-18T20:22:00Z",
+  "user": "s.tanaka",
+  "text": "saw the temp alert come through, heading over to check on it now"
+ },
+ {
+  "id": "m0254",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-18T20:24:00Z",
+  "user": "p.dubois",
+  "text": "saw it too, on my way to look at the unit"
+ },
+ {
+  "id": "m0255",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-18T20:31:00Z",
+  "user": "m.larsen",
+  "text": "door seal looked slightly off earlier, could be related"
+ },
+ {
+  "id": "m0256",
+  "channel": "#ops-floor",
+  "ts": "2026-06-18T20:45:00Z",
+  "user": "s.tanaka",
+  "text": "temp's coming back down, keeping an eye on it"
+ },
+ {
+  "id": "m0257",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-18T20:58:00Z",
+  "user": "p.dubois",
+  "text": "adjusted the seal, should hold steady now"
+ },
+ {
+  "id": "m0258",
+  "channel": "#ops-floor",
+  "ts": "2026-06-18T22:21:00Z",
+  "user": "h.tanaka",
+  "text": "night shift on, quick handover note: earlier temp spike is resolved and holding steady"
+ },
+ {
+  "id": "m0259",
+  "channel": "#ops-floor",
+  "ts": "2026-06-18T22:24:00Z",
+  "user": "i.kowalski",
+  "text": "thanks for the update, will keep watching it"
+ },
+ {
+  "id": "m0260",
+  "channel": "#ops-floor",
+  "ts": "2026-06-18T22:40:00Z",
+  "user": "h.tanaka",
+  "text": "all quiet otherwise, rest of the floor looks normal"
+ },
+ {
+  "id": "m0261",
+  "channel": "#ops-floor",
+  "ts": "2026-06-19T06:08:00Z",
+  "user": "p.novak",
+  "text": "morning all, two deliveries scheduled today, one mid-morning one late afternoon"
+ },
+ {
+  "id": "m0262",
+  "channel": "#ops-floor",
+  "ts": "2026-06-19T06:11:00Z",
+  "user": "f.okafor",
+  "text": "thanks for the heads up, will get the dock ready"
+ },
+ {
+  "id": "m0263",
+  "channel": "#ops-floor",
+  "ts": "2026-06-19T07:02:00Z",
+  "user": "a.schulz",
+  "text": "coffee machine finally fixed lol"
+ },
+ {
+  "id": "m0264",
+  "channel": "#ops-floor",
+  "ts": "2026-06-19T07:05:00Z",
+  "user": "p.dubois",
+  "text": "about time"
+ },
+ {
+  "id": "m0265",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-19T08:15:00Z",
+  "user": "h.tanaka",
+  "text": "morning systems check done, all green so far"
+ },
+ {
+  "id": "m0266",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-19T09:36:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone A high temp: 9.3 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0267",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-19T09:38:00Z",
+  "user": "m.larsen",
+  "text": "on it, heading to zone A now"
+ },
+ {
+  "id": "m0268",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-19T09:41:00Z",
+  "user": "i.kowalski",
+  "text": "door looked ajar earlier, checking seal"
+ },
+ {
+  "id": "m0269",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-19T09:50:00Z",
+  "user": "m.larsen",
+  "text": "door was propped by a pallet, resealed and temp dropping back"
+ },
+ {
+  "id": "m0270",
+  "channel": "#ops-floor",
+  "ts": "2026-06-19T10:05:00Z",
+  "user": "p.dubois",
+  "text": "restocking shelves, back in a bit"
+ },
+ {
+  "id": "m0271",
+  "channel": "#ops-floor",
+  "ts": "2026-06-19T12:00:00Z",
+  "user": "s.larsen",
+  "text": "lunch run, anyone want anything"
+ },
+ {
+  "id": "m0272",
+  "channel": "#ops-floor",
+  "ts": "2026-06-19T12:02:00Z",
+  "user": "f.okafor",
+  "text": "just water thanks"
+ },
+ {
+  "id": "m0273",
+  "channel": "#ops-floor",
+  "ts": "2026-06-19T14:14:00Z",
+  "user": "s.tanaka",
+  "text": "checking in for evening shift, starting with FL-2 rounds"
+ },
+ {
+  "id": "m0274",
+  "channel": "#ops-floor",
+  "ts": "2026-06-19T14:17:00Z",
+  "user": "m.mensah",
+  "text": "sounds good, nothing major to hand over from days"
+ },
+ {
+  "id": "m0275",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-19T16:10:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone A high temp: 8.9 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0276",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-19T16:12:00Z",
+  "user": "f.okafor",
+  "text": "zone A again, going to take a look"
+ },
+ {
+  "id": "m0277",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-19T16:21:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone A high temp: 9.1 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0278",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-19T16:21:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone D high temp: -20.9 C (limits -35.0..-21.0)"
+ },
+ {
+  "id": "m0279",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-19T16:24:00Z",
+  "user": "h.tanaka",
+  "text": "now zone D flagging too, escalating both to maintenance"
+ },
+ {
+  "id": "m0280",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-19T16:27:00Z",
+  "user": "i.kowalski",
+  "text": "compressor cycling weird, pulling logs now"
+ },
+ {
+  "id": "m0281",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-19T16:36:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone F high temp: 9.0 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0282",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-19T16:39:00Z",
+  "user": "p.novak",
+  "text": "zone F joining the party now too, busy afternoon"
+ },
+ {
+  "id": "m0283",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-19T16:42:00Z",
+  "user": "a.schulz",
+  "text": "maintenance dispatched, keeping an eye on all three"
+ },
+ {
+  "id": "m0284",
+  "channel": "#ops-floor",
+  "ts": "2026-06-19T16:55:00Z",
+  "user": "s.tanaka",
+  "text": "updated the log, everything else steady on my end"
+ },
+ {
+  "id": "m0285",
+  "channel": "#ops-floor",
+  "ts": "2026-06-20T06:15:00Z",
+  "user": "p.novak",
+  "text": "morning all, deliveries scheduled for 9 and 1 today, heads up"
+ },
+ {
+  "id": "m0286",
+  "channel": "#ops-floor",
+  "ts": "2026-06-20T06:18:00Z",
+  "user": "m.larsen",
+  "text": "morning, noted"
+ },
+ {
+  "id": "m0287",
+  "channel": "#ops-floor",
+  "ts": "2026-06-20T06:22:00Z",
+  "user": "f.okafor",
+  "text": "coffee machine is finally fixed lol"
+ },
+ {
+  "id": "m0288",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-20T06:41:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone A high temp: 8.6 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0289",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-20T06:43:00Z",
+  "user": "a.schulz",
+  "text": "on it, checking zone A now"
+ },
+ {
+  "id": "m0290",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-20T06:50:00Z",
+  "user": "a.schulz",
+  "text": "door was left ajar, closed and temp dropping back"
+ },
+ {
+  "id": "m0291",
+  "channel": "#ops-floor",
+  "ts": "2026-06-20T08:05:00Z",
+  "user": "h.tanaka",
+  "text": "anyone seen the extra pallet jack? not in its usual spot"
+ },
+ {
+  "id": "m0292",
+  "channel": "#ops-floor",
+  "ts": "2026-06-20T08:09:00Z",
+  "user": "s.larsen",
+  "text": "think it's near the dock, saw it there earlier"
+ },
+ {
+  "id": "m0293",
+  "channel": "#ops-floor",
+  "ts": "2026-06-20T09:02:00Z",
+  "user": "p.novak",
+  "text": "first delivery just arrived, unloading now"
+ },
+ {
+  "id": "m0294",
+  "channel": "#ops-floor",
+  "ts": "2026-06-20T09:45:00Z",
+  "user": "m.mensah",
+  "text": "paperwork for that one is in the tray, signed off"
+ },
+ {
+  "id": "m0295",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-20T12:20:00Z",
+  "user": "i.kowalski",
+  "text": "gateway host disk is full, services still up but logs aren't writing, cleaning up space now"
+ },
+ {
+  "id": "m0296",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-20T12:24:00Z",
+  "user": "p.dubois",
+  "text": "ugh again? let me know if you need a hand"
+ },
+ {
+  "id": "m0297",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-20T12:31:00Z",
+  "user": "i.kowalski",
+  "text": "clearing old rotated files first, should free enough"
+ },
+ {
+  "id": "m0298",
+  "channel": "#ops-floor",
+  "ts": "2026-06-20T13:15:00Z",
+  "user": "s.larsen",
+  "text": "lunch break, back in 30"
+ },
+ {
+  "id": "m0299",
+  "channel": "#ops-floor",
+  "ts": "2026-06-20T14:10:00Z",
+  "user": "s.tanaka",
+  "text": "checking in for evening shift, all quiet on FL-2 so far"
+ },
+ {
+  "id": "m0300",
+  "channel": "#ops-floor",
+  "ts": "2026-06-20T14:13:00Z",
+  "user": "m.larsen",
+  "text": "sounds good, nothing to hand over from us"
+ },
+ {
+  "id": "m0301",
+  "channel": "#ops-floor",
+  "ts": "2026-06-20T14:40:00Z",
+  "user": "p.novak",
+  "text": "second delivery running a bit late, driver stuck in traffic"
+ },
+ {
+  "id": "m0302",
+  "channel": "#ops-floor",
+  "ts": "2026-06-20T14:42:00Z",
+  "user": "s.tanaka",
+  "text": "thanks for the heads up"
+ },
+ {
+  "id": "m0303",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-20T15:05:00Z",
+  "user": "i.kowalski",
+  "text": "freed up space and rotated logs, writing again now"
+ },
+ {
+  "id": "m0304",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-20T15:07:00Z",
+  "user": "p.dubois",
+  "text": "nice, glad that was quick"
+ },
+ {
+  "id": "m0305",
+  "channel": "#ops-floor",
+  "ts": "2026-06-20T16:30:00Z",
+  "user": "s.tanaka",
+  "text": "second delivery finally in, docking now"
+ },
+ {
+  "id": "m0306",
+  "channel": "#ops-floor",
+  "ts": "2026-06-20T16:45:00Z",
+  "user": "h.tanaka",
+  "text": "heading out, night crew have a good one"
+ },
+ {
+  "id": "m0307",
+  "channel": "#ops-floor",
+  "ts": "2026-06-21T06:00:00Z",
+  "user": "p.novak",
+  "text": "morning all, deliveries today at 9 and 1, dock should be clear by then"
+ },
+ {
+  "id": "m0308",
+  "channel": "#ops-floor",
+  "ts": "2026-06-21T06:04:00Z",
+  "user": "f.okafor",
+  "text": "morning, coffee machine still broken btw"
+ },
+ {
+  "id": "m0309",
+  "channel": "#ops-floor",
+  "ts": "2026-06-21T06:06:00Z",
+  "user": "p.novak",
+  "text": "of course it is"
+ },
+ {
+  "id": "m0310",
+  "channel": "#ops-floor",
+  "ts": "2026-06-21T06:12:00Z",
+  "user": "a.schulz",
+  "text": "on my way in, roads are bad"
+ },
+ {
+  "id": "m0311",
+  "channel": "#ops-floor",
+  "ts": "2026-06-21T09:03:00Z",
+  "user": "m.mensah",
+  "text": "first delivery just pulled in, unloading now"
+ },
+ {
+  "id": "m0312",
+  "channel": "#ops-floor",
+  "ts": "2026-06-21T09:20:00Z",
+  "user": "i.kowalski",
+  "text": "all pallets counted, matches manifest"
+ },
+ {
+  "id": "m0313",
+  "channel": "#ops-floor",
+  "ts": "2026-06-21T12:45:00Z",
+  "user": "s.larsen",
+  "text": "lunch anyone want anything from outside"
+ },
+ {
+  "id": "m0314",
+  "channel": "#ops-floor",
+  "ts": "2026-06-21T12:47:00Z",
+  "user": "m.larsen",
+  "text": "grab me a sandwich if they have any left"
+ },
+ {
+  "id": "m0315",
+  "channel": "#ops-floor",
+  "ts": "2026-06-21T14:17:00Z",
+  "user": "s.tanaka",
+  "text": "checking in for evening shift, FL-2 battery is low so heads up"
+ },
+ {
+  "id": "m0316",
+  "channel": "#ops-floor",
+  "ts": "2026-06-21T14:19:00Z",
+  "user": "p.dubois",
+  "text": "thanks, I'll swap it out before end of my shift"
+ },
+ {
+  "id": "m0317",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-21T16:21:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone F high temp: 9.4 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0318",
+  "channel": "#ops-floor",
+  "ts": "2026-06-21T16:23:00Z",
+  "user": "a.schulz",
+  "text": "saw the alert, heading to zone F now"
+ },
+ {
+  "id": "m0319",
+  "channel": "#ops-floor",
+  "ts": "2026-06-21T16:26:00Z",
+  "user": "m.mensah",
+  "text": "let us know what you find"
+ },
+ {
+  "id": "m0320",
+  "channel": "#ops-floor",
+  "ts": "2026-06-21T16:35:00Z",
+  "user": "a.schulz",
+  "text": "door seal looked loose, adjusted it, temp dropping back down"
+ },
+ {
+  "id": "m0321",
+  "channel": "#ops-floor",
+  "ts": "2026-06-21T17:23:00Z",
+  "user": "p.dubois",
+  "text": "room D handheld reads warmer than the panel again, and it's getting worse"
+ },
+ {
+  "id": "m0322",
+  "channel": "#ops-floor",
+  "ts": "2026-06-21T17:26:00Z",
+  "user": "i.kowalski",
+  "text": "same thing happened last week, might need recalibration"
+ },
+ {
+  "id": "m0323",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-21T17:29:00Z",
+  "user": "p.dubois",
+  "text": "can someone look at room D sensor drift, handheld vs panel gap is growing"
+ },
+ {
+  "id": "m0324",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-21T17:34:00Z",
+  "user": "h.tanaka",
+  "text": "will check it when I'm on tonight"
+ },
+ {
+  "id": "m0325",
+  "channel": "#ops-floor",
+  "ts": "2026-06-21T20:10:00Z",
+  "user": "s.larsen",
+  "text": "quiet evening so far"
+ },
+ {
+  "id": "m0326",
+  "channel": "#ops-floor",
+  "ts": "2026-06-21T22:27:00Z",
+  "user": "h.tanaka",
+  "text": "night shift on, handover note: keep an eye on room D sensor drift and zone F door seal"
+ },
+ {
+  "id": "m0327",
+  "channel": "#ops-floor",
+  "ts": "2026-06-21T22:30:00Z",
+  "user": "s.tanaka",
+  "text": "noted, have a quiet one"
+ },
+ {
+  "id": "m0328",
+  "channel": "#ops-floor",
+  "ts": "2026-06-22T21:42:00Z",
+  "user": "a.schulz",
+  "text": "quiet so far this evening, coffee run anyone?"
+ },
+ {
+  "id": "m0329",
+  "channel": "#ops-floor",
+  "ts": "2026-06-22T21:44:00Z",
+  "user": "p.dubois",
+  "text": "yes please, black no sugar"
+ },
+ {
+  "id": "m0330",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-22T21:50:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone D high temp: -19.0 C (limits -35.0..-21.0)"
+ },
+ {
+  "id": "m0331",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-22T21:51:00Z",
+  "user": "m.mensah",
+  "text": "on it, heading to zone D now"
+ },
+ {
+  "id": "m0332",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-22T21:53:00Z",
+  "user": "i.kowalski",
+  "text": "checking the compressor logs, might be a door seal issue"
+ },
+ {
+  "id": "m0333",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-22T21:57:00Z",
+  "user": "m.mensah",
+  "text": "door was propped, closing it now, temp climbing back down"
+ },
+ {
+  "id": "m0334",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-22T22:02:00Z",
+  "user": "i.kowalski",
+  "text": "logged it, will keep an eye for the next hour"
+ },
+ {
+  "id": "m0335",
+  "channel": "#ops-floor",
+  "ts": "2026-06-22T22:05:00Z",
+  "user": "s.tanaka",
+  "text": "anyone still waiting on inventory counts from earlier?"
+ },
+ {
+  "id": "m0336",
+  "channel": "#ops-floor",
+  "ts": "2026-06-22T22:07:00Z",
+  "user": "f.okafor",
+  "text": "counts are done, sent them to the shared folder"
+ },
+ {
+  "id": "m0337",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-22T22:15:00Z",
+  "user": "p.novak",
+  "text": "zone D sensor recovered fine, no further action needed for now"
+ },
+ {
+  "id": "m0338",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-22T22:18:00Z",
+  "user": "s.larsen",
+  "text": "good, will note it for the morning review"
+ },
+ {
+  "id": "m0339",
+  "channel": "#ops-floor",
+  "ts": "2026-06-22T22:28:00Z",
+  "user": "h.tanaka",
+  "text": "night shift on, handover note: zone D had a brief high temp alert earlier but it's resolved, door seal was the cause, all clear now"
+ },
+ {
+  "id": "m0340",
+  "channel": "#ops-floor",
+  "ts": "2026-06-22T22:31:00Z",
+  "user": "m.larsen",
+  "text": "thanks for the heads up, will keep watching it"
+ },
+ {
+  "id": "m0341",
+  "channel": "#ops-floor",
+  "ts": "2026-06-22T22:35:00Z",
+  "user": "a.schulz",
+  "text": "heading out, night crew have a quiet one"
+ },
+ {
+  "id": "m0342",
+  "channel": "#ops-floor",
+  "ts": "2026-06-23T06:01:00Z",
+  "user": "p.novak",
+  "text": "morning, reminder about the probe round"
+ },
+ {
+  "id": "m0343",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-23T06:40:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone A high temp: 9.2 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0344",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-23T16:11:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone F high temp: 8.6 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0345",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-23T20:21:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone D high temp: -20.3 C (limits -35.0..-21.0)"
+ },
+ {
+  "id": "m0346",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-23T21:31:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone A high temp: 8.8 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0347",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-23T21:31:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone D high temp: -20.8 C (limits -35.0..-21.0)"
+ },
+ {
+  "id": "m0348",
+  "channel": "#ops-floor",
+  "ts": "2026-06-24T06:24:00Z",
+  "user": "p.novak",
+  "text": "morning all, don't forget the probe round before 7"
+ },
+ {
+  "id": "m0349",
+  "channel": "#ops-floor",
+  "ts": "2026-06-24T06:27:00Z",
+  "user": "f.okafor",
+  "text": "on it, grabbing the clipboard now"
+ },
+ {
+  "id": "m0350",
+  "channel": "#ops-floor",
+  "ts": "2026-06-24T06:41:00Z",
+  "user": "a.schulz",
+  "text": "coffee machine's broken again, heads up"
+ },
+ {
+  "id": "m0351",
+  "channel": "#ops-floor",
+  "ts": "2026-06-24T06:43:00Z",
+  "user": "p.novak",
+  "text": "of course it is lol"
+ },
+ {
+  "id": "m0352",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-24T09:06:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone A high temp: 9.8 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0353",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-24T09:08:00Z",
+  "user": "h.tanaka",
+  "text": "zone A alert just fired, heading over now"
+ },
+ {
+  "id": "m0354",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-24T09:14:00Z",
+  "user": "i.kowalski",
+  "text": "door was propped, closing it now"
+ },
+ {
+  "id": "m0355",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-24T09:20:00Z",
+  "user": "h.tanaka",
+  "text": "temp still climbing slowly, keeping an eye"
+ },
+ {
+  "id": "m0356",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-24T10:21:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone A high temp: 8.7 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0357",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-24T10:24:00Z",
+  "user": "i.kowalski",
+  "text": "coming down slowly, still above limit though"
+ },
+ {
+  "id": "m0358",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-24T10:31:00Z",
+  "user": "m.mensah",
+  "text": "let me know if you need another hand on that"
+ },
+ {
+  "id": "m0359",
+  "channel": "#ops-floor",
+  "ts": "2026-06-24T12:05:00Z",
+  "user": "s.larsen",
+  "text": "lunch run, anyone want anything?"
+ },
+ {
+  "id": "m0360",
+  "channel": "#ops-floor",
+  "ts": "2026-06-24T12:07:00Z",
+  "user": "m.larsen",
+  "text": "just water for me thanks"
+ },
+ {
+  "id": "m0361",
+  "channel": "#ops-floor",
+  "ts": "2026-06-24T14:20:00Z",
+  "user": "s.tanaka",
+  "text": "signing on for evenings, starting a sweep through FL-2 first"
+ },
+ {
+  "id": "m0362",
+  "channel": "#ops-floor",
+  "ts": "2026-06-24T14:23:00Z",
+  "user": "p.dubois",
+  "text": "morning crew log looks clean, nothing weird to hand over"
+ },
+ {
+  "id": "m0363",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-24T16:10:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone F high temp: 8.7 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0364",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-24T16:13:00Z",
+  "user": "s.tanaka",
+  "text": "zone F kicking off now too, on my way"
+ },
+ {
+  "id": "m0365",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-24T16:20:00Z",
+  "user": "f.okafor",
+  "text": "compressor sounds off, checking the unit"
+ },
+ {
+  "id": "m0366",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-24T17:10:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone F high temp: 8.9 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0367",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-24T17:15:00Z",
+  "user": "f.okafor",
+  "text": "still creeping up, calling maintenance line now"
+ },
+ {
+  "id": "m0368",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-24T17:31:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone F high temp: 8.9 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0369",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-24T17:34:00Z",
+  "user": "s.tanaka",
+  "text": "tech's on site, should stabilize soon"
+ },
+ {
+  "id": "m0370",
+  "channel": "#ops-floor",
+  "ts": "2026-06-24T17:50:00Z",
+  "user": "m.mensah",
+  "text": "quiet otherwise, rest of floor's fine"
+ },
+ {
+  "id": "m0371",
+  "channel": "#ops-floor",
+  "ts": "2026-06-25T06:18:00Z",
+  "user": "p.novak",
+  "text": "morning all, deliveries today at usual slots, first truck due mid-morning and second one late afternoon"
+ },
+ {
+  "id": "m0372",
+  "channel": "#ops-floor",
+  "ts": "2026-06-25T06:21:00Z",
+  "user": "f.okafor",
+  "text": "thanks for the heads up, will get dock cleared"
+ },
+ {
+  "id": "m0373",
+  "channel": "#ops-floor",
+  "ts": "2026-06-25T06:34:00Z",
+  "user": "a.schulz",
+  "text": "coffee machine is finally fixed lol"
+ },
+ {
+  "id": "m0374",
+  "channel": "#ops-floor",
+  "ts": "2026-06-25T06:36:00Z",
+  "user": "p.novak",
+  "text": "about time"
+ },
+ {
+  "id": "m0375",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-25T12:52:00Z",
+  "user": "i.kowalski",
+  "text": "seeing a slow query on the monitoring dashboard again, page load is dragging"
+ },
+ {
+  "id": "m0376",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-25T12:56:00Z",
+  "user": "h.tanaka",
+  "text": "same, thought it was just my connection"
+ },
+ {
+  "id": "m0377",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-25T12:58:00Z",
+  "user": "i.kowalski",
+  "text": "will flag it, maybe needs an index"
+ },
+ {
+  "id": "m0378",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-25T13:35:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone D high temp: -20.8 C (limits -35.0..-21.0)"
+ },
+ {
+  "id": "m0379",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-25T13:38:00Z",
+  "user": "m.larsen",
+  "text": "on it, heading to zone D now"
+ },
+ {
+  "id": "m0380",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-25T13:42:00Z",
+  "user": "p.dubois",
+  "text": "door seal looked loose earlier, could be that"
+ },
+ {
+  "id": "m0381",
+  "channel": "#ops-floor",
+  "ts": "2026-06-25T14:08:00Z",
+  "user": "s.tanaka",
+  "text": "checking in for evening shift, all quiet, just doing a pass by FL-2 before I settle in"
+ },
+ {
+  "id": "m0382",
+  "channel": "#ops-floor",
+  "ts": "2026-06-25T14:11:00Z",
+  "user": "m.mensah",
+  "text": "good to know, nothing else to hand over from my side"
+ },
+ {
+  "id": "m0383",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-25T16:01:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone A high temp: 8.8 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0384",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-25T16:04:00Z",
+  "user": "s.larsen",
+  "text": "checking zone A now, might be a door left open"
+ },
+ {
+  "id": "m0385",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-25T16:15:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone F high temp: 9.4 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0386",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-25T16:16:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone A high temp: 9.0 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0387",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-25T16:19:00Z",
+  "user": "p.novak",
+  "text": "getting multiple zones now, this feels bigger than one door"
+ },
+ {
+  "id": "m0388",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-25T16:22:00Z",
+  "user": "f.okafor",
+  "text": "pulling logs, will check if it's a sensor or actual unit issue"
+ },
+ {
+  "id": "m0389",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-25T16:27:00Z",
+  "user": "s.larsen",
+  "text": "zone A temp settling back down, keeping an eye on it"
+ },
+ {
+  "id": "m0390",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-25T22:31:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone D high temp: -20.8 C (limits -35.0..-21.0)"
+ },
+ {
+  "id": "m0391",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-25T22:34:00Z",
+  "user": "h.tanaka",
+  "text": "same zone D as earlier, will take a look before end of shift"
+ },
+ {
+  "id": "m0392",
+  "channel": "#ops-floor",
+  "ts": "2026-06-25T22:37:00Z",
+  "user": "m.mensah",
+  "text": "quiet night otherwise, floor's clear"
+ },
+ {
+  "id": "m0393",
+  "channel": "#ops-floor",
+  "ts": "2026-06-26T06:03:00Z",
+  "user": "p.novak",
+  "text": "morning all, don't forget the probe round before shift handover"
+ },
+ {
+  "id": "m0394",
+  "channel": "#ops-floor",
+  "ts": "2026-06-26T06:07:00Z",
+  "user": "f.okafor",
+  "text": "on it, starting with zone A"
+ },
+ {
+  "id": "m0395",
+  "channel": "#ops-floor",
+  "ts": "2026-06-26T06:15:00Z",
+  "user": "a.schulz",
+  "text": "coffee machine's finally fixed, small mercies"
+ },
+ {
+  "id": "m0396",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-26T08:55:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone A high temp: 9.0 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0397",
+  "channel": "#ops-floor",
+  "ts": "2026-06-26T08:58:00Z",
+  "user": "m.mensah",
+  "text": "seeing the zone A alert, heading over now"
+ },
+ {
+  "id": "m0398",
+  "channel": "#ops-floor",
+  "ts": "2026-06-26T09:02:00Z",
+  "user": "p.dubois",
+  "text": "door was propped open for the pallet move, closing it now"
+ },
+ {
+  "id": "m0399",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-26T09:31:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone A high temp: 8.6 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0400",
+  "channel": "#ops-floor",
+  "ts": "2026-06-26T09:35:00Z",
+  "user": "m.mensah",
+  "text": "still running warm, might need to bump the compressor cycle"
+ },
+ {
+  "id": "m0401",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-26T09:41:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone A high temp: 8.8 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0402",
+  "channel": "#ops-floor",
+  "ts": "2026-06-26T09:44:00Z",
+  "user": "s.larsen",
+  "text": "on it now, checking the unit"
+ },
+ {
+  "id": "m0403",
+  "channel": "#ops-floor",
+  "ts": "2026-06-26T10:00:00Z",
+  "user": "s.larsen",
+  "text": "temps settling back down, will keep an eye on it"
+ },
+ {
+  "id": "m0404",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-26T14:26:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone D high temp: -20.9 C (limits -35.0..-21.0)"
+ },
+ {
+  "id": "m0405",
+  "channel": "#ops-floor",
+  "ts": "2026-06-26T14:30:00Z",
+  "user": "m.larsen",
+  "text": "zone D just barely over, checking the seal on that door"
+ },
+ {
+  "id": "m0406",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-26T14:52:00Z",
+  "user": "i.kowalski",
+  "text": "noticed a slow query on the monitoring dashboard, might be worth looking at"
+ },
+ {
+  "id": "m0407",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-26T14:58:00Z",
+  "user": "p.novak",
+  "text": "yeah saw that too, could be missing an index somewhere"
+ },
+ {
+  "id": "m0408",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-26T15:56:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone A high temp: 9.2 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0409",
+  "channel": "#ops-floor",
+  "ts": "2026-06-26T16:00:00Z",
+  "user": "f.okafor",
+  "text": "zone A creeping up again, going to check the door seal this time"
+ },
+ {
+  "id": "m0410",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-26T16:11:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone F high temp: 9.1 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0411",
+  "channel": "#ops-floor",
+  "ts": "2026-06-26T16:15:00Z",
+  "user": "a.schulz",
+  "text": "two zones flagging now, hands full over here"
+ },
+ {
+  "id": "m0412",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-26T17:51:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone F high temp: 8.6 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0413",
+  "channel": "#ops-floor",
+  "ts": "2026-06-26T17:55:00Z",
+  "user": "h.tanaka",
+  "text": "zone F looking better, dropping back toward range"
+ },
+ {
+  "id": "m0414",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-26T21:10:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone D high temp: -20.9 C (limits -35.0..-21.0)"
+ },
+ {
+  "id": "m0415",
+  "channel": "#ops-floor",
+  "ts": "2026-06-26T21:14:00Z",
+  "user": "m.larsen",
+  "text": "zone D again, going to swap that door seal tomorrow for good"
+ },
+ {
+  "id": "m0416",
+  "channel": "#ops-floor",
+  "ts": "2026-06-26T22:15:00Z",
+  "user": "h.tanaka",
+  "text": "night shift on, keep an eye on zone D and F, both had temp blips today"
+ },
+ {
+  "id": "m0417",
+  "channel": "#ops-floor",
+  "ts": "2026-06-26T22:20:00Z",
+  "user": "s.tanaka",
+  "text": "copy that, will do rounds every hour"
+ },
+ {
+  "id": "m0418",
+  "channel": "#ops-floor",
+  "ts": "2026-06-27T06:37:00Z",
+  "user": "p.novak",
+  "text": "morning all, deliveries scheduled to come through today, keep an eye on the dock"
+ },
+ {
+  "id": "m0419",
+  "channel": "#ops-floor",
+  "ts": "2026-06-27T06:40:00Z",
+  "user": "f.okafor",
+  "text": "morning, thanks for the heads up"
+ },
+ {
+  "id": "m0420",
+  "channel": "#ops-floor",
+  "ts": "2026-06-27T06:44:00Z",
+  "user": "a.schulz",
+  "text": "break room coffee machine still not working lol"
+ },
+ {
+  "id": "m0421",
+  "channel": "#ops-floor",
+  "ts": "2026-06-27T06:48:00Z",
+  "user": "i.kowalski",
+  "text": "someone tell facilities please"
+ },
+ {
+  "id": "m0422",
+  "channel": "#ops-floor",
+  "ts": "2026-06-27T06:52:00Z",
+  "user": "p.dubois",
+  "text": "will grab someone after rounds"
+ },
+ {
+  "id": "m0423",
+  "channel": "#ops-floor",
+  "ts": "2026-06-27T14:22:00Z",
+  "user": "m.mensah",
+  "text": "quiet afternoon, all rooms steady so far"
+ },
+ {
+  "id": "m0424",
+  "channel": "#ops-floor",
+  "ts": "2026-06-27T14:26:00Z",
+  "user": "s.larsen",
+  "text": "nothing to hand off, pretty calm shift"
+ },
+ {
+  "id": "m0425",
+  "channel": "#ops-floor",
+  "ts": "2026-06-27T14:28:00Z",
+  "user": "s.tanaka",
+  "text": "clocking in for evening shift, heading over to check FL-2 first"
+ },
+ {
+  "id": "m0426",
+  "channel": "#ops-floor",
+  "ts": "2026-06-27T14:32:00Z",
+  "user": "p.dubois",
+  "text": "sounds good, nothing unusual to report from here"
+ },
+ {
+  "id": "m0427",
+  "channel": "#ops-floor",
+  "ts": "2026-06-27T14:38:00Z",
+  "user": "f.okafor",
+  "text": "let us know how FL-2 looks once you're through"
+ },
+ {
+  "id": "m0428",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-27T14:56:00Z",
+  "user": "m.larsen",
+  "text": "pushed a small config update to the monitoring service, nothing customer facing, keep an eye out just in case"
+ },
+ {
+  "id": "m0429",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-27T14:59:00Z",
+  "user": "h.tanaka",
+  "text": "cool, will watch the logs for a bit"
+ },
+ {
+  "id": "m0430",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-27T15:02:00Z",
+  "user": "m.larsen",
+  "text": "looks stable so far after the update"
+ },
+ {
+  "id": "m0431",
+  "channel": "#ops-floor",
+  "ts": "2026-06-27T15:07:00Z",
+  "user": "p.novak",
+  "text": "vendor came by and recalibrated the room D sensor, should be reading accurate now"
+ },
+ {
+  "id": "m0432",
+  "channel": "#ops-floor",
+  "ts": "2026-06-27T15:11:00Z",
+  "user": "s.tanaka",
+  "text": "good to know, thanks"
+ },
+ {
+  "id": "m0433",
+  "channel": "#ops-floor",
+  "ts": "2026-06-27T15:15:00Z",
+  "user": "a.schulz",
+  "text": "good, was wondering about that reading earlier"
+ },
+ {
+  "id": "m0434",
+  "channel": "#ops-floor",
+  "ts": "2026-06-27T15:20:00Z",
+  "user": "f.okafor",
+  "text": "makes sense, glad it's sorted"
+ },
+ {
+  "id": "m0435",
+  "channel": "#ops-floor",
+  "ts": "2026-06-27T16:05:00Z",
+  "user": "i.kowalski",
+  "text": "dock's clear, no more deliveries expected today"
+ },
+ {
+  "id": "m0436",
+  "channel": "#ops-floor",
+  "ts": "2026-06-27T16:10:00Z",
+  "user": "p.dubois",
+  "text": "good, wrapping up my rounds now"
+ },
+ {
+  "id": "m0437",
+  "channel": "#ops-floor",
+  "ts": "2026-06-27T16:40:00Z",
+  "user": "s.larsen",
+  "text": "heading out, everything logged and quiet"
+ },
+ {
+  "id": "m0438",
+  "channel": "#ops-floor",
+  "ts": "2026-06-27T16:44:00Z",
+  "user": "m.mensah",
+  "text": "have a good one, see you tomorrow"
+ },
+ {
+  "id": "m0439",
+  "channel": "#ops-floor",
+  "ts": "2026-06-27T18:10:00Z",
+  "user": "s.tanaka",
+  "text": "rooms all steady this evening, no complaints"
+ },
+ {
+  "id": "m0440",
+  "channel": "#ops-floor",
+  "ts": "2026-06-28T06:18:00Z",
+  "user": "p.novak",
+  "text": "morning greeting and today's delivery times"
+ },
+ {
+  "id": "m0441",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-28T10:26:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone B high temp: -15.3 C (limits -30.9..-16.9)"
+ },
+ {
+  "id": "m0442",
+  "channel": "#ops-floor",
+  "ts": "2026-06-28T14:09:00Z",
+  "user": "s.tanaka",
+  "text": "checking in for the evening shift, mentions FL-2"
+ },
+ {
+  "id": "m0443",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-28T16:41:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone F high temp: 9.5 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0444",
+  "channel": "#ops-floor",
+  "ts": "2026-06-29T06:06:00Z",
+  "user": "p.novak",
+  "text": "morning, reminder about the probe round"
+ },
+ {
+  "id": "m0445",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-29T12:46:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone B high temp: -16.1 C (limits -30.9..-16.9)"
+ },
+ {
+  "id": "m0446",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-29T16:00:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone A high temp: 8.6 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0447",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-29T16:16:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone F high temp: 9.0 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0448",
+  "channel": "#ops-floor",
+  "ts": "2026-06-29T22:18:00Z",
+  "user": "h.tanaka",
+  "text": "night shift on, handover note"
+ },
+ {
+  "id": "m0449",
+  "channel": "#ops-floor",
+  "ts": "2026-06-30T06:32:00Z",
+  "user": "p.novak",
+  "text": "morning, quiet day"
+ },
+ {
+  "id": "m0450",
+  "channel": "#ops-floor",
+  "ts": "2026-06-30T09:56:00Z",
+  "user": "a.schulz",
+  "text": "customer stability lab flagged lot LN-22416 from room E, asking which other lots were in that room"
+ },
+ {
+  "id": "m0451",
+  "channel": "#ops-floor",
+  "ts": "2026-06-30T11:18:00Z",
+  "user": "p.novak",
+  "text": "what excursion, room E never alarmed"
+ },
+ {
+  "id": "m0452",
+  "channel": "#eng-coldchain",
+  "ts": "2026-06-30T12:39:00Z",
+  "user": "m.larsen",
+  "text": "ledger has VX05 at about -40 the whole week, dashboard never crossed the high limit"
+ },
+ {
+  "id": "m0453",
+  "channel": "#ops-floor",
+  "ts": "2026-06-30T14:22:00Z",
+  "user": "s.tanaka",
+  "text": "checking in for the evening shift, mentions FL-2"
+ },
+ {
+  "id": "m0454",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-06-30T20:11:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone F high temp: 8.7 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0455",
+  "channel": "#ops-floor",
+  "ts": "2026-07-01T06:23:00Z",
+  "user": "p.novak",
+  "text": "morning all, quick reminder to run the probe round before start of shift"
+ },
+ {
+  "id": "m0456",
+  "channel": "#ops-floor",
+  "ts": "2026-07-01T06:26:00Z",
+  "user": "f.okafor",
+  "text": "on it, grabbing the clipboard now"
+ },
+ {
+  "id": "m0457",
+  "channel": "#ops-floor",
+  "ts": "2026-07-01T06:41:00Z",
+  "user": "i.kowalski",
+  "text": "coffee machine is finally fixed btw, small wins"
+ },
+ {
+  "id": "m0458",
+  "channel": "#ops-floor",
+  "ts": "2026-07-01T06:44:00Z",
+  "user": "p.novak",
+  "text": "lol about time"
+ },
+ {
+  "id": "m0459",
+  "channel": "#ops-floor",
+  "ts": "2026-07-01T14:28:00Z",
+  "user": "s.tanaka",
+  "text": "clocking in for evening shift, heading to check FL-2 first"
+ },
+ {
+  "id": "m0460",
+  "channel": "#ops-floor",
+  "ts": "2026-07-01T14:33:00Z",
+  "user": "p.dubois",
+  "text": "cool, day was quiet other than the usual paperwork"
+ },
+ {
+  "id": "m0461",
+  "channel": "#eng-coldchain",
+  "ts": "2026-07-01T14:58:00Z",
+  "user": "m.larsen",
+  "text": "anyone else seeing the dashboard freeze on the live temp graph? not updating for me"
+ },
+ {
+  "id": "m0462",
+  "channel": "#eng-coldchain",
+  "ts": "2026-07-01T15:04:00Z",
+  "user": "s.larsen",
+  "text": "yeah seeing it too, might be a refresh bug, poking at it"
+ },
+ {
+  "id": "m0463",
+  "channel": "#eng-coldchain",
+  "ts": "2026-07-01T15:12:00Z",
+  "user": "m.mensah",
+  "text": "same lag here, cleared cache and it came back briefly"
+ },
+ {
+  "id": "m0464",
+  "channel": "#eng-coldchain",
+  "ts": "2026-07-01T15:21:00Z",
+  "user": "m.larsen",
+  "text": "thanks, will just refresh manually till it's sorted"
+ },
+ {
+  "id": "m0465",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-07-01T16:15:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone F high temp: 9.2 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0466",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-07-01T16:18:00Z",
+  "user": "f.okafor",
+  "text": "heading over to zone F now to check the unit"
+ },
+ {
+  "id": "m0467",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-07-01T16:24:00Z",
+  "user": "i.kowalski",
+  "text": "door was left ajar, closing it and watching the numbers"
+ },
+ {
+  "id": "m0468",
+  "channel": "#ops-floor",
+  "ts": "2026-07-01T16:30:00Z",
+  "user": "a.schulz",
+  "text": "postmortem's up now, we pulled the quarantine list straight from the ledger for review"
+ },
+ {
+  "id": "m0469",
+  "channel": "#ops-floor",
+  "ts": "2026-07-01T16:36:00Z",
+  "user": "h.tanaka",
+  "text": "thanks for turning that around fast, will read it before shift change"
+ },
+ {
+  "id": "m0470",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-07-01T17:11:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone F high temp: 8.8 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0471",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-07-01T17:15:00Z",
+  "user": "p.novak",
+  "text": "still trending down, keeping an eye on it for the next hour"
+ },
+ {
+  "id": "m0472",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-07-01T17:22:00Z",
+  "user": "f.okafor",
+  "text": "confirmed door seal is fine now, should stabilize soon"
+ },
+ {
+  "id": "m0473",
+  "channel": "#ops-floor",
+  "ts": "2026-07-01T22:26:00Z",
+  "user": "h.tanaka",
+  "text": "night shift on, all quiet, handover note is zone F temp is back in range but keep watching it"
+ },
+ {
+  "id": "m0474",
+  "channel": "#ops-floor",
+  "ts": "2026-07-01T22:31:00Z",
+  "user": "s.tanaka",
+  "text": "good to know, will check it on my next round too, night"
+ },
+ {
+  "id": "m0475",
+  "channel": "#ops-floor",
+  "ts": "2026-07-02T06:29:00Z",
+  "user": "p.novak",
+  "text": "morning all, don't forget the probe round before start of shift"
+ },
+ {
+  "id": "m0476",
+  "channel": "#ops-floor",
+  "ts": "2026-07-02T06:33:00Z",
+  "user": "s.tanaka",
+  "text": "on it, grabbing the clipboard now"
+ },
+ {
+  "id": "m0477",
+  "channel": "#ops-floor",
+  "ts": "2026-07-02T06:41:00Z",
+  "user": "a.schulz",
+  "text": "probes all checked out fine, nothing unusual"
+ },
+ {
+  "id": "m0478",
+  "channel": "#ops-floor",
+  "ts": "2026-07-02T08:10:00Z",
+  "user": "m.mensah",
+  "text": "anyone seen the extra pallet jack, not in its spot"
+ },
+ {
+  "id": "m0479",
+  "channel": "#ops-floor",
+  "ts": "2026-07-02T08:14:00Z",
+  "user": "p.dubois",
+  "text": "think it's still by the loading dock from yesterday"
+ },
+ {
+  "id": "m0480",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-07-02T09:41:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone A high temp: 8.8 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0481",
+  "channel": "#ops-floor",
+  "ts": "2026-07-02T09:44:00Z",
+  "user": "h.tanaka",
+  "text": "zone A alert again, heading over to check the door seal"
+ },
+ {
+  "id": "m0482",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-07-02T09:51:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone A high temp: 9.2 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0483",
+  "channel": "#ops-floor",
+  "ts": "2026-07-02T09:55:00Z",
+  "user": "m.larsen",
+  "text": "seal looked fine, might be the compressor lagging, keeping an eye on it"
+ },
+ {
+  "id": "m0484",
+  "channel": "#ops-floor",
+  "ts": "2026-07-02T10:05:00Z",
+  "user": "s.larsen",
+  "text": "zone A back in range now, will keep checking"
+ },
+ {
+  "id": "m0485",
+  "channel": "#eng-coldchain",
+  "ts": "2026-07-02T12:40:00Z",
+  "user": "i.kowalski",
+  "text": "noticed a slow query on the dashboard, taking way longer than usual to load readings"
+ },
+ {
+  "id": "m0486",
+  "channel": "#eng-coldchain",
+  "ts": "2026-07-02T12:47:00Z",
+  "user": "p.novak",
+  "text": "yeah dashboard's been sluggish for me too, worth a look this week"
+ },
+ {
+  "id": "m0487",
+  "channel": "#ops-floor",
+  "ts": "2026-07-02T13:05:00Z",
+  "user": "f.okafor",
+  "text": "lunch run, anyone want anything from the shop"
+ },
+ {
+  "id": "m0488",
+  "channel": "#ops-floor",
+  "ts": "2026-07-02T13:08:00Z",
+  "user": "a.schulz",
+  "text": "grab me a water if they have any"
+ },
+ {
+  "id": "m0489",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-07-02T15:51:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone F high temp: 9.4 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0490",
+  "channel": "#ops-floor",
+  "ts": "2026-07-02T15:54:00Z",
+  "user": "m.mensah",
+  "text": "zone F flagged, going to check it now"
+ },
+ {
+  "id": "m0491",
+  "channel": "#ops-floor",
+  "ts": "2026-07-02T16:02:00Z",
+  "user": "m.mensah",
+  "text": "door was left ajar, closed it up, monitoring"
+ },
+ {
+  "id": "m0492",
+  "channel": "#ops-floor",
+  "ts": "2026-07-02T17:15:00Z",
+  "user": "p.dubois",
+  "text": "shift handover notes posted, quiet afternoon otherwise"
+ },
+ {
+  "id": "m0493",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-07-02T20:26:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone A high temp: 8.9 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0494",
+  "channel": "#ops-floor",
+  "ts": "2026-07-02T20:31:00Z",
+  "user": "s.tanaka",
+  "text": "zone A again, swinging by before I head out"
+ },
+ {
+  "id": "m0495",
+  "channel": "#ops-floor",
+  "ts": "2026-07-02T20:44:00Z",
+  "user": "h.tanaka",
+  "text": "logged it for maintenance, night crew should follow up"
+ },
+ {
+  "id": "m0496",
+  "channel": "#ops-floor",
+  "ts": "2026-07-03T06:11:00Z",
+  "user": "p.novak",
+  "text": "morning all, looks like a quiet day ahead"
+ },
+ {
+  "id": "m0497",
+  "channel": "#ops-floor",
+  "ts": "2026-07-03T06:15:00Z",
+  "user": "f.okafor",
+  "text": "hope it stays that way, coffee's on"
+ },
+ {
+  "id": "m0498",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-07-03T07:51:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone A high temp: 8.8 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0499",
+  "channel": "#ops-floor",
+  "ts": "2026-07-03T07:54:00Z",
+  "user": "h.tanaka",
+  "text": "saw the zone A alert, heading over to check the door seals"
+ },
+ {
+  "id": "m0500",
+  "channel": "#ops-floor",
+  "ts": "2026-07-03T07:58:00Z",
+  "user": "m.larsen",
+  "text": "let me know if you need a hand, i'm nearby"
+ },
+ {
+  "id": "m0501",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-07-03T08:12:00Z",
+  "user": "h.tanaka",
+  "text": "temp back in range now, was a door left ajar during restock"
+ },
+ {
+  "id": "m0502",
+  "channel": "#ops-floor",
+  "ts": "2026-07-03T08:14:00Z",
+  "user": "f.okafor",
+  "text": "good catch, thanks"
+ },
+ {
+  "id": "m0503",
+  "channel": "#ops-floor",
+  "ts": "2026-07-03T09:02:00Z",
+  "user": "a.schulz",
+  "text": "anyone else feel like this week is dragging"
+ },
+ {
+  "id": "m0504",
+  "channel": "#ops-floor",
+  "ts": "2026-07-03T09:05:00Z",
+  "user": "m.mensah",
+  "text": "every week is dragging honestly"
+ },
+ {
+  "id": "m0505",
+  "channel": "#eng-coldchain",
+  "ts": "2026-07-03T11:06:00Z",
+  "user": "i.kowalski",
+  "text": "pushed a small deploy to tweak the alert thresholds logic, nothing major, let me know if anything looks off"
+ },
+ {
+  "id": "m0506",
+  "channel": "#eng-coldchain",
+  "ts": "2026-07-03T11:10:00Z",
+  "user": "p.dubois",
+  "text": "cool, will keep an eye on the dashboards"
+ },
+ {
+  "id": "m0507",
+  "channel": "#ops-floor",
+  "ts": "2026-07-03T13:05:00Z",
+  "user": "m.mensah",
+  "text": "lunch rush at the cafeteria today, packed"
+ },
+ {
+  "id": "m0508",
+  "channel": "#ops-floor",
+  "ts": "2026-07-03T14:19:00Z",
+  "user": "s.tanaka",
+  "text": "checking in for the evening shift, all quiet on my end except keeping an eye on FL-2"
+ },
+ {
+  "id": "m0509",
+  "channel": "#ops-floor",
+  "ts": "2026-07-03T14:23:00Z",
+  "user": "s.larsen",
+  "text": "sounds good, nothing else to hand over from me"
+ },
+ {
+  "id": "m0510",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-07-03T16:01:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone A high temp: 8.7 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0511",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-07-03T16:04:00Z",
+  "user": "f.okafor",
+  "text": "zone A again, going to take a look"
+ },
+ {
+  "id": "m0512",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-07-03T16:10:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone F high temp: 9.5 C (limits 0.5..8.5)"
+ },
+ {
+  "id": "m0513",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-07-03T16:13:00Z",
+  "user": "h.tanaka",
+  "text": "now zone F too, might be a wider unit issue, checking"
+ },
+ {
+  "id": "m0514",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-07-03T16:17:00Z",
+  "user": "m.larsen",
+  "text": "calling maintenance to take a look at both units"
+ },
+ {
+  "id": "m0515",
+  "channel": "#ops-floor",
+  "ts": "2026-07-03T16:34:00Z",
+  "user": "p.novak",
+  "text": "maintenance is on site, temps trending down again"
+ },
+ {
+  "id": "m0516",
+  "channel": "#ops-floor",
+  "ts": "2026-07-03T20:05:00Z",
+  "user": "s.larsen",
+  "text": "quiet evening so far, all good"
+ }
+]

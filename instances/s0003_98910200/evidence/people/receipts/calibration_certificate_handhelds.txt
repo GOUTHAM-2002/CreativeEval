@@ -1,0 +1,7 @@
+CALIBRATION CERTIFICATE  —  handheld probe thermometers
+Site: Glacier Bay Storage / JPS45
+Issued: 2026-02-12
+
+Unit HH-1  serial 655560  reference -20.0 C: reads -20.0 C  (offset 0.0)  PASS
+Unit HH-2  serial 688036  reference -20.0 C: reads -18.9 C  (offset +1.1)  OUT OF TOLERANCE — adjust or retire
+Recommended: HH-2 removed from service until adjusted. Next calibration due in 12 months.

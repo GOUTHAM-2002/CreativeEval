@@ -1,0 +1,427 @@
+{
+ "unacked": 1295,
+ "dropped_radio": 4205,
+ "unsent_linkdown": 147,
+ "sent": 50724,
+ "late_max_s": 473.3,
+ "late_over_60s": 12,
+ "link_events": [
+  {
+   "t": "2026-03-14T10:49:00Z",
+   "zone": "A",
+   "ctrl": "TK01",
+   "event": "down",
+   "why": "power loss"
+  },
+  {
+   "t": "2026-03-14T10:49:00Z",
+   "zone": "B",
+   "ctrl": "TK02",
+   "event": "down",
+   "why": "power loss"
+  },
+  {
+   "t": "2026-03-14T10:49:00Z",
+   "zone": "C",
+   "ctrl": "TK03",
+   "event": "down",
+   "why": "power loss"
+  },
+  {
+   "t": "2026-03-14T10:49:00Z",
+   "zone": "D",
+   "ctrl": "TK04",
+   "event": "down",
+   "why": "power loss"
+  },
+  {
+   "t": "2026-03-14T10:49:00Z",
+   "zone": "E",
+   "ctrl": "TK05",
+   "event": "down",
+   "why": "power loss"
+  },
+  {
+   "t": "2026-03-14T10:49:00Z",
+   "zone": "F",
+   "ctrl": "TK06",
+   "event": "down",
+   "why": "power loss"
+  },
+  {
+   "t": "2026-03-14T11:18:53Z",
+   "zone": "A",
+   "ctrl": "TK01",
+   "event": "up"
+  },
+  {
+   "t": "2026-03-14T11:18:53Z",
+   "zone": "B",
+   "ctrl": "TK02",
+   "event": "up"
+  },
+  {
+   "t": "2026-03-14T11:18:54Z",
+   "zone": "C",
+   "ctrl": "TK03",
+   "event": "up"
+  },
+  {
+   "t": "2026-03-14T11:18:55Z",
+   "zone": "D",
+   "ctrl": "TK04",
+   "event": "up"
+  },
+  {
+   "t": "2026-03-14T11:18:55Z",
+   "zone": "E",
+   "ctrl": "TK05",
+   "event": "up"
+  },
+  {
+   "t": "2026-03-14T11:18:56Z",
+   "zone": "F",
+   "ctrl": "TK06",
+   "event": "up"
+  },
+  {
+   "t": "2026-03-18T01:07:30Z",
+   "zone": "E",
+   "ctrl": "TK05",
+   "event": "down",
+   "why": "peer reset"
+  },
+  {
+   "t": "2026-03-18T01:22:30Z",
+   "zone": "E",
+   "ctrl": "TK05",
+   "event": "up"
+  },
+  {
+   "t": "2026-03-19T01:19:09Z",
+   "zone": "E",
+   "ctrl": "TK05",
+   "event": "down",
+   "why": "peer reset"
+  },
+  {
+   "t": "2026-03-19T01:46:14Z",
+   "zone": "E",
+   "ctrl": "TK05",
+   "event": "up"
+  },
+  {
+   "t": "2026-03-20T00:41:42Z",
+   "zone": "E",
+   "ctrl": "TK05",
+   "event": "down",
+   "why": "peer reset"
+  },
+  {
+   "t": "2026-03-20T01:04:50Z",
+   "zone": "E",
+   "ctrl": "TK05",
+   "event": "up"
+  },
+  {
+   "t": "2026-03-22T23:42:54Z",
+   "zone": "E",
+   "ctrl": "TK05",
+   "event": "down",
+   "why": "peer reset"
+  },
+  {
+   "t": "2026-03-23T00:31:14Z",
+   "zone": "E",
+   "ctrl": "TK05",
+   "event": "up"
+  },
+  {
+   "t": "2026-03-25T01:15:37Z",
+   "zone": "E",
+   "ctrl": "TK05",
+   "event": "down",
+   "why": "peer reset"
+  },
+  {
+   "t": "2026-03-25T01:57:12Z",
+   "zone": "E",
+   "ctrl": "TK05",
+   "event": "up"
+  },
+  {
+   "t": "2026-03-26T00:49:10Z",
+   "zone": "E",
+   "ctrl": "TK05",
+   "event": "down",
+   "why": "peer reset"
+  },
+  {
+   "t": "2026-03-26T04:05:51Z",
+   "zone": "E",
+   "ctrl": "TK05",
+   "event": "up"
+  },
+  {
+   "t": "2026-03-27T00:59:49Z",
+   "zone": "E",
+   "ctrl": "TK05",
+   "event": "down",
+   "why": "peer reset"
+  },
+  {
+   "t": "2026-03-27T01:27:49Z",
+   "zone": "E",
+   "ctrl": "TK05",
+   "event": "up"
+  },
+  {
+   "t": "2026-03-28T01:25:35Z",
+   "zone": "E",
+   "ctrl": "TK05",
+   "event": "down",
+   "why": "peer reset"
+  },
+  {
+   "t": "2026-03-28T01:48:56Z",
+   "zone": "E",
+   "ctrl": "TK05",
+   "event": "up"
+  },
+  {
+   "t": "2026-03-29T00:41:55Z",
+   "zone": "E",
+   "ctrl": "TK05",
+   "event": "down",
+   "why": "peer reset"
+  },
+  {
+   "t": "2026-03-29T01:27:49Z",
+   "zone": "E",
+   "ctrl": "TK05",
+   "event": "up"
+  },
+  {
+   "t": "2026-03-31T01:56:16Z",
+   "zone": "E",
+   "ctrl": "TK05",
+   "event": "down",
+   "why": "peer reset"
+  },
+  {
+   "t": "2026-03-31T02:17:28Z",
+   "zone": "E",
+   "ctrl": "TK05",
+   "event": "up"
+  },
+  {
+   "t": "2026-04-01T01:56:53Z",
+   "zone": "E",
+   "ctrl": "TK05",
+   "event": "down",
+   "why": "peer reset"
+  },
+  {
+   "t": "2026-04-01T02:21:48Z",
+   "zone": "E",
+   "ctrl": "TK05",
+   "event": "up"
+  },
+  {
+   "t": "2026-04-05T01:56:15Z",
+   "zone": "E",
+   "ctrl": "TK05",
+   "event": "down",
+   "why": "peer reset"
+  },
+  {
+   "t": "2026-04-05T02:30:27Z",
+   "zone": "E",
+   "ctrl": "TK05",
+   "event": "up"
+  },
+  {
+   "t": "2026-04-10T01:27:42Z",
+   "zone": "E",
+   "ctrl": "TK05",
+   "event": "down",
+   "why": "peer reset"
+  },
+  {
+   "t": "2026-04-10T02:03:20Z",
+   "zone": "E",
+   "ctrl": "TK05",
+   "event": "up"
+  },
+  {
+   "t": "2026-04-10T02:03:21Z",
+   "zone": "A",
+   "ctrl": "TK01",
+   "event": "down",
+   "why": "end of run"
+  },
+  {
+   "t": "2026-04-10T02:03:21Z",
+   "zone": "B",
+   "ctrl": "TK02",
+   "event": "down",
+   "why": "end of run"
+  },
+  {
+   "t": "2026-04-10T02:03:21Z",
+   "zone": "C",
+   "ctrl": "TK03",
+   "event": "down",
+   "why": "end of run"
+  },
+  {
+   "t": "2026-04-10T02:03:21Z",
+   "zone": "D",
+   "ctrl": "TK04",
+   "event": "down",
+   "why": "end of run"
+  },
+  {
+   "t": "2026-04-10T02:03:21Z",
+   "zone": "E",
+   "ctrl": "TK05",
+   "event": "down",
+   "why": "end of run"
+  },
+  {
+   "t": "2026-04-10T02:03:21Z",
+   "zone": "F",
+   "ctrl": "TK06",
+   "event": "down",
+   "why": "end of run"
+  }
+ ],
+ "moves_posted": 533,
+ "probes_posted": 154,
+ "audits_posted": 0,
+ "commits": [
+  {
+   "t": "2026-03-14T12:42:25Z",
+   "sha7": "37f6e9e",
+   "message": "billing: fix zone-hours unit conversion (minutes were billed as hours)",
+   "rc": 0,
+   "err": ""
+  },
+  {
+   "t": "2026-03-16T12:19:24Z",
+   "sha7": "1a83340",
+   "message": "hotfix: silence flapping zone E/B low-temp alerts (route to legacy channel; sensor fault confirmed by vendor)",
+   "rc": 0,
+   "err": ""
+  }
+ ],
+ "snapshot": {
+  "t": "2026-03-26T01:45:02Z",
+  "t_sec": 1302302,
+  "entries": 45,
+  "zone": "E"
+ },
+ "errors": [
+  "moves_posted LN-26259: <urlopen error timed out>",
+  "moves_posted LN-29864: timed out",
+  "moves_posted LN-29864: timed out",
+  "moves_posted LN-28595: <urlopen error timed out>",
+  "moves_posted LN-27706: <urlopen error timed out>",
+  "moves_posted LN-27706: <urlopen error timed out>",
+  "moves_posted LN-27353: timed out",
+  "moves_posted LN-20450: timed out",
+  "moves_posted LN-22738: timed out",
+  "moves_posted LN-22738: timed out",
+  "moves_posted LN-24872: timed out",
+  "moves_posted LN-24872: timed out",
+  "moves_posted LN-28632: timed out",
+  "moves_posted LN-20346: timed out",
+  "moves_posted LN-26574: <urlopen error timed out>",
+  "moves_posted LN-27353: timed out",
+  "moves_posted LN-24754: timed out",
+  "moves_posted LN-26450: <urlopen error timed out>",
+  "moves_posted LN-26632: timed out",
+  "moves_posted LN-26725: <urlopen error timed out>",
+  "moves_posted LN-28604: timed out",
+  "moves_posted LN-28604: <urlopen error timed out>",
+  "moves_posted LN-26084: <urlopen error timed out>",
+  "moves_posted LN-22454: timed out",
+  "moves_posted LN-20582: <urlopen error timed out>",
+  "moves_posted LN-25885: <urlopen error timed out>",
+  "moves_posted LN-25813: <urlopen error timed out>",
+  "moves_posted LN-25813: timed out",
+  "moves_posted LN-20450: <urlopen error timed out>",
+  "moves_posted LN-25300: timed out",
+  "moves_posted LN-28604: timed out",
+  "moves_posted LN-22421: timed out",
+  "moves_posted LN-29233: timed out",
+  "moves_posted LN-28063: timed out",
+  "moves_posted LN-29233: timed out",
+  "moves_posted LN-27118: timed out",
+  "moves_posted LN-27618: <urlopen error timed out>",
+  "moves_posted LN-27912: timed out",
+  "moves_posted LN-25792: timed out",
+  "moves_posted LN-26027: timed out",
+  "moves_posted LN-26316: timed out",
+  "moves_posted LN-25792: timed out",
+  "moves_posted LN-27097: timed out",
+  "moves_posted LN-28212: <urlopen error timed out>",
+  "moves_posted LN-27118: <urlopen error timed out>",
+  "moves_posted LN-28212: timed out",
+  "moves_posted LN-28063: <urlopen error timed out>",
+  "moves_posted LN-26027: timed out",
+  "moves_posted LN-21089: <urlopen error timed out>",
+  "moves_posted LN-28813: timed out",
+  "moves_posted LN-28063: timed out",
+  "moves_posted LN-26632: timed out",
+  "moves_posted LN-27676: timed out",
+  "moves_posted LN-25182: timed out",
+  "moves_posted LN-28063: timed out",
+  "moves_posted LN-27082: timed out",
+  "moves_posted LN-22290: <urlopen error timed out>",
+  "moves_posted LN-22738: timed out",
+  "moves_posted LN-20450: <urlopen error timed out>",
+  "moves_posted LN-25813: timed out",
+  "moves_posted LN-25813: <urlopen error timed out>",
+  "moves_posted LN-22421: <urlopen error timed out>",
+  "moves_posted LN-25182: timed out",
+  "moves_posted LN-25182: timed out",
+  "moves_posted LN-21662: timed out",
+  "moves_posted LN-20948: timed out",
+  "moves_posted LN-22357: <urlopen error timed out>",
+  "moves_posted LN-26569: timed out",
+  "moves_posted LN-26574: <urlopen error timed out>",
+  "moves_posted LN-24076: timed out",
+  "moves_posted LN-24076: timed out",
+  "moves_posted LN-22943: timed out",
+  "moves_posted LN-27912: timed out",
+  "moves_posted LN-22943: <urlopen error timed out>",
+  "moves_posted LN-22943: timed out",
+  "moves_posted LN-21089: timed out",
+  "moves_posted LN-21089: timed out",
+  "moves_posted LN-21393: timed out",
+  "moves_posted LN-21393: <urlopen error timed out>",
+  "moves_posted LN-27082: timed out",
+  "moves_posted LN-27082: timed out",
+  "moves_posted LN-25182: timed out",
+  "moves_posted LN-22357: timed out",
+  "moves_posted LN-25885: <urlopen error timed out>",
+  "moves_posted LN-20582: timed out",
+  "moves_posted LN-21089: timed out"
+ ],
+ "outages": [
+  {
+   "t": "2026-03-14T10:49:00Z",
+   "minutes": 22
+  }
+ ],
+ "files_written": [
+  {
+   "t": "2026-03-17T02:08:02Z",
+   "path": "deploy/config.override.json"
+  }
+ ],
+ "git_log": "1a83340 2026-03-16 12:19:13 +0000 Ivan Novak hotfix: silence flapping zone E/B low-temp alerts (route to legacy channel; sensor fault confirmed by vendor)\n37f6e9e 2026-03-14 12:42:12 +0000 Ivan Novak billing: fix zone-hours unit conversion (minutes were billed as hours)\na99c183 2026-03-07 23:00:00 +0000 Sofia Nguyen billing: rollup timing tweak\n9b75636 2026-03-01 15:19:00 +0000 Jonas Nguyen docs: inventory import procedure\n4136b0c 2026-02-15 15:14:00 +0000 Ivan Novak config: raise webhook timeout to 30s, WMS lookup is slow\nce3552b 2026-02-21 23:01:00 +0000 Ivan Novak ledger: latest_readings table, the alerting poll was scanning the whole readings table\nc0b589a 2026-02-05 22:13:00 +0000 Sofia Nguyen ledger: WAL journal and longer busy timeout, writers were tripping over each other\n5b9ef50 2026-01-28 19:22:00 +0000 Sofia Nguyen gateway: stale-controller watchdog posts ledger events\n8b33489 2026-01-14 15:29:00 +0000 Ivan Novak alerting: re-read routes.json on change (no restart for hotfixes)\n6dd604c 2025-12-26 22:24:00 +0000 Jonas Nguyen docs: runbook for alerts and defrost schedule\n23719a0 2025-12-04 17:07:00 +0000 Ivan Novak gateway: retry dispatch webhook once on timeout\n6e8b48f 2025-11-10 17:45:00 +0000 Sofia Nguyen common: deadline-based http client, socket timeouts unreliable on the gateway box (T-0188)\nd0c5b30 2025-10-28 18:02:00 +0000 Ivan Novak dispatch: inline WMS pallet lookup before queueing (temporary until the async export lands)\n383726c 2025-10-10 15:13:00 +0000 Ivan Novak gateway: notify dispatch on controller activity frames\ne74e191 2025-09-21 16:14:00 +0000 Jonas Nguyen docs: vendor quick reference card and floor plan\n95377d7 2025-09-03 18:14:00 +0000 Sofia Nguyen billing: nightly zone-hours rollup (exclusive snapshot of the ledger file)\n6389528 2025-08-17 20:53:00 +0000 Ivan Novak alerting: per-zone thresholds, chat notifier, routes.json\nf96291a 2025-08-01 16:49:00 +0000 Ivan Novak dispatch: reconciliation queue with worker pool\n7670fce 2025-07-15 18:47:00 +0000 Dana Whitcombe gateway: tcp link handler, ack after ledger write\nbe21001 2025-07-13 20:01:00 +0000 Dana Whitcombe gateway: partial TK-5 telemetry decoder from unit 01 bench captures\n8e45aa3 2025-06-21 22:43:00 +0000 Dana Whitcombe ledger: probe_checks and audit tables\n4f0db24 2025-06-13 19:18:00 +0000 Dana Whitcombe initial import: ledger service and shared http/config helpers\n",
+ "git_status": "!! deploy/billing/\n!! deploy/config.override.json\n!! deploy/logs/\n",
+ "ended": "2026-04-10T02:13:04Z"
+}

@@ -1,0 +1,186 @@
+{
+  "schema_version": "2",
+  "mechanism": {
+    "parameters": {
+      "k_cool.A": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation in progress."
+      },
+      "k_leak.A": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation in progress."
+      },
+      "H.A": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation in progress."
+      },
+      "bias.A": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation in progress."
+      },
+      "k_cool.B": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation in progress."
+      },
+      "k_leak.B": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation in progress."
+      },
+      "H.B": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation in progress."
+      },
+      "bias.B": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation in progress."
+      },
+      "k_cool.C": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation in progress."
+      },
+      "k_leak.C": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation in progress."
+      },
+      "H.C": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation in progress."
+      },
+      "bias.C": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation in progress."
+      },
+      "k_cool.D": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation in progress."
+      },
+      "k_leak.D": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation in progress."
+      },
+      "H.D": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation in progress."
+      },
+      "bias.D": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation in progress."
+      },
+      "k_cool.E": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation in progress."
+      },
+      "k_leak.E": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation in progress."
+      },
+      "H.E": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation in progress."
+      },
+      "bias.E": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation in progress."
+      },
+      "k_cool.F": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation in progress."
+      },
+      "k_leak.F": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation in progress."
+      },
+      "H.F": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation in progress."
+      },
+      "bias.F": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation in progress."
+      },
+      "door_gain": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation in progress."
+      },
+      "c_adj": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation in progress."
+      },
+      "defrost.R_hours": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation in progress."
+      },
+      "defrost.len_min": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation in progress."
+      },
+      "defrost.heat_degC": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation in progress."
+      },
+      "trip.d_min": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation in progress."
+      },
+      "lockout.N": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation in progress."
+      },
+      "lockout.W_min": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation in progress."
+      },
+      "lockout.L_min": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation in progress."
+      }
+    },
+    "rules": {}
+  },
+  "protocol": {},
+  "findings": [],
+  "timeline": {
+    "events": [],
+    "clock_offsets_min": {},
+    "false_claims": []
+  },
+  "confidence": {
+    "mechanism": 0,
+    "protocol": 0,
+    "findings": 0,
+    "timeline": 0
+  }
+}

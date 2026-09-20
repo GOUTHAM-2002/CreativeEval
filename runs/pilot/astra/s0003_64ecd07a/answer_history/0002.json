@@ -1,0 +1,407 @@
+{
+  "schema_version": "1",
+  "mechanism": {
+    "parameters": {},
+    "rules": {
+      "defrost_rule_type": "runtime_hours",
+      "adjacency_pairs": [
+        [
+          "A",
+          "B"
+        ],
+        [
+          "A",
+          "C"
+        ],
+        [
+          "A",
+          "D"
+        ],
+        [
+          "B",
+          "F"
+        ],
+        [
+          "B",
+          "C"
+        ],
+        [
+          "C",
+          "E"
+        ],
+        [
+          "D",
+          "F"
+        ],
+        [
+          "D",
+          "E"
+        ]
+      ]
+    }
+  },
+  "notation": {
+    "glossary": {
+      "laki": "COIL_TEMP",
+      "lino": "DISCH_PRESSURE",
+      "dika": "OPEN",
+      "rote": "DOOR",
+      "nizi": "CLOSED",
+      "lari": "FAULT",
+      "tati": "TRIP",
+      "lita": "ENTER",
+      "nare": "DEFROST",
+      "nido": "ON",
+      "rete": "HEATER",
+      "roto": "EXIT",
+      "tere": "OFF",
+      "tari": "RECOVERY",
+      "sedo": "LOCKOUT",
+      "tina": "BOOT",
+      "nera": "FIRMWARE",
+      "neke": "ABS",
+      "zodo": "OVERFLOW",
+      "kano": "QUEUE"
+    },
+    "affixes": {
+      "to": "ZONE",
+      "na": "ZONE",
+      "si": "ZONE",
+      "zi": "ZONE",
+      "de": "ZONE",
+      "ro": "ZONE",
+      "ba": "ASPECT_EVENT",
+      "be": "ASPECT_STATE"
+    },
+    "v34_change": "absolute_temp",
+    "heldout": [
+      {
+        "seq": 746,
+        "ts": "2026-03-05T23:35:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -22.3
+      },
+      {
+        "seq": 747,
+        "ts": "2026-03-05T23:40:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -22.9
+      },
+      {
+        "seq": 748,
+        "ts": "2026-03-05T23:45:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -22.7
+      },
+      {
+        "seq": 749,
+        "ts": "2026-03-05T23:50:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -23.1
+      },
+      {
+        "seq": 750,
+        "ts": "2026-03-05T23:55:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -21.8
+      },
+      {
+        "seq": 751,
+        "ts": "2026-03-06T00:00:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -22.0
+      },
+      {
+        "seq": 752,
+        "ts": "2026-03-06T00:05:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -21.9
+      },
+      {
+        "seq": 753,
+        "ts": "2026-03-06T00:10:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -21.1
+      },
+      {
+        "seq": 754,
+        "ts": "2026-03-06T00:15:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -21.4
+      },
+      {
+        "seq": 755,
+        "ts": "2026-03-06T00:20:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -20.7
+      },
+      {
+        "seq": 756,
+        "ts": "2026-03-06T00:25:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -20.6
+      },
+      {
+        "seq": 757,
+        "ts": "2026-03-06T00:30:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -21.7
+      },
+      {
+        "seq": 758,
+        "ts": "2026-03-06T00:35:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -22.0
+      },
+      {
+        "seq": 759,
+        "ts": "2026-03-06T00:40:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -22.3
+      },
+      {
+        "seq": 760,
+        "ts": "2026-03-06T00:45:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -22.0
+      },
+      {
+        "seq": 761,
+        "ts": "2026-03-06T00:50:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -22.0
+      },
+      {
+        "seq": 762,
+        "ts": "2026-03-06T00:55:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -22.4
+      },
+      {
+        "seq": 763,
+        "ts": "2026-03-06T01:00:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -23.1
+      },
+      {
+        "seq": 764,
+        "ts": "2026-03-06T01:05:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -23.1
+      },
+      {
+        "seq": 765,
+        "ts": "2026-03-06T01:07:00Z",
+        "zone": "D",
+        "event": "DOOR",
+        "value": null
+      },
+      {
+        "seq": 766,
+        "ts": "2026-03-06T01:10:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -22.0
+      },
+      {
+        "seq": 767,
+        "ts": "2026-03-06T01:15:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -20.6
+      },
+      {
+        "seq": 768,
+        "ts": "2026-03-06T01:20:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -19.0
+      },
+      {
+        "seq": 769,
+        "ts": "2026-03-06T01:21:00Z",
+        "zone": "D",
+        "event": "TRIP",
+        "value": null
+      },
+      {
+        "seq": 770,
+        "ts": "2026-03-06T01:25:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -17.7
+      },
+      {
+        "seq": 771,
+        "ts": "2026-03-06T01:30:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -17.0
+      },
+      {
+        "seq": 772,
+        "ts": "2026-03-06T01:34:00Z",
+        "zone": "D",
+        "event": "TRIP",
+        "value": null
+      },
+      {
+        "seq": 773,
+        "ts": "2026-03-06T01:35:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -16.1
+      },
+      {
+        "seq": 774,
+        "ts": "2026-03-06T01:40:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -14.7
+      },
+      {
+        "seq": 775,
+        "ts": "2026-03-06T01:42:00Z",
+        "zone": "D",
+        "event": "DEFROST",
+        "value": null
+      },
+      {
+        "seq": 776,
+        "ts": "2026-03-06T01:45:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -13.1
+      },
+      {
+        "seq": 777,
+        "ts": "2026-03-06T01:50:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -11.1
+      },
+      {
+        "seq": 778,
+        "ts": "2026-03-06T01:55:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -8.5
+      },
+      {
+        "seq": 779,
+        "ts": "2026-03-06T02:00:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -5.9
+      },
+      {
+        "seq": 780,
+        "ts": "2026-03-06T02:03:00Z",
+        "zone": "D",
+        "event": "DEFROST",
+        "value": null
+      },
+      {
+        "seq": 781,
+        "ts": "2026-03-06T02:05:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -5.2
+      },
+      {
+        "seq": 782,
+        "ts": "2026-03-06T02:10:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -5.2
+      },
+      {
+        "seq": 783,
+        "ts": "2026-03-06T02:11:00Z",
+        "zone": "D",
+        "event": "TRIP",
+        "value": null
+      },
+      {
+        "seq": 784,
+        "ts": "2026-03-06T02:15:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -4.5
+      },
+      {
+        "seq": 785,
+        "ts": "2026-03-06T02:20:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -4.2
+      },
+      {
+        "seq": 786,
+        "ts": "2026-03-06T02:24:00Z",
+        "zone": "D",
+        "event": "TRIP",
+        "value": null
+      },
+      {
+        "seq": 787,
+        "ts": "2026-03-06T02:25:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -4.1
+      },
+      {
+        "seq": 788,
+        "ts": "2026-03-06T02:30:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -2.7
+      },
+      {
+        "seq": 789,
+        "ts": "2026-03-06T02:35:00Z",
+        "zone": "D",
+        "event": "AIR_TEMP",
+        "value": -2.5
+      },
+      {
+        "seq": 791,
+        "ts": "2026-03-06T02:37:00Z",
+        "zone": "D",
+        "event": "LOCKOUT",
+        "value": null
+      }
+    ]
+  },
+  "causal_chain": {},
+  "timeline": {
+    "events": [],
+    "clock_offsets_min": {},
+    "false_claims": []
+  },
+  "confidence": {
+    "mechanism": 0.4,
+    "notation": 0.7,
+    "causal_chain": 0.3,
+    "timeline": 0.3
+  }
+}

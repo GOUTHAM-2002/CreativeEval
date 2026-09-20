@@ -1,0 +1,6 @@
+SERVICE INVOICE  VX Controls Ltd
+Customer: Polaris Pharma Logistics  Site NGN54
+Visit date: 2026-04-07   Technician: Elif Haddad
+  Air sensor recalibration, room C (VX03) ........  190.00
+  Travel ............................................................................  120.00
+  Total ............................................................................  310.00

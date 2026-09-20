@@ -1,0 +1,1524 @@
+{
+ "instance": "s0003_64ecd07a",
+ "submission_status": "ok",
+ "section_status": {
+  "mechanism": "ok",
+  "notation": "ok",
+  "causal_chain": "ok",
+  "timeline": "ok",
+  "confidence": "ok"
+ },
+ "section_errors": {},
+ "measured": {
+  "sections": {
+   "mechanism": {
+    "score": 0.84375,
+    "params": {
+     "k_cool.A": {
+      "pred": 0.021,
+      "value": 0.03,
+      "tol": 0.006,
+      "pts": 0.5
+     },
+     "k_cool.B": {
+      "pred": 0.038,
+      "value": 0.0424,
+      "tol": 0.006,
+      "pts": 1.0
+     },
+     "k_cool.C": {
+      "pred": 0.103,
+      "value": 0.1091,
+      "tol": 0.010910000000000001,
+      "pts": 1.0
+     },
+     "k_cool.D": {
+      "pred": 0.098,
+      "value": 0.1069,
+      "tol": 0.01069,
+      "pts": 1.0
+     },
+     "k_cool.E": {
+      "pred": 0.123,
+      "value": 0.1238,
+      "tol": 0.01238,
+      "pts": 1.0
+     },
+     "k_cool.F": {
+      "pred": 0.093,
+      "value": 0.0998,
+      "tol": 0.009980000000000001,
+      "pts": 1.0
+     },
+     "k_leak.A": {
+      "pred": 0.0026,
+      "value": 0.00194,
+      "tol": 0.000291,
+      "pts": 0.0
+     },
+     "k_leak.B": {
+      "pred": 0.0024,
+      "value": 0.00138,
+      "tol": 0.00025,
+      "pts": 0.0
+     },
+     "k_leak.C": {
+      "pred": 0.0009,
+      "value": 0.00128,
+      "tol": 0.00025,
+      "pts": 0.5
+     },
+     "k_leak.D": {
+      "pred": 0.001,
+      "value": 0.00117,
+      "tol": 0.00025,
+      "pts": 1.0
+     },
+     "k_leak.E": {
+      "pred": 0.00085,
+      "value": 0.00088,
+      "tol": 0.00025,
+      "pts": 1.0
+     },
+     "k_leak.F": {
+      "pred": 0.001,
+      "value": 0.00116,
+      "tol": 0.00025,
+      "pts": 1.0
+     },
+     "H.A": {
+      "pred": 2.0,
+      "value": 2.16,
+      "tol": 0.2592,
+      "pts": 1.0
+     },
+     "H.B": {
+      "pred": 1.4,
+      "value": 1.59,
+      "tol": 0.25,
+      "pts": 1.0
+     },
+     "H.C": {
+      "pred": 2.2,
+      "value": 2.37,
+      "tol": 0.2844,
+      "pts": 1.0
+     },
+     "H.D": {
+      "pred": 2.0,
+      "value": 2.1,
+      "tol": 0.252,
+      "pts": 1.0
+     },
+     "H.E": {
+      "pred": 1.4,
+      "value": 1.44,
+      "tol": 0.25,
+      "pts": 1.0
+     },
+     "H.F": {
+      "pred": 1.0,
+      "value": 1.26,
+      "tol": 0.25,
+      "pts": 0.5
+     },
+     "bias.A": {
+      "pred": 0.3,
+      "value": 0.22,
+      "tol": 0.3,
+      "pts": 1.0
+     },
+     "bias.B": {
+      "pred": -1.5,
+      "value": -1.39,
+      "tol": 0.3,
+      "pts": 1.0
+     },
+     "bias.C": {
+      "pred": -0.8,
+      "value": -1.03,
+      "tol": 0.3,
+      "pts": 1.0
+     },
+     "bias.D": {
+      "pred": 1.1,
+      "value": 0.91,
+      "tol": 0.3,
+      "pts": 1.0
+     },
+     "bias.E": {
+      "pred": 0.2,
+      "value": -0.01,
+      "tol": 0.3,
+      "pts": 1.0
+     },
+     "bias.F": {
+      "pred": 1.1,
+      "value": 0.94,
+      "tol": 0.3,
+      "pts": 1.0
+     },
+     "door_gain": {
+      "pred": 5.0,
+      "value": 7.3,
+      "tol": 1.46,
+      "pts": 0.5
+     },
+     "c_adj": {
+      "pred": 0.0005,
+      "value": 0.0003,
+      "tol": 0.0003,
+      "pts": 1.0
+     },
+     "defrost.R_hours": {
+      "pred": 6.0,
+      "value": 7,
+      "tol": 0.5,
+      "pts": 0.5
+     },
+     "defrost.len_min": {
+      "pred": 21.0,
+      "value": 21,
+      "tol": 2,
+      "pts": 1.0
+     },
+     "defrost.heat_degC": {
+      "pred": 4.0,
+      "value": 3.7,
+      "tol": 0.6,
+      "pts": 1.0
+     },
+     "trip.d_min": {
+      "pred": 8.0,
+      "value": 8,
+      "tol": 0.5,
+      "pts": 1.0
+     },
+     "lockout.N": {
+      "pred": 3,
+      "value": 3,
+      "tol": 0,
+      "pts": 1.0
+     },
+     "lockout.W_min": {
+      "pred": 60.0,
+      "value": 45,
+      "tol": 5,
+      "pts": 0.0
+     },
+     "lockout.L_min": {
+      "pred": 240.0,
+      "value": 240,
+      "tol": 5,
+      "pts": 1.0
+     }
+    },
+    "params_hits": 25,
+    "params_half": 5,
+    "n_params": 33,
+    "params_acc": 0.7575757575757576,
+    "params_pts_sum": 27.5,
+    "rules": {
+     "defrost_rule_type": {
+      "pred": "runtime_hours",
+      "value": "runtime_hours",
+      "pts": 1.0
+     },
+     "stagger_order": {
+      "pred": [
+       "C",
+       "B",
+       "F",
+       "E",
+       "D",
+       "A"
+      ],
+      "value": [
+       "C",
+       "B",
+       "F",
+       "E",
+       "D",
+       "A"
+      ],
+      "pts": 1.0
+     },
+     "adjacency_pairs": {
+      "pred": [
+       [
+        "A",
+        "C"
+       ],
+       [
+        "A",
+        "B"
+       ],
+       [
+        "A",
+        "D"
+       ],
+       [
+        "B",
+        "F"
+       ],
+       [
+        "D",
+        "F"
+       ],
+       [
+        "C",
+        "E"
+       ],
+       [
+        "B",
+        "C"
+       ],
+       [
+        "D",
+        "E"
+       ]
+      ],
+      "value": [
+       [
+        "A",
+        "C"
+       ],
+       [
+        "A",
+        "B"
+       ],
+       [
+        "A",
+        "D"
+       ],
+       [
+        "B",
+        "F"
+       ],
+       [
+        "D",
+        "F"
+       ],
+       [
+        "C",
+        "E"
+       ],
+       [
+        "D",
+        "E"
+       ]
+      ],
+      "intersection": 7,
+      "union": 8,
+      "pts": 0.875
+     }
+    },
+    "rules_pts_sum": 2.875,
+    "n_rules": 3,
+    "rules_all_correct": false
+   },
+   "notation": {
+    "score": 0.9775,
+    "glossary": {
+     "nare": {
+      "pred": "DEFROST",
+      "value": "DEFROST",
+      "hit": true
+     },
+     "tari": {
+      "pred": "RECOVERY",
+      "value": "RECOVERY",
+      "hit": true
+     },
+     "sedo": {
+      "pred": "LOCKOUT",
+      "value": "LOCKOUT",
+      "hit": true
+     },
+     "tati": {
+      "pred": "TRIP",
+      "value": "TRIP",
+      "hit": true
+     },
+     "laki": {
+      "pred": "COIL_TEMP",
+      "value": "COIL_TEMP",
+      "hit": true
+     },
+     "lino": {
+      "pred": "DISCH_PRESSURE",
+      "value": "DISCH_PRESSURE",
+      "hit": true
+     },
+     "rote": {
+      "pred": "DOOR",
+      "value": "DOOR",
+      "hit": true
+     },
+     "rete": {
+      "pred": "HEATER",
+      "value": "HEATER",
+      "hit": true
+     },
+     "nera": {
+      "pred": "FIRMWARE",
+      "value": "FIRMWARE",
+      "hit": true
+     },
+     "kano": {
+      "pred": "QUEUE",
+      "value": "QUEUE",
+      "hit": true
+     },
+     "lita": {
+      "pred": "ENTER",
+      "value": "ENTER",
+      "hit": true
+     },
+     "roto": {
+      "pred": "EXIT",
+      "value": "EXIT",
+      "hit": true
+     },
+     "lari": {
+      "pred": "FAULT",
+      "value": "FAULT",
+      "hit": true
+     },
+     "tina": {
+      "pred": "SET",
+      "value": "BOOT",
+      "hit": false
+     },
+     "dika": {
+      "pred": "OPEN",
+      "value": "OPEN",
+      "hit": true
+     },
+     "nizi": {
+      "pred": "CLOSED",
+      "value": "CLOSED",
+      "hit": true
+     },
+     "nido": {
+      "pred": "ON",
+      "value": "ON",
+      "hit": true
+     },
+     "tere": {
+      "pred": "OFF",
+      "value": "OFF",
+      "hit": true
+     },
+     "neke": {
+      "pred": "ABS",
+      "value": "ABS",
+      "hit": true
+     },
+     "zodo": {
+      "pred": "OVERFLOW",
+      "value": "OVERFLOW",
+      "hit": true
+     }
+    },
+    "glossary_hits": 19,
+    "n_unknown": 20,
+    "glossary_acc": 0.95,
+    "extra_roots": 0,
+    "extra_roots_list": [],
+    "affixes": {
+     "to": {
+      "pred": "ZONE",
+      "value": "ZONE",
+      "hit": true
+     },
+     "na": {
+      "pred": "ZONE",
+      "value": "ZONE",
+      "hit": true
+     },
+     "si": {
+      "pred": "ZONE",
+      "value": "ZONE",
+      "hit": true
+     },
+     "zi": {
+      "pred": "ZONE",
+      "value": "ZONE",
+      "hit": true
+     },
+     "de": {
+      "pred": "ZONE",
+      "value": "ZONE",
+      "hit": true
+     },
+     "ro": {
+      "pred": "ZONE",
+      "value": "ZONE",
+      "hit": true
+     },
+     "ba": {
+      "pred": "ASPECT_EVENT",
+      "value": "ASPECT_EVENT",
+      "hit": true
+     },
+     "be": {
+      "pred": "ASPECT_STATE",
+      "value": "ASPECT_STATE",
+      "hit": true
+     }
+    },
+    "affix_hits": 8,
+    "n_affixes": 8,
+    "affix_acc": 1.0,
+    "v34": {
+     "pred": "absolute_temp",
+     "value": "absolute_temp",
+     "pts": 1.0
+    },
+    "heldout": [
+     {
+      "seq": 746,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 747,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 748,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 749,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 750,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 751,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 752,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 753,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 754,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 755,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 756,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 757,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 758,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 759,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 760,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 761,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 762,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 763,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 764,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 765,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 766,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 767,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 768,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 769,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 770,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 771,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 772,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 773,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 774,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 775,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 776,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 777,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 778,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 779,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 780,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 781,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 782,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 783,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 784,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 785,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 786,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 787,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 788,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 789,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "value": true,
+       "ts": true
+      },
+      "score": 1.0
+     },
+     {
+      "seq": 791,
+      "present": true,
+      "checks": {
+       "event": true,
+       "zone": true,
+       "ts": true
+      },
+      "score": 1.0
+     }
+    ],
+    "heldout_frames_full": 45,
+    "n_heldout": 45,
+    "heldout_mean": 1.0,
+    "heldout_duplicate_seq": 0
+   },
+   "causal_chain": {
+    "score": 0.628030303,
+    "nodes": {
+     "hits": 15,
+     "n_pred": 26,
+     "n_truth": 19,
+     "precision": 0.5769230769230769,
+     "recall": 0.7894736842105263,
+     "f1": 0.6666666666666666,
+     "missing": [
+      "code:gateway/server.py:notify_dispatch",
+      "physical:defrost:a",
+      "physical:defrost:e",
+      "physical:defrost:f"
+     ],
+     "extra": [
+      "actor:i.adeyemi",
+      "actor:m.okafor",
+      "actor:o.moreau",
+      "actor:z.kowalski",
+      "code:common/httpd.py:_dispatch",
+      "code:ledger/server.py:get_lots",
+      "doc:postmortem",
+      "physical:defrost:d",
+      "physical:door_open:d",
+      "physical:frame_burst:d",
+      "ticket:t-0423"
+     ]
+    },
+    "edges": {
+     "hits": 10,
+     "n_pred": 26,
+     "n_truth": 18,
+     "precision": 0.38461538461538464,
+     "recall": 0.5555555555555556,
+     "f1": 0.4545454545454546,
+     "missing": [
+      [
+       "code:gateway/server.py:notify_dispatch",
+       "data:lots_wrong:d"
+      ],
+      [
+       "config:deploy/config.override.json:alert_min_severity",
+       "data:alerts_suppressed:d"
+      ],
+      [
+       "physical:defrost:a",
+       "physical:excursion:d"
+      ],
+      [
+       "physical:defrost:e",
+       "physical:excursion:d"
+      ],
+      [
+       "physical:defrost:f",
+       "physical:excursion:d"
+      ],
+      [
+       "physical:door_prop:d",
+       "data:frames_dropped:d"
+      ],
+      [
+       "physical:door_prop:d",
+       "physical:excursion:d"
+      ],
+      [
+       "physical:door_prop:d",
+       "physical:trip:d"
+      ]
+     ],
+     "extra": [
+      [
+       "actor:i.adeyemi",
+       "physical:door_prop:d"
+      ],
+      [
+       "actor:m.okafor",
+       "commit:b2e50f9"
+      ],
+      [
+       "actor:o.moreau",
+       "firmware:d"
+      ],
+      [
+       "actor:z.kowalski",
+       "data:alerts_suppressed:d"
+      ],
+      [
+       "code:common/httpd.py:_dispatch",
+       "code:ledger/server.py:get_lots"
+      ],
+      [
+       "code:common/httpd.py:_dispatch",
+       "data:lots_wrong:d"
+      ],
+      [
+       "code:ledger/server.py:get_lots",
+       "code:dispatch/server.py:apply_move"
+      ],
+      [
+       "data:frames_dropped:d",
+       "physical:frame_burst:d"
+      ],
+      [
+       "data:lots_wrong:d",
+       "doc:postmortem"
+      ],
+      [
+       "data:readings_wrong:d",
+       "doc:postmortem"
+      ],
+      [
+       "doc:postmortem",
+       "data:quarantine_wrong:d"
+      ],
+      [
+       "physical:defrost:d",
+       "physical:excursion:d"
+      ],
+      [
+       "physical:door_open:d",
+       "data:frames_dropped:d"
+      ],
+      [
+       "physical:door_open:d",
+       "physical:trip:d"
+      ],
+      [
+       "physical:door_prop:d",
+       "physical:door_open:d"
+      ],
+      [
+       "ticket:t-0423",
+       "data:frames_dropped:d"
+      ]
+     ]
+    },
+    "affected_lots": {
+     "hits": 18,
+     "n_pred": 18,
+     "n_truth": 18,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "missing": [],
+     "extra": []
+    },
+    "roots_hits": 1,
+    "n_roots": 10,
+    "n_roots_pred": 7,
+    "roots_missing": [
+     "code:dispatch/server.py:apply_move",
+     "code:gateway/server.py:notify_dispatch",
+     "commit:b2e50f9",
+     "config:deploy/config.override.json:alert_min_severity",
+     "firmware:d",
+     "physical:defrost:a",
+     "physical:defrost:e",
+     "physical:defrost:f",
+     "physical:door_prop:d"
+    ],
+    "roots_extra": [
+     "actor:i.adeyemi",
+     "actor:o.moreau",
+     "actor:z.kowalski",
+     "code:common/httpd.py:_dispatch",
+     "code:ledger/server.py:get_lots",
+     "ticket:t-0423"
+    ],
+    "decoys_included": 0,
+    "decoys_included_list": [],
+    "decoys_rejected_hits": 4,
+    "n_decoys": 5,
+    "excursion": {
+     "pred": {
+      "zone": "D",
+      "start": "2026-03-06T01:43:00Z",
+      "end": "2026-03-06T11:13:00Z"
+     },
+     "value": {
+      "zone": "D",
+      "start": "2026-03-06T01:35:00Z",
+      "end": "2026-03-06T10:04:00Z"
+     },
+     "tol_s": 900,
+     "zone_ok": true,
+     "start_ok": true,
+     "end_ok": false,
+     "start_delta_s": 480.0,
+     "end_delta_s": 4140.0,
+     "pts": 0.5
+    },
+    "unmatched_ids": []
+   },
+   "timeline": {
+    "score": 0.586363636,
+    "events": {
+     "matched": 13,
+     "n_truth": 18,
+     "n_pred": 22,
+     "recall": 0.7222222222222222,
+     "precision": 0.5909090909090909,
+     "f1": 0.65,
+     "wrong_actor": 0,
+     "wrong_time": 1,
+     "unparseable_t": 0,
+     "pairs": [
+      {
+       "pred_index": 0,
+       "event_id": "event:purchase_wedge",
+       "delta_s": 0.0
+      },
+      {
+       "pred_index": 2,
+       "event_id": "event:door_prop_earlier_1",
+       "delta_s": 0.0
+      },
+      {
+       "pred_index": 3,
+       "event_id": "event:flash_incident_zone",
+       "delta_s": 0.0
+      },
+      {
+       "pred_index": 4,
+       "event_id": "event:flash_other_zone",
+       "delta_s": 0.0
+      },
+      {
+       "pred_index": 5,
+       "event_id": "event:ticket_minus40",
+       "delta_s": 0.0
+      },
+      {
+       "pred_index": 9,
+       "event_id": "event:archive_channel",
+       "delta_s": 0.0
+      },
+      {
+       "pred_index": 10,
+       "event_id": "event:shift_start_temp_incident_night",
+       "delta_s": 0.0
+      },
+      {
+       "pred_index": 12,
+       "event_id": "event:door_prop_incident",
+       "delta_s": 0.0
+      },
+      {
+       "pred_index": 19,
+       "event_id": "event:lab_ticket",
+       "delta_s": 0.0
+      },
+      {
+       "pred_index": 20,
+       "event_id": "event:quarantine",
+       "delta_s": 0.0
+      },
+      {
+       "pred_index": 21,
+       "event_id": "event:postmortem_publish",
+       "delta_s": 0.0
+      },
+      {
+       "pred_index": 6,
+       "event_id": "event:hotfix_commit",
+       "delta_s": 12.0
+      },
+      {
+       "pred_index": 13,
+       "event_id": "event:door_close_incident",
+       "delta_s": 180.0
+      }
+     ],
+     "unmatched_truth": [
+      "event:billing_commit",
+      "event:override_deploy",
+      "event:photo_wedge",
+      "event:door_prop_earlier_2",
+      "event:door_prop_earlier_3"
+     ]
+    },
+    "offsets": {
+     "channels": {
+      "badge": {
+       "pred": 11,
+       "value": 11,
+       "hit": true
+      },
+      "exif": {
+       "pred": 0,
+       "value": -60,
+       "hit": false
+      },
+      "cctv": {
+       "pred": 0,
+       "value": 3,
+       "hit": false
+      },
+      "forklift": {
+       "pred": 0,
+       "value": 0,
+       "hit": true
+      },
+      "chat": {
+       "pred": 0,
+       "value": 0,
+       "hit": true
+      },
+      "tickets": {
+       "pred": 0,
+       "value": 0,
+       "hit": true
+      },
+      "git": {
+       "pred": 0,
+       "value": 0,
+       "hit": true
+      },
+      "submeter": {
+       "pred": 0,
+       "value": 0,
+       "hit": true
+      },
+      "gateway": {
+       "pred": 0,
+       "value": 0,
+       "hit": true
+      },
+      "probe": {
+       "pred": 0,
+       "value": 0,
+       "hit": true
+      }
+     },
+     "hits": 8,
+     "n_channels": 10,
+     "acc": 0.8,
+     "extra_channels": []
+    },
+    "claims": {
+     "claims": [
+      {
+       "claim_id": "fc01",
+       "doc_id": "doc:service_report_firmware_visit",
+       "text_source": "evidence",
+       "matched_pred_index": 2,
+       "overlap": 1.0,
+       "hit": true
+      },
+      {
+       "claim_id": "fc02",
+       "doc_id": "doc:night_lead",
+       "text_source": "evidence",
+       "matched_pred_index": null,
+       "overlap": null,
+       "hit": false
+      },
+      {
+       "claim_id": "fc03",
+       "doc_id": "doc:temp_worker",
+       "text_source": "evidence",
+       "matched_pred_index": null,
+       "overlap": null,
+       "hit": false
+      },
+      {
+       "claim_id": "fc04",
+       "doc_id": "doc:warehouse_manager",
+       "text_source": "evidence",
+       "matched_pred_index": null,
+       "overlap": null,
+       "hit": false
+      },
+      {
+       "claim_id": "fc05",
+       "doc_id": "doc:ops_engineer",
+       "text_source": "evidence",
+       "matched_pred_index": null,
+       "overlap": null,
+       "hit": false
+      },
+      {
+       "claim_id": "fc06",
+       "doc_id": "doc:sre_oncall",
+       "text_source": "evidence",
+       "matched_pred_index": null,
+       "overlap": null,
+       "hit": false
+      },
+      {
+       "claim_id": "fc07",
+       "doc_id": "doc:receiving_clerk",
+       "text_source": "evidence",
+       "matched_pred_index": null,
+       "overlap": null,
+       "hit": false
+      },
+      {
+       "claim_id": "fc08",
+       "doc_id": "doc:night_lead",
+       "text_source": "evidence",
+       "matched_pred_index": null,
+       "overlap": null,
+       "hit": false
+      },
+      {
+       "claim_id": "fc09",
+       "doc_id": "doc:chat_export",
+       "text_source": "evidence",
+       "matched_pred_index": null,
+       "overlap": null,
+       "hit": false
+      },
+      {
+       "claim_id": "fc10",
+       "doc_id": "doc:chat_export",
+       "text_source": "evidence",
+       "matched_pred_index": null,
+       "overlap": null,
+       "hit": false
+      },
+      {
+       "claim_id": "fc11",
+       "doc_id": "doc:postmortem",
+       "text_source": "evidence",
+       "matched_pred_index": 0,
+       "overlap": 1.0,
+       "hit": true
+      },
+      {
+       "claim_id": "fc12",
+       "doc_id": "doc:postmortem",
+       "text_source": "evidence",
+       "matched_pred_index": null,
+       "overlap": null,
+       "hit": false
+      }
+     ],
+     "hits": 2,
+     "n_truth": 12,
+     "n_pred": 10,
+     "precision": 0.2,
+     "recall": 0.16666666666666666,
+     "f1": 0.1818181818181818,
+     "unmatched_pred_indices": [
+      1,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+     ]
+    }
+   }
+  },
+  "aggregate": 0.758910985,
+  "solved": {
+   "mechanism": false,
+   "notation": true,
+   "causal_chain": false,
+   "timeline": false
+  },
+  "solved_all": false,
+  "calibration": {
+   "sections": {
+    "mechanism": {
+     "confidence": 0.78,
+     "solved": false,
+     "sq_err": 0.6084
+    },
+    "notation": {
+     "confidence": 0.94,
+     "solved": true,
+     "sq_err": 0.0036000000000000064
+    },
+    "causal_chain": {
+     "confidence": 0.87,
+     "solved": false,
+     "sq_err": 0.7569
+    },
+    "timeline": {
+     "confidence": 0.76,
+     "solved": false,
+     "sq_err": 0.5776
+    }
+   },
+   "brier": 0.486625,
+   "n_scored": 4,
+   "confidence_missing": 0
+  }
+ },
+ "authored": {
+  "weights": {
+   "mechanism": 0.25,
+   "notation": 0.25,
+   "causal_chain": 0.25,
+   "timeline": 0.25
+  },
+  "section_mix": {
+   "mechanism": {
+    "param_item": 1.0,
+    "rule_item": 1.0
+   },
+   "notation": {
+    "glossary_acc": 0.45,
+    "affix_acc": 0.1,
+    "heldout_mean": 0.4,
+    "v34": 0.05
+   },
+   "causal_chain": {
+    "f1_nodes": 0.4,
+    "f1_edges": 0.3,
+    "f1_lots": 0.15,
+    "excursion": 0.15
+   },
+   "timeline": {
+    "f1": 0.6,
+    "offsets_acc": 0.2,
+    "claims_f1": 0.2
+   }
+  },
+  "solved_thresholds": {
+   "mechanism": {
+    "params_acc": 0.8,
+    "rules_all_correct": true
+   },
+   "notation": {
+    "glossary_acc": 0.8,
+    "heldout_mean": 0.8
+   },
+   "causal_chain": {
+    "f1_nodes": 0.75,
+    "roots_all": true
+   },
+   "timeline": {
+    "f1": 0.7
+   }
+  },
+  "offset_tol_min": 2,
+  "half_credit_factor": 2.0,
+  "half_credit_pts": 0.5,
+  "excursion_one_bound_pts": 0.5,
+  "claim_min_overlap": 0.6,
+  "claim_match_rule": "doc_id equal after strip().lower(); the quote and the truth claim text (evidence doc sliced at the truth span when readable, else truth.text) are whitespace-collapsed, lower-cased and stripped; hit if the longest common contiguous substring (difflib.SequenceMatcher.find_longest_match, autojunk off) has length >= claim_min_overlap * len(shorter string); truth claims and predicted quotes are assigned one-to-one greedily by descending overlap ratio",
+  "vacuous_component_score": 1.0,
+  "id_prefix_pattern": "^[a-z_]+:",
+  "calibration_bins": 5,
+  "tolerance_source": "truth.json"
+ }
+}

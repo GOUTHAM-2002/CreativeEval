@@ -1,0 +1,45 @@
+{
+ "model": "astra",
+ "model_slug": "openai/gpt-6-astra",
+ "model_id_observed": "openai/gpt-6-astra",
+ "route": "or",
+ "inst_id": "s0003_64ecd07a",
+ "tier": "default",
+ "end_reason": "stopped",
+ "end_detail": "no tool call; answer.json schema-valid",
+ "n_tool_calls": 41,
+ "n_validate_calls": 1,
+ "wall_s": 609.8,
+ "cost_usd": 6.398522,
+ "cost_source": "openrouter_usage",
+ "cost_estimate_usd": 32.648992,
+ "invalid_markers": [],
+ "started": "2026-09-19T19:56:12-0400",
+ "ended": "2026-09-19T20:06:22-0400",
+ "via": "openrouter",
+ "effort": "high",
+ "caps": {
+  "max_tool_calls": 600,
+  "wall_s": 18000.0,
+  "budget_usd": 150.0
+ },
+ "store": "/var/tmp/.sbx/b3fba0927cfd24ca",
+ "usage_totals": {
+  "input_tokens": 2541041,
+  "cache_read": 2346273,
+  "cache_write": 0,
+  "output_tokens": 27458
+ },
+ "max_context_tokens": 114252,
+ "n_tool_calls_stream": 41,
+ "n_assistant_messages": 38,
+ "nudged": false,
+ "n_snapshots": 6,
+ "answer_from": "0006.json",
+ "answer_present": true,
+ "grader": {
+  "ran": true,
+  "rc": 0,
+  "note": "ok"
+ }
+}

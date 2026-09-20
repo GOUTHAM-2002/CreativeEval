@@ -1,0 +1,17 @@
+{
+ "model": "astra",
+ "model_slug": "openai/gpt-6-astra",
+ "route": "or",
+ "inst_id": "s0003_64ecd07a",
+ "inst_dir": "/home/goutham/eval_imp/instances/s0003_64ecd07a",
+ "tier": "default",
+ "via": "openrouter",
+ "effort": "high",
+ "caps": {
+  "max_tool_calls": 600,
+  "wall_s": 18000.0,
+  "budget_usd": 150.0
+ },
+ "started": "2026-09-19T19:56:12-0400",
+ "store": "/var/tmp/.sbx/b3fba0927cfd24ca"
+}

@@ -1,0 +1,8 @@
+{
+  "schema_version":"1",
+  "mechanism":{"parameters":{},"rules":{"defrost_rule_type":"runtime_hours","stagger_order":[],"adjacency_pairs":[["A","F"],["F","E"],["A","B"],["F","C"],["E","D"],["B","C"],["C","D"],["B","E"]]}},
+  "notation":{"glossary":{},"affixes":{},"v34_change":"none","heldout":[]},
+  "causal_chain":{"roots":[],"nodes":[],"edges":[],"decoys_rejected":[],"affected_lots":[],"excursion":{}},
+  "timeline":{"events":[],"clock_offsets_min":{},"false_claims":[]},
+  "confidence":{"mechanism":0.1,"notation":0.1,"causal_chain":0.1,"timeline":0.1}
+}

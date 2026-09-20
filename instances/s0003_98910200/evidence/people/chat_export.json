@@ -1,0 +1,3383 @@
+[
+ {
+  "id": "m0001",
+  "channel": "#ops-floor",
+  "ts": "2026-03-11T14:07:00Z",
+  "user": "n.costa",
+  "text": "morning crew heading out, quiet shift overall"
+ },
+ {
+  "id": "m0002",
+  "channel": "#ops-floor",
+  "ts": "2026-03-11T14:10:00Z",
+  "user": "a.novak",
+  "text": "thanks n.costa, anything to flag before you go?"
+ },
+ {
+  "id": "m0003",
+  "channel": "#ops-floor",
+  "ts": "2026-03-11T14:12:00Z",
+  "user": "n.costa",
+  "text": "nope all good, coffee machine's still broken tho"
+ },
+ {
+  "id": "m0004",
+  "channel": "#ops-floor",
+  "ts": "2026-03-11T14:19:00Z",
+  "user": "i.schulz",
+  "text": "checking in for the evening shift, swinging by FL-2 first to take a look"
+ },
+ {
+  "id": "m0005",
+  "channel": "#ops-floor",
+  "ts": "2026-03-11T14:24:00Z",
+  "user": "z.byrne",
+  "text": "welcome i.schulz, FL-2 has been a bit finicky lately"
+ },
+ {
+  "id": "m0006",
+  "channel": "#ops-floor",
+  "ts": "2026-03-11T14:28:00Z",
+  "user": "i.schulz",
+  "text": "noted, looks fine right now"
+ },
+ {
+  "id": "m0007",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-11T14:35:00Z",
+  "user": "i.novak",
+  "text": "hey, asks about a dashboard glitch anyone else seeing on their end?"
+ },
+ {
+  "id": "m0008",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-11T14:39:00Z",
+  "user": "j.nguyen",
+  "text": "yeah seeing it too, could be a refresh hiccup"
+ },
+ {
+  "id": "m0009",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-11T14:42:00Z",
+  "user": "i.novak",
+  "text": "ok will keep an eye on it, thanks"
+ },
+ {
+  "id": "m0010",
+  "channel": "#ops-floor",
+  "ts": "2026-03-11T14:50:00Z",
+  "user": "h.lindqvist",
+  "text": "restocked gloves near the loading bay fyi"
+ },
+ {
+  "id": "m0011",
+  "channel": "#ops-floor",
+  "ts": "2026-03-11T15:02:00Z",
+  "user": "s.nguyen",
+  "text": "anyone seen the spare pallet jack? not in its usual spot"
+ },
+ {
+  "id": "m0012",
+  "channel": "#ops-floor",
+  "ts": "2026-03-11T15:05:00Z",
+  "user": "z.byrne",
+  "text": "think e.dubois had it earlier"
+ },
+ {
+  "id": "m0013",
+  "channel": "#ops-floor",
+  "ts": "2026-03-11T15:07:00Z",
+  "user": "e.dubois",
+  "text": "yep by the receiving door, sorry forgot to put it back"
+ },
+ {
+  "id": "m0014",
+  "channel": "#ops-floor",
+  "ts": "2026-03-11T15:10:00Z",
+  "user": "s.nguyen",
+  "text": "no worries found it, thanks"
+ },
+ {
+  "id": "m0015",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-11T15:20:00Z",
+  "user": "n.larsen",
+  "text": "dashboard looks normal on my end now, must've resolved itself"
+ },
+ {
+  "id": "m0016",
+  "channel": "#ops-floor",
+  "ts": "2026-03-12T06:06:00Z",
+  "user": "j.nguyen",
+  "text": "morning all, heads up deliveries today are scheduled for mid-morning and late afternoon"
+ },
+ {
+  "id": "m0017",
+  "channel": "#ops-floor",
+  "ts": "2026-03-12T06:09:00Z",
+  "user": "n.costa",
+  "text": "morning, thanks for the heads up"
+ },
+ {
+  "id": "m0018",
+  "channel": "#ops-floor",
+  "ts": "2026-03-12T06:14:00Z",
+  "user": "h.lindqvist",
+  "text": "coffee machine is broken again lol"
+ },
+ {
+  "id": "m0019",
+  "channel": "#ops-floor",
+  "ts": "2026-03-12T06:16:00Z",
+  "user": "i.novak",
+  "text": "of course it is, mondays"
+ },
+ {
+  "id": "m0020",
+  "channel": "#ops-floor",
+  "ts": "2026-03-12T07:02:00Z",
+  "user": "a.novak",
+  "text": "anyone seen the forklift keys? not on the hook"
+ },
+ {
+  "id": "m0021",
+  "channel": "#ops-floor",
+  "ts": "2026-03-12T07:05:00Z",
+  "user": "z.byrne",
+  "text": "check with e.dubois, he had them last"
+ },
+ {
+  "id": "m0022",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-12T13:26:00Z",
+  "user": "s.nguyen",
+  "text": "is anyone else seeing the dashboard glitch out and freeze on refresh?"
+ },
+ {
+  "id": "m0023",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-12T13:31:00Z",
+  "user": "n.larsen",
+  "text": "yeah mine did that too, reloading fixed it for me"
+ },
+ {
+  "id": "m0024",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-12T13:35:00Z",
+  "user": "i.schulz",
+  "text": "seeing it as well, might be a caching issue, will poke at it"
+ },
+ {
+  "id": "m0025",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-12T13:40:00Z",
+  "user": "s.nguyen",
+  "text": "thanks, let me know if you find anything"
+ },
+ {
+  "id": "m0026",
+  "channel": "#ops-floor",
+  "ts": "2026-03-12T14:02:00Z",
+  "user": "j.nguyen",
+  "text": "first delivery just pulled in, all good"
+ },
+ {
+  "id": "m0027",
+  "channel": "#ops-floor",
+  "ts": "2026-03-12T14:05:00Z",
+  "user": "h.lindqvist",
+  "text": "nice, unloading now"
+ },
+ {
+  "id": "m0028",
+  "channel": "#ops-floor",
+  "ts": "2026-03-13T06:09:00Z",
+  "user": "j.nguyen",
+  "text": "morning, reminder about the probe round"
+ },
+ {
+  "id": "m0029",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-03-13T09:01:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone D high temp: -17.5 C (limits -31.9..-17.9)"
+ },
+ {
+  "id": "m0030",
+  "channel": "#ops-floor",
+  "ts": "2026-03-14T06:29:00Z",
+  "user": "j.nguyen",
+  "text": "morning, reminder about the probe round"
+ },
+ {
+  "id": "m0031",
+  "channel": "#ops-floor",
+  "ts": "2026-03-14T09:49:00Z",
+  "user": "j.nguyen",
+  "text": "reminder that the utility generator test is this morning, rooms will hold"
+ },
+ {
+  "id": "m0032",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-14T11:26:00Z",
+  "user": "s.nguyen",
+  "text": "power is back, gateway host rebooted, all controllers reconnected"
+ },
+ {
+  "id": "m0033",
+  "channel": "#ops-floor",
+  "ts": "2026-03-14T14:22:00Z",
+  "user": "i.schulz",
+  "text": "checking in for the evening shift, mentions FL-2"
+ },
+ {
+  "id": "m0034",
+  "channel": "#ops-floor",
+  "ts": "2026-03-14T22:26:00Z",
+  "user": "e.dubois",
+  "text": "night shift on, handover note"
+ },
+ {
+  "id": "m0035",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-03-15T07:56:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone B high temp: -11.0 C (limits -25.1..-11.1)"
+ },
+ {
+  "id": "m0036",
+  "channel": "#ops-floor",
+  "ts": "2026-03-15T08:03:00Z",
+  "user": "a.novak",
+  "text": "zone B critical again, heading over to check"
+ },
+ {
+  "id": "m0037",
+  "channel": "#ops-floor",
+  "ts": "2026-03-15T08:11:00Z",
+  "user": "n.costa",
+  "text": "I'm nearby, will take a look too"
+ },
+ {
+  "id": "m0038",
+  "channel": "#ops-floor",
+  "ts": "2026-03-15T09:17:00Z",
+  "user": "h.lindqvist",
+  "text": "morning all, coffee machine is finally fixed"
+ },
+ {
+  "id": "m0039",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-15T11:49:00Z",
+  "user": "i.novak",
+  "text": "pushed a small deploy to the monitoring config, just tuning some thresholds, nothing major"
+ },
+ {
+  "id": "m0040",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-15T12:03:00Z",
+  "user": "z.byrne",
+  "text": "nice, pulling the update on my end now"
+ },
+ {
+  "id": "m0041",
+  "channel": "#ops-floor",
+  "ts": "2026-03-15T14:13:00Z",
+  "user": "i.schulz",
+  "text": "checking in for the evening shift, all quiet near FL-2 so far"
+ },
+ {
+  "id": "m0042",
+  "channel": "#ops-floor",
+  "ts": "2026-03-15T14:19:00Z",
+  "user": "n.larsen",
+  "text": "thanks for the update, quiet on my side too"
+ },
+ {
+  "id": "m0043",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-03-15T14:46:00Z",
+  "user": "alerting-bot",
+  "text": "[WARNING] zone E low temp: -43.8 C (limits -28.7..-14.7)"
+ },
+ {
+  "id": "m0044",
+  "channel": "#ops-floor",
+  "ts": "2026-03-15T14:52:00Z",
+  "user": "s.nguyen",
+  "text": "zone E warning popped up again, keeping an eye on it"
+ },
+ {
+  "id": "m0045",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-03-15T15:40:00Z",
+  "user": "alerting-bot",
+  "text": "[WARNING] zone B low temp: -35.2 C (limits -25.1..-11.1)"
+ },
+ {
+  "id": "m0046",
+  "channel": "#ops-floor",
+  "ts": "2026-03-15T15:47:00Z",
+  "user": "a.novak",
+  "text": "zone B flapping now too, wonder if it's sensor related"
+ },
+ {
+  "id": "m0047",
+  "channel": "#ops-floor",
+  "ts": "2026-03-15T18:16:00Z",
+  "user": "j.nguyen",
+  "text": "dashboard shows room B and room E both at -40, that can't be right, the technician was just here"
+ },
+ {
+  "id": "m0048",
+  "channel": "#ops-floor",
+  "ts": "2026-03-15T18:23:00Z",
+  "user": "e.dubois",
+  "text": "weird, let me swing by and check the panel readings"
+ },
+ {
+  "id": "m0049",
+  "channel": "#ops-floor",
+  "ts": "2026-03-15T18:31:00Z",
+  "user": "j.nguyen",
+  "text": "still reading low over here, might just be a glitch"
+ },
+ {
+  "id": "m0050",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-15T20:08:00Z",
+  "user": "i.novak",
+  "text": "seeing TK02 and TK05 decode at about -40 since the vendor visit, low-temp warnings keep flapping"
+ },
+ {
+  "id": "m0051",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-15T20:15:00Z",
+  "user": "z.byrne",
+  "text": "same pattern on my dashboards, definitely started after the visit"
+ },
+ {
+  "id": "m0052",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-15T21:09:00Z",
+  "user": "i.novak",
+  "text": "talked to the vendor on the phone, they say the new boards have a sensor fault, known issue"
+ },
+ {
+  "id": "m0053",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-15T21:15:00Z",
+  "user": "h.lindqvist",
+  "text": "good to know, at least it's not our config causing it"
+ },
+ {
+  "id": "m0054",
+  "channel": "#ops-floor",
+  "ts": "2026-03-15T22:24:00Z",
+  "user": "e.dubois",
+  "text": "night shift on, all quiet, just the ongoing sensor issue to keep watching, handing off notes"
+ },
+ {
+  "id": "m0055",
+  "channel": "#ops-floor",
+  "ts": "2026-03-16T00:45:00Z",
+  "user": "n.costa",
+  "text": "lol check this out, IMG_2231.jpg - new toy for the airflow problem in room E"
+ },
+ {
+  "id": "m0056",
+  "channel": "#ops-floor",
+  "ts": "2026-03-16T00:48:00Z",
+  "user": "z.byrne",
+  "text": "that's... a fan taped to a fan. bold engineering"
+ },
+ {
+  "id": "m0057",
+  "channel": "#ops-floor",
+  "ts": "2026-03-16T01:02:00Z",
+  "user": "n.costa",
+  "text": "hey it's working, don't judge"
+ },
+ {
+  "id": "m0058",
+  "channel": "#ops-floor",
+  "ts": "2026-03-16T01:40:00Z",
+  "user": "e.dubois",
+  "text": "whoever set that up, don't leave that in the door, it's breaking the seal"
+ },
+ {
+  "id": "m0059",
+  "channel": "#ops-floor",
+  "ts": "2026-03-16T01:43:00Z",
+  "user": "n.costa",
+  "text": "moving it now, sorry"
+ },
+ {
+  "id": "m0060",
+  "channel": "#ops-floor",
+  "ts": "2026-03-16T06:17:00Z",
+  "user": "j.nguyen",
+  "text": "morning all, quick reminder to do the probe round before shift change"
+ },
+ {
+  "id": "m0061",
+  "channel": "#ops-floor",
+  "ts": "2026-03-16T06:21:00Z",
+  "user": "h.lindqvist",
+  "text": "on it, grabbing the clipboard now"
+ },
+ {
+  "id": "m0062",
+  "channel": "#ops-floor",
+  "ts": "2026-03-16T06:36:00Z",
+  "user": "s.nguyen",
+  "text": "coffee machine's out again, someone tell maintenance"
+ },
+ {
+  "id": "m0063",
+  "channel": "#ops-floor",
+  "ts": "2026-03-16T09:12:00Z",
+  "user": "a.novak",
+  "text": "quiet morning so far, deliveries running a bit late"
+ },
+ {
+  "id": "m0064",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-16T12:19:00Z",
+  "user": "i.novak",
+  "text": "noticed a slow query on the alert dashboard, digging into it"
+ },
+ {
+  "id": "m0065",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-16T12:23:00Z",
+  "user": "z.byrne",
+  "text": "same, page load felt off earlier"
+ },
+ {
+  "id": "m0066",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-16T12:29:00Z",
+  "user": "i.novak",
+  "text": "pushed a hotfix, now routing B/E low-temp alerts to #alerts-coldchain-old while we sort this out"
+ },
+ {
+  "id": "m0067",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-16T12:32:00Z",
+  "user": "n.larsen",
+  "text": "good call, keep the old channel muted for now then"
+ },
+ {
+  "id": "m0068",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-16T12:36:00Z",
+  "user": "i.schulz",
+  "text": "thanks for the quick turnaround"
+ },
+ {
+  "id": "m0069",
+  "channel": "#ops-floor",
+  "ts": "2026-03-16T15:05:00Z",
+  "user": "s.nguyen",
+  "text": "anyone seen the spare gloves box, room D is out"
+ },
+ {
+  "id": "m0070",
+  "channel": "#ops-floor",
+  "ts": "2026-03-16T15:09:00Z",
+  "user": "a.novak",
+  "text": "should be a fresh box in the supply closet"
+ },
+ {
+  "id": "m0071",
+  "channel": "#ops-floor",
+  "ts": "2026-03-16T18:02:00Z",
+  "user": "a.novak",
+  "text": "slow afternoon, wrapping up paperwork"
+ },
+ {
+  "id": "m0072",
+  "channel": "#ops-floor",
+  "ts": "2026-03-16T22:16:00Z",
+  "user": "e.dubois",
+  "text": "night shift on, all quiet, nothing to flag for the next crew"
+ },
+ {
+  "id": "m0073",
+  "channel": "#ops-floor",
+  "ts": "2026-03-16T22:19:00Z",
+  "user": "j.nguyen",
+  "text": "thanks for the handover, have a smooth one"
+ },
+ {
+  "id": "m0074",
+  "channel": "#ops-floor",
+  "ts": "2026-03-16T22:22:00Z",
+  "user": "n.costa",
+  "text": "night all"
+ },
+ {
+  "id": "m0075",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-17T01:46:00Z",
+  "user": "s.nguyen",
+  "text": "paged six times tonight by the low-temp warnings, anyone know a quieter option than this?"
+ },
+ {
+  "id": "m0076",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-17T01:52:00Z",
+  "user": "n.larsen",
+  "text": "rough night huh, same warnings each time?"
+ },
+ {
+  "id": "m0077",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-17T01:58:00Z",
+  "user": "s.nguyen",
+  "text": "yeah all the same, feels like overkill"
+ },
+ {
+  "id": "m0078",
+  "channel": "#ops-floor",
+  "ts": "2026-03-17T06:27:00Z",
+  "user": "j.nguyen",
+  "text": "morning all, deliveries at the usual times today, nothing unusual on the sheet"
+ },
+ {
+  "id": "m0079",
+  "channel": "#ops-floor",
+  "ts": "2026-03-17T06:33:00Z",
+  "user": "a.novak",
+  "text": "morning, coffee's on"
+ },
+ {
+  "id": "m0080",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-17T08:28:00Z",
+  "user": "s.nguyen",
+  "text": "someone set the minimum severity to critical last night, was that you?"
+ },
+ {
+  "id": "m0081",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-17T08:34:00Z",
+  "user": "n.larsen",
+  "text": "not on my end, checking configs now"
+ },
+ {
+  "id": "m0082",
+  "channel": "#ops-floor",
+  "ts": "2026-03-17T09:02:00Z",
+  "user": "z.byrne",
+  "text": "does anyone have the spare pallet jack, mine's stuck again"
+ },
+ {
+  "id": "m0083",
+  "channel": "#ops-floor",
+  "ts": "2026-03-17T09:10:00Z",
+  "user": "e.dubois",
+  "text": "it's by the loading dock, saw it there an hour ago"
+ },
+ {
+  "id": "m0084",
+  "channel": "#ops-floor",
+  "ts": "2026-03-17T10:03:00Z",
+  "user": "j.nguyen",
+  "text": "archived #alerts-coldchain-old, it was only the -40 noise anyway, no real signal there"
+ },
+ {
+  "id": "m0085",
+  "channel": "#ops-floor",
+  "ts": "2026-03-17T10:09:00Z",
+  "user": "a.novak",
+  "text": "good, that channel was getting unreadable"
+ },
+ {
+  "id": "m0086",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-17T11:56:00Z",
+  "user": "i.novak",
+  "text": "not me, was off shift when that changed"
+ },
+ {
+  "id": "m0087",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-17T12:04:00Z",
+  "user": "s.nguyen",
+  "text": "ok, still trying to figure out who flipped it then"
+ },
+ {
+  "id": "m0088",
+  "channel": "#ops-floor",
+  "ts": "2026-03-17T13:05:00Z",
+  "user": "h.lindqvist",
+  "text": "room B stopped cooling right after the truck left, panel's showing a hold-off"
+ },
+ {
+  "id": "m0089",
+  "channel": "#ops-floor",
+  "ts": "2026-03-17T13:11:00Z",
+  "user": "z.byrne",
+  "text": "keeping an eye on it, let us know if temp starts climbing"
+ },
+ {
+  "id": "m0090",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-17T13:20:00Z",
+  "user": "i.novak",
+  "text": "noticing a slow query on the dashboard side, might be related to the load"
+ },
+ {
+  "id": "m0091",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-17T13:27:00Z",
+  "user": "n.larsen",
+  "text": "worth watching, could be tied to the extra polling from last night"
+ },
+ {
+  "id": "m0092",
+  "channel": "#ops-floor",
+  "ts": "2026-03-17T14:16:00Z",
+  "user": "i.schulz",
+  "text": "checking in for evening shift, heading over to FL-2 first"
+ },
+ {
+  "id": "m0093",
+  "channel": "#ops-floor",
+  "ts": "2026-03-17T14:22:00Z",
+  "user": "h.lindqvist",
+  "text": "room B looks steadier now, still watching it though"
+ },
+ {
+  "id": "m0094",
+  "channel": "#ops-floor",
+  "ts": "2026-03-17T14:27:00Z",
+  "user": "j.nguyen",
+  "text": "runbook says it restarts after the timer, just keep the door shut till then"
+ },
+ {
+  "id": "m0095",
+  "channel": "#ops-floor",
+  "ts": "2026-03-17T14:33:00Z",
+  "user": "i.schulz",
+  "text": "got it, door's shut, will check back in a bit"
+ },
+ {
+  "id": "m0096",
+  "channel": "#ops-floor",
+  "ts": "2026-03-17T14:41:00Z",
+  "user": "e.dubois",
+  "text": "quiet afternoon otherwise, deliveries all on time"
+ },
+ {
+  "id": "m0097",
+  "channel": "#ops-floor",
+  "ts": "2026-03-18T06:22:00Z",
+  "user": "j.nguyen",
+  "text": "morning all, don't forget the probe round before shift handover"
+ },
+ {
+  "id": "m0098",
+  "channel": "#ops-floor",
+  "ts": "2026-03-18T06:25:00Z",
+  "user": "n.costa",
+  "text": "on it, grabbing the clipboard now"
+ },
+ {
+  "id": "m0099",
+  "channel": "#ops-floor",
+  "ts": "2026-03-18T06:31:00Z",
+  "user": "h.lindqvist",
+  "text": "coffee machine's out again lol"
+ },
+ {
+  "id": "m0100",
+  "channel": "#ops-floor",
+  "ts": "2026-03-18T06:33:00Z",
+  "user": "j.nguyen",
+  "text": "classic monday"
+ },
+ {
+  "id": "m0101",
+  "channel": "#ops-floor",
+  "ts": "2026-03-18T07:02:00Z",
+  "user": "n.costa",
+  "text": "probe round done, all readings look normal"
+ },
+ {
+  "id": "m0102",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-18T09:15:00Z",
+  "user": "i.schulz",
+  "text": "anyone else seeing lag on the dashboard this morning?"
+ },
+ {
+  "id": "m0103",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-18T09:19:00Z",
+  "user": "z.byrne",
+  "text": "seems fine on my end, might be your wifi"
+ },
+ {
+  "id": "m0104",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-18T12:42:00Z",
+  "user": "i.novak",
+  "text": "pushed a small deploy to tidy up the logging config, nothing user facing"
+ },
+ {
+  "id": "m0105",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-18T12:47:00Z",
+  "user": "z.byrne",
+  "text": "nice, saw the commit go through clean"
+ },
+ {
+  "id": "m0106",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-18T12:51:00Z",
+  "user": "i.schulz",
+  "text": "cool, will keep an eye on it this afternoon"
+ },
+ {
+  "id": "m0107",
+  "channel": "#ops-floor",
+  "ts": "2026-03-18T15:10:00Z",
+  "user": "a.novak",
+  "text": "lunch run to the cafe, anyone want anything"
+ },
+ {
+  "id": "m0108",
+  "channel": "#ops-floor",
+  "ts": "2026-03-18T15:12:00Z",
+  "user": "s.nguyen",
+  "text": "just a tea for me thanks"
+ },
+ {
+  "id": "m0109",
+  "channel": "#ops-floor",
+  "ts": "2026-03-18T18:40:00Z",
+  "user": "n.larsen",
+  "text": "quiet afternoon, all units steady"
+ },
+ {
+  "id": "m0110",
+  "channel": "#ops-floor",
+  "ts": "2026-03-18T22:08:00Z",
+  "user": "e.dubois",
+  "text": "night shift on, all quiet, nothing flagged from earlier, will keep watching"
+ },
+ {
+  "id": "m0111",
+  "channel": "#ops-floor",
+  "ts": "2026-03-18T22:11:00Z",
+  "user": "n.larsen",
+  "text": "sounds good, heading out, have a good one"
+ },
+ {
+  "id": "m0112",
+  "channel": "#ops-floor",
+  "ts": "2026-03-19T06:16:00Z",
+  "user": "j.nguyen",
+  "text": "morning everyone, delivery times for today are posted on the board"
+ },
+ {
+  "id": "m0113",
+  "channel": "#ops-floor",
+  "ts": "2026-03-19T06:19:00Z",
+  "user": "h.lindqvist",
+  "text": "morning, got it"
+ },
+ {
+  "id": "m0114",
+  "channel": "#ops-floor",
+  "ts": "2026-03-19T06:24:00Z",
+  "user": "a.novak",
+  "text": "coffee first, then deliveries lol"
+ },
+ {
+  "id": "m0115",
+  "channel": "#ops-floor",
+  "ts": "2026-03-19T09:03:00Z",
+  "user": "n.costa",
+  "text": "first truck just pulled in, unloading now"
+ },
+ {
+  "id": "m0116",
+  "channel": "#ops-floor",
+  "ts": "2026-03-19T09:11:00Z",
+  "user": "j.nguyen",
+  "text": "thanks, let me know if paperwork's off"
+ },
+ {
+  "id": "m0117",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-03-19T13:26:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone D high temp: -17.3 C (limits -31.9..-17.9)"
+ },
+ {
+  "id": "m0118",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-03-19T13:28:00Z",
+  "user": "n.larsen",
+  "text": "on it, heading to zone D now"
+ },
+ {
+  "id": "m0119",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-19T13:34:00Z",
+  "user": "z.byrne",
+  "text": "seeing the zone D alert, checking compressor logs"
+ },
+ {
+  "id": "m0120",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-03-19T13:41:00Z",
+  "user": "n.larsen",
+  "text": "door was left ajar, closed and temp's dropping back down"
+ },
+ {
+  "id": "m0121",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-19T13:44:00Z",
+  "user": "z.byrne",
+  "text": "ok, logs look fine otherwise, will keep an eye"
+ },
+ {
+  "id": "m0122",
+  "channel": "#ops-floor",
+  "ts": "2026-03-19T14:05:00Z",
+  "user": "i.schulz",
+  "text": "checking in for the evening shift, need someone to do a stock recheck on FL-2 tonight"
+ },
+ {
+  "id": "m0123",
+  "channel": "#ops-floor",
+  "ts": "2026-03-19T14:09:00Z",
+  "user": "s.nguyen",
+  "text": "I'll grab FL-2 after lunch"
+ },
+ {
+  "id": "m0124",
+  "channel": "#ops-floor",
+  "ts": "2026-03-19T16:02:00Z",
+  "user": "i.novak",
+  "text": "second delivery came in a bit late but all logged"
+ },
+ {
+  "id": "m0125",
+  "channel": "#ops-floor",
+  "ts": "2026-03-19T16:07:00Z",
+  "user": "j.nguyen",
+  "text": "no worries, thanks for the update"
+ },
+ {
+  "id": "m0126",
+  "channel": "#ops-floor",
+  "ts": "2026-03-19T18:22:00Z",
+  "user": "s.nguyen",
+  "text": "FL-2 recheck done, counts match now"
+ },
+ {
+  "id": "m0127",
+  "channel": "#ops-floor",
+  "ts": "2026-03-19T20:45:00Z",
+  "user": "h.lindqvist",
+  "text": "quiet afternoon, heading out soon"
+ },
+ {
+  "id": "m0128",
+  "channel": "#ops-floor",
+  "ts": "2026-03-19T22:15:00Z",
+  "user": "e.dubois",
+  "text": "night shift on, leaving a handover note that zone D settled after this afternoon's blip"
+ },
+ {
+  "id": "m0129",
+  "channel": "#ops-floor",
+  "ts": "2026-03-19T22:18:00Z",
+  "user": "n.costa",
+  "text": "good to hear, have a quiet one"
+ },
+ {
+  "id": "m0130",
+  "channel": "#ops-floor",
+  "ts": "2026-03-20T06:15:00Z",
+  "user": "j.nguyen",
+  "text": "morning all, deliveries today are scheduled for 9am and 2pm, heads up"
+ },
+ {
+  "id": "m0131",
+  "channel": "#ops-floor",
+  "ts": "2026-03-20T06:18:00Z",
+  "user": "a.novak",
+  "text": "morning, noted"
+ },
+ {
+  "id": "m0132",
+  "channel": "#ops-floor",
+  "ts": "2026-03-20T06:31:00Z",
+  "user": "h.lindqvist",
+  "text": "coffee machine still broken btw"
+ },
+ {
+  "id": "m0133",
+  "channel": "#ops-floor",
+  "ts": "2026-03-20T06:33:00Z",
+  "user": "e.dubois",
+  "text": "classic"
+ },
+ {
+  "id": "m0134",
+  "channel": "#ops-floor",
+  "ts": "2026-03-20T09:02:00Z",
+  "user": "n.costa",
+  "text": "first delivery just came in, all good"
+ },
+ {
+  "id": "m0135",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-20T11:09:00Z",
+  "user": "i.novak",
+  "text": "pushed a small deploy to the monitoring config, nothing major, just tightened some polling intervals"
+ },
+ {
+  "id": "m0136",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-20T11:14:00Z",
+  "user": "z.byrne",
+  "text": "cool, let us know if anything looks off after"
+ },
+ {
+  "id": "m0137",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-20T11:16:00Z",
+  "user": "i.novak",
+  "text": "will do"
+ },
+ {
+  "id": "m0138",
+  "channel": "#ops-floor",
+  "ts": "2026-03-20T12:40:00Z",
+  "user": "s.nguyen",
+  "text": "quiet afternoon so far"
+ },
+ {
+  "id": "m0139",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-03-20T13:46:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone D high temp: -17.2 C (limits -31.9..-17.9)"
+ },
+ {
+  "id": "m0140",
+  "channel": "#ops-floor",
+  "ts": "2026-03-20T13:49:00Z",
+  "user": "n.larsen",
+  "text": "seeing the zone D alert, heading over to check now"
+ },
+ {
+  "id": "m0141",
+  "channel": "#ops-floor",
+  "ts": "2026-03-20T13:52:00Z",
+  "user": "a.novak",
+  "text": "door was left cracked, closing it now"
+ },
+ {
+  "id": "m0142",
+  "channel": "#ops-floor",
+  "ts": "2026-03-20T14:00:00Z",
+  "user": "n.larsen",
+  "text": "temp still climbing slowly, keeping an eye on it"
+ },
+ {
+  "id": "m0143",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-03-20T14:11:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone D high temp: -17.2 C (limits -31.9..-17.9)"
+ },
+ {
+  "id": "m0144",
+  "channel": "#ops-floor",
+  "ts": "2026-03-20T14:14:00Z",
+  "user": "e.dubois",
+  "text": "second alert just fired, same spot"
+ },
+ {
+  "id": "m0145",
+  "channel": "#ops-floor",
+  "ts": "2026-03-20T14:17:00Z",
+  "user": "n.larsen",
+  "text": "unit's cycling, should stabilize soon, still watching"
+ },
+ {
+  "id": "m0146",
+  "channel": "#ops-floor",
+  "ts": "2026-03-20T14:26:00Z",
+  "user": "i.schulz",
+  "text": "checking in for evening shift, all quiet aside from FL-2 which needs a follow up"
+ },
+ {
+  "id": "m0147",
+  "channel": "#ops-floor",
+  "ts": "2026-03-20T14:30:00Z",
+  "user": "j.nguyen",
+  "text": "thanks for the update, will pass it on"
+ },
+ {
+  "id": "m0148",
+  "channel": "#ops-floor",
+  "ts": "2026-03-20T14:38:00Z",
+  "user": "s.nguyen",
+  "text": "second delivery due soon, keep an eye on the dock"
+ },
+ {
+  "id": "m0149",
+  "channel": "#ops-floor",
+  "ts": "2026-03-20T14:44:00Z",
+  "user": "h.lindqvist",
+  "text": "on it"
+ },
+ {
+  "id": "m0150",
+  "channel": "#ops-floor",
+  "ts": "2026-03-21T06:37:00Z",
+  "user": "j.nguyen",
+  "text": "morning all, don't forget the probe round before shift change"
+ },
+ {
+  "id": "m0151",
+  "channel": "#ops-floor",
+  "ts": "2026-03-21T06:41:00Z",
+  "user": "n.costa",
+  "text": "on it, grabbing the clipboard now"
+ },
+ {
+  "id": "m0152",
+  "channel": "#ops-floor",
+  "ts": "2026-03-21T06:50:00Z",
+  "user": "a.novak",
+  "text": "coffee machine is empty again lol"
+ },
+ {
+  "id": "m0153",
+  "channel": "#ops-floor",
+  "ts": "2026-03-21T06:52:00Z",
+  "user": "h.lindqvist",
+  "text": "classic. someone always drinks the last cup"
+ },
+ {
+  "id": "m0154",
+  "channel": "#ops-floor",
+  "ts": "2026-03-21T09:15:00Z",
+  "user": "z.byrne",
+  "text": "quiet morning so far, all readings look normal"
+ },
+ {
+  "id": "m0155",
+  "channel": "#ops-floor",
+  "ts": "2026-03-21T11:02:00Z",
+  "user": "n.larsen",
+  "text": "anyone seen the spare pallet jack? not in its usual spot"
+ },
+ {
+  "id": "m0156",
+  "channel": "#ops-floor",
+  "ts": "2026-03-21T11:05:00Z",
+  "user": "i.novak",
+  "text": "think it's by the loading bay, saw it there earlier"
+ },
+ {
+  "id": "m0157",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-03-21T12:41:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone D high temp: -17.5 C (limits -31.9..-17.9)"
+ },
+ {
+  "id": "m0158",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-03-21T12:43:00Z",
+  "user": "a.novak",
+  "text": "on it, heading to zone D now"
+ },
+ {
+  "id": "m0159",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-21T12:45:00Z",
+  "user": "s.nguyen",
+  "text": "zone D alert again, checking the compressor logs"
+ },
+ {
+  "id": "m0160",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-03-21T12:52:00Z",
+  "user": "a.novak",
+  "text": "door was left ajar, closed it up, temp should recover"
+ },
+ {
+  "id": "m0161",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-21T13:05:00Z",
+  "user": "s.nguyen",
+  "text": "compressor cycling fine, must have been the door"
+ },
+ {
+  "id": "m0162",
+  "channel": "#ops-floor",
+  "ts": "2026-03-21T14:09:00Z",
+  "user": "i.schulz",
+  "text": "checking in for evening shift, heads up FL-2 has been a bit finicky today"
+ },
+ {
+  "id": "m0163",
+  "channel": "#ops-floor",
+  "ts": "2026-03-21T14:13:00Z",
+  "user": "e.dubois",
+  "text": "thanks for the heads up, will keep an eye on it"
+ },
+ {
+  "id": "m0164",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-03-21T15:40:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone D high temp: -16.9 C (limits -31.9..-17.9)"
+ },
+ {
+  "id": "m0165",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-03-21T15:42:00Z",
+  "user": "i.schulz",
+  "text": "zone D again, going to check the door seal this time"
+ },
+ {
+  "id": "m0166",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-21T15:50:00Z",
+  "user": "n.larsen",
+  "text": "logging this one, might need maintenance to look at the seal"
+ },
+ {
+  "id": "m0167",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-03-21T16:00:00Z",
+  "user": "i.schulz",
+  "text": "seal looks worn, flagged for maintenance, temp dropping back down"
+ },
+ {
+  "id": "m0168",
+  "channel": "#ops-floor",
+  "ts": "2026-03-21T18:22:00Z",
+  "user": "h.lindqvist",
+  "text": "afternoon rounds done, nothing else to report"
+ },
+ {
+  "id": "m0169",
+  "channel": "#ops-floor",
+  "ts": "2026-03-21T20:11:00Z",
+  "user": "z.byrne",
+  "text": "quiet stretch, catching up on paperwork"
+ },
+ {
+  "id": "m0170",
+  "channel": "#ops-floor",
+  "ts": "2026-03-21T22:21:00Z",
+  "user": "e.dubois",
+  "text": "night shift on now, handover note: zone D had two temp blips today, seal flagged for maintenance, otherwise all clear"
+ },
+ {
+  "id": "m0171",
+  "channel": "#ops-floor",
+  "ts": "2026-03-21T22:25:00Z",
+  "user": "j.nguyen",
+  "text": "good to know, thanks for the update"
+ },
+ {
+  "id": "m0172",
+  "channel": "#ops-floor",
+  "ts": "2026-03-22T06:37:00Z",
+  "user": "j.nguyen",
+  "text": "morning all, deliveries today are scheduled for 9am and 1pm, heads up"
+ },
+ {
+  "id": "m0173",
+  "channel": "#ops-floor",
+  "ts": "2026-03-22T06:41:00Z",
+  "user": "a.novak",
+  "text": "thanks for the heads up, coffee's on if anyone needs it"
+ },
+ {
+  "id": "m0174",
+  "channel": "#ops-floor",
+  "ts": "2026-03-22T06:52:00Z",
+  "user": "n.costa",
+  "text": "morning, quiet night, nothing to report"
+ },
+ {
+  "id": "m0175",
+  "channel": "#ops-floor",
+  "ts": "2026-03-22T07:10:00Z",
+  "user": "h.lindqvist",
+  "text": "anyone seen the new pallet jack? can't find it in the usual spot"
+ },
+ {
+  "id": "m0176",
+  "channel": "#ops-floor",
+  "ts": "2026-03-22T07:14:00Z",
+  "user": "a.novak",
+  "text": "think it's still by the dock doors from yesterday"
+ },
+ {
+  "id": "m0177",
+  "channel": "#ops-floor",
+  "ts": "2026-03-22T09:03:00Z",
+  "user": "j.nguyen",
+  "text": "first delivery just rolled in, unloading now"
+ },
+ {
+  "id": "m0178",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-22T09:47:00Z",
+  "user": "z.byrne",
+  "text": "running routine sensor checks this morning, all looking normal so far"
+ },
+ {
+  "id": "m0179",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-22T10:02:00Z",
+  "user": "i.novak",
+  "text": "good to hear, let me know if anything looks off"
+ },
+ {
+  "id": "m0180",
+  "channel": "#ops-floor",
+  "ts": "2026-03-22T12:31:00Z",
+  "user": "s.nguyen",
+  "text": "lunch orders going in soon, anyone want in on the usual place"
+ },
+ {
+  "id": "m0181",
+  "channel": "#ops-floor",
+  "ts": "2026-03-22T12:34:00Z",
+  "user": "n.larsen",
+  "text": "yes please, same as last time"
+ },
+ {
+  "id": "m0182",
+  "channel": "#ops-floor",
+  "ts": "2026-03-22T13:05:00Z",
+  "user": "j.nguyen",
+  "text": "second delivery came in early, all logged and put away"
+ },
+ {
+  "id": "m0183",
+  "channel": "#ops-floor",
+  "ts": "2026-03-22T14:16:00Z",
+  "user": "i.schulz",
+  "text": "checking in for evening shift, starting rounds at FL-2 first"
+ },
+ {
+  "id": "m0184",
+  "channel": "#ops-floor",
+  "ts": "2026-03-22T14:22:00Z",
+  "user": "s.nguyen",
+  "text": "sounds good, nothing outstanding from today"
+ },
+ {
+  "id": "m0185",
+  "channel": "#ops-floor",
+  "ts": "2026-03-22T14:30:00Z",
+  "user": "i.schulz",
+  "text": "copy that, will update if anything comes up"
+ },
+ {
+  "id": "m0186",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-22T16:45:00Z",
+  "user": "z.byrne",
+  "text": "wrapping up checks, everything within range across the board"
+ },
+ {
+  "id": "m0187",
+  "channel": "#ops-floor",
+  "ts": "2026-03-22T18:12:00Z",
+  "user": "n.larsen",
+  "text": "anyone else's radio acting weird today? mine keeps cutting out"
+ },
+ {
+  "id": "m0188",
+  "channel": "#ops-floor",
+  "ts": "2026-03-22T18:15:00Z",
+  "user": "i.schulz",
+  "text": "mine's fine, might just be yours, try swapping batteries"
+ },
+ {
+  "id": "m0189",
+  "channel": "#ops-floor",
+  "ts": "2026-03-22T20:02:00Z",
+  "user": "n.costa",
+  "text": "heading out, floor's clear and locked up"
+ },
+ {
+  "id": "m0190",
+  "channel": "#ops-floor",
+  "ts": "2026-03-22T22:19:00Z",
+  "user": "e.dubois",
+  "text": "night shift on, all quiet, no open items from evening handover"
+ },
+ {
+  "id": "m0191",
+  "channel": "#ops-floor",
+  "ts": "2026-03-22T22:24:00Z",
+  "user": "i.schulz",
+  "text": "all good on my end, have a quiet one"
+ },
+ {
+  "id": "m0192",
+  "channel": "#ops-floor",
+  "ts": "2026-03-23T06:34:00Z",
+  "user": "j.nguyen",
+  "text": "morning, quiet day"
+ },
+ {
+  "id": "m0193",
+  "channel": "#ops-floor",
+  "ts": "2026-03-23T08:24:00Z",
+  "user": "e.dubois",
+  "text": "TK05 compressor clicking on and off at night again, sounds rough"
+ },
+ {
+  "id": "m0194",
+  "channel": "#ops-floor",
+  "ts": "2026-03-24T06:17:00Z",
+  "user": "j.nguyen",
+  "text": "morning all, looks like a quiet day ahead"
+ },
+ {
+  "id": "m0195",
+  "channel": "#ops-floor",
+  "ts": "2026-03-24T06:21:00Z",
+  "user": "n.larsen",
+  "text": "good, could use a calm one after yesterday"
+ },
+ {
+  "id": "m0196",
+  "channel": "#ops-floor",
+  "ts": "2026-03-24T06:24:00Z",
+  "user": "a.novak",
+  "text": "coffee machine is finally fixed btw"
+ },
+ {
+  "id": "m0197",
+  "channel": "#ops-floor",
+  "ts": "2026-03-24T06:25:00Z",
+  "user": "j.nguyen",
+  "text": "small miracles"
+ },
+ {
+  "id": "m0198",
+  "channel": "#ops-floor",
+  "ts": "2026-03-24T07:02:00Z",
+  "user": "i.novak",
+  "text": "starting rounds now, all good so far"
+ },
+ {
+  "id": "m0199",
+  "channel": "#ops-floor",
+  "ts": "2026-03-24T09:15:00Z",
+  "user": "h.lindqvist",
+  "text": "anyone seen the box of new gloves? can't find it anywhere"
+ },
+ {
+  "id": "m0200",
+  "channel": "#ops-floor",
+  "ts": "2026-03-24T09:18:00Z",
+  "user": "n.costa",
+  "text": "check the supply closet, restocked yesterday"
+ },
+ {
+  "id": "m0201",
+  "channel": "#ops-floor",
+  "ts": "2026-03-24T09:19:00Z",
+  "user": "h.lindqvist",
+  "text": "found them, thanks"
+ },
+ {
+  "id": "m0202",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-24T14:03:00Z",
+  "user": "s.nguyen",
+  "text": "is anyone else seeing the dashboard glitch out on the readings, or just me?"
+ },
+ {
+  "id": "m0203",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-24T14:07:00Z",
+  "user": "e.dubois",
+  "text": "yeah seeing something odd too, refreshing didn't help"
+ },
+ {
+  "id": "m0204",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-24T14:09:00Z",
+  "user": "i.schulz",
+  "text": "could be a caching issue, looking into it now"
+ },
+ {
+  "id": "m0205",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-24T14:15:00Z",
+  "user": "s.nguyen",
+  "text": "thanks, let me know what you find"
+ },
+ {
+  "id": "m0206",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-24T14:22:00Z",
+  "user": "i.schulz",
+  "text": "looks like a display refresh delay, nothing on the backend side"
+ },
+ {
+  "id": "m0207",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-24T14:23:00Z",
+  "user": "e.dubois",
+  "text": "good to know, was getting worried for a sec"
+ },
+ {
+  "id": "m0208",
+  "channel": "#ops-floor",
+  "ts": "2026-03-24T16:40:00Z",
+  "user": "z.byrne",
+  "text": "afternoon check done, everything nominal"
+ },
+ {
+  "id": "m0209",
+  "channel": "#ops-floor",
+  "ts": "2026-03-24T16:42:00Z",
+  "user": "n.larsen",
+  "text": "nice, smooth shift then"
+ },
+ {
+  "id": "m0210",
+  "channel": "#ops-floor",
+  "ts": "2026-03-24T18:05:00Z",
+  "user": "j.nguyen",
+  "text": "heading out, all quiet on my end, have a good one"
+ },
+ {
+  "id": "m0211",
+  "channel": "#ops-floor",
+  "ts": "2026-03-24T18:07:00Z",
+  "user": "i.novak",
+  "text": "night crew taking over, see you tomorrow"
+ },
+ {
+  "id": "m0212",
+  "channel": "#ops-floor",
+  "ts": "2026-03-25T06:18:00Z",
+  "user": "j.nguyen",
+  "text": "morning all, looking like a quiet day ahead"
+ },
+ {
+  "id": "m0213",
+  "channel": "#ops-floor",
+  "ts": "2026-03-25T06:21:00Z",
+  "user": "n.costa",
+  "text": "morning, coffee's on if anyone needs it"
+ },
+ {
+  "id": "m0214",
+  "channel": "#ops-floor",
+  "ts": "2026-03-25T06:34:00Z",
+  "user": "a.novak",
+  "text": "nice, quiet is good after last week"
+ },
+ {
+  "id": "m0215",
+  "channel": "#ops-floor",
+  "ts": "2026-03-25T09:02:00Z",
+  "user": "h.lindqvist",
+  "text": "anyone seen the delivery sheet for this morning?"
+ },
+ {
+  "id": "m0216",
+  "channel": "#ops-floor",
+  "ts": "2026-03-25T09:05:00Z",
+  "user": "n.larsen",
+  "text": "on the clipboard by the door"
+ },
+ {
+  "id": "m0217",
+  "channel": "#ops-floor",
+  "ts": "2026-03-25T09:06:00Z",
+  "user": "h.lindqvist",
+  "text": "got it, thanks"
+ },
+ {
+  "id": "m0218",
+  "channel": "#ops-floor",
+  "ts": "2026-03-25T11:20:00Z",
+  "user": "e.dubois",
+  "text": "grabbing lunch, back in 30"
+ },
+ {
+  "id": "m0219",
+  "channel": "#ops-floor",
+  "ts": "2026-03-25T11:45:00Z",
+  "user": "z.byrne",
+  "text": "enjoy, all calm here"
+ },
+ {
+  "id": "m0220",
+  "channel": "#ops-floor",
+  "ts": "2026-03-25T14:17:00Z",
+  "user": "i.schulz",
+  "text": "checking in for the evening shift, just doing a walk past FL-2 now"
+ },
+ {
+  "id": "m0221",
+  "channel": "#ops-floor",
+  "ts": "2026-03-25T14:20:00Z",
+  "user": "s.nguyen",
+  "text": "welcome in, nothing much to report from us"
+ },
+ {
+  "id": "m0222",
+  "channel": "#ops-floor",
+  "ts": "2026-03-25T14:23:00Z",
+  "user": "i.schulz",
+  "text": "good to hear, will do the usual rounds"
+ },
+ {
+  "id": "m0223",
+  "channel": "#ops-floor",
+  "ts": "2026-03-25T16:05:00Z",
+  "user": "i.novak",
+  "text": "topping up supplies in the back, shout if you need anything"
+ },
+ {
+  "id": "m0224",
+  "channel": "#ops-floor",
+  "ts": "2026-03-25T18:40:00Z",
+  "user": "j.nguyen",
+  "text": "heading out, quiet one today, have a good evening all"
+ },
+ {
+  "id": "m0225",
+  "channel": "#ops-floor",
+  "ts": "2026-03-25T18:42:00Z",
+  "user": "n.costa",
+  "text": "night, see you tomorrow"
+ },
+ {
+  "id": "m0226",
+  "channel": "#ops-floor",
+  "ts": "2026-03-26T06:29:00Z",
+  "user": "j.nguyen",
+  "text": "morning all, heads up we've got deliveries at 8 and again around 1pm today"
+ },
+ {
+  "id": "m0227",
+  "channel": "#ops-floor",
+  "ts": "2026-03-26T06:33:00Z",
+  "user": "n.costa",
+  "text": "morning, thanks for the heads up"
+ },
+ {
+  "id": "m0228",
+  "channel": "#ops-floor",
+  "ts": "2026-03-26T06:41:00Z",
+  "user": "a.novak",
+  "text": "coffee machine is out again lol"
+ },
+ {
+  "id": "m0229",
+  "channel": "#ops-floor",
+  "ts": "2026-03-26T07:02:00Z",
+  "user": "n.costa",
+  "text": "classic"
+ },
+ {
+  "id": "m0230",
+  "channel": "#ops-floor",
+  "ts": "2026-03-26T09:15:00Z",
+  "user": "z.byrne",
+  "text": "anyone seen the spare pallet jack? not in its usual spot"
+ },
+ {
+  "id": "m0231",
+  "channel": "#ops-floor",
+  "ts": "2026-03-26T09:20:00Z",
+  "user": "a.novak",
+  "text": "someone probably left it near the racking again"
+ },
+ {
+  "id": "m0232",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-26T12:25:00Z",
+  "user": "s.nguyen",
+  "text": "gateway host disk is full, services still up but logs aren't writing, cleaning up space now"
+ },
+ {
+  "id": "m0233",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-26T12:29:00Z",
+  "user": "n.larsen",
+  "text": "yikes, ping me if you need a hand"
+ },
+ {
+  "id": "m0234",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-26T12:33:00Z",
+  "user": "s.nguyen",
+  "text": "will do, working through old archives first"
+ },
+ {
+  "id": "m0235",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-26T13:10:00Z",
+  "user": "i.novak",
+  "text": "noticed a slow query on the monitoring dashboard, might be worth a look once disk stuff settles"
+ },
+ {
+  "id": "m0236",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-26T13:14:00Z",
+  "user": "s.nguyen",
+  "text": "noted, will circle back after this cleanup"
+ },
+ {
+  "id": "m0237",
+  "channel": "#ops-floor",
+  "ts": "2026-03-26T14:17:00Z",
+  "user": "i.schulz",
+  "text": "checking in for evening shift, all quiet, just doing a pass by FL-2 now"
+ },
+ {
+  "id": "m0238",
+  "channel": "#ops-floor",
+  "ts": "2026-03-26T14:22:00Z",
+  "user": "n.costa",
+  "text": "sounds good, nothing major to report from here"
+ },
+ {
+  "id": "m0239",
+  "channel": "#ops-floor",
+  "ts": "2026-03-26T14:40:00Z",
+  "user": "z.byrne",
+  "text": "found the pallet jack btw, was tucked behind the racking"
+ },
+ {
+  "id": "m0240",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-26T15:22:00Z",
+  "user": "s.nguyen",
+  "text": "ok freed up space and rotated the logs, writing again now"
+ },
+ {
+  "id": "m0241",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-26T15:25:00Z",
+  "user": "n.larsen",
+  "text": "nice work, that was fast"
+ },
+ {
+  "id": "m0242",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-26T15:30:00Z",
+  "user": "i.novak",
+  "text": "great, i'll dig into that slow query tomorrow morning"
+ },
+ {
+  "id": "m0243",
+  "channel": "#ops-floor",
+  "ts": "2026-03-26T16:05:00Z",
+  "user": "j.nguyen",
+  "text": "1pm delivery went smooth, all logged"
+ },
+ {
+  "id": "m0244",
+  "channel": "#ops-floor",
+  "ts": "2026-03-26T16:10:00Z",
+  "user": "i.schulz",
+  "text": "good to hear"
+ },
+ {
+  "id": "m0245",
+  "channel": "#ops-floor",
+  "ts": "2026-03-26T18:45:00Z",
+  "user": "a.novak",
+  "text": "heading out, evening crew have things covered"
+ },
+ {
+  "id": "m0246",
+  "channel": "#ops-floor",
+  "ts": "2026-03-26T18:47:00Z",
+  "user": "z.byrne",
+  "text": "have a good one"
+ },
+ {
+  "id": "m0247",
+  "channel": "#ops-floor",
+  "ts": "2026-03-26T20:12:00Z",
+  "user": "n.costa",
+  "text": "quiet stretch, everything steady so far"
+ },
+ {
+  "id": "m0248",
+  "channel": "#ops-floor",
+  "ts": "2026-03-26T22:28:00Z",
+  "user": "e.dubois",
+  "text": "night shift on, all quiet, handover notes look clean, nothing pending"
+ },
+ {
+  "id": "m0249",
+  "channel": "#ops-floor",
+  "ts": "2026-03-26T22:33:00Z",
+  "user": "i.schulz",
+  "text": "sounds good, have a smooth one"
+ },
+ {
+  "id": "m0250",
+  "channel": "#ops-floor",
+  "ts": "2026-03-26T22:40:00Z",
+  "user": "e.dubois",
+  "text": "will do, night all"
+ },
+ {
+  "id": "m0251",
+  "channel": "#ops-floor",
+  "ts": "2026-03-27T06:04:00Z",
+  "user": "j.nguyen",
+  "text": "morning all, looks like a quiet one today"
+ },
+ {
+  "id": "m0252",
+  "channel": "#ops-floor",
+  "ts": "2026-03-27T06:11:00Z",
+  "user": "a.novak",
+  "text": "quiet is good, coffee's on"
+ },
+ {
+  "id": "m0253",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-03-27T07:41:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone A high temp: -21.1 C (limits -35.3..-21.3)"
+ },
+ {
+  "id": "m0254",
+  "channel": "#ops-floor",
+  "ts": "2026-03-27T07:44:00Z",
+  "user": "h.lindqvist",
+  "text": "saw the zone A alert, heading over to check now"
+ },
+ {
+  "id": "m0255",
+  "channel": "#ops-floor",
+  "ts": "2026-03-27T07:49:00Z",
+  "user": "n.larsen",
+  "text": "let us know what you find, door seal maybe"
+ },
+ {
+  "id": "m0256",
+  "channel": "#ops-floor",
+  "ts": "2026-03-27T09:16:00Z",
+  "user": "e.dubois",
+  "text": "anyone else out of coffee already lol"
+ },
+ {
+  "id": "m0257",
+  "channel": "#ops-floor",
+  "ts": "2026-03-27T10:03:00Z",
+  "user": "j.nguyen",
+  "text": "pallet delivery running a bit late this morning"
+ },
+ {
+  "id": "m0258",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-27T13:06:00Z",
+  "user": "i.novak",
+  "text": "is anyone seeing the dashboard freeze up on the temp graphs? mine's not updating"
+ },
+ {
+  "id": "m0259",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-27T13:12:00Z",
+  "user": "z.byrne",
+  "text": "yeah seeing the same, looks like a display glitch not actual sensor issue"
+ },
+ {
+  "id": "m0260",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-27T13:15:00Z",
+  "user": "i.novak",
+  "text": "ok good, thought we had another cooling problem for a second"
+ },
+ {
+  "id": "m0261",
+  "channel": "#ops-floor",
+  "ts": "2026-03-27T14:16:00Z",
+  "user": "i.schulz",
+  "text": "checking in for evening shift, doing a walk-through of FL-2 first"
+ },
+ {
+  "id": "m0262",
+  "channel": "#ops-floor",
+  "ts": "2026-03-27T14:19:00Z",
+  "user": "s.nguyen",
+  "text": "sounds good, nothing major to report from us"
+ },
+ {
+  "id": "m0263",
+  "channel": "#ops-floor",
+  "ts": "2026-03-27T16:47:00Z",
+  "user": "n.larsen",
+  "text": "restock came in, shelves look tidy again"
+ },
+ {
+  "id": "m0264",
+  "channel": "#ops-floor",
+  "ts": "2026-03-27T18:22:00Z",
+  "user": "h.lindqvist",
+  "text": "quiet afternoon, temps steady all around"
+ },
+ {
+  "id": "m0265",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-27T20:05:00Z",
+  "user": "z.byrne",
+  "text": "pushed a fix for that dashboard refresh bug, should be smoother now"
+ },
+ {
+  "id": "m0266",
+  "channel": "#ops-floor",
+  "ts": "2026-03-27T22:02:00Z",
+  "user": "e.dubois",
+  "text": "night shift on, all quiet, no open issues to hand over"
+ },
+ {
+  "id": "m0267",
+  "channel": "#ops-floor",
+  "ts": "2026-03-27T22:06:00Z",
+  "user": "n.costa",
+  "text": "copy that, have a good one"
+ },
+ {
+  "id": "m0268",
+  "channel": "#ops-floor",
+  "ts": "2026-03-28T06:29:00Z",
+  "user": "j.nguyen",
+  "text": "morning all, don't forget the probe round before you get busy today"
+ },
+ {
+  "id": "m0269",
+  "channel": "#ops-floor",
+  "ts": "2026-03-28T06:33:00Z",
+  "user": "a.novak",
+  "text": "on it, grabbing the clipboard now"
+ },
+ {
+  "id": "m0270",
+  "channel": "#ops-floor",
+  "ts": "2026-03-28T06:41:00Z",
+  "user": "n.costa",
+  "text": "coffee machine is empty again, someone raid the pantry"
+ },
+ {
+  "id": "m0271",
+  "channel": "#ops-floor",
+  "ts": "2026-03-28T06:44:00Z",
+  "user": "j.nguyen",
+  "text": "ha, I'll bring some up later"
+ },
+ {
+  "id": "m0272",
+  "channel": "#ops-floor",
+  "ts": "2026-03-28T09:12:00Z",
+  "user": "z.byrne",
+  "text": "quiet morning so far, all good on my end"
+ },
+ {
+  "id": "m0273",
+  "channel": "#ops-floor",
+  "ts": "2026-03-28T09:15:00Z",
+  "user": "n.larsen",
+  "text": "same here, forklift finally got fixed too"
+ },
+ {
+  "id": "m0274",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-28T11:02:00Z",
+  "user": "i.novak",
+  "text": "anyone else seeing the dashboard lag when filtering by room?"
+ },
+ {
+  "id": "m0275",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-28T11:05:00Z",
+  "user": "s.nguyen",
+  "text": "yeah known issue, working on it"
+ },
+ {
+  "id": "m0276",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-28T13:38:00Z",
+  "user": "s.nguyen",
+  "text": "pushed a small deploy to the monitoring service, nothing major, just tidying up some alert thresholds"
+ },
+ {
+  "id": "m0277",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-28T13:41:00Z",
+  "user": "i.novak",
+  "text": "cool, will keep an eye out for anything weird"
+ },
+ {
+  "id": "m0278",
+  "channel": "#ops-floor",
+  "ts": "2026-03-28T14:07:00Z",
+  "user": "i.schulz",
+  "text": "checking in for evening shift, heading over to FL-2 first to do a walkthrough"
+ },
+ {
+  "id": "m0279",
+  "channel": "#ops-floor",
+  "ts": "2026-03-28T14:10:00Z",
+  "user": "z.byrne",
+  "text": "sounds good, nothing to report from my side"
+ },
+ {
+  "id": "m0280",
+  "channel": "#ops-floor",
+  "ts": "2026-03-28T16:22:00Z",
+  "user": "n.costa",
+  "text": "lunch delivery is here if anyone wants some"
+ },
+ {
+  "id": "m0281",
+  "channel": "#ops-floor",
+  "ts": "2026-03-28T16:24:00Z",
+  "user": "n.larsen",
+  "text": "on my way"
+ },
+ {
+  "id": "m0282",
+  "channel": "#ops-floor",
+  "ts": "2026-03-28T19:45:00Z",
+  "user": "i.schulz",
+  "text": "shift's calm, doing rounds again shortly"
+ },
+ {
+  "id": "m0283",
+  "channel": "#ops-floor",
+  "ts": "2026-03-28T21:14:00Z",
+  "user": "h.lindqvist",
+  "text": "handheld in room D is reading warmer than the panel again, and the gap seems to be getting worse each round"
+ },
+ {
+  "id": "m0284",
+  "channel": "#ops-floor",
+  "ts": "2026-03-28T21:17:00Z",
+  "user": "i.schulz",
+  "text": "worth flagging to eng, might be a sensor drift thing"
+ },
+ {
+  "id": "m0285",
+  "channel": "#ops-floor",
+  "ts": "2026-03-28T21:20:00Z",
+  "user": "h.lindqvist",
+  "text": "yeah I'll note it in the log too"
+ },
+ {
+  "id": "m0286",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-28T21:35:00Z",
+  "user": "n.larsen",
+  "text": "heads up, ops mentioned handheld vs panel discrepancy in room D, might need someone to check the sensor"
+ },
+ {
+  "id": "m0287",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-28T21:38:00Z",
+  "user": "i.novak",
+  "text": "noted, will look at it in the morning if nothing else pops up"
+ },
+ {
+  "id": "m0288",
+  "channel": "#ops-floor",
+  "ts": "2026-03-28T22:02:00Z",
+  "user": "e.dubois",
+  "text": "night shift on, all quiet except keeping an eye on room D per the handover notes"
+ },
+ {
+  "id": "m0289",
+  "channel": "#ops-floor",
+  "ts": "2026-03-28T22:05:00Z",
+  "user": "h.lindqvist",
+  "text": "thanks, appreciate it, have a good one"
+ },
+ {
+  "id": "m0290",
+  "channel": "#ops-floor",
+  "ts": "2026-03-28T22:08:00Z",
+  "user": "e.dubois",
+  "text": "will do, night"
+ },
+ {
+  "id": "m0291",
+  "channel": "#ops-floor",
+  "ts": "2026-03-29T06:37:00Z",
+  "user": "j.nguyen",
+  "text": "morning all, looks like a quiet day ahead"
+ },
+ {
+  "id": "m0292",
+  "channel": "#ops-floor",
+  "ts": "2026-03-29T06:41:00Z",
+  "user": "n.costa",
+  "text": "morning, coffee's fresh if anyone wants some"
+ },
+ {
+  "id": "m0293",
+  "channel": "#ops-floor",
+  "ts": "2026-03-29T06:55:00Z",
+  "user": "a.novak",
+  "text": "thanks, need it today"
+ },
+ {
+  "id": "m0294",
+  "channel": "#ops-floor",
+  "ts": "2026-03-29T09:12:00Z",
+  "user": "h.lindqvist",
+  "text": "anyone seen the pallet jack? not in its usual spot"
+ },
+ {
+  "id": "m0295",
+  "channel": "#ops-floor",
+  "ts": "2026-03-29T09:15:00Z",
+  "user": "n.larsen",
+  "text": "think someone had it near the loading area earlier"
+ },
+ {
+  "id": "m0296",
+  "channel": "#ops-floor",
+  "ts": "2026-03-29T09:16:00Z",
+  "user": "h.lindqvist",
+  "text": "found it, cheers"
+ },
+ {
+  "id": "m0297",
+  "channel": "#ops-floor",
+  "ts": "2026-03-29T11:03:00Z",
+  "user": "i.novak",
+  "text": "restock on gloves came in, let me know if anyone's low"
+ },
+ {
+  "id": "m0298",
+  "channel": "#ops-floor",
+  "ts": "2026-03-29T11:20:00Z",
+  "user": "s.nguyen",
+  "text": "good timing, was just about out"
+ },
+ {
+  "id": "m0299",
+  "channel": "#ops-floor",
+  "ts": "2026-03-29T13:45:00Z",
+  "user": "z.byrne",
+  "text": "grabbing lunch, back in 20"
+ },
+ {
+  "id": "m0300",
+  "channel": "#ops-floor",
+  "ts": "2026-03-29T14:15:00Z",
+  "user": "i.schulz",
+  "text": "checking in for evening shift, doing a quick pass by FL-2 before settling in"
+ },
+ {
+  "id": "m0301",
+  "channel": "#ops-floor",
+  "ts": "2026-03-29T14:19:00Z",
+  "user": "n.costa",
+  "text": "sounds good, nothing major to flag from days"
+ },
+ {
+  "id": "m0302",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-03-29T16:21:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone D high temp: -17.4 C (limits -31.9..-17.9)"
+ },
+ {
+  "id": "m0303",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-03-29T16:22:30Z",
+  "user": "i.schulz",
+  "text": "on it, heading over now"
+ },
+ {
+  "id": "m0304",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-03-29T16:26:00Z",
+  "user": "n.larsen",
+  "text": "door seal on zone D again?"
+ },
+ {
+  "id": "m0305",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-03-29T16:31:00Z",
+  "user": "i.schulz",
+  "text": "yep, closing it now, temp already dropping back"
+ },
+ {
+  "id": "m0306",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-29T16:40:00Z",
+  "user": "z.byrne",
+  "text": "logging the zone D excursion for review, seal likely culprit again"
+ },
+ {
+  "id": "m0307",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-29T16:44:00Z",
+  "user": "n.larsen",
+  "text": "third time this month, might need a replacement not just adjustment"
+ },
+ {
+  "id": "m0308",
+  "channel": "#ops-floor",
+  "ts": "2026-03-29T18:05:00Z",
+  "user": "a.novak",
+  "text": "quiet afternoon otherwise, paperwork mostly caught up"
+ },
+ {
+  "id": "m0309",
+  "channel": "#ops-floor",
+  "ts": "2026-03-29T19:30:00Z",
+  "user": "s.nguyen",
+  "text": "heading out, evening crew good to go?"
+ },
+ {
+  "id": "m0310",
+  "channel": "#ops-floor",
+  "ts": "2026-03-29T19:32:00Z",
+  "user": "i.schulz",
+  "text": "all good here, have a good one"
+ },
+ {
+  "id": "m0311",
+  "channel": "#ops-floor",
+  "ts": "2026-03-29T22:17:00Z",
+  "user": "e.dubois",
+  "text": "night shift on, quiet handover, nothing outstanding from evening"
+ },
+ {
+  "id": "m0312",
+  "channel": "#ops-floor",
+  "ts": "2026-03-29T22:20:00Z",
+  "user": "i.schulz",
+  "text": "yep all settled, catch you tomorrow"
+ },
+ {
+  "id": "m0313",
+  "channel": "#ops-floor",
+  "ts": "2026-03-30T09:47:00Z",
+  "user": "n.larsen",
+  "text": "morning, all quiet on the floor so far"
+ },
+ {
+  "id": "m0314",
+  "channel": "#ops-floor",
+  "ts": "2026-03-30T09:52:00Z",
+  "user": "s.nguyen",
+  "text": "coffee machine's fixed finally"
+ },
+ {
+  "id": "m0315",
+  "channel": "#ops-floor",
+  "ts": "2026-03-30T09:53:00Z",
+  "user": "n.larsen",
+  "text": "about time lol"
+ },
+ {
+  "id": "m0316",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-30T10:08:00Z",
+  "user": "i.novak",
+  "text": "seeing a query on the dashboard crawling, way slower than usual, gonna look into it"
+ },
+ {
+  "id": "m0317",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-30T10:11:00Z",
+  "user": "z.byrne",
+  "text": "which one, the temp history pull?"
+ },
+ {
+  "id": "m0318",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-30T10:13:00Z",
+  "user": "i.novak",
+  "text": "yeah exactly that one, taking way too long to return"
+ },
+ {
+  "id": "m0319",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-30T10:15:00Z",
+  "user": "z.byrne",
+  "text": "noted, will check indexes later today"
+ },
+ {
+  "id": "m0320",
+  "channel": "#ops-floor",
+  "ts": "2026-03-30T10:22:00Z",
+  "user": "h.lindqvist",
+  "text": "shipment paperwork for this morning is sorted, sending to receiving now"
+ },
+ {
+  "id": "m0321",
+  "channel": "#ops-floor",
+  "ts": "2026-03-30T10:30:00Z",
+  "user": "a.novak",
+  "text": "thanks h, will grab it in ten"
+ },
+ {
+  "id": "m0322",
+  "channel": "#ops-floor",
+  "ts": "2026-03-30T11:05:00Z",
+  "user": "j.nguyen",
+  "text": "anyone seen the spare pallet jack? not in its usual spot"
+ },
+ {
+  "id": "m0323",
+  "channel": "#ops-floor",
+  "ts": "2026-03-30T11:07:00Z",
+  "user": "n.costa",
+  "text": "saw someone using it near the loading area earlier"
+ },
+ {
+  "id": "m0324",
+  "channel": "#ops-floor",
+  "ts": "2026-03-30T11:08:00Z",
+  "user": "j.nguyen",
+  "text": "cheers, will check"
+ },
+ {
+  "id": "m0325",
+  "channel": "#ops-floor",
+  "ts": "2026-03-30T13:15:00Z",
+  "user": "e.dubois",
+  "text": "lunch run, anyone want anything from the cafeteria?"
+ },
+ {
+  "id": "m0326",
+  "channel": "#ops-floor",
+  "ts": "2026-03-30T13:17:00Z",
+  "user": "i.schulz",
+  "text": "sandwich if they still have them"
+ },
+ {
+  "id": "m0327",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-30T15:02:00Z",
+  "user": "z.byrne",
+  "text": "looked at the slow query, adding an index should help, testing now"
+ },
+ {
+  "id": "m0328",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-30T15:05:00Z",
+  "user": "i.novak",
+  "text": "nice, let me know how it goes"
+ },
+ {
+  "id": "m0329",
+  "channel": "#ops-floor",
+  "ts": "2026-03-30T16:40:00Z",
+  "user": "n.larsen",
+  "text": "handover notes updated, nothing major today"
+ },
+ {
+  "id": "m0330",
+  "channel": "#ops-floor",
+  "ts": "2026-03-30T16:42:00Z",
+  "user": "s.nguyen",
+  "text": "thanks, have a good one"
+ },
+ {
+  "id": "m0331",
+  "channel": "#ops-floor",
+  "ts": "2026-03-31T13:58:00Z",
+  "user": "n.larsen",
+  "text": "morning crew wrapping up, quiet day overall"
+ },
+ {
+  "id": "m0332",
+  "channel": "#ops-floor",
+  "ts": "2026-03-31T14:05:00Z",
+  "user": "a.novak",
+  "text": "handover notes are on the clipboard, nothing major"
+ },
+ {
+  "id": "m0333",
+  "channel": "#ops-floor",
+  "ts": "2026-03-31T14:14:00Z",
+  "user": "i.schulz",
+  "text": "checking in for the evening shift, starting my walk through FL-2 now"
+ },
+ {
+  "id": "m0334",
+  "channel": "#ops-floor",
+  "ts": "2026-03-31T14:16:00Z",
+  "user": "n.larsen",
+  "text": "sounds good, see you tomorrow"
+ },
+ {
+  "id": "m0335",
+  "channel": "#ops-floor",
+  "ts": "2026-03-31T14:22:00Z",
+  "user": "h.lindqvist",
+  "text": "anyone seen the spare pallet jack? not in its usual spot"
+ },
+ {
+  "id": "m0336",
+  "channel": "#ops-floor",
+  "ts": "2026-03-31T14:25:00Z",
+  "user": "i.schulz",
+  "text": "think it's by the loading dock, saw it there earlier"
+ },
+ {
+  "id": "m0337",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-31T15:40:00Z",
+  "user": "j.nguyen",
+  "text": "running the weekly sensor calibration check now, should be done by end of day"
+ },
+ {
+  "id": "m0338",
+  "channel": "#eng-coldchain",
+  "ts": "2026-03-31T15:52:00Z",
+  "user": "z.byrne",
+  "text": "thanks, let us know if anything looks off"
+ },
+ {
+  "id": "m0339",
+  "channel": "#ops-floor",
+  "ts": "2026-03-31T17:10:00Z",
+  "user": "e.dubois",
+  "text": "coffee machine in the break room is finally fixed"
+ },
+ {
+  "id": "m0340",
+  "channel": "#ops-floor",
+  "ts": "2026-03-31T17:12:00Z",
+  "user": "s.nguyen",
+  "text": "about time, was getting desperate"
+ },
+ {
+  "id": "m0341",
+  "channel": "#ops-floor",
+  "ts": "2026-03-31T18:30:00Z",
+  "user": "n.costa",
+  "text": "restocked the gloves and masks bin near the entrance"
+ },
+ {
+  "id": "m0342",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-03-31T19:06:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone A high temp: -21.2 C (limits -35.3..-21.3)"
+ },
+ {
+  "id": "m0343",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-03-31T19:08:00Z",
+  "user": "i.schulz",
+  "text": "on it, heading to zone A now"
+ },
+ {
+  "id": "m0344",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-03-31T19:11:00Z",
+  "user": "h.lindqvist",
+  "text": "let us know what you find, door seal or unit fault?"
+ },
+ {
+  "id": "m0345",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-03-31T19:15:00Z",
+  "user": "i.schulz",
+  "text": "door was ajar, closing it now, temps should recover"
+ },
+ {
+  "id": "m0346",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-03-31T19:20:00Z",
+  "user": "z.byrne",
+  "text": "good catch, keep an eye on it for the next hour"
+ },
+ {
+  "id": "m0347",
+  "channel": "#ops-floor",
+  "ts": "2026-03-31T19:35:00Z",
+  "user": "a.novak",
+  "text": "all good on zone A now, just a stray door issue"
+ },
+ {
+  "id": "m0348",
+  "channel": "#ops-floor",
+  "ts": "2026-03-31T20:02:00Z",
+  "user": "s.nguyen",
+  "text": "heading out, night shift take it from here"
+ },
+ {
+  "id": "m0349",
+  "channel": "#ops-floor",
+  "ts": "2026-03-31T20:05:00Z",
+  "user": "i.novak",
+  "text": "got it, all quiet on my end so far"
+ },
+ {
+  "id": "m0350",
+  "channel": "#ops-floor",
+  "ts": "2026-04-01T06:30:00Z",
+  "user": "j.nguyen",
+  "text": "morning all, deliveries today at 9 and 1, keep dock clear for those windows"
+ },
+ {
+  "id": "m0351",
+  "channel": "#ops-floor",
+  "ts": "2026-04-01T06:34:00Z",
+  "user": "a.novak",
+  "text": "morning, noted"
+ },
+ {
+  "id": "m0352",
+  "channel": "#ops-floor",
+  "ts": "2026-04-01T06:41:00Z",
+  "user": "n.costa",
+  "text": "coffee machine still broken lol"
+ },
+ {
+  "id": "m0353",
+  "channel": "#ops-floor",
+  "ts": "2026-04-01T06:43:00Z",
+  "user": "a.novak",
+  "text": "someone put a sign on it, tragic"
+ },
+ {
+  "id": "m0354",
+  "channel": "#ops-floor",
+  "ts": "2026-04-01T07:58:00Z",
+  "user": "j.nguyen",
+  "text": "first truck just pulled in, all good"
+ },
+ {
+  "id": "m0355",
+  "channel": "#eng-coldchain",
+  "ts": "2026-04-01T09:12:00Z",
+  "user": "h.lindqvist",
+  "text": "running the weekly sensor check now, will post if anything looks off"
+ },
+ {
+  "id": "m0356",
+  "channel": "#eng-coldchain",
+  "ts": "2026-04-01T09:35:00Z",
+  "user": "h.lindqvist",
+  "text": "all sensors reporting fine, nothing to flag"
+ },
+ {
+  "id": "m0357",
+  "channel": "#ops-floor",
+  "ts": "2026-04-01T10:02:00Z",
+  "user": "n.larsen",
+  "text": "anyone seen the spare pallet wrap? bin's empty"
+ },
+ {
+  "id": "m0358",
+  "channel": "#ops-floor",
+  "ts": "2026-04-01T10:05:00Z",
+  "user": "z.byrne",
+  "text": "check the back shelf near receiving"
+ },
+ {
+  "id": "m0359",
+  "channel": "#ops-floor",
+  "ts": "2026-04-01T10:08:00Z",
+  "user": "n.larsen",
+  "text": "found it, thanks"
+ },
+ {
+  "id": "m0360",
+  "channel": "#ops-floor",
+  "ts": "2026-04-01T12:47:00Z",
+  "user": "j.nguyen",
+  "text": "second delivery running about 10 min late per the driver"
+ },
+ {
+  "id": "m0361",
+  "channel": "#ops-floor",
+  "ts": "2026-04-01T12:50:00Z",
+  "user": "i.novak",
+  "text": "no rush, dock's clear"
+ },
+ {
+  "id": "m0362",
+  "channel": "#ops-floor",
+  "ts": "2026-04-01T13:15:00Z",
+  "user": "i.novak",
+  "text": "truck's here now, unloading"
+ },
+ {
+  "id": "m0363",
+  "channel": "#ops-floor",
+  "ts": "2026-04-01T14:13:00Z",
+  "user": "i.schulz",
+  "text": "checking in for evening shift, heading to FL-2 first to do rounds"
+ },
+ {
+  "id": "m0364",
+  "channel": "#ops-floor",
+  "ts": "2026-04-01T14:16:00Z",
+  "user": "j.nguyen",
+  "text": "sounds good, quiet day overall, both deliveries in on time"
+ },
+ {
+  "id": "m0365",
+  "channel": "#ops-floor",
+  "ts": "2026-04-01T14:20:00Z",
+  "user": "i.schulz",
+  "text": "nice, appreciate the handover"
+ },
+ {
+  "id": "m0366",
+  "channel": "#eng-coldchain",
+  "ts": "2026-04-01T15:02:00Z",
+  "user": "s.nguyen",
+  "text": "planning firmware update for the loggers next week, will send details"
+ },
+ {
+  "id": "m0367",
+  "channel": "#eng-coldchain",
+  "ts": "2026-04-01T15:05:00Z",
+  "user": "h.lindqvist",
+  "text": "cool, ping me when scheduled"
+ },
+ {
+  "id": "m0368",
+  "channel": "#ops-floor",
+  "ts": "2026-04-01T17:30:00Z",
+  "user": "z.byrne",
+  "text": "afternoon lull, floor's quiet"
+ },
+ {
+  "id": "m0369",
+  "channel": "#ops-floor",
+  "ts": "2026-04-01T18:45:00Z",
+  "user": "n.costa",
+  "text": "grabbing early dinner, back in 20"
+ },
+ {
+  "id": "m0370",
+  "channel": "#ops-floor",
+  "ts": "2026-04-01T20:10:00Z",
+  "user": "i.schulz",
+  "text": "rounds done, everything looks steady"
+ },
+ {
+  "id": "m0371",
+  "channel": "#ops-floor",
+  "ts": "2026-04-01T22:01:00Z",
+  "user": "e.dubois",
+  "text": "night shift on, taking over from i.schulz, no open issues to report"
+ },
+ {
+  "id": "m0372",
+  "channel": "#ops-floor",
+  "ts": "2026-04-01T22:05:00Z",
+  "user": "i.schulz",
+  "text": "confirmed, all clear, have a quiet one"
+ },
+ {
+  "id": "m0373",
+  "channel": "#ops-floor",
+  "ts": "2026-04-01T22:08:00Z",
+  "user": "e.dubois",
+  "text": "will do, night"
+ },
+ {
+  "id": "m0374",
+  "channel": "#ops-floor",
+  "ts": "2026-04-02T06:39:00Z",
+  "user": "j.nguyen",
+  "text": "morning all, looks like a quiet day ahead"
+ },
+ {
+  "id": "m0375",
+  "channel": "#ops-floor",
+  "ts": "2026-04-02T06:47:00Z",
+  "user": "n.costa",
+  "text": "morning, coffee's on if anyone needs it"
+ },
+ {
+  "id": "m0376",
+  "channel": "#ops-floor",
+  "ts": "2026-04-02T07:02:00Z",
+  "user": "a.novak",
+  "text": "thanks n.costa, be down in a bit"
+ },
+ {
+  "id": "m0377",
+  "channel": "#ops-floor",
+  "ts": "2026-04-02T08:15:00Z",
+  "user": "h.lindqvist",
+  "text": "anyone seen the new delivery schedule yet?"
+ },
+ {
+  "id": "m0378",
+  "channel": "#ops-floor",
+  "ts": "2026-04-02T08:19:00Z",
+  "user": "j.nguyen",
+  "text": "should be in your inbox, sent it out earlier"
+ },
+ {
+  "id": "m0379",
+  "channel": "#eng-coldchain",
+  "ts": "2026-04-02T09:41:00Z",
+  "user": "z.byrne",
+  "text": "running routine sensor checks this morning, nothing unusual so far"
+ },
+ {
+  "id": "m0380",
+  "channel": "#eng-coldchain",
+  "ts": "2026-04-02T09:55:00Z",
+  "user": "i.novak",
+  "text": "good, let me know if anything pops up"
+ },
+ {
+  "id": "m0381",
+  "channel": "#ops-floor",
+  "ts": "2026-04-02T11:03:00Z",
+  "user": "n.larsen",
+  "text": "lunch run to the usual place, anyone want anything?"
+ },
+ {
+  "id": "m0382",
+  "channel": "#ops-floor",
+  "ts": "2026-04-02T11:06:00Z",
+  "user": "a.novak",
+  "text": "yes please, the usual for me"
+ },
+ {
+  "id": "m0383",
+  "channel": "#ops-floor",
+  "ts": "2026-04-02T12:30:00Z",
+  "user": "s.nguyen",
+  "text": "quiet afternoon so far, nothing to report"
+ },
+ {
+  "id": "m0384",
+  "channel": "#ops-floor",
+  "ts": "2026-04-02T14:20:00Z",
+  "user": "i.schulz",
+  "text": "checking in for the evening shift, starting my walk through FL-2 now"
+ },
+ {
+  "id": "m0385",
+  "channel": "#ops-floor",
+  "ts": "2026-04-02T14:26:00Z",
+  "user": "j.nguyen",
+  "text": "sounds good, all quiet from my end, heading out"
+ },
+ {
+  "id": "m0386",
+  "channel": "#ops-floor",
+  "ts": "2026-04-02T15:10:00Z",
+  "user": "n.costa",
+  "text": "anyone grab the paperwork from this morning's delivery?"
+ },
+ {
+  "id": "m0387",
+  "channel": "#ops-floor",
+  "ts": "2026-04-02T15:14:00Z",
+  "user": "h.lindqvist",
+  "text": "it's on the front desk, saw it there"
+ },
+ {
+  "id": "m0388",
+  "channel": "#eng-coldchain",
+  "ts": "2026-04-02T17:45:00Z",
+  "user": "z.byrne",
+  "text": "wrapping up for the day, everything's stable"
+ },
+ {
+  "id": "m0389",
+  "channel": "#eng-coldchain",
+  "ts": "2026-04-02T17:50:00Z",
+  "user": "i.novak",
+  "text": "great, have a good evening"
+ },
+ {
+  "id": "m0390",
+  "channel": "#ops-floor",
+  "ts": "2026-04-02T20:02:00Z",
+  "user": "s.nguyen",
+  "text": "wrapping up, floors clear, see you tomorrow"
+ },
+ {
+  "id": "m0391",
+  "channel": "#ops-floor",
+  "ts": "2026-04-02T22:23:00Z",
+  "user": "e.dubois",
+  "text": "night shift on, taking over from evening, nothing flagged in the handover"
+ },
+ {
+  "id": "m0392",
+  "channel": "#ops-floor",
+  "ts": "2026-04-02T22:31:00Z",
+  "user": "i.schulz",
+  "text": "all good on my end, quiet handover, night"
+ },
+ {
+  "id": "m0393",
+  "channel": "#ops-floor",
+  "ts": "2026-04-02T22:40:00Z",
+  "user": "e.dubois",
+  "text": "sounds good, will keep an eye out"
+ },
+ {
+  "id": "m0394",
+  "channel": "#ops-floor",
+  "ts": "2026-04-03T06:33:00Z",
+  "user": "j.nguyen",
+  "text": "morning all, deliveries scheduled for 9 and 1 today, heads up"
+ },
+ {
+  "id": "m0395",
+  "channel": "#ops-floor",
+  "ts": "2026-04-03T06:35:12Z",
+  "user": "n.costa",
+  "text": "morning, thanks for the heads up"
+ },
+ {
+  "id": "m0396",
+  "channel": "#ops-floor",
+  "ts": "2026-04-03T06:41:30Z",
+  "user": "h.lindqvist",
+  "text": "coffee machine still broken btw"
+ },
+ {
+  "id": "m0397",
+  "channel": "#ops-floor",
+  "ts": "2026-04-03T06:43:05Z",
+  "user": "a.novak",
+  "text": "someone put in a ticket for that already?"
+ },
+ {
+  "id": "m0398",
+  "channel": "#ops-floor",
+  "ts": "2026-04-03T06:44:50Z",
+  "user": "h.lindqvist",
+  "text": "yeah last week, still waiting"
+ },
+ {
+  "id": "m0399",
+  "channel": "#ops-floor",
+  "ts": "2026-04-03T09:02:15Z",
+  "user": "i.novak",
+  "text": "first delivery just came in, all good"
+ },
+ {
+  "id": "m0400",
+  "channel": "#ops-floor",
+  "ts": "2026-04-03T09:05:40Z",
+  "user": "j.nguyen",
+  "text": "nice, thanks for handling that"
+ },
+ {
+  "id": "m0401",
+  "channel": "#eng-coldchain",
+  "ts": "2026-04-03T11:20:00Z",
+  "user": "z.byrne",
+  "text": "anyone else seeing lag on the dashboard this morning?"
+ },
+ {
+  "id": "m0402",
+  "channel": "#eng-coldchain",
+  "ts": "2026-04-03T11:22:33Z",
+  "user": "i.schulz",
+  "text": "a little, seems fine now on my end"
+ },
+ {
+  "id": "m0403",
+  "channel": "#ops-floor",
+  "ts": "2026-04-03T12:58:10Z",
+  "user": "n.larsen",
+  "text": "heading to lunch, back in 30"
+ },
+ {
+  "id": "m0404",
+  "channel": "#ops-floor",
+  "ts": "2026-04-03T13:01:00Z",
+  "user": "s.nguyen",
+  "text": "enjoy, second delivery due soon"
+ },
+ {
+  "id": "m0405",
+  "channel": "#ops-floor",
+  "ts": "2026-04-03T13:15:45Z",
+  "user": "i.novak",
+  "text": "second delivery landed, no issues"
+ },
+ {
+  "id": "m0406",
+  "channel": "#ops-floor",
+  "ts": "2026-04-03T15:59:00Z",
+  "user": "j.nguyen",
+  "text": "vendor came by and recalibrated the room D sensor, should be reading true now"
+ },
+ {
+  "id": "m0407",
+  "channel": "#ops-floor",
+  "ts": "2026-04-03T16:02:20Z",
+  "user": "e.dubois",
+  "text": "good, that one's been drifting a bit"
+ },
+ {
+  "id": "m0408",
+  "channel": "#ops-floor",
+  "ts": "2026-04-03T16:05:00Z",
+  "user": "a.novak",
+  "text": "will keep an eye on it this afternoon"
+ },
+ {
+  "id": "m0409",
+  "channel": "#ops-floor",
+  "ts": "2026-04-03T16:40:12Z",
+  "user": "n.costa",
+  "text": "all quiet on my end, restocking shelves now"
+ },
+ {
+  "id": "m0410",
+  "channel": "#ops-floor",
+  "ts": "2026-04-03T18:10:00Z",
+  "user": "h.lindqvist",
+  "text": "shift handover notes posted, nothing major today"
+ },
+ {
+  "id": "m0411",
+  "channel": "#ops-floor",
+  "ts": "2026-04-03T18:12:30Z",
+  "user": "s.nguyen",
+  "text": "thanks, have a good evening"
+ },
+ {
+  "id": "m0412",
+  "channel": "#ops-floor",
+  "ts": "2026-04-04T06:02:00Z",
+  "user": "j.nguyen",
+  "text": "morning all, heads up deliveries are scheduled for mid-morning and again late afternoon today"
+ },
+ {
+  "id": "m0413",
+  "channel": "#ops-floor",
+  "ts": "2026-04-04T06:05:00Z",
+  "user": "a.novak",
+  "text": "morning, thanks for the heads up"
+ },
+ {
+  "id": "m0414",
+  "channel": "#ops-floor",
+  "ts": "2026-04-04T06:09:00Z",
+  "user": "n.costa",
+  "text": "coffee machine still broken in the break room btw"
+ },
+ {
+  "id": "m0415",
+  "channel": "#ops-floor",
+  "ts": "2026-04-04T06:11:00Z",
+  "user": "h.lindqvist",
+  "text": "of course it is"
+ },
+ {
+  "id": "m0416",
+  "channel": "#ops-floor",
+  "ts": "2026-04-04T06:15:00Z",
+  "user": "i.schulz",
+  "text": "night was quiet, nothing to hand over"
+ },
+ {
+  "id": "m0417",
+  "channel": "#ops-floor",
+  "ts": "2026-04-04T06:22:00Z",
+  "user": "z.byrne",
+  "text": "good to hear, starting rounds now"
+ },
+ {
+  "id": "m0418",
+  "channel": "#ops-floor",
+  "ts": "2026-04-04T06:30:00Z",
+  "user": "j.nguyen",
+  "text": "cool, ping me if the mid-morning truck runs late"
+ },
+ {
+  "id": "m0419",
+  "channel": "#ops-floor",
+  "ts": "2026-04-04T06:34:00Z",
+  "user": "e.dubois",
+  "text": "will do"
+ },
+ {
+  "id": "m0420",
+  "channel": "#ops-floor",
+  "ts": "2026-04-04T06:40:00Z",
+  "user": "n.larsen",
+  "text": "anyone seen the spare pallet jack, mine's got a flat wheel"
+ },
+ {
+  "id": "m0421",
+  "channel": "#ops-floor",
+  "ts": "2026-04-04T06:44:00Z",
+  "user": "s.nguyen",
+  "text": "think it's by the loading bay"
+ },
+ {
+  "id": "m0422",
+  "channel": "#ops-floor",
+  "ts": "2026-04-04T06:47:00Z",
+  "user": "n.larsen",
+  "text": "found it, thanks"
+ },
+ {
+  "id": "m0423",
+  "channel": "#ops-floor",
+  "ts": "2026-04-05T06:01:00Z",
+  "user": "j.nguyen",
+  "text": "morning all, looks like a quiet day ahead"
+ },
+ {
+  "id": "m0424",
+  "channel": "#ops-floor",
+  "ts": "2026-04-05T06:04:00Z",
+  "user": "n.larsen",
+  "text": "coffee's on, join whenever"
+ },
+ {
+  "id": "m0425",
+  "channel": "#ops-floor",
+  "ts": "2026-04-05T06:47:00Z",
+  "user": "a.novak",
+  "text": "morning, restocking pallets in receiving"
+ },
+ {
+  "id": "m0426",
+  "channel": "#eng-coldchain",
+  "ts": "2026-04-05T10:43:00Z",
+  "user": "s.nguyen",
+  "text": "noticing a slow query on the temp logging dashboard, digging into it"
+ },
+ {
+  "id": "m0427",
+  "channel": "#eng-coldchain",
+  "ts": "2026-04-05T10:49:00Z",
+  "user": "h.lindqvist",
+  "text": "same, page took forever to load earlier"
+ },
+ {
+  "id": "m0428",
+  "channel": "#eng-coldchain",
+  "ts": "2026-04-05T10:52:00Z",
+  "user": "s.nguyen",
+  "text": "yeah gonna check the indexing later today"
+ },
+ {
+  "id": "m0429",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-04-05T12:01:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone D high temp: -17.8 C (limits -31.9..-17.9)"
+ },
+ {
+  "id": "m0430",
+  "channel": "#ops-floor",
+  "ts": "2026-04-05T12:03:00Z",
+  "user": "n.costa",
+  "text": "got the zone D alert, heading over now"
+ },
+ {
+  "id": "m0431",
+  "channel": "#ops-floor",
+  "ts": "2026-04-05T12:07:00Z",
+  "user": "i.novak",
+  "text": "door was propped, closing it up"
+ },
+ {
+  "id": "m0432",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-04-05T12:21:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone D high temp: -17.5 C (limits -31.9..-17.9)"
+ },
+ {
+  "id": "m0433",
+  "channel": "#ops-floor",
+  "ts": "2026-04-05T12:24:00Z",
+  "user": "n.costa",
+  "text": "still climbing, checking the compressor now"
+ },
+ {
+  "id": "m0434",
+  "channel": "#ops-floor",
+  "ts": "2026-04-05T12:31:00Z",
+  "user": "z.byrne",
+  "text": "let me know if you need another set of hands over there"
+ },
+ {
+  "id": "m0435",
+  "channel": "#ops-floor",
+  "ts": "2026-04-05T12:38:00Z",
+  "user": "n.costa",
+  "text": "seems to be stabilizing, keeping an eye on it"
+ },
+ {
+  "id": "m0436",
+  "channel": "#ops-floor",
+  "ts": "2026-04-05T14:05:00Z",
+  "user": "i.schulz",
+  "text": "checking in for evening shift, all good except keeping watch on FL-2"
+ },
+ {
+  "id": "m0437",
+  "channel": "#ops-floor",
+  "ts": "2026-04-05T14:09:00Z",
+  "user": "n.costa",
+  "text": "thanks for the handover, zone D settled down finally"
+ },
+ {
+  "id": "m0438",
+  "channel": "#ops-floor",
+  "ts": "2026-04-05T14:15:00Z",
+  "user": "i.schulz",
+  "text": "good to hear, will keep monitoring through the shift"
+ },
+ {
+  "id": "m0439",
+  "channel": "#ops-floor",
+  "ts": "2026-04-05T17:30:00Z",
+  "user": "z.byrne",
+  "text": "lunch run, anyone want anything"
+ },
+ {
+  "id": "m0440",
+  "channel": "#ops-floor",
+  "ts": "2026-04-05T17:32:00Z",
+  "user": "a.novak",
+  "text": "just water for me thanks"
+ },
+ {
+  "id": "m0441",
+  "channel": "#eng-coldchain",
+  "ts": "2026-04-05T19:10:00Z",
+  "user": "s.nguyen",
+  "text": "added an index, dashboard's loading way faster now"
+ },
+ {
+  "id": "m0442",
+  "channel": "#eng-coldchain",
+  "ts": "2026-04-05T19:15:00Z",
+  "user": "h.lindqvist",
+  "text": "nice, noticeable difference already"
+ },
+ {
+  "id": "m0443",
+  "channel": "#ops-floor",
+  "ts": "2026-04-05T22:01:00Z",
+  "user": "e.dubois",
+  "text": "night shift on, quiet so far, handover notes say zone D had a temp scare earlier but resolved"
+ },
+ {
+  "id": "m0444",
+  "channel": "#ops-floor",
+  "ts": "2026-04-05T22:05:00Z",
+  "user": "i.schulz",
+  "text": "yep all clear now, have a good one"
+ },
+ {
+  "id": "m0445",
+  "channel": "#ops-floor",
+  "ts": "2026-04-06T06:23:00Z",
+  "user": "j.nguyen",
+  "text": "morning, reminder about the probe round"
+ },
+ {
+  "id": "m0446",
+  "channel": "#ops-floor",
+  "ts": "2026-04-06T09:59:00Z",
+  "user": "n.larsen",
+  "text": "customer stability lab flagged lot LN-26450 from room E, asking which other lots were in that room"
+ },
+ {
+  "id": "m0447",
+  "channel": "#ops-floor",
+  "ts": "2026-04-06T11:07:00Z",
+  "user": "j.nguyen",
+  "text": "what excursion, room E never alarmed"
+ },
+ {
+  "id": "m0448",
+  "channel": "#eng-coldchain",
+  "ts": "2026-04-06T11:40:00Z",
+  "user": "i.novak",
+  "text": "ledger has TK05 at about -40 the whole week, dashboard never crossed the high limit"
+ },
+ {
+  "id": "m0449",
+  "channel": "#alerts-coldchain",
+  "ts": "2026-04-06T19:01:00Z",
+  "user": "alerting-bot",
+  "text": "[CRITICAL] zone A high temp: -21.0 C (limits -35.3..-21.3)"
+ },
+ {
+  "id": "m0450",
+  "channel": "#ops-floor",
+  "ts": "2026-04-07T06:22:00Z",
+  "user": "n.costa",
+  "text": "morning, quiet start so far"
+ },
+ {
+  "id": "m0451",
+  "channel": "#ops-floor",
+  "ts": "2026-04-07T06:31:00Z",
+  "user": "a.novak",
+  "text": "grabbing coffee before the walk-through"
+ },
+ {
+  "id": "m0452",
+  "channel": "#ops-floor",
+  "ts": "2026-04-07T06:36:00Z",
+  "user": "j.nguyen",
+  "text": "morning all, don't forget the probe round before shift handover"
+ },
+ {
+  "id": "m0453",
+  "channel": "#ops-floor",
+  "ts": "2026-04-07T06:40:00Z",
+  "user": "a.novak",
+  "text": "on it, heading over now"
+ },
+ {
+  "id": "m0454",
+  "channel": "#ops-floor",
+  "ts": "2026-04-07T06:47:00Z",
+  "user": "h.lindqvist",
+  "text": "let me know if you need a hand with that"
+ },
+ {
+  "id": "m0455",
+  "channel": "#ops-floor",
+  "ts": "2026-04-07T06:53:00Z",
+  "user": "a.novak",
+  "text": "all good, readings look normal"
+ },
+ {
+  "id": "m0456",
+  "channel": "#eng-coldchain",
+  "ts": "2026-04-07T11:11:00Z",
+  "user": "i.schulz",
+  "text": "morning, anything queued for today"
+ },
+ {
+  "id": "m0457",
+  "channel": "#eng-coldchain",
+  "ts": "2026-04-07T11:18:00Z",
+  "user": "s.nguyen",
+  "text": "just about to push something small, will update shortly"
+ },
+ {
+  "id": "m0458",
+  "channel": "#eng-coldchain",
+  "ts": "2026-04-07T11:26:00Z",
+  "user": "s.nguyen",
+  "text": "pushed a small deploy to the monitoring dashboard, just tweaks to the refresh interval, nothing major"
+ },
+ {
+  "id": "m0459",
+  "channel": "#eng-coldchain",
+  "ts": "2026-04-07T11:31:00Z",
+  "user": "i.schulz",
+  "text": "cool, will keep an eye on the graphs"
+ },
+ {
+  "id": "m0460",
+  "channel": "#eng-coldchain",
+  "ts": "2026-04-07T11:38:00Z",
+  "user": "s.nguyen",
+  "text": "should be seamless, shout if anything looks off"
+ },
+ {
+  "id": "m0461",
+  "channel": "#ops-floor",
+  "ts": "2026-04-07T13:47:00Z",
+  "user": "n.larsen",
+  "text": "quiet afternoon so far, nothing to flag"
+ },
+ {
+  "id": "m0462",
+  "channel": "#ops-floor",
+  "ts": "2026-04-07T13:55:00Z",
+  "user": "e.dubois",
+  "text": "same here, just doing rounds"
+ },
+ {
+  "id": "m0463",
+  "channel": "#ops-floor",
+  "ts": "2026-04-07T14:03:00Z",
+  "user": "i.schulz",
+  "text": "checking in for evening shift, heading over to take a look at FL-2 first"
+ },
+ {
+  "id": "m0464",
+  "channel": "#ops-floor",
+  "ts": "2026-04-07T14:09:00Z",
+  "user": "n.larsen",
+  "text": "sounds good, nothing major to hand over"
+ },
+ {
+  "id": "m0465",
+  "channel": "#ops-floor",
+  "ts": "2026-04-07T14:16:00Z",
+  "user": "i.schulz",
+  "text": "appreciated, will do a full walk before settling in"
+ },
+ {
+  "id": "m0466",
+  "channel": "#ops-floor",
+  "ts": "2026-04-07T16:14:00Z",
+  "user": "z.byrne",
+  "text": "anyone else waiting on that report from earlier"
+ },
+ {
+  "id": "m0467",
+  "channel": "#ops-floor",
+  "ts": "2026-04-07T16:22:00Z",
+  "user": "n.larsen",
+  "text": "almost done writing it up"
+ },
+ {
+  "id": "m0468",
+  "channel": "#ops-floor",
+  "ts": "2026-04-07T16:30:00Z",
+  "user": "n.larsen",
+  "text": "postmortem is out now, quarantine list was pulled straight from the ledger so it should be accurate"
+ },
+ {
+  "id": "m0469",
+  "channel": "#ops-floor",
+  "ts": "2026-04-07T16:37:00Z",
+  "user": "e.dubois",
+  "text": "thanks for turning that around fast"
+ },
+ {
+  "id": "m0470",
+  "channel": "#ops-floor",
+  "ts": "2026-04-07T16:44:00Z",
+  "user": "z.byrne",
+  "text": "reading through it now, looks thorough"
+ },
+ {
+  "id": "m0471",
+  "channel": "#ops-floor",
+  "ts": "2026-04-08T06:18:00Z",
+  "user": "j.nguyen",
+  "text": "morning, quiet day"
+ },
+ {
+  "id": "m0472",
+  "channel": "#ops-floor",
+  "ts": "2026-04-08T22:15:00Z",
+  "user": "e.dubois",
+  "text": "night shift on, handover note"
+ },
+ {
+  "id": "m0473",
+  "channel": "#ops-floor",
+  "ts": "2026-04-09T06:24:00Z",
+  "user": "n.larsen",
+  "text": "morning, coffee machine still broken by the way"
+ },
+ {
+  "id": "m0474",
+  "channel": "#ops-floor",
+  "ts": "2026-04-09T06:26:00Z",
+  "user": "i.schulz",
+  "text": "of course it is lol"
+ },
+ {
+  "id": "m0475",
+  "channel": "#ops-floor",
+  "ts": "2026-04-09T06:29:00Z",
+  "user": "j.nguyen",
+  "text": "morning all, heads up deliveries today are scheduled for 9am and 2pm"
+ },
+ {
+  "id": "m0476",
+  "channel": "#ops-floor",
+  "ts": "2026-04-09T06:31:00Z",
+  "user": "n.larsen",
+  "text": "noted, thanks j"
+ },
+ {
+  "id": "m0477",
+  "channel": "#ops-floor",
+  "ts": "2026-04-09T06:33:00Z",
+  "user": "z.byrne",
+  "text": "i'll get the dock cleared before the first one"
+ },
+ {
+  "id": "m0478",
+  "channel": "#ops-floor",
+  "ts": "2026-04-09T06:36:00Z",
+  "user": "a.novak",
+  "text": "anyone seen the pallet jack? can't find it anywhere"
+ },
+ {
+  "id": "m0479",
+  "channel": "#ops-floor",
+  "ts": "2026-04-09T06:38:00Z",
+  "user": "e.dubois",
+  "text": "it's by the loading door, i used it last night"
+ },
+ {
+  "id": "m0480",
+  "channel": "#ops-floor",
+  "ts": "2026-04-09T06:40:00Z",
+  "user": "a.novak",
+  "text": "cheers"
+ },
+ {
+  "id": "m0481",
+  "channel": "#ops-floor",
+  "ts": "2026-04-09T06:44:00Z",
+  "user": "h.lindqvist",
+  "text": "temps looking stable overnight, nothing to hand over"
+ },
+ {
+  "id": "m0482",
+  "channel": "#ops-floor",
+  "ts": "2026-04-09T06:47:00Z",
+  "user": "i.novak",
+  "text": "good to hear, quiet start then"
+ },
+ {
+  "id": "m0483",
+  "channel": "#ops-floor",
+  "ts": "2026-04-09T06:52:00Z",
+  "user": "s.nguyen",
+  "text": "grabbing breakfast, back in ten"
+ }
+]

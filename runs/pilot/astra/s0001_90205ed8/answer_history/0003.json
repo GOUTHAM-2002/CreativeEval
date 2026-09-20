@@ -1,0 +1,505 @@
+{
+  "schema_version": "1",
+  "mechanism": {
+    "parameters": {
+      "defrost.R_hours": 10,
+      "defrost.len_min": 27,
+      "defrost.heat_degC": 4.24,
+      "trip.d_min": 8,
+      "lockout.N": 5,
+      "lockout.W_min": 60,
+      "lockout.L_min": 60,
+      "door_gain": 2.93,
+      "c_adj": 0.0003051,
+      "bias.A": -0.75,
+      "bias.B": 0.125,
+      "bias.C": 0.73,
+      "bias.D": -0.39,
+      "bias.E": -0.72,
+      "bias.F": 0.2,
+      "k_cool.A": 0.12248,
+      "k_leak.A": 0.0010736,
+      "k_cool.B": 0.0831,
+      "k_leak.B": 0.0010106,
+      "k_cool.C": 0.13263,
+      "k_leak.C": 0.0010788,
+      "k_cool.D": 0.03014,
+      "k_leak.D": 0.0015239,
+      "k_cool.E": 0.11531,
+      "k_leak.E": 0.0010869,
+      "k_cool.F": 0.02977,
+      "k_leak.F": 0.0017858
+    },
+    "rules": {
+      "defrost_rule_type": "runtime_hours",
+      "stagger_order": [
+        "C",
+        "F",
+        "D",
+        "B",
+        "A",
+        "E"
+      ],
+      "adjacency_pairs": [
+        [
+          "A",
+          "F"
+        ],
+        [
+          "F",
+          "E"
+        ],
+        [
+          "A",
+          "B"
+        ],
+        [
+          "F",
+          "C"
+        ],
+        [
+          "E",
+          "D"
+        ],
+        [
+          "B",
+          "C"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "B",
+          "E"
+        ]
+      ]
+    }
+  },
+  "notation": {
+    "glossary": {
+      "vaka": "HDR",
+      "naha": "ZONE_A",
+      "kawo": "ZONE_B",
+      "nomo": "ZONE_C",
+      "bare": "ZONE_D",
+      "vepe": "ZONE_E",
+      "kobo": "ZONE_F",
+      "wemo": "RUN",
+      "wohe": "IDLE",
+      "mora": "AIR_TEMP",
+      "wobe": "SETPOINT",
+      "bame": "COMPRESSOR",
+      "keho": "READ",
+      "de": "DIGIT_0",
+      "te": "DIGIT_1",
+      "zo": "DIGIT_2",
+      "sa": "DIGIT_3",
+      "ze": "DIGIT_4",
+      "to": "DIGIT_5",
+      "za": "DIGIT_6",
+      "se": "DIGIT_7",
+      "do": "DIGIT_8",
+      "so": "DIGIT_9",
+      "ta": "DIGIT_10",
+      "maha": "DEFROST",
+      "hamo": "DOOR",
+      "wewa": "HEATER",
+      "reve": "TRIP",
+      "vawe": "LOCKOUT",
+      "bahe": "COIL_TEMP",
+      "robo": "RECOVERY",
+      "rane": "DISCH_PRESSURE",
+      "neka": "FIRMWARE",
+      "kono": "ABS",
+      "mabo": "ENTER",
+      "mava": "EXIT",
+      "howa": "OPEN",
+      "koha": "CLOSED",
+      "heho": "FAULT",
+      "bepa": "BOOT",
+      "mera": "ON",
+      "keha": "OFF",
+      "pamo": "DEFROST",
+      "wapo": "TRIP",
+      "wama": "LOCKOUT",
+      "weko": "DOOR"
+    },
+    "affixes": {
+      "na": "ZONE",
+      "ka": "ZONE",
+      "no": "ZONE",
+      "ba": "ZONE",
+      "ve": "ZONE",
+      "ko": "ZONE",
+      "ga": "ASPECT_EVENT",
+      "go": "ASPECT_STATE"
+    },
+    "v34_change": "absolute_temp",
+    "heldout": [
+      {
+        "seq": 1023,
+        "ts": "2026-05-23T22:35:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -25.0
+      },
+      {
+        "seq": 1024,
+        "ts": "2026-05-23T22:40:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -25.0
+      },
+      {
+        "seq": 1025,
+        "ts": "2026-05-23T22:45:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -25.4
+      },
+      {
+        "seq": 1026,
+        "ts": "2026-05-23T22:50:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -25.6
+      },
+      {
+        "seq": 1027,
+        "ts": "2026-05-23T22:55:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -25.1
+      },
+      {
+        "seq": 1028,
+        "ts": "2026-05-23T23:00:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -25.1
+      },
+      {
+        "seq": 1029,
+        "ts": "2026-05-23T23:05:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -24.7
+      },
+      {
+        "seq": 1030,
+        "ts": "2026-05-23T23:10:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -24.5
+      },
+      {
+        "seq": 1031,
+        "ts": "2026-05-23T23:15:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -23.9
+      },
+      {
+        "seq": 1032,
+        "ts": "2026-05-23T23:20:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -23.9
+      },
+      {
+        "seq": 1033,
+        "ts": "2026-05-23T23:25:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -23.9
+      },
+      {
+        "seq": 1034,
+        "ts": "2026-05-23T23:30:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -23.6
+      },
+      {
+        "seq": 1035,
+        "ts": "2026-05-23T23:35:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -24.4
+      },
+      {
+        "seq": 1036,
+        "ts": "2026-05-23T23:40:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -24.7
+      },
+      {
+        "seq": 1037,
+        "ts": "2026-05-23T23:45:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -24.2
+      },
+      {
+        "seq": 1038,
+        "ts": "2026-05-23T23:50:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -24.8
+      },
+      {
+        "seq": 1039,
+        "ts": "2026-05-23T23:55:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -24.8
+      },
+      {
+        "seq": 1040,
+        "ts": "2026-05-24T00:00:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -25.5
+      },
+      {
+        "seq": 1041,
+        "ts": "2026-05-24T00:05:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -25.4
+      },
+      {
+        "seq": 1042,
+        "ts": "2026-05-24T00:10:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -25.6
+      },
+      {
+        "seq": 1043,
+        "ts": "2026-05-24T00:15:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -25.8
+      },
+      {
+        "seq": 1044,
+        "ts": "2026-05-24T00:20:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -25.4
+      },
+      {
+        "seq": 1045,
+        "ts": "2026-05-24T00:25:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -25.4
+      },
+      {
+        "seq": 1046,
+        "ts": "2026-05-24T00:30:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -24.7
+      },
+      {
+        "seq": 1047,
+        "ts": "2026-05-24T00:35:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -24.6
+      },
+      {
+        "seq": 1048,
+        "ts": "2026-05-24T00:40:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -24.3
+      },
+      {
+        "seq": 1049,
+        "ts": "2026-05-24T00:45:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -23.5
+      },
+      {
+        "seq": 1050,
+        "ts": "2026-05-24T00:48:00Z",
+        "zone": "E",
+        "event": "DOOR",
+        "value": null
+      },
+      {
+        "seq": 1051,
+        "ts": "2026-05-24T00:50:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -23.3
+      },
+      {
+        "seq": 1052,
+        "ts": "2026-05-24T00:55:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -22.8
+      },
+      {
+        "seq": 1053,
+        "ts": "2026-05-24T00:56:00Z",
+        "zone": "E",
+        "event": "TRIP",
+        "value": null
+      },
+      {
+        "seq": 1054,
+        "ts": "2026-05-24T01:00:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -22.8
+      },
+      {
+        "seq": 1055,
+        "ts": "2026-05-24T01:05:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -22.0
+      },
+      {
+        "seq": 1056,
+        "ts": "2026-05-24T01:08:00Z",
+        "zone": "E",
+        "event": "TRIP",
+        "value": null
+      },
+      {
+        "seq": 1057,
+        "ts": "2026-05-24T01:10:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -22.3
+      },
+      {
+        "seq": 1058,
+        "ts": "2026-05-24T01:15:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -21.1
+      },
+      {
+        "seq": 1059,
+        "ts": "2026-05-24T01:20:00Z",
+        "zone": "E",
+        "event": "TRIP",
+        "value": null
+      },
+      {
+        "seq": 1060,
+        "ts": "2026-05-24T01:20:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -20.9
+      },
+      {
+        "seq": 1061,
+        "ts": "2026-05-24T01:25:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -20.5
+      },
+      {
+        "seq": 1062,
+        "ts": "2026-05-24T01:30:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -20.6
+      },
+      {
+        "seq": 1063,
+        "ts": "2026-05-24T01:32:00Z",
+        "zone": "E",
+        "event": "TRIP",
+        "value": null
+      },
+      {
+        "seq": 1064,
+        "ts": "2026-05-24T01:35:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -19.8
+      },
+      {
+        "seq": 1065,
+        "ts": "2026-05-24T01:40:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -18.9
+      },
+      {
+        "seq": 1066,
+        "ts": "2026-05-24T01:44:00Z",
+        "zone": "E",
+        "event": "TRIP",
+        "value": null
+      },
+      {
+        "seq": 1067,
+        "ts": "2026-05-24T01:44:00Z",
+        "zone": "E",
+        "event": "LOCKOUT",
+        "value": null
+      }
+    ]
+  },
+  "causal_chain": {
+    "roots": [],
+    "nodes": [],
+    "edges": [],
+    "decoys_rejected": [],
+    "affected_lots": [
+      "lot:LN-20074",
+      "lot:LN-20323",
+      "lot:LN-21306",
+      "lot:LN-23567",
+      "lot:LN-23600",
+      "lot:LN-24829",
+      "lot:LN-25575",
+      "lot:LN-26954",
+      "lot:LN-27547",
+      "lot:LN-27897",
+      "lot:LN-28792",
+      "lot:LN-29378",
+      "lot:LN-29484"
+    ],
+    "excursion": {
+      "zone": "E",
+      "start": "2026-05-24T01:44:00Z",
+      "end": "2026-05-24T08:00:00Z"
+    }
+  },
+  "timeline": {
+    "events": [],
+    "clock_offsets_min": {
+      "badge": -11,
+      "exif": 8,
+      "cctv": 4,
+      "forklift": 0,
+      "chat": 0,
+      "tickets": 0,
+      "git": 0,
+      "submeter": 0,
+      "gateway": 0,
+      "probe": 0
+    },
+    "false_claims": []
+  },
+  "confidence": {
+    "mechanism": 0.68,
+    "notation": 0.96,
+    "causal_chain": 0.8,
+    "timeline": 0.55
+  }
+}

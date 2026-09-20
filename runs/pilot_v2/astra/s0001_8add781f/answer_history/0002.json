@@ -1,0 +1,1385 @@
+{
+  "schema_version": "2",
+  "mechanism": {
+    "parameters": {
+      "k_cool.A": {
+        "value": 0.123,
+        "confidence": 0.86,
+        "note": "Approximate field estimate; see report for model and limitations."
+      },
+      "k_leak.A": {
+        "value": 0.00105,
+        "confidence": 0.68,
+        "note": "Effective heat-leak coefficient from joint thermal fits, conditional on the reported bias/coupling model; not a factory calibration."
+      },
+      "H.A": {
+        "value": 0.76,
+        "confidence": 0.82,
+        "note": "Estimated hysteresis half-band: turn on near setpoint + H, turn off near setpoint - H. Five-minute sampling limits precision."
+      },
+      "bias.A": {
+        "value": -0.8,
+        "confidence": 0.93,
+        "note": "Controller air reading minus physical temperature; calibrated handheld comparisons, correcting HH-2 by -0.7 C."
+      },
+      "k_cool.B": {
+        "value": 0.082,
+        "confidence": 0.86,
+        "note": "Approximate field estimate; see report for model and limitations."
+      },
+      "k_leak.B": {
+        "value": 0.00099,
+        "confidence": 0.68,
+        "note": "Effective heat-leak coefficient from joint thermal fits, conditional on the reported bias/coupling model; not a factory calibration."
+      },
+      "H.B": {
+        "value": 0.83,
+        "confidence": 0.82,
+        "note": "Estimated hysteresis half-band: turn on near setpoint + H, turn off near setpoint - H. Five-minute sampling limits precision."
+      },
+      "bias.B": {
+        "value": 0.2,
+        "confidence": 0.93,
+        "note": "Controller air reading minus physical temperature; calibrated handheld comparisons, correcting HH-2 by -0.7 C."
+      },
+      "k_cool.C": {
+        "value": 0.135,
+        "confidence": 0.86,
+        "note": "Approximate field estimate; see report for model and limitations."
+      },
+      "k_leak.C": {
+        "value": 0.00115,
+        "confidence": 0.68,
+        "note": "Effective heat-leak coefficient from joint thermal fits, conditional on the reported bias/coupling model; not a factory calibration."
+      },
+      "H.C": {
+        "value": 1.2,
+        "confidence": 0.82,
+        "note": "Estimated hysteresis half-band: turn on near setpoint + H, turn off near setpoint - H. Five-minute sampling limits precision."
+      },
+      "bias.C": {
+        "value": 0.7,
+        "confidence": 0.93,
+        "note": "Baseline approximately +0.7 C. Additional gradual positive drift reaches about +2.7 C by April 7; recalibration removes the additional drift. One constant does not describe the entire window."
+      },
+      "k_cool.D": {
+        "value": 0.03,
+        "confidence": 0.86,
+        "note": "Approximate field estimate; see report for model and limitations."
+      },
+      "k_leak.D": {
+        "value": 0.00142,
+        "confidence": 0.68,
+        "note": "Effective heat-leak coefficient from joint thermal fits, conditional on the reported bias/coupling model; not a factory calibration."
+      },
+      "H.D": {
+        "value": 1.14,
+        "confidence": 0.82,
+        "note": "Estimated hysteresis half-band: turn on near setpoint + H, turn off near setpoint - H. Five-minute sampling limits precision."
+      },
+      "bias.D": {
+        "value": null,
+        "confidence": 0.2,
+        "note": "No surviving independent calibrated air-temperature checks in this room. Absolute sensor bias is not defensibly separable from the fitted heat-leak/coupling intercept. Need an independent reference measurement."
+      },
+      "k_cool.E": {
+        "value": 0.115,
+        "confidence": 0.86,
+        "note": "Approximate field estimate; see report for model and limitations."
+      },
+      "k_leak.E": {
+        "value": 0.0011,
+        "confidence": 0.68,
+        "note": "Effective heat-leak coefficient from joint thermal fits, conditional on the reported bias/coupling model; not a factory calibration."
+      },
+      "H.E": {
+        "value": 1.11,
+        "confidence": 0.82,
+        "note": "Estimated hysteresis half-band: turn on near setpoint + H, turn off near setpoint - H. Five-minute sampling limits precision."
+      },
+      "bias.E": {
+        "value": -0.8,
+        "confidence": 0.93,
+        "note": "Controller air reading minus physical temperature; calibrated handheld comparisons, correcting HH-2 by -0.7 C."
+      },
+      "k_cool.F": {
+        "value": 0.029,
+        "confidence": 0.86,
+        "note": "Approximate field estimate; see report for model and limitations."
+      },
+      "k_leak.F": {
+        "value": 0.00173,
+        "confidence": 0.68,
+        "note": "Effective heat-leak coefficient from joint thermal fits, conditional on the reported bias/coupling model; not a factory calibration."
+      },
+      "H.F": {
+        "value": 1.14,
+        "confidence": 0.82,
+        "note": "Estimated hysteresis half-band: turn on near setpoint + H, turn off near setpoint - H. Five-minute sampling limits precision."
+      },
+      "bias.F": {
+        "value": null,
+        "confidence": 0.2,
+        "note": "No surviving independent calibrated air-temperature checks in this room. Absolute sensor bias is not defensibly separable from the fitted heat-leak/coupling intercept. Need an independent reference measurement."
+      },
+      "door_gain": {
+        "value": 3.0,
+        "confidence": 0.74,
+        "note": "Approximately threefold ambient heat leakage with door open; short openings and sparse sampling limit precision."
+      },
+      "c_adj": {
+        "value": 0.00028,
+        "confidence": 0.7,
+        "note": "Shared-wall coupling coefficient fitted jointly with heat leaks; strong parameter covariance, approximate."
+      },
+      "defrost.R_hours": {
+        "value": 10,
+        "confidence": 0.87,
+        "note": "Approximately 10 accumulated compressor-running hours before eligibility, not six wall-clock hours; staggering/eligibility waits can increase runtime between observed starts."
+      },
+      "defrost.len_min": {
+        "value": 27,
+        "confidence": 0.999,
+        "note": "Repeated paired 46/8B transitions are 27 controller ticks apart; ticks are minutes."
+      },
+      "defrost.heat_degC": {
+        "value": 4.3,
+        "confidence": 0.82,
+        "note": "Integrated heater contribution, after subtracting passive heat gains, about 0.16 C/min for 27 minutes."
+      },
+      "trip.d_min": {
+        "value": 7,
+        "confidence": 0.99,
+        "note": "Seven minutes of sustained door-open compressor operation precede trips; repeated trips are typically 12 minutes apart including approximately five minutes hold-off."
+      },
+      "lockout.N": {
+        "value": 5,
+        "confidence": 0.99,
+        "note": "Fifth qualifying trip enters lockout, including the recovered VX05 snapshot."
+      },
+      "lockout.W_min": {
+        "value": 60,
+        "confidence": 0.88,
+        "note": "60-minute rolling window is supported: five trips spanning 55-56 minutes lock out; five spanning 63 minutes do not. Exact cutoff within the intervening few minutes is not directly sampled."
+      },
+      "lockout.L_min": {
+        "value": 60,
+        "confidence": 0.999,
+        "note": "Five directly observed room-C entry/clear pairs each span 60 controller minutes."
+      }
+    },
+    "rules": {
+      "defrost_rule_type": "runtime_hours",
+      "stagger_order": [
+        "C",
+        "F",
+        "D",
+        "B",
+        "A",
+        "E"
+      ],
+      "adjacency_pairs": [
+        [
+          "A",
+          "F"
+        ],
+        [
+          "A",
+          "B"
+        ],
+        [
+          "F",
+          "E"
+        ],
+        [
+          "F",
+          "C"
+        ],
+        [
+          "E",
+          "D"
+        ],
+        [
+          "B",
+          "C"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "B",
+          "E"
+        ]
+      ]
+    }
+  },
+  "protocol": {
+    "types": {
+      "3A": "STATUS",
+      "98": "DOOR",
+      "D7": "TRIP",
+      "27": "LOCKOUT",
+      "46": "DEFROST",
+      "8B": "HEATER",
+      "D3": "BOOT",
+      "63": "QUEUE_OVERFLOW"
+    },
+    "status_words": [
+      "DISCH_PRESSURE",
+      "COIL_TEMP",
+      "AIR_TEMP",
+      "STATE_FLAGS"
+    ],
+    "temp_scale": 16,
+    "temp_offset": 1000,
+    "press_scale": 10,
+    "flag_bits": {
+      "RUN": 4,
+      "DEFROST": 0,
+      "LOCKOUT": 6,
+      "RECOVERY": 5,
+      "DOOR_OPEN": 2,
+      "ABS_TEMP": 12
+    },
+    "v34_change": "absolute_temp",
+    "heldout": [
+      {
+        "seq": 3149,
+        "ts": "2026-03-30T22:35:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 10.7
+      },
+      {
+        "seq": 3149,
+        "ts": "2026-03-30T22:35:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -25.125
+      },
+      {
+        "seq": 3149,
+        "ts": "2026-03-30T22:35:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -24.625
+      },
+      {
+        "seq": 3149,
+        "ts": "2026-03-30T22:35:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 4096
+      },
+      {
+        "seq": 3150,
+        "ts": "2026-03-30T22:40:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 10.8
+      },
+      {
+        "seq": 3150,
+        "ts": "2026-03-30T22:40:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -24.6875
+      },
+      {
+        "seq": 3150,
+        "ts": "2026-03-30T22:40:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -24.3125
+      },
+      {
+        "seq": 3150,
+        "ts": "2026-03-30T22:40:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 4096
+      },
+      {
+        "seq": 3151,
+        "ts": "2026-03-30T22:45:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 10.7
+      },
+      {
+        "seq": 3151,
+        "ts": "2026-03-30T22:45:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -24.5
+      },
+      {
+        "seq": 3151,
+        "ts": "2026-03-30T22:45:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -24.0
+      },
+      {
+        "seq": 3151,
+        "ts": "2026-03-30T22:45:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 4096
+      },
+      {
+        "seq": 3152,
+        "ts": "2026-03-30T22:50:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 10.7
+      },
+      {
+        "seq": 3152,
+        "ts": "2026-03-30T22:50:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -24.3125
+      },
+      {
+        "seq": 3152,
+        "ts": "2026-03-30T22:50:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -23.6875
+      },
+      {
+        "seq": 3152,
+        "ts": "2026-03-30T22:50:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 4096
+      },
+      {
+        "seq": 3153,
+        "ts": "2026-03-30T22:55:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 11.6
+      },
+      {
+        "seq": 3153,
+        "ts": "2026-03-30T22:55:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -29.8125
+      },
+      {
+        "seq": 3153,
+        "ts": "2026-03-30T22:55:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -24.125
+      },
+      {
+        "seq": 3153,
+        "ts": "2026-03-30T22:55:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 4112
+      },
+      {
+        "seq": 3154,
+        "ts": "2026-03-30T23:00:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 11.6
+      },
+      {
+        "seq": 3154,
+        "ts": "2026-03-30T23:00:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -30.1875
+      },
+      {
+        "seq": 3154,
+        "ts": "2026-03-30T23:00:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -24.125
+      },
+      {
+        "seq": 3154,
+        "ts": "2026-03-30T23:00:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 4112
+      },
+      {
+        "seq": 3155,
+        "ts": "2026-03-30T23:05:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 11.6
+      },
+      {
+        "seq": 3155,
+        "ts": "2026-03-30T23:05:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -30.1875
+      },
+      {
+        "seq": 3155,
+        "ts": "2026-03-30T23:05:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -23.875
+      },
+      {
+        "seq": 3155,
+        "ts": "2026-03-30T23:05:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 4112
+      },
+      {
+        "seq": 3156,
+        "ts": "2026-03-30T23:10:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 11.6
+      },
+      {
+        "seq": 3156,
+        "ts": "2026-03-30T23:10:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -31.3125
+      },
+      {
+        "seq": 3156,
+        "ts": "2026-03-30T23:10:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -25.125
+      },
+      {
+        "seq": 3156,
+        "ts": "2026-03-30T23:10:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 4112
+      },
+      {
+        "seq": 3157,
+        "ts": "2026-03-30T23:15:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 11.5
+      },
+      {
+        "seq": 3157,
+        "ts": "2026-03-30T23:15:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -31.0
+      },
+      {
+        "seq": 3157,
+        "ts": "2026-03-30T23:15:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -25.125
+      },
+      {
+        "seq": 3157,
+        "ts": "2026-03-30T23:15:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 4112
+      },
+      {
+        "seq": 3158,
+        "ts": "2026-03-30T23:20:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 11.6
+      },
+      {
+        "seq": 3158,
+        "ts": "2026-03-30T23:20:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -31.625
+      },
+      {
+        "seq": 3158,
+        "ts": "2026-03-30T23:20:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -25.375
+      },
+      {
+        "seq": 3158,
+        "ts": "2026-03-30T23:20:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 4112
+      },
+      {
+        "seq": 3159,
+        "ts": "2026-03-30T23:25:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 11.6
+      },
+      {
+        "seq": 3159,
+        "ts": "2026-03-30T23:25:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -32.125
+      },
+      {
+        "seq": 3159,
+        "ts": "2026-03-30T23:25:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -26.125
+      },
+      {
+        "seq": 3159,
+        "ts": "2026-03-30T23:25:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 4112
+      },
+      {
+        "seq": 3160,
+        "ts": "2026-03-30T23:30:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 10.6
+      },
+      {
+        "seq": 3160,
+        "ts": "2026-03-30T23:30:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -25.6875
+      },
+      {
+        "seq": 3160,
+        "ts": "2026-03-30T23:30:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -25.375
+      },
+      {
+        "seq": 3160,
+        "ts": "2026-03-30T23:30:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 4096
+      },
+      {
+        "seq": 3161,
+        "ts": "2026-03-30T23:35:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 10.7
+      },
+      {
+        "seq": 3161,
+        "ts": "2026-03-30T23:35:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -26.1875
+      },
+      {
+        "seq": 3161,
+        "ts": "2026-03-30T23:35:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -25.375
+      },
+      {
+        "seq": 3161,
+        "ts": "2026-03-30T23:35:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 4096
+      },
+      {
+        "seq": 3162,
+        "ts": "2026-03-30T23:40:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 10.6
+      },
+      {
+        "seq": 3162,
+        "ts": "2026-03-30T23:40:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -25.3125
+      },
+      {
+        "seq": 3162,
+        "ts": "2026-03-30T23:40:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -24.875
+      },
+      {
+        "seq": 3162,
+        "ts": "2026-03-30T23:40:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 4096
+      },
+      {
+        "seq": 3163,
+        "ts": "2026-03-30T23:45:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 10.8
+      },
+      {
+        "seq": 3163,
+        "ts": "2026-03-30T23:45:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -25.3125
+      },
+      {
+        "seq": 3163,
+        "ts": "2026-03-30T23:45:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -24.8125
+      },
+      {
+        "seq": 3163,
+        "ts": "2026-03-30T23:45:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 4096
+      },
+      {
+        "seq": 3164,
+        "ts": "2026-03-30T23:50:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 10.7
+      },
+      {
+        "seq": 3164,
+        "ts": "2026-03-30T23:50:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -24.875
+      },
+      {
+        "seq": 3164,
+        "ts": "2026-03-30T23:50:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -24.375
+      },
+      {
+        "seq": 3164,
+        "ts": "2026-03-30T23:50:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 4096
+      },
+      {
+        "seq": 3165,
+        "ts": "2026-03-30T23:55:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 10.6
+      },
+      {
+        "seq": 3165,
+        "ts": "2026-03-30T23:55:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -24.875
+      },
+      {
+        "seq": 3165,
+        "ts": "2026-03-30T23:55:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -24.3125
+      },
+      {
+        "seq": 3165,
+        "ts": "2026-03-30T23:55:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 4096
+      },
+      {
+        "seq": 3166,
+        "ts": "2026-03-31T00:00:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 10.7
+      },
+      {
+        "seq": 3166,
+        "ts": "2026-03-31T00:00:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -25.1875
+      },
+      {
+        "seq": 3166,
+        "ts": "2026-03-31T00:00:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -24.375
+      },
+      {
+        "seq": 3166,
+        "ts": "2026-03-31T00:00:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 4096
+      },
+      {
+        "seq": 3167,
+        "ts": "2026-03-31T00:05:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 10.7
+      },
+      {
+        "seq": 3167,
+        "ts": "2026-03-31T00:05:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -24.125
+      },
+      {
+        "seq": 3167,
+        "ts": "2026-03-31T00:05:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -24.0
+      },
+      {
+        "seq": 3167,
+        "ts": "2026-03-31T00:05:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 4096
+      },
+      {
+        "seq": 3168,
+        "ts": "2026-03-31T00:10:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 11.7
+      },
+      {
+        "seq": 3168,
+        "ts": "2026-03-31T00:10:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -30.0
+      },
+      {
+        "seq": 3168,
+        "ts": "2026-03-31T00:10:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -23.8125
+      },
+      {
+        "seq": 3168,
+        "ts": "2026-03-31T00:10:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 4112
+      },
+      {
+        "seq": 3169,
+        "ts": "2026-03-31T00:15:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 11.6
+      },
+      {
+        "seq": 3169,
+        "ts": "2026-03-31T00:15:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -30.125
+      },
+      {
+        "seq": 3169,
+        "ts": "2026-03-31T00:15:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -24.0
+      },
+      {
+        "seq": 3169,
+        "ts": "2026-03-31T00:15:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 4112
+      },
+      {
+        "seq": 3170,
+        "ts": "2026-03-31T00:20:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 11.7
+      },
+      {
+        "seq": 3170,
+        "ts": "2026-03-31T00:20:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -30.375
+      },
+      {
+        "seq": 3170,
+        "ts": "2026-03-31T00:20:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -24.3125
+      },
+      {
+        "seq": 3170,
+        "ts": "2026-03-31T00:20:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 4112
+      },
+      {
+        "seq": 3171,
+        "ts": "2026-03-31T00:25:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 11.6
+      },
+      {
+        "seq": 3171,
+        "ts": "2026-03-31T00:25:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -30.1875
+      },
+      {
+        "seq": 3171,
+        "ts": "2026-03-31T00:25:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -24.375
+      },
+      {
+        "seq": 3171,
+        "ts": "2026-03-31T00:25:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 4112
+      },
+      {
+        "seq": 3172,
+        "ts": "2026-03-31T00:30:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 11.6
+      },
+      {
+        "seq": 3172,
+        "ts": "2026-03-31T00:30:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -31.0
+      },
+      {
+        "seq": 3172,
+        "ts": "2026-03-31T00:30:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -25.0
+      },
+      {
+        "seq": 3172,
+        "ts": "2026-03-31T00:30:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 4112
+      },
+      {
+        "seq": 3173,
+        "ts": "2026-03-31T00:35:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 11.6
+      },
+      {
+        "seq": 3173,
+        "ts": "2026-03-31T00:35:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -31.0
+      },
+      {
+        "seq": 3173,
+        "ts": "2026-03-31T00:35:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -25.0
+      },
+      {
+        "seq": 3173,
+        "ts": "2026-03-31T00:35:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 4112
+      },
+      {
+        "seq": 3174,
+        "ts": "2026-03-31T00:40:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 11.6
+      },
+      {
+        "seq": 3174,
+        "ts": "2026-03-31T00:40:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -31.1875
+      },
+      {
+        "seq": 3174,
+        "ts": "2026-03-31T00:40:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -25.3125
+      },
+      {
+        "seq": 3174,
+        "ts": "2026-03-31T00:40:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 4112
+      },
+      {
+        "seq": 3175,
+        "ts": "2026-03-31T00:45:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 11.6
+      },
+      {
+        "seq": 3175,
+        "ts": "2026-03-31T00:45:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -32.0
+      },
+      {
+        "seq": 3175,
+        "ts": "2026-03-31T00:45:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -25.625
+      },
+      {
+        "seq": 3175,
+        "ts": "2026-03-31T00:45:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 4112
+      },
+      {
+        "seq": 3176,
+        "ts": "2026-03-31T00:46:00Z",
+        "zone": "E",
+        "event": "DOOR",
+        "value": 1
+      },
+      {
+        "seq": 3177,
+        "ts": "2026-03-31T00:50:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 12.2
+      },
+      {
+        "seq": 3177,
+        "ts": "2026-03-31T00:50:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -31.5
+      },
+      {
+        "seq": 3177,
+        "ts": "2026-03-31T00:50:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -25.1875
+      },
+      {
+        "seq": 3177,
+        "ts": "2026-03-31T00:50:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 4116
+      },
+      {
+        "seq": 3178,
+        "ts": "2026-03-31T00:53:00Z",
+        "zone": "E",
+        "event": "TRIP",
+        "value": 1
+      },
+      {
+        "seq": 3179,
+        "ts": "2026-03-31T00:55:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 10.7
+      },
+      {
+        "seq": 3179,
+        "ts": "2026-03-31T00:55:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -25.8125
+      },
+      {
+        "seq": 3179,
+        "ts": "2026-03-31T00:55:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -25.125
+      },
+      {
+        "seq": 3179,
+        "ts": "2026-03-31T00:55:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 4100
+      },
+      {
+        "seq": 3180,
+        "ts": "2026-03-31T01:00:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 11.9
+      },
+      {
+        "seq": 3180,
+        "ts": "2026-03-31T01:00:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -30.1875
+      },
+      {
+        "seq": 3180,
+        "ts": "2026-03-31T01:00:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -24.1875
+      },
+      {
+        "seq": 3180,
+        "ts": "2026-03-31T01:00:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 4116
+      },
+      {
+        "seq": 3182,
+        "ts": "2026-03-31T01:05:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 12.6
+      },
+      {
+        "seq": 3182,
+        "ts": "2026-03-31T01:05:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -30.625
+      },
+      {
+        "seq": 3182,
+        "ts": "2026-03-31T01:05:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -24.1875
+      },
+      {
+        "seq": 3182,
+        "ts": "2026-03-31T01:05:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 4116
+      },
+      {
+        "seq": 3181,
+        "ts": "2026-03-31T01:05:00Z",
+        "zone": "E",
+        "event": "TRIP",
+        "value": 1
+      },
+      {
+        "seq": 3183,
+        "ts": "2026-03-31T01:10:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 11.7
+      },
+      {
+        "seq": 3183,
+        "ts": "2026-03-31T01:10:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -29.3125
+      },
+      {
+        "seq": 3183,
+        "ts": "2026-03-31T01:10:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -23.125
+      },
+      {
+        "seq": 3183,
+        "ts": "2026-03-31T01:10:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 4116
+      },
+      {
+        "seq": 3184,
+        "ts": "2026-03-31T01:15:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 12.3
+      },
+      {
+        "seq": 3184,
+        "ts": "2026-03-31T01:15:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -29.0
+      },
+      {
+        "seq": 3184,
+        "ts": "2026-03-31T01:15:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -23.0
+      },
+      {
+        "seq": 3184,
+        "ts": "2026-03-31T01:15:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 4116
+      },
+      {
+        "seq": 3185,
+        "ts": "2026-03-31T01:17:00Z",
+        "zone": "E",
+        "event": "TRIP",
+        "value": 1
+      },
+      {
+        "seq": 3186,
+        "ts": "2026-03-31T01:20:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 10.7
+      },
+      {
+        "seq": 3186,
+        "ts": "2026-03-31T01:20:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -23.1875
+      },
+      {
+        "seq": 3186,
+        "ts": "2026-03-31T01:20:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -22.8125
+      },
+      {
+        "seq": 3186,
+        "ts": "2026-03-31T01:20:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 4100
+      },
+      {
+        "seq": 3187,
+        "ts": "2026-03-31T01:25:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 12.0
+      },
+      {
+        "seq": 3187,
+        "ts": "2026-03-31T01:25:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -28.1875
+      },
+      {
+        "seq": 3187,
+        "ts": "2026-03-31T01:25:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -22.125
+      },
+      {
+        "seq": 3187,
+        "ts": "2026-03-31T01:25:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 4116
+      },
+      {
+        "seq": 3188,
+        "ts": "2026-03-31T01:29:00Z",
+        "zone": "E",
+        "event": "TRIP",
+        "value": 1
+      },
+      {
+        "seq": 3189,
+        "ts": "2026-03-31T01:30:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 10.8
+      },
+      {
+        "seq": 3189,
+        "ts": "2026-03-31T01:30:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -22.5
+      },
+      {
+        "seq": 3189,
+        "ts": "2026-03-31T01:30:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -22.0
+      },
+      {
+        "seq": 3189,
+        "ts": "2026-03-31T01:30:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 4100
+      },
+      {
+        "seq": 3190,
+        "ts": "2026-03-31T01:35:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 11.9
+      },
+      {
+        "seq": 3190,
+        "ts": "2026-03-31T01:35:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -27.375
+      },
+      {
+        "seq": 3190,
+        "ts": "2026-03-31T01:35:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -21.5
+      },
+      {
+        "seq": 3190,
+        "ts": "2026-03-31T01:35:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 4116
+      },
+      {
+        "seq": 3191,
+        "ts": "2026-03-31T01:40:00Z",
+        "zone": "E",
+        "event": "DISCH_PRESSURE",
+        "value": 12.5
+      },
+      {
+        "seq": 3191,
+        "ts": "2026-03-31T01:40:00Z",
+        "zone": "E",
+        "event": "COIL_TEMP",
+        "value": -27.5
+      },
+      {
+        "seq": 3191,
+        "ts": "2026-03-31T01:40:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -21.375
+      },
+      {
+        "seq": 3191,
+        "ts": "2026-03-31T01:40:00Z",
+        "zone": "E",
+        "event": "STATE_FLAGS",
+        "value": 4116
+      },
+      {
+        "seq": 3192,
+        "ts": "2026-03-31T01:41:00Z",
+        "zone": "E",
+        "event": "TRIP",
+        "value": 1
+      },
+      {
+        "seq": 3193,
+        "ts": "2026-03-31T01:41:00Z",
+        "zone": "E",
+        "event": "LOCKOUT",
+        "value": 1
+      }
+    ]
+  },
+  "findings": [],
+  "timeline": {
+    "events": [],
+    "clock_offsets_min": {
+      "badge": 9,
+      "exif": 60,
+      "cctv": 2,
+      "forklift": 0,
+      "chat": 0,
+      "tickets": 0,
+      "git": 0,
+      "submeter": 0,
+      "gateway": 0,
+      "probe": 0
+    },
+    "false_claims": []
+  },
+  "confidence": {
+    "mechanism": 0.8,
+    "protocol": 0.95,
+    "findings": 0.94,
+    "timeline": 0.9
+  }
+}

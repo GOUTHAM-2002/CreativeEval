@@ -2,11 +2,7 @@
 __pycache__/
 *.pyc
 .env
-instances/
-runs/
 tools/faketime/src/
-results/*/
-!results/report.py
 *.egg-info/
 .pytest_cache/
 # host-only build artefacts that are large or irrelevant to users

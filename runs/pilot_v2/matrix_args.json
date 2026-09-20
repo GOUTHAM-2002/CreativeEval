@@ -1,0 +1,22 @@
+{
+ "tag": "pilot_v2",
+ "models": "astra,sol",
+ "instances": "instances/s000*",
+ "tiers": "default",
+ "par": 3,
+ "cap_usd": 600.0,
+ "retry_errors": false,
+ "max_tool_calls": 600,
+ "wall_s": 18000.0,
+ "budget_usd": 150.0,
+ "via": "openrouter",
+ "effort": "high",
+ "fake": false,
+ "runs_root": "/home/goutham/eval_imp/runs",
+ "instances_resolved": [
+  "/home/goutham/eval_imp/instances/s0001_8add781f",
+  "/home/goutham/eval_imp/instances/s0002_357565a8",
+  "/home/goutham/eval_imp/instances/s0003_98910200"
+ ],
+ "started": "2026-09-19T23:07:14"
+}

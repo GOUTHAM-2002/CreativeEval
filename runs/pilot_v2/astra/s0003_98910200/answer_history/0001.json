@@ -1,0 +1,185 @@
+{
+  "schema_version": "2",
+  "mechanism": {
+    "parameters": {
+      "k_cool.A": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation pending."
+      },
+      "k_leak.A": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation pending."
+      },
+      "H.A": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation pending."
+      },
+      "bias.A": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation pending."
+      },
+      "k_cool.B": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation pending."
+      },
+      "k_leak.B": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation pending."
+      },
+      "H.B": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation pending."
+      },
+      "bias.B": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation pending."
+      },
+      "k_cool.C": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation pending."
+      },
+      "k_leak.C": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation pending."
+      },
+      "H.C": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation pending."
+      },
+      "bias.C": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation pending."
+      },
+      "k_cool.D": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation pending."
+      },
+      "k_leak.D": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation pending."
+      },
+      "H.D": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation pending."
+      },
+      "bias.D": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation pending."
+      },
+      "k_cool.E": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation pending."
+      },
+      "k_leak.E": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation pending."
+      },
+      "H.E": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation pending."
+      },
+      "bias.E": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation pending."
+      },
+      "k_cool.F": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation pending."
+      },
+      "k_leak.F": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation pending."
+      },
+      "H.F": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation pending."
+      },
+      "bias.F": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation pending."
+      },
+      "door_gain": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation pending."
+      },
+      "c_adj": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation pending."
+      },
+      "defrost.R_hours": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation pending."
+      },
+      "defrost.len_min": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation pending."
+      },
+      "defrost.heat_degC": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation pending."
+      },
+      "trip.d_min": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation pending."
+      },
+      "lockout.N": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation pending."
+      },
+      "lockout.W_min": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation pending."
+      },
+      "lockout.L_min": {
+        "value": null,
+        "confidence": 0,
+        "note": "Investigation pending."
+      }
+    }
+  },
+  "protocol": {},
+  "findings": [],
+  "timeline": {
+    "events": [],
+    "clock_offsets_min": {},
+    "false_claims": []
+  },
+  "confidence": {
+    "mechanism": 0,
+    "protocol": 0,
+    "findings": 0,
+    "timeline": 0
+  }
+}

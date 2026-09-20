@@ -1,0 +1,853 @@
+{
+  "schema_version": "2",
+  "mechanism": {
+    "parameters": {
+      "k_cool.A": {
+        "value": 0.18,
+        "confidence": 0.83
+      },
+      "k_leak.A": {
+        "value": 0.0017,
+        "confidence": 0.55
+      },
+      "H.A": {
+        "value": 0.4,
+        "confidence": 0.88
+      },
+      "bias.A": {
+        "value": -0.5,
+        "confidence": 0.78,
+        "note": "controller indication minus corrected physical probe"
+      },
+      "k_cool.B": {
+        "value": 0.06,
+        "confidence": 0.82
+      },
+      "k_leak.B": {
+        "value": 0.0005,
+        "confidence": 0.48
+      },
+      "H.B": {
+        "value": 0.9,
+        "confidence": 0.88
+      },
+      "bias.B": {
+        "value": -0.7,
+        "confidence": 0.8,
+        "note": "controller indication minus corrected physical probe"
+      },
+      "k_cool.C": {
+        "value": 0.03,
+        "confidence": 0.76
+      },
+      "k_leak.C": {
+        "value": 0.0021,
+        "confidence": 0.42
+      },
+      "H.C": {
+        "value": 1.1,
+        "confidence": 0.84
+      },
+      "bias.C": {
+        "value": null,
+        "confidence": 0.2,
+        "note": "no independent probe checks for C; telemetry alone cannot separate sensor bias from true temperature"
+      },
+      "k_cool.D": {
+        "value": 0.11,
+        "confidence": 0.8
+      },
+      "k_leak.D": {
+        "value": 0.0006,
+        "confidence": 0.45
+      },
+      "H.D": {
+        "value": 0.4,
+        "confidence": 0.82
+      },
+      "bias.D": {
+        "value": null,
+        "confidence": 0.15,
+        "note": "not constant: probe comparison shows drift from about -1.5 C to +2 C, followed by recalibration on 2026-04-03"
+      },
+      "k_cool.E": {
+        "value": 0.12,
+        "confidence": 0.86
+      },
+      "k_leak.E": {
+        "value": 0.0011,
+        "confidence": 0.55
+      },
+      "H.E": {
+        "value": 0.6,
+        "confidence": 0.9
+      },
+      "bias.E": {
+        "value": -0.5,
+        "confidence": 0.76,
+        "note": "controller indication minus corrected physical probe"
+      },
+      "k_cool.F": {
+        "value": 0.03,
+        "confidence": 0.74
+      },
+      "k_leak.F": {
+        "value": 0.0013,
+        "confidence": 0.4
+      },
+      "H.F": {
+        "value": 0.6,
+        "confidence": 0.82
+      },
+      "bias.F": {
+        "value": null,
+        "confidence": 0.2,
+        "note": "no independent probe checks for F; telemetry alone cannot identify bias"
+      },
+      "door_gain": {
+        "value": 7,
+        "confidence": 0.72,
+        "note": "common multiplier estimated from flagged open-door heating episodes"
+      },
+      "c_adj": {
+        "value": 0.0005,
+        "confidence": 0.42,
+        "note": "global shared-wall coupling estimate; weakly identified against leakage"
+      },
+      "defrost.R_hours": {
+        "value": 8,
+        "confidence": 0.94
+      },
+      "defrost.len_min": {
+        "value": 26,
+        "confidence": 0.99
+      },
+      "defrost.heat_degC": {
+        "value": 6,
+        "confidence": 0.63,
+        "note": "nominal injected heat; observed room-air rise is 3.1-5.2 C after losses"
+      },
+      "trip.d_min": {
+        "value": 5,
+        "confidence": 0.87
+      },
+      "lockout.N": {
+        "value": 4,
+        "confidence": 0.99
+      },
+      "lockout.W_min": {
+        "value": 60,
+        "confidence": 0.87
+      },
+      "lockout.L_min": {
+        "value": 90,
+        "confidence": 0.99
+      }
+    },
+    "rules": {
+      "defrost_rule_type": "runtime_hours",
+      "stagger_order": [
+        "A",
+        "C",
+        "B",
+        "D",
+        "F",
+        "E"
+      ],
+      "adjacency_pairs": [
+        [
+          "A",
+          "D"
+        ],
+        [
+          "A",
+          "E"
+        ],
+        [
+          "A",
+          "F"
+        ],
+        [
+          "B",
+          "C"
+        ],
+        [
+          "B",
+          "E"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "C",
+          "F"
+        ],
+        [
+          "E",
+          "F"
+        ]
+      ]
+    }
+  },
+  "protocol": {
+    "types": {
+      "56": "STATUS",
+      "29": "DOOR",
+      "67": "TRIP",
+      "55": "LOCKOUT",
+      "EB": "DEFROST",
+      "11": "HEATER",
+      "BA": "BOOT",
+      "3A": "QUEUE_OVERFLOW"
+    },
+    "status_words": [
+      "COIL_TEMP",
+      "AIR_TEMP",
+      "STATE_FLAGS",
+      "DISCH_PRESSURE"
+    ],
+    "temp_scale": 16,
+    "temp_offset": 500,
+    "press_scale": 50,
+    "flag_bits": {
+      "RUN": 6,
+      "DEFROST": 13,
+      "LOCKOUT": 7,
+      "RECOVERY": 3,
+      "DOOR_OPEN": 10,
+      "ABS_TEMP": 14
+    },
+    "v34_change": "absolute_temp",
+    "heldout": [
+      {
+        "seq": 3212,
+        "ts": "2026-03-25T22:30Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -20.875
+      },
+      {
+        "seq": 3213,
+        "ts": "2026-03-25T22:35Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -21.5
+      },
+      {
+        "seq": 3214,
+        "ts": "2026-03-25T22:40Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -21.6875
+      },
+      {
+        "seq": 3215,
+        "ts": "2026-03-25T22:45Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -22.1875
+      },
+      {
+        "seq": 3216,
+        "ts": "2026-03-25T22:50Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -22.0
+      },
+      {
+        "seq": 3217,
+        "ts": "2026-03-25T22:55Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -22.625
+      },
+      {
+        "seq": 3218,
+        "ts": "2026-03-25T23:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -22.125
+      },
+      {
+        "seq": 3219,
+        "ts": "2026-03-25T23:05Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -21.875
+      },
+      {
+        "seq": 3220,
+        "ts": "2026-03-25T23:10Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -21.5
+      },
+      {
+        "seq": 3221,
+        "ts": "2026-03-25T23:15Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -21.6875
+      },
+      {
+        "seq": 3222,
+        "ts": "2026-03-25T23:20Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -21.125
+      },
+      {
+        "seq": 3223,
+        "ts": "2026-03-25T23:25Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -21.3125
+      },
+      {
+        "seq": 3224,
+        "ts": "2026-03-25T23:30Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -21.375
+      },
+      {
+        "seq": 3225,
+        "ts": "2026-03-25T23:35Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -21.375
+      },
+      {
+        "seq": 3226,
+        "ts": "2026-03-25T23:40Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -22.125
+      },
+      {
+        "seq": 3227,
+        "ts": "2026-03-25T23:45Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -22.375
+      },
+      {
+        "seq": 3228,
+        "ts": "2026-03-25T23:50Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -21.875
+      },
+      {
+        "seq": 3229,
+        "ts": "2026-03-25T23:55Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -22.375
+      },
+      {
+        "seq": 3230,
+        "ts": "2026-03-26T00:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -21.3125
+      },
+      {
+        "seq": 3231,
+        "ts": "2026-03-26T00:05Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -21.6875
+      },
+      {
+        "seq": 3232,
+        "ts": "2026-03-26T00:10Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -21.125
+      },
+      {
+        "seq": 3233,
+        "ts": "2026-03-26T00:15Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -21.3125
+      },
+      {
+        "seq": 3234,
+        "ts": "2026-03-26T00:20Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -21.1875
+      },
+      {
+        "seq": 3235,
+        "ts": "2026-03-26T00:25Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -22.0
+      },
+      {
+        "seq": 3236,
+        "ts": "2026-03-26T00:30Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -22.375
+      },
+      {
+        "seq": 3237,
+        "ts": "2026-03-26T00:35Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -21.8125
+      },
+      {
+        "seq": 3238,
+        "ts": "2026-03-26T00:40Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -22.125
+      },
+      {
+        "seq": 3239,
+        "ts": "2026-03-26T00:45Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -21.375
+      },
+      {
+        "seq": 3240,
+        "ts": "2026-03-26T00:48Z",
+        "zone": "E",
+        "event": "DOOR",
+        "value": 1
+      },
+      {
+        "seq": 3241,
+        "ts": "2026-03-26T00:50Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -21.125
+      },
+      {
+        "seq": 3242,
+        "ts": "2026-03-26T00:55Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -19.375
+      },
+      {
+        "seq": 3243,
+        "ts": "2026-03-26T00:57Z",
+        "zone": "E",
+        "event": "TRIP",
+        "value": 1
+      },
+      {
+        "seq": 3244,
+        "ts": "2026-03-26T01:00Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -18.0
+      },
+      {
+        "seq": 3245,
+        "ts": "2026-03-26T01:05Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -17.0
+      },
+      {
+        "seq": 3246,
+        "ts": "2026-03-26T01:09Z",
+        "zone": "E",
+        "event": "TRIP",
+        "value": 1
+      },
+      {
+        "seq": 3247,
+        "ts": "2026-03-26T01:10Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -15.0
+      },
+      {
+        "seq": 3248,
+        "ts": "2026-03-26T01:15Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -14.1875
+      },
+      {
+        "seq": 3249,
+        "ts": "2026-03-26T01:20Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -13.5
+      },
+      {
+        "seq": 3250,
+        "ts": "2026-03-26T01:21Z",
+        "zone": "E",
+        "event": "TRIP",
+        "value": 1
+      },
+      {
+        "seq": 3251,
+        "ts": "2026-03-26T01:25Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -12.3125
+      },
+      {
+        "seq": 3252,
+        "ts": "2026-03-26T01:30Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -10.625
+      },
+      {
+        "seq": 3253,
+        "ts": "2026-03-26T01:33Z",
+        "zone": "E",
+        "event": "TRIP",
+        "value": 1
+      },
+      {
+        "seq": 3254,
+        "ts": "2026-03-26T01:35Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -10.0
+      },
+      {
+        "seq": 3255,
+        "ts": "2026-03-26T01:40Z",
+        "zone": "E",
+        "event": "AIR_TEMP",
+        "value": -8.6875
+      },
+      {
+        "seq": 3257,
+        "ts": "2026-03-26T01:45Z",
+        "zone": "E",
+        "event": "LOCKOUT",
+        "value": 1
+      }
+    ]
+  },
+  "findings": [
+    {
+      "claim": "Room E was flashed to firmware 3.4 on 2026-03-15 despite the service report saying it was only inspected.",
+      "status": "established",
+      "confidence": 0.99,
+      "evidence": [
+        "deploy/logs/gateway.log (TK05 BA,0034 boot at 14:41Z)",
+        "people/photos_exif.csv IMG_2241 caption",
+        "people/receipts/vendor_invoice_firmware_service.txt (two units)",
+        "people/vendor_service_reports/service_report_firmware_visit.md"
+      ]
+    },
+    {
+      "claim": "Firmware 3.4 changed temperature words from setpoint-relative to absolute; the unchanged gateway added the setpoint anyway and produced false roughly -40 C values for B and E.",
+      "status": "established",
+      "confidence": 0.99,
+      "evidence": [
+        "repo/gateway/rh7_decode.py",
+        "people/vendor_service_reports/service_report_firmware_visit.md",
+        "deploy/logs/gateway.log",
+        "db/ledger.sql"
+      ]
+    },
+    {
+      "claim": "At 2026-03-26 00:48Z the room E door opened and the TK05 host link dropped, consistent with the known door-frame cable fault.",
+      "status": "established",
+      "confidence": 0.98,
+      "evidence": [
+        "controller/TK05_fault_snapshot.txt seq 3240 DOOR",
+        "db/ledger.sql last received seq 3240",
+        "people/tickets.json T-0410"
+      ]
+    },
+    {
+      "claim": "The excursion was initiated by the open door; TK05 retained cooling capacity, repeatedly ran, tripped four times on high discharge pressure, and then entered protective lockout at about 01:45Z.",
+      "status": "established",
+      "confidence": 0.98,
+      "evidence": [
+        "controller/TK05_fault_snapshot.txt",
+        "db/ledger.sql",
+        "deploy/logs/gateway.log"
+      ]
+    },
+    {
+      "claim": "A primary compressor mechanical failure caused the room E excursion.",
+      "status": "refuted",
+      "confidence": 0.98,
+      "evidence": [
+        "controller/TK05_fault_snapshot.txt (RUN flags, rising pressure and four TRIP frames before LOCKOUT)",
+        "people/recall_notice.txt (site compressor model not recalled)"
+      ]
+    },
+    {
+      "claim": "Room E air exceeded -15 C by about 01:15Z and reached at least -8.69 C at 01:40Z; it was 5.19 C when host telemetry resumed at 04:10Z.",
+      "status": "established",
+      "confidence": 0.97,
+      "evidence": [
+        "controller/TK05_fault_snapshot.txt",
+        "db/ledger.sql TK05 2026-03-26T04:10:12Z raw status"
+      ]
+    },
+    {
+      "claim": "The exact maximum room E temperature and exact time-above-threshold cannot be recovered.",
+      "status": "undetermined",
+      "confidence": 0.99,
+      "evidence": [
+        "db/ledger.sql sequence gap 3240 to 3293",
+        "controller/TK05_fault_snapshot.txt ends at lockout",
+        "people/tickets.json T-0410"
+      ],
+      "alternatives": [
+        "The maximum occurred during the untelemetered lockout/link-loss interval and exceeded the 04:10 reading.",
+        "The 04:10 reading was near the maximum and recovery had only just begun."
+      ]
+    },
+    {
+      "claim": "No useful alert reached operations during the excursion because E warning traffic had been routed to an archived legacy channel and the critical-only override suppressed warnings; the wrong 3.4 decode also hid the true warm value.",
+      "status": "established",
+      "confidence": 0.98,
+      "evidence": [
+        "repo/alerting/routes.json",
+        "repo/deploy/config.override.json",
+        "deploy/logs/alerting.log",
+        "people/chat_export.json m0066,m0080,m0084",
+        "repo/gateway/rh7_decode.py"
+      ]
+    },
+    {
+      "claim": "The person who left the room E door open during the incident cannot be identified from the surviving evidence.",
+      "status": "undetermined",
+      "confidence": 0.99,
+      "evidence": [
+        "people/tickets.json T-0419 (reader offline)",
+        "people/cctv_motion.csv (only seven-day retention)",
+        "people/badge_access.csv",
+        "people/statements/temp_worker_n.costa.md",
+        "people/statements/night_lead_e.dubois.md"
+      ],
+      "alternatives": [
+        "Noor Costa used the wedge, as she demonstrably had on an earlier shift.",
+        "Elif Dubois or another key-holder opened or failed to secure the door.",
+        "The door was unintentionally left ajar or opened without a usable access record."
+      ]
+    },
+    {
+      "claim": "The author and exact deployment time of the untracked critical-only severity override cannot be determined.",
+      "status": "undetermined",
+      "confidence": 0.99,
+      "evidence": [
+        "repo/deploy/config.override.json (gitignored)",
+        "repo/.gitignore",
+        "people/chat_export.json m0075-m0087",
+        "people/statements/sre_oncall_s.nguyen.md",
+        "people/statements/ops_engineer_i.novak.md"
+      ],
+      "alternatives": [
+        "Sofia Nguyen deployed it during the overnight warning storm.",
+        "Ivan Novak or another engineer deployed it outside git.",
+        "Another operator with host access created the override."
+      ]
+    },
+    {
+      "claim": "The lots physically in E at door opening were LN-24754, LN-26450, and LN-28604; the customer lot LN-26450 was moved into E at 16:33Z and out at 08:22Z.",
+      "status": "established",
+      "confidence": 0.93,
+      "evidence": [
+        "people/forklift_telematics.csv",
+        "repo/deploy/inventory_import.csv",
+        "db/queue.sql"
+      ]
+    },
+    {
+      "claim": "The postmortem quarantine scope missed the actually affected three-lot physical set and instead named five lots whose last physical drops before the event were outside E.",
+      "status": "established",
+      "confidence": 0.92,
+      "evidence": [
+        "people/postmortem.md",
+        "people/forklift_telematics.csv",
+        "db/ledger.sql (stale lots, no moves)",
+        "db/queue.sql"
+      ]
+    },
+    {
+      "claim": "The room E excursion probably caused the degradation signature in LN-26450.",
+      "status": "probable",
+      "confidence": 0.91,
+      "evidence": [
+        "people/stability_lab_email.md",
+        "people/forklift_telematics.csv",
+        "controller/TK05_fault_snapshot.txt"
+      ]
+    }
+  ],
+  "timeline": {
+    "events": [
+      {
+        "actor": "actor:z.byrne",
+        "action": "firmware_flash",
+        "t": "2026-03-15T14:41Z",
+        "ref": "ctrl:TK05"
+      },
+      {
+        "actor": "actor:z.byrne",
+        "action": "firmware_flash",
+        "t": "2026-03-15T15:33Z",
+        "ref": "ctrl:TK02"
+      },
+      {
+        "actor": "actor:n.costa",
+        "action": "purchase",
+        "t": "2026-03-15T17:18Z",
+        "ref": "doc:hardware_receipt_wedge"
+      },
+      {
+        "actor": "actor:n.costa",
+        "action": "photo",
+        "t": "2026-03-16T00:40Z",
+        "ref": "doc:IMG_2231.jpg"
+      },
+      {
+        "actor": "actor:i.novak",
+        "action": "commit",
+        "t": "2026-03-16T12:19Z",
+        "ref": "commit:1a83340"
+      },
+      {
+        "actor": "actor:i.novak",
+        "action": "config_edit",
+        "t": "2026-03-16T12:19Z",
+        "ref": "config:alerting/routes.json:zones.E.channel"
+      },
+      {
+        "actor": "actor:unknown",
+        "action": "override_deploy",
+        "t": "2026-03-17T01:59Z",
+        "ref": "config:deploy/config.override.json:ALERT_MIN_SEVERITY"
+      },
+      {
+        "actor": "actor:j.nguyen",
+        "action": "archive_channel",
+        "t": "2026-03-17T10:03Z",
+        "ref": "msg:m0084"
+      },
+      {
+        "actor": "actor:a.novak",
+        "action": "pallet_move",
+        "t": "2026-03-25T10:29Z",
+        "ref": "lot:LN-28604"
+      },
+      {
+        "actor": "actor:a.novak",
+        "action": "pallet_move",
+        "t": "2026-03-25T11:58Z",
+        "ref": "lot:LN-24754"
+      },
+      {
+        "actor": "actor:i.schulz",
+        "action": "pallet_move",
+        "t": "2026-03-25T16:33Z",
+        "ref": "lot:LN-26450"
+      },
+      {
+        "actor": "actor:e.dubois",
+        "action": "shift_start",
+        "t": "2026-03-25T21:49Z",
+        "ref": "data:BADGE:MAIN-ENTRANCE"
+      },
+      {
+        "actor": "actor:n.costa",
+        "action": "shift_start",
+        "t": "2026-03-25T22:03Z",
+        "ref": "data:BADGE:MAIN-ENTRANCE"
+      },
+      {
+        "actor": "actor:unknown",
+        "action": "door_open",
+        "t": "2026-03-26T00:48Z",
+        "ref": "physical:DOOR:E"
+      },
+      {
+        "actor": "ctrl:TK05",
+        "action": "door_prop",
+        "t": "2026-03-26T00:48Z",
+        "ref": "physical:DOOR:E"
+      },
+      {
+        "actor": "actor:unknown",
+        "action": "door_close",
+        "t": "2026-03-26T04:08Z",
+        "ref": "physical:DOOR:E"
+      },
+      {
+        "actor": "actor:a.novak",
+        "action": "pallet_move",
+        "t": "2026-03-26T08:22Z",
+        "ref": "lot:LN-26450"
+      },
+      {
+        "actor": "actor:n.larsen",
+        "action": "quarantine",
+        "t": "2026-04-06T16:00Z",
+        "ref": "ticket:T-0427"
+      }
+    ],
+    "clock_offsets_min": {
+      "badge": -16,
+      "exif": 60,
+      "cctv": 0,
+      "forklift": 0,
+      "chat": 0,
+      "tickets": 0,
+      "git": 0,
+      "submeter": 0,
+      "gateway": 0,
+      "probe": -8
+    },
+    "false_claims": [
+      {
+        "doc_id": "doc:temp_worker_n.costa",
+        "quote": "I have never propped open any cold-room door."
+      },
+      {
+        "doc_id": "doc:service_report_firmware_visit",
+        "quote": "Unit TK05 (room E): inspected only, no changes made"
+      },
+      {
+        "doc_id": "doc:ops_engineer_i.novak",
+        "quote": "The vendor confirmed by phone that the -40 readings are a known sensor fault on the 3.4 boards"
+      },
+      {
+        "doc_id": "doc:postmortem",
+        "quote": "Root cause: compressor failure on controller TK05."
+      },
+      {
+        "doc_id": "doc:night_lead_e.dubois",
+        "quote": "From where I stood, all the rooms were closed and nobody went near room E after that"
+      },
+      {
+        "doc_id": "doc:warehouse_manager_j.nguyen",
+        "quote": "I archived the old alert channel only after the incident, once I was confident nothing further needed to come through it."
+      },
+      {
+        "doc_id": "doc:sre_oncall_s.nguyen",
+        "quote": "for that whole stretch nothing was being logged"
+      }
+    ]
+  },
+  "confidence": {
+    "mechanism": 0.68,
+    "protocol": 0.98,
+    "findings": 0.94,
+    "timeline": 0.84
+  }
+}
