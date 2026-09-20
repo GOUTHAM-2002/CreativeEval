@@ -28,8 +28,9 @@ def scan(ev: Path, truth: dict) -> list[str]:
                 if c in text:
                     problems.append(f"canary {c!r} in {rel}")
                     break
-    if len(mtimes) > 1:
-        problems.append(f"non-uniform mtimes: {sorted(mtimes)[:3]}...")
+    if len(mtimes) > 1 and (max(mtimes) - min(mtimes)) > 600:
+        # a build spreads mtimes over the replay (~25 min) and would reveal generation order; a git checkout does not
+        problems.append(f"mtimes spread over {max(mtimes) - min(mtimes)} s: {sorted(mtimes)[:3]}...")
     repo = ev / "repo"
     import tempfile, shutil as _sh
     tmpd = None

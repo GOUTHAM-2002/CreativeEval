@@ -86,3 +86,8 @@ never generated), verified by a leak scan for the removed channels, not by an ad
   in the rubric. All pilot_v2 cells are (re-)judged with this configuration; no label rule or weight changed.
 - Fact F28 (topic clock_offsets) is excluded from judged facts (`grader/config.json v2.skip_fact_topics`): the offsets are
   scored mechanically in the timeline section and the prose judgement double-counted them. Applied to all pilot_v2 cells.
+- Shipped instances (2026-09-20): the three pilot_v2 instances are published with the services repo as a working tree
+  plus `repo.git.bundle` (restored to `.git` when an instance is staged). A generator bug had excluded the `billing/`
+  source package from the working tree the pilot models saw (its history was intact in git); the shipped copies have the
+  two files restored, so they differ from the pilot's evidence by exactly `billing/__init__.py` and `billing/nightly.py`.
+  Instance ids were kept. The bug is fixed in `gen/assemble.py` for new builds.

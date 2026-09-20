@@ -133,7 +133,12 @@ def collect_evidence(build: Path, world: dict, ev: Path):
         shutil.rmtree(ev)
     ev.mkdir(parents=True)
     repo_src, repo_dst = build / "repo", ev / "repo"
-    shutil.copytree(repo_src, repo_dst, ignore=shutil.ignore_patterns("__pycache__", "*.pyc", "logs", "billing"))
+    def _ignore(d, names):
+        out = {n for n in names if n in ("__pycache__",) or n.endswith(".pyc")}
+        if Path(d).name == "deploy":
+            out |= {n for n in names if n in ("logs", "billing")}      # service output dirs, shipped separately
+        return out
+    shutil.copytree(repo_src, repo_dst, ignore=_ignore)
     (ev / "deploy" / "logs").mkdir(parents=True)
     gap = world.get("plan", {}).get("diskfull")
     lo = seedmod.world_iso(world, gap["t0"]) if gap else None
